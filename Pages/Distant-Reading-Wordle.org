@@ -1,0 +1,40 @@
+#+BLOG: dig
+#+POSTID: 197
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil
+#+OPTIONS: f:t inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
+#+TITLE: Distant Reading Exercise: Building a Wordle
+#+DATE: <2015-07-09 Thu>
+#+AUTHOR: Matt Price
+#+EMAIL: matt@osskil
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.0.50.1 (Org mode 8.3beta)
+
+* Choose a work to not read.
+- navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
+- download the *text* version
+* Make some predictions
+- Write down your basic expectations of the novel: 
+- What are the main themes?
+- What are the lessons?
+- What is its place in literary history?
+* Make a Wordle
+- navigate to [[http://wordle.net]]
+- strip the metadata from the text (e.g., license, etc.)
+- create wordle for the text as a whole.
+  - then for several chapters or sections
+  - what patterns do you see? 
+* Make a network
+- copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
+
+#+BEGIN_QUOTE
+    The gist of textexure’s process is that account of words that occur near each other. That is not to say words have to be directly next to one another, paragraph and sentence structures are both considered. In the network, the nodes are the words themselves while the edges (or connections from node to node) are determined by the co-occurrence between words either directly, in paragraphs or sentences. In terms of the visualization, this effectively does two things: 1. organizes groups of words into the communities they appear (color coded) so that with a quick glance at the network, you can pick out certain themes and 2. You can also easily see what the primary theme that links the various aspects together.
+#+END_QUOTE
+In short, Textexture tries to automatically discern and visualize relationships between words, based on their usage, within a text. Looking at the network graph of your novel, what relationships seem most interesting? Experiment with the graph by clicking through different words. 
+
+* Repeat
+- Try the same process with another novel.
+- What have you learned? Anything?  

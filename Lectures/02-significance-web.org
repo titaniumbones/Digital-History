@@ -1,0 +1,310 @@
+#+TITLE:     The significance of the Web
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+CATEGORY: lectures, 
+#+TAGS: warner, habermas, public-sphere,  
+#+XSLT:
+#+DECK_POSTAMBLE: <h1>%a - %t</h1>
+#+DECK_PREAMBLE:
+#+HTML_INCLUDE_DEFAULT_STYLE:
+#+HTML_INCLUDE_SCRIPTS:
+# #+DECK_BASE_URL: /home/matt/src/deck.js
+# #+DECK_BASE_URL: /Tools/deck.js
+#+DECK_THEME: swiss.css
+#+DECK_TRANSITION: fade.css
+#+DECK_INCLUDE_EXTENSIONS:
+#+DECK_EXCLUDE_EXTENSIONS:
+#+CATEGORY: deck, 
+# #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.6.2/
+#+REVEAL_THEME: solarized
+#+REVEAL_EXTRA_CSS: /home/matt/src/org-reveal/local.css
+
+
+# #+STYLE: <script src="http://bartaz.github.com/impress.js/js/impress.js"></script><link href="http://bartaz.github.com/impress.js/css/impress-demo.css" rel="stylesheet" /><link href="/your/css/mystyle.css" rel="stylesheet" /
+* Outline
+- review "public sphere" (long!)
+- discussion
+- Internet and public sphere
+- brief HTML explication
+- exercise
+- Course Site, Blog, and Markdown
+* Significance and Signification (Intro)
+- What /matters/ about the web?
+- /How does the web/ create and change meaning?
+
+** What matters about the web?
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:END:
+
+Web has had enormous effects
+#+ATTR_REVEAL: :frag (appear appear appear appear appear)
+  - economic
+  - political
+  - cultural
+  - *but I want to talk about* */discursive/*
+  - does the web change what /kinds of conversations/ we can have?
+    - for the better, or for the worse?
+* Part I: The Public Sphere
+** Authenticity in a media age
+#+CAPTION: Juergen Habermas
+#+ATTR_HTML: height="200px" width="300px" align="center"
+[[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
+
+** Mid-century anxiety
+#+ATTR_REVEAL: :frag appear
+- Appearance of new media (radio, TV, new kinds of magazine)
+- Are these "degraded"?
+- Do the media make us stupider?
+- Less critical?
+- More pliable?
+
+** Reasons to worry
+#+ATTR_HTML: :style float:left; max-height:400px;
+https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg
+#+ATTR_HTML: :style float:left;
+https://upload.wikimedia.org/wikipedia/en/8/86/EwigerJudeFilm.jpg
+#+ATTR_REVEAL: :frag appear
+- maybe there are /material conditions/ that make this sort of evil possible?
+- perhaps the media of communication have a role?  
+
+** The Public Sphere
+#+BEGIN_QUOTE
+A portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.
+
+  -- J. Habermas
+
+#+END_QUOTE
+
+** Juergen Habermas (b. 1929)
+- pre-eminent German public intellectual of 1960's and 1970's
+- role of Holocaust/Fascism in all his thinking
+- inheritance from the Frankfurt School
+- search for "authentic" forms of communication
+** Concept of the Public Sphere
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: slide
+:END:
+
+#+BEGIN_QUOTE
+By "the public sphere" we mean... a realm of our social life in which something approaching public opinion can be formed... *Citizens behave as a public body when they confer in an unrestricted fashion* -- that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions -- *about matters of general interest.*
+#+END_QUOTE
+*
+* Public and Private
+#+ATTR_HTML: :class "smalltable"
+| Public                               | Private                         |
+|--------------------------------------+---------------------------------|
+| open to all                          | restricted                      |
+| accessible for money                 | closed even if you can pay      |
+| state-relateed                       | nonstate, civil society         |
+| political                            | nonpolitical                    |
+| official                             | nonofficial                     |
+| common                               | special                         |
+| impersonal                           | personal                        |
+| national or popular                  | group, class, or locale         |
+| international/universal              | particular/finite               |
+| in view of others                    | concealed                       |
+| outside the home                     | domestic                        |
+| circulated in print/electronic media | circulated orally/in manuscript |
+| known widely                         | known only to a few             |
+| acknowledged/explicit                | tacit/implicit                  |
+|                                      |                                 |
+* Concept of the Public Sphere
+:PROPERTIES:
+:END:
+*Strukturwandlung der Öffentlichkeit (*1962*)*
+:PROPERTIES:
+:STEP: 1
+:END:
+#+ATTR_REVEAL: :frag (none none none appear appear appear appear)
+- Arena ruled by rational argument 
+- Freedom of expression prevails (/...an unrestricted fashion/)
+- Conversations concern /common interests/ (e.g. ?)
+- both *ideal* and *historical*
+- arises first in 18th Century
+- flourishes and then withers in 19th
+- at a nadir in 20th; can it be revived?
+
+* Before Bourgeois Society
+- There is no "Public Sphere"
+- Instead there are "Public Individuals" with certain powers
+  - and Church authorities, empowered to speak on moral matters
+- Opposed to these are "private persons"
+** Private and Public Persons
+#+BEGIN_QUOTE
+A private person has no right to pass /public/ and perhaps even disapproving judgement on the actions, procedures, laws, regulations, and ordinances of sovereigns and courts.... or to publish in print pertinent reports that he manages to obtain.  *For a private person is not at all capable of making such judgment*, because he lacks complete knowledge of circumstances and motives.
+
+  -- Frederick 'the Great' of Prussia, 1784
+#+END_QUOTE
+* 18th Century Origins
+- How do we get from a monarchy in which only 'public persons' have license to speak on 'public matters', to a 'public sphere' which is opened more widely?
+#+ATTR_REVEAL: :frag appear
+- Rise of newspapers/journals. Intrusion of private commentary on 'public' matters
+  - a new kind of /media/
+- rise of /salons/ & coffee houses.
+  - a new kind of /sociality/.  
+** Salons and Coffee Houses
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:END:
+
+#+ATTR_HTML: :style float:left; max-height:400px;
+https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_england_1-580x400.jpg
+#+ATTR_HTML:  style="vertical-align:top;" width="40%" float="left"
+[[http://cabinetmagazine.org/issues/8/assets/images/main/coffeehouse.jpg]]
+** Salons and Coffee Houses
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:END:
+- /Salons/ as the heart of intellectual activity in c. 18
+  - 'monopoly on first publication'
+  - mixing of classes
+  - freedom from patronage
+- Coffee Houses a similar space
+  - But no restrictions on topics of discourse
+  - matters of /politics/ as frequent a topic as art
+- an ideal of /common humanity/ esp. in coffee houses
+  - opinions judged by reason alone
+    - no intrusion of 'distinction' /or/ finance
+  - imperfection of this vision
+** Circulation
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:END:
+- Communication across broad spaces & differences needs something more than conversation
+- need a way get ideas to large numbers
+  - news sheets -> newspapers
+  - letters -> journals
+** Markets
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:END:
+- Through newspapers & journals conversation becomes a /commodity/
+- Therefore it loses its exclusivity
+- so, in the beginning, /commodification is a *good thing*/
+* The State vs. Society
+- This is all happening in a pre-democratic era (mostly)
+- 'The People' are /a problem/ for the state
+- growth of 'the social' a threat to sovereignty
+- 'public sphere' precarious and subject to dissolution
+** The Structure of the Public Sphere
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:END:
+
+#+ATTR_HTML: border="2" rules="all" frame="all"
+| Private Realm                                     | Public Sphere                        | Sphere of Public Authority |
+|---------------------------------------------------+--------------------------------------+----------------------------|
+| Civil Society (Commodity Exchange, social labour) | Political Public Sphere              | State                      |
+| Conjugal Family                                   | Literary/Philosophical Public Sphere | Court                      |
+
+
+- /the public sphere sits between Private Life and Authority, striving for independence from both/
+- it *mediates* between them and draws its legitimacy from its use of reason
+- note that it *presupposes* an emergent realm of "privacy" -- and so, it is grounded in that notion, like all liberal philosophical constructs
+* From Debate to Consumption
+- Public Sphere in effect /undoes itself/
+- success of media dissolves the reciprocal creation & communication of ideas
+  - instead we just /consume/
+  - /reason/ begins to vanish
+- Massive growth of media in c.20
+  - radio, television, film
+- The Public Sphere: A Hollow Shell?
+  - Where is its legitimacy?
+
+* Reception
+- extremely influential
+- with some questions about both the /historical/ and the /philosophical/ elements of the story.
+** Counterpublics
+#+BEGIN_QUOTE
+...some publics are defined by their tension with a larger public... Discussion with such a public is understood to *contravene the rules obtaining in the world at large*... This kind of public is, in effect, a *counterpublic*: it maintains at some level... an awareness of its subordinate status.
+  -- M. Warner (2002 -- not 1958...)
+#+CAPTION: Michael Warner
+#+ATTR_HTML: height="200px" width="250px" align="center"
+[[http://upload.wikimedia.org/wikipedia/en/6/63/Wikiwarner.jpg]]
+#+END_QUOTE
+** One or Many?
+- Habermas sees Public Sphere as *necessarily unitary*
+- But discourse carves out separate spaces
+  - that may correlate with social divides
+  - ... and where the addressee ("stranger") is presumed to share a *common subordination* with the speaker
+- ("Given the fact that almost anyone can contribute to public discourse, the multiplicity of perspectives makes it even more difficult to define public opinion. Any designation of public opinion then becomes arbitrary")
+
+** Disinterested or embodied?
+- for Habermas *separation* of individual from *both* "accidental" circumstances *and* official capacities is paramount
+- Warner:  This is fictive
+  - and anyway undesirable
+    - because some kinds of "argument" are fundamentally corporeal
+    - this doesn't make them less legitimate
+    - does it?  
+
+** Reading or Acting
+- Habermas:  the actions of a legitimate public sphere are actions of reading (scrutinize, judge, decide)
+- Warner: in a counterpublic, there may be other sorts of actions (prance, diss, act up, fantasize, mourn)
+
+*  How this matters for History
+- If there are many "publics", then working to carve out a particular space for discourse can have salutary effects
+- Modes of address and standards of comportment can differ across 'publics'
+- May even be possible to craft a 'public' around our work.
+  - though " it follows that the public exists only as long as the text is being engaged with"
+
+** Enter the Internet
+- Habermas' theory revolves around a *technology* and a *social institution*
+  - enabled by print, threatened by TV
+  - can the Internet undo this dissolution?  If so, how?
+  - if not, is it the apotheosis of that dissolution ("Does this translate to mean that our experience with information and our interactions with the strangers we seek out as a means to expand our publics (and maybe our opinions) are customised to suit only our existing discourse?")
+
+** Digital History and the Public Sphere
+- Questions that arise from the JAH conversation:
+  - Does the Internet provide a space for authentic /public/ conversatoin?
+  - What are effects of the /medium/ on /how we pursue knowledge and truth/?
+#+ATTR_REVEAL: :frag appear
+    - *state and corporate pressures*
+    - algorithmic actors (!)
+* Machine-readable Text
+On the web, text is "Marked up" 
+#+BEGIN_SRC html
+  <html>
+    <head>
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <title>HTML Example</title>
+    </head>
+
+    <body>
+      <h1>This is the heading</h1>
+      <p>
+        This is a paragraph. It can contain <I>further markup</I> and also <a href="http:/some.where.com">more complex content</a>.
+      </p>
+      <aside>
+        Sometimes you'll see <I>semantic</I> tags, like "aside".  
+    </body>
+  </html>
+#+END_SRC
+** Consequences
+- Programs can scan this text, interpret it...
+- then treat it as /data/ which can be combined, analyzed, etc.
+#+ATTR_REVEAL: :frag appear
+- point of learning HTML is
+#+ATTR_REVEAL: :frag appear
+  - Understand how to achieve a certain "look"
+  - Understand how a complex computer algorithm might treat it as "data".  
+** Group Work 2:  HTML, continued
+Let's continue our introduction to HTML via JSBin: 
+- divide into groups (first choose sides in our debate; then split into 2s and 3s)
+- now click here: http://jsbin.com/utinoz/3/edit 
+
+* Find These Slides
+get them here: http://hpda.hackinghistory.ca/wp-content/uploads/2012/09/03-public-sphere.html

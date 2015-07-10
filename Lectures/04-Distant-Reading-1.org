@@ -1,0 +1,199 @@
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil
+#+OPTIONS: f:t inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t 
+#+TITLE: Distant Reading 1
+#+AUTHOR: Matt Price
+#+EMAIL: matt@osskil
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.0.50.1 (Org mode 8.3beta)
+#+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
+#+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_mathjax:nil
+#+OPTIONS: reveal_overview:t reveal_progress:t
+#+OPTIONS: reveal_rolling_links:nil reveal_slide_number:t
+#+OPTIONS: reveal_title_slide:t reveal_width:-1 reveal_hlevel:1 
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: -1
+#+REVEAL_MAX_SCALE: 1
+#+REVEAL_TRANS: default
+#+REVEAL_SPEED: default
+
+
+* Recap
+#+ATTR_REVEAL: :frag (appear appear appear)
+- "Abundance" offers many challenges
+  - preservation
+  - interpretation
+  - access
+- Does /history itself/ need to be reformed?
+  - What /relation to sources/?
+  - What /kinds of arguments/?
+  - What /narrative forms/?
+
+** Plan for the day
+- Lecture
+- Class Discussion (what did you learn/ what do you doubt)
+- Break
+- Wordle from a distance (class exercise)
+- help w/ HTML/CSS/JS (if you're stuck/don't understand) 
+
+* Abstract Models
+#+BEGIN_QUOTE
+...distance is however not an obstacle, but a /specific form of knowledge:/ fewer elements, hence a sharper sense of their overall interconnection. Shapes, relations, structures. Forms. Models. 
+#+END_QUOTE
+** The opposite of close?
+#+BEGIN_QUOTE
+ Dorothea, endowed with the extraordinary capacity for attentiveness that is “ardor,” is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
+
+"“I should learn everything then,” she said to herself, still walking quickly along the bridle road through the wood. “It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."[fn:1]
+#+END_QUOTE
+
+#+BEGIN_NOTES
+to notice:
+- analysis of passage longer than passage itself.
+- 
+#+END_NOTES
+** To the point of deconstruction
+#+BEGIN_QUOTE
+If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes’ the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves
+#+END_QUOTE
+** Closeness
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Literary study long organized around "close" reading
+- "Hermeneutic" model of scholarship
+- defines what it has meant to /understand/ or /master/ a text
+** Questioning Close Reading
+- But what is understanding?
+- what is literature?
+- what is the scholar's goal?
+#+BEGIN_NOTES
+
+#+END_NOTES
+** Some Numbers
+- ~62,000 new Novels published in English in the US/year
+- ~304,000 new and re-issued /books/ in US/year
+- ~129,000,000 books collected in world's libraries
+#+ATTR_REVEAL: :frag (appear)
+- *not possible to read these*
+  - can one still be an expert?
+** New forms of Understanding?
+- instead of, or in parallel with, close reading?
+- apprehension of /large-scale phenomena/
+- studying models, rather than texts themselves
+** Questions to consider
+- Does this count as /comprehension/?
+- what new skills are required?
+- What are the weaknesses of this form?
+
+* Graphs
+#+ATTR_HTML: :style float:left;
+[[https://seeingcomplexity.files.wordpress.com/2011/02/william_playfair_graph.jpg]]
+#+ATTR_HTML: :style float:left;
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- /condense/ data
+- /conceptualize/ mathematically
+- /convince/ readers
+- a fundamentally *rhetorical* tool
+** Moretti's Graphs
+http://newleftreview.org/static/assets/images/2580501large.gif
+#+BEGIN_QUOTE
+Quantitative research provides a type of data which is ideally independent of interpretatons. (p.9)
+#+END_QUOTE
+- yet, the graph is an argument:  rise, fall, rise
+** A History of Readers
+[[http://sandbox.hackinghistory.ca/assets/images/DH/three-rises-novel-colored.gif]]
+- each phase a new "kind" of reader
+- intensive, extensive, generic
+** Cycles
+#+BEGIN_QUOTE
+Event, cycle, /longue durée/: three time frames which have fared very unevenly in literary studies.
+
+... cycles constitute /temporary structures within the historical flow./ (p.14)
+#+END_QUOTE
+- *event \rarr close reading*
+- *longue durée \rarr grand narrative*
+- *cycle \rarr ?*
+** cycles in Literature
+[[http://sandbox.hackinghistory.ca/assets/images/DH/genres-colored.gif]]
+#+BEGIN_QUOTE
+A genre exhausts its potentialities... when its innerform is no longer capable of representing the most significant aspects of contemporary reality. (p. 17, fn 7)
+#+END_QUOTE
+** Genre & Generation
+#+BEGIN_QUOTE
+... some kind of generational mechanism seems the best way to account for the regularity of the novelistic cycle... (p. 22)
+#+END_QUOTE
+- "Normal literature"
+- but "revolution" as "dying out"
+** From "the shift" to "a shift"
+http://newleftreview.org/static/assets/images/2580512large.gif
+#+BEGIN_QUOTE
+...the point is not who prevails in this or that skirmish, but exactly the opposite: no victory is every definitive... the form keeps oscillating back and forth between the two groups. (p.29)
+#+END_QUOTE
+** Moretti's method
+#+BEGIN_QUOTE
+...the real point here... is the total /heterogeneity of problem and solution:/ to make sense of quantitative data, I had to abandon the quantitative universe, and turn to morphology: evoke form, in order to explain figures.
+#+END_QUOTE
+- how justified is this move?
+- what do we learn from it? 
+* Maps
+#+BEGIN_QUOTE
+There is a very simple question about literary maps: what exactly do they /do/?
+#+END_QUOTE
+- like graphs, maps are a /persuasive tool/
+- What does it mean to "map" a novel?
+** What is a map?
+#+ATTR_HTML: :style float:left; max-height:320px;
+http://www.socialresearchmethods.net/research/epp2/15.gif
+#+ATTR_HTML: :style float:left; max-height:320px;  max-width:49%
+http://theexpertsagree.files.wordpress.com/2009/06/tokyorail.jpg
+#+ATTR_HTML: :style float:left; max-height:320px; max-width:49%
+http://www.fubiz.net/wp-content/uploads/2013/07/am1.jpg
+** What is a map?
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- abstract
+- visual
+- representation
+- of a physical or imagined space
+** Moretti's method
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600511large.gif
+#+BEGIN_QUOTE
+The form of an object is a 'diagram of forces', in this sense, at least that from it we can... deduce the forces that ... have acted upon it. (p.57)
+#+END_QUOTE
+** /Our Village/
+#+BEGIN_QUOTE
+In the 1824 volume... the vilage was the undisputed centre of the surrounding countryside: the centripetal effects of the force "from within" were omnipresent, while the force "from without" was nowhere to be seen. (p. 57)
+
+Two collections later, in 1828, the village's gravitation field is already weaker...  Something is wrong with the force from within, but as no counter-force challenges it yet, the basic pattern... remains in place.  But by 1832... the village's centripetal force is reduced to nothing, and the bulk of the book moves away... (p. 58-59)
+#+END_QUOTE
+** /Our Village/ -- Extremes
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512large.gif
+** Modelling the text
+- *reduce* text to the model
+- *presume* that sociological factors are determinative
+- *sustain* focus on form ("a quantitative history of literature is also a profoundly formalist one" -p.25, fn 14)
+- *interpret* model in light of theories
+* Summary: Moretti and History
+- *labor-intensive* quantification of sources
+- *glossing over* problems of quantification
+- *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
+* Tools for Distant Reading: the wordle
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
+- what do and don't we know? 
+* Exercise: build a wordle [fn:2]
+
+* Footnotes
+
+[fn:2]Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
+
+[fn:1] From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention  (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)

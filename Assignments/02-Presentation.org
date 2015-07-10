@@ -1,0 +1,61 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t title:t toc:nil
+#+OPTIONS: todo:t |:t
+#+TITLE: Participation
+#+DATE: <2015-06-30 Tue>
+#+AUTHOR: Matt Price
+#+EMAIL: matt@osskil
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.0.50.1 (Org mode 8.3beta)
+
+As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.  
+
+* The system
+
+It's simple.  Suppose you successfully complete the Definitions Paper, the Galileo Assignment, the Evolution Assignment, and the class presentation. Congratulations! You have qualified for a B. But what kind of a B?
+
+| If your class particpation was: | You get a: | Which ROSI will show as: |
+|---------------------------------+------------+--------------------------|
+| Poor                            | B-         |                       72 |
+| Satisfactory                    | B          |                       75 |
+| Excellent                       | B+         |                       78 |
+
+Similarly, perhaps you were only able to complete the definitions paper & the Galileo assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
+
+| If your class particpation was: | You get a: | Which ROSI will show as: |
+|---------------------------------+------------+--------------------------|
+| Poor                            | D-         |                       72 |
+| Satisfactory                    | D          |                       75 |
+| Excellent                       | D+         |                       78 |
+
+*But Note!*
+
+A+ is a special grade.  Suppose you complete all the assignments satisfactorily.  Wow! You get an A, great.  But...  do you get an A+?
+
+| If your class particpation was: | You get an: | Which ROSI will show as: |
+|---------------------------------+-------------+--------------------------|
+| Poor                            | A-          |                       72 |
+| Satisfactory                    | A           |                       75 |
+| Excellent                       | DEPENDS     |                  DEPENDS |
+
+Even if your participation was excellent, you will only receive an A+ if your work was consistently excellent and occasionally brilliant.  So, if you successfully complete all the assignments (great!), and also are a great class participant (thanks!), then I'll look over all your work and make a value judgment about whether you deserve this rare and precious grade.
+
+* The Criteria
+** In the Classroom
+But what makes for good class participation?  You might want to start by reading [[http://wcm1.web.rice.edu/howtodiscuss.html][How to discuss a book for history]], which has lots of helpful suggestions. Really, please read it -- it's illuminating. But, meanwhile, here are some hints:
+
+- Show up for class :: It's hard to discuss when you're not here.
+- Do the Readings :: It's hard to discuss what you haven't read.  I will try hard not to assign too much reading; in return, please try to read it.
+- Be Courteous :: Treat your classmates with respect, even when your opinions differ fiercely.  Refrain from interrupting others, notice when others have been waiting & let them speak first, and so on. Don't shut other people down, and frame your comments in a way that invites further discussion.
+- Listen :: Pay careful attention when your classmates are speaking; if their ideas seem a little unclear, try to fill in the gaps, either by thinking silently, or by asking friendly, clarifying questions.  Try to think about how their positions relate to yours, and, especially, whether you should perhaps change your mind a little based on what they have to say.
+- Be Clear :: think about the readings before you come to class, so that your opinions are well-formed.
+- Be Brave :: It can be intimidating to speak in class, especially if you have found the readings or the lecture confusing. But /you will almost never be alone./ If one person is confused, others likely are too.  Have the courage to speak up -- everyone in the room is likely to thank you.  If you are extremely shy in person, then come speak to me and we can try to work out a solution for you.
+- Participate in Group work :: Occasionally we will break up into small groups.  The same princples apply to group work -- I'll be paying attention.  
+
+If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple weeks and I'll give you some feedback.
+** Online
+Blogging

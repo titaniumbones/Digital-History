@@ -1,0 +1,22 @@
+#+POSTID: 162
+#+DATE: [2015-07-02 Thu 09:03]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Lecture Notes
+
+Lectures for this class are written in [[https://www.gnu.org/software/emacs/][GNU Emacs]] in [[http:www.orgmode.org][Org-Mode]] syntax, and exported as HTML slideshows using [[https://github.com/hakimel/reveal.js][reveal.js]].  The source files are [[http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Source/][available here]].  The presentation version [[http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/][can be found here]].  
+
+Org-mode is an amazingly powerful tool, using a syntax a little like [[http://daringfireball.net/projects/markdown/syntax][markdown]], but different enough to be a little confusing to markdown users.  Reveal is pretty cool too.  Lectures are published using a creative commons BY-NC-SA license.  
+
+You can view the slideshows in the frame below, or right-click and "open in new tab" to see them full-screen.  
+
+
+#+BEGIN_HTML
+<iframe seamless width="100%" height="480px" src="http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/"></iframe>
+#+END_HTML
+
+#+BEGIN_HTML
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+#+END_HTML

@@ -1,0 +1,190 @@
+#+DATE: [2015-07-02 Thu 09:02]
+#+POSTID: 60
+# # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+# #+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
+#+STARTUP: customtime entitiespretty
+#+TITLE: Digital History: His389, Summer 2015
+#+AUTHOR: Matt Price
+#+EMAIL: matt@osskil.lan
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+#+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
+* Logistics
+#+ATTR_HTML: :class org-upload
+
+
+| *Instructor:*   | Matt Price             |
+| *Email:*        | matt.price@utoronto.ca |
+| *Office Hrs:*   | SS 3077 R 1-3          |
+| *Meeting Times* | M W 10-12              |
+
+
+* Introduction
+We all know -- it is so commonplace that we barely even notice it! -- that we are living through a revolutionary period in the history of communication.  In the year of your birth, the World Wide Web was a scrawny, hand-powered frontier of hand-coded sites and Internet startups.  Amazon and Google were infants.  The University of Toronto Library website [[https://web.archive.org/web/19971210222202/http://library.utoronto.ca/][looked something like this]]:
+#+ATTR_HTML: :style border: 2px black solid; max-width: 500px; margin-left: 0px; :class someclass
+[[/home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png]] 
+
+and many students and faculty still used the card catalog to find books in Robarts.  
+
+Today, the processes of research, writing and reading are all dramatically transformed by information technology.  Instead of painstakingly discovering rare books and manuscript artifacts, we can do full-text searches on a vast corpus.  Our writing is mediated by immensely powerful computing machines, and our creations need not be limited exclusively to the linear texts around which all the humanities initially took shape.  Readers encounter our writing, not as a few precious drops of information in a desert of ignorance, but as part of an endless stream of information that assaults them all day long.  
+
+How should history respond to these new conditions of our existence?  In this class we explore foundational topics in the "[[http://whatisdigitalhumanities.com/][digital]] [[http://digital.humanities.ox.ac.uk/Support/whatarethedh.aspx][humanities]]" and ask what we can learn from them about /how we should be doing history/ -- in particular, how we should be collecting, analyzing, synthesizing and presenting knowledge.  
+
+- How do the digital media developed in the last two decades change the way we understand history? Can the fundamental goal of /interpreting/ the past survive?
+- What, if any, new technical skills do we need to acquire?
+- Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?  
+
+
+* Objectives
+At the end of this course, you should:
+- be able to describe to others what the phrase "digital humanities" means to you.
+- be able to frame a coherent and nuanced argument /of your own/ about the value of DH methods to the field of history
+- have a basic understanding of markup languages and their use in DH
+- be able to make compelling use of media materials such as audio, video, and animation in historical arguments
+- understand how to perform "distant reading" on a corpus of texts
+- understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
+
+- 
+* Course Re & Grading
+Grading in this course is done using a /modified point system/. The system may seem odd at first, but it has definite advantages for both students and teachers, so don't be intimidated. Instead of receiving a number or letter grade for each assignment, and then getting a weighted sum of those grades as your final mark, you will /choose what final mark to try for/ and then /complete the assignments required for that mark/.  A certain set of assignments is required for a D; for a C, you must complete all of the "D" assignments plus another set; for a B, all of the C assignments plus some more; and the same goes for an A. 
+
+Here are some more details:
+- All Assignments Are Graded Pass/Fail :: Each assignment you get will include a careful explanation of my expectations. If your work meets those expectations, you get full credit; if not you get /no credit/. 
+- A 'Passing' Mark on Assignments is a B+ :: In order to get credit for an assignment, you will have to demonstrate a high level of mastery -- about the level normally required for a B+.
+- Each Higher Grade Represents a quantum level of additional achievement :: As you move up the ladder, assignments test more advanced and difficult concepts from the course.
+- If you fail, you can try again :: You start the semester with 5 'retry' chits, which you can use to resubmit assignments that have not succeeded. If necessary, you can use all of those chits on a single assignment!
+- A late assignment costs one 'retry' chit :: There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities.
+- Second and third Tries get fewer Comments :: I will give substantial comments on first tries; additional tries will get less and less fulsome commentary.
+- Pluses and Minuses are determined by Participation :: The only part of your grade which is not determined on a pass/fail basis is the "+" or "-" part, which is assigned based on your on and offline participation.  See the participation grade sheet for more details. 
+
+I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
+| <25>                      | <7>     | <35>                                | <37>                                  | <36>                                 | <36>                                 |
+| Assignment                | Due Date | D                                   | C                                     | B                                    | A                                    |
+|---------------------------+---------+-------------------------------------+---------------------------------------+--------------------------------------+--------------------------------------|
+| Web Skills Top-up         | <2015-07-09 Thu> | \checkmark                          | \checkmark                            | \checkmark                           | \checkmark                           |
+| Distant Reading           | <2015-07-21 Tue> | \checkmark                          | \checkmark                            | \checkmark                           | \checkmark                           |
+| Spatial History           | <2015-07-30 Thu> |                                     | \checkmark                            | \checkmark                           | \checkmark                           |
+| Aural History             | <2015-08-10 Mon> |                                     |                                       | \check                               | \checkmark                           |
+| Project Proposal          | <2015-08-13 Thu> |                                     |                                       |                                      | \checkmark                           |
+| Competencies Demonstrated |         | Very basic web skills; preliminary exploration of DH methods | Ability to use mapping tools, think critically about their value to history | Intermediate web sklls; thoughtful use of oral history for media-centric storytelling | Capacity to think creatively about how DH methods can enhance historical thinking |
+
+
+* Texts
+The following texts are required and available at the Bookstore:
+[[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]]
+[[zotero://select/items/281947_IPDTIXBH][@perks:2006oral]]
+[[zotero://select/items/0_R25HVIS6][@geddes:2014toward]]
+
+* Course Outline
+** Text, Code, and the Web
+*** Introducing /Digital History/ <2015-06-30 Tue>
+*Class Synopsis:* Introduction to the course, Github, and Markdown. 
+*Readings:* You may want to read some of these as general preparation for this and other history classes:
+- [[zotero://select/items/0_PNA38CTR][@w._caleb_mcdaniel:how]]
+- William Cronon, [[http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf]["Why the Past Matters"]]
+- [[zotero://select/items/0_PC2VXZCN][@cohen:2006becoming]]
+
+*** What the Web Signifies <2015-07-02 Thu>
+We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
+
+*Readings:*
+- Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf
+- [[zotero://select/items/24157_W4W7VESK][@cohen:2008interchange]]
+*In-Class Activity: HTML, CSS, and markdown*
+ 
+*** Abundance and Openness <2015-07-07 Tue>
+One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian. 
+- [[zotero://select/items/24157_JIA76FSS][@rosenzweig:2003scarcity]]
+- [[zotero://select/items/278357_66H494QK][@council:many]]
+- [[zotero://select/items/278357_F5HZ3EV4][@turkel:going]]
+- [[zotero://select/items/278357_KCTKZCAI][@anonymous:learn]]
+
+*In-Class Activity: Evaluating websites*
+
+** Data Driven History
+*** Distant Reading 1  <2015-07-09 Thu>
+Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
+
+*Readings:* 
+- [[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]] through p. 64
+- "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
+*In-Class Activity: Wordles*
+
+*** Distant Reading 2 <2015-07-14 Tue>
+We'll finish up with Moretti, and go on to the work of his student, Matthew Jockers.
+
+*Readings:* 
+- [[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]], ch. 3 to end.  
+-  "Style" and "Nationality" in  [[zotero://select/items/278357_CD6KU842][@jockers:2013macroanalysis]] 
+*In-Class Activity: Voyant Tools*
+
+*** Text as Data, History as Algorithm <2015-07-16 Thu>
+We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
+
+*Readings:* 
+- Stephen Ramsay, "The Hermeneutics of Screwing Around" https://web.archive.org/web/20120611222242/http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf
+- [[zotero://select/items/278357_ZCE7UWN4][@marc_dunkelman:2014what]]
+- [[zotero://select/items/0_BHWWP695][@gibbs:2012hermeneutics]]
+- [[zotero://select/items/0_RZZTIM3D][@seth_van_hooland:cleaning]]
+*In-Class Activity: Tidy Data*
+
+** Maps, Visualization, and History
+*** Spatial History <2015-07-21 Tue>
+Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
+
+*Readings:* 
+- "Rails and Water" and "Gateway City" from [[zotero://select/items/278357_VDFMVXHE][@cronon:1992natures]]
+- lying with maps: http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf
+- http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html
+*In-Class Activity: Mapping with Google*
+
+*** Visualization  <2015-07-23 Thu>
+Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
+
+*Readings:* 
+- Jefferson Bailey and Lily Pregill, ‘[[http://www.jeffersonbailey.com/speak-to-the-eyes-the-history-and-practice-of-information-visualization/][Speak to the Eyes: The History and Practice of Information Visualization]]’, Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
+- Kostiantyn Kucher and Andreas Kerren, ‘[[http://textvis.lnu.se/][Text Visualization Browser: A Visual Survey of Text Visualization Techniques]]’, (2014)
+- Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
+*In-Class Activity: Reading visualizations*
+
+*** Maps Online  <2015-07-28 Tue>
+Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
+
+*Readings:* 
+- "Railways and Agriculture in France and Great Britain" in /Spatial Histories/
+- "The Development, Persistance, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in /Spatial Histories/
+- google earth tutorial: https://geospatialhistorian.wordpress.com/lessons/lesson-1/
+*In-Class Activity: GIS*
+
+** Oral History, Crowdsourcing, and the Promise of the Public Sphere
+*** What's Special about Oral History  <2015-07-30 Thu>
+Oral History has a long tradition; we explore its roots and peculiarities.
+
+*Readings:*
+- "The Voice of the Past" and "What makes Oral History Different" in /The Oral History Reader/
+
+*In-Class Activity: Peer interviews* 
+
+*** Oral History & Remix Culture  <2015-08-04 Tue>
+Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
+
+*Readings:*
+- "Oral History and the Digital Revolution" and "Authoring in Sound" in /The Oral History Reader/
+- [[zotero://select/items/0_VZMTZUHS][@gunkel:2008rethinking]]
+*In-Class Activity: popcorn.js*
+
+*** Citizen History  <2015-08-06 Thu>
+In conclusion, we'll think about the future of the historical enterprise and thei mplications of the techniques we've discussed.  What are the pormises and pitfalls? What do we want history to be? 
+- http://publichistorycommons.org/where-are-the-citizen-historians/
+
+
+# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
+
+
