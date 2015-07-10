@@ -5,6 +5,7 @@ It's not as well-organized as the website,
 
 http://digital.hackinghistory.ca/
 
+
 But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and markdown syntax. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor. My lecture notes can also be accessed here:
 
 http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/
