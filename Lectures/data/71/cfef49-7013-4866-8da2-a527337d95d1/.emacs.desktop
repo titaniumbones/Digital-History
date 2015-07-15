@@ -1,0 +1,631 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jul  7 17:06:01 2015
+;; Desktop file format version 208
+;; Emacs version 25.0.50.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21916 16185 488934 42000) (desktop . "208") "matt@osskil" nil nil ((((font-backend xft x) (font . "-unknown-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "black") (background-color . "white") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 13) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (visibility . t) (client . nowait) (environment "_=/usr/bin/emacsclient" "BYOBU_TIME=%H:%M:%S" "XAUTHORITY=/run/user/1000/gdm/Xauthority" "BYOBU_HIGHLIGHT=\\#DD4814" "XDG_CURRENT_DESKTOP=GNOME" "DISPLAY=:0.0" "XDG_RUNTIME_DIR=/run/user/1000" "WINDOWPATH=2" "BYOBU_PREFIX=/usr" "LESSOPEN=|/usr/bin/lesspipe.sh %s" "BYOBU_ACCENT=\\#75507B" "BYOBU_PAGER=less" "DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MWiqgYhIhn,guid=3b5fb35f96e3e08991c1ff5655915626" "XDG_SESSION_DESKTOP=gnome" "LOGNAME=matt" "BYOBU_LIGHT=\\#EEEEEE" "GNOME_DESKTOP_SESSION_ID=this-is-deprecated" "SHLVL=1" "HOME=/home/matt" "XDG_SEAT=seat0" "SSH_ASKPASS=/usr/bin/ksshaskpass" "BYOBU_WINDOW_NAME=-" "BYOBU_PYTHON=python3" "GDMSESSION=gnome" "GDM_LANG=en_CA.utf8" "LANG=en_CA.utf8" "BYOBU_ULIMIT=ulimit" "XMODIFIERS=@im=ibus" "PWD=/home/matt" "XDG_SESSION_TYPE=x11" "BYOBU_DARK=\\#333333" "HG=/usr/bin/hg" "QT_IM_MODULE=ibus" "DESKTOP_SESSION=gnome" "MAIL=/var/spool/mail/matt" "PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl" "BYOBU_SED=sed" "BYOBU_BACKEND=tmux" "MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins" "MAVEN_OPTS=-Xmx512m" "GIO_LAUNCHED_DESKTOP_FILE=/home/matt/.local/share/applications/emacs.desktop" "BYOBU_DATE=%Y-%m-%d " "USERNAME=matt" "SESSION_MANAGER=local/osskil:@/tmp/.ICE-unix/1528,unix/osskil:/tmp/.ICE-unix/1528" "SSH_AUTH_SOCK=/run/user/1000/keyring/ssh" "BYOBU_DISTRO=Arch Linux" "BYOBU_RUN_DIR=/dev/shm/byobu-matt-gTr02jOf" "USER=matt" "BYOBU_READLINK=readlink" "ANT_HOME=/usr/share/apache-ant" "BYOBU_CONFIG_DIR=/home/matt/.byobu" "ANDROID_SWT=/usr/share/java" "SHELL=/usr/bin/zsh" "XDG_MENU_PREFIX=gnome-" "ANDROID_HOME=/opt/android-sdk" "GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1" "GIO_LAUNCHED_DESKTOP_FILE_PID=31544" "XDG_SESSION_ID=c2" "SSH_AGENT_PID=1546" "_byobu_sourced=1" "XDG_VTNR=2") (sticky) (frameset--id . "A872-184E-5B17-5597") (frameset--mini t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0.0") (explicit-name) (height . 35) (width . 80) (left . 65) (top . 153)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 54) (min-pixel-width-ignore . 54) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 749) (pixel-height . 612) (total-width . 83) (total-height . 34) (normal-height . 1.0) (normal-width . 1.0) (buffer "01-intro.org" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 1586) (start . 712))) (((font-backend xft x) (font . "-unknown-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "black") (background-color . "white") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 13) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (visibility) (frameset--id . "EA57-5D68-C9BD-5DD1") (frameset--mini t . t) (height . 9) (width . 10) (modeline . t) (minibuffer . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 54) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 119) (pixel-height . 144) (total-width . 13) (total-height . 8) (normal-height . 1.0) (normal-width . 1.0) (buffer "04-Distant-Reading-1.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 2939) (start . 1420))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("git" "emailq" "defgroup" "defcustom" "quote" "sol" "b" "counsel" "glob" "open" "width" "noexp" "projec" "fragmen" "mathjax" "hakim.se"))
+(setq register-alist nil)
+(setq file-name-history '("~/src/reveal.js/Gruntfile.js" "~/src/reveal.js/css/theme/template/settings.scss" "/home/matt/src/reveal.js/css/theme/source/solarized.scss" "/home/matt/Dropbox/Work/History/HPDA/Lectures/14-open-source-open-access.org" "/home/matt/Dropbox/Work/History/HPDA/Lectures/13-freedom-openness.org" "/tmp/yaourt-tmp-matt/aur-zotero/zotero.install" "~/Dropbox/Work/Religion/RLG231/Assignments/02-Presentation.org" "~/RLG231/Assignments/02-Presentation.org" "/home/matt/Readme.org" "~/RLG231/Lectures/02-Ancient-Astronomy.org" "~/GTD/Keep-it-safe.org.gpg" "~/src/reveal.js/css/theme/white.css" "/ssh:shimano:/var/www/digital.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:shimano:/var/www/digital.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "~/Dropbox/Work/History/DigitalHistory/test.org" "~/Dropbox/Work/History/DigitalHistory/Assignments/00-Participation.org" "~/Dropbox/Work/History/DigitalHistory/Pages/Lectures.html" "~/Dropbox/Work/History/DigitalHistory/Pages" "~/.emacs.d/elpa/ox-reveal-20150408.831/ox-reveal.el" "/home/matt/Dropbox/Work/History/HPDA/Lectures/02-intro.org" "~/src/org-mode/contrib/lisp/ox-deck.el" "~/src/org-reveal/local.css" "~/RLG231/Lectures/01-what-are-sci-and-rel.org" "~/RLG231/Lectures/01-what-are-sci-and-rel.html" "/home/matt/Dropbox/Work/History/HPDA/Lectures/03-public-sphere.org" "/home/matt/src/org-mode/doc/org" "/home/matt/Dropbox/Work/History/DigitalHistory/Assignments/00-Participation.org" "~/src/org-mode/lisp/ox-odt.el" "~/.emacs.d/Templates/OrgOdtContentTemplate.xml" "~/src/org-mode/etc/styles/OrgOdtContentTemplate.xml" "~/GTD/Reference.org" "/home/matt/morenames.csv" "~/names.csv" "/home/matt/Dropbox/Work/History/HPDA/Lectures/01-intro.org" "~/Dropbox/Work/History/DigitalHistory/His389Syllabus.org" "~/.emacs" "/tmp/yaourt-tmp-matt/aur-mallet/PKGBUILD" "~/RLG231/RLG231Syllabus.org" "~/.emacs.d/organize-my-life.el" "~/src/org-mode/lisp/ox-html.el" "~/RLG231/Lectures/LecturePlans.org" "~/src/zotest/myzotxt.el" "~/src/org-mode/lisp/ox-latex.el" "~/Dropbox/Work/History/DigitalHistory/His389Syllabus.odt" "/ssh:shimano:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:shimano:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "~/.emacs.d/custom.el" "/usr/share/source-highlight/hello" "~/.zshrc" "~/.emacs.d/themes/org bigger-theme.el" "~/src/mwp-beautify-org.el" "~/Downloads/Science,ReligionSyllabus_2014.pdf" "~/zotero/storage/AJ7RV8TK/AlbertaHuco520Syllabus2007.pdf" "/home/matt/.emacs.d/organize-my-life.el" "/home/matt/src/org-mode/lisp/ox-html.el" "/home/matt/src/org-mode/lisp/ox-latex.el" "/tmp/citetest.txt" "/tmp/citetest.org" "/tmp/doc.txt" "/home/matt/Downloads/doc.org" "~/.backup/!home!matt!Dropbox!Work!History!DigitalHistory!His389Syllabus.org.~1~" "" "~/.backup/!home!matt!Dropbox!Work!History!DigitalHistory!His389Syllabus.org.~2~" "/home/matt/src/org-mode/lisp/ox-html.el" "/home/matt/src/org-mode/lisp/ox-ascii.el" "/home/matt/src/org-mode/lisp/org-element.el" "/home/matt/.zotero/zotero/b2oag3bt.default/zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl" "/home/matt/Downloads/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl" "/home/matt/Downloads/chicago-fullnote-bibliography.csl" "/home/matt/Documents/cite/content-formatted.xml" "/home/matt/Documents/cite/content.xml" "/tmp/2015-05-21.txt" "/tmp/2015-05-20.txt" "/home/matt/src/org-mode/doc/Documentation_Standards.org" "/home/matt/RLG231/RLG231Syllabus.org" "/home/matt/src/org-mode/lisp/ox-html.el" "/home/matt/src/org-mode/lisp/ox-latex.el" "/home/matt/src/org-mode/lisp/ox-odt.el" "~/RLG231/RLG231Syllabus.odt" "/tmp/2015-05-19.txt" "/home/matt/stagin/org-html-themes/setup/theme-readtheorg-local.setup" "/home/matt/stagin/org-html-themes/setup/theme-readtheorg.setup" "/home/matt/stagin/org-html-themes/README.org" "/tmp/2015-05-12.txt" "/home/matt/GTD/Keep-it-safe.org.gpg" "/tmp/2015-05-09.txt" "/tmp/2015-05-10.txt" "/tmp/513-1574-uttopo11.tgz" "/home/matt/Dropbox/Work/History/DigitalHistory/His389Syllabus.org" "/tmp/2015-05-07.txt" "/tmp/2015-05-06.txt" "/home/matt/src/org-html-themes/styles/readtheorg/css/readtheorg.css" "/home/matt/src/org-html-themes/styles/bigblow/css/bigblow.css" "/home/matt/src/org-html-themes/setup/theme-bigblow-mwp.setup" "/home/matt/src/org-html-themes/setup/theme-readtheorg-mwp.setup" "/home/matt/src/org-html-themes/setup/theme-readtheorg.setup" "/home/matt/src/org-html-themes/styles/readtheorg/js/readtheorg.js" "/home/matt/src/org-html-themes/setup/theme-readtheorg-local.setup" "/home/matt/src/org-html-themes/styles/bigblow/js/bigblow.js" "/home/matt/src/org-html-themes/setup/theme-bigblow.setup" "/home/matt/src/org-html-themes/setup/theme-bigblow-local.setup" "/tmp/11018825_10202833008344609_9215287435061700612_n.jpg" "/tmp/10650016_10153281073196255_6613257968600758134_n.jpg" "/tmp/2015-05-05.txt" "/tmp/2015-05-03.txt" "/tmp/2015-05-02.txt" "/home/matt/Dropbox/Work/History/DigitalHistory/His389Syllabus.org" "/home/matt/Dropbox/Work/History/HackingHistory/CUPE 3902 Unit 3 Application Form, June 2012 - RLG231.rtf" "/tmp/2015-05-01.txt" "/tmp/table.org" "/tmp/2015-05-01.txt" "/tmp/2015-04-30-1.txt" "/home/matt/Dropbox/Work/History/HackingHistory/CUPE 3902 Unit 3 Application Form, June 2012 - HIS495.rtf" "/tmp/2015-04-30.txt" "/ssh:128.100.160.66:/var/www/relsci.hackinghistory.ca/wp-content/themes/grunterie/css/app.css" "/ssh:128.100.160.66:/var/www/relsci.hackinghistory.ca/wp-content/themes/grunterie/css/style.css" "/ssh:128.100.160.66:/var/www/relsci.hackinghistory.ca/wp-content/themes/grunterie/scss/)site.scss" "/ssh:128.100.160.66:/var/www/relsci.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/relsci.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:" "/home/matt/src/zotest/myzotxt.el" "/home/matt/RLG231/RLG231Syllabus.org" "/tmp/2015-04-28.txt" "/home/matt/src/django_tutorial/polls/models.py" "/home/matt/src/django_tutorial/django_tutorial/settings.py" "/home/matt/.local/share/gnome-shell/extensions/topIcons@adel.gadllah@gmail.com/metadata.json" "/sudo::/etc/pacman.conf" "/tmp/README.md" "/tmp/0001-Quick-and-dirty-PCRE-8.34-compat-patch.patch" "/home/matt/GTD/Reference.org_archive" "/home/matt/GTD/archive.org" "/home/matt/Downloads/annotation-debud/[Content_Types].xml" "/home/matt/cbt-temp.org.gpg" "/home/matt/cbt-temp.org" "/home/matt/Music/Guided Mindfulness Meditation Series 3 - Jon Kabat-Zinn/A Note From Jon Kabat-Zinn.txt" "/home/matt/Music/Guided Mindfulness Meditation Series 3 - Jon Kabat-Zinn/How to use your Guided Mindfulness Meditation Practice CDs.txt" "/home/matt/GTD/Self-Improvement.org.gpg" "/ssh:128.100.160.66:/var/www/cabbagetown.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/cabbagetown.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/header.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/src/org-html-themes/setup/bigblow-local.setup" "/ssh:128.100.160.66:/var/www/campbell.hackinghistory.ca/wp-content/themes/grunterie/page-homepage.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/lib/FlexSlider/slider.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:" "/tmp/0001-Quick-and-dirty-PCRE-8.34-compat-patch.patch" "/home/matt/GTD/Self-Improvement.org.gpg" "/home/matt/GTD/CBT-and-Meditation.org.gpg" "/home/matt/GTD/Reference.org" "/home/matt/GTD/ref-what.org" "~/src/org-html-themes/styles/bigblow/js/sticky-table-header.js" "/home/matt/src/org-html-themes/setup/bigblow-local.setup" "/tmp/self.html" "/home/matt/src/org-html-themes/styles/bigblow/css/bigblow.css" "/home/matt/src/org-html-themes/styles/bigblow/js/bigblow.js" "/home/matt/src/org-html-themes/setup/rtd.setup" "/ssh:128.100.160.66:/var/www/culture.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/HackingHistory/posts/23-customizingmenus.org" "/home/matt/GTD/Self-Improvement.org.gpg" "/home/matt/src/org-html-themes/styles/bigblow/js/sticky-table-header.js" "/home/matt/src/org-html-themes/sticky-table.header.js" "/home/matt/src/org-html-themes/styles/bigblow/css/bigblow.css" "/home/matt/src/org-html-themes/setup/bigblow-local.setup" "/home/matt/GTD/diary.org.gpg" "/home/matt/Documents/test2/content.xml" "/home/matt/Documents/test/content.xml" "/home/matt/.config/baloofilerc" "/ssh:128.100.160.66:/var/www/campbell.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/header.php" "/home/matt/HackingHistory/posts/22-media-queries.org" "/home/matt/HackingHistory/posts/crunch-time.org" "/home/matt/GTD/diary.org.gpg" "/home/matt/GTD/CBT-plus-Meditation.org.gpg" "/home/matt/GTD/CBT-and-Meditation.org.gpg" "/home/matt/cbt-temp.org.gpg" "/home/matt/cbt-temp.org" "/home/matt/cpt-temp.org" "/home/matt/HackingHistory/posts/crunch-time.org" "/home/matt/.emacs.d/org2blog/org2blog.el" "/home/matt/.emacs.d/org2blog/ox-wp.el" "/home/matt/GTD/CBT-plus-Meditation.org.gpg" "/home/matt/Documents/Mika-3.txt" "/home/matt/Documents/Mika-2.txt" "/home/matt/GTD/CBT-plus-Meditation.org.gpg" "/home/matt/.backup/!home!matt!GTD!diary.org.gpg.~4~" "/home/matt/.backup/!home!matt!GTD!diary.org.gpg.~2~" "/home/matt/GTD/diary.org" "/home/matt/Documents/Mika-1.pjg" "/home/matt/Documents/mika-pics.eml" "/home/matt/functions.php" "/ssh:128.100.160.66:/var/www/culture.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/culture.hackinghistory.ca/wp-content/themes/grunterie/footer.php" "/ssh:128.100.160.66:/var/www/culture.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/lib/clean.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/home/matt/.emacs.d/better-defaults.el" "/home/matt/.emacs" "~/.backup/" "/home/matt/.backup/ntemp" "~/HackingHistory/posts/wordpress-typography.org" "/sudo::/etc/udev/rules.d/80-iwlwifi.rules" "/home/matt/GTD/diary.org.gpg" "/home/matt/GTD/diary.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/HackingHistory/posts/20-learning-about-layout.org" "/home/matt/functions.php" "/home/matt/testgis.php" "/home/matt/zotero/storage/N59KST7K/serverComponent.php" "/home/matt/.emacs.d/webstuff.el" "/home/matt/zotero/storage/N59KST7K/serverComponent.php" "/home/matt/HackingHistory/posts/20-learning-about-layout.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/twentyfourteen/content-featured-post.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/slider.php" "/ssh:128.100.160.66:/var/www/cabbategown.hackinghistory.ca/wp-content/themes/grunterie/home.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/georefsandbox/index.html" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/plugins/geo-mashup-custom/custom-googlev3.js" "/home/matt/HackingHistory/posts/even-more-about-overlays.org" "/home/matt/HackingHistory/posts/more-about-overlays.org" "/home/matt/Downloads/neworg.org" "~/Dropbox/Work/iSchool/" "/home/matt/Dropbox/Work/iSchool/proposal.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/plugins/geo-mashup-custom/custom-googlev3.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/plugins/geo-mashup-custom/custom-mxn.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/plugins/geo-mashup-custom/geo-mashup-custom.php" "/home/matt/georefsandbox/model-gtiles/index.html" "/home/matt/georefsandbox/goad-gtiles/index.html" "/home/matt/Maptiler/goad-atlas-geotiff/googlemaps.html" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/oranges.php" "/home/matt/HackingHistory/posts/more-about-overlays.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-full.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-lemons.php" "/home/matt/HackingHistory/posts/custom-post-types.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/single.php" "/home/matt/bin/gdalinfo.py" "/home/matt/bin/coordtransform4.py" "/usr/bin/gdalinfo" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/functions.php" "/home/matt/new.html" "/ssh:shimano:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:" "/usr/bin/gdal2tiles.py" "/home/matt/bin/tmstoxyz.sh" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/tmp/.fr-dGWUec/VI-Plate38-1923.JGwx" "/tmp/.fr-NEVmmN/VI-Plate38-1923.txt" "/tmp/.fr-CvFDZ4/Leaflet_Example/maps/leaf-demo.js" "/tmp/.fr-CGVWm6/Leaflet_Example/maps/leaf-demo.js" "/home/matt/georefsandbox/leaflet.html" "/home/matt/HackingHistory/Images/my-geo-kml.kml" "/tmp/80636.kml" "/home/matt/bin/coords2.txt" "/home/matt/bin/coords2.py" "/home/matt/bin/coords.py" "/home/matt/testgis.php" "/home/matt/.#test.php" "/home/matt/duff-grove.kmz" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/uploads/2015/02/duff-orig.kmz" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:" "/home/matt/Dropbox/Work/History/HackingHistory/Images/goad-atlas-geotiff/doc.kml" "/home/matt/Dropbox/Work/History/HackingHistory/Images/goad-atlas-geotiff/tilemapresource.xml" "/tmp/.fr-31QbBV/DEBIAN/control" "/home/matt/ency.enc" "/home/matt/ency.gpg" "/home/matt/GTD/encrypted.org.gpg" "/home/matt/dg-plan-1913.kml" "/home/matt/goad-1913.kml" "/tmp/.fr-tJGn2k/no google account/Robarts.kml" "/home/matt/src/zotest/phantompdf.js" "/home/matt/src/zotest/extract.js" "/home/matt/src/zotest/hello.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/lib/FlexSlider/" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/" "/home/matt/temp.kmz" "/home/matt/HackingHistory/posts/choosing-a-map-plugin.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/plugins/geo-mashup-custom/custom-mxn.js" "/tmp/.fr-i53RDQ/geo-mashup-custom/geo-mashup-custom.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-admin/includes/admin.php" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-admin/admin-functions.php" "/home/matt/duff-grove.kmz" "/home/matt/guff-grove-kml.kml" "/tmp/macky-alt.kml" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/slider.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/home/matt/HackingHistory/His495Outline.org" "/ssh:128.100.160.66:/var/www/2014.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:" "/home/matt/.emacs.d/custom.el" "~/HackingHistory/Images/childhood-exhibit-mockup.jpeg" "/home/matt/HackingHistory/posts/test-code.org" "~/HackingHistory/posts/designing-a-slider.org" "/home/matt/bin/extractpdf.py" "/home/matt/src/pdf.js/examples/helloworld/hello.js" "/home/matt/src/pdf.js/examples/helloworld/index.html" "/home/matt/src/pdf.js/examples/helloworld/README.md" "/home/matt/INF1502/Readings/Bruno Latour_2007_Reassembling the Social.pdf" "/home/matt/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh" "/home/matt/src/zotest/testodt/content.xml" "/home/matt/.emacs.d/elpa/zotxt-20150131.1254/org-zotxt.el" "/home/matt/.emacs.d/elpa/zotxt-20150131.1254/zotxt.el" "/home/matt/src/zotest/testbib.org" "/home/matt/src/zotest/testbib.html" "/home/matt/testbib-z.html" "/home/matt/HackingHistory/His495outline-zotero.org" "/home/matt/.emacs.d/organize-my-life.el" "~/.zotero/zotero/b2oag3bt.default/extensions/zotxt@e6h.org/bootstrap.js" "/home/matt/.emacs.d/custom.el" "/home/matt/src/zotest/testbib.html" "/home/matt/.emacs.d/elpa/autopair-20140825.427/autopair.el" "/home/matt/src/zotest/testbib.html" "/home/matt/.emacs.d/elpa/zotxt-20150128.1948/zotxt.el" "/home/matt/.emacs.d/elpa/zotxt-20150128.1948/org-zotxt.el" "/home/matt/.emacs.d/elpa/zotxt-20150127.2252/zotxt.el" "/home/matt/src/zotest/myzotxt.el" "/home/matt/Dropbox/Work/History/HackingHistory/Labs/13-SASS-review.run.xml" "/home/matt/Dropbox/Work/History/HackingHistory/Labs/13-SASS-review.org" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/src/orgpaper/default_packages.org" "/home/matt/src/testing-orgpaper.org" "/home/matt/src/orgpaper/research-toolkit.org" "/home/matt/src/orgpaper/orgpapers.org" "/home/matt/src/zotest/testbib.html" "/home/matt/src/zotest/myzotxt.el" "/home/matt/src/zotest/testbib.org" "/home/matt/.emacs.d/elpa/zotxt-20150127.2252/org-zotxt.el" "/home/matt/.emacs.d/elpa/zotxt-20150127.2252/zotxt.el" "/home/matt/.emacs.d/elpa/zotxt-20150127.2252/org-zotxt.el" "/home/matt/Downloads/notes-on-citation.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/lib/FlexSlider/jquery.flexslider-min.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/lib/FlexSlider/jquery.flexslider.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/cruft.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/lib/FlexSlider/slider.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/slider.php" "/home/matt/.cache/.fr-ynDJoS/wonderplugin-gallery/wonderplugingallery.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/themes/grunterie/sidebar.php" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/plugins/wonderplugin-gallery/engine/wonderplugingallery-orig.js" "/ssh:128.100.160.66:/home/matt/test.js" "/ssh:128.100.160.66:/var/www/childhood.hackinghistory.ca/wp-content/plugins/wonderplugin-gallery/engine/wonderplugingallery-demin.js" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/index.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-simple.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-full.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/content.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/sidebar.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:" "/home/matt/.emacs.d/elpa/zotxt-20150125.1851/org-zotxt.el" "/home/matt/src/citeproc-js/src/formats.js" "/home/matt/FromRoke/.emacs.d/org/lisp/org-mode/lisp/org-bbdb.el" "/home/matt/Dropbox/GTD/Reference.tex" "/home/matt/.emacs.d/elpa/zotxt-20150125.1851/zotxt.el" "/home/matt/.cache/.fr-xJMODX/content.xml" "/home/matt/Documents/content.xml" "/home/matt/.emacs.d/elpa/zotxt-20150125.1851/org-zotxt.el" "/tmp/0xDB78729B.asc" "/tmp/keytabs.sh" "/home/matt/GTD/msg.asc" "/home/matt/GTD/msg.gpg" "/tmp/0xEFA88C62.asc" "/home/matt/HackingHistory/posts/historical-maps.org" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-full.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/home/matt/src/org-reveal/ox-reveal.el" "/home/matt/HackingHistory/Labs/16-copyright.org" "/home/matt/Dropbox/Work/History/HPDA/Lectures/15-copyright-2015.org" "/home/matt/Dropbox/Work/History/HPDA/Lectures/15-copyright.org" "/home/matt/NewOne/Session Notes and Handouts/02-turing-and-computing.html" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/style.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/app.scss" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/content.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/functions.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/content.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page.php" "/ssh:128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/page-full.php" "/ssh:root@128.100.160.66:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "~/HackingHistory/Images/komodo-open.png" "~/HackingHistory/Images/komodo-prefs.png" "/home/matt/HackingHistory/Labs/13-SASS-review.org" "/home/matt/HackingHistory/Labs/.#13-SASS-review.org" "/home/matt/HackingHistory/Labs/13-SASS-review.org" "/home/matt/HackingHistory/Labs/06-SASS.org" "/home/matt/GTD/.org2blog.org" "/home/matt/Downloads/gc_Winter-2015-INF1502H-S-LEC0101_fullgc_2015-01-07-09-02-23.xls" "/home/matt/HackingHistory/Assignments/essay-assignment.org" "/ssh:raspberrypi.lan:/etc/samba/smb.conf" "/home/matt/.ssh/known_hosts" "/home/matt/src/squeezy/squeezy" "/home/matt/.squeezy.conf" "/home/matt/src/squeezy/squeezy.conf" "/sudo::/etc/cups/cupsd.conf" "/home/matt/Downloads/README" "/sudo::/etc/X11/xorg.conf.d/50-synaptics.conf" "/home/matt/.cache/.fr-O86PDE/topicons-25/extension.js" "/home/matt/.cache/.fr-rwwrkV/topicons-25/metadata.json" "/home/matt/INF1501/Syllabus.org" "/home/matt/INF1501/Notes/04-STS-classics.org" "/home/matt/INF1501/Notes/03-intro-mynotes.org" "/home/matt/INF1501/Notes/02-mechanism.org" "/home/matt/INF1501/plans.org" "/home/matt/scratch.js" "/home/matt/.cache/.fr-idsy4a/DocumentList.xml" "/home/matt/.cache/.fr-L55ptB/DocumentList.xml" "/home/matt/Downloads/annotation-debud/word/comments.xml" "/home/matt/Downloads/annotation-debud/odt/content.xml" "/home/matt/Downloads/annotation-debud/word/comments.xml" "/home/matt/.cache/.fr-X37YC8/DocumentList.xml" "/home/matt/.cache/.fr-IDAwkz/DocumentList.xml" "/sudo::/etc/pacman.conf" "/home/matt/.emacs.d/elpa/enwc-1.0/enwc-nm.el" "/home/matt/.emacs.d/elpa/enwc-1.0/enwc-setup.el" "/home/matt/src/cgm-remote-monitor/env.js" "/home/matt/.bashrc" "/home/matt/.emacs" "/home/matt/.bashrc" "/home/matt/,bashrc" "/home/matt/GTD/Reference.odt" "/home/matt/test.org" "/home/matt/src/org-reveal/ox-reveal.el" "/home/matt/Dropbox/Work/History/HackingHistory/Assignments/essay-assignment.org" "/home/matt/Dropbox/Work/History/HackingHistory/Assignments/ProjectProposal.org" "/sudo::/etc/systemd/journald.conf" "/home/matt/.emacs" "/home/matt/INF1501/questionnaire.org" "/home/matt/src/reveal.js/css/theme/solarized.css" "/home/matt/NewOne/Plenaries/12-stories-consent.html" "~/NewOne/Plenaries/risk-matrix.jpeg" "/home/matt/NewOne/Plenaries/12-stories-consent.html" "/home/matt/src/org-reveal/Readme.org" "/home/matt/src/org-reveal/ox-reveal.el" "/home/matt/NewOne/Plenaries/12-stories-consent.org" "/home/matt/Dropbox/Work/History/HPDA/Lectures/07-oral-history.org" "/sudo::/etc/default/tlp" "/ssh:root@192.168.1.1:/etc/config/network" "/sudo:root@osskil:/etc/dhcpd.conf" "/sudo:root@osskil:/etc/dhcpcd.conf" "/sudo::/etc/dhcpd.conf-ex" "/home/matt/.emacs.d/elpa/gnomenm-20140308.938/gnomenm.el" "/home/matt/src/emacs-kv/kv.el" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/Dropbox/demosite/posts/testsreaew.org" "/home/matt/Dropbox/demosite/conf.py" "/home/matt/.emacs.d/organize-my-life.el" "/home/matt/Documents/test/content.xml" "/home/matt/Documents/test/word/comments.xml" "/home/matt/Dropbox/Work/INF1501/Student Work/GeraldineChambers-INF1501/Point of ViewCT.rtf" "~/src/org-edu-html/oeh-test.org" "/home/matt/src/org-edu-html/org-edu-html.el" "/home/matt/GTD/Reference.org" "/tmp/TextDocuments.java" "/tmp/BookmarkInsertion.java" "/home/matt/bin/concat-dossier-pdf.sh" "/home/matt/.emacs" "/home/matt/dfd" "/home/matt/bin/concat-dossier-pdf.sh" "/tmp/report.Rmd" "/run/media/matt/Overflow/HomeUserBackup/matt" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/Screenshots/list-of-screenshots-to-get.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/what-you-need-to-know-about-javasvript.org" "/home/matt/HackingHistory/posts/10-history-and-visualization.org" "/home/matt/HackingHistory/posts/10-history-and-visualization.html" "/home/matt/HackingHistory/Assignments/STA-04-maps-2012.org" "/home/matt/.emacs.d/org2blog/org2blog.el" "~/Pictures/Screenshot from 2014-11-11 07:53:22.png" "/home/matt/HackingHistory/Assignments/STA-04-maps.org" "/home/matt/HackingHistory/Assignments/STA-04-maps-2012.org" "/home/matt/HackingHistory/posts/10-history-and-visualization.org" "/home/matt/.config/gtk-3.0/gtk.css" "/ssh:root@shimano:/etc/apache2/sites-available/005-whiteboard.conf" "/ssh:root@shimano:/etc/apache2/sites-available/010-whiteboard.conf" "/ssh:root@shimano:/etc/apache2/sites-available/010-oralhistorydh.conf" "/ssh:root@shimano:/etc/apache2/010-oralhistorydh.conf" "/ssh:root@shimano:/root/.ssh/authorized_keys" "/home/matt/Dropbox/Work/History/HPDA/Projects/what-you-need-to-know-about-javasvript.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/Popcorn.org" "/home/matt/Dropbox/Work/History/Grants/CRIF/CRIF.org" "/ssh:root@shimano:/etc/apache2/010-oralhistorydh.conf" "/home/matt/src/org-reveal/ox-reveal.el" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/org-reveal-demo.org" "~/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/Teaching-dossier.org" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/.#.#Teaching-dossier.org" "/home/matt/Dropbox/Work/History/HPDA/Lectures/03-public-sphere.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/Generating-HTML-Essays.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/more-popcorn.org" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/Screenshots/list-of-screenshots-to-get.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/more-popcorn.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/what-you-need-to-know-about-javasvript.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/QuickTips.org" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/Submitting-Final-Projects.org" "/home/matt/Dropbox/Work/History/HPDA/Projects/QuickTips.org" "/home/matt/Dropbox/Work/History/HPDA/timeline-notes.org" "/home/matt/HackingHistory/Assignments/STA-04-maps.org" "/home/matt/HackingHistory/Assignments/ClassProjectGuidelines.org" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/matt@osskil.lan.14285:1414849641" "/home/matt/Dropbox/Work/History/bureaucracy/Matt-Promotion-to-SL2/.#Teaching-dossier.org" "/home/matt/Dropbox/GTD/Reference.org" "~/HackingHistory/" "/home/matt/Dropbox/Work/History/bureaucracy/Promotion/Teaching-dossier.org" "/home/matt/.fonts.conf" "/home/matt/.authinfo.gpg" "/home/matt/HackingHistory/His495Outline.org" "~/HackingHistory/Labs/lab-08-personas.org" "/ssh:shimano:/var/www/daniel.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:shimano:/var/www/jeremyc.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:shimano:/var/www/mike.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/ssh:shimano:/var/www/cameron.hackinghistory.ca/wp-content/themes/grunterie/scss/_settings.scss" "/home/matt/NewOne/Plenaries/plenary-02-global-citizenship-notes.org" "/home/matt/.ssh/known_hosts" "~/HackingHistory/Images/boxmodel.png" "/home/matt/HackingHistory/Labs/lab-02-css.org" "/home/matt/harthouse.hackinghistory.ca/.htaccess" "/sudo:osskil.lan:/etc/hosts" "/home/matt/Dropbox/GTD/Reference.org" "/home/matt/Dropbox/Work/INF1501/Syllabus.org" "/home/matt/NewOne/Outline.org" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/Dropbox/Work/NewOne/Syllabus/Syllabus-draft.org" "/home/matt/Dropbox/GTD/diary.org.gpg" "/home/matt/Dropbox/GTD/diary.org" "~/.local/share/applications/wine/Programs/SketchUp 2014/SketchUp.desktop" "/home/matt/.emacs.d/custom.el" "/home/matt/HackingHistory/His495Outline.org" "/home/matt/new.org" "/home/matt/Dropbox/Work/Talks/dig-storytelling-new.org" "/home/matt/src/org-mode/lisp/ox-odt.el" "/home/matt/Dropbox/FreeGeek/.#CurriculumDevelopment.org" "/home/matt/.emacs" "/home/matt/t" "/home/matt/Dropbox/Work/Upcycle/Schools/Scratch/Syllabus.org" "/home/matt/Dropbox/Work/UseValue/ProgrammingClasses/Scratch.org" "/ssh:www-data@shimano:/var/www/ohm.hackinghistory.ca/wp-content/themes/required-foundation/stylesheets/offcanvas.css" "/home/matt/testagain.html" "/ssh:www-data@shimano:/var/www/ohm.hackinghistory.ca/wp-content/themes/required-starter/functions.php" "/ssh:www-data@shimano:/var/www/parkdale.hackinghistory.ca/wp-content/themes/required-starter/stylesheets/app.css" "/home/matt/Dropbox/Work/Talks/digital-assignments-2.org" "/home/matt/Dropbox/GTD/Reference.org" "/home/matt/.emacs.d/org2blog/README.org" "/home/matt/.emacs.d/org2blog/org2blog.el" "/home/matt/.emacs.d/organize-my-life.el" "/home/matt/src/writers-room/org-writers-room.el" "/home/matt/src/writers-room/owr-helper.el" "/home/matt/.emacs" "/home/matt/src/org-mode/lisp/org-inlinetask.el" "/home/matt/test.org" "/home/matt/src/expand-region.el/expand-region.el" "/home/matt/src/writers-room/owr-helper.el" "/home/matt/src/writers-room/test4.org" "/home/matt/src/writers-room/test2.org" "/home/matt/src/expand-region.el/the-org-mode-expansions.el" "/home/matt/test.html" "/home/matt/src/writers-room/org-writers-room.el" "/home/matt/test.org" "/home/matt/test.el" "/home/matt/src/writers-room/ *Minibuf-11*" "/home/matt/src/expand-region.el-upstream/features/org-mode-expansions.feature" "/home/matt/src/expand-region.el/features/fgallina-python-el-expansions.feature" "/home/matt/src/expand-region.el/features/org-mode-expansions.feature" "/home/matt/src/expand-region.el/features/er-basic-expansions.feature" "/home/matt/src/expand-region.el/features/html-mode-expansions.feature" "/home/matt/src/expand-region.el/the-org-mode-expansions.el" "/home/matt/Dropbox/GTD/test.html" "/home/matt/Dropbox/GTD/Collect.org" "/home/matt/.emacs.d/elpa/expand-region-20140127.112/cc-mode-expansions.el" "/home/matt/.emacs.d/site-lisp/magnarsemacsd/key-bindings.el" "~/.emacs.d/site-lisp/magnarsemacsd/sane-defaults.el" "~/.emacs.d/appearance.el" "~/test.js" "~/.emacs.d/site-lisp/magnarsemacsd/appearance.el" "~/.emacs.d/site-lisp/magnarsemacsd/setup-package.el" "~/.emacs.d/site-lisp/magnarsemacsd/init.el" "~/test.js" "/home/matt/.emacs.d/" "/home/matt/.emacs.d/.emacs.desktop" "/home/matt/test.html" "/home/matt/src/magnarsemacsd/site-lisp/s/s.el" "/home/matt/src/magnarsemacsd/key-bindings.el" "~/src/magnarsemacsd/defuns/buffer-defuns.el" "~/.emacs.d/better-defaults.el" "~/test.html" "~/src/TimelineJS-2.25/source/js/VMM.Timeline.js" "~/test.js" "/home/matt/Downloads/auto-complete-1.3.1/t" "~/test.js" "/home/matt/Downloads/auto-complete-1.3.1/t" "~/.emacs.d/" "~/Downloads/auto-complete-1.3.1/etc/install.el" "~/jest.js" "~/test.el" "~/jest.js" "~/.emacs.d/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/HPDA/Lectures/01-intro.org"
+  "01-intro.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1586
+  '(1586 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1908 1448 1564 2172 1935 1575 1988))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Lectures/04-Distant-Reading-1.org"
+  "04-Distant-Reading-1.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  2939
+  '(861 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (795 5364 2404 1629 5364 1746 1746 1673 5364 4494 3364 4076 2691 2124 2404 772))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-mode/lisp/ox-odt.el"
+  "ox-odt.el"
+  'emacs-lisp-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode paredit-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  57537
+  '(58099 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode . t) (buffer-file-coding-system . prefer-utf-8-unix) (fill-column . 70))
+  '((mark-ring (39558 34657 34331 34593 34593 34593 34331 13739 34328 1 54857 58098 58101 58883 58883 57537))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/reveal.js/css/theme/template/theme.scss"
+  "theme.scss"
+  'sass-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  2197
+  '(2126 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "template"
+  'dired-mode
+  '(abbrev-mode yas-minor-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  347
+  '(nil nil)
+  t
+  '("/home/matt/src/reveal.js/css/theme/template/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/src/reveal.js/css/theme/source/matt.scss"
+  "matt.scss"
+  'sass-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  1
+  '(1239 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (945 1417 1239))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/reveal.js/css/theme/template/settings.scss"
+  "settings.scss"
+  'sass-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  706
+  '(428 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/src/reveal.js/Gruntfile.js"
+  "Gruntfile.js"
+  'js2-mode
+  '(abbrev-mode yas-minor-mode highlight-symbol-mode auto-complete-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  1431
+  '(110 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Lectures/03-Plato-to-Aristotle.org"
+  "03-Plato-to-Aristotle.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  406
+  '(1672 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1672 1749 1749 1672 999 6294 531 507 1 8203 20 2635 2510 2510 632 557))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/His389Syllabus.org"
+  "His389Syllabus.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  9970
+  '(14327 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (659 14327 7184 13877 7697 2847 745 590 644 1007 1369 615 659 14327 7691 9970))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Lectures/LectureOutlines.org"
+  "LectureOutlines.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  34909
+  '(26957 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (26550 26534 26789 14300 1 33595 28567 28568 19435 21299 29234 29234 27878 27878 27665 291))))
+
+(desktop-create-buffer 208
+  "/home/matt/GTD/Reference.org"
+  "Reference.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  625
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/RLG231Syllabus.org"
+  "RLG231Syllabus.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  5789
+  '(743 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (389 352 7001 4995 352))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Lectures/02-significance-web.org"
+  "02-significance-web.org<2>"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1
+  '(2319 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1000 701 13461 2706 10117 12289 6773 6624 2319 1 2480 2319 2480 2319 2319 2319))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/HPDA/Lectures/14-open-source-open-access.org"
+  "14-open-source-open-access.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1167
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/HPDA/Lectures/13-freedom-openness.org"
+  "13-freedom-openness.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1527
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/HPDA/Lectures/02-intro.org"
+  "02-intro.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  2287
+  '(2108 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (2287))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Assignments/Presentation-Schedule.org"
+  "Presentation-Schedule.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1167
+  '(1553 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1553 1553))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Lectures/LecturePlans.org"
+  "LecturePlans.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  276
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-emacs-unix) (truncate-lines))
+  '((mark-ring (1 1 1))))
+
+(desktop-create-buffer 208
+  "/home/matt/.emacs.d/elpa/ox-reveal-20150408.831/ox-reveal.el"
+  "ox-reveal.el"
+  'emacs-lisp-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode paredit-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  7888
+  '(1481 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (32482 1181 16422 22182 1 7985 32482))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Lectures/01-what-are-sci-and-rel.org"
+  "01-what-are-sci-and-rel.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1
+  '(2227 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-emacs-unix) (truncate-lines))
+  '((mark-ring (892 584 1009 732 692 579 692 1006 692 567 1007 1009 618 689 765 731))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/Marking-Scheme-Amendment-Proposal.org"
+  "Marking-Scheme-Amendment-Proposal.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  5885
+  '(5812 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5476 5476 5476 5476 3156 271 977 308 5476 5476 5476 5750 5812 5812 5884 5885))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/02-Presentation.org"
+  "02-Presentation.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  4149
+  '(2140 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (3495 1482 481 4149 4149 4149 4149 4149 4149 4149 4149 4149 4149 4149 4149 4149))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-reveal/Readme.org"
+  "Readme.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  9213
+  '(11437 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (786 13))))
+
+(desktop-create-buffer 208
+  "/home/matt/GTD/Keep-it-safe.org.gpg"
+  "Keep-it-safe.org.gpg"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1080
+  '(1067 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1047 1057 1060 1057 1047))))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Assignments/00-Participation.org"
+  "00-Participation.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  4730
+  '(2756 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (3058))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/deck.js/themes/style/swiss.scss"
+  "swiss.scss"
+  'sass-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  167
+  '(436 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (167))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/reveal.js/css/theme/white.css"
+  "white.css"
+  'css-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Assignments/00-Participation.org"
+  "00-Participation.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  519
+  '(5006 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (6829 6560 6462 6179 6651 5006 754 767))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Assignments/01-web-skills.org"
+  "01-web-skills.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  312
+  '(543 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (2195 2014 1505 1460 1386 1284))))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/Assignments.org"
+  "Assignments.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode org2blog/wp-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  164
+  '(164 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (164))))
+
+(desktop-create-buffer 208
+  nil
+  "Assignments"
+  'dired-mode
+  '(abbrev-mode yas-minor-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  851
+  '(nil nil)
+  t
+  '("/home/matt/Dropbox/Work/Religion/RLG231/Assignments/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-mode/contrib/lisp/ox-deck.el"
+  "ox-deck.el"
+  'emacs-lisp-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode paredit-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  14685
+  '(15375 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode . t) (buffer-file-coding-system . prefer-utf-8-unix) (fill-column . 70))
+  '((mark-ring (14284 14712 14716 11691 2945 14685))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh"
+  "vkextract_annotations_to_orgmode_snippet.sh"
+  'sh-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  2081
+  '(2106 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1996 1996 1917 1319 59))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-mode/doc/org"
+  "org"
+  'fundamental-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  453823
+  '(95831 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode . t) (buffer-file-coding-system . utf-8-unix) (fill-column . 70))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/matt/.emacs.d/Templates/OrgOdtContentTemplate.xml"
+  "OrgOdtContentTemplate.xml"
+  'nxml-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  20967
+  '(1790 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-mode/etc/styles/OrgOdtContentTemplate.xml"
+  "OrgOdtContentTemplate.xml"
+  'nxml-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  4203
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode . t) (buffer-file-coding-system . utf-8-unix) (fill-column . 70) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "RLG231"
+  'dired-mode
+  '(abbrev-mode yas-minor-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  235
+  '(nil nil)
+  t
+  '("/home/matt/Dropbox/Work/Religion/RLG231/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "Religion"
+  'dired-mode
+  '(abbrev-mode yas-minor-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  225
+  '(nil nil)
+  t
+  '("/home/matt/Dropbox/Work/Religion/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode paredit-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  23563
+  '(24030 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (case-fold-search . t))
+  '((mark-ring (23888 23902 24029 23888 1 23563))))
+
+(desktop-create-buffer 208
+  "/home/matt/src/org-mode/lisp/ox-html.el"
+  "ox-html.el"
+  'emacs-lisp-mode
+  '(abbrev-mode yas-minor-mode auto-complete-mode paredit-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  113507
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode . t) (buffer-file-coding-system . prefer-utf-8-unix) (fill-column . 70))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/org/.org2blog.org"
+  ".org2blog.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode org-indent-mode flyspell-mode magit-auto-revert-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Assignments/01-web-skills.odt"
+  "01-web-skills.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  187
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/00-Participation.odt"
+  "00-Participation.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  187
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "alfred_ZotQuery"
+  'dired-mode
+  '(abbrev-mode yas-minor-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  234
+  '(nil nil)
+  t
+  '("/home/matt/src/alfred_ZotQuery/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/02-Presentation.odt"
+  "02-Presentation.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  187
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/Religion/RLG231/Assignments/Marking-Scheme-Amendment-Proposal.odt"
+  "Marking-Scheme-Amendment-Proposal.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  187
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/RLG231/Assignments/Presentation-Schedule.odt"
+  "Presentation-Schedule.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  187
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/mika-passport.pdf"
+  "mika-passport.pdf"
+  'doc-view-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  1
+  '(nil nil)
+  t
+  '((page . 1) (slice))
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "*info*"
+  'Info-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  1445218
+  '(1445225 nil)
+  t
+  '("/usr/share/info/emacs" "Easy Customization" nil)
+  '((tab-width . 8) (buffer-file-coding-system . utf-8-unix) (case-fold-search . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/matt/Dropbox/Work/History/DigitalHistory/Lectures/04-Distant-Reading-1.odt"
+  "04-Distant-Reading-1.odt"
+  'archive-mode
+  '(abbrev-mode yas-minor-mode undo-tree-mode global-auto-revert-mode subword-mode guide-key-mode helm-mode anzu-mode magit-auto-revert-mode)
+  169
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
