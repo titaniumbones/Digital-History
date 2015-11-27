@@ -1,0 +1,264 @@
+#+BLOG: dig
+#+POSTID: 312
+#+DATE: [2015-07-21 Tue 13:48]
+* Spatial History with Google Maps
+:PROPERTIES:
+:ID:       o2b:c9c77764-7451-42da-96d0-e20ae838551b
+:POST_DATE: [2015-07-20 Mon 22:49]
+:POSTID:   287
+:BLOG:     dig
+:END:
+** Google Maps and Spatial History
+
+Today in class we discussed /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
+
+Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
+
+Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
+** Read this part! Follow the links! 
+Today's exercise is also something of a test.  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
+- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we saw briefly in the first class, and
+  using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
+
+The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the newly-released [[https://atom.io/][Atom Code Editor]].  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
+
+** What is a GIS?
+:PROPERTIES:
+:ID:       o2b:29ea8244-dab2-47a5-abae-7aac7fdcabca
+:POST_DATE: [2015-07-20 Mon 22:53]
+:POSTID:   291
+:BLOG:     dig
+:END:
+GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
+
+The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]], that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a /simplified projection/ of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images /commensurate/ with modern, satellite-derived maps.
+
+Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
+http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
+
+** Controlling Google Maps
+For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
+
+#+BEGIN_ASIDE
+An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  
+#+END_API
+
+You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
+
+** Using Markdown
+It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
+
+#+BEGIN_SRC markdown
+# one or more '#' marks indicates a headline
+
+### this one is "level 3"
+
+*a single asterisk is emphasis, or italics*
+
+**two are strong, or bold**
+
+An empty line separates paragraphs.
+
+> blockquotes are made with angle brackets
+> like this
+
+#+END_SRC
+
+You can also mix HTML in with markdown and it will generally render perfectly well. This is important for us because we have to create some ~<div>~ elements, which markdown can't do for us.
+
+While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
+
+** The Exercise
+Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
+
+** The code
+*** Javascript
+I have made the Javascript as simple as I can. There are more efficient and interesting ways to do this, but they are a little more complex. To make your markers -- and to re-centre your map -- you will need to modify the Javascript directly.
+*** HTML
+I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
+*** CSS
+The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
+
+* Let's Try Voyant Again
+
+* Getting to Know Voyant Tools
+:PROPERTIES:
+:ID:       o2b:39ffe3c2-8d78-48c9-a66c-3b97cb51ffc0
+:POST_DATE: [2015-07-14 Tue 09:43]
+:POSTID:   204
+:BLOG:     dig
+:END:
+Last week we experimented with applying "distant reading" techniques to history using Wordles -- sometimes called "the gateway drug" of textual analysis.  Today we will go a little bit further down this road, using a popular online tool called [[http://beta.voyant-tools.org/][Voyant]] (You may also want to [[https://github.com/sgsinclair/VoyantServer/releases/download/2.0.1-M5/VoyantServer2_0-M5.zip][download and install]] this tool on your own computer, for the next assignment; details about installation are [[http://docs.voyant-tools.org/workshops/dh2015/][here]], under "Getting Setup").
+
+Voyant is a mid-level textual analysis tool; it is quite a bit more complex and flexible than either [[http://wordle.net][Wordle]] or [[http://textexture.com/][Textexture]], but it is still a GUI tool, aimed at end-users who may not be comfortable with coding or the command line.  Note that, if you are really serious about quantitative modelling, you will need more sophisticated and adaptable tools, such as [[http://programminghistorian.org/lessons/topic-modeling-and-mallet][Mallet]] or [[http://www.chlt.org/StatisticalMethods/][R]].  At this point, most large-scale DH projects are using homebrewed solutions that cobble together various pieces of modelling infrastructure, with varying degrees of success. In our next class, we'll explore some of the challenges of that kind of work.  But for today: Voyant!
+
+Voyant is actually a *suite* of tools, all of which operate on the same *corpus*.  So, in order to use it, you will have to import a corpus.  You can use a single text for this purpose, but a large collection of texts is much better.
+
+** Getting Started
+First, let's navigate to the [[http://beta.voyant-tools.org/][Voyant Website]]. Note that we are using the Beta version of Voyant 2.0; it is way better than the 1.0 version, and pretty stable.  There are 2 built-in corpora: Shakespeare's plays, and Austen's novels.  For now, let's choose Austen's novels by clicking on "Open" (bottom right of text box) or using [[http://beta.voyant-tools.org/?corpus=austen][this link]] (or [[http://localhost:8888/?corpus=austen][this one]] if you are running a local copy on your computer).  Let's steal some clues from [[http://docs.voyant-tools.org/category/workshops/][this excellent tutorial]], e.g., this picture:
+http://docs.voyant-tools.org/files/2015/06/voyant-austen-numbered.png
+
+*** Key
+1. Cirrus: a simple wordcloud that displays the highest frequency terms in the corpus (that aren’t in the stopword list)
+2. Reader: a infinite scrolling reader for the actual text in the corpus (this fetches the next part of the text as needed)
+3. Trends: a visualization of word frequency across the corpus or within each document (depending on the mode)
+4. Summary: a high-level summary of data from the corpus
+5. Contexts: a list of occurrences of a specified word (this is sometimes called a concordance or a keyword in context)
+These are only some of the tools available in Voyant -- you can learn about more such tools in the tutorial linked above. But essentially, we have:
+- a *cloud visualization tool*, which is pretty good for /suggesting/ but not so great for /demonstrating/
+- several /frequency analysis tools/ which allow comparison within or across texts;
+- various /scoping controls/ which allow you to move between a single-text view and a corpus-level view
+
+*** Asking Questions of Austen
+So, we have the text. We have the tools.  Now, we need questions.  Let's take a few minutes together to consider the following:
+- what /kinds of questions/ are amenable to quantitative analysis?
+- which ones /can potntially be answered/ using these tools and this corpus?
+  - maybe the most interesting questions are too hard.  Can we simplify the questions to suit the tools?
+
+Bear in mind the kinds of questions Moretti has suggested we ask: questions about form, change over time, place.  
+
+*** Doing the Analysis
+In groups of 2-3, take about 20 minutes to fool around with Austen's texts, seeing if you discover anything interesting.; and then take 5 minutes to report back to the group.  
+
+** History, not Literature
+So far, most of our work has dealt with literature. Let's try another genre.  The Emory University library has an [[http://disc.library.emory.edu/lincoln/voyant/][interesting exercise]] using a digitized collection of American sermons given immediately after the assassination of Abraham Lincoln in 1865. What can we learn from them?
+*** Getting Started
+This is just barely more complicated than last time, because we have to add the corpus ourselves.  First, [[http://disc.library.emory.edu/lincoln/download/lincoln_sermons.zip][download all the sermons]] and unzip the downloaded file. Then, go back to [[http://beta.voyant-tools.org/][the Voyant start page]] and click on "upload"; and finally, select all the files in the "text" folder from the download.
+*** Asking Questions
+Again, we have to aks the question: what can we learn from the bulk analysis of these texts? Or, maybe, can we compare some of the sermons to each other and learn something from that process?
+- Note that the original tutorial uses only two sermons, those of Lowe (from South Carolina) and White (from Vermont). Why? 
+Let's spend a few minutes thinking about questions, together.
+*** Doing the analysis.
+As before: in small groups, check out these texts and see if you see anything interesting. 
+
+* test post :noexport:
+:PROPERTIES:
+:ID:       o2b:4440ccc0-ca8d-4222-8d4b-c6137bc4f1ab
+:POST_DATE: [2015-07-21 Tue 13:27]
+:POSTID:   310
+:BLOG:     dig
+:END:
+
+testing
+* Popcorn Exercise!
+:PROPERTIES:
+:ID:       o2b:43a19a5d-dfd6-40a6-a230-d2477fe491c5
+:POST_DATE: [2015-07-28 Tue 10:03]
+:POSTID:   322
+:BLOG:     dig
+:END:
+
+Ooops, forgot to write this up separately. Oh well. By now, though, you know the drill:
+
+- Navigate to [[https://github.com/titaniumbones/oral-history-template][the Github repository for this exercise]].
+- Download and unzip the files
+- Open them up in [[http://atom.io][Atom]] or something similar.
+
+This will get you ready for your next assignment.
+* Javascript Error in Current Assignment!
+:PROPERTIES:
+:ID:       o2b:81d8ad9b-38f5-4d09-9cd2-3662aa74210c
+:POST_DATE: [2015-07-28 Tue 13:58]
+:POSTID:   324
+:BLOG:     dig
+:END:
+Many thanks to Marie for finding an important bug in the current assignment, which you may not have discovered yet. Before this fix, the Info Window would only display for one of the markers.  Once the changes described below are applied, I believe the problem should disappear.  
+
+ The bug was due to unskillful handling of [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Creating_closures_in_loops.3a_A_common_mistake][Javascript Closures]], and the solution was to make use of Javascript's elegant "this" construct, as described in one of the answers posted [[http://stackoverflow.com/questions/3158598/google-maps-api-v3-adding-an-infowindow-to-each-marker][here]].  Here is the bad code, originally on lines 40-51 of ~script.js~:
+
+#+BEGIN_SRC javascript 
+    for (j = 0; j < all_my_markers.length; j++) {
+        var this_marker =  new google.maps.Marker({
+            position: all_my_markers[j].position,
+            map: my_map,
+            title: all_my_markers[j].title,
+            window_content: all_my_markers[j].window_content});
+        var this_listener = google.maps.event.addListener(this_marker, 'click', function() {
+            infowindow.setContent (this_marker.window_content);
+            infowindow.open(my_map, this_marker); 
+        });
+        my_markers.push({marker:this_marker, listener: this_listener});
+    };
+#+END_SRC
+
+and here is the corrected code:
+
+#+BEGIN_SRC javascript
+    for (j = 0; j < all_my_markers.length; j++) {
+        var marker =  new google.maps.Marker({
+            position: all_my_markers[j].position,
+            map: my_map,
+            title: all_my_markers[j].title,
+            window_content: all_my_markers[j].window_content});
+        marker.info = new google.maps.InfoWindow({content: marker.window_content});
+        var listener = google.maps.event.addListener(marker, 'click', function() {
+            // if you want to allow multiple info windows, uncomment the next line
+            // and comment out the two lines that follow it
+            //this.info.open(this.map, this);
+            infowindow.setContent (this.window_content);
+            infowindow.open(my_map, this);
+        });
+        my_markers.push({marker:marker, listener:listener});
+    }
+#+END_SRC
+
+I recommend that *everyone* carefully remove the old "for" loop and replace it with this new code.  It will make your lives better!
+* Understanding Popcorn
+:PROPERTIES:
+:ID:       o2b:e2b2a94c-25c3-44dd-99e3-fd2b48584c2f
+:POST_DATE: [2015-07-28 Tue 16:27]
+:POSTID:   327
+:BLOG:     dig
+:END:
+You may find it useful, as you prepare for the next assignment, to read the following post!
+** What is Popcorn
+[[http://popcornjs.org][Popcorn]] is a Javascript "libary" -- a small collection of programs -- that lets web designers key events in a web page to a time-code in a media file.  So essentially ,popcorn lets you "cue up" content ad display it only during fixed periods, while a media element is playing. If you then pause or manually rewind/fast-forward the media element (audio or video), the events will also reset to the appropriate time. 
+*** HTML5 & new possibilities
+Popcorn works because of new functionality that is provided by the cutting-edge [[http://en.wikipedia.org/wiki/HTML5][HTML5]] standard, and in particular the [[http://www.html5rocks.com/en/features/multimedia][<audio> and <video>]] tags.  So you are working with very new technology here. The new standards let you manipulate audio  and video directly with HTML and Javascript -- something that wasn't possible until about a year ago.   
+*** multi-media swiss-army knife
+Popcorn is a sort of Swiss army knife for doing multi-media work in HTML5.  There's a main framework -- the popcorn library -- that provides a simple Javascript interface for talking directly to the media elements.  Doing that directly can be hard, so the Popcorn "layer" makes this work quite a bit easier.  This underlying library is used by the [[http://popcornjs.org/plugins][Popcorn plugins]], which are the elements you will actually be working with.  These plugins are fairly simple Javascript programs (the mapping ones are actually kinda complex, and some of the things one wants to do with maps -- especially smoothly animate a pan from one location to another -- aren't available yet, which is too bad and a bit of a disappointment).  It's the plugins that you will actually be working with.  
+*** Using Popcorn
+To use popcorn in a web page, you need to define a variable -- usually named 'pop' -- that creates a popcorn 'instance' on your web page.  Then you wrap the variable definition in a simple function that makes sure it gets run when the web page loads.  
+
+** Popcorn Plugins
+Inside the variable definition, you "call" the plugin function for each event you want to create. The process is very similar to creating timeline events in your timeline -- there's a simple syntax that defines a couple of "parameters" -- variables that get "passed" to the plugin function.  The example file defines a bunch of popcorn events; essentially you'll just change the values of these parameters to create your own events.  So for instance, here's an example plugin definition:
+#+BEGIN_SRC javascript
+        .footnote({"id":"intro","start":6,"end":16,"target":"popcorn-container","text":"Edna begins by talking about her father, Daniel Kelly (1861-1953). The US census of 1880 for Elgin, IL, gives Daniel’s occupation as blacksmith. In the 1900 census of Port Angeles his occupation is bridge builder; in the 1920 census of Eden Valley it is general farming; in the 1920 census of Eden Valley it is dairy farming.  In the 1930 census of Port Angeles he is retired."})
+#+END_SRC
+This is one of the plugins you'll use the most -- the footnote plugin. It has just five parameters: 
+- id -- this is for your benefit so you can keep track of what you're doing. Use it, but don't worry about it too much
+- start -- when to start playing the element. This is in SECONDS -- so forinstance if you want to it to start playing at 6:34, the value would be 394.  Keep a calculator on hand. Note that the value is *not* in quotation marks -- that's significant.
+- end -- the end time
+- target -- where to pop up the event. Don't change this, or your events will show up in the wrong place.  With popcorn you can put the new events anywhere on the page, and change any existing element. It's really powerful; we're just brushing the tip of the iceberg.
+- text -- this is the text you're going to make appear.  This is where your own contribution really comes in.  
+
+*** Available plugins
+We've provided examples for three plugins:
+- Footnote you've just seen
+- [[http://popcornjs.org/Plugin/image][Image]] lets you display an image. This adds two new parameters -- 'src' and 'href' -- which let you select an image and also link that image to another location, if you so wish.  
+- [[http://popcornjs.org/Plugin/google-maps][google Maps]] Creates a google map. There are a bunch of new parameters here, see our source code for more info.
+- it's possible you will also want to use others; of these the most likely to be of use is [[http://popcornjs.org/Plugin/Wikipedia][Wikipedia]].
+** Media Elements
+Popcorn woks by keying commands to a media element -- that is, an HTML tag <audio> or <video>.  Here's our sample audio tag:
+#+BEGIN_SRC html
+            <!-- this is our audio div.  It's really important -->
+             <audio id="media" controls="controls">
+               <source src="media/audio/editededna.mp3" type="audio/mp3" />
+            </audio>
+#+END_SRC
+I just want you to note three things about this code:
+- See how the <audio> tag has two attributes. The *id* is essential, because when we defined "pop" we told it to look for the element called "id". "controls" is also important -- it ensures that you can pause, rewind, etc. in the browser's buiilt-in media player.
+- The actual file that will be used by the "audio" element is not defined in the tag itself, but within it -- in the <source> tags.  
+
+** Getting Help
+If you end up confused, there are a couple of useful popcorn resources on the web.  
+- the [[http://popcornjs.org/documentation][popcorn website]] has some great tutorials. The videos are particularly helpful, because they highlight the code that's used to create the event you watch on the screen.  You can learn even more by looking at the source code of these pages -- because they use popcorn to write their own tutorials!  
+- The [[http://popcornjs.org/plugins][plugins page]] has official documentation of each plugin.  THis is often helpful.
+- If that's not enough for you, you can look directly [[https://github.com/cadecairos/popcorn-js][at the source]].
+- If you're still confused, take a look at the [[https://mail.mozilla.org/listinfo/community-popcorn][developer's list]] or the [[http://popcornjs.org/community][other resources listed here (e.g., IRC)]]. If you have a question I can't answer, you can ask it one of those places; but please be sure you are asking a well-formed question in a thoughtful, considered way.  The developers are volunteering their time to create this tool, and it is not in any way their responsibility to help you learn basic skills.  Still, they tend to be very generous, so it's a possibility. Exhaust other resources first.
+
+** Generating Events with Tabletop
+In class today, we /hand-coded/ our popcorn events. This is not particularly onerous but is a little clumsy. You are absolutely welcome to use this method for the assignment if you like; but there is another way.  the [[https://github.com/jsoma/tabletop][tabletop.js]] library lets you access information from a Google Spreadsheet and plug it into your scripts. I find it very handy for this kind of work (we could have used it for the mapping expercise, too).  In this way, you can create your popcorn events in the leisure of a Google Spreadsheet, and have the events automatically generated for you whenbever your web page loads.  
+
+The process is described [[https://github.com/jsoma/tabletop#1-getting-your-data-out-there][here]], and you are strongly advised to read it carefully. If you want to use the code I've provided for you in ~popcorn-data-with-google.js~, you will need to [[https://docs.google.com/spreadsheets/d/14jExD0zl9nvZyExoMsF_9wWr86Jmrk5c8Crt4G1EJuU/edit#gid=1715955432][copy this spreadsheet]], then *publish it* as described in the instructions, and also *copy the new URL* into the appropriate place in ~popcorn-data-with-google.js~.  Then code your popcorn in the spreadsheet; unless you make any syntax errors, the technical work should now be done. In the spreadsheet ist is somewhat easier, for instance, to arange your events in sequence, etc.  
+

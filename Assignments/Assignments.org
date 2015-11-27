@@ -1,0 +1,162 @@
+* 02: Distant History
+:PROPERTIES:
+:ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
+:POST_DATE: [2015-07-14 Tue 10:14]
+:POSTID:   209
+:PARENT: Assignments
+:END:
+Today in class we learned how to use [[http://beta.voyant.org][Voyant tools]]. If you missed class, you may want to [[http://docs.voyant-tools.org/workshops/dh2015/][read this excellent tutorial]].
+
+In this assignment, you will
+- create a corpus for voyant tools
+- devise a set of questions you want to ask using voyant
+- do your best to answer those questions
+- write a report on this activity
+In what follows, I lay out expectations for each of these parts in turn. 
+
+** Create a corpus
+Choose a set of texts related to a topic in which you have a genuine interest. These texts are your /primary sources/; so, if you choose a set of scholarly articles, then you will be investigating /the history of scholarship/ rather than /the history of the object of scholarship/. That's fine, but be aware of what you're doing.  There are many repositories of primary sources, and many guides to them on the web. Performing this initial search is part of the assignment, though if you get stuck, I /strongly/ encourage you to collaborate with a classmate or a librarian.
+
+When you choose your texts, you are perforce in part determining the kinds of questions you can ask, so please do so carefully. 
+
+Textual analysis works best with a substantial corpus of texts; not 2 or 3, but 10 or 100 or 1000. And it also works best with a carefully chosen corpus -- text that have some relationship to each other. It is the nature of this relationship that you will investigate in this assignment.
+
+** Set some Questions
+Write down a list of at least 5 questions that you want to ask of these texts.  They should be historically relevant questions, the answers to which will inform your view of a real historical phenomenon.
+
+** Perform the Analysis.
+Perform several analyses of your corpus using the Voyant tools. In all likelihood, you will want to use:
+- scoping tools, to create graphs/wordles for both corpora and individual texts;
+- wordle to give an impression of your data;
+- trends to show frequencies across texts;
+- links or collocate to show concept maps;
+- context to give insight into the /manner/ of use of words;
+
+  When you get a view that you like, be sure to /export/ the view to a URL that you can link to in your report (see the tutorial for export instructions).
+
+  This analysis should
+  - show comprehension of the appropriate use of the tool;
+  - demonstrate understanding of the historical context that informs your search
+  - evidence of the findings that you discuss in your report
+
+** Write a report
+The report is a short paper 3-5 pages in length discussing the outcomes of your labour. It should include:
+- Description of your corpus and why you chose it
+- Your initial research questions
+- Your assessment of the success of the research project: Did you learn what you set out to? Did you learn anything else? What would have made the project more successful? What would you do differently next time? DOn't be afraid to present "negative results": 
+
+** Expectations
+To receive credit for this assignment you are expected to:
+- Assemble a coherent corpus of texts. The corpus should be: related to a particular theme that you desire to analyze; large enough to perform meaningful quantitative analysis; of real interest to you; composed of primary sources.
+- Formulate research questions. They should be: appropriate to quantitative analysis; of genuine historical interest; potentially answerable (not pie-in-the-sky)
+- Demonstrate use of Voyant. Your analysis should be: accessible on the web by a public URL obtained through exporting; relevant to the research questions.
+- Discuss the results of your research. Your discussion should be: carefully written with a minimum of spelling and grammatical errors; well-organized; honest about how successful you were; thoughtful about the reasons for success or failure.
+
+  If you meet all these criteria, you will get credit for the assignment!
+* 03: Spatial History
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-spatial-history
+:ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
+:PARENT:   Assignments
+:POST_DATE: [2015-07-23 Thu 09:52]
+:POSTID:   315
+:END:
+*Due Date: July 30, 8:00PM*
+
+In class on Tuesday, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from [[http://digital.hackinghistory.ca/2015/07/20/spatial-history-with-google-maps/][the blog]], from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
+
+Your next assignment builds directly from that in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  
+
+** Assignment
+Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you.  We discussed a number of such themes in the class last week (LGBQT+ history in Toronto; Women's movements; Hippie culture; etc., etc.). The final product should meet the following criteria:
+
+- Essay :: You should write a short essay, approximately 900 words (~ 3-4 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis.
+
+     Here are some plausible examples of appropriate topics:
+  - Corridor of Power: Berlin's Friedrichstrasse in the Nazi Era
+  - End of an Era: Toronto's last meatpacking plants
+  - An Empire at Home: conservative Think Tanks in Washington, D.C.
+    I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
+
+    You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take one of your examples at random, networks of hippies. Underground bus networks. Comparative suffrage movements. etc.)
+
+    The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~(Latour, p. 97)[http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a]~.  Don't worry about a bibliography.  
+
+- Map :: Your map should have at least 5 markers.  In class, we cut and paste to create multiple markers. The assignment template is slightly different, and uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
+
+- Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder
+
+** Getting your assignment, and handing it in
+This assignment is stored on Github. You can get it easily by navigating to [[https://github.com/titaniumbones/maps-with-markdown]] and locating the "DownloadZIP" button.  
+
+To hand it in, simply rezip the folder and send it to me; be sure to rename the folder itself to something that contains your name, e.g., "matt-price-his389-spatial-history".  
+
+*Or:* If you like, you are more than welcome to create a github account, fork the repository, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository.  
+
+** Expectations
+Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and map should not be artificial -- the map should serve as an important part of your historical argument or explanation. 
+
+Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  
+
+If you change the styling, you should not create a terrible mess!
+
+* 04: Oral History
+:PROPERTIES:
+:PARENT:   Assignments
+:ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
+:POST_DATE: [2015-07-28 Tue 16:48]
+:POSTID:   330
+:END:
+
+ *Due Date: August 10*
+
+In the final segment of our class, we discuss the use of non-textual media in history, especially /oral histories/. This final, short project asks you to take an existing piece of oral history and build a small web page around it. We will use a very similar set of templates to those we used last assignment; but instead of dealing with Google Maps, we'll use the [[http://popcornjs.org/][Popcorn]] events framework for creating a simple multi-media history essay out of HTML.  As with our last assignment, this is a little bit like using [[https://www.youtube.com/watch?v=Q8gGsuWouDE][hand-carved wooden Emoji]]: obviously there are much more sophisticated ways to interact with video on the web; our aim is to use this simple tool as a way to think about several issues: 
+- How do aural and visual media change the nature of historical narrative?
+- What are the challenges of building an historical narrative around an oral history, especially one that you did not conduct yourself?
+- How does technical infrastructure (like [[http://popcornjs.org/][Popcorn]] and [[http://docs.google.com][Google Docs]]) change the nature of historical narrative?
+** Assignment
+- Choose a short, online oral history audio clip (approximately 3 minutes in length). I recommend [[http://storycorps.org/][StoryCorps]] as a source, though there are many oral history archives online that are equally suitable.
+- Listen to it carefully. What historical themes are suggested by it? What kinds of annotatins might heighten the impact at crucial moments, or fill in background information at other times?
+- Create a short "video" to accompany the audio clip; use a variety of Popcorn plugins to accomplish this. In general, for 180 seconds you will likely need at least 15 events for the the video to feel approximately "full".
+- Write a short essay, approximately 800 words in length, addressing any of the historical issues raised by the audio clip.  Refer specifically to quotations from the clip.  You may want to provide [[https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video#Specifying_playback_range][links to specific timecodes]] form the audio, though integrating that with Popcorn playback is unfortunately a little tricky.  As in your last assignment, use simple links for citations, though you should provide page numbers wherever possible).
+** Expectations
+Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and clip should not be artificial -- the essay should clarify or enlarge the historical circumstances that are brought to life by the clip.  
+
+Your popcorn events should be keyed to the rhythms of the clip itself, appearing and disappearing along with the themes that they refer to or address.  They should enhance the impact of the clip rather than distract form it, and provide additional historical background that might not be found in the essay or the clip.
+
+If you change the styling, you should not create a terrible mess! Certainly I think the page could be prettier and I welcome your improvements.  
+** Technical Help
+As usual, I am pretty much available to answer your questions.  I also urge you to read [[http://digital.hackinghistory.ca/2015/07/28/understanding-popcorn/][this post]], which has a fair amount of technical detail and also gives links to further documentation.  
+
+
+* 05: Project Proposal
+:PROPERTIES:
+:PARENT:   Assignments
+:ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
+:POST_DATE: [2015-07-28 Tue 17:16]
+:POSTID:   337
+:END:
+This is a substantial project required only for those students seeking a grade of "A" in the class.  There will not be much time for rewrites, so you may have only one shot at this. Unless you have a substantial interest in the course material, and have an idea for a project that you may, someday, be interested in actually pursuing, I don't recommend that you attempt this assignment.
+
+Your task is to write a funding proposal for a digital history project. The project should be:
+- of genuine historical interest
+- technically feasible
+- appropriate to the DH methods that we have discussed in the class
+- of real personal or professional interest to you
+
+It is not necessary for you yourself to possess all the skills to complete the project; but you should be able to clearly articulate the nature of the technical challenges and have a realistic assessment of what is required to overcome them. you should also be able to articulate the /historical import/ of the project, and its worthiness for public funding (which is pretty much the only kind we have for historians here in Canada).  
+
+** Structure
+The proposal should be composed of the following elements (word lengths are approximate):
+
+- Introduction (500 words) :: In broad strokes, describe the project, the questions it is intended to answer, and the role of Digital History methods within the project
+- Methods (500 words) :: Describe the tools you intend to use, and your plans for both research and dissemination of results
+- Timeline (500 words) :: Describe the work that will be required to complete this project, and how much time you and your potential collaborators or research assistants will require to bring it to completion
+- Importance (500 words) :: Discuss the importance of this research, and its place in a broader historical conversation
+
+** Expectations
+This is a difficult assignment. As usual, you should turn in a lucidly-written paper with minimal grammatical or spelling errors, written in accordance with scholarly standards for citation and originality.  Your project should be of genuine historical interest, and your text should convince me of that importance. Your methods section should describe the challenges inherent in the project, and provide a provisional plan for overcoming them.  You should demonstrate awareness both of the difficulties of DH research, and of the existing resources that are available to scholars undertaking this kind of work.  
+
+/If you wish, you may certainly build upon other work you have done this semester./
+
+Good luck! I look forward to the results. 

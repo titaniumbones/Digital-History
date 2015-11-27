@@ -1,0 +1,354 @@
+#+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
+
+* Attendance
+| Name      | 1                    | 2                                 | 3                           | 4          |
+|-----------+----------------------+-----------------------------------+-----------------------------+------------|
+|           |                      |                                   |                             |            |
+| Ali       | 0                    | 0                                 | thoughtful                  | active     |
+| Amy       | responsive           | responsive                        | responsive                  | active     |
+| Carling   | responsive           | responsive                        | quiet but responsive        | thoughtful |
+| Daniel    | ?                    |                                   |                             | thoughtful |
+| Iqra      |                      |                                   |                             | active     |
+| Jake      | 0                    | active                            | 0                           | thoughtful |
+| Kaitlin   | active               | active                            | 0                           | absent     |
+| Kate      | 0                    | 0                                 | somewhat interesting        | absent?    |
+| Kate      | 0                    | 0                                 | responsive                  |            |
+| Katerina  | quiet                | responsive                        | quiet                       | quiet      |
+| Ken       | active               | active                            | quiet                       | active     |
+| Laura     | 0                    | talkative                         | responsive                  | absent     |
+| Lavender  | quiet                | quiet, not unthoughtful           | quiet                       | absent     |
+| Lucas     | 0                    | 0                                 | active                      | quiet      |
+| Marie     | quiet                | active                            | 0                           | active     |
+| Michelle  | ?                    |                                   |                             | ?          |
+| Nicolette | 0                    | 0                                 | active participant in group | active     |
+| Parsa     | ?                    |                                   |                             | barely!    |
+| Rhianna   | 0                    | 0                                 | responsive                  | absent     |
+| Robert    | thoughtful           | thoughtful                      1 | thoughtful                  | thoughtful |
+| Syeda     |                      |                                   |                             | quiet      |
+| Yasmin    | quiet but responsive | quiet but responsive              | quiet but responsive        | active     |
+
+
+* People
+
+- Ken, Book & Media studies major, history minor, HH, 
+- Carling, English major, History minor, Book and media studies minor, 4th year, not very technical,
+- Kat, going int o5th year, in concurrent teacher ed program, major in rel educatio, monir in hist & aboriginal studies.  Fear: not knowking what to do
+- Caitlyn, going int o5th yr, concurrent treacher ed, major rel ed, minors ecology, history, some html experience from high school
+- Amy, going into 4th year, major in history, background in tech stuff, high school in VB
+- Yasmin, anthro major, hist minor, going innto 3rd yr, has some interweb experience,m but wants to learn more
+- Marie, IHPST, European history (WWII), works in library, has some python experiencefear is sleeping in
+- jennifer who won't be in class, in IHPST, some HTML/CSS experience
+- Jashi-want, or lavender, math major, no problem with tech stuff, going into second year, kfear: no experience with coding, from beijing
+- yu-fan lee, or Robert, history specialist in 5th yr, 
+
+
+* Assignments (progressive)
+- codeacademy web track (html, css, javascript) OR send me a github URL for a project you've done.  
+- mapping assignment: maybe the one from programming historian
+- participation/blogging (written in markdown)
+- oral history paper/annotation assignment, via an archive, and hopefully also via github.  
+  - storycorps?
+- "not reading a book" http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/
+- project proposal
+
+* To do for today
+- set up website
+- complete syllabus!
+- web skills top-up assignment
+- blog/participation assignment
+
+* What the web signifies
+- explain the pun
+- Habermas: public sphere (Lecture: 25 mins)
+- discussion/group work: definitions of public?  something like that. 15 mins.
+- History on the web (Lecture: 20 mins).  Include an example
+- Discussion? maybe not.
+- Lab:  a few very basic bits about HTML, perhaps some exercises.
+** Readings/Notes
+#+begin_src sh :results output
+${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Habermas-public-1964
+#+end_src
+
+#+RESULTS:
+#+begin_example
+---- HIGHLIGHTS: ---
+portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.' They then behave neither like business or professional people transacting private affairs, nor like members of a constitutional order subject to the legal constraints of a state bureaucracy. Citizens behave as a public body when they confer in an unrestricted fashion-that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions-about matters of general interest. In a large public body this kind of communication requires specific means for transmitting information and influencing those who receive it. Today newspapers and magazines, radio and television are the media of the public sphere. We speak of the political public sphere in contrast, for instance, to the literary one, when public discussion deals with objects connected to the activity of the state. Although state authority is so to speak the executor of the political public sphere, it is not a part of it.2
+
+The state and the public sphere do not overlap, as one might suppose from casual language use. Rather they confront one another as opponents. Habermas designates that sphere as public which antiquity understood to be private, i.e. the sphere of non-governmental opinion making.
+
+The expression "public opinion" refers to the tasks of criticism and control which a public body of citizens informally-and, in periodic elections, formally as well- practices &-d-vis the ruling structure organized in the form of a state.
+
+It is no coincidence that these concepts of the public sphere and public opinion arose for the first time only in the eighteenth century. They acquire their specific meaning from a concrete historical situation. It was at that time that the distinction of "opinion" from "opinion publique" and "public opinion" came about. Though mere opinions \(cultural assumptions, normative attitudes, collective prejudices and values\) seem to persist unchanged in their natural form as a kind of sediment of history, public opinion can by definition only come into existence when a reasoning public is presupposed. Public discussions about the exercise of political power which are both critical in intent and institutionally guaranteed have not always existed- they grew out of a specific phase of bourgeois society and could enter into the order of the bourgeois constitutional state only as a result of a particular constellation of interests.
+
+By the end of the eighteenth century they had broken apart into private elements on the one hand, and into public on the other. The position of the church changed with the reformation: the link to divine authority which the church represented, that is, religion, became a private matter. So-called religious freedom came to insure what was historically the first area of private autonomy. The church itself continued its existence as one public and legal body among others. The corresponding polarization within princely authority was visibly manifested in the separation of the public budget from the private household expenses of a ruler.
+
+he press remained an institution of the public itself, effective in the manner of a mediator and intensifier of public discussion, no longer a mere organ for the spreading of news but not yet the medium of a consumer culture
+
+Even in the Paris of 1848 every half-way eminent politician organized his club, every other his journal: 450 clubs and over 200 journals were established there between February and May alone. Until the permanent legalization of a politically functional public sphere, the appearance of a political newspaper meant joining the struggle for freedom and public opinion, and thus for the public sphere as a principle. Only with the establishment of the bourgeois constitutional state was the intellectual press relieved of the pressure of its convictions. Since then it has been able to abandon its polemical position and take advantage of the earning possibilities of a commercial undertaking. In England, France, and the United States the transformation from a journalism of conviction to one of commerce began in the 1830s at approximately the same time. In the transition from the literary journalism of private individuals to the public services of the mass media the public sphere was transformed by the influx of private interests, which received special prominence in the mass media.
+
+Because of the diffusion of press and propaganda, the public body expanded beyond the bounds of the bourgeoisie. The public body lost not only its social exclusivity; it lost in addition the coherence created by bourgeois social institutions and a relatively high standard of education. Conflicts hitherto restricted to the private sphere now intrude into the public sphere. Group needs which can expect no satisfaction from a self- regulating market now tend towards a regulation by the state. The public sphere, which must now mediate these demands, becomes a field for the competition of interests, competitions which assume the form of violent conflict. Laws which obviously have come about under the "pressure of the. street" can scarcely still be understood as arising from the consensus of private individuals engaged in public discussion. They correspond in a more or less unconcealed manner to the compromise of conflicting private interests.
+
+With the interweaving of the public and private realm, not only do the political authorities assume certain functions in the sphere of commodity exchange and social labor, but conversely social powers now assume political functions. This leads to a kind of "refeudalization" of the public sphere. Large organizations strive for political compromises with the state and with each other, excluding the public sphere whenever possible. But at the same time the large organizations must assure themselves of at least plebiscitary support from the mass of the population through an apparent display of openness \(demonstrative P~blizitiit\).
+
+The political public sphere of the social welfare state is characterized by a peculiar weakening of its critical functions. At one time the process of making proceedings public \(Publizitdt\) was intended to subject persons or affairs to public reason, and to make political decisions subject to appeal before the court of public opinion.
+
+The idea of the public sphere, preserved in the social welfare state mass democracy, an idea which calls for a rationalization of power through the medium of public discussion among private individuals, threatens to disintegrate with the structural transformation of the public sphere itself. It could only be realized today, on an altered basis, as a rational reorganization of social and political power under the mutual control of rival organizations committed to the public sphere in their internal structure as well as in their relations with the state and each other.
+#+end_example
+
+
+*** notes on Interchange
+
+
+Here is a step toward a working definition. Digital history is an approach to examining and representing the past that works with the new communication technologies of the computer, the Internet network, and software systems. On one level, digital history is an open arena of scholarly production and communication, encompassing the development of new course materials and scholarly data collections. On another, it is a methodological approach framed by the hypertextual power of these technologies to make, define, query, and annotate associations in the human record of the past. To do digital history, then, is to create a framework, an ontology, through the technology for people to experience, read, and follow an argument about a historical problem.
+
+
+
+Digital history possesses a crucial set of common components—the capacity for play, manipulation, participation, and investigation by the reader. Dissemination in digital form makes the work of the scholar available for verification and examination; it also offers the reader the opportunity to experiment. He or she can test the interpretations of others, formulate new views, and mine the materials of the past for overlooked items and clues. The reader can immerse him/herself in the past, surrounded with the evidence, and make new associations. The goal of digital history might be to build environments that pull readers in less by the force of a linear argument than by the experience of total immersion and the curiosity to build connections. (Versus the narrative anticipation of what comes next, this is a curiosity about what could be related to what and why.)
+
+Digital sources
+
+• Can be created and altered with relatively little effort or expense
+
+• Can be duplicated with near-zero marginal cost and shared by any number of people
+
+• Can be transmitted near or at the speed of light
+
+• Can be stored in nanoscale volumes
+
+• Can serve as the inputs to any process that can be specified algorithmically
+
+• Allow form to be more easily separated from content
+
+• Allow historians to gain the well-known benefits of working in a networked mode
+
+The use of digital sources, in other words, completely changes the landscape of information and transaction costs that historians have traditionally faced.
+
+ Their main concern was audience and access. We heard a great deal about “democratizing history” and opening the archives to wider dissemination. Many historians welcomed the Web largely because of the opportunity to expand the audience for historical scholarship. 
+
+Some historians have tried to reconcile the iterative, seemingly stable, process of analog historical scholarship with the digital environment. Most of all, we have struggled with the question: Where does interpretation go in these online projects? Ideas about versioning, release dates, update systems, and so forth, bubbled to the surface in technical meetings for many projects. Interpretation, the coin of the realm in professional historical study, seemed cast aside. How could interpretation be assessed if the project was continually in motion? Most digital history projects offered huge audiences, but potentially at the expense of interpretive salience. Was the digital medium the place to do historical scholarship? Or was it suitable only for pedagogical tool building? Or documentary editing? 
+
+ew Archives/New Inquiry: Digital resources are expanding and redefining the archival base for most fields and thereby redefining the fields themselves. (This is driven more by libraries and the tech industry than by historians.) My initial interest in things digital grew from developing a database to piece together fragmentary sources obscure people had left behind in multiple archives; the approach was not new, but the scale of the project I could imagine as an individual graduate student was. Linda Colley’s latest book, The Ordeal of Elizabeth Marsh—trumpeted in reviews as a “new” approach to biography—is a recent example. The book is not new in its recovery of an ordinary life as a window on a world. (Laurel Thatcher Ulrich showed us that in 1990.) But its ability to encompass the globe is new; Colley credits new media resources with making the project possible.
+
+Audience: New bridges between academic and popular/public history.
+
+Collaboration: A source of excitement and perhaps peril. The best digital projects are collaborative, involving multiple scholars and a technical team, and ideally an institution committed to keeping the project alive after its creators move on to other things. This is, I think, a great way to work. It is not, however, one for which history as a discipline has established institutional resources. 
+
+o reiterate some of the excellent points made here: The new media are profoundly changing the ways most historians work, whether or not we are self-conscious about how we are becoming digital. As Dan has noted, it is in the discipline’s interest to be proactive, rather than reactive, in response to these changes. Institutions and individuals who have steered clear of the cutting edge have an important role to play here. Even those who do not envision themselves shaping new tools or expressive forms can—and should—work to make sure that the rising generation of scholars has the opportunity and the institutional space to experiment with digital media. In addition to funding and professionally sanctioned forums for expression, there needs be space for this in the graduate curriculum. The digital pioneers present in this conversation—and the much-missed Roy Rosenzweig—have made it very easy for others to introduce themselves and their students to the field. Check out their online syllabi; you might well be able to add an “Introduction to History and the New Media” to your institution’s roster of methods courses.
+
+** 
+
+
+
+* Abundance & Openness
+- Abundance.  Have some examples, talk about *real history*
+- Openness.  Github, e.g.
+- Search engines. Algorithms.  curation.  
+- Lab: list of websites to evaluate.  This will require *prep*
+http://adamcrymble.org/intro-to-digital-history-2015/#week2 
+
+** Notes
+Rosenzweig, abundance
+#+BEGIN_QUOTE
+Ignacio's sudden deletion of Bert should capture our interest as historians since it dramatically illustrates the fragility of evidence in the digital era. If Ignacio had published his satire in a book or magazine, it would sit on thousands of library shelves rather than having a more fugitive existence as magnetic impulses on a web server. Although some historians might object that the Bert Is Evil web site is of little historical significance, even traditional historians should worry about what the digital era might mean for the historical record. U.S. government records, for example, are being lost on a daily basis. Although most government agencies started using e-mail and word processing in the mid-1980s, the National Archives still does not require that digital records be retained in that form, and governmental employees profess confusion over whether they should be preserving electronic files.3 Future historians may be unable to ascertain not only whether Bert is evil, but also which undersecretaries of defense were evil, or at least favored the concepts of the "evil empire" or the "axis of evil." Not only are ephemera like "Bert" and government records made vulnerable by digitization, but so are traditional works–books, journals, and film–that are increasingly being born digitally. As yet, no one has figured out how to ensure that the digital present will be available to the future's historians.
+
+But, as we shall see, tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? In fact, the Bert Is Evil story could be used to tell a very different tale about the promiscuity and even persistence of digital materials. After all, despite Ignacio's pleas and Children's Television Workshop's threats, a number of Bert "mirror" sites persist. Even more remarkably, the Internet Archive–a private organization that began archiving the web in 1996–has copies of Bert Is Evil going back to March 30, 1997.
+
+The struggle to incorporate the possibilities of new technology into the ancient practice of history has led, most importantly, to questioning the basic goals and methods of our craft. For example, the Internet has dramatically expanded and, hence, blurred our audiences. A scholarly journal like this one is suddenly much more accessible to high school students and history enthusiasts. And the work of history buffs is similarly more visible and accessible to scholars. We are forced, as a result, to rethink who our audiences really are. Similarly, the capaciousness of digital media means that the page limits of journals like this one are no longer fixed by paper and ink costs. As a result, we are led to question the nature and purpose of the scholarly journals–why do they publish articles with particular lengths and structures? Why do they publish particular types of articles? The simultaneous fragility and promiscuity of digital data requires yet more rethinking–about whether we should be trying to save everything, who is "responsible" for preserving the past, and how we find and define historical evidence.
+
+But much–really, most–of the record of previous historical eras has disappeared. "The members of prehistoric societies did not think they lived in prehistoric times," Washington Post writer Joel Achenbach observes. "They merely lacked a good preservation medium." And non-digital records that have survived into this century–from Greek and Chinese antiquities to New Guinean folk traditions to Hollywood films–are also seriously threatened.9
+
+Print books and records decline slowly and unevenly–faded ink or a broken-off corner of a page. But digital records fail completely–a single damaged bit can render an entire document unreadable. Here is the key difference from the paper era: we need to take action now because digital items very quickly become unreadable, or recoverable only at great expense.
+
+But the medium is far from the weakest link in the digital preservation chain. Well before most digital media degrade, they are likely to become unreadable because of changes in hardware (the disk or tape drives become obsolete) or software (the data are organized in a format destined for an application program that no longer works). The life expectancy of digital media may be as little as ten years, but very few hardware platforms or software programs last that long.
+
+The problem is still worse because of the ability of digital media to create and represent complex, dynamic, and interactive objects–another of their great virtues. Even relatively simple documents that appear to have direct print analogs turn out to be more complex. Printing out e-mail messages makes rapid searches of them impossible and often jettisons crucial links to related messages and attachments.
+
+. But digital information–because it is so easily altered and copied, lacks physical marks of its origins, and, indeed, even the clear notion of an "original"–cannot be authenticated as physical documents and objects can. We have, for example, no way of knowing that forwarded e-mail messages we receive daily have not been altered. In fact, the public archive of Usenet discussion groups contains hundreds of deliberately and falsely attributed messages. "Fakery," write David Bearman and Jennifer Trant, "has not been a major issue for most researchers in the past, both because of the technical barriers to making plausible forgeries, and because of the difficulty with which such fakes entered an authoritative information stream."14 Digital media, tools, and networks have altered the balance.
+
+But this "system" will not work in the digital era because preservation cannot begin twenty-five years after the fact. What might happen, for example, to the records of a writer active in the 1980s who dies in 2003 after a long illness? Her heirs will find a pile of unreadable 5 1/4" floppy disks with copies of letters and poems written in WordStar for the CP/M operating system or one of the more than fifty now-forgotten word-processing programs used in the late 1980s.23
+
+Thus the Internet Archive is very far from the complete solution to the problem of digital preservation. It does not deal with the digital records that vex the National Archives and other repositories because they lack the public accessibility and minimal standardization in HTML of web pages. Nor does it include much formally published literature–e-books and journals–which is sold and hence gated from view. And even for what it has gathered, it has not yet hatched a long-term preservation plan, which would have to incorporate a strategy for continuing access to digital data that are in particular (and time-bound) formats. 
+
+If historians are to set themselves "against forgetting" (in Milan Kundera's resonant phrase), then they may need to figure out new ways to sort their way through the potentially overwhelming digital record of the past. Contemporary historians are already groaning under the weight of their sources. Robert Caro has spent twenty-six years working his way through just the documents on Lyndon B. Johnson's pre-vice-presidential years–including 2,082 boxes of Senate papers. Surely, the injunction of traditional historians to look at "everything" cannot survive in a digital era in which "everything" has survived.55
+
+f historians are going to join in preservation discussions, they will have to make themselves better informed about the simultaneous abundance of historical sources and scarcity of financial resources that lead archivists and librarians to respond with exasperation to scholars' blithe insistence that everything must be saved.
+
+ When Shirley Baker, president of the Association of Research Libraries, challenged historian Robert Darnton's favorable review of Baker's book and noted "choices have always had to be made" in the absence of "greater public commitment to the preservation of the historical record," Darnton responded by urging the establishment of "a new kind of national library dedicated to the preservation of cultural artifacts" (including disappearing digital records) and funded by income generated by the sale or rental of bandwidth.65 
+
+
+#+END_QUOTE
+
+Turkel, Going Digital
+#+BEGIN_QUOTE
+ Electronic digital information can be duplicated at near-zero cost, transmitted at the speed of light, stored in infinitesimally small volumes, and created, processed and consumed by machines.  This means that ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as open access, open content and open source) and the explosion of new information are manifestations of these changing costs.
+
+You won’t be able to read everything.  Estimates of the amount of new information that is now created annually are staggering (2003, 2009).  As you become more skilled at finding online sources, you will discover that new material on your topic appears online much faster than you can read it.  The longer you work on something, the more behind you will get.  This is OK, because everyone faces this issue whether they realize it or not.  In traditional scholarship, scarcity was the problem: travel to archives was expensive, access to elite libraries was gated, resources were difficult to find, and so on.  In digital scholarship, abundance is the problem.  What is worth your attention or your trust?
+
+Assume that what you want is out there, and that you simply need to locate it.
+#+END_QUOTE
+#+begin_src sh :results output
+${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Many-More-Than-a-Million
+#+end_src
+
+#+RESULTS:
+#+begin_example
+---- HIGHLIGHTS: ---
+
+But when the dirty OCR was paired with the page images, the value of the technique became greatly enhanced because the text was considered good enough for searching, and potentially ambiguous results could be compared with the page image, which was considered authoritative. This strategy of linking page images with OCR enables us to make effective use of large corpora of relatively cheaply scanned books and was, in large measure, effective because it points backwards to the limitations of print: search gets human readers to the page and leaves them to parse out its meaning.
+
+In short, digitization does provide scale \(or quantity\) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. So given the trade-off between scale and encoding in converted text corpora, what are our options, and where are the opportunities?
+
+Very large collections based on image books differ from first-generation
+digital collections by one or more orders of magnitude. Of course, they
+are much larger: one internal estimate of Google’s collection in spring
+2007 suggested that their searches were scanning at least 2 million
+books already. At the same time, these collections are much more
+heterogeneous, with books from any library shelf likely to find their way
+into the scanning workflow. The range of subjects is thus far broader than
+in the curated collections to which we are accustomed. The range of
+subjects means that error rates will be much more variable, with OCR of
+many texts in non-standard scripts (e.g., Arabic, Classical Greek)
+producing little or no searchable text.
+
+Linguistics. Automatically track patterns in morphology, syntax, and semantics across large stretches of time, space, and culture. These studies might be synchronic
+
+Intellectual history. Dan Cohen, assistant professor in the Department of History and Art History at George Mason University, pointed out that the secularization thesis, for example, states that the role of religion declined in general discourse during the 19th century, but most studies of this topic have been anecdotal. If we could track references to the Bible or to other religious terminology across thousands of texts, we could begin to put this thesis on more solid footing.
+
+
+Social and economic history. Will Thomas, professor of history at the University of Nebraska-Lincoln, pointed out the implications of very large collections for the study of broad socioeconomic topics such as the influence of railroads in U.S. history. Researchers can mine very large collections for references to, and propositional statements about, railroads to trace their development during the 19th century.
+
+This faculty member faces two fundamental challenges: understanding and then communicating with intellectual communities that have different assumed background knowledge, different ideas of what questions are and are not important, different conventions of argumentation, and so on.
+
+
+. We need to provide not only accurate keystrokes but also semantic markup.
+
+
+
+
+Raw OCR output from page images with human-curated book-level metadata is the starting point for all work. Automatically generated metadata, capturing structural elements \(e.g., tables of contents, chapters/sections, footnotes, marginalia, indices\) will be sufficient for many purposes.
+
+Curated structural metadata. If we have carefully marked the headwords of a reference work such as the Encyclopedia Britannica 13th edition, we can then use the OCR-generated text for each article to train classifiers to distinguish references to various Springfields or Washingtons in unstructured text.
+
+
+So, this workshop posed one big question: How does scale in content, made possible by mass digitization, change humanities research? As a result of the discussion, we can now pose five questions that parse this broad question into more manageable topics for research:
+
+\) How do traditional archival values migrate into the computationally intensive environment made possible by copious digital data and digital tools?
+
+2\) When only the computer actually "reads" the object or the text, a new and not fully understood relationship is created among author, tools,
+
+objects, and readers \(or users\)
+
+
+Recognition of the value of the digital research and its expression in digital form, even if that expression is subject to ongoing change by subsequent generations of scholar
+
+Recognition of digital scholarship that focuses on infrastructure. Classicists spent centuries creating the critical editions, lexica, grammars, encyclopedias, commentaries, and technical studies on which twentieth-century scholarship largely depended. We now need machine-actionable knowledge bases that can serve advanced systems and human researchers alike. These knowledge bases have print antecedents but the need to represent them in machine- actionable form and to support complex services may ultimately render them qualitatively different from their print predecessors. We need in the humanities as in the sciences to attract and support some of our most promising scholars to bridge the gap between the needs, present and potential, of the humanities and the possibilities enabled by scholarship.
+
+
+Finding ways to provide analytical access the Open Content book data now available should be a priority. Scholars should be able to pose questions that analyze very large collections: e.g., what passages from Shakespeare or the Bible appear in different genres over time?
+
+should apply exemplary questions to open collections such as the OCA, access functions that Google, Microsoft, and others provide to end-user services and APIs.
+
+e need to clarify the costs and benefits of book scanning vs. the intensive transcription and markup of complex knowledge sources. We cannot afford to apply human labor and expertise directly to more than a tiny percentage of the published record of humanity. Are there printed materials that would, if carefully converted into machine actionable form, uniquely enhance our ability to analyze relatively unbounded bodies of
+
+We need to understand more clearly how to relate high- value, domain-specific services and data structures to services and data structures that are common to all collections. Every discipline needs text searches, but some communities need different kinds of search.
+
+
+#+end_example
+
+
+Annotations:
+#+begin_example\n---- Annotations: ---
+#+end_example
+
+
+* Distant Reading 1
+- Lecture: Graphs & maps (30 mins)
+- discussion
+- Wordles
+- Have assignment ready!
+** Recap
+#+ATTR_REVEAL: :frag (appear appear appear)
+- "Abstract Models" in Moretti
+  - /distance/ from text
+  - /patterns/ across genres, time, space
+- Graphs: text genre as cycle (/Moyenne Durée/)
+- Maps: geography of the novel/story as /object of inquiry/
+- Assumptions and Methodology:
+  - form /caused/ by social-scale phenomena
+  - quantitative models /reveal/ those phenomena
+  - interpretative leap still substantial
+
+** Today: Trees
+#+ATTR_HTML: :style float:left; max-width:49%;
+https://upload.wikimedia.org/wikipedia/commons/1/10/Darwin_Tree_1837.png
+#+ATTR_HTML: :style float:left; max-width:49%;
+https://upload.wikimedia.org/wikipedia/commons/4/4e/Darwins_tree_of_life_1859.png
+*** Moretti's Evolutionism
+- Citations: Darwin, Feldman, Cavalli-Sforza
+- In his genealogy: Karl Marx; H. G. Wells; e. O. Wilson; all of evolutionary psychology
+*** Plots
+http://newleftreview.org.myaccess.library.utoronto.ca/static/assets/images/2620303large.gif
+**** Clues as /evolved/ phenomenon
+- Doyle as /canonical starting point/ for detective fiction
+- But has a context; how to describe?
+- note: /not/ a personal context!
+*** Styles
+https://nplusonemag.com/wp-content/uploads/2014/04/moretti-2.jpg
+**** Free Indirect Style
+#+BEGIN_QUOTE
+A peculiar mix of indirect and direct discourse, which draws the verbal tenses and pronouns from the former, and the tone and the order of the sentence from the latter:
+
+It was the abode of noise, disorder, and impropriety. Nobody was in their right place, nothing was done as it ought to be. She could not respect her parents, as she had hoped. 
+#+END_QUOTE
+**** Why FIS?
+- appears to mark a major social transformation ("halfway btwn the social doxa and the individual voice, FIS is a good indicator of their changing balance of forces")
+- Moretti's goal: to /quantitatively/ (?) trace these forces
+  #+BEGIN_QUOTE
+  Take a form, follow it from space to space, and study the reasons for its transformations: the 'opportunistic, hence unpredictable' reasons of evolution.
+  #+END_QUOTE
+*** Problematics
+- Teleological thinking?
+- dealing with the "twisted branching"?
+- is this really "quantitative"?
+- Does this qualify as "insight"? 
+** Tools for Distant Reading: the wordle
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
+- what do and don't we know? 
+
+
+* Visualizations
+http://adamcrymble.org/intro-to-digital-history-2015/#week12
+
+
+Kostiantyn Kucher and Andreas Kerren, ‘ Text Visualization Browser: A Visual Survey of Text Visualization Techniques’, (2014)
+Jefferson Bailey and Lily Pregill, ‘Speak to the Eyes: The History and Practice of Information Visualization’, Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
+Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
+William Playfair, ‘Exports and Imports to and from Denmark & Norway from 1700 to 1780′, (1786) (for workshop, – available via Wikipedia).
+Florence Nightingale, ‘Diagram of the Causes of Mortality in the Army in the East’, (1856) (for workshop, – available via Wikipedia).
+Charles Joseph Minard, ‘Map of Napoleon’s Retreat from Moscow – 1813-14′ (1869) (for workshop – available via Wikipedia).
+‘Chart showing the Aggregate Number of Blind…’ (1870) (for workshop – available via David Rumsey Collection).
+‘Rank of states and territories in population at each census: 1790 – 1890′, (1890) (for workshop – available via Handsome Atlas).
+Recent Work
+
+Valentina D’Efilippo, ‘Field of Commemoration’, (2013) (for workshop)
+Ben Schmidt, ‘Mad Men Anachronisms’ (2012) (for workshop).
+Hans Rosling, ‘200 Countries, 200 Years, 4 Minutes’, (2009) (for workshop).
+William J Turkel and Tim Hitchcock, Data Mining with Criminal Intent (2009) (for workshop).
+Timeplots, A Visual History of the United States House of Representatives, (2012) (for workshop).
+
+
+* Assignments
+** HTML Coding Assignment (what????)
+** Data Munging Assignment (what?)
+** Data Visualization
+** Google Map Mashup
+** Oral History Remix
+** Paper
+** 
+
+# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://relsci.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
+
+
