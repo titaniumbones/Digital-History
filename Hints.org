@@ -1,0 +1,114 @@
+* Introduction to Github!
+:PROPERTIES:
+:ID:       o2b:4efe01ef-ecbb-431d-bc0e-814822cc2961
+:POST_DATE: [2016-01-13 Wed 14:24]
+:POSTID:   456
+:END:
+
+This is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
+
+I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.  
+
+Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the first assignment.
+** Heroes-Please
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
+1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
+2. Navigate to [[https://github.com/titaniumbones/heroes-please][my heroes-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
+4. Have you found where the Heroes live?
+5. Add a new hero *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
+   - Be sure to name the file "some-persons-name.md" so that everyone knows it's written in Markdown
+   - follow markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
+   [[./Images/github-add-file.png]]
+6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/heroes-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
+** Advanced Git for command-line users
+Wow, that was cool, right? And if we get through this fast enough, we can try working from the command line.  
+1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/heroes-please.git~
+2. Add your directory to atom as a "project directory: [[./Images/githb-add-project.png]]
+3. Install the "git-plus" package in Atom
+4. Create a new file in the appropriate place.
+5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
+
+There's still tons to learn but this is a good start.  If you are intrigued, keep reading.
+** Quick Start
+- [[https://github.com/join][Sign Up for a Github Account]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]]
+- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
+- [[https://help.github.com/articles/set-up-git/][configure your git information]]
+- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
+- Create a local copy of the heroes-please repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
+  ~git clone https://github.com/YOUR-USERNAME/heroes-please~
+- Make some changes
+- Commit your changes with ~git commit -m "Useful Message Here" -a~
+- *optional* Push your changes to the web with ~git push~
+- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
+
+** Resources
+This web page is woefully incomplete! Here are some better resources: 
+- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Githb]]
+- [[https://try.github.io/levels/1/challenges/1][Code School Git Intro]]
+- [[http://gitimmersion.com/index.html][Git Immersion]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book]]
+
+** Install Git
+If you're on Mac or Windows, the easiest way to start is to [[https://desktop.github.com/][install the Github Desktop client]].  This will also install the command-line tools you need for our tutorials, while giving you a very pretty GUI interface. You can [[https://css-tricks.com/first-impression-of-github-desktop/][learn more about the desktop client here]] (There's no Linux version, so I don't use this).  
+
+Once you've installed Git, let's execute our first command-line commands. In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
+#+BEGIN_SRC sh
+git config --global user.name "Your Name"
+#+END_SRC
+
+and then:
+#+BEGIN_SRC sh
+git config --global user.email youraddress@mail.utoronto.ca
+#+END_SRC
+
+This tells git some basic information about you, which it will use later on.  
+
+** Git "States"
+*(feel free to skip this if you want to get to the action)*
+
+A git repository has three important "areas", each of which represents a different "state": 
+- Working Directory (Uncommitted)
+- Staging Area (Staged)
+- .git repository (Committed)
+
+When you look at the repository, all you see is the *working directory*.  So, if I want to start a new project, I create an empty directory, say, "Project".  Then I run the command:
+#+BEGIN_SRC sh
+git init
+#+END_SRC
+This command creates the invisible ~.git~ subdirectory, which is the real heart of the repo:  it stores all the information about previous and current states of the repository.  
+
+** Doing and Undoing
+Every time you commit your changes in git, git saves a snapshot of the working directory to the .git repository.  So, in principle, you can get back to any earlier working state of the repository, which is awesome.  
+
+- commit :: the most elementary operation in git is "committing"; this saves your working directory to the repository. Here are the steps
+  - make some changes
+  - commit them with ~git commit -a -m Message~
+- checkout :: To inspect some other state of the repository, you will need to "checkout" that state:
+     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.   
+
+** Branching
+Sometimes you want to be able to come back to a particular revision -- maybe you have everything working fine, and you want to be sure you can get back to the working state.  Maybe you create an "experiments branch" to work on; if it breaks, you can just switch back to the master branch with no harm done.  
+#+BEGIN_SRC sh
+git branch # show branches 
+git branch -c experiment # create the experiment branch
+git checkout experiment # chekout the experiment branch; then work on it for a while
+git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
+git checkout master # go back to the master branch, since it still lworks and you need to use it for something.  
+#+END_SRC
+** Push and Pull
+When you're working together you may want to *pull* someone else's changes or *push* your own to the group.  
+#+BEGIN_SRC  sh
+git pull # get the most recent branch of your original repository
+git push # send all your commits on the current branch to the original repository
+#+END_SRC
+
+
+OK, that's what I've got for now.  Follow the excellent links near the top for more info.  Good luck!
+
+
+# ./Images/github-add-file.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-github-add-file.png
+# ./Images/github-pull-request.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-github-pull-request.png
+# ./Images/githb-add-project.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-githb-add-project.png
