@@ -1,6 +1,267 @@
 #+BLOG: dig
 #+POSTID: 312
 #+DATE: [2015-07-21 Tue 13:48]
+* Reading /Eloquent Javascript/
+[[http://eloquentjavascript.net/][Eloquent Javascript]] is a a fantastic programming textbook, but it takes quite a bit of work to read. It's not always easy for us to read.  Many of the examples are a little more mathematical than some of us might like, and the selections we're reading leave out a lot.  Here are some notes to help you out, especially with the later chapters:
+** Chapter 12
+A lot of this will be review for you
+* Javascript Basics
+** Syntax
+When we hear a set of instructions, we generally attend to the parts that are clear to us, and ignore or puzzle over the parts that aren't clear.  
+
+*A computer does not work that way.* 
+
+If Javascript sees something that is unclear, *it throws up its hands and gives up*. 
+
+So for instance, 
+** Variables 
+A variable is a /container/; in Javascript, a  
+** Loops
+
+
+* Javascript Basics I: Operators, Loops, and that Pesky Problem 1
+:PROPERTIES:
+:ID:       o2b:b830ce1b-4623-419c-a833-439f7612d4c8
+:POST_DATE: [2016-02-03 Wed 12:53]
+:BLOG:     dig
+:POSTID:   511
+:END:
+** Quick JS Operator review
+| Operator  | Meaning                                                                                                  |
+|-----------+----------------------------------------------------------------------------------------------------------|
+| =         | /sets/ the left hand variable equal to the right hand expression                                         |
+| ==        | /tests/ whether the two sides of the the expression are equal                                            |
+| ~===~     | tests whether they are /both/ the same /value/ and the same /type/ (generally we won't worry about this) |
+| !=        | tests whether the two sides are /not/ equal                                                              |
+| >,<,>=,<= | exactly what you expect                                                                                  |
+| +=        | adds the right-hand expression to the left-hand variable                                                 |
+
+Asa bonus here are a couple of string tricks:
+| "\n"                    | prints a carriage return/new line                                                                                                                                                                                         |
+| "\""                    | prints a quotation mark directly                                                                                                                                                                                          |
+| "someletters".repeat(4) | This is a built-in method of every string -- it allows you to repeat the string easily without some kind of for loop (sorry guys! Didn't think of this initially!). prints "someletterssomeletterssomeletterssomeletters" |
+** Usage
+Here are some examples of their use:
+#+BEGIN_SRC javascript
+var a = 6;
+var b = "6";
+var c = 10;
+
+if (a == b) {} // returns true
+if (a === b) {} // returns false
+if (a != c) {} // returns true
+a += c; // sets value of a to 16
+b += a; // sets the value of b to the string "66"
+if (a < c) {} // returns true
+#+END_SRC
+** Making sense of Question 1
+Here's that annoying/difficult question 1 from the assignment again:
+#+BEGIN_SRC javascript
+/*
+  Problem 1: 
+  In chapter 2 of Eloquent Javascript, you learned how to make a simple ASCII-art
+  triangle (exercise 2.1) and how to combine multiple loops for complex effects
+  (exercise 2.3). Now, write a function that will produce a perfect ASCII-art V:
+      *
+     * *
+    *   *
+   *     *
+  *       *
+
+  This is trickier than it looks, so I've given you some starter code below. Fill it in
+  until it works.  Test it in your browser console, or in the Eloquent Javascript coding sandbox.  
+
+  Hint: your function will need to create loops inside loops. For each line, there is an initial offset,
+  an asterisk, and then more spaces. In all but one cases there is then a final asterisk.  I'll leave 
+  the math for you to figure out.  
+*/
+
+var makeV = function (height) {
+    // we'll need to create a string
+    // to log to the console later
+    var v = "";
+    // Outer loop -- we'll need "height" number of lines
+    for (h=height; h>0; h--){
+        // The line itself is composed of several parts:
+        // an offset, a *, and generally some spacing after the *
+        // and a second *. There's one case when this isn't true --
+        // when is it?
+        // in any case you will need some inner loops here. 
+        // each loop should add some characters to v using v += ...
+        // remember end-of-line is added to a string as "\n"
+
+    }
+    // output to the console
+    console.log(v);
+}
+
+makeV(13); // test your code by running it in the console
+
+
+#+END_SRC
+
+To solve this problem, let's break it down into simple parts and do them one by one.
+**  Step 1: make a line of the correct height
+The first thing to notice about this problem is that the v should be exactly "height" lines high.  SO, let's start by writing a function that just creates a line of stars "height" lines high:
+
+#+BEGIN_SRC javascript
+var makeV = function (height) {
+    var v = "";
+    // Outer loop -- we'll need "height" number of lines
+    for (h=height; h>0; h--){
+        v += "*\n";
+    }
+    // output to the console
+    console.log(v);
+}
+
+makeV(13); 
+#+END_SRC
+** Step 2: add spaces to the front of the line
+The next step is to try to create a diagonal line of the form:
+#+BEGIN_EXAMPLE
+    *
+   *
+  *
+ *
+*
+#+END_EXAMPLE
+Looking carefully, we see that for a line of height ~5~, we need ~4~ spaces in front of the first ~*~, ~3~ in front of the next one, ec. down to 0.  How can we do this?  It's pretty simple:
+#+BEGIN_SRC javascript
+var makeV = function (height) {
+    var v = "";
+    // Outer loop -- we'll need "height" number of lines
+    for (h=height; h>0; h--){
+        v += " ".repeat(h-1) + "*\n";
+    }
+    // output to the console
+    console.log(v);
+}
+
+#+END_SRC
+do you spot the difference?
+** Step 3: add a second asterisk everywhere but the first line
+OK, getting close. Now how do we get from a slanty line to a v? 
+Here's our V again; this time, I'll replace the spaces with numbers to help us figure it out:
+#+BEGIN_EXAMPLE
+      *
+     *1*
+    *123*
+   *12345*
+  *1234567*
+#+END_EXAMPLE
+-----
+- The first line is special -- there's only one asterisk
+- The next line has 1 space
+- The next has 3
+- the next has 5
+- the next has 7
+So, number of spaces is UNDEFINED,1,3,5,7,9,etc. 
+
+So, first thing we need to do is:
+- do nothing if we're in the first line
+- take some other action if we're in the second line
+For now, let's just add a second asterisk to every line but the first one.  
+
+Looking at our loop, we can tell that we'll be in the first line when ~h = ??~.  So, let's write that out:
+
+#+BEGIN_SRC javascript
+  var makeV = function (height) {
+      var v = "";
+      // Outer loop -- we'll need "height" number of lines
+      for (h=height; h>0; h--){
+          if (h==height) {
+              v += " ".repeat(h-1) + "*\n" // this is what we had before
+          } else {
+              v += " ".repeat(h-1) + "*" + " ".repeat(2*(height-h) - 1) + "*\n";
+          } // note that our "n" is "height -h" -- a little tricky to figure out at first
+      }
+      // output to the console
+      console.log(v);
+  }
+#+END_SRC
+** Step 4: Add the right number of spaces between the asterisks
+OK, let's cont the number of inter-asterisk spaces starting from the top:
+| Line                    | Spaces | Pattern   |
+|-------------------------+--------+-----------|
+| next line (h=height -1) |      1 | (2*1) - 1 |
+| next line (h=height -2) |      3 | (2*2) - 1 |
+| next line (h=height -3) |      5 | (2*3) - 1 |
+| next line (h=height -4) |      7 | (2*4) - 1 |
+
+We have already taken care of the first line, so let's not worry about it anymore. Now, we need to figure out how to describe the pattern in a way tat Javascript understands.  Look at it carefully.  We have two variables, ~h~ and ~height~.  The total number of spaces is equal to ~twice the difference betwwen h and height, minus 1~. 
+
+How can we write this in a way that Javascript understands? Well, we know these operators:
+| *  | multiplication                   |
+| +  | addition                         |
+| -  | subtraction                      |
+| () | mark off parts of the expression |
+
+So, maybe we want this many spaces: 
+
+~(2*(height - h)-1)~
+
+Remember, to add spaces we'll use the built-in string "repeat" method; and we'll do so in between the two asterisks:
+#+BEGIN_SRC javascript
+var makeV = function (height) {
+    var v = "";
+    // Outer loop -- we'll need "height" number of lines
+    for (h=height; h>0; h--){
+        v += " ".repeat(h-1) + "*" + " ".repeat(2*(height-h) - 1) + "*\n";
+    }
+    // output to the console
+    console.log(v);
+}
+#+END_SRC
+Ta-da; done.
+* Basic JS Part 2: the DOM
+:PROPERTIES:
+:ID:       o2b:9d7aefce-c129-4bbe-8646-93960d95d8a3
+:POST_DATE: [2016-02-03 Wed 12:55]
+:BLOG:     dig
+:POSTID:   508
+:END:
+** The DOM!
+Your textbook will be much more eloquent than I on this topic.  Modifying the DOM -- the Document Object Model -- is the amazing wonderful coolest thing that Javascript does. This is a huge topic, but let's quickly scratch the surface:
+** Understanding the DOM
+The DOM is a *Javascript representation of the webpage*.  It is stored in a special object named ~document~ and can be both /accessed/ (read) and /manipulated/ (written) through that object's many, many functions.  The DOM takes the form of a tree: 
+[[http://www.w3schools.com/js/pic_htmltree.gif]]
+
+The individual nodes in the tree /also/ have many functions that are available to use.
+** A couple of useful functions 
+| <20>                 | <60>                                                         | <60>                                                         |
+| Function (or Attribute) | What it does (or is)                                         | Example                                                      |
+|----------------------+--------------------------------------------------------------+--------------------------------------------------------------|
+| document.getElementsByClassName(class) | Takes a /string/ argument (so, argument should be in quotes), and returns a list of nodes /that have that class/. | document.getElementsByClassName("outline-2")                 |
+| document.createElement(type) | Creates a new element of type /type/                         | ~var link = document.createElment("a")~ will create a new "a" node, which can then be added to the DOM in some place (see below) |
+| e.textContent        | For an element or node "e", the attribute e.textContent is the text of that node | if e is <td class=PM>Wilfred Laurier"</td>, then e.textContent is equal to "Wilfred Laurier" |
+| e.href               | Stores the "href" attribute of any element                   | ~link.href = "http://some.link";~ This sets the "href" attribute to "http://some.link" |
+| e.appendChild()      | Creates a new node inside of the node "e"                    | Let's create two new nodes: ~link.appendChild(document.createTextNode("some text")); node.appendChild(link);~ This first adds some text INSIDE the existing node "link"; the second places the whole link node inside the node named "node". |
+| e.style.[attribute]  | Stores the various style attributes of nodes                 | ~e.style.background = "yellow";~ turns the background of node e yellow |
+
+** More Useful Functions
+| Function (or Attribute)            | What it does (or is)                                                  | Example                                                                                                                                       |
+|------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| ~text.replace(/existing/g, "new")~ | if text is a string, replace "existing" with "new" whenever it occurs | ~text.replace(/ /g, "_")~                                                                                                                     |
+| ~str.concat(text)~                 | if str and text are strings, add text to the end of str.              | ~w="https://en.wikipedia.org/wiki/";return w.concat(text);~ add "text" to the end of "https://en.Wikipedia.org/wiki/" and return that string. |
+** Solving Part 3
+I'm not going to solve this one for you.  But I will divide it into the following tasks:
+
+linkifyClass needs to do this:
+- retrieve all elements of class "PM"
+- for each element (a ~for ( __ of __)~ loop),
+  - retrieve the text content
+  - create a Wikipedia link by concatenating "https://en.Wikipedia.org/wiki/" and the text text content
+  - call addLink with the parameters {current element}, {text content}, {Wikipedia url}
+
+addLink needs to do this:
+- clear the node by setting "node.textContent" or "node.innerHTML" to "";
+- create a new "a" element;
+- set the href of the new element to "url";
+- append a child node to url with the value document.createTextNode(text);
+- append the url to node
+
+To do cooler stuff, like turning yellow, or linkifying all the classes, you'll need to do some more work yourself.  
 * Spatial History with Google Maps
 :PROPERTIES:
 :ID:       o2b:c9c77764-7451-42da-96d0-e20ae838551b
@@ -205,10 +466,11 @@ and here is the corrected code:
 I recommend that *everyone* carefully remove the old "for" loop and replace it with this new code.  It will make your lives better!
 * Understanding Popcorn
 :PROPERTIES:
-:ID:       o2b:e2b2a94c-25c3-44dd-99e3-fd2b48584c2f
-:POST_DATE: [2015-07-28 Tue 16:27]
-:POSTID:   327
 :BLOG:     dig
+:PARENT:   162
+:ID:       o2b:1d77ef33-50dc-4cfd-9bf0-eb246821cfa7
+:POST_DATE: [2016-03-24 Thu 06:51]
+:POSTID:   554
 :END:
 You may find it useful, as you prepare for the next assignment, to read the following post!
 ** What is Popcorn
@@ -260,5 +522,71 @@ If you end up confused, there are a couple of useful popcorn resources on the we
 ** Generating Events with Tabletop
 In class today, we /hand-coded/ our popcorn events. This is not particularly onerous but is a little clumsy. You are absolutely welcome to use this method for the assignment if you like; but there is another way.  the [[https://github.com/jsoma/tabletop][tabletop.js]] library lets you access information from a Google Spreadsheet and plug it into your scripts. I find it very handy for this kind of work (we could have used it for the mapping expercise, too).  In this way, you can create your popcorn events in the leisure of a Google Spreadsheet, and have the events automatically generated for you whenbever your web page loads.  
 
-The process is described [[https://github.com/jsoma/tabletop#1-getting-your-data-out-there][here]], and you are strongly advised to read it carefully. If you want to use the code I've provided for you in ~popcorn-data-with-google.js~, you will need to [[https://docs.google.com/spreadsheets/d/14jExD0zl9nvZyExoMsF_9wWr86Jmrk5c8Crt4G1EJuU/edit#gid=1715955432][copy this spreadsheet]], then *publish it* as described in the instructions, and also *copy the new URL* into the appropriate place in ~popcorn-data-with-google.js~.  Then code your popcorn in the spreadsheet; unless you make any syntax errors, the technical work should now be done. In the spreadsheet ist is somewhat easier, for instance, to arange your events in sequence, etc.  
+The process is described [[https://github.com/jsoma/tabletop#1-getting-your-data-out-there][here]], and you are strongly advised to read it carefully. If you want to use the code I've provided for you in ~popcorn-data-with-google.js~, you will need to [[https://docs.google.com/spreadsheets/d/14jExD0zl9nvZyExoMsF_9wWr86Jmrk5c8Crt4G1EJuU/edit#gid=1715955432][copy this spreadsheet]], then *publish it* as described in the instructions, and also *copy the new URL* into the appropriate place in ~popcorn-data-with-google.js~.  Then code your popcorn in the spreadsheet; unless you make any syntax errors, the technical work should now be done. In the spreadsheet ist is somewhat easier, for instance, to arange your events in sequence, etc.
+* Some Wordpress Plugins (Image Sliders and Timelines)
+:PROPERTIES:
+:PARENT:   5
+:ID:       o2b:4cba545f-ed63-4094-af28-de8c15b747e4
+:POST_DATE: [2016-02-09 Tue 10:59]
+:POSTID:   351
+:END:
+This is a preliminary list which I'll try to keep updating as we go
+** Image Sliders!
+Foundation comes with a built-in image slider [[http://foundation.zurb.com/sites/docs/orbit.html][called Orbit, but it is pretty much deprecated]] so we should probably choose one of the many, many other solutions that are available for Wordpress.  
+
+When choosing a slider plugin, it makes sense to think about a couple of different questions:
+
+- *What is the underlying technology?* Most Wordpress image sliders are themselves built on top of /external javascript libraries/.  That is, somewhat writes a pure Javascript tool for image movement, and then another person comes along and writes a Wordpress interface for that Javascript library.  Some of the underlying libraries are great, others less so.  SOme are very flexible, but therefore also complex. Some are pretty, some are ugly.  etc.
+- *What am I using this for?* Sometimes you know in advance that all you want this slider for is images.  Other times, yo uwill want more complex content. Some plugins are great and in fact super-easy for workingwith images alone, but will not work /at all/ with more complex content. Other sliders provide a complex interface for designing individual slides; this can be great if you really need all the complex options, but frustratingly opaque if you only need the simple stuff.
+- *What's the Wordpress interface like?* Echoing what I just said above, the various Wordpress plugins provide differing user interfaces. You want to choose something that enables the users to do everything they have to, but isn't too complicated for an ordinary user to use. This balance can be hard to achieve, so you may find yourself experimenting quite a bit before you find the right one. So, that means you probably shouldn't invest a whole tonne of time into any one slider until yo're sure it does all you need it to.,
+
+Procedure for making this choice: 
+- figure out what you want in a slider
+- Find plugins online using the Wordpress plugin search.
+- read the descriptions and the reviews
+- install and try out one or more
+- make a final choice of plugin and start using it 
+
+The Foundation devs recommend using [[http://owlgraphic.com/owlcarousel/][Owl Carousel]] and it has much to recommend it.  A quick search finds [[https://en-ca.wordpress.org/plugins/search.php?q=owl+carousel][many options]].  [[https://en-ca.wordpress.org/plugins/slide-anything/screenshots/][Slide Anything]] in particular looks promising.
+** Timelines!
+We have talked about having a timeline of events that puts the Flynn family's history in the context of broader historical developments.  In the past, I've used [[https://en-ca.wordpress.org/plugins/knight-lab-timelinejs/][this plugin]], but there are [[https://en-ca.wordpress.org/plugins/tags/timeline][many others]] including [[https://en-ca.wordpress.org/plugins/timelinejs/screenshots/][at least one other plugin that ses the same underlying framework]]. 
+
+Most of these timeline plugins generate their timelines automatically, using pre-existing content that is already on the site. In many ways this is very cool and helpful, because your content is written exactly once, and when you make changes, you don't have to think, "where else did I have that mistake and how can I fix it?" However, a lot of the events on our timeline might not really need to have pages on our website, so that can also be a disadvantage.  
+
+I would suggest trying out several and seeing how they seem to work for you.  I'd also consider making some dummy timelines on your own personal websites and seeing how they seem to work out.
+** Image Maps
+I've already installed two image mapping plugins on thesite: [[https://wordpress.org/plugins/imagemapper/][Image Mapper]] and [[http://wpdrawattention.com/][Draw Attention]].  You can try both out and see how you like them.
+* Adding a Custom Icon to Google Maps Markers 
+The Google Maps API permits us to set the image that displays on the map as the marker's "icon".  Yo are familiar with the red balloon-like pin hat google uses by default, bt google provides many other options, and you can even define yor own if you like, as long as the image you want to use is on the Internet.  All you need to do is to add an "icon" attribute to the marker object definition.  For or assignment, that means you will need to modify code in at least two places: 
+
+- in the ~all_my_markers~ array
+
+
+** 
+* Ecosystem, Infrastructure, and Tools
+SOmetimes we make the mistake of thinking that everything in University is /conceptual/. But we also learn to use the tools of our trade: journals, books, archival finding aids; and increasingly, many, many kinds of software.  
+*** Understanding Your Browser
+First ask yourself for a second: what is a web browser? Why do we use and need them? Can I get more out of my browser than I have been?
+**** Plugins
+**** Information Trackers
+(bookmarks & history)
+**** Developer Tools
+- Firw Source
+- Inspector
+- console
+- Scratchpad
+*** 
+*** Git and Github
+*** Google Maps
+*** GeoJSON.io
+*** Leaflet & OSM
+*** Voyant Tools 
+*** MALLET 
+*** Popcorn js 
+*** Odyssey.js
+*** Timeline.js
+*** Zotero
+*** Bibtex
+*** 
+
 

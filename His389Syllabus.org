@@ -1,4 +1,7 @@
-#+DATE: [2015-07-02 Thu 09:02]
+>1;4402;0cOB# Local Variables:
+# org-time-sOBOBtamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
+# End:
+#+DATE: [2016-01-06 Wed 09:02]
 #+POSTID: 60
 # # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
@@ -6,7 +9,7 @@
 # #+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
-#+TITLE: Digital History: His389, Summer 2015
+#+TITLE: Digital History: His389, Winter 2016
 #+AUTHOR: Matt Price
 #+EMAIL: matt@osskil.lan
 #+DESCRIPTION:
@@ -16,14 +19,15 @@
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
 #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
+
 * Logistics
 #+ATTR_HTML: :class org-upload
 
 
 | *Instructor:*   | Matt Price             |
 | *Email:*        | matt.price@utoronto.ca |
-| *Office Hrs:*   | SS 3077 R 1-3          |
-| *Meeting Times* | M W 10-12              |
+| *Office Hrs:*   | SS 3077 T 1-2:30       |
+| *Meeting Times* | R 9-11                 |
 
 
 * Introduction
@@ -52,7 +56,7 @@ At the end of this course, you should:
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 - 
-* Course Re & Grading
+* Course Requirements & Grading
 Grading in this course is done using a /modified point system/. The system may seem odd at first, but it has definite advantages for both students and teachers, so don't be intimidated. Instead of receiving a number or letter grade for each assignment, and then getting a weighted sum of those grades as your final mark, you will /choose what final mark to try for/ and then /complete the assignments required for that mark/.  A certain set of assignments is required for a D; for a C, you must complete all of the "D" assignments plus another set; for a B, all of the C assignments plus some more; and the same goes for an A. 
 
 Here are some more details:
@@ -60,7 +64,7 @@ Here are some more details:
 - A 'Passing' Mark on Assignments is a B+ :: In order to get credit for an assignment, you will have to demonstrate a high level of mastery -- about the level normally required for a B+.
 - Each Higher Grade Represents a quantum level of additional achievement :: As you move up the ladder, assignments test more advanced and difficult concepts from the course.
 - If you fail, you can try again :: You start the semester with 5 'retry' chits, which you can use to resubmit assignments that have not succeeded. If necessary, you can use all of those chits on a single assignment!
-- A late assignment costs one 'retry' chit :: There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities.
+- A late assignment costs one 'retry' chit :: There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities. However, *retry expires 2 weeks after the on-time assignments are handed back* -- so you can't put everything off till the end of term.  
 - Second and third Tries get fewer Comments :: I will give substantial comments on first tries; additional tries will get less and less fulsome commentary.
 - Pluses and Minuses are determined by Participation :: The only part of your grade which is not determined on a pass/fail basis is the "+" or "-" part, which is assigned based on your on and offline participation.  See the participation grade sheet for more details. 
 
@@ -68,48 +72,57 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 | <25>                      | <7>     | <35>                                | <37>                                  | <36>                                 | <36>                                 |
 | Assignment                | Due Date | D                                   | C                                     | B                                    | A                                    |
 |---------------------------+---------+-------------------------------------+---------------------------------------+--------------------------------------+--------------------------------------|
-| Web Skills Top-up         | <2015-07-09 Thu> | \checkmark                          | \checkmark                            | \checkmark                           | \checkmark                           |
-| Distant Reading           | <2015-07-21 Tue> | \checkmark                          | \checkmark                            | \checkmark                           | \checkmark                           |
-| Spatial History           | <2015-07-30 Thu> |                                     | \checkmark                            | \checkmark                           | \checkmark                           |
-| Aural History             | <2015-08-10 Mon> |                                     |                                       | \check                               | \checkmark                           |
-| Project Proposal          | <2015-08-13 Thu> |                                     |                                       |                                      | \checkmark                           |
+| HTML & CSS self-study     |         | \checkmark                                   | \checkmark                                     | \checkmark                                    | \checkmark                                    |
+| Javascript for DH         | <2016-02-11 Thu> | \checkmark                                   | \checkmark                                     | \checkmark                                    | \checkmark                                    |
+| Distant Reading           | <2016-03-03 Thu> |                                     | \checkmark                                     | \checkmark                                    | \checkmark                                    |
+| Spatial History           | <2022-03-24 Thu> |                                     | \checkmark                                     | \checkmark                                    | \checkmark                                    |
+| Aural History             | <2016-04-07 Thu> |                                     |                                       | \checkmark                                    | \checkmark                                    |
+| Project Proposal          | <2016-04-12 Tue> |                                     |                                       |                                      | \checkmark                                    |
+| 24-hr Short Answer Takehome | <2019-04-11 Thu> | \checkmark                                   | \checkmark                                     |                                      |                                      |
 | Competencies Demonstrated |         | Very basic web skills; preliminary exploration of DH methods | Ability to use mapping tools, think critically about their value to history | Intermediate web sklls; thoughtful use of oral history for media-centric storytelling | Capacity to think creatively about how DH methods can enhance historical thinking |
 
 
+
 * Texts
-The following texts are required and available at the Bookstore:
+The following texts are required and available at the Bookstore, or via various online booksellers:
 [[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]]
 [[zotero://select/items/281947_IPDTIXBH][@perks:2006oral]]
 [[zotero://select/items/0_R25HVIS6][@geddes:2014toward]]
 
 * Course Outline
 ** Text, Code, and the Web
-*** Introducing /Digital History/ <2015-06-30 Tue>
+*** Introducing /Digital History/ <2016-01-14 Thu>
 *Class Synopsis:* Introduction to the course, Github, and Markdown. 
+
 *Readings:* You may want to read some of these as general preparation for this and other history classes:
 - [[zotero://select/items/0_PNA38CTR][@w._caleb_mcdaniel:how]]
 - William Cronon, [[http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf]["Why the Past Matters"]]
 - [[zotero://select/items/0_PC2VXZCN][@cohen:2006becoming]]
 
-*** What the Web Signifies <2015-07-02 Thu>
+*In-Class Activity: Collaboration on Github* 
+
+*** What the Web Signifies <2016-01-21 Thu>
 We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
 
 *Readings:*
 - Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf
 - [[zotero://select/items/24157_W4W7VESK][@cohen:2008interchange]]
+- start [[http://offshore-interactive.com/][Offshore Interactive]] for next week (will take a while to watch)
 *In-Class Activity: HTML, CSS, and markdown*
  
-*** Abundance and Openness <2015-07-07 Tue>
-One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian. 
+*** Abundance and Openness <2016-01-28 Thu>
+One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian.
+
 - [[zotero://select/items/24157_JIA76FSS][@rosenzweig:2003scarcity]]
 - [[zotero://select/items/278357_66H494QK][@council:many]]
 - [[zotero://select/items/278357_F5HZ3EV4][@turkel:going]]
 - [[zotero://select/items/278357_KCTKZCAI][@anonymous:learn]]
+- [[http://offshore-interactive.com/][Offshore Interactive]] (will take a while to watch)
 
 *In-Class Activity: Evaluating websites*
 
 ** Data Driven History
-*** Distant Reading 1  <2015-07-09 Thu>
+*** Distant Reading 1 <2016-02-04 Thu> 
 Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 *Readings:* 
@@ -117,7 +130,7 @@ Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-drive
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
 *In-Class Activity: Wordles*
 
-*** Distant Reading 2 <2015-07-14 Tue>
+*** Distant Reading 2 <2016-02-11 Thu> 
 We'll finish up with Moretti, and go on to the work of his student, Matthew Jockers.
 
 *Readings:* 
@@ -125,7 +138,9 @@ We'll finish up with Moretti, and go on to the work of his student, Matthew Jock
 -  "Style" and "Nationality" in  [[zotero://select/items/278357_CD6KU842][@jockers:2013macroanalysis]] 
 *In-Class Activity: Voyant Tools*
 
-*** Text as Data, History as Algorithm <2015-07-16 Thu>
+*** NO CLASS FEB 18: READING WEEK
+
+*** Text as Data, History as Algorithm <2016-02-25 Thu>
 We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
 
 *Readings:* 
@@ -136,7 +151,7 @@ We'll explore "topic modelling" -- one of the most popular DH methods -- as well
 *In-Class Activity: Tidy Data*
 
 ** Maps, Visualization, and History
-*** Spatial History <2015-07-21 Tue>
+*** Spatial History <2016-03-03 Thu>
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
@@ -144,8 +159,13 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 - lying with maps: http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf
 - http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html
 *In-Class Activity: Mapping with Google*
-
-*** Visualization  <2015-07-23 Thu>
+**** COMMENT adding critical cartography readings
+e.g., https://www.academia.edu/7732250/An_Introduction_to_Critical_Cartography
+http://journals2.scholarsportal.info/browse/03177173/v50i0001
+http://journals2.scholarsportal.info/browse/03177173/v26i0002
+http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
+http://slab.scripts.mit.edu/wp/links/critical-cartography/
+*** Visualization <2016-03-10 Thu>
 Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
 
 *Readings:* 
@@ -154,7 +174,7 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 - Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 *In-Class Activity: Reading visualizations*
 
-*** Maps Online  <2015-07-28 Tue>
+*** Maps Online <2016-03-17 Thu>
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
 
 *Readings:* 
@@ -164,23 +184,26 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 *In-Class Activity: GIS*
 
 ** Oral History, Crowdsourcing, and the Promise of the Public Sphere
-*** What's Special about Oral History  <2015-07-30 Thu>
+*** What's Special about Oral History <2016-03-24 Thu>
 Oral History has a long tradition; we explore its roots and peculiarities.
 
 *Readings:*
 - "The Voice of the Past" and "What makes Oral History Different" in /The Oral History Reader/
+- Listen to some part of - "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html
 
 *In-Class Activity: Peer interviews* 
 
-*** Oral History & Remix Culture  <2015-08-04 Tue>
+*** Oral History & Remix Culture <2016-03-31 Thu>
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
+
+If we're ahead of schedule, we'll watch /Harlan County USA/ in class.  
 
 *Readings:*
 - "Oral History and the Digital Revolution" and "Authoring in Sound" in /The Oral History Reader/
 - [[zotero://select/items/0_VZMTZUHS][@gunkel:2008rethinking]]
 *In-Class Activity: popcorn.js*
 
-*** Citizen History  <2015-08-06 Thu>
+*** Citizen History <2016-04-07 Thu>
 In conclusion, we'll think about the future of the historical enterprise and thei mplications of the techniques we've discussed.  What are the pormises and pitfalls? What do we want history to be? 
 - http://publichistorycommons.org/where-are-the-citizen-historians/
 

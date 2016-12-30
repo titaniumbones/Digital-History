@@ -1,21 +1,139 @@
-* 02: Distant History
+#+PROPERTY: PARENT 171
+#+Parent: 171
+
+* Participation
+:PROPERTIES:
+:POSTID:   174
+:ID:       
+:POST_DATE: [2015-12-11 Fri 11:16]
+:END:
+As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.  
+
+** The System
+
+It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading, Spatial History, and Aural History assignments. Congratulations! You have qualified for a B. But what kind of a B?
+
+| If your class participation was: | You get a: | Which ROSI will show as: |
+|----------------------------------+------------+--------------------------|
+| Poor                             | B-         |                       72 |
+| Satisfactory                     | B          |                       75 |
+| Excellent                        | B+         |                       78 |
+
+Similarly, perhaps you were only able to complete the HTML Top-Up and the Distant Reading assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
+
+| If your class participation was: | You get a: | Which ROSI will show as: |
+|----------------------------------+------------+--------------------------|
+| Poor                             | D-         |                       52 |
+| Satisfactory                     | D          |                       55 |
+| Excellent                        | D+         |                       58 |
+
+*But Note!*
+
+A+ is a special grade.  Suppose you complete all the assignments satisfactorily.  Wow! You get an A, great.  But...  do you get an A+?
+
+| If your class participation was: | You get an: | Which ROSI will show as: |
+|----------------------------------+-------------+--------------------------|
+| Poor                             | A-          |                       83 |
+| Satisfactory                     | A           |                       88 |
+| Excellent                        | DEPENDS     |                  DEPENDS |
+
+Even if your participation was excellent, you will only receive an A+ if your work was consistently excellent and occasionally brilliant.  So, if you successfully complete all the assignments (great!), and also are a great class participant (thanks!), then I'll look over all your work and make a value judgment about whether you deserve this rare and precious grade.
+
+** The Criteria
+This is a class about digital history, so it would be *crazy* not to have an online presence.  The course website is:
+
+http://digital.hackinghistory.ca/
+
+I'll post just about everything related to the class there, except for marks, which I'll do on Blackboard or by personal communication.  Your participation mark is a combination of /in-class/ and /online/ participation.  
+
+*** In the Classroom
+But what makes for good class participation?  You might want to start by reading [[http://wcm1.web.rice.edu/howtodiscuss.html][How to discuss a book for history]], which has lots of helpful suggestions. Really, please read it -- it's illuminating. But, meanwhile, here are some hints:
+
+- Show up for class :: It's hard to discuss when you're not here.
+- Do the Readings :: It's hard to discuss what you haven't read.  I will try hard not to assign too much reading; in return, please try to read it.
+- Be Courteous :: Treat your classmates with respect, even when your opinions differ fiercely.  Refrain from interrupting others, notice when others have been waiting & let them speak first, and so on. Don't shut other people down, and frame your comments in a way that invites further discussion.
+- Listen :: Pay careful attention when your classmates are speaking; if their ideas seem a little unclear, try to fill in the gaps, either by thinking silently, or by asking friendly, clarifying questions.  Try to think about how their positions relate to yours, and, especially, whether you should perhaps change your mind a little based on what they have to say.
+- Be Clear :: think about the readings before you come to class, so that your opinions are well-formed.
+- Be Brave :: It can be intimidating to speak in class, especially if you have found the readings or the lecture confusing. But /you will almost never be alone./ If one person is confused, others likely are too.  Have the courage to speak up -- everyone in the room is likely to thank you.  If you are extremely shy in person, then come speak to me and we can try to work out a solution for you.
+- Participate in Group work :: Occasionally we will break up into small groups.  The same princples apply to group work -- I'll be paying attention.  
+
+
+*** Online
+I'd also like you to write 3 blog posts over the course of the term, and 6 comments on other people's blogs.  At least one blog should be written in the first half of the class, and please submit no more than one post in the final week.  I will also occasionally post blogs and comments there, though I'm pretty busy this term so I'll be doing a bit less than I usually would.  
+
+Blog posts should be /thoughtful engagements/ with the course readings and activities, about 400 words in length and usually written in a semi-formal style.  A successful blog post shows evidence of:
+- careful reading: you have understood the author's main points;
+- critical engagement: you have something to add to what the reading teaches us, whether it's a link to related material, a criticism of the author's argument, or an elaboration thereof;
+- effort: you have taken the time to proofread your post, and to lay out your argument in a convincing manner.  
+
+Blogging on the course website is easy.  You are all already signed up for the website, and many of you have signed in.  Authoring in Wordpress is very easy.  
+
+*Pro Tip:* Our course website supports authoring in [[http://jetpack.me/support/markdown/][markdown]], and I strongly suggest you use this simple and intuitive syntax for writing. It will help you understand more about how HTML works, while saving you from typing in HTML by hand (blecch!).  You can learn more about markdown from the [[https://en.support.wordpress.com/markdown-quick-reference/][Quick Reference Guide]] or from the [[http://daringfireball.net/projects/markdown/][comprehensive documentation]].  
+
+** Finally
+
+If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
+
+* Assignment 01: Web Skills
+:PROPERTIES:
+:POSTID:   177
+:ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
+:POST_DATE: [2015-12-11 Fri 11:16]
+:END:
+
+*Due Date: Feb. 11*
+
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
+
+Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
+
+** Assignment
+The Assignment details are listed in the [[https://github.com/titaniumbones/assignment-web-skills-intro][Github repository]].  Read them there and follow them carefully.  
+** COMMENT Alternative
+Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
+- Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
+
+You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
+
+
+* Assignment 02: Distant History
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
-:POST_DATE: [2015-07-14 Tue 10:14]
 :POSTID:   209
 :PARENT: Assignments
+:POST_DATE: [2015-12-14 Mon 14:03]
 :END:
-Today in class we learned how to use [[http://beta.voyant.org][Voyant tools]]. If you missed class, you may want to [[http://docs.voyant-tools.org/workshops/dh2015/][read this excellent tutorial]].
+
+
+*Due Date: March 03*
+
+In class we learned how to use [[http://beta.voyant.org][Voyant tools]]. If you missed class, you may want to [[http://docs.voyant-tools.org/workshops/dh2015/][read this excellent tutorial]].
 
 In this assignment, you will
-- create a corpus for voyant tools
+- create/choose a corpus for voyant tools
 - devise a set of questions you want to ask using voyant
 - do your best to answer those questions
 - write a report on this activity
 In what follows, I lay out expectations for each of these parts in turn. 
 
-** Create a corpus
-Choose a set of texts related to a topic in which you have a genuine interest. These texts are your /primary sources/; so, if you choose a set of scholarly articles, then you will be investigating /the history of scholarship/ rather than /the history of the object of scholarship/. That's fine, but be aware of what you're doing.  There are many repositories of primary sources, and many guides to them on the web. Performing this initial search is part of the assignment, though if you get stuck, I /strongly/ encourage you to collaborate with a classmate or a librarian.
+** Create or Choose A Corpus
+Choose a set of texts related to a topic in which you have a genuine interest. These texts are your /primary sources/; so, if you choose a set of scholarly articles, then you will be investigating /the history of scholarship/ rather than /the history of the object of scholarship/. That's fine, but be aware of what you're doing. 
+
+Actually finding the texts you want, and getting them into the right format, can be quite challenging.  I have already created a few corpora on the http://hackinghistory.ca:8888 Voyant tools server, and you may want to look at them first.  They include:
+- [[http://shimano:8888/?corpus=95a7a99e6bc7a1414f4b34a00fa6df72][Shakespeare's Plays]]
+- [[http://shimano:8888/?corpus=ce4b80c8f92d5b97695d3bc1242c57f7][Austen's Novels]]
+- A collection of [[http://shimano:8888/?corpus=aa1dd38843c3c9af47f1a7cbca994d4f][Abraham Lincoln's Speeches]]
+- All of the [[http://shimano:8888/?corpus=29104c8270a99073de565713ffa5ec01][Inaugural Speeches of US Presidents]]
+- [[http://shimano:8888/?corpus=22415bf68910b41a4a807324544873b3][A collection of Sunday Schoolbooks from the Nineteenth Century]], copied from [[http://www.lib.msu.edu/ssbdata/][here]]
+- The full archive of the [[http://archive.lib.msu.edu/dinfo/grange_visitor/][Grange Visitor]], a periodical of the Grange movement
+
+If you are absolutely stuck for texts, you may want to use one of these sources (I may add more over the next week, so keep checking back).  
+
+I have also written a script that will collect and download large numbers of texts from [[http://archive.org][the Internet Archive]].  I am hoping to implement it in a form that you can use yourselves, but for the present, I encourage you to use the [[https://archive.org/advancedsearch.php][Advanced Search Form]] on the Archive website to assemble a suitable corpus of texts. Once you are satisfied with your search (and you will likely need to modify your search many times!), send me an email with the text of your query (it will look like ~title:(physiology) AND collection:(medicalheritagelibrary) AND date:[1800-01-01 TO 1900-01-01]~, and will be displayed in the search results).  
+
+(Alternatively, and preferably, you can follow the "Help with CSV" instructions on the search page and create a CSV file with *at least* the identifier, year, title, and author fields. Then send me that file.)
+
+There are many other ways to assemble a corpus, and there are large numbers of corpora already available on line. However, many of these are not immediately suitable for working with Yovant Tools, so you may find yourself in for a fair amount of work if you choose thatroute.  
 
 When you choose your texts, you are perforce in part determining the kinds of questions you can ask, so please do so carefully. 
 
@@ -45,6 +163,10 @@ The report is a short paper 3-5 pages in length discussing the outcomes of your 
 - Your initial research questions
 - Your assessment of the success of the research project: Did you learn what you set out to? Did you learn anything else? What would have made the project more successful? What would you do differently next time? DOn't be afraid to present "negative results": 
 
+** Goals
+- Demonstrate a basic understanding of the kinds of questions and analysis suited to distant reading tools
+- Work with a simple, introductory-level graphical interface for distant reading.
+- Learn to use the resultant visualizations to support written arguments
 ** Expectations
 To receive credit for this assignment you are expected to:
 - Assemble a coherent corpus of texts. The corpus should be: related to a particular theme that you desire to analyze; large enough to perform meaningful quantitative analysis; of real interest to you; composed of primary sources.
@@ -53,22 +175,34 @@ To receive credit for this assignment you are expected to:
 - Discuss the results of your research. Your discussion should be: carefully written with a minimum of spelling and grammatical errors; well-organized; honest about how successful you were; thoughtful about the reasons for success or failure.
 
   If you meet all these criteria, you will get credit for the assignment!
-* 03: Spatial History
+** COMMENT Some URL's 
+I run Voyant from insie ~/var/www/VoyantServer2.0-M8/~ with
+ ~java -Xms2g -Xmx2g -jar VoyantServer.jar --headless=true~
+
+I've uploaded a few corpora to my local server, e.g.:
+- Sunday schoolbooks  http://shimano:8888/?corpus=22415bf68910b41a4a807324544873b3, from here: http://www.lib.msu.edu/ssbdata/
+- the xml version of the feeding america corpus: http://shimano:8888/?corpus=f42206f4a31b850d49f0e2eb879fa21d from https://www.lib.msu.edu/feedingamericadata/
+  - text version:
+- Grange Visitor: from http://archive.lib.msu.edu/dinfo/grange_visitor/, online here; 
+- Lincoln speeches
+- Inaugural speeches:
+- 
+* Assignment 03: Spatial History
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-spatial-history
 :ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
 :PARENT:   Assignments
-:POST_DATE: [2015-07-23 Thu 09:52]
 :POSTID:   315
+:POST_DATE: [2015-12-14 Mon 14:04]
 :END:
-*Due Date: July 30, 8:00PM*
+*Due Date: March 24*
 
-In class on Tuesday, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from [[http://digital.hackinghistory.ca/2015/07/20/spatial-history-with-google-maps/][the blog]], from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
+In class, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from the course website, from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
 
 Your next assignment builds directly from that in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  
 
 ** Assignment
-Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you.  We discussed a number of such themes in the class last week (LGBQT+ history in Toronto; Women's movements; Hippie culture; etc., etc.). The final product should meet the following criteria:
+Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you.  We discussed a number of such themes in the class (you should remember them from our discussion). The final product should meet the following criteria:
 
 - Essay :: You should write a short essay, approximately 900 words (~ 3-4 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis.
 
@@ -89,18 +223,21 @@ Build a web page that includes a Google Map (complete with markers) as part of a
 ** Getting your assignment, and handing it in
 This assignment is stored on Github. You can get it easily by navigating to [[https://github.com/titaniumbones/maps-with-markdown]] and locating the "DownloadZIP" button.  
 
-To hand it in, simply rezip the folder and send it to me; be sure to rename the folder itself to something that contains your name, e.g., "matt-price-his389-spatial-history".  
+To hand it in, simply rezip the folder and send it to me at the Dropbox Request URL I'll send you before the due date; be sure to rename the folder itself to something that contains your name before zipping, e.g., "matt-price-his389-spatial-history". If you don't take this step, your work will not be preserved and I won't grade your assignment.  
 
-*Or:* If you like, you are more than welcome to create a github account, fork the repository, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository.  
-
+*Or:* If you like, you are more than welcome to login to your github account, fork the repository, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository, or if you like, submit a pull request which I can inspect.
+** Learning Objectives
+- Understand what a Google Map is and how it relates to GIS
+- Learn the simplest parts of the Google Maps Javascript API, and use them to create map elements
+- Integrate a written historical narrative with a digital map object
 ** Expectations
 Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and map should not be artificial -- the map should serve as an important part of your historical argument or explanation. 
 
-Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  
+Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  Markers should provide information that makes your written text clearer or more persuasive.  
 
 If you change the styling, you should not create a terrible mess!
 
-* 04: Oral History
+* Assignment 04: Oral History
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
@@ -108,7 +245,7 @@ If you change the styling, you should not create a terrible mess!
 :POSTID:   330
 :END:
 
- *Due Date: August 10*
+ *Due Date: April 7*
 
 In the final segment of our class, we discuss the use of non-textual media in history, especially /oral histories/. This final, short project asks you to take an existing piece of oral history and build a small web page around it. We will use a very similar set of templates to those we used last assignment; but instead of dealing with Google Maps, we'll use the [[http://popcornjs.org/][Popcorn]] events framework for creating a simple multi-media history essay out of HTML.  As with our last assignment, this is a little bit like using [[https://www.youtube.com/watch?v=Q8gGsuWouDE][hand-carved wooden Emoji]]: obviously there are much more sophisticated ways to interact with video on the web; our aim is to use this simple tool as a way to think about several issues: 
 - How do aural and visual media change the nature of historical narrative?
@@ -116,47 +253,74 @@ In the final segment of our class, we discuss the use of non-textual media in hi
 - How does technical infrastructure (like [[http://popcornjs.org/][Popcorn]] and [[http://docs.google.com][Google Docs]]) change the nature of historical narrative?
 ** Assignment
 - Choose a short, online oral history audio clip (approximately 3 minutes in length). I recommend [[http://storycorps.org/][StoryCorps]] as a source, though there are many oral history archives online that are equally suitable.
-- Listen to it carefully. What historical themes are suggested by it? What kinds of annotatins might heighten the impact at crucial moments, or fill in background information at other times?
+- Listen to it carefully. What historical themes are suggested by it? What kinds of annotations might heighten the impact at crucial moments, or fill in background information at other times?
 - Create a short "video" to accompany the audio clip; use a variety of Popcorn plugins to accomplish this. In general, for 180 seconds you will likely need at least 15 events for the the video to feel approximately "full".
 - Write a short essay, approximately 800 words in length, addressing any of the historical issues raised by the audio clip.  Refer specifically to quotations from the clip.  You may want to provide [[https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video#Specifying_playback_range][links to specific timecodes]] form the audio, though integrating that with Popcorn playback is unfortunately a little tricky.  As in your last assignment, use simple links for citations, though you should provide page numbers wherever possible).
+** Learning Objectives
+- Grapple with the particular ethical and methodological complexities of oral history
+- Gain experience integrating text and media
+- think about the relation between textual narrative and audio-visual display of information. 
 ** Expectations
 Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and clip should not be artificial -- the essay should clarify or enlarge the historical circumstances that are brought to life by the clip.  
 
-Your popcorn events should be keyed to the rhythms of the clip itself, appearing and disappearing along with the themes that they refer to or address.  They should enhance the impact of the clip rather than distract form it, and provide additional historical background that might not be found in the essay or the clip.
+Your popcorn events should be keyed to the rhythms of the clip itself, appearing and disappearing along with the themes that they refer to or address.  They should enhance the impact of the clip rather than distract from it, and provide additional historical background that might not be found in the essay or the clip.
 
 If you change the styling, you should not create a terrible mess! Certainly I think the page could be prettier and I welcome your improvements.  
 ** Technical Help
-As usual, I am pretty much available to answer your questions.  I also urge you to read [[http://digital.hackinghistory.ca/2015/07/28/understanding-popcorn/][this post]], which has a fair amount of technical detail and also gives links to further documentation.  
+As usual, I am pretty much available to answer your questions.  I also urge you to read [[http://digital.hackinghistory.ca/2015/07/28/understanding-popcorn/][this post]], which has a fair amount of technical detail and also gives links to further documentation.  [[http://popcornjs.org/popcorn-docs/plugins/][Documentation of the popcorn event plugins is also available online]].
 
 
-* 05: Project Proposal
+* Assignment 05: Project Proposal
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
 :POST_DATE: [2015-07-28 Tue 17:16]
 :POSTID:   337
 :END:
-This is a substantial project required only for those students seeking a grade of "A" in the class.  There will not be much time for rewrites, so you may have only one shot at this. Unless you have a substantial interest in the course material, and have an idea for a project that you may, someday, be interested in actually pursuing, I don't recommend that you attempt this assignment.
+*Due Date: April 12*
+*Note to self: convert to a "real" call for proposals!!!*
 
-Your task is to write a funding proposal for a digital history project. The project should be:
+This is a substantial project required only for those students seeking a grade of "A" in the class.  There will not be time for rewrites, so you may have only one shot at this. Unless you have a substantial interest in the course material, and have an idea for a project that you may, someday, be interested in actually pursuing, I don't recommend that you attempt this assignment. Don't start this assignment unless you have already received a passing mark in all of the other term work; you can't get an A in the course, or even a B, without those prerequisites. 
+
+----- 
+
+**  Call for Proposals: Digital History Initiative Grants
+
+The Hacking History Foundation is pleased to announce a new /Digital History Initiative/, intended to advance the field of digital historical studies in Canada. We are grateful to an anonymous donor from Qatar who has agreed to underwrite three levels of grant:
+- Student Development Grant :: This grant of $15,000, to be spend within a period of 12 months, funds small or preliminary projects developed by undergraduate or graduate students.
+- Small Team Grant :: This grant funds up to $50,000 of work by a small team, in a period of 1-3 years.
+- Large Grant :: This fund, which has no fixed upper limit of funding, funds long-term projects over a period of 3-5 years.
+
+We invite applications for all three categories, to be submitted by <2016-04-15 Fri>. Be sure to identify the category of grant you are applying for. Regardless of the project's scale, the proposal should be:
 - of genuine historical interest
 - technically feasible
-- appropriate to the DH methods that we have discussed in the class
-- of real personal or professional interest to you
+- appropriate to the DH methods that might be discussed e.g. in a course such as "Digital History" at the University of Toronto
+- of real personal or professional interest to you, the applicant.
 
-It is not necessary for you yourself to possess all the skills to complete the project; but you should be able to clearly articulate the nature of the technical challenges and have a realistic assessment of what is required to overcome them. you should also be able to articulate the /historical import/ of the project, and its worthiness for public funding (which is pretty much the only kind we have for historians here in Canada).  
+The Hacking History Foundation strongly values honesty. It is not necessary for you yourself to possess all the skills to complete the project; but you should be able to clearly articulate the nature of the technical challenges and have a realistic assessment of what is required to overcome them. You should also be able to articulate the /historical import/ of the project, and its worthiness for public funding, because even though we are funded by shadowy carbon-spewing billionaires, our Foundation has a strong sense of civic duty.  
 
 ** Structure
-The proposal should be composed of the following elements (word lengths are approximate):
-
+The proposal should be composed of the following elements (word lengths are approximate): 
 - Introduction (500 words) :: In broad strokes, describe the project, the questions it is intended to answer, and the role of Digital History methods within the project
 - Methods (500 words) :: Describe the tools you intend to use, and your plans for both research and dissemination of results
 - Timeline (500 words) :: Describe the work that will be required to complete this project, and how much time you and your potential collaborators or research assistants will require to bring it to completion
 - Importance (500 words) :: Discuss the importance of this research, and its place in a broader historical conversation
+- Budget (1 Spreadsheet page) :: Outline and justify the costs of the project. [Note to students of Hacking History: we recognize that your costs may be, er, rough ballpark estimates. You won't be graded on the accuracy of your budget, but make a serious effort to include all the categories of cost.]
 
 ** Expectations
 This is a difficult assignment. As usual, you should turn in a lucidly-written paper with minimal grammatical or spelling errors, written in accordance with scholarly standards for citation and originality.  Your project should be of genuine historical interest, and your text should convince me of that importance. Your methods section should describe the challenges inherent in the project, and provide a provisional plan for overcoming them.  You should demonstrate awareness both of the difficulties of DH research, and of the existing resources that are available to scholars undertaking this kind of work.  
 
 /If you wish, you may certainly build upon other work you have done this semester./
 
-Good luck! I look forward to the results. 
+Good luck! I look forward to the results.
+
+* Assignment 06: Short Answer 
+:PROPERTIES:
+:ID:       o2b:843aa819-2f95-4e9b-bba8-c88810410d02
+:POST_DATE: [2016-01-13 Wed 11:54]
+:POSTID:   447
+:PARENT: 171
+:END:
+*Due Date: April 12*
+
+Students who have not completed the "B" level requirements will be given 24 hours to respond to a series of short answer questions; think of it as something like an open-book exam. More details will be available closer to the date.  

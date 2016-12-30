@@ -13,9 +13,10 @@
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 25.0.50.1 (Org mode 8.3beta)
 #+PARENT: Assignments, 
+* Participation
 As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.  
 
-* The System
+** The System
 
 It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading, Spatial History, and Aural History assignments. Congratulations! You have qualified for a B. But what kind of a B?
 
@@ -25,7 +26,7 @@ It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading
 | Satisfactory                     | B          |                       75 |
 | Excellent                        | B+         |                       78 |
 
-Similarly, perhaps you were only able to complete the definitions paper & the Galileo assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
+Similarly, perhaps you were only able to complete the HTML Top-Up and the Distant Reading assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------+------------+--------------------------|
@@ -45,14 +46,14 @@ A+ is a special grade.  Suppose you complete all the assignments satisfactorily.
 
 Even if your participation was excellent, you will only receive an A+ if your work was consistently excellent and occasionally brilliant.  So, if you successfully complete all the assignments (great!), and also are a great class participant (thanks!), then I'll look over all your work and make a value judgment about whether you deserve this rare and precious grade.
 
-* The Criteria
+** The Criteria
 This is a class about digital history, so it would be *crazy* not to have an online presence.  The course website is:
 
 http://digital.hackinghistory.ca/
 
 I'll post just about everything related to the class there, except for marks, which I'll do on Blackboard or by personal communication.  Your participation mark is a combination of /in-class/ and /online/ participation.  
 
-** In the Classroom
+*** In the Classroom
 But what makes for good class participation?  You might want to start by reading [[http://wcm1.web.rice.edu/howtodiscuss.html][How to discuss a book for history]], which has lots of helpful suggestions. Really, please read it -- it's illuminating. But, meanwhile, here are some hints:
 
 - Show up for class :: It's hard to discuss when you're not here.
@@ -64,10 +65,10 @@ But what makes for good class participation?  You might want to start by reading
 - Participate in Group work :: Occasionally we will break up into small groups.  The same princples apply to group work -- I'll be paying attention.  
 
 
-** Online
+*** Online
 I'd also like you to write 3 blog posts over the course of the term, and 6 comments on other people's blogs.  At least one blog should be written in the first half of the class, and please submit no more than one post in the final week.  I will also occasionally post blogs and comments there, though I'm pretty busy this term so I'll be doing a bit less than I usually would.  
 
-Blog posts should be /thoughtful engagements/ with the course readings and activities, about 400 words in length and usually written in a semi-formal style.  A successful blog post shows evidence of:d
+Blog posts should be /thoughtful engagements/ with the course readings and activities, about 400 words in length and usually written in a semi-formal style.  A successful blog post shows evidence of:
 - careful reading: you have understood the author's main points;
 - critical engagement: you have something to add to what the reading teaches us, whether it's a link to related material, a criticism of the author's argument, or an elaboration thereof;
 - effort: you have taken the time to proofread your post, and to lay out your argument in a convincing manner.  
@@ -76,6 +77,6 @@ Blogging on the course website is easy.  You are all already signed up for the w
 
 *Pro Tip:* Our course website supports authoring in [[http://jetpack.me/support/markdown/][markdown]], and I strongly suggest you use this simple and intuitive syntax for writing. It will help you understand more about how HTML works, while saving you from typing in HTML by hand (blecch!).  You can learn more about markdown from the [[https://en.support.wordpress.com/markdown-quick-reference/][Quick Reference Guide]] or from the [[http://daringfireball.net/projects/markdown/][comprehensive documentation]].  
 
-* Finally
+** Finally
 
-If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple weeks and I'll give you some feedback.
+If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
