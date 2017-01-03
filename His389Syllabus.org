@@ -8,6 +8,10 @@
 #+STARTUP: customtime entitiespretty
 #+TITLE: Digital History: His389, Winter 2017
 #+AUTHOR: Matt Price
+<<<<<<< HEAD
+=======
+#+EMAIL: matt.price@utoronto.ca
+>>>>>>> master
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE: en
@@ -21,10 +25,11 @@
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price             |
-| *Email:*        | matt.price@utoronto.ca |
-| *Office Hrs:*   | SS 3077 T 1-2:30       |
-| *Meeting Times* | R 9-11                 |
+| *Instructor:*   | Matt Price                        |
+| *Email:*        | matt.price@utoronto.ca            |
+| *Office Hrs:*   | SS 3077 T 1-2:30                  |
+| *Meeting Times* | F 3-5                             |
+| *web:*          | http://digital.hackinghistory.ca/ |
 
 
 * Introduction
@@ -40,8 +45,8 @@ How should history respond to these new conditions of our existence?  In this cl
 
 - How do the digital media developed in the last two decades change the way we understand history? Can the fundamental goal of /interpreting/ the past survive?
 - What, if any, new technical skills do we need to acquire?
-- Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?  
-
+- Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
+- Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship? 
 
 * Objectives
 At the end of this course, you should:
@@ -53,20 +58,20 @@ At the end of this course, you should:
 - understand how to perform "distant reading" on a corpus of texts
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 * Course Requirements & Grading
-
-The assignments in this course take a wide variety of forms, and for the most part, differ significantly from what you're likely to have encountered in other History courses. If you have little technical experience, or have perhaps ended up in this course by accident (!), you may find some of the work daunting at first. I have done my very best to make the assignments feasible for beginners, but you will likely encounter some difficult moments.  I therefore *strongly* urge you to (1) start early! and (2) persevere through the difficult initial stages.  The frustration you experience is, in fact, part of pedagogiacl method here.  You are not expected to become a coding ninja, but /learning how to learn/ is a major component of work in the Digital Humanities.  
+The assignments in this course take a wide variety of forms, and for the most part, differ significantly from what you're likely to have encountered in other History courses. If you have little technical experience, or have perhaps ended up in this course by accident (!), you may find some of the work daunting at first. I have done my very best to make the assignments feasible for beginners, but you will likely encounter some difficult moments.  I therefore *strongly* urge you to (1) start early! and (2) persevere through the difficult initial stages.  The frustration you experience is, in fact, part of pedagogical method here.  You are not expected to become a coding ninja, but /learning how to learn/ is a major component of work in the Digital Humanities.  
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
-| <25>                      | <35>                                | <8>      | <36>                                 |
-| Assignment                | Brief Description                   | Due Date | Percentage                           |
-|---------------------------+-------------------------------------+----------+--------------------------------------|
-| HTML & CSS self-study     | Pass/Fail: self-guided learning on codacademy.com | <2017-01-27 Fri> | 10                                   |
-| Javascript for DH         | Pass/Fail: problem set              | <2017-02-09 Thu> | 15                                   |
-| Spatial History           | Simple GIS Web project              | <2022-03-24 Thu> | 25                                   |
-| Aural History             | Multimedia Web Project              | <2016-04-07 Thu> | \checkmark                                    |
-| Project Proposal          |                                     | <2016-04-12 Tue> |                                      |
-|---------------------------+-------------------------------------+----------+--------------------------------------|
-| Competencies Demonstrated | Very basic web skills; preliminary exploration of DH methods |          | Intermediate web sklls; thoughtful use of oral history for media-centric storytelling |
+| <25>                      | <35>                                | <9>       |                                 <36> |
+| Assignment                | Brief Description                   | Due Date  |                           Percentage |
+|---------------------------+-------------------------------------+-----------+--------------------------------------|
+| HTML & CSS self-study     | Pass/Fail: self-guided learning on codacademy.com | <2017-01-27 Fri> |                                   10 |
+| Javascript for DH         | Pass/Fail: problem set              | <2017-02-09 Thu> |                                   15 |
+| Spatial History           | Simple GIS Web project              | <2022-03-24 Thu> |                                   25 |
+| Aural History             | Multimedia Web Project              | <2016-04-07 Thu> |                                   25 |
+| Project Proposal          |                                     | <2016-04-12 Tue> |                                   25 |
+|---------------------------+-------------------------------------+-----------+--------------------------------------|
+| Total                     |                                     |           |                                  100 |
+#+TBLFM: @8$4=vsum(@I..@II)
 
 * Texts
 The following texts are required and available at the Bookstore, or via various online booksellers:

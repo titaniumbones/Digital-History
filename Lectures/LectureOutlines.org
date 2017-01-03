@@ -57,6 +57,22 @@ actually this works now so I'll do this!!
 | Sohng           | Yi        |   |   |   |   |   |   |   |   |   |    |    |    |
 | Wachockier      | Kim       |   |   |   |   |   |   |   |   |   |    |    |    |
 
+* COMMENT Boilerplate for RevealEditor code in ox-reveal export
+maybe add jquery, revealeditor, and ace.js as dependencies when loading reveal.js. is that possible?
+
+Note this stuff: 
+    <script src="js/jquery.js"></script>
+    <script src="revealeditor.js"></script>
+
+So, step one would be to try to load all that stuff as part of the plugin set according to the ox-reveal instructions. If that  doesn't work I can try to just add the html as in [[https://gist.github.com/bzg/5f9a952208cf8d35220a41a8ff857faa#file-gistfile1-txt][Bastien's klipse example]] 
+
+#+BEGIN_SRC org
+
+#+html:     <script src="../reveal.js/plugin/RevealEditor/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+#+html: <script>         $(".btn").RevealEditor(); </script>
+
+
+#+END_SRC
 
 * COMMENT Assignments (progressive)
 - codeacademy web track (html, css, javascript) OR send me a github URL for a project you've done.  
