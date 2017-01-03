@@ -9,9 +9,9 @@
 # #+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
-#+TITLE: Digital History: His389, Winter 2016
+#+TITLE: Digital History: His389, Winter 2017
 #+AUTHOR: Matt Price
-#+EMAIL: matt@osskil.lan
+#+EMAIL: matt.price@utoronto.ca
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE: en
@@ -24,10 +24,11 @@
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price             |
-| *Email:*        | matt.price@utoronto.ca |
-| *Office Hrs:*   | SS 3077 T 1-2:30       |
-| *Meeting Times* | R 9-11                 |
+| *Instructor:*   | Matt Price                        |
+| *Email:*        | matt.price@utoronto.ca            |
+| *Office Hrs:*   | SS 3077 T 1-2:30                  |
+| *Meeting Times* | F 3-5                             |
+| *web:*          | http://digital.hackinghistory.ca/ |
 
 
 * Introduction
@@ -43,8 +44,8 @@ How should history respond to these new conditions of our existence?  In this cl
 
 - How do the digital media developed in the last two decades change the way we understand history? Can the fundamental goal of /interpreting/ the past survive?
 - What, if any, new technical skills do we need to acquire?
-- Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?  
-
+- Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
+- Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship? 
 
 * Objectives
 At the end of this course, you should:
@@ -57,6 +58,9 @@ At the end of this course, you should:
 
 - 
 * Course Requirements & Grading
+
+Your assignments in this course build towards 
+
 Grading in this course is done using a /modified point system/. The system may seem odd at first, but it has definite advantages for both students and teachers, so don't be intimidated. Instead of receiving a number or letter grade for each assignment, and then getting a weighted sum of those grades as your final mark, you will /choose what final mark to try for/ and then /complete the assignments required for that mark/.  A certain set of assignments is required for a D; for a C, you must complete all of the "D" assignments plus another set; for a B, all of the C assignments plus some more; and the same goes for an A. 
 
 Here are some more details:
