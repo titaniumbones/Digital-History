@@ -6,7 +6,7 @@ It's not as well-organized as the website,
 http://digital.hackinghistory.ca/
 
 
-But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and markdown syntax. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor. My lecture notes can also be accessed here:
+But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and various markdown syntaxes. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor. My lecture notes can also be accessed here:
 
 http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/
 
@@ -19,5 +19,5 @@ This repo is neither complete nor fully organized, but I intend to keep improvin
 I hope this is useful to someone!
 
 #+BEGIN_HTML
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Hacking History</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Matt Price</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Digital History</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Matt Price</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 #+END_HTML
