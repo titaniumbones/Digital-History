@@ -1,7 +1,17 @@
+#+POSTID: 558
+#+DATE: [2017-01-04 Wed 21:55]
+#+OPTIONS: toc:t
+#+TITLE: Assignments
 #+PROPERTY: PARENT 171
 #+Parent: 171
+* Assignments :TOC_1:
+ - [[#][]]
+ - [[#assignments-01-and-02-html--css-self-study][Assignments 01 and 02: HTML & CSS self-study]]
+ - [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
+ - [[#assignment-04-oral-history][Assignment 04: Oral History]]
 
-* Participation
+* 
+* COMMENT Participation
 :PROPERTIES:
 :POSTID:   174
 :ID:       
@@ -74,21 +84,23 @@ Blogging on the course website is easy.  You are all already signed up for the w
 
 If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
 
-* Assignment 01: Web Skills
+* Assignments 01 and 02: HTML & CSS self-study
 :PROPERTIES:
 :POSTID:   177
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
 :POST_DATE: [2015-12-11 Fri 11:16]
 :END:
 
-*Due Date: Feb. 11*
+*Part I Due Date: Jan. 27*
 
-You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
+*Part II Due Date: Feb. 09*
+
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of q
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
 
 ** Assignment
-The Assignment details are listed in the [[https://github.com/titaniumbones/assignment-web-skills-intro][Github repository]].  Read them there and follow them carefully.  
+The assignment details are listed in the [[https://github.com/titaniumbones/assignment-web-skills-intro][Github repository]].  Read them there and follow them carefully.  
 ** COMMENT Alternative
 Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
 - Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
@@ -96,7 +108,7 @@ Already a web hotshot? If you feel like you already know everything you need to 
 You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
 
-* Assignment 02: Distant History
+* COMMENT Assignment 02: Distant History
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
 :POSTID:   209
@@ -195,11 +207,11 @@ I've uploaded a few corpora to my local server, e.g.:
 :POSTID:   315
 :POST_DATE: [2015-12-14 Mon 14:04]
 :END:
-*Due Date: March 24*
+*Due Date: March 03*
 
 In class, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from the course website, from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
 
-Your next assignment builds directly from that in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  
+Your next assignment builds directly from that in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  Essentially, you will repeat the in-class assignment with much greater intellectual effort, but using the same technical framework. [[https://github.com/titaniumbones/maps-with-markdown][Please work directly with the files in the Github repo]], either by forking the repo, or downloading the zipball.  
 
 ** Assignment
 Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you.  We discussed a number of such themes in the class (you should remember them from our discussion). The final product should meet the following criteria:
@@ -210,22 +222,28 @@ Build a web page that includes a Google Map (complete with markers) as part of a
   - Corridor of Power: Berlin's Friedrichstrasse in the Nazi Era
   - End of an Era: Toronto's last meatpacking plants
   - An Empire at Home: conservative Think Tanks in Washington, D.C.
-    I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
 
-    You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take one of your examples at random, networks of hippies. Underground bus networks. Comparative suffrage movements. etc.)
+  I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
 
-    The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~(Latour, p. 97)[http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a]~.  Don't worry about a bibliography.  
+  You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take some examples at random, networks of hippies, underground bus networks, comparative suffrage movements. etc.)
 
-- Map :: Your map should have at least 5 markers.  In class, we cut and paste to create multiple markers. The assignment template is slightly different, and uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
+  Take this opportunity to think about the effect of /form/ on /content/.  How does the present of the map change the way you express your thoughts? Are new kinds of arguments possible? On the flip side, does the map lead you to ignore or downplay any important elements?
+
+  The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~[Latour, p. 97](http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a)~.  Don't worry about a bibliography.  
+
+- Map :: Your map should have at least 5 markers, and could have many more.  You can explore more complex objects -- such as polygons -- using the geoJSON import feature sof Google Maps.  There are links to the API documentation in the code.  
+
+     In class, we cut and paste to create multiple markers. The assignment template uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
 
 - Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder
 
 ** Getting your assignment, and handing it in
-This assignment is stored on Github. You can get it easily by navigating to [[https://github.com/titaniumbones/maps-with-markdown]] and locating the "DownloadZIP" button.  
+This assignment is stored on Github. You can get it easily by navigating to [[https://github.com/titaniumbones/maps-with-markdown]] and locating the "DownloadZIP" button. 
 
 To hand it in, simply rezip the folder and send it to me at the Dropbox Request URL I'll send you before the due date; be sure to rename the folder itself to something that contains your name before zipping, e.g., "matt-price-his389-spatial-history". If you don't take this step, your work will not be preserved and I won't grade your assignment.  
 
-*Or:* If you like, you are more than welcome to login to your github account, fork the repository, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository, or if you like, submit a pull request which I can inspect.
+*Or:* If you like, you are more than welcome to login to your github account, fork the repository, edit, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository.
+
 ** Learning Objectives
 - Understand what a Google Map is and how it relates to GIS
 - Learn the simplest parts of the Google Maps Javascript API, and use them to create map elements
@@ -235,14 +253,16 @@ Your essay should meet the ordinary criteria for an historical essay: clearly wr
 
 Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  Markers should provide information that makes your written text clearer or more persuasive.  
 
-If you change the styling, you should not create a terrible mess!
+While there is not much styling work to do, you should not create a terrible mess! You should make small visual changes to the default layout to make the legend more useful and visually appealling, and think about further work if it seems appropriate.
+
+A "B" paper will make a convincing, interesting argument, using the map as an important and cogent support.  An "A" paper will do the same, but will do all of the above just a little bit better. "C" and "D" papers wil lbe deficient in some of these areas.  
 
 * Assignment 04: Oral History
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
-:POST_DATE: [2015-07-28 Tue 16:48]
 :POSTID:   330
+:POST_DATE: [2017-01-04 Wed 22:04]
 :END:
 
  *Due Date: April 7*
@@ -250,7 +270,7 @@ If you change the styling, you should not create a terrible mess!
 In the final segment of our class, we discuss the use of non-textual media in history, especially /oral histories/. This final, short project asks you to take an existing piece of oral history and build a small web page around it. We will use a very similar set of templates to those we used last assignment; but instead of dealing with Google Maps, we'll use the [[http://popcornjs.org/][Popcorn]] events framework for creating a simple multi-media history essay out of HTML.  As with our last assignment, this is a little bit like using [[https://www.youtube.com/watch?v=Q8gGsuWouDE][hand-carved wooden Emoji]]: obviously there are much more sophisticated ways to interact with video on the web; our aim is to use this simple tool as a way to think about several issues: 
 - How do aural and visual media change the nature of historical narrative?
 - What are the challenges of building an historical narrative around an oral history, especially one that you did not conduct yourself?
-- How does technical infrastructure (like [[http://popcornjs.org/][Popcorn]] and [[http://docs.google.com][Google Docs]]) change the nature of historical narrative?
+- How does technical infrastructure (like [[http://popcornjs.org/][Popcorn]] and [[http://sheets.google.com][Google Sheets]]) change the nature of historical narrative?
 ** Assignment
 - Choose a short, online oral history audio clip (approximately 3 minutes in length). I recommend [[http://storycorps.org/][StoryCorps]] as a source, though there are many oral history archives online that are equally suitable.
 - Listen to it carefully. What historical themes are suggested by it? What kinds of annotations might heighten the impact at crucial moments, or fill in background information at other times?
@@ -269,8 +289,7 @@ If you change the styling, you should not create a terrible mess! Certainly I th
 ** Technical Help
 As usual, I am pretty much available to answer your questions.  I also urge you to read [[http://digital.hackinghistory.ca/2015/07/28/understanding-popcorn/][this post]], which has a fair amount of technical detail and also gives links to further documentation.  [[http://popcornjs.org/popcorn-docs/plugins/][Documentation of the popcorn event plugins is also available online]].
 
-
-* Assignment 05: Project Proposal
+* COMMENT Assignment 05: Project Proposal
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
@@ -314,7 +333,7 @@ This is a difficult assignment. As usual, you should turn in a lucidly-written p
 
 Good luck! I look forward to the results.
 
-* Assignment 06: Short Answer 
+* COMMENT Assignment 06: Short Answer 
 :PROPERTIES:
 :ID:       o2b:843aa819-2f95-4e9b-bba8-c88810410d02
 :POST_DATE: [2016-01-13 Wed 11:54]
