@@ -1,16 +1,12 @@
 * Use and Reuse
-This repository collects most of my course materials for /Digital History/ a semester-long 3th-year seminar I teach in the History Department at University of Toronto.  The repository contains most of my notes and assignments, as well as the syllabus and some auxiliary materials.
+This repository collects most of my course materials for /Digital History/ a semester-long 3rd-year seminar I teach in the History Department at University of Toronto.  The repository contains most of my notes and assignments, as well as the syllabus and some auxiliary materials.
 
 It's not as well-organized as the website, 
 
 http://digital.hackinghistory.ca/
 
 
-But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and various markdown syntaxes. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor. My lecture notes can also be accessed here:
-
-http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/
-
-in their natural environment, as [[https://github.com/hakimel/reveal.js/][reveal.js]] web presentations, created from the org-mode source by the awesome [[https://github.com/yjwen/org-reveal][org-reveal]] translator. 
+But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and various markdown syntaxes. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor. My lecture notes can also be accessed [[http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/Slides/][here]], in their natural environment, as [[https://github.com/hakimel/reveal.js/][reveal.js]] web presentations, created from the org-mode source by the awesome [[https://github.com/yjwen/org-reveal][org-reveal]] translator. 
 
 Some features don't work perfectly in the current environment. Most notably citations, which I generate using Zotero, will not always look or act the way they should.  Also, a whole lot of images are missing, since I steal a lot of my images & don't have permission to republish them.  
 

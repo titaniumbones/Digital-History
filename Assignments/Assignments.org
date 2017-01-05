@@ -1,9 +1,6 @@
-#+POSTID: 558
-#+DATE: [2017-01-04 Wed 21:55]
 #+OPTIONS: toc:t
 #+TITLE: Assignments
-#+PROPERTY: PARENT 171
-#+Parent: 171
+
 * Assignments :TOC_1:
  - [[#][]]
  - [[#assignments-01-and-02-html--css-self-study][Assignments 01 and 02: HTML & CSS self-study]]
