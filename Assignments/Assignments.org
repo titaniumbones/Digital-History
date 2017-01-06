@@ -1,13 +1,16 @@
+#+POSTID: 558
+#+DATE: [2017-01-04 Wed 21:55]
 #+OPTIONS: toc:t
 #+TITLE: Assignments
+#+PROPERTY: PARENT 171
+#+Parent: 171
+Further assignments will be posted as they are finalized. 
 
-* Assignments :TOC_1:
- - [[#][]]
+* List                                                                :TOC_1:
  - [[#assignments-01-and-02-html--css-self-study][Assignments 01 and 02: HTML & CSS self-study]]
  - [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
  - [[#assignment-04-oral-history][Assignment 04: Oral History]]
 
-* 
 * COMMENT Participation
 :PROPERTIES:
 :POSTID:   174
@@ -92,7 +95,7 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 
 *Part II Due Date: Feb. 09*
 
-You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of q
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
 

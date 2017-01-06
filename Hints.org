@@ -1,3 +1,41 @@
+* Tools
+:PROPERTIES:
+:ID:       o2b:fc94ff3d-ce65-4f54-a855-e2fc0ade2de4
+:POST_DATE: [2017-01-06 Fri 11:25]
+:POSTID:   577
+:END:
+One of the goals of this course is to introduce you to the basic toolkit of a web developer.  For our purposes, this means:
+- a fully-functioning text editor
+- the ~git~ collaboration software, and the [[http://github.com][Github]] collaboration platform
+- browser-based "Dev Tools"
+
+You should take some time at the beginning of the semester to familiarize yourself with all of these tools. Taken together, they make up your "developer environment." As you become comfortable using them, your work in the class will become much easier.  
+
+The instructions here and elsewhere apply to Mac and Windows laptops. If you run a standard Linux OS like Ubuntu or Arch, you can install git and atom through your package manager, but there is no Github Desktop app.  Chromebook users will need to make substantial modifications to their machines, e.g. by [[https://use-cases.org/2016/05/01/converting-a-chromebook-to-a-dev-environment/][following these instructions]].  Github Desktop is not available for ChromeOS, either.  
+** Text Editor
+:PROPERTIES:
+:ID:       o2b:19eea94a-1f1c-410a-b660-6c2c6354ca22
+:POST_DATE: [2017-01-06 Fri 11:27]
+:POSTID:   573
+:BLOG:     dig
+:END:
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://atom.io/][Atom]].  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [[http://flight-manual.atom.io/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install some extra packages]] by navigating to Edit \rarr Preferences \rarr + Install.  I recommend the [[https://atom.io/packages/script-runner][script-runner]] package, or one off the alternatives like [[https://atom.io/packages/script][run in atom]] or [[https://atom.io/packages/script][script]].  You should also install [[https://atom.io/packages/atom-html-preview][atom-html-preview]] or [[https://atom.io/packages/preview-plus][preview-plus]] or [[https://atom.io/packages/open-in-browser][open-in-browser]].  "[[https://atom.io/packages/linter][Linter]]" and "[[https://atom.io/packages/linter-jshint][linter-jshint]]" are also indispensable. And I personally love using [[https://atom.io/packages/emmet][emmet]]. Finally, if you don't like Github Desktop (see brelow), you can [[https://atom.io/packages/search?q=git][install one of the git-related Atom packages]] and do your git work directly in the editor.  [[https://atom.io/packages/git-plus][Git Plus]] is probably the most straightforward choice here.  
+** Git and Github
+:PROPERTIES:
+:ID:       o2b:bc40c086-76d9-4027-9fb3-ee6748e031bc
+:POST_DATE: [2017-01-06 Fri 11:27]
+:END:
+There is a somewhat more wordy [[http://digital.hackinghistory.ca/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]].
+** Firefox and Chrome Dev Tools
+Chrome is by far the most popular browser in the world, while Firefox is by far the most open. Both have highly sophisticated *developer tools* with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [[https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector][Firefox Dev Tools]] and [[https://developer.chrome.com/devtools][Chrome's version]]. 
+
+Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
+
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful.
+
+The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove *essential* for figuring out why your code isn't working right!
+
+
 * Introduction to Github!
 :PROPERTIES:
 :ID:       o2b:4efe01ef-ecbb-431d-bc0e-814822cc2961
@@ -5,56 +43,45 @@
 :POSTID:   456
 :END:
 
-This is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
+This is a preliminary introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
 
 I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.  
 
 Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the first assignment.
-** Heroes-Please
-My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
+** Learn by example: History-Please
+(This recapitulates much of what we did in the first class.  Feel free to skip.)
+
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple Github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
 1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
-2. Navigate to [[https://github.com/titaniumbones/heroes-please][my heroes-please repository]]
-3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
-4. Have you found where the Heroes live?
-5. Add a new hero *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
-   - Be sure to name the file "some-persons-name.md" so that everyone knows it's written in Markdown
-   - follow markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
-   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
-   [[./Images/github-add-file.png]]
-6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/heroes-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
-** Advanced Git for command-line users
-Wow, that was cool, right? And if we get through this fast enough, we can try working from the command line.  
-1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/heroes-please.git~
-2. Add your directory to atom as a "project directory: [[./Images/githb-add-project.png]]
-3. Install the "git-plus" package in Atom
-4. Create a new file in the appropriate place.
-5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
+2. Navigate to [[https://github.com/titaniumbones/history-please][my history-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?  *At this point you can continue to follow these instructions, or just switch over to the README for a slightly more up-to-date explanation of forking, pulling, and merging.*
+4. Have you found where the History lives?
+5. Add a new piece of history *from inside Github itself(!)* by following the direction in the README under `Contributing`.
+   - Be sure to name the file "some-persons-name.md" (or "some-event-name.md", or "some-trend-name.md") so that everyone knows it's written in Markdown
+   - follow Markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic. *Before you hit save, read the next step!!*
+   [[./Images/create-file.jpeg]]
+ 6. *Important!* You'll be given a choice between "Committing directly to master" and "Creating a new branch".  Choose the latter option and then follow the instructions to submit a pull request.  Amazing!  [[./Images/commit-options.png]]
+------
+** Getting started: Installing Git
+On Mac and Windows, simply [[https://desktop.github.com/][install Github Desktop]]. Command-line commands can be executed in the git shell within GH Desktop, or in the terminal.app on Mac.  On Linux, use your package manager and the terminal, eg. on Ubuntu:
 
-There's still tons to learn but this is a good start.  If you are intrigued, keep reading.
-** Quick Start
-- [[https://github.com/join][Sign Up for a Github Account]]
-- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]]
-- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
-- [[https://help.github.com/articles/set-up-git/][configure your git information]]
-- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
-- Create a local copy of the heroes-please repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
-  ~git clone https://github.com/YOUR-USERNAME/heroes-please~
-- Make some changes
-- Commit your changes with ~git commit -m "Useful Message Here" -a~
-- *optional* Push your changes to the web with ~git push~
-- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
+#+BEGIN_SRC sh
+sudo apt-get install git
+#+END_SRC
 
-** Resources
-This web page is woefully incomplete! Here are some better resources: 
-- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Githb]]
-- [[https://try.github.io/levels/1/challenges/1][Code School Git Intro]]
-- [[http://gitimmersion.com/index.html][Git Immersion]]
-- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book]]
+or on Arch 
+#+BEGIN_SRC sh
+sudo pacman -S git
+#+END_SRC
 
-** Install Git
-If you're on Mac or Windows, the easiest way to start is to [[https://desktop.github.com/][install the Github Desktop client]].  This will also install the command-line tools you need for our tutorials, while giving you a very pretty GUI interface. You can [[https://css-tricks.com/first-impression-of-github-desktop/][learn more about the desktop client here]] (There's no Linux version, so I don't use this).  
+The [[https://github.com/jlord/git-it-electron/releases][git-it tutorial]] is also pretty helpful, so consider installing it.  
 
-Once you've installed Git, let's execute our first command-line commands. In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
+
+** Using Github Desktop (GHD)
+You'll need to configure [[https://help.github.com/articles/setting-your-email-in-git/][your email address]] and [[https://help.github.com/articles/setting-your-username-in-git/][your user name]] before you can use git or Github Desktop:
+
+In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
 #+BEGIN_SRC sh
 git config --global user.name "Your Name"
 #+END_SRC
@@ -64,10 +91,37 @@ and then:
 git config --global user.email youraddress@mail.utoronto.ca
 #+END_SRC
 
-This tells git some basic information about you, which it will use later on.  
+This tells git some basic information about you, which it will use later on.  In GHD, also configure your github acocunt credentials.  Your repositories will all now be available from inside GHD, so to edit a new repository just fork an existing Githup repo, then download it using GHD.
 
-** Git "States"
-*(feel free to skip this if you want to get to the action)*
+Once you've downloaded a repository, open a file in Atom, make some changes, and save.
+
+GHD will see that you've made changes, and give you the opportunity to make *commits.*  Once you've committed your changes, you can *push your changes* to the online and repository and *submit pull requests* to the repository that you forked your code from.  
+
+** Understanding how git works, and using the command line
+
+*** Advanced Git for command-line users (Linux Users and Masochists Only)
+All of the above functionality is also available via the command-line
+1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/history-please.git~ from the command line.  The repository will be downloaded.  
+2. Add your directory to atom as a "project directory: [[./Images/githb-add-project.png]]
+3. Install the "git-plus" package in Atom
+4. Create a new file in the appropriate place.
+5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
+
+There's still tons to learn but this is a good start.  If you are intrigued, keep reading.
+*** Full workflow
+- [[https://github.com/join][Sign Up for a Github Account]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install git w/out GHD]]
+- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
+- [[https://help.github.com/articles/set-up-git/][configure your git information]]
+- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
+- Create a local copy of the history-please repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
+  ~git clone git@github.com:YOUR-USERNAME/history-please.git~
+- Make some changes
+- Commit your changes with ~git commit -m "Useful Message Here" -a~
+- *optional* Push your changes to the web with ~git push~
+- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
+
+*** Understanding Git "States"
 
 A git repository has three important "areas", each of which represents a different "state": 
 - Working Directory (Uncommitted)
@@ -80,16 +134,37 @@ git init
 #+END_SRC
 This command creates the invisible ~.git~ subdirectory, which is the real heart of the repo:  it stores all the information about previous and current states of the repository.  
 
-** Doing and Undoing
+Then let's say I create a file and put some stuff in it.  On the command line you'd do that this way:
+
+#+BEGIN_SRC sh
+echo "Hello, World" >> hello.txt
+#+END_SRC
+
+I alert git to its existence with 
+
+#+BEGIN_SRC sh
+git add hello.txt
+#+END_SRC
+
+Now git sees that ~hello.txt~ exists, /and/ the new file is "staged".  Now execute:
+
+#+BEGIN_SRC sh
+git commit -a -m "initial commit of hello.txt"
+#+END_SRC
+
+Git takes all of the changes from the "staging area", and "commits" them to the repository. All of this happens in the hidden ~.git~ directory -- you won't notice any changes to the files that you actually see. 
+
+*** Doing and Undoing
 Every time you commit your changes in git, git saves a snapshot of the working directory to the .git repository.  So, in principle, you can get back to any earlier working state of the repository, which is awesome.  
 
 - commit :: the most elementary operation in git is "committing"; this saves your working directory to the repository. Here are the steps
   - make some changes
   - commit them with ~git commit -a -m Message~
 - checkout :: To inspect some other state of the repository, you will need to "checkout" that state:
-     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.   
+     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.
+- revert :: if you have totally screwed up your repository and want to completely undo your changes, then use ~git checkout~ to check out the last working state. Now just ~git commit -m "revert to working state"~.  And you're back to where you want to be.  
 
-** Branching
+*** Branching
 Sometimes you want to be able to come back to a particular revision -- maybe you have everything working fine, and you want to be sure you can get back to the working state.  Maybe you create an "experiments branch" to work on; if it breaks, you can just switch back to the master branch with no harm done.  
 #+BEGIN_SRC sh
 git branch # show branches 
@@ -98,7 +173,18 @@ git checkout experiment # chekout the experiment branch; then work on it for a w
 git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
 git checkout master # go back to the master branch, since it still lworks and you need to use it for something.  
 #+END_SRC
-** Push and Pull
+
+If you're happy with your hcanges, maybe you want to actually commit them to the master branch:
+
+#+BEGIN_SRC sh
+git checkout experiment # chekout the experiment branch; then work on it for a while
+git commit -a -m "added a cool new feature, and it works" # commit your changes
+git checkout master # go back to the master branch
+git merge experiment # "merge" your changes.  
+#+END_SRC
+
+For our purposes, you should really only ever work on *one branch at a time*, or you're likely to run into problems beyond the scope of this tutorial.  
+*** Push and Pull
 When you're working together you may want to *pull* someone else's changes or *push* your own to the group.  
 #+BEGIN_SRC  sh
 git pull # get the most recent branch of your original repository
@@ -112,3 +198,16 @@ OK, that's what I've got for now.  Follow the excellent links near the top for m
 # ./Images/github-add-file.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-github-add-file.png
 # ./Images/github-pull-request.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-github-pull-request.png
 # ./Images/githb-add-project.png http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-githb-add-project.png
+
+** Further Resources
+There are many other resources available online.  You can try some of these.  
+- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Github]]
+- [[https://github.com/jlord/git-it-electron/releases][The excellent tutorial in the downloadable git-it application]]
+- [[https://help.github.com/desktop/guides/][The sub-par Github Desktop documentation]]
+- [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][Helpful Tutorial on The Programming Historian]].
+- [[http://gitimmersion.com/index.html][Git Immersion]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book (quite technical)]]
+
+
+# ./Images/create-file.jpeg http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-create-file.jpeg
+# ./Images/commit-options.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-commit-options.png

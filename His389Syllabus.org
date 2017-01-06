@@ -20,17 +20,31 @@
 #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
 
 * Logistics
+:PROPERTIES:
+:ID:       o2b:fa82bed3-b176-4a70-863d-704162fede0c
+:POST_DATE: [2017-01-06 Fri 12:47]
+:BLOG:     dig
+:POSTID:   592
+:END:
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price                        |
-| *Email:*        | matt.price@utoronto.ca            |
-| *Office Hrs:*   | SS 3077 T 1-2:30                  |
-| *Meeting Times* | F 3-5                             |
-| *web:*          | http://digital.hackinghistory.ca/ |
+| *Instructor:*   | Matt Price                            |
+| *Email:*        | matt.price@utoronto.ca                |
+| *Office Hrs:*   | SS 3077 T 1-2:30                      |
+| *Meeting Times* | F 3-5                                 |
+| *Web:*          | http://digital.hackinghistory.ca/     |
+| *Slack:*        | https://digitalhistoryuoft.slack.com/ |
 
+In general, communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS389" in the subject line]].  
 
 * Introduction
+:PROPERTIES:
+:ID:       o2b:0e65aea6-d27b-4475-bbd6-e3f6280f119d
+:POST_DATE: [2017-01-06 Fri 12:48]
+:POSTID:   595
+:BLOG:     dig
+:END:
 We all know -- it is so commonplace that we barely even notice it! -- that we are living through a revolutionary period in the history of communication.  In the year of your birth, the World Wide Web was a scrawny, hand-powered frontier of hand-coded sites and Internet startups.  Amazon and Google were infants.  The University of Toronto Library website [[https://web.archive.org/web/19971210222202/http://library.utoronto.ca/][looked something like this]]:
 #+ATTR_HTML: :style border: 2px black solid; max-width: 100%; margin-left: 0px; :class someclass
 [[/home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png]]
@@ -46,7 +60,14 @@ How should history respond to these new conditions of our existence?  In this cl
 - Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
 - Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship? 
 
+# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-511.png
 * Objectives
+:PROPERTIES:
+:ID:       o2b:08d4e118-c70c-4f4c-a99a-293d3847c9a6
+:POST_DATE: [2017-01-06 Fri 12:48]
+:POSTID:   597
+:BLOG:     dig
+:END:
 At the end of this course, you should:
 - be able to describe to others what the phrase "digital humanities" means to you.
 - be able to frame a coherent and nuanced argument /of your own/ about the value of DH methods to the field of history
@@ -55,37 +76,82 @@ At the end of this course, you should:
 - be able to make compelling use of media materials such as audio, video, and animation in historical arguments
 - understand how to perform "distant reading" on a corpus of texts
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
+
+* Method
+:PROPERTIES:
+:ID:       o2b:85370ac4-7b77-4d04-b561-ced102d0d205
+:POST_DATE: [2017-01-06 Fri 12:48]
+:POSTID:   599
+:BLOG:     dig
+:END:
+There are many approaches to the digital humanities, all of them involving tools that are under rapid and iterative development.  A given project is likely to require a substantial training period in the particular tools chosen by the principal investigators.  It is therefore not possible for this course to provide an effective survey of "the" digital humanities toolkit. But learning  tools is an essential skill for the digital humanist. So what should we do?
+
+Almost every digital humanist will, at some point, need to do the following:
+- read and edit HTML, CSS and Javascript
+- debug running web pages using the browser's built-in tools
+- use a text editor to write code in any of several languages
+- collaborate with peers using version control software, almost always ~git~
+
+Our emphasis is therefore on /simple coding/ taught using /standard tools that are available almost everywhere/.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and /slowly/ come to apply them to /increasingly sophisticated/ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to /teach yourself/ when you encounter new tools in the course of a project.  
+
+Please see the [[http://digital.hackinghistory.ca/tools][Tools]] page for more details about the particular tools we will be using.  
 * Course Requirements & Grading
+:PROPERTIES:
+:ID:       o2b:8cabb212-5b29-445e-9c1a-d108bdfff9c4
+:POST_DATE: [2017-01-06 Fri 12:49]
+:POSTID:   601
+:BLOG:     dig
+:END:
 The assignments in this course take a wide variety of forms, and for the most part, differ significantly from what you're likely to have encountered in other History courses. If you have little technical experience, or have perhaps ended up in this course by accident (!), you may find some of the work daunting at first. I have done my very best to make the assignments feasible for beginners, but you will likely encounter some difficult moments.  I therefore *strongly* urge you to (1) start early! and (2) persevere through the difficult initial stages.  The frustration you experience is, in fact, part of pedagogical method here.  You are not expected to become a coding ninja, but /learning how to learn/ is a major component of work in the Digital Humanities.  
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be provided with adequate time to permit completion.
 | <25>                      | <35>                                | <9>       |                                 <36> |
 | Assignment                | Brief Description                   | Due Date  |                           Percentage |
 |---------------------------+-------------------------------------+-----------+--------------------------------------|
-| HTML & CSS self-study     | Pass/Fail: self-guided learning on codacademy.com | <2017-01-27 Fri> |                                   10 |
-| Javascript for DH         | Pass/Fail: problem set              | <2017-02-09 Thu> |                                   15 |
-| Spatial History           | Simple GIS Web project              | <2017-03-03 Fri> |                                   25 |
+| HTML & CSS self-study     | Pass/Fail: self-guided learning on codacademy.com | <2017-01-20 Fri> |                                   10 |
+| Javascript for DH         | Pass/Fail: problem set              | <2017-02-03 Fri> |                                   15 |
+| Spatial History           | Simple GIS Web project              | <2017-03-03 Fri> |                                   20 |
 | Oral History              | Multimedia Web Project              | <2017-03-24 Fri> |                                   25 |
-| Project Proposal          |                                     | <2017-04-05 Wed> |                                   25 |
+| Project Proposal          | Imagine a Digital History Project   | <2017-04-05 Wed> |                                   30 |
 |---------------------------+-------------------------------------+-----------+--------------------------------------|
 | Total                     |                                     |           |                                  100 |
 #+TBLFM: @8$4=vsum(@I..@II)
 
 * Texts
+:PROPERTIES:
+:ID:       o2b:76732ff1-cf85-4467-ab94-c53fcd9d1519
+:POST_DATE: [2017-01-06 Fri 12:50]
+:POSTID:   603
+:BLOG:     dig
+:END:
+
 The following texts are required and available at the Bookstore, or via various online booksellers:
-[[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]]
-[[zotero://select/items/281947_IPDTIXBH][@perks:2006oral]]
-[[zotero://select/items/0_R25HVIS6][@geddes:2014toward]]
+- Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/ Verso, 2005.
+- Geddes et al /Toward Spatial Humanities/ Bloomington: Indiana University Press, 2014.
+- Perks, et al. /The Oral History Reader/. 2006
+
 
 * Course Outline
+:PROPERTIES:
+:ID:       o2b:38ecbc3e-09ea-4b4c-951b-960229bbdf36
+:POST_DATE: [2017-01-06 Fri 12:53]
+:END:
 ** Text, Code, and the Web
+:PROPERTIES:
+:ID:       o2b:549d46ae-f46c-4b15-a025-c6cfd44073af
+:POST_DATE: [2017-01-06 Fri 12:53]
+:END:
 *** Introducing /Digital History/ <2017-01-06 Fri>
+:PROPERTIES:
+:ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
+:POST_DATE: [2017-01-06 Fri 12:53]
+:POSTID:   607
+:BLOG:     dig
+:END:
 *Class Synopsis:* Introduction to the course, Github, and Markdown. 
 
 *Readings:* You may want to read some of these as general preparation for this and other history classes:
-- [[zotero://select/items/0_PNA38CTR][@w._caleb_mcdaniel:how]] 
-- William Cronon, [[http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf]["Why the Past Matters"]]
-- [[zotero://select/items/0_PC2VXZCN][@cohen:2006becoming]]
+
 
 *In-Class Activity: Collaboration on Github* 
 
@@ -94,7 +160,8 @@ We all live with the web, but that doesn't mean we think much about /how it work
 
 *Readings:*
 - Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf
-- [[zotero://select/items/24157_W4W7VESK][@cohen:2008interchange]]
+- Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short  
+
 *In-Class Activity: HTML, CSS, and markdown*
  
 *** Abundance and Openness <2017-01-20 Fri>
@@ -102,47 +169,46 @@ One of the key features of the web is its /immenseness/. We will discuss how thi
 
 - W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
 - Council. “Many More than a Million: Building the Digital Environment for the Age of Abundance.” Council on Library and Information Resources. Accessed June 7, 2011. http://www.clir.org/activities/digitalscholar/index.html.
-- [[zotero://select/items/278357_F5HZ3EV4][@turkel:going]]  
-- [[zotero://select/items/278357_KCTKZCAI][@anonymous:learn]] 
+- Turkel, William J. “Going Digital.” Accessed October 12, 2011.  [[http://williamjturkel.net/2011/03/15/going-digital/]].
+
+- “Learn How Google Works: In Gory Detail.” /PPCBlog/. Accessed June 30, 2015. [[http://www.ppcblog.com/how-google-works/]].
 
 *In-Class Activity: Evaluating websites*
 
 ** Data Driven History
-*class drags here a bit, so need to shorten & tighten. No assignment, b/c that tool is difficult to teach with. Maybe modify JS assignment so there is some dta manipulation.*
 *** Distant Reading 1 <2017-01-27 Fri>
 Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 *Readings:* 
-- [[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]] through p. 64
+- Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/. Verso, 2005 through p. 64, or  Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1][Graphs, Maps, Trees.]]” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1][Graphs, Maps, Trees - 2]].” New Left Review 26 (March 1, 2004): 79–103 
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
-*In-Class Activity: Wordles*
+*In-Class Activity: more JS*
 
-*** Distant Reading 2 <2017-02-03 Fri>
-We'll finish up with Moretti, and go on to the work of his student, Matthew Jockers.
+*** Distant Reading 2: Are Texts Data? <2017-02-03 Fri>
+More Moretti, and some criticisms
 
 *Readings:* 
-- [[zotero://select/items/278357_SKN4IMCA][@moretti:2005graphs]], ch. 3 to end.  
--  "Style" and "Nationality" in  [[zotero://select/items/278357_CD6KU842][@jockers:2013macroanalysis]] 
-*In-Class Activity: Voyant Tools*
-
-*** Text as Data, History as Algorithm <2017-02-10 Fri>
+- Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/. Verso, 2005, ch. 3 to end, or  “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301919189/citation/3A603D9A5D1F4366PQ/1][Graphs, Maps, Trees - 3]].” New Left Review 28 (July 1, 2004): 43–63. .
+- Stephen Ramsay, "[[https://web.archive.org/web/20120611222242/http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf][The Hermeneutics of Screwing Around]]"
+- Gibbs, Fred. “Hermeneutics of Data and Historical Writing” Writing History in the Digital Age, March 14, 2012. http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/.
+- Marc Dunkelman. “[[http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/][What Data Can't Convey]].” Blog. /The Chronicle of Higher Education/, 19 2014.
+*In-Class Activity: JS questions, wordles*
+*** COMMENT Text as Data, History as Algorithm <2017-02-10 Fri>
+*Note:* we may need to push this up
 We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
 
 *Readings:* 
-- Stephen Ramsay, "The Hermeneutics of Screwing Around" https://web.archive.org/web/20120611222242/http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf
-- [[zotero://select/items/278357_ZCE7UWN4][@marc_dunkelman:2014what]]
-- [[zotero://select/itexms/0_BHWWP695][@gibbs:2012hermeneutics]]
-- [[zotero://select/items/0_RZZTIM3D][@seth_van_hooland:cleaning]]
+- Gibbs, Fred. “[[http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/][Hermeneutics of Data and Historical Writing]].” /Writing History in the Digital Age/, March 14, 2012.
+- Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[ http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
 *In-Class Activity: Tidy Data*
 
 ** Maps, Visualization, and History
-*** Spatial History <2017-02-17 Fri>
+*** Spatial History <2017-02-10 Fri>
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
-- "Rails and Water" and "Gateway City" from [[zotero://select/items/278357_VDFMVXHE][@cronon:1992natures]]
-- lying with maps: http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf
-- http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html
+- Mark Monmonier,  "[[http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf][Lying with Maps]]" /Statistical Science 20:3, 2005. 215-222.
+- Ben Schmidt, "[[http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html][Data narratives and structural histories: Melville, Maury, and American whaling]]
 *In-Class Activity: Mapping with Google*
 **** COMMENT adding critical cartography readings
 e.g., https://www.academia.edu/7732250/An_Introduction_to_Critical_Cartography
@@ -150,6 +216,8 @@ http://journals2.scholarsportal.info/browse/03177173/v50i0001
 http://journals2.scholarsportal.info/browse/03177173/v26i0002
 http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
 http://slab.scripts.mit.edu/wp/links/critical-cartography/
+*** ??? <2017-02-17 Fri>
+*Note: In all likelihood, there will be no class this week due to a scheduling conflict.*
 *** NO CLASS FEB 24: READING WEEK
 
 *** Visualization <2017-03-03 Fri>
@@ -172,13 +240,18 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 
 ** Oral History, Crowdsourcing, and the Promise of the Public Sphere
 *** What's Special about Oral History <2017-03-17 Fri>
-Oral History has a long tradition; we explore its roots and peculiarities.
+Oral History has a long tradition; we explore its roots and peculiarities, and 
 
 *Readings:*
 - "The Voice of the Past" and "What makes Oral History Different" in /The Oral History Reader/
-- Listen to some part of - "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html
+- Listen to some part of  "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html
 
-*In-Class Activity: Peer interviews* 
+*In-Class Activity: Popcorn.js* 
+
+*** Interlude: Project Planning & Citizen History  <2017-03-31 Fri>
+We'll discuss some project management techniques that should help you with your final proposal
+- http://publichistorycommons.org/where-are-the-citizen-historians/
+# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
 *** Oral History & Remix Culture <2017-03-24 Fri>
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
@@ -187,18 +260,12 @@ If we're ahead of schedule, we'll watch /Harlan County USA/ in class.
 
 *Readings:*
 - "Oral History and the Digital Revolution" and "Authoring in Sound" in /The Oral History Reader/
-- [[zotero://select/items/0_VZMTZUHS][@gunkel:2008rethinking]]
-*In-Class Activity: popcorn.js*
+- Gunkel, David J. “Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording.” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489_rtdrmatmosr.xml.
 
-*** Citizen History  <2017-03-31 Fri>
-In conclusion, we'll think about the future of the historical enterprise and thei mplications of the techniques we've discussed.  What are the pormises and pitfalls? What do we want history to be? 
-- http://publichistorycommons.org/where-are-the-citizen-historians/
+*In-Class Activity: popcorn.js (just in case)*
 
 
-# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
-
-
-* Notes :noexport:
+* COMMENT Notes                                                    :noexport:
 - add in at least one documentary, potentially /Offshore/; /Fog of War/; /Harlan County USA/; 
 - "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html 2 hours long!!
 * COMMENT Variables
@@ -206,3 +273,5 @@ local variables need to be set at the end of the file.
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # End:  
+
+# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
