@@ -17,7 +17,7 @@
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 25.1 (Org mode 9.0.1)
-#+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
+# #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
 
 * Logistics
 :PROPERTIES:
@@ -74,7 +74,6 @@ At the end of this course, you should:
 - be able to clearly state and defend a position regarding "engaged scholarship", and articulate the relationship of your argument to the contemporary media landscape
 - have a basic understanding of markup languages and their use in DH
 - be able to make compelling use of media materials such as audio, video, and animation in historical arguments
-- understand how to perform "distant reading" on a corpus of texts
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 * Method
@@ -145,12 +144,13 @@ The following texts are required and available at the Bookstore, or via various 
 :PROPERTIES:
 :ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
 :POST_DATE: [2017-01-06 Fri 12:53]
-:POSTID:   607
-:BLOG:     dig
 :END:
 *Class Synopsis:* Introduction to the course, Github, and Markdown. 
 
 *Readings:* You may want to read some of these as general preparation for this and other history classes:
+- W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
+- William Cronon, [[http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf]["Why the Past Matters"]] 
+- Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In /Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web/. Philadelphia: University of Pennsylvania Press, 2006. http://chnm.gmu.edu/digitalhistory/digitizing/.
 
 
 *In-Class Activity: Collaboration on Github* 
