@@ -1,12 +1,12 @@
 #+POSTID: 390
-#+DATE: [2016-03-03 Thu 08:57]
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # End:
 # #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
-#+OPTIONS: reveal_single_file:t
+#+OPTIONS: reveal_single_file:nil
+#+STARTUP: customtime
 
-* COMMENT Fixing presentations
+* COMMENT Fixing presentations                                     :noexport:
 I need to have live-loading code in these presentations, or I'll run into serious trouble.  
 THere are at least three options with reveal, and doubtless otherones using other frameworks.  
 
@@ -28,12 +28,12 @@ actually this works now so I'll do this!!
 - will need lots of css work at a bare minimum. Looks like also some js work
 - would be nice to be able to isolate the code div from the rest of the page css. Not sur how to do that. Also probably would be nice to just create an iframe for the code. That would be another option -- have a variable that holds the pre and post code for the iframe and just throw it together
 - with iframeswould be nice if the code stayed the same when frame moves off... turns out this is not so hard, just use src instead of data-src.  
-* COMMENT Attendance
+* COMMENT Attendance                                               :noexport:
 | Name | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |------+---+---+---+---+---+---+---+---+---+----+----+----|
 |      |   |   |   |   |   |   |   |   |   |    |    |    |
 
-* COMMENT People
+* COMMENT People                                                   :noexport:
 | Last            | First     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |-----------------+-----------+---+---+---+---+---+---+---+---+---+----+----+----|
 | Burlock         | Hillary   |   |   | x |   |   |   |   |   |   |    |    |    |
@@ -57,7 +57,7 @@ actually this works now so I'll do this!!
 | Sohng           | Yi        |   |   |   |   |   |   |   |   |   |    |    |    |
 | Wachockier      | Kim       |   |   |   |   |   |   |   |   |   |    |    |    |
 
-* COMMENT Boilerplate for RevealEditor code in ox-reveal export
+* COMMENT Boilerplate for RevealEditor code in ox-reveal export    :noexport:
 maybe add jquery, revealeditor, and ace.js as dependencies when loading reveal.js. is that possible?
 
 Note this stuff: 
@@ -74,7 +74,7 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 
 #+END_SRC
 
-* COMMENT Assignments (progressive)
+* COMMENT Assignments (progressive)                                :noexport:
 - codeacademy web track (html, css, javascript) OR send me a github URL for a project you've done.  
 - mapping assignment: maybe the one from programming historian
 - participation/blogging (written in markdown)
@@ -83,7 +83,7 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 - "not reading a book" http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/
 - project proposal
 
-* COMMENT To do for today
+* COMMENT To do for today                                          :noexport:
 - set up website 
 - complete syllabus!
 - web skills top-up assignment
@@ -92,18 +92,18 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 * 01: Introducing /Digital History/
 :PROPERTIES:
 :ID:       o2b:196a261a-f575-44bc-8cc8-e38fd73aaf26
-:POST_DATE: [2016-01-13 Wed 12:02]
 :POSTID:   451
 :BLOG:     dig
-:EXPORT_FILE_NAME: 01-Introducing Digital History
-:REVEAL_SINGLE_FILE: t
+:EXPORT_FILE_NAME: 01-intro-digital-history
+:EXPORT_TITLE: Introduction to Digital History
 :END:
 ** About Me
 #+ATTR_HTML: :class half
 [[file:~/DH/Images/matt_headshot.jpg]]
 - Historian of Science & Technology
 - Interdisciplinary Background
-- Work with Mozilla Foundation, local non-profits on digital pedagogy
+- Interest in "Engaged" scholarship
+
 ** Why Care about History? Why care about the Digital Age?
 *** The World Out of Which We Come
 #+BEGIN_QUOTE
@@ -126,69 +126,44 @@ Understand how to write history for a digital age!
 - what can we preserve?
 - what opportunities are there for change?
 - what has been done already?
+** Method
+#+ATTR_REVEAL: :frag (appear)
+- Intro to toolbox
+- but tools keep changing
+- therefore: *simple* coding, *basic* tools, as a foundation for later learning
 ** Syllabus
 - still uncharted territory (no canon, quite)
-- 4 blocks, 4 skill areas
+- 4 blocks
   - Text & Code | Basic programming /literacy/
   - Data Driven History | "Distant Reading"
   - Maps & Visualization | Basic Web-based GIS
   - Oral History & Crowdsourcing | Multi-media History
 *** Objectives
-At the end of this course, you should *be able to*:
-- describe to others what the phrase "digital humanities" means to you.
-- frame a coherent and nuanced argument /of your own/ about the value of DH methods to the field of history
-- make compelling use of media materials such as audio, video, and animation in historical arguments
-You should *understand*:
-- how to use markup languages in DH
-- how to perform "distant reading" on a corpus of texts
-- how to create simple historical maps, and have an opinion about the value of GIS in historical argument
-*** Marking in Bizarro-land
-- *All assignments are Pass/Fail*
-- *"Pass" means B+ or better*
-- *You Get Five Re-do's*
-- *You choose which grade to try for*
-- *+/- determined by participation*
-*** 
-| <25>                      | <7>     | <35>                                | <37>                                  | <36>                                 | <36>                                 |
-| Assignment                | Due Date | D                                   | C                                     | B                                    | A                                    |
-|---------------------------+---------+-------------------------------------+---------------------------------------+--------------------------------------+--------------------------------------|
-| Web Skills Top-up         | <2016-02-11 Thu> | \checkmark                                   | \checkmark                                     | \checkmark                                    | \checkmark                                    |
-| Distant Reading           | <2016-03-03 Thu> | \checkmark                                   | \checkmark                                     | \checkmark                                    | \checkmark                                    |
-| Spatial History           | <2022-03-24 Thu> |                                     | \checkmark                                     | \checkmark                                    | \checkmark                                    |
-| Aural History             | <2016-04-07 Thu> |                                     |                                       | \checkmark                                    | \checkmark                                    |
-| Project Proposal          | <2016-04-12 Tue> |                                     |                                       |                                      | \checkmark                                    |
-| Short Answer              | <2016-04-12 Tue> | \checkmark                                   | \checkmark                                     |                                      |                                      |
-| Competencies Demonstrated |         | Very basic web skills; preliminary exploration of DH methods | Ability to use mapping tools, think critically about their value to history | Intermediate web sklls; thoughtful use of oral history for media-centric storytelling | Capacity to think creatively about how DH methods can enhance historical thinking |
+:PROPERTIES:
+:ID:       o2b:08d4e118-c70c-4f4c-a99a-293d3847c9a6
+:POST_DATE: [2017-01-06 Fri 12:48]
+:POSTID:   597
+:BLOG:     dig
+:END:
+At the end of this course, you should:
+- be able to describe to others what the phrase "digital humanities" means to you.
+- be able to frame a coherent and nuanced argument /of your own/ about the value of DH methods to the field of history
+- be able to clearly state and defend a position regarding "engaged scholarship", and articulate the relationship of your argument to the contemporary media landscape
+- have a basic understanding of markup languages and their use in DH
+- be able to make compelling use of media materials such as audio, video, and animation in historical arguments
+- understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
-*** The Explanation
-It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading, Spatial History, and Aural History assignments. Congratulations! You have qualified for a B. But what kind of a B?
-
-| If your class participation was: | You get a: | Which ROSI will show as: |
-|----------------------------------+------------+--------------------------|
-| Poor                             | B-         |                       72 |
-| Satisfactory                     | B          |                       75 |
-| Excellent                        | B+         |                       78 |
-
-*** The explanation, pt. 2
-Similarly, perhaps you were only able to complete the HTML Top-Up and the Distant Reading assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
-
-| If your class participation was: | You get a: | Which ROSI will show as: |
-|----------------------------------+------------+--------------------------|
-| Poor                             | D-         |                       52 |
-| Satisfactory                     | D          |                       55 |
-| Excellent                        | D+         |                       58 |
-
-*** But note
-A+ is a special grade.  Suppose you complete all the assignments satisfactorily.  Wow! You get an A, great.  But...  do you get an A+?
-
-| If your class participation was: | You get an: | Which ROSI will show as: |
-|----------------------------------+-------------+--------------------------|
-| Poor                             | A-          |                       83 |
-| Satisfactory                     | A           |                       88 |
-| Excellent                        | DEPENDS     |                  DEPENDS |
+*** Assignments
+| Assignment            | Brief Description                                 | Due Date  | Percentage |
+|-----------------------+---------------------------------------------------+-----------+------------|
+| HTML & CSS self-study | Pass/Fail: self-guided learning on codacademy.com | *<2017-01-20 Fri>* |         10 |
+| Javascript for DH     | Pass/Fail: problem set                            | *<2017-02-03 Fri>* |         15 |
+| Spatial History       | Simple GIS Web project                            | *<2017-03-03 Fri>* |         20 |
+| Oral History          | Multimedia Web Project                            | *<2017-03-24 Fri>* |         25 |
+| Project Proposal      | Imagine a Digital History Project                 | *<2017-04-05 Wed>* |         30 |
 
 *** First Assignment!
-You can find our first assignment [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  It is due in 4 weeks, but I advise you start on it right away.  
+You can find our first assignment [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  Part 1 is due in 2 weeks, but you have two additional weeks for the actually hard part.  
 ** Intros 1
 #+ATTR_REVEAL: :frag (appear)
 - Find someone you don't know
@@ -203,17 +178,41 @@ You can find our first assignment [[https://github.com/titaniumbones/assignment-
 ** Github!
 Take out your Laptop!
 - Find yet another partner (work alone or help someone else if you're very confident)
+- [[https://github.com/titaniumbones/history-please][Navigate to the History-Please repository]]
 - Follow the instructions on the course website:
   - make an account
   - fork the repo
-  - add a Canadian hero (do some research, add Wikipedia links, etc!)
+  - add some Candian history
   - submit your changes as pull request
 - When you're done, we'll check out the wonders of open source first hand
  
 # /home/matt/DH/Images/matt_headshot.jpg http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
-* 02: What the web signifies | HTML & CSS
+** COMMENT who's Here
+- Eva
+- Mikaila?
+- Yolanda
+- Cat
+- Anton
+- Oliver
+- Ken
+- Jasper
+- Rebecca
+- Ayla
+- Marianna
+- Sandra
+- Vicki
+- Diane
+- Katie (audit)
+- Mohammed
+- Graham
+- Emily
+- Melissa
+
+
+* 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
+:EXPORT_TITLE: What the Web Signifies
 :END:
 ** COMMENT Notes -- don't export
 - explain the pun
@@ -680,9 +679,10 @@ Writing in HTML is distracting and time-consuming!
 - images with ![Alt Text](http://path.to.image) :: 
 
 Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]]
-* 03: Abundance & Openness
+* 03: Abundance & Openness                                 :noexport:
 :PROPERTIES:
-:EXPORT_FILE_NAME: 03-abundance-and-opennes
+:EXPORT_FILE_NAME: 03-abundance-and-opennness
+:EXPORT_TITLE: Abundance and Openness
 :END:
 ** COMMENT Notes
 - Abundance.  Have some examples, talk about *real history*
@@ -753,7 +753,7 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
     - How does role of religion in public discourse change over time?
     - how do railroads impact social and economic development?
     - others?
-** Openness
+** Op enness
 #+BEGIN_QUOTE
 ...ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
 #+END_QUOTE
@@ -1014,9 +1014,10 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
-* 04: Distant Reading 1
+* 04: Distant Reading 1                                    :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
+:EXPORT_TITLE: Distant Reading I
 :END:
 ** COMMENT
 - Lecture: Graphs & maps (30 mins)
@@ -1199,9 +1200,10 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 [fn:1] From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention  (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
 
 
-* 05: Distant Reading 2
+* 05: Distant Reading 2                                    :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-distant-reading-2
+:EXPORT_TITLE: Distant Reading II
 :END:
 ** Recap
 #+ATTR_REVEAL: :frag (appear appear appear)
@@ -1265,7 +1267,7 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 ** Javascript
 - just taking questions for a moment
 ** Voyant-Tools
-* 06: Text as Data, history As Algorithm
+* 06: Text as Data, history As Algorithm                   :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 06-text-as-data
 :END:
@@ -1359,7 +1361,7 @@ consequence of the speed and scale that inhere in all anarchic systems.
 #+END_QUOTE
 
 
-* COMMENT Visualizations
+* Visualizations                                                   :noexport:
 ** COMMENT Notes 
 http://adamcrymble.org/intro-to-digital-history-2015/#week12
 
@@ -1381,7 +1383,7 @@ William J Turkel and Tim Hitchcock, Data Mining with Criminal Intent (2009) (for
 Timeplots, A Visual History of the United States House of Representatives, (2012) (for workshop).
 ** COMMENT Spatial history
 
-* 07: Why Spatial history?
+* 07: Why Spatial history?                                 :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-why-spatial-history
 :END:
@@ -1568,7 +1570,7 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 
 
 
-* 08: Visualization
+* COMMENT 08: Visualization                                        :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 08-visualization
 :END:
@@ -1593,7 +1595,7 @@ multivariate data; area as quantity; pie chart
 ** COMMENT Spatial history
 
 
-* 09: Deep Maps
+* COMMENT 09: Deep Maps                                            :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-maps-online
 :END:
@@ -1639,7 +1641,7 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 
 ** Activity: make-up work
 ** 
-* 10: What's Special about Oral History ("Engaged" History)
+* COMMENT 10: What's Special about Oral History ("Engaged" History) :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
 :END:
@@ -1786,14 +1788,20 @@ lot of this is about building a relationship
 ** COMMENT In-class interview #2:  
 - 10 minutes in each direction
 
-* COMMENT 11: Oral History & Remix Culture
+* 11: Oral History & Remix Culture                                 :noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 11-oral-history
+:END:
 - what?
-* COMMENT 12: Citizen History
+* 12: Citizen History                                      :noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 12-citizen-history
+:END:
 ** Changing Landscape of Profession and Expertise
 ** Continuing as "historian" after graduation
 ** Summing up promise and pitfalls of digital history
 ** 
-* COMMENT Assignments
+* COMMENT Assignments                                              :noexport:
 ** HTML Coding Assignment (what????)
 ** Data Munging Assignment (what?)
 ** Data Visualization
@@ -1816,3 +1824,9 @@ lot of this is about building a relationship
 # /home/matt/DH/Images/concession_roads.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-concession_roads1.jpeg
 # /home/matt/DH/Images/surveyor.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-surveyor.jpeg
 # /home/matt/DH/Images/line_cut.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-line_cut.jpeg
+
+* COMMENT Variables                                                :noexport:
+local variables need to be set at the end of the file.  
+# Local Variables:
+# org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
+# End:  

@@ -49,6 +49,11 @@ I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en
 
 Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the first assignment.
 ** Learn by example: History-Please
+:PROPERTIES:
+:ID:       o2b:c8b41c52-e63c-4792-a7d2-eca4f7c1eb8d
+:POST_DATE: [2017-01-07 Sat 11:58]
+:POSTID:   610
+:END:
 (This recapitulates much of what we did in the first class.  Feel free to skip.)
 
 My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple Github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
@@ -61,7 +66,8 @@ My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simpl
    - follow Markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
    - When you save the file, Github will *automatically create a forked repository under your account!* Magic. *Before you hit save, read the next step!!*
    [[./Images/create-file.jpeg]]
- 6. *Important!* You'll be given a choice between "Committing directly to master" and "Creating a new branch".  Choose the latter option and then follow the instructions to submit a pull request.  Amazing!  [[./Images/commit-options.png]]
+6. *Important!* You'll be given a choice between "Committing directly to master" and "Creating a new branch".  Choose the latter option and then follow the instructions to submit a pull request.  Amazing!  [[./Images/commit-options.png]]
+7. When filling out the pull request, please take note of the "base" branch -- by default, Github *will not* to this properly for you.  Make sure that the base points to ~titaniumbones/master~.  If you can't figure this out, then commit to your own "master" branch. Then, navigate back to the front page, and create a ~New Pull Request~ by clicking on the button on the upper left.  At this point my repo will be the only option you're given.  
 ------
 ** Getting started: Installing Git
 On Mac and Windows, simply [[https://desktop.github.com/][install Github Desktop]]. Command-line commands can be executed in the git shell within GH Desktop, or in the terminal.app on Mac.  On Linux, use your package manager and the terminal, eg. on Ubuntu:

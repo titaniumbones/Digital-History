@@ -268,10 +268,10 @@ If we're ahead of schedule, we'll watch /Harlan County USA/ in class.
 * COMMENT Notes                                                    :noexport:
 - add in at least one documentary, potentially /Offshore/; /Fog of War/; /Harlan County USA/; 
 - "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html 2 hours long!!
+# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
+
 * COMMENT Variables
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # End:  
-
-# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
