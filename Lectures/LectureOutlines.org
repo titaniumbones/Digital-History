@@ -1,17 +1,15 @@
-#+POSTID: 390
-# Local Variables:
-# org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# End:
-# #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
-#+OPTIONS: reveal_single_file:nil
-#+STARTUP: customtime
-
 * COMMENT Fixing presentations                                     :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-fixing-presentations-7828
+:END:
 I need to have live-loading code in these presentations, or I'll run into serious trouble.  
 THere are at least three options with reveal, and doubtless otherones using other frameworks.  
 
 ** Embed JSBIn
-This is actually pretty simple.  Just extract the jsbin code, and embed it i nan iframe.  Tricky things:
+:PROPERTIES:
+:CUSTOM_ID: embed-jsbin-094f
+:END:
+gThis is actually pretty simple.  Just extract the jsbin code, and embed it i nan iframe.  Tricky things:
 - +instead of a "src" atrribute, you need a "data-src" attribute in the iframe+ actually this was a nload error
 - This requires a snippet to add to org -- ideally, this would be a filter that recognizes the jsbin URL and turns it into an iframe (otherwise I'll lose the links in other exports).  Should be a reveal filter, not an html filter
 - Has the disadvantage that the code is not actually stored in the org file; but the advantage that html can render directly in the window which is nice.
@@ -19,6 +17,9 @@ This is actually pretty simple.  Just extract the jsbin code, and embed it i nan
 - no code sample required here b/c it's so simple.
 
 ** Use Klipse
+:PROPERTIES:
+:CUSTOM_ID: use-klipse-a813
+:END:
 
 actually this works now so I'll do this!!
 
@@ -29,11 +30,17 @@ actually this works now so I'll do this!!
 - would be nice to be able to isolate the code div from the rest of the page css. Not sur how to do that. Also probably would be nice to just create an iframe for the code. That would be another option -- have a variable that holds the pre and post code for the iframe and just throw it together
 - with iframeswould be nice if the code stayed the same when frame moves off... turns out this is not so hard, just use src instead of data-src.  
 * COMMENT Attendance                                               :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-attendance-66a6
+:END:
 | Name | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |------+---+---+---+---+---+---+---+---+---+----+----+----|
 |      |   |   |   |   |   |   |   |   |   |    |    |    |
 
 * COMMENT People                                                   :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-people-647b
+:END:
 | Last            | First     | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |-----------------+-----------+---+---+---+---+---+---+---+---+---+----+----+----|
 | Burlock         | Hillary   |   |   | x |   |   |   |   |   |   |    |    |    |
@@ -58,6 +65,9 @@ actually this works now so I'll do this!!
 | Wachockier      | Kim       |   |   |   |   |   |   |   |   |   |    |    |    |
 
 * COMMENT Boilerplate for RevealEditor code in ox-reveal export    :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-boilerplate-for-revealeditor-code-in-ox-reveal-export-c817
+:END:
 maybe add jquery, revealeditor, and ace.js as dependencies when loading reveal.js. is that possible?
 
 Note this stuff: 
@@ -75,6 +85,9 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 #+END_SRC
 
 * COMMENT Assignments (progressive)                                :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-assignments-(progressive)-37c1
+:END:
 - codeacademy web track (html, css, javascript) OR send me a github URL for a project you've done.  
 - mapping assignment: maybe the one from programming historian
 - participation/blogging (written in markdown)
@@ -84,6 +97,9 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 - project proposal
 
 * COMMENT To do for today                                          :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-to-do-for-today-a20c
+:END:
 - set up website 
 - complete syllabus!
 - web skills top-up assignment
@@ -96,8 +112,12 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 :BLOG:     dig
 :EXPORT_FILE_NAME: 01-intro-digital-history
 :EXPORT_TITLE: Introduction to Digital History
+:CUSTOM_ID: 01:-introducing-/digital-history/-6653
 :END:
 ** About Me
+:PROPERTIES:
+:CUSTOM_ID: about-me-618c
+:END:
 #+ATTR_HTML: :class half
 [[file:~/DH/Images/matt_headshot.jpg]]
 - Historian of Science & Technology
@@ -105,15 +125,27 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 - Interest in "Engaged" scholarship
 
 ** Why Care about History? Why care about the Digital Age?
+:PROPERTIES:
+:CUSTOM_ID: why-care-about-history?-why-care-about-the-digital-age?-8917
+:END:
 *** The World Out of Which We Come
+:PROPERTIES:
+:CUSTOM_ID: the-world-out-of-which-we-come-eff1
+:END:
 #+BEGIN_QUOTE
 The past is the world out of which we have come, the multitude of events and experiences that have shaped our conscious selves and the social worlds we inhabit. To understand how and why we live as we do, we cannot avoid appealing to the past to explain how andwhy we got to be this way. (Cronon 2000, p. 4)
 #+END_QUOTE
 *** Not just Fact but Story
+:PROPERTIES:
+:CUSTOM_ID: not-just-fact-but-story-de42
+:END:
 #+BEGIN_QUOTE
 It is remembering and storytelling we care about, not the raw past, because only by being perennially resurrected in the mind of each ne generation does the past become meaningful.  Only this does it become a living memory which in turn gives meaning to our present lives by reminding us ho we are--as individuals, as a state and nation, as a people. (/Ibid./, p. 13)
 #+END_QUOTE
 *** A Digital Age
+:PROPERTIES:
+:CUSTOM_ID: a-digital-age-5662
+:END:
 Opportunity:
 - masses of data
 - tremendous participation
@@ -122,16 +154,25 @@ Challenge
 - trusting writers
 - lack of collective experience
 *** Our Project
+:PROPERTIES:
+:CUSTOM_ID: our-project-5f46
+:END:
 Understand how to write history for a digital age!
 - what can we preserve?
 - what opportunities are there for change?
 - what has been done already?
 ** Method
+:PROPERTIES:
+:CUSTOM_ID: method-f5b6
+:END:
 #+ATTR_REVEAL: :frag (appear)
 - Intro to toolbox
 - but tools keep changing
 - therefore: *simple* coding, *basic* tools, as a foundation for later learning
 ** Syllabus
+:PROPERTIES:
+:CUSTOM_ID: syllabus-3974
+:END:
 - still uncharted territory (no canon, quite)
 - 4 blocks
   - Text & Code | Basic programming /literacy/
@@ -144,6 +185,7 @@ Understand how to write history for a digital age!
 :POST_DATE: [2017-01-06 Fri 12:48]
 :POSTID:   597
 :BLOG:     dig
+:CUSTOM_ID: objectives-4b0a
 :END:
 At the end of this course, you should:
 - be able to describe to others what the phrase "digital humanities" means to you.
@@ -154,8 +196,11 @@ At the end of this course, you should:
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 *** Assignments
-| Assignment            | Brief Description                                 | Due Date  | Percentage |
-|-----------------------+---------------------------------------------------+-----------+------------|
+:PROPERTIES:
+:CUSTOM_ID: assignments-d1fd
+:END:
+| Assignment            | Brief Description                                 | Due Date           | Percentage |
+|-----------------------+---------------------------------------------------+--------------------+------------|
 | HTML & CSS self-study | Pass/Fail: self-guided learning on codacademy.com | *<2017-01-20 Fri>* |         10 |
 | Javascript for DH     | Pass/Fail: problem set                            | *<2017-02-03 Fri>* |         15 |
 | Spatial History       | Simple GIS Web project                            | *<2017-03-03 Fri>* |         20 |
@@ -163,19 +208,31 @@ At the end of this course, you should:
 | Project Proposal      | Imagine a Digital History Project                 | *<2017-04-05 Wed>* |         30 |
 
 *** First Assignment!
+:PROPERTIES:
+:CUSTOM_ID: first-assignment!-26f7
+:END:
 You can find our first assignment [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  Part 1 is due in 2 weeks, but you have two additional weeks for the actually hard part.  
 ** Intros 1
+:PROPERTIES:
+:CUSTOM_ID: intros-1-7ff4
+:END:
 #+ATTR_REVEAL: :frag (appear)
 - Find someone you don't know
 - in 3 minutes, find out: Name; Year; Interest in the class; something else of interest
 - Present yr classmate
 
 ** Intros 2
+:PROPERTIES:
+:CUSTOM_ID: intros-2-479b
+:END:
 #+ATTR_REVEAL: :frag (appear)
 - find a *different* stranger
 - spend no more than 8 minutes *imagining* a DH project
 - present to another pair 
 ** Github!
+:PROPERTIES:
+:CUSTOM_ID: github!-7877
+:END:
 Take out your Laptop!
 - Find yet another partner (work alone or help someone else if you're very confident)
 - [[https://github.com/titaniumbones/history-please][Navigate to the History-Please repository]]
@@ -188,6 +245,9 @@ Take out your Laptop!
  
 # /home/matt/DH/Images/matt_headshot.jpg http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
 ** COMMENT who's Here
+:PROPERTIES:
+:CUSTOM_ID: comment-who's-here-5510
+:END:
 - Eva
 - Mikaila?
 - Yolanda
@@ -213,15 +273,22 @@ Take out your Laptop!
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
 :EXPORT_TITLE: What the Web Signifies
+:CUSTOM_ID: 02:-what-the-web-signifies-|-html-&-css-09a6
 :END:
-** COMMENT Notes -- don't export
+** COMMENT Notes -- don't export :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-notes----don't-export-a542
+:END:
 - explain the pun
 - Habermas: public sphere (Lecture: 25 mins)
 - discussion/group work: definitions of public?  something like that. 15 mins.
 - History on the web (Lecture: 20 mins).  Include an example
 - Discussion? maybe not.
 - Lab:  a few very basic bits about HTML, perhaps some exercises.
-** COMMENT Readings/Notes
+** COMMENT Readings/Notes                                         :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-readings/notes-7e81
+:END:
 #+begin_src sh :results output
 ${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Habermas-public-1964
 #+end_src
@@ -254,6 +321,9 @@ The idea of the public sphere, preserved in the social welfare state mass democr
 
 
 *** notes on Interchange
+:PROPERTIES:
+:CUSTOM_ID: notes-on-interchange-6bbf
+:END:
 
 
 Here is a step toward a working definition. Digital history is an approach to examining and representing the past that works with the new communication technologies of the computer, the Internet network, and software systems. On one level, digital history is an open arena of scholarly production and communication, encompassing the development of new course materials and scholarly data collections. On another, it is a methodological approach framed by the hypertextual power of these technologies to make, define, query, and annotate associations in the human record of the past. To do digital history, then, is to create a framework, an ontology, through the technology for people to experience, read, and follow an argument about a historical problem.
@@ -292,86 +362,41 @@ Collaboration: A source of excitement and perhaps peril. The best digital projec
 
 To reiterate some of the excellent points made here: The new media are profoundly changing the ways most historians work, whether or not we are self-conscious about how we are becoming digital. As Dan has noted, it is in the discipline’s interest to be proactive, rather than reactive, in response to these changes. Institutions and individuals who have steered clear of the cutting edge have an important role to play here. Even those who do not envision themselves shaping new tools or expressive forms can—and should—work to make sure that the rising generation of scholars has the opportunity and the institutional space to experiment with digital media. In addition to funding and professionally sanctioned forums for expression, there needs be space for this in the graduate curriculum. The digital pioneers present in this conversation—and the much-missed Roy Rosenzweig—have made it very easy for others to introduce themselves and their students to the field. Check out their online syllabi; you might well be able to add an “Introduction to History and the New Media” to your institution’s roster of methods courses.
 
-** Machine-readable Text
-:PROPERTIES:
-:CUSTOM_ID: machine-readable
-:END:
-On the web, text is "Marked up" 
-#+BEGIN_SRC html
-<h1>hi</h1>
-#+END_SRC
-
-#+BEGIN_EXPORT html
-      <h1>This is the heading</h1>
-      <p>
-        This is a paragraph. It can contain <i>further markup</i> and also 
-        <a href="http:/some.where.com">more complex content</a>.
-      </p>
-      <aside>
-        Sometimes you'll see <i>semantic</i> tags, like "aside",
-        "header", "footer", "article", or "section".  
-      </aside>
-
-#+END_EXPORT
-
-*** Consequences
-- Programs can scan this text, interpret it...
-- then treat it as /data/ which can be combined, analyzed, etc.
-#+ATTR_REVEAL: :frag appear
-- point of learning HTML is
-#+ATTR_REVEAL: :frag appear
-  - Understand how to achieve a certain "look"
-  - Understand how a complex computer algorithm might treat it as "data".
-
-*** A Few HTML tags you should know
-- ~<html></html>~ :: Opens/closes every page
-- ~<head></head> and <body></body>~ :: two main sections for metadata and display
-- ~<p></p>~ :: basic paragraph unit
-- ~<a href="http://link.address"></a>~ :: The essential [[http://link.address][hyperlink]] tag that makes the web what it is
-- ~<img src="http://file.location" alt="text to display for non-visual browsers/viewers"/>~ :: "self-closing" image display tag
-- ~<blockquote></blockquote>~ :: semantic tag distinguishing quoted text
-- ~<div></div>~ :: often-invisible tag that divides page into "divisions"
-- ~<em></em> <strong></strong>,  <i></i> <b></b>~ :: /emphasized/ and *strong* text
-*** Group Work 2:  HTML, continued
-Let's continue our introduction to HTML via JSBin: 
-- divide into groups (first choose sides in our debate; then split into 2s and 3s)
-- now click here: http://jsbin.com/utinoz/27/edit?html,output
-*** HTML to Markdown
-Writing in HTML is distracting and time-consuming!
-- HTML for publication, but
-- *Markdown* for writing
-  - convenient shorthand for HTML which we will often use in class
-*** Markdown cheatsheet
-- ~_emphasis~ and ~__strong__~ :: single "_" or "*" surrounding words for /ital/, double for bold, triple for bold ital
-- > for blockquotes :: just preface your paragraph with an angle bracket and one space to get a quote
-- Separate paragraphs with an empty line ::
-- headings start with one or more "#" ::
-- horizontal lines with ---- :: but be sure to keep one empty line above and below, or will be interpreted differently
-- links with [Link Text](http://link.address) ::
-- images with ![Alt Text](http://path.to.image) :: 
-
-Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]]
-
 ** Review
+:PROPERTIES:
+:CUSTOM_ID: review-1448
+:END:
 - 4 blocks
-- Bizarre Grading
-- Assignment is online
-- Text as Code: Github
+- [[https://github.com/titaniumbones/assignment-web-skills-intro][Assignment is online]]
+- Intro to Github
 ** Today
+:PROPERTIES:
+:CUSTOM_ID: today-abcd
+:END:
 - Concept of the "Public Sphere"
 - Internet and Habermas's conception
 - Discussion
-- brief HTML explication
+- Brief HTML explication
 - HTML Exercise
-- Markdown (if we get there)
+#+BEGIN_NOTES
+Phrase "Technical Affordance"
+#+END_NOTES
 ** Significance and Signification 
+:PROPERTIES:
+:CUSTOM_ID: significance-and-signification-4ace
+:END:
 - What /matters/ about the web?
 - /How does the web/ create and change meaning?
 
+#+BEGIN_NOTES
+- *Significance:* what is its importance?
+- *Signification:* how does the web introduce or trransform meaning? 
+#+END_NOTES
 *** What matters about the web?
 :PROPERTIES: 
 :STEP: t
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: what-matters-about-the-web?-944f
 :END:
 
 Web has had enormous effects
@@ -382,13 +407,27 @@ Web has had enormous effects
   - *but I want to talk about* */discursive/*
   - does the web change what /kinds of conversations/ we can have?
     - for the better, or for the worse?
+#+BEGIN_NOTES
+- "peculiar :technical affordances"  of this technological system
+  - tech systems make some things possible & other things impossible. Or, at lease: some thing *easy* and other things *very difficult*.
+  - ex: chainsaw vs. jigsaw. Table saw vs. Band saw.  Pencil vs. pen.  
+#+END_NOTES
 ** Part I: The Public Sphere
+:PROPERTIES:
+:CUSTOM_ID: part-i:-the-public-sphere-4b49
+:END:
 *** Authenticity in a media age
-#+CAPTION: Juergen Habermas
+:PROPERTIES:
+:CUSTOM_ID: authenticity-in-a-media-age-9bf8
+:END:
+#+CAPTION: Jürgen Habermas
 #+ATTR_HTML: height="200px" width="300px" align="center"
 [[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
 
 *** Mid-century anxiety
+:PROPERTIES:
+:CUSTOM_ID: mid-century-anxiety-a1d1
+:END:
 #+ATTR_REVEAL: :frag appear
 - Appearance of new media (radio, TV, new kinds of magazine)
 - Are these "degraded"?
@@ -397,6 +436,9 @@ Web has had enormous effects
 - More pliable?
 
 *** Reasons to worry
+:PROPERTIES:
+:CUSTOM_ID: reasons-to-worry-7254
+:END:
 #+ATTR_HTML: :class paired
 https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg
 #+ATTR_HTML: :class paired
@@ -406,6 +448,9 @@ https://upload.wikimedia.org/wikipedia/en/8/86/EwigerJudeFilm.jpg
 - perhaps the media of communication have a role?  
 
 *** The Public Sphere
+:PROPERTIES:
+:CUSTOM_ID: the-public-sphere-d6c3
+:END:
 #+BEGIN_QUOTE
 A portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.
 
@@ -413,7 +458,14 @@ A portion of the public sphere comes into being in every conversation in which p
 
 #+END_QUOTE
 
-*** Juergen Habermas (b. 1929)
+#+BEGIN_NOTES
+
+Habermas wants us to believe in the reality of the "public sphere", as a /discursive body/ composed of /conversations/ that have /a certain form/
+#+END_NOTES
+*** Jürgen Habermas (b. 1929)
+:PROPERTIES:
+:CUSTOM_ID: jürgen-habermas-(b.-1929)-0ad4
+:END:
 - pre-eminent German public intellectual of 1960's and 1970's
 - role of Holocaust/Fascism in all his thinking
 - inheritance from the Frankfurt School
@@ -421,21 +473,31 @@ A portion of the public sphere comes into being in every conversation in which p
 *** Concept of the Public Sphere
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: concept-of-the-public-sphere-9b21
 :END:
 
 #+BEGIN_QUOTE
 By "the public sphere" we mean... a realm of our social life in which something approaching public opinion can be formed... *Citizens behave as a public body when they confer in an unrestricted fashion* -- that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions -- *about matters of general interest.* (Habermas 1964, p.49[p.2])
 #+END_QUOTE
+#+BEGIN_NOTES
+Unpacking:
+- *"something approaching public opinion":* suggests that "public opinion" has a technical meaning
+- *Conferring in an unrestricted fashion*: the public sphere *requires* a certain kind of freedom
+- *Matters of general interest*: we're not talking about breakfast, jeans, or libstick.  
+#+END_NOTES
 
 ** Public and Private
+:PROPERTIES:
+:CUSTOM_ID: public-and-private-f483
+:END:
 #+ATTR_HTML: :class "smalltable"
 | Public                               | Private                         |
 |--------------------------------------+---------------------------------|
 | open to all                          | restricted                      |
 | accessible for money                 | closed even if you can pay      |
-| state-relateed                       | nonstate, civil society         |
-| political                            | nonpolitical                    |
-| official                             | nonofficial                     |
+| state-related                        | non-state, civil society        |
+| political                            | non-political                   |
+| official                             | non-official                    |
 | common                               | special                         |
 | impersonal                           | personal                        |
 | national or popular                  | group, class, or locale         |
@@ -445,10 +507,15 @@ By "the public sphere" we mean... a realm of our social life in which something 
 | circulated in print/electronic media | circulated orally/in manuscript |
 | known widely                         | known only to a few             |
 | acknowledged/explicit                | tacit/implicit                  |
-|                                      |                                 |
+
+#+BEGIN_NOTES
+- many definitions
+- not all of them part of Habermas's terminology
+#+END_NOTES
 ** Concept of the Public Sphere
 :PROPERTIES:
 :STEP: 1
+:CUSTOM_ID: concept-of-the-public-sphere-3013
 :END:
 *Strukturwandlung der Öffentlichkeit (1962)*
 #+ATTR_REVEAL: :frag (none none none appear appear appear appear)
@@ -459,19 +526,37 @@ By "the public sphere" we mean... a realm of our social life in which something 
 - arises first in 18th Century
 - flourishes and then withers in 19th
 - at a nadir in 20th; can it be revived?
-
+#+BEGIN_NOTES
+Habermas's /Habilitation/ and first important book.  but 55 years old!!
+#+END_NOTES
 ** Before Bourgeois Society
+:PROPERTIES:
+:CUSTOM_ID: before-bourgeois-society-dd7b
+:END:
 - There is no "Public Sphere"
 - Instead there are "Public Individuals" with certain powers
   - and Church authorities, empowered to speak on moral matters
 - Opposed to these are "private persons"
+#+BEGIN_NOTES
+Begin the historical story w/ the classic trnasition to a bourgeois/capitalist society around 1800.  
+- before this point, not public sphere, just public individuals, who are distinct from 'private persons"
+#+END_NOTES
 *** Private and Public Persons
+:PROPERTIES:
+:CUSTOM_ID: private-and-public-persons-f0ec
+:END:
 #+BEGIN_QUOTE
 A private person has no right to pass /public/ and perhaps even disapproving judgement on the actions, procedures, laws, regulations, and ordinances of sovereigns and courts.... or to publish in print pertinent reports that he manages to obtain.  *For a private person is not at all capable of making such judgment*, because he lacks complete knowledge of circumstances and motives.
 
   -- Frederick 'the Great' of Prussia, 1784
 #+END_QUOTE
+#+BEGIN_NOTES
+"Private" and "Public" distinguish /types of person/, not types of activity. 
+#+END_NOTES
 ** 18th Century Origins
+:PROPERTIES:
+:CUSTOM_ID: 18th-century-origins-265c
+:END:
 - How do we get from a monarchy in which only 'public persons' have license to speak on 'public matters', to a 'public sphere' which is opened more widely?
 #+ATTR_REVEAL: :frag appear
 - Rise of newspapers/journals. Intrusion of private commentary on 'public' matters
@@ -481,6 +566,7 @@ A private person has no right to pass /public/ and perhaps even disapproving jud
 *** Salons and Coffee Houses
 :PROPERTIES: 
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: salons-and-coffee-houses-4538
 :END:
 
 #+ATTR_HTML: :style float:left; max-height:400px;
@@ -490,6 +576,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
 *** Salons and Coffee Houses
 :PROPERTIES: 
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: salons-and-coffee-houses-151f
 :END:
 - /Salons/ as the heart of intellectual activity in c. 18
   - 'monopoly on first publication'
@@ -501,24 +588,36 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
 - an ideal of /common humanity/ esp. in coffee houses
   - opinions judged by reason alone
     - no intrusion of 'distinction' /or/ finance
-  - imperfection of this vision
+  - [ *but note:* imperfection of this vision ]
+#+BEGIN_NOTES
+one of the longstanding critiques of Habermas is the /actual/ restrictiveness of coffee houses /in real life/.  Who's excluded? make a list: women, the truly poor, non-Europeans, the uneducated (to some extent), 
+#+END_NOTES
 *** Circulation
 :PROPERTIES: 
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: circulation-d616
 :END:
 - Communication across broad spaces & differences needs something more than conversation
 - need a way get ideas to large numbers
-  - news sheets -> newspapers
-  - letters -> journals
+  - news sheets \rarr newspapers
+  - letters \rarr journals
+
 *** Markets
 :PROPERTIES: 
 :STEP: t
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: markets-ec75
 :END:
 - Through newspapers & journals conversation becomes a /commodity/
 - Therefore it loses its exclusivity
 - so, in the beginning, /commodification is a *good thing*/
+#+BEGIN_NOTES
+This process of ccommodification, and its trasformation from a *positive, welcome* fore in to a *troubling, destructive* one is central to H but is not just his idea.
+#+END_NOTES
 ** The State vs. Society
+:PROPERTIES:
+:CUSTOM_ID: the-state-vs.-society-4420
+:END:
 - This is all happening in a pre-democratic era (mostly)
 - 'The People' are /a problem/ for the state
 - growth of 'the social' a threat to sovereignty
@@ -527,6 +626,7 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
 :PROPERTIES: 
 :STEP: t
 :HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: the-structure-of-the-public-sphere-3d98
 :END:
 
 #+ATTR_HTML: border="2" rules="all" frame="all"
@@ -540,6 +640,9 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
 - it *mediates* between them and draws its legitimacy from its use of reason
 - note that it *presupposes* an emergent realm of "privacy" -- and so, it is grounded in that notion, like all liberal philosophical constructs
 ** From Debate to Consumption
+:PROPERTIES:
+:CUSTOM_ID: from-debate-to-consumption-2369
+:END:
 - Public Sphere in effect /undoes itself/
 - success of media dissolves the reciprocal creation & communication of ideas
   - instead we just /consume/
@@ -550,15 +653,24 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
   - Where is its legitimacy?
 
 ** Reception
+:PROPERTIES:
+:CUSTOM_ID: reception-d9f8
+:END:
 - extremely influential
 - with some questions about both the /historical/ and the /philosophical/ elements of the story.
 *** Counterpublics
+:PROPERTIES:
+:CUSTOM_ID: counterpublics-8f8c
+:END:
 #+BEGIN_QUOTE
 ...some publics are defined by their tension with a larger public... Discussion with such a public is understood to *contravene the rules obtaining in the world at large*... This kind of public is, in effect, a *counterpublic*: it maintains at some level... an awareness of its subordinate status.
   -- M. Warner (2002)
 #+END_QUOTE
 
 *** One or Many?
+:PROPERTIES:
+:CUSTOM_ID: one-or-many?-f97b
+:END:
 - Habermas sees Public Sphere as *necessarily unitary*
 - But discourse carves out separate spaces
   - that may correlate with social divides
@@ -566,6 +678,9 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
 - ("Given the fact that almost anyone can contribute to public discourse, the multiplicity of perspectives makes it even more difficult to define public opinion. Any designation of public opinion then becomes arbitrary")
 
 *** Disinterested or embodied?
+:PROPERTIES:
+:CUSTOM_ID: disinterested-or-embodied?-9ff3
+:END:
 - for Habermas *separation* of individual from *both* "accidental" circumstances *and* official capacities is paramount
 - Warner:  This is fictive
   - and anyway undesirable
@@ -574,31 +689,54 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
     - does it?  
 
 *** Reading or Acting
+:PROPERTIES:
+:CUSTOM_ID: reading-or-acting-3a57
+:END:
 - Habermas:  the actions of a legitimate public sphere are actions of reading (scrutinize, judge, decide)
 - Warner: in a counterpublic, there may be other sorts of actions (prance, diss, act up, fantasize, mourn)
 
 **  How this matters for History
+:PROPERTIES:
+:CUSTOM_ID: how-this-matters-for-history-d592
+:END:
 - If there are many "publics", then working to carve out a particular space for discourse can have salutary effects
 - Modes of address and standards of comportment can differ across 'publics'
 - May even be possible to craft a 'public' around our work.
   - though " it follows that the public exists only as long as the text is being engaged with"
 
 *** Enter the Internet
+:PROPERTIES:
+:CUSTOM_ID: enter-the-internet-ab5f
+:END:
 - Habermas' theory revolves around a *technology* and a *social institution*
   - enabled by print, threatened by TV
   - can the Internet undo this dissolution?  If so, how?
   - if not, is it the apotheosis of that dissolution?
 
 *** Digital History and the Public Sphere
-- Questions that arise from the JAH conversation:
-  - Does the Internet provide a space for authentic /public/ conversatoin?
-  - What are effects of the /medium/ on /how we pursue knowledge and truth/?
-
+:PROPERTIES:
+:CUSTOM_ID: digital-history-and-the-public-sphere-5a06
+:END:
+- Does the Internet provide a space for authentic /public/ conversatoin?
+- What are effects of the /medium/ on /how we pursue knowledge and truth/?
 #+ATTR_REVEAL: :frag appear
-    - *state and corporate pressures*
-    - algorithmic actors (!)
+  - *state and corporate pressures*
+  - algorithmic actors (!)
 
-*** Exercise
+*** Technical Affordances of the web
+- instantaneous distribution
+- distributed production
+- machine-readable text
+- algorithmic sorting
+#+BEGIN_NOTES
+All of these are present in *every* web-based communication.  But realms of the web have distinct affordances of their own: [[http://www.reddit.com][Reddit]] \ne [[http://twitter.com][twitter]] \ne [[http://www.facebook.com][facebook]] \ne [[http://nytimes.com][The New York Times]]
+
+#+END_NOTES
+
+*** Group Work
+:PROPERTIES:
+:CUSTOM_ID: exercise-81e3
+:END:
 - Groups of ~3
 - Pro- and Anti-
 - 3 strongest arguments for/against Internet as an "authentic" public sphere
@@ -628,7 +766,10 @@ On the web, text is "Marked up"
     </body>
   </html>
 #+END_SRC
-
+*** Machine-readable Text
+:PROPERTIES:
+:CUSTOM_ID: machine-readable-text-2a02
+:END:
 #+BEGIN_EXPORT html
       <h1>This is the heading</h1>
       <p>
@@ -643,6 +784,9 @@ On the web, text is "Marked up"
 #+END_EXPORT
 
 *** Consequences
+:PROPERTIES:
+:CUSTOM_ID: consequences-5b9c
+:END:
 - Programs can scan this text, interpret it...
 - then treat it as /data/ which can be combined, analyzed, etc.
 #+ATTR_REVEAL: :frag appear
@@ -651,26 +795,58 @@ On the web, text is "Marked up"
   - Understand how to achieve a certain "look"
   - Understand how a complex computer algorithm might treat it as "data".
 
+*** Tag Structure
+#+BEGIN_SRC html
+<tag att1="value1" att2="value2">content</tag>
+<p class="normal" align="right">Paragraph Content</p>
+<a href="http://www.google.com">Link to google</a>
+<img src="http://1.bp.blogspot.com/-CzqzzBV2tMk/TxBM3ar18MI/AAAAAAAAPm0/6faLPO9BM8w/s1600/i-can-has-cheezburger.jpg" title="I can Haz Cheezburger?" alt="greedy cat saying 'I can haz cheezburger?'" />
+#+END_SRC
+tags:
+- tag identifier
+- 
 *** A Few HTML tags you should know
+:PROPERTIES:
+:CUSTOM_ID: a-few-html-tags-you-should-know-4481
+:END:
 - ~<html></html>~ :: Opens/closes every page
-- ~<head></head> and <body></body>~ :: two main sections for metadata and display
+- ~<head></head>~ and ~<body></body>~ :: two main sections for metadata and display
 - ~<p></p>~ :: basic paragraph unit
 - ~<a href="http://link.address"></a>~ :: The essential [[http://link.address][hyperlink]] tag that makes the web what it is
 - ~<img src="http://file.location" alt="text to display for non-visual browsers/viewers"/>~ :: "self-closing" image display tag
 - ~<blockquote></blockquote>~ :: semantic tag distinguishing quoted text
 - ~<div></div>~ :: often-invisible tag that divides page into "divisions"
 - ~<em></em> <strong></strong>,  <i></i> <b></b>~ :: /emphasized/ and *strong* text
+- ~<ol>~, ~<ul>~, ~<li>~ :: building "ordered" and "unordered" lists
+- ~<table>~, ~<tr>~, ~<th>~, ~<td>~ :: building tables (don't overuse!)
 *** Group Work 2:  HTML, continued
+:PROPERTIES:
+:CUSTOM_ID: group-work-2:--html,-continued-03e2
+:END:
 Let's continue our introduction to HTML via JSBin: 
-- divide into groups (first choose sides in our debate; then split into 2s and 3s)
-- now click here: http://jsbin.com/utinoz/27/edit?html,output
+- click here: http://jsbin.com/utinoz/27/edit?html,output
+- You can also *download the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
+#+BEGIN_NOTES
+Here you can see the all parts of the page in different panes.  try to add:
+- images
+- lists
+- real links
+- anything else you can think of 
+Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
+#+END_NOTES
 *** HTML to Markdown
+:PROPERTIES:
+:CUSTOM_ID: html-to-markdown-69a5
+:END:
 Writing in HTML is distracting and time-consuming!
 - HTML for publication, but
 - *Markdown* for writing
   - convenient shorthand for HTML which we will often use in class
 *** Markdown cheatsheet
-- ~_emphasis~ and ~__strong__~ :: single "_" or "*" surrounding words for /ital/, double for bold, triple for bold ital
+:PROPERTIES:
+:CUSTOM_ID: markdown-cheatsheet-eb13
+:END:
+- ~_emphasis~ and ~__strong__~ :: single "_" or "*" surrounding words for /ital/, double for *bold*, triple for */bold ital/*
 - > for blockquotes :: just preface your paragraph with an angle bracket and one space to get a quote
 - Separate paragraphs with an empty line ::
 - headings start with one or more "#" ::
@@ -678,40 +854,59 @@ Writing in HTML is distracting and time-consuming!
 - links with [Link Text](http://link.address) ::
 - images with ![Alt Text](http://path.to.image) :: 
 
-Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]]
-* 03: Abundance & Openness                                 :noexport:
+Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
+
+* 03: Abundance & Openness              
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-abundance-and-opennness
 :EXPORT_TITLE: Abundance and Openness
+:CUSTOM_ID: 03:-abundance-&-openness-2a2e
 :END:
 ** COMMENT Notes
+:PROPERTIES:
+:CUSTOM_ID: comment-notes-891e
+:END:
 - Abundance.  Have some examples, talk about *real history*
 - Openness.  Github, e.g.
 - Search engines. Algorithms.  curation.  
 - Lab: list of websites to evaluate.  This will require *prep*
 http://adamcrymble.org/intro-to-digital-history-2015/#week2 
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-53d2
+:END:
 - "Public sphere" at a turning point
 - Transformation by automated agents and encoded text
 
 *** Plan for the day
+:PROPERTIES:
+:CUSTOM_ID: plan-for-the-day-b6ce
+:END:
 - *Brief* lecture
 - Discussion: how will *you* respond to information abundance?
 - Search exercise
 - Break
-- Website evaluation exercise
-- help w/ HTML/CSS/JS (if you're stuck/don't understand) 
+- More about HTML/CSS/JS (if you're stuck/don't understand) 
 ** History in the age of scarcity
+:PROPERTIES:
+:CUSTOM_ID: history-in-the-age-of-scarcity-3970
+:END:
 #+BEGIN_QUOTE
 The members of prehistoric societies did not think they lived in prehistoric times. They merely lacked a good preservation medium. (Auerbach, quoted in Rosenaweig)
 #+END_QUOTE
 *** Scarcity
+:PROPERTIES:
+:CUSTOM_ID: scarcity-184c
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - Historically, very little recorded
 - Even less /preserved/
 - historian's task was to /locate rare sources/ in faraway places
 
 *** Implications
+:PROPERTIES:
+:CUSTOM_ID: implications-1db9
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - History skewed to /those whose records appeared worth saving/
 - record /always/ fragmentary
@@ -719,30 +914,48 @@ The members of prehistoric societies did not think they lived in prehistoric tim
 - BUT: often possible to read /large percentage/ of relevant sources
 
 ** Age of Abundance
+:PROPERTIES:
+:CUSTOM_ID: age-of-abundance-7ddc
+:END:
 #+BEGIN_QUOTE
 Tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? (Rosenzweig)
 #+END_QUOTE
 
 *** Abundance
+:PROPERTIES:
+:CUSTOM_ID: abundance-6257
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - *much* more recorded than in the past
 - *vastly more* preserved, at least for now
 - increasing percentage of historical works as well
 
 *** Mechanical Speech
+:PROPERTIES:
+:CUSTOM_ID: mechanical-speech-c3b6
+:END:
 - auto-preservation
 - but by and for whom?
 
 *** Problems of Preservation
+:PROPERTIES:
+:CUSTOM_ID: problems-of-preservation-29ba
+:END:
 - physical media
 - software turnover & bitrot
 - capturing dynamic/interactive media
 
 *** What big data means for old documents
+:PROPERTIES:
+:CUSTOM_ID: what-big-data-means-for-old-documents-608a
+:END:
 #+BEGIN_QUOTE
 digitization does provide scale (or quantity) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. (CILR)
 #+END_QUOTE
 *** Can we tell stories? Can we do research?
+:PROPERTIES:
+:CUSTOM_ID: can-we-tell-stories?-can-we-do-research?-269a
+:END:
 #+ATTR_REVEAL: :frag (appear)
 - no longer possible to read everything!
   - who will read it for us? How will we be experts? Can we automate our reading?
@@ -753,11 +966,31 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
     - How does role of religion in public discourse change over time?
     - how do railroads impact social and economic development?
     - others?
-** Op enness
+** The Preservation Challenge
+http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201701/510243425.jpg
+*** Remind you of anything?
+#+BEGIN_QUOTE
+The Party said that Oceania had never been in alliance with Eurasia. He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago. But where did that knowledge exist? Only in his own consciousness, which in any case must soon be annihilated. And if all others accepted the lie which the Party imposed -if all records told the same tale -- then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered. Whatever was true now was true from everlasting to everlasting. It was quite simple. All that was needed was an unending series of victories over your own memory. 'Reality control', they called it: in Newspeak, 'doublethink'.
+
+...
+
+Winston sank his arms to his sides and slowly refilled his lungs with air. His mind slid away into the labyrinthine world of doublethink. To know and not to know, to be conscious of complete truthfulness while telling carefully constructed lies, to hold simultaneously two opinions which cancelled out, knowing them to be contradictory and believing in both of them, to use logic against logic, to repudiate morality while laying claim to it, to believe that democracy was impossible and that the Party was the guardian of democracy, to forget whatever it was necessary to forget, then to draw it back into memory again at the moment when it was needed, and then promptly to forget it again: and above all, to apply the same process to the process itself. That was the ultimate subtlety: consciously to induce unconsciousness, and then, once again, to become unconscious of the act of hypnosis you had just performed. Even to understand the word 'doublethink' involved the use of doublethink. 
+#+END_QUOTE
+*** Everything.gov
+- Archive Everything
+- Write the query tools
+- "genome project" for government data
+** Openness
+:PROPERTIES:
+:CUSTOM_ID: op-enness-0724
+:END:
 #+BEGIN_QUOTE
 ...ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
 #+END_QUOTE
 *** Ideals of openness
+:PROPERTIES:
+:CUSTOM_ID: ideals-of-openness-cb72
+:END:
 - rooted in Enlightenment
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
@@ -766,10 +999,16 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
 - at the foundation of scholarship
 - yet, not manifest in our scholarly journals & publishing regimes
 *** Jefferson on Freedom of Information
+:PROPERTIES:
+:CUSTOM_ID: jefferson-on-freedom-of-information-bd14
+:END:
 #+BEGIN_QUOTE
  It would be curious then, if an idea, the fugitive fermentation of an individual brain, could, of natural right, be claimed in exclusive and stable property. If nature has made any one thing less susceptible than all others of exclusive property, it is the action of the thinking power called an idea, which an individual may exclusively possess as long as he keeps it to himself; but *the moment it is divulged, it forces itself into the possession of every one,* and the receiver cannot dispossess himself of it. Its peculiar character, too, is that no one possesses the less, because every other possesses the whole of it. He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me. *That ideas should freely spread from one to another over the globe, for the moral and mutual instruction of man, and improvement of his condition, seems to have been peculiarly and benevolently designed by nature, when she made them,* like fire, expansible over all space, without lessening their density in any point, and like the air in which we breathe, move, and have our physical being, incapable of confinement or exclusive appropriation. Inventions then cannot, in nature, be a subject of property.
 #+END_QUOTE
 *** the web as open space
+:PROPERTIES:
+:CUSTOM_ID: the-web-as-open-space-e7e9
+:END:
 - Origins of Web wrapped up in ideologies of Freedom
 #+BEGIN_QUOTE
 "Information wants to be free - because it is now so easy to copy and distribute casually - and information wants to be expensive - because in an Information Age, nothing is so valuable as the right information at the right time. (Brand, ca. 1984)
@@ -784,14 +1023,301 @@ When information is generally useful, redistributing it makes humanity wealthier
   - Digital Public Library of America
   - archive.org
 ** Summary
+:PROPERTIES:
+:CUSTOM_ID: summary-8c37
+:END:
 - Information Abundance comes with many challenges
 - Preservation
 - Interpretation
 - Access
 
 Future of the web and of historical scholarship depends on /continued struggle/ over these contested values.
+** And Now: CSS!
+:PROPERTIES:
+:ID:       o2b:a5ac6273-2677-4058-9687-ee0d1cf51826
+:POST_DATE: [2017-01-19 Thu 00:06]
+:POSTID:   616
+:END:
+- HTML for *structure/content*;
+- CSS for *presentation*
+- Resources:  [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings;  [[http://learnlayout.com/][Learn Layout]]; [[https://developer.mozilla.org/en-US/docs/Web/CSS][Mozilla Developer Network]]; many other cool sites
 
+*** CSS Basics
+- "[[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]]"
+- Style sheet
+- that "cascades" = overwrites prior values
+- web pages link to stylesheets, as many as desired
+*** WIth and without CSS
+#+ATTR_HTML: :class paired
+[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
+#+ATTR_HTML: :class paired
+[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
+
+
+*** CSS Selectors
+#+BEGIN_SRC css 
+  h1 {
+      color:blue;
+      font-family:serif; 
+      font-size:24px; 
+  }
+
+  div {
+      border: 1px solid black;
+  }
+
+  div.main p {
+      color:red;
+  }
+
+  #specialid {
+      float:left;
+  }
+#+END_SRC
+
+#+BEGIN_NOTES
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+#+END_NOTES
+
+**** Selector types
+:PROPERTIES:
+:CUSTOM_ID: selector-types
+:END:
+
+#+BEGIN_SRC html
+<style>
+body {background-color: grey;}
+h1 {
+font-size: 3em;
+color: red;
+}
+p: {font-size:5em}
+.coolpara {
+color:green;
+}
+
+#myfave {
+color:yellow;
+background-color: black;
+}
+</style>
+<h1> Heading</h1>
+<p class="coolpara">Some Content</p>
+<p id="myfave">Some Content</p>
+
+#+END_SRC
+#+BEGIN_NOTES
+Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
+- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
+- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
+
+- *ID* selector:  this addresses the element with a particular ID:
+
+#+END_NOTES
+**** More Selectors
+#+BEGIN_SRC css
+div.main p {
+      color:red;
+  }
+#+END_SRC
+
+#+BEGIN_NOTES
+- Finally, we have many more complex selectors.  This one here is a descendant selector
+It addresses every *p* that is contained inside a div of *class* /"main."/
+#+END_NOTES
+
+**** Descendant Selector
+#+BEGIN_SRC html
+<style>
+div.main p {
+      color:red;
+  }
+</style>
+<p> regular paragraph</p>
+<div class="main">
+  <p> not a regular paragraph </p>
+</div>
+#+END_SRC
+
+
+*** Fonts, colors and borders
+#+BEGIN_SRC css
+div.main {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+#+END_SRC
+#+BEGIN_NOTES
+A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
+There are plenty of other properties that can be set, in much the same way.
+#+END_NOTES
+
+*** Fonts and Colors in Action
+#+BEGIN_SRC html
+<style>
+div.main {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+</style>
+<div class="main">
+   <p> here is a sample paragraph doing all of this stuff...</pP
+#+END_SRC
+*** Display: Block vs. Inline
+
+
+*** Box Model
+One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+
+[[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
+
+
+*** Padding's Effects
+#+BEGIN_SRC html
+<style>
+.simple {
+  width: 500px;
+  height: 50px;
+  background-color: black;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+.fancy {
+  width: 500px;
+  height: 50px;
+  padding: 50px;
+  background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+</style>
+<div class="simple"></div>
+<div class="fancy"></div>
+#+END_SRC
+#+BEGIN_NOTES
+~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+#+END_NOTES
+
+
+*** Box-sizing Border-box
+#+BEGIN_SRC html
+<style>
+.simple {
+  width: 500px;
+  height: 50px;
+  //background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+.fancy {
+  width: 500px;
+  height: 50px;
+  padding: 50px;
+  background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+div {box-sizing: border-box;}
+</style>
+<div class="simple"></div>
+<div class="fancy"></div>
+#+END_SRC
+
+#+BEGIN_NOTES
+~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+
+#+END_NOTES
+
+
+*** Positioning
+
+This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
+
+The CSS "position" property has four possible values, whose names are [[http://learnlayout.com/position.html][impossible to remember and anyway don't make sense]].  The four most important are:
+
+#+BEGIN_SRC css
+.static {
+  position: static;
+}
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: white;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+#+END_SRC
+
+- *Static* positioning is the default.  A statically-positioned element is said to be "unpositioned".
+- *Relatively* positioned elements are displaced /relative/ to the position they "ought" to be occupying (according to the defaults).  But meanwhile, the space it "ought" to be occupying is still considered "taken" by the browser, which won't put anything else in that space unless you force it to do so.
+- *fixed* elements have their position /fixed/ to a spot on the screen (which is called "the viewport" in CSS talk).  This is great when you want a fixed header or footer.
+- *absolutely*-positioned elements are like fixed elements, only they're positioned relative to the /closest positioned ancestor/, usually an element with a position property value of "relative".
+
+Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
+
+*** Positioning 2: Float
+So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
+
+Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
+
+*** Changes Comin' Round Real Soon
+All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
+
+[[http://jsbin.com/yukiwe/3/edit?html,css][Here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. They are pretty fun; if you want, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
+*** Exercise
+Let's do a Habermas exercise
+- [[https://github.com/titaniumbones/HabermasCode/][Here's the repo, for working in Atom]]
+- [[http://jsbin.com/yawujap/1/edit?html,css,js,output][...and her it is on JSBin]]
 ** COMMENT Notes
+:PROPERTIES:
+:CUSTOM_ID: comment-notes-6401
+:END:
 Rosenzweig, abundance
 #+BEGIN_QUOTE
 Ignacio's sudden deletion of Bert should capture our interest as historians since it dramatically illustrates the fragility of evidence in the digital era. If Ignacio had published his satire in a book or magazine, it would sit on thousands of library shelves rather than having a more fugitive existence as magnetic impulses on a web server. Although some historians might object that the Bert Is Evil web site is of little historical significance, even traditional historians should worry about what the digital era might mean for the historical record. U.S. government records, for example, are being lost on a daily basis. Although most government agencies started using e-mail and word processing in the mid-1980s, the National Archives still does not require that digital records be retained in that form, and governmental employees profess confusion over whether they should be preserving electronic files.3 Future historians may be unable to ascertain not only whether Bert is evil, but also which undersecretaries of defense were evil, or at least favored the concepts of the "evil empire" or the "axis of evil." Not only are ephemera like "Bert" and government records made vulnerable by digitization, but so are traditional works–books, journals, and film–that are increasingly being born digitally. As yet, no one has figured out how to ensure that the digital present will be available to the future's historians.
@@ -902,21 +1428,34 @@ We need to understand more clearly how to relate high- value, domain-specific se
 
 
 Annotations:
-#+begin_example\n---- Annotations: ---
+#+begin_example
+--- Annotations: ---
 #+end_example
 
-** Some thoughts about [[http://offshore-interactive.com/#lowerplatform][Offshore-Interactive]]
+** COMMENT Some thoughts about [[http://offshore-interactive.com/#lowerplatform][Offshore-Interactive]]
+:PROPERTIES:
+:CUSTOM_ID: some-thoughts-about-[[http://offshore-interactive.com/#lowerplatform][offshore-interactive]]-0f41
+:END:
 - video-game interface
 - narrative tension
 - "oral history" emphasis
 - Is this how we have to write? 
-** Javascript
+** COMMENT Javascript
+:PROPERTIES:
+:CUSTOM_ID: javascript-252a
+:END:
 *** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables-7835
+:END:
 #+BEGIN_SRC js :results output code  replace :exports both
 var myString = "Hello, everyone";
 console.log(myString);
 #+END_SRC
 *** Functions
+:PROPERTIES:
+:CUSTOM_ID: functions-3acc
+:END:
 #+BEGIN_SRC js :results output code  replace :exports both
 function square(number) {
   return number * number;
@@ -930,6 +1469,9 @@ console.log(square(2));
 console.log(cube(3));
 #+END_SRC
 *** Loops
+:PROPERTIES:
+:CUSTOM_ID: loops-86b8
+:END:
 #+BEGIN_SRC js :results output code  replace :exports both
  // here is a very basic "for loop":
   for (i=0; i<10; i++ ) {
@@ -953,6 +1495,9 @@ console.log(cube(3));
 #+END_SRC
 
 *** Objects
+:PROPERTIES:
+:CUSTOM_ID: objects-1a99
+:END:
 #+BEGIN_SRC js :results output code  replace :exports both
   var wl = {
       "PM": "Wilfred Laurier",
@@ -966,6 +1511,9 @@ console.log(cube(3));
 #+END_SRC
 
 *** DOM Manipulation
+:PROPERTIES:
+:CUSTOM_ID: dom-manipulation-6404
+:END:
 #+BEGIN_SRC js :exports code
 var headings = document.getElementsByTagName("h1");
 console.log(headings);
@@ -974,13 +1522,19 @@ for (i=0; i<headings.length; i++) {console.log(headings.[i].innerHTML);};
 
 #+RESULTS:
 
-** Website Evaluation
+** COMMENT Website Evaluation
+:PROPERTIES:
+:CUSTOM_ID: website-evaluation-e904
+:END:
 Check out the Github Repo:
 https://github.com/titaniumbones/website-review
 
 With a (new!) partner, follow the directions!
 
-** Template
+** COMMENT Template
+:PROPERTIES:
+:CUSTOM_ID: template-35a0
+:END:
 #+BEGIN_SRC markdown
   # Review of [Website Name](URL)
   ## by Your First Names
@@ -1004,7 +1558,10 @@ With a (new!) partner, follow the directions!
 
   ## Overall, would you recommend this site to someone interested in the subject matter? To a researcher? 
 #+END_SRC
-** List of Sites
+** COMMENT List of Sites
+:PROPERTIES:
+:CUSTOM_ID: list-of-sites-8732
+:END:
 - [[http://lostmuseum.cuny.edu/index.php][The Lost Museum]]
 - [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/project.php?id=997][Shaping the West]]
 - [[http://www.historylearningsite.co.uk/][History Learning Site]]
@@ -1018,13 +1575,20 @@ With a (new!) partner, follow the directions!
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
 :EXPORT_TITLE: Distant Reading I
+:CUSTOM_ID: 04:-distant-reading-1-65c1
 :END:
 ** COMMENT
+:PROPERTIES:
+:CUSTOM_ID: comment-27db
+:END:
 - Lecture: Graphs & maps (30 mins)
 - discussion
 - Wordles
 - Have assignment ready!
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-7764
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - "Abundance" offers many challenges
   - preservation
@@ -1036,16 +1600,25 @@ With a (new!) partner, follow the directions!
   - What /narrative forms/?
 
 *** Plan for the day
+:PROPERTIES:
+:CUSTOM_ID: plan-for-the-day-c53a
+:END:
 - Lecture
 - Class Discussion (what did you learn/ what do you doubt)
 - Break
 - help w/ HTML/CSS/JS (if you're stuck/don't understand) 
 
 ** Abstract Models
+:PROPERTIES:
+:CUSTOM_ID: abstract-models-d7c3
+:END:
 #+BEGIN_QUOTE
 ...distance is however not an obstacle, but a /specific form of knowledge:/ fewer elements, hence a sharper sense of their overall interconnection. Shapes, relations, structures. Forms. Models. 
 #+END_QUOTE
 *** The opposite of close?
+:PROPERTIES:
+:CUSTOM_ID: the-opposite-of-close?-f387
+:END:
 #+BEGIN_QUOTE
  Dorothea, endowed with the extraordinary capacity for attentiveness that is “ardor,” is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
 
@@ -1057,15 +1630,24 @@ to notice:
 - analysis of passage longer than passage itself.
 #+END_NOTES
 *** To the point of deconstruction
+:PROPERTIES:
+:CUSTOM_ID: to-the-point-of-deconstruction-7de9
+:END:
 #+BEGIN_QUOTE
 If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes’ the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves
 #+END_QUOTE
 *** Closeness
+:PROPERTIES:
+:CUSTOM_ID: closeness-431d
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - Literary study long organized around "close" reading
 - "Hermeneutic" model of scholarship
 - defines what it has meant to /understand/ or /master/ a text
 *** Questioning Close Reading
+:PROPERTIES:
+:CUSTOM_ID: questioning-close-reading-7c74
+:END:
 - But what is understanding?
 - what is literature?
 - what is the scholar's goal?
@@ -1073,6 +1655,9 @@ If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in
 
 #+END_NOTES
 *** Some Numbers
+:PROPERTIES:
+:CUSTOM_ID: some-numbers-b757
+:END:
 - ~62,000 new Novels published in English in the US/year
 - ~304,000 new and re-issued /books/ in US/year
 - ~129,000,000 books collected in world's libraries
@@ -1080,15 +1665,24 @@ If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in
 - *not possible to read these*
   - can one still be an expert?
 *** New forms of Understanding?
+:PROPERTIES:
+:CUSTOM_ID: new-forms-of-understanding?-c1c6
+:END:
 - instead of, or in parallel with, close reading?
 - apprehension of /large-scale phenomena/
 - studying models, rather than texts themselves
 *** Questions to consider
+:PROPERTIES:
+:CUSTOM_ID: questions-to-consider-6df4
+:END:
 - Does this count as /comprehension/?
 - what new skills are required?
 - What are the weaknesses of this form?
 
 ** Graphs
+:PROPERTIES:
+:CUSTOM_ID: graphs-70bf
+:END:
 #+ATTR_HTML: :style float:left;
 [[https://seeingcomplexity.files.wordpress.com/2011/02/william_playfair_graph.jpg]]
 #+ATTR_HTML: :style float:left;
@@ -1098,16 +1692,25 @@ If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in
 - /convince/ readers
 - a fundamentally *rhetorical* tool
 *** Moretti's Graphs
+:PROPERTIES:
+:CUSTOM_ID: moretti's-graphs-68bd
+:END:
 http://newleftreview.org/static/assets/images/2580501large.gif
 #+BEGIN_QUOTE
 Quantitative research provides a type of data which is ideally independent of interpretations. (p.9)
 #+END_QUOTE
 - yet, the graph is an argument:  rise, fall, rise
 *** A History of Readers
+:PROPERTIES:
+:CUSTOM_ID: a-history-of-readers-7e72
+:END:
 [[http://sandbox.hackinghistory.ca/assets/images/DH/three-rises-novel-colored.gif]]
 - each phase a new "kind" of reader
 - intensive, extensive, generic
 *** Cycles
+:PROPERTIES:
+:CUSTOM_ID: cycles-3686
+:END:
 #+BEGIN_QUOTE
 Event, cycle, /longue durée/: three time frames which have fared very unevenly in literary studies.
 
@@ -1117,34 +1720,52 @@ Event, cycle, /longue durée/: three time frames which have fared very unevenly 
 - *longue durée \rarr grand narrative*
 - *cycle \rarr ?*
 *** cycles in Literature
+:PROPERTIES:
+:CUSTOM_ID: cycles-in-literature-f456
+:END:
 [[http://sandbox.hackinghistory.ca/assets/images/DH/genres-colored.gif]]
 #+BEGIN_QUOTE
 A genre exhausts its potentialities... when its inner form is no longer capable of representing the most significant aspects of contemporary reality. (p. 17, fn 7)
 #+END_QUOTE
 *** Genre & Generation
+:PROPERTIES:
+:CUSTOM_ID: genre-&-generation-5762
+:END:
 #+BEGIN_QUOTE
 ... some kind of generational mechanism seems the best way to account for the regularity of the novelistic cycle... (p. 22)
 #+END_QUOTE
 - "Normal literature"
 - but "revolution" as "dying out"
 *** From "the shift" to "a shift"
+:PROPERTIES:
+:CUSTOM_ID: from-"the-shift"-to-"a-shift"-3345
+:END:
 http://newleftreview.org/static/assets/images/2580512large.gif
 #+BEGIN_QUOTE
 ...the point is not who prevails in this or that skirmish, but exactly the opposite: no victory is ever definitive... the form keeps oscillating back and forth between the two groups. (p.29)
 #+END_QUOTE
 *** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-dbf4
+:END:
 #+BEGIN_QUOTE
 ...the real point here... is the total /heterogeneity of problem and solution:/ to make sense of quantitative data, I had to abandon the quantitative universe, and turn to morphology: evoke form, in order to explain figures.
 #+END_QUOTE
 - how justified is this move?
 - what do we learn from it? 
 ** Maps
+:PROPERTIES:
+:CUSTOM_ID: maps-59e4
+:END:
 #+BEGIN_QUOTE
 There is a very simple question about literary maps: what exactly do they /do/?
 #+END_QUOTE
 - like graphs, maps are a /persuasive tool/
 - What does it mean to "map" a novel?
 *** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-44e9
+:END:
 #+ATTR_HTML: :style float:left; max-height:320px;
 http://www.socialresearchmethods.net/research/epp2/15.gif
 #+ATTR_HTML: :style float:left; max-height:320px;  max-width:49%
@@ -1152,12 +1773,18 @@ http://theexpertsagree.files.wordpress.com/2009/06/tokyorail.jpg
 #+ATTR_HTML: :style float:left; max-height:320px; max-width:49%
 http://www.fubiz.net/wp-content/uploads/2013/07/am1.jpg
 *** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-6c3d
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear appear)
 - abstract
 - visual
 - representation
 - of a physical or imagined space
 *** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-ddd7
+:END:
 #+ATTR_HTML: :style float:left; max-width:49%
 http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
 #+ATTR_HTML: :style float:left; max-width:49%
@@ -1166,34 +1793,55 @@ http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600511l
 The form of an object is a 'diagram of forces', in this sense, at least that from it we can... deduce the forces that ... have acted upon it. (p.57)
 #+END_QUOTE
 *** /Our Village/
+:PROPERTIES:
+:CUSTOM_ID: /our-village/-c56c
+:END:
 #+BEGIN_QUOTE
 In the 1824 volume... the vilage was the undisputed centre of the surrounding countryside: the centripetal effects of the force "from within" were omnipresent, while the force "from without" was nowhere to be seen. (p. 57)
 
 Two collections later, in 1828, the village's gravitation field is already weaker...  Something is wrong with the force from within, but as no counter-force challenges it yet, the basic pattern... remains in place.  But by 1832... the village's centripetal force is reduced to nothing, and the bulk of the book moves away... (p. 58-59)
 #+END_QUOTE
 *** /Our Village/ -- Extremes
+:PROPERTIES:
+:CUSTOM_ID: /our-village/----extremes-3f27
+:END:
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512large.gif
 *** Modelling the text
+:PROPERTIES:
+:CUSTOM_ID: modelling-the-text-1363
+:END:
 - *reduce* text to the model
 - *presume* that sociological factors are determinative
 - *sustain* focus on form ("a quantitative history of literature is also a profoundly formalist one" -p.25, fn 14)
 - *interpret* model in light of theories
 ** Summary: Moretti and History
+:PROPERTIES:
+:CUSTOM_ID: summary:-moretti-and-history-59c4
+:END:
 - *labor-intensive* quantification of sources
 - *glossing over* problems of quantification
 - *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
 ** Tools for Distant Reading: the wordle
+:PROPERTIES:
+:CUSTOM_ID: tools-for-distant-reading:-the-wordle-eaf6
+:END:
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 - what do and don't we know? 
 ** Exercise: build a wordle [fn:2]
+:PROPERTIES:
+:CUSTOM_ID: exercise:-build-a-wordle-[fn:2]-34a6
+:END:
 
 ** Footnotes
+:PROPERTIES:
+:CUSTOM_ID: footnotes-08a9
+:END:
 
 [fn:2]Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
 
@@ -1204,8 +1852,12 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-distant-reading-2
 :EXPORT_TITLE: Distant Reading II
+:CUSTOM_ID: 05:-distant-reading-2-58b8
 :END:
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-d952
+:END:
 #+ATTR_REVEAL: :frag (appear appear appear)
 - "Abstract Models" in Moretti
   - /distance/ from text
@@ -1218,61 +1870,104 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
   - interpretative leap still substantial
 
 ** Today: Trees
+:PROPERTIES:
+:CUSTOM_ID: today:-trees-66d5
+:END:
 #+ATTR_HTML: :style float:left; max-width:49%;
 https://upload.wikimedia.org/wikipedia/commons/1/10/Darwin_Tree_1837.png
 #+ATTR_HTML: :style float:left; max-width:49%;
 https://upload.wikimedia.org/wikipedia/commons/4/4e/Darwins_tree_of_life_1859.png
 *** Moretti's Evolutionism
+:PROPERTIES:
+:CUSTOM_ID: moretti's-evolutionism-251f
+:END:
 - Citations: Darwin, Feldman, Cavalli-Sforza
 - In his genealogy: Karl Marx; H. G. Wells; E. O. Wilson; all of evolutionary psychology
 *** Plots
+:PROPERTIES:
+:CUSTOM_ID: plots-525b
+:END:
 http://newleftreview.org.myaccess.library.utoronto.ca/static/assets/images/2620303large.gif
 **** Clues as /evolved/ phenomenon
+:PROPERTIES:
+:CUSTOM_ID: clues-as-/evolved/-phenomenon-baf4
+:END:
 - Doyle as /canonical starting point/ for detective fiction
 - But has a context; how to describe?
 - note: /not/ a personal context!
 *** Styles
+:PROPERTIES:
+:CUSTOM_ID: styles-4fc2
+:END:
 https://nplusonemag.com/wp-content/uploads/2014/04/moretti-2.jpg
 **** Free Indirect Style
+:PROPERTIES:
+:CUSTOM_ID: free-indirect-style-4a25
+:END:
 #+BEGIN_QUOTE
 A peculiar mix of indirect and direct discourse, which draws the verbal tenses and pronouns from the former, and the tone and the order of the sentence from the latter:
 
 It was the abode of noise, disorder, and impropriety. Nobody was in their right place, nothing was done as it ought to be. She could not respect her parents, as she had hoped. 
 #+END_QUOTE
 **** Why FIS?
+:PROPERTIES:
+:CUSTOM_ID: why-fis?-eefc
+:END:
 - appears to mark a major social transformation ("halfway btwn the social doxa and the individual voice, FIS is a good indicator of their changing balance of forces")
 - Moretti's goal: to /quantitatively/ (?) trace these forces
   #+BEGIN_QUOTE
   Take a form, follow it from space to space, and study the reasons for its transformations: the 'opportunistic, hence unpredictable' reasons of evolution.
   #+END_QUOTE
 *** Problematics
+:PROPERTIES:
+:CUSTOM_ID: problematics-4d4e
+:END:
 - Teleological thinking?
 - dealing with the "twisted branching"?
 - is this really "quantitative"?
 - Does this qualify as "insight"? 
 ** Tools for Distant Reading: the wordle
+:PROPERTIES:
+:CUSTOM_ID: tools-for-distant-reading:-the-wordle-c4c7
+:END:
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2014/12/3.4-ndp-platform.png
 - what do and don't we know?
 ** Word Clouds: The Gateway Drug
+:PROPERTIES:
+:CUSTOM_ID: word-clouds:-the-gateway-drug-1541
+:END:
 [[http://www.wordle.net/][Try it yourslef on Wordle.net]]
 - simple visalization tool
 - entirely eradicates /context/, and the capacity for close reading
 - But if you provide the context yourself, yo may immediately learn, /without reading/ what the document is about
 - exercise: try with a novel; try with a text from [[http://archive.org][the Internet Archive]]
 ** COMMENT old visual
+:PROPERTIES:
+:CUSTOM_ID: comment-old-visual-bf16
+:END:
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 ** Javascript
+:PROPERTIES:
+:CUSTOM_ID: javascript-30da
+:END:
 - just taking questions for a moment
 ** Voyant-Tools
+:PROPERTIES:
+:CUSTOM_ID: voyant-tools-a335
+:END:
 * 06: Text as Data, history As Algorithm                   :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 06-text-as-data
+:CUSTOM_ID: 06:-text-as-data,-history-as-algorithm-f1aa
 :END:
 
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-8099
+:END:
 Models and Distant Reading
 - Hopeful, even Utopian discourse
 - Makes some questionable assumptions
@@ -1283,11 +1978,20 @@ Models and Distant Reading
   - Can we leverage data-analysis tools to inform the classical goals of humanistic scholarship?
 
 ** Synopsis
+:PROPERTIES:
+:CUSTOM_ID: synopsis-bfc9
+:END:
 - Hermeneutics
 - Data beyond evidence
 - Screwing Around
 ** Hermeneutics of Data
+:PROPERTIES:
+:CUSTOM_ID: hermeneutics-of-data-45d2
+:END:
 *** The Hermeneutic Tradition
+:PROPERTIES:
+:CUSTOM_ID: the-hermeneutic-tradition-b60e
+:END:
 - Science of Interpretation
   - Biblical Scholarship: how to read
   - Schleiermacher: how to understand others
@@ -1305,6 +2009,9 @@ Models and Distant Reading
 - can this be recaptured in data-heavy analysis?
 
 *** Method as Interpretation
+:PROPERTIES:
+:CUSTOM_ID: method-as-interpretation-db44
+:END:
 
 #+BEGIN_QUOTE
 ...work with data can be exploratory and deliberately without the mathematical rigor that social scientists must use to support their epistemological claims. Using data in this way is fundamentally different from using data for quantifying, computing and creating knowledge as per quantitative history.
@@ -1318,33 +2025,54 @@ Models and Distant Reading
 #+END_NOTES
 
 *** Openness
+:PROPERTIES:
+:CUSTOM_ID: openness-a3bd
+:END:
 
 #+BEGIN_QUOTE
 Regardless of form, we need history writing that explicates the research process as much as the research conclusions. We need history writing that interfaces with, explains, and makes accessible the data that historians use...One way of reducing hostility to data and its manipulation is to lay bare whatever manipulations have led to some historical insight. 
 #+END_QUOTE
 *** Open Research on "Users"
+:PROPERTIES:
+:CUSTOM_ID: open-research-on-"users"-5357
+:END:
 - [[https://books.google.com/ngrams/graph?content=user&year_start=1800&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cuser%3B%2Cc0][Rise of the User]]
 - [[https://books.google.com/ngrams/graph?content=drug+user%2Cuser+interface&year_start=1960&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cdrug%20user%3B%2Cc0%3B.t1%3B%2Cuser%20interface%3B%2Cc0][Two different Rises]]
 - [[https://docs.google.com/spreadsheets/d/12ARdbZeISIGzV-_7sJPlB56ZOGZZvAQCC79CUcIRxqU/pub?hl=en_US&hl=en_US&output=html][Using Collocation]]
 - [[https://books.google.com/ngrams/graph?content=cyborg%2Crobot%2Candroid%2Cartificial+intelligence%2Cautomaton%2Cfrankenstein&case_insensitive=on&year_start=1800&year_end=2008&corpus=15&smoothing=3&share=&direct_url=t4%3B%2Ccyborg%3B%2Cc0%3B%2Cs0%3B%3Bcyborg%3B%2Cc0%3B%3BCyborg%3B%2Cc0%3B%3BCYBORG%3B%2Cc0%3B.t4%3B%2Crobot%3B%2Cc0%3B%2Cs0%3B%3Brobot%3B%2Cc0%3B%3BRobot%3B%2Cc0%3B%3BROBOT%3B%2Cc0%3B.t4%3B%2Candroid%3B%2Cc0%3B%2Cs0%3B%3Bandroid%3B%2Cc0%3B%3BAndroid%3B%2Cc0%3B%3BANDROID%3B%2Cc0%3B.t4%3B%2Cartificial%20intelligence%3B%2Cc0%3B%2Cs0%3B%3BArtificial%20Intelligence%3B%2Cc0%3B%3Bartificial%20intelligence%3B%2Cc0%3B%3BArtificial%20intelligence%3B%2Cc0%3B%3BARTIFICIAL%20INTELLIGENCE%3B%2Cc0%3B.t4%3B%2Cautomaton%3B%2Cc0%3B%2Cs0%3B%3Bautomaton%3B%2Cc0%3B%3BAutomaton%3B%2Cc0%3B%3BAUTOMATON%3B%2Cc0%3B.t4%3B%2Cfrankenstein%3B%2Cc0%3B%2Cs0%3B%3BFrankenstein%3B%2Cc0%3B%3BFRANKENSTEIN%3B%2Cc0][And some further thoughts about human-machine hybrids]]
 
 ** Screwing Around
+:PROPERTIES:
+:CUSTOM_ID: screwing-around-2dc5
+:END:
 *** Millions of books
+:PROPERTIES:
+:CUSTOM_ID: millions-of-books-474c
+:END:
 #+BEGIN_QUOTE
 It’s one thing to worry that your canon isn’t sufficiently inclusive, or broad, or representative. It’s another thing when your canon has no better chance of being these things than a random selection.(Ramsay, p.3)
 #+END_QUOTE
 
 - now-familiar insight: you can't read everything
 *** Searching and Browsing
+:PROPERTIES:
+:CUSTOM_ID: searching-and-browsing-f338
+:END:
 - Search: knowledge of object; strategies of data collection; methods of reading
 - Browsing: bundle of interests; unsystematic following of connections
 #+BEGIN_NOTES
   I walk into the library and wander around in a state of insoucient boredom. I like music, so I head over to the music section. I pick up a book on American rock music and start flipping through it (because it’s purple and big). There’s an interesting bit on Frank Zappa, and it mentions that Zappa was way into this guy named Edgard Varèse. I have no idea who that is, so I start looking around for some Varèse. One look at the cover of his biography—Varèse with that mad-scientist look and the crazy hair—and I’m already a fan. And so off I go. I check out some records and discover Varèse.
 #+END_NOTES
 *** "Screwing Around"
+:PROPERTIES:
+:CUSTOM_ID: "screwing-around"-898f
+:END:
 - "Screwing around" is a form of hermeneutic encounter
 - the text /addresses us/
 *** Linked Data for /Screwing Around/, not only /rigourous investigation/
+:PROPERTIES:
+:CUSTOM_ID: linked-data-for-/screwing-around/,-not-only-/rigourous-investigation/-a896
+:END:
 *Goal:*
 #+BEGIN_QUOTE
 Extract from the stored record of humanity useful information in an actionable format for any given human being of any culture at any time and in
@@ -1362,7 +2090,13 @@ consequence of the speed and scale that inhere in all anarchic systems.
 
 
 * Visualizations                                                   :noexport:
+:PROPERTIES:
+:CUSTOM_ID: visualizations-7449
+:END:
 ** COMMENT Notes 
+:PROPERTIES:
+:CUSTOM_ID: comment-notes-1335
+:END:
 http://adamcrymble.org/intro-to-digital-history-2015/#week12
 
 
@@ -1382,35 +2116,57 @@ Hans Rosling, ‘200 Countries, 200 Years, 4 Minutes’, (2009) (for workshop).
 William J Turkel and Tim Hitchcock, Data Mining with Criminal Intent (2009) (for workshop).
 Timeplots, A Visual History of the United States House of Representatives, (2012) (for workshop).
 ** COMMENT Spatial history
+:PROPERTIES:
+:CUSTOM_ID: comment-spatial-history-ea38
+:END:
 
 * 07: Why Spatial history?                                 :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-why-spatial-history
+:CUSTOM_ID: 07:-why-spatial-history?-c5b0
 :END:
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-abcf
+:END:
 - Hermeneutics and understanding
 - What does it meant to /understand/ large numbers of texts, and what is the nature of /expertise/?
 - /searching/ vs /browsing/
 - data as /evidence/, data as /inspiration/
 ** Summary
+:PROPERTIES:
+:CUSTOM_ID: summary-7391
+:END:
 - Space & Place
 - Place-Centred History: /Nature's Metropilis/
 - The Work Maps Do: lying; presenting; creating
 - Google Maps Exercise
 ** Spatial Turn
+:PROPERTIES:
+:CUSTOM_ID: spatial-turn-c310
+:END:
 - Space and "place"
 - Space /as historically constituted/
 - What is "the History of a place?" 
 
 *** Questions for us
+:PROPERTIES:
+:CUSTOM_ID: questions-for-us-3e02
+:END:
 - What does it mean to foreground spatial characteristics in a /spatial/ history?
 - How do maps & media /transform/ the kinds of stories we can tell
 ** /Nature's Metropolis/ (1991)
+:PROPERTIES:
+:CUSTOM_ID: /nature's-metropolis/-(1991)-987d
+:END:
 - "New" Environmental History, 1990's
 - /culture/ of environment
 - /place/ as constitutive of history
 
 *** Why "Nature's" Metropolis?
+:PROPERTIES:
+:CUSTOM_ID: why-"nature's"-metropolis?-5bfb
+:END:
 - Chicago's "Natural" advantages
 - Chicago's creation of "natural" resources
   - First, Second Nature
@@ -1420,12 +2176,21 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
     #+END_NOTES
 
 *** Thunen's Zones
+:PROPERTIES:
+:CUSTOM_ID: thunen's-zones-9ebe
+:END:
 [[file:~/Dropbox/Work/History/DigitalHistory/Images/van_thunen_zones.jpg]]
 
 *** Gateway to the West
+:PROPERTIES:
+:CUSTOM_ID: gateway-to-the-west-b83f
+:END:
 https://web.stanford.edu/group/spatialhistory/media/images/publication/Cronon.jpg
 
 *** Chicago Takes Over!
+:PROPERTIES:
+:CUSTOM_ID: chicago-takes-over!-b13d
+:END:
 - "Necessary Point of Passage" from West \rarr East
 - Pork, Grain, Lumber Zones
 [[file:~/Dropbox/Work/History/DigitalHistory/Images/railroads.jpg]]
@@ -1435,6 +2200,9 @@ In early c. 19, Chicago one of several cities struggling to ocntrol the vast hin
 First big victory:  getting railroads to travel through city, makes C. “nec point of passage” for all commodities travelling East.  Railroad time & space on a massive scale.  
 #+END_NOTES
 *** Creation of Modernity
+:PROPERTIES:
+:CUSTOM_ID: creation-of-modernity-3624
+:END:
 - Pricing the Future
 - Mechanization of Slaughter
 - the Regrigerator Car
@@ -1453,32 +2221,56 @@ meat packing replacing butchery.
 -refrigerator cars*...  
   #+END_NOTES
 *** Impact
+:PROPERTIES:
+:CUSTOM_ID: impact-e9ac
+:END:
 - shows that /focus on space/ can deeply change our understanding of major historical developments
 - impressive combination of /quantitative economic/ and /cultural/ history
 ** Looking at Whales
+:PROPERTIES:
+:CUSTOM_ID: looking-at-whales-7029
+:END:
 - impressive data collection
 - arresting images
 - but conclusion is about *pillage*: not immediately apparent to the eye.
 *** One version of the story
+:PROPERTIES:
+:CUSTOM_ID: one-version-of-the-story-8339
+:END:
 @@html:<iframe width="800px" height="600px" src="https://www.youtube.com/embed/Tn7fQ5mYHPA" frameborder="0" allowfullscreen></iframe>@@
 
 ** Lying with Maps
+:PROPERTIES:
+:CUSTOM_ID: lying-with-maps-7a34
+:END:
 - maps are /rhetorical objects/
 - use of shade, color, can /be very misleading/
 - same numbers can produce /very different/ visualizations
 *** birth rates
+:PROPERTIES:
+:CUSTOM_ID: birth-rates-8c7e
+:END:
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/lying-w-maps-birth-rates1.jpeg]]
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/lying-w-maps-birth-rates-2.jpeg]]
 **** COMMENT
+:PROPERTIES:
+:CUSTOM_ID: comment-77cb
+:END:
 [[file:~/Dropbox/Work/History/DigitalHistory/Images/map-clorpleth.jpeg]]
 in particular, 
 ** "Critical" Cartography
+:PROPERTIES:
+:CUSTOM_ID: "critical"-cartography-b130
+:END:
 - if maps "lie", or, at least, if maps are /arguments/, then:
   - what relations of power do they reveal/participate in?
   - if we are aware of the "lying", how can we work with it /critically/?
 ** Maps Make Landscapes
+:PROPERTIES:
+:CUSTOM_ID: maps-make-landscapes-346e
+:END:
 - U.S. /Land Ordinance of 1785/ establishes grid mappping method as national system
 - lots sold /according to this method/
 #+ATTR_HTML: :class paired
@@ -1486,6 +2278,9 @@ https://mvmtbldg.files.wordpress.com/2011/02/glo-plat2.jpg
 #+ATTR_HTML: :class paired
 https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 ** Maps /Reinscribe/ Power
+:PROPERTIES:
+:CUSTOM_ID: maps-/reinscribe/-power-1dc0
+:END:
 - "Home Owners Loan Corporations (HOLC) (1930's)
   - US Federal Agency in New Deal
   - tasked with preventing foreclosures
@@ -1494,14 +2289,26 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 #+ATTR_HTML: :class paired
 https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 ** Mapping /enrols/ State Power
+:PROPERTIES:
+:CUSTOM_ID: mapping-/enrols/-state-power-900d
+:END:
 [[file:~/DH/Images/concession_roads.jpeg]]
 ** ...and technological power
+:PROPERTIES:
+:CUSTOM_ID: ...and-technological-power-79b0
+:END:
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/surveyor.jpeg]]
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/line_cut.jpeg]]
 ** Spatial History with Google Maps
+:PROPERTIES:
+:CUSTOM_ID: spatial-history-with-google-maps-a3dc
+:END:
 *** Google Maps and Spatial History
+:PROPERTIES:
+:CUSTOM_ID: google-maps-and-spatial-history-eeb1
+:END:
 
 Today in class we are discussing /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
 
@@ -1509,6 +2316,9 @@ Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/c
 
 Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
 *** Read this part! Follow the links! 
+:PROPERTIES:
+:CUSTOM_ID: read-this-part!-follow-the-links!-ee94
+:END:
 Today's exercise is also something of a test.  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
 - working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which I think we saw briefly in the first class, and
   using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
@@ -1516,6 +2326,9 @@ Today's exercise is also something of a test.  We will be working in the /[[http
 The latter version also serves as a reminder about the [[https://github.com/][Github code-sharing platform]].  If you want to work locally, I strongly recommend both the [[https://atom.io/][Atom Code Editor]], and [[http://brackets.io/][Brackets]]; many people also like [[https://www.sublimetext.com/3][Sublime Text]], though you ought to buy a license for Sublime if you continue to use it.  Brackets and Atom both also show a live preview of your code, almost like JSBin (For Atom you will have to [[https://atom.io/docs/latest/using-atom-atom-packages][install]] the atom-html-preview package, while Brackets comes with a live preview in Chrome, which can be activated with ~Ctrl-Alt- you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
 
 *** What is a GIS?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-gis?-12ec
+:END:
 
 GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
 
@@ -1525,6 +2338,9 @@ Within a GIS, information is generally accessed as a set of *layers*.  Data of s
 http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
 
 *** Controlling Google Maps
+:PROPERTIES:
+:CUSTOM_ID: controlling-google-maps-a206
+:END:
 For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
 
 #+BEGIN_ASIDE
@@ -1535,6 +2351,9 @@ An *API* is an "Application Programming Interface": a communications channel tha
 You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
 
 *** Using Markdown
+:PROPERTIES:
+:CUSTOM_ID: using-markdown-3d00
+:END:
 It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
 
 #+BEGIN_SRC markdown
@@ -1558,14 +2377,29 @@ You can also mix HTML in with markdown and it will generally render perfectly we
 While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
 
 *** The Exercise
+:PROPERTIES:
+:CUSTOM_ID: the-exercise-9a2b
+:END:
 Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
 
 *** The code
+:PROPERTIES:
+:CUSTOM_ID: the-code-e630
+:END:
 **** Javascript
+:PROPERTIES:
+:CUSTOM_ID: javascript-ed67
+:END:
 I have made the Javascript as simple as I can. There are more efficient and interesting ways to do this, but they are a little more complex. To make your markers -- and to re-centre your map -- you will need to modify the Javascript directly.
 **** HTML
+:PROPERTIES:
+:CUSTOM_ID: html-f31e
+:END:
 I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
 **** CSS
+:PROPERTIES:
+:CUSTOM_ID: css-46fc
+:END:
 The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
 
 
@@ -1573,33 +2407,59 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 * COMMENT 08: Visualization                                        :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 08-visualization
+:CUSTOM_ID: comment-08:-visualization-acf2
 :END:
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-4fed
+:END:
 - Maps as Rhetoric
 - "Critical" Cartography
 - Google Maps Intro
 ** Today
+:PROPERTIES:
+:CUSTOM_ID: today-64a7
+:END:
 history of Visualizations
 ** Playfair: Early Techniques
+:PROPERTIES:
+:CUSTOM_ID: playfair:-early-techniques-a672
+:END:
 [[http://www.jeffersonbailey.com/wp-content/uploads/2014/12/figure_2.png]]
 multivariate data; area as quantity; pie chart
 ** Charles Joseph Minard: Storytelling
+:PROPERTIES:
+:CUSTOM_ID: charles-joseph-minard:-storytelling-7995
+:END:
 [[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
 ** Neurath: Isotype
+:PROPERTIES:
+:CUSTOM_ID: neurath:-isotype-3467
+:END:
 [[http://56.media.tumblr.com/92cae54746a0198abb7a769f91c6ff83/tumblr_mobrwkmIla1r06q0no1_1280.jpg]]
 ** Working with Data
+:PROPERTIES:
+:CUSTOM_ID: working-with-data-618e
+:END:
 [[http://www.imageatlas.org/search?q=socialism&sort=gdp&afghanistan=on&brazil=on&china=on&egypt=on&france=on&germany=on&india=on&iran=on&israel=on&newzealand=on&northkorea=on&russia=on&saudiarabia=on&southkorea=on&spain=on&sweden=on&syria=on&usa=on&ukraine=on][ImageAtlas]]
 
 [[http://research.kraeutli.com/index.php/2013/11/the-tate-collection-on-github/][Collection Analysis]]
 
 ** COMMENT Spatial history
+:PROPERTIES:
+:CUSTOM_ID: comment-spatial-history-2888
+:END:
 
 
 * COMMENT 09: Deep Maps                                            :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-maps-online
+:CUSTOM_ID: comment-09:-deep-maps-8fd5
 :END:
 ** The Temptations of GIS
+:PROPERTIES:
+:CUSTOM_ID: the-temptations-of-gis-a71e
+:END:
 - precision
 - accuracy
 - determinism
@@ -1608,9 +2468,15 @@ multivariate data; area as quantity; pie chart
 ...conceived, designed, created, and maintained by experts for both general and specific audiences... heavily focused on the material and physical characteristics of landscape and society.
 #+END_QUOTE 
 ** Between /Maps/ and /Narrative/
+:PROPERTIES:
+:CUSTOM_ID: between-/maps/-and-/narrative/-c6d9
+:END:
 - Yes, maps are rhetorical, but
 - they lack the narrative elements that make history
 ** Roots of Deep Mapping
+:PROPERTIES:
+:CUSTOM_ID: roots-of-deep-mapping-d17a
+:END:
 - antiquarians of c.18
   - attention to folklore, natural history, hearsay.
   - attempted to "record and represent the grain and patina of a location through the justapositions and interpenetrations of the historical and tecontemporary, the factual and the fictional" (Pearson & Shank, 2001)
@@ -1619,10 +2485,22 @@ multivariate data; area as quantity; pie chart
 Geography... deals with the determinant actions of general natural forces.... Psychogeography could set for itself the study of the precise laws and specific effects of the geographical environment... on the emotions and behavior of individuals.
 #+END_QUOTE
 ** Building a "Spatial Story"
+:PROPERTIES:
+:CUSTOM_ID: building-a-"spatial-story"-23b5
+:END:
 ** Some Examples
+:PROPERTIES:
+:CUSTOM_ID: some-examples-bfb0
+:END:
 
 ** Data and Meaning (again)
+:PROPERTIES:
+:CUSTOM_ID: data-and-meaning-(again)-e74b
+:END:
 ** Mapping Ecosystems: Current Conditions
+:PROPERTIES:
+:CUSTOM_ID: mapping-ecosystems:-current-conditions-01a5
+:END:
 - [[http://geojson.io][GeoJSON.io]]
 - [[https://www.google.com/maps/d/?hl=en_US&app=mp][Google My Maps]]
 - [[https://cartodb.com/][CartoDB]]
@@ -1634,19 +2512,32 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 - [[http://chartsbin.com/about/apply][ChartsBin]]
 - [[http://cartodb.github.io/odyssey.js/][Odyssey.js]]
 ** Activity: A Richer Map
+:PROPERTIES:
+:CUSTOM_ID: activity:-a-richer-map-c194
+:END:
 - adding json:
   - download json from geojson.io
   - add as variable
   - load with my_map.data.addGeoJson(variablename);
 
 ** Activity: make-up work
+:PROPERTIES:
+:CUSTOM_ID: activity:-make-up-work-cbc7
+:END:
 ** 
+:PROPERTIES:
+:CUSTOM_ID: -1233
+:END:
 * COMMENT 10: What's Special about Oral History ("Engaged" History) :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
+:CUSTOM_ID: comment-10:-what's-special-about-oral-history-("engaged"-history)-b57f
 :END:
 
 ** Objectivity in History
+:PROPERTIES:
+:CUSTOM_ID: objectivity-in-history-8ee3
+:END:
 #+BEGIN_QUOTE
 All history ultimately depends on its social purpose.
 #+END_QUOTE
@@ -1658,24 +2549,36 @@ the holiness of writing often leads us to forget it.
 - What happens to history that abandons or modifies this standard?
 
 ** Myth
+:PROPERTIES:
+:CUSTOM_ID: myth-6729
+:END:
 - not untruth, but beyond truth. 
 - Myths structure understanding of world, self, and events, give meaning to action, and purpose to the world.
   - Creation Myth of Genesis give guide to relationships among Man, Woman, God, Nature
   - 'Myth of Progress' makes sense of modernity
   - George Washington & the apple tree ties virtue to the State
 ** Objectivity as Founding Myth
+:PROPERTIES:
+:CUSTOM_ID: objectivity-as-founding-myth-c350
+:END:
 - fundamental to our pursuit
 - but deeply problematic
 - commitment to: fixity of the past; sharp separation between subject & object; prior nature of fact to interpretation
 - "wie es eigentlich gewesen" as bedrock
 - and then the Twentieth Century
 ** Epistemological Challenges
+:PROPERTIES:
+:CUSTOM_ID: epistemological-challenges-e712
+:END:
 - the fact/value distinction
 - structures of knowledge
 - contexts of interpretation
 - standpoints & the view from nowhere
 - "relativism" as nemesis and saviour
 ** Truth and Meaning in Oral History
+:PROPERTIES:
+:CUSTOM_ID: truth-and-meaning-in-oral-history-1ed0
+:END:
 #+BEGIN_QUOTE
 The first thing that makes oral history different, therefore, is that it tells us
 less about events than about their meaning...
@@ -1684,6 +2587,9 @@ oral testimony may lie not in its adherence to fact, but rather in its departure
 from it, as imagination, symbolism, and desire emerge.
 #+END_QUOTE
 ** Politics of engagement
+:PROPERTIES:
+:CUSTOM_ID: politics-of-engagement-84de
+:END:
 #+BEGIN_QUOTE
 Oral sources are a necessary (not a sufficient) condition for a history of the
 nonhegemonic classes; they are less necessary (though by no means useless)
@@ -1697,6 +2603,9 @@ leave behind a much more abundant written record. (Portelli, 72)
   - challenges to objectivity/fact as goal
   - growing role for /empathy/ as technique
 ** Oral History as Redemption
+:PROPERTIES:
+:CUSTOM_ID: oral-history-as-redemption-836b
+:END:
 #+BEGIN_QUOTE
 In the most general sense, once the life experience of people of all kinds
 can be used as its raw material, a new dimension is given to history. (Thompson, 24)
@@ -1705,15 +2614,24 @@ can be used as its raw material, a new dimension is given to history. (Thompson,
 - 1990's & later: /Truth/ and Reconciliation Commissions (South Africa; Australia; Chile; Argentina; Guatemala; Canada)
 - tensions between /truth/ and /experience/
 ** Ethical Demands of Engagement
+:PROPERTIES:
+:CUSTOM_ID: ethical-demands-of-engagement-e9c2
+:END:
 - "Engagement" a terribly difficult stance to maintain
 - Not a rejection of 'objectivity', but a refinement
 - balancing btwn epistemic virtues
 - constant vigilance!
 ** Questions of Form
+:PROPERTIES:
+:CUSTOM_ID: questions-of-form-47c4
+:END:
 - transcripts not the same as tape
 - tape not the same as digital media
 - there are lots of kinds of 'oral history'
 ** Ethics of Oral History
+:PROPERTIES:
+:CUSTOM_ID: ethics-of-oral-history-3b99
+:END:
 - historians responsibilities
   - respect
   - handle materials carefully
@@ -1724,37 +2642,58 @@ can be used as its raw material, a new dimension is given to history. (Thompson,
     - give them MULTIPLE chances to withdraw
 
 ** COMMENT Doing an Oral History
+:PROPERTIES:
+:CUSTOM_ID: comment-doing-an-oral-history-f8d7
+:END:
 - relationship of respect
 - meaning and memory
 - conversation, not interrogation
 *** Getting Started
+:PROPERTIES:
+:CUSTOM_ID: getting-started-6da7
+:END:
 lot of this is about building a relationship
 - Research
 - contact 
 - pre-interview session
 ***  Pre-interview
+:PROPERTIES:
+:CUSTOM_ID: pre-interview-7690
+:END:
 - often by phone
 - introduce yourself
 - learn what you can
 *** Prep
+:PROPERTIES:
+:CUSTOM_ID: prep-e09d
+:END:
 - checklist:
   - post-it notes/notebook
   - directions
   - The recorder, batteries
   - the questionnaire, the strategy, your partners(!)
 *** The Interview -- starting
+:PROPERTIES:
+:CUSTOM_ID: the-interview----starting-be18
+:END:
 - Gift
 - assess the surroundings
 - small talk
 - review informed consent
 - establish signals -- raising hand for a break ,etc. 
 *** The Interview - -getting going
+:PROPERTIES:
+:CUSTOM_ID: the-interview----getting-going-ef5a
+:END:
 - 'This is Matt Price, interviewing ..., on date (incl year!) at his/her house in Toronto On.  The purpose of this interview is to...
 - Be aware of verbal tics ('you know,' 'sort of', 'uh', etc.)
 - practice responding nonverbally (no 'uh-huh's')
 - Logical/chronological order
 - Stories and specific memories!! No yes/no questions
 *** The Interview, main techniques
+:PROPERTIES:
+:CUSTOM_ID: the-interview,-main-techniques-149a
+:END:
 - flexibility.
 - open-ended questions (again, no yes/no!)
 - follow-up questions!!
@@ -1764,6 +2703,9 @@ lot of this is about building a relationship
 - don't be afraid of silence (feels like forever!!!)
 - attention to body language
 *** The Interview, finishing up
+:PROPERTIES:
+:CUSTOM_ID: the-interview,-finishing-up-32e3
+:END:
 - take breaks
 - conclude, schedule another if necessary
 - review spellings of names/places
@@ -1773,42 +2715,95 @@ lot of this is about building a relationship
   - Handle with care
   - return promptly
 ** Active Listening
+:PROPERTIES:
+:CUSTOM_ID: active-listening-8adc
+:END:
 #+BEGIN_QUOTE: 
 *Interviewee:* I practically had a nervous breakdown when I discovered my sister had cancer, you know; it was kind of like knocking the pins [out from under me] -- and I had, after the second boy was born, I just had ill health for quite a few years. I evidently had a low-grade blood infection or something. Because I was very thin, and, of course, I kept working hard. And every fall, why, I'd generally spend a month or so being sick -- from overdoing, probably.
 
 *Interviewer:* What kind of farming did you do right after you were married?
 #+END_QUOTE:
 ** Active Listening
+:PROPERTIES:
+:CUSTOM_ID: active-listening-eb83
+:END:
 - Don't be afraid to deviate from script
 - pay attention to what you hear
 ** COMMENT Going over the forms
+:PROPERTIES:
+:CUSTOM_ID: comment-going-over-the-forms-09bb
+:END:
 ** COMMENT Reportback
+:PROPERTIES:
+:CUSTOM_ID: comment-reportback-9026
+:END:
 - how far along have you gotten?
 - Any Problems so far?
 ** COMMENT In-class interview #2:  
+:PROPERTIES:
+:CUSTOM_ID: comment-in-class-interview-#2:-d79c
+:END:
 - 10 minutes in each direction
 
 * 11: Oral History & Remix Culture                                 :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 11-oral-history
+:CUSTOM_ID: 11:-oral-history-&-remix-culture-3cc1
 :END:
 - what?
 * 12: Citizen History                                      :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 12-citizen-history
+:CUSTOM_ID: 12:-citizen-history-815e
 :END:
 ** Changing Landscape of Profession and Expertise
+:PROPERTIES:
+:CUSTOM_ID: changing-landscape-of-profession-and-expertise-4204
+:END:
 ** Continuing as "historian" after graduation
+:PROPERTIES:
+:CUSTOM_ID: continuing-as-"historian"-after-graduation-2a55
+:END:
 ** Summing up promise and pitfalls of digital history
+:PROPERTIES:
+:CUSTOM_ID: summing-up-promise-and-pitfalls-of-digital-history-fab7
+:END:
 ** 
+:PROPERTIES:
+:CUSTOM_ID: -6ac4
+:END:
 * COMMENT Assignments                                              :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-assignments-cf12
+:END:
 ** HTML Coding Assignment (what????)
+:PROPERTIES:
+:CUSTOM_ID: html-coding-assignment-(what????)-8ede
+:END:
 ** Data Munging Assignment (what?)
+:PROPERTIES:
+:CUSTOM_ID: data-munging-assignment-(what?)-dc58
+:END:
 ** Data Visualization
+:PROPERTIES:
+:CUSTOM_ID: data-visualization-187e
+:END:
 ** Google Map Mashup
+:PROPERTIES:
+:CUSTOM_ID: google-map-mashup-ed4f
+:END:
 ** Oral History Remix
+:PROPERTIES:
+:CUSTOM_ID: oral-history-remix-e3c3
+:END:
 ** Paper
+:PROPERTIES:
+:CUSTOM_ID: paper-06b4
+:END:
 ** 
+:PROPERTIES:
+:CUSTOM_ID: -3a2d
+:END:
 
 # /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://relsci.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
@@ -1826,7 +2821,13 @@ lot of this is about building a relationship
 # /home/matt/DH/Images/line_cut.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-line_cut.jpeg
 
 * COMMENT Variables                                                :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-variables-84fe
+:END:
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # End:  
+
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
