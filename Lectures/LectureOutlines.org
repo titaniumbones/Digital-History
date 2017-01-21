@@ -871,6 +871,10 @@ Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar b
 - Search engines. Algorithms.  curation.  
 - Lab: list of websites to evaluate.  This will require *prep*
 http://adamcrymble.org/intro-to-digital-history-2015/#week2 
+** War is Peace. @@html:<br/>@@Freedom is Slavery. @@html:<br/>@@Ignorance is Strength.
+:PROPERTIES:
+:CUSTOM_ID: war-is-peace
+:END:
 ** Recap
 :PROPERTIES:
 :CUSTOM_ID: recap-53d2
@@ -968,6 +972,13 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
     - others?
 ** The Preservation Challenge
 http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201701/510243425.jpg
+*** and this
+#+ATTR_HTML: :class paired
+http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933328844565.png
+#+ATTR_HTML: :class paired
+http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933375405914.png
+*** and this too
+[[../Images/trump-epa-changes.png]]
 *** Remind you of anything?
 #+BEGIN_QUOTE
 The Party said that Oceania had never been in alliance with Eurasia. He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago. But where did that knowledge exist? Only in his own consciousness, which in any case must soon be annihilated. And if all others accepted the lie which the Party imposed -if all records told the same tale -- then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered. Whatever was true now was true from everlasting to everlasting. It was quite simple. All that was needed was an unending series of victories over your own memory. 'Reality control', they called it: in Newspeak, 'doublethink'.
@@ -1313,7 +1324,7 @@ All of what you just learned is in the process of changing dramatically.  A new 
 *** Exercise
 Let's do a Habermas exercise
 - [[https://github.com/titaniumbones/HabermasCode/][Here's the repo, for working in Atom]]
-- [[http://jsbin.com/yawujap/1/edit?html,css,js,output][...and her it is on JSBin]]
+- [[http://jsbin.com/yawujap/6/edit?html,css,js][...and her it is on JSBin]]
 ** COMMENT Notes
 :PROPERTIES:
 :CUSTOM_ID: comment-notes-6401
@@ -2831,3 +2842,14 @@ local variables need to be set at the end of the file.
 
 # /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
 # /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
+paired#+ATTR_HTML: :class paired
+#+ATTR_HTML:
+
+#+ATTR_HTML: :class paired
+#+BEGIN_SRC emacs-lisp
+
+#+END_SRC
+
+#+begin_src html
+
+#+end_src
