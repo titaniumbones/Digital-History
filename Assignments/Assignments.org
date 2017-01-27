@@ -7,9 +7,13 @@
 Further assignments will be posted as they are finalized. 
 
 * List                                                                :TOC_1:
- - [[#assignments-01-and-02-html--css-self-study][Assignments 01 and 02: HTML & CSS self-study]]
+ - [[#comment-participation][COMMENT Participation]]
+ - [[#assignments-01-and-02-html--css-self-study--javascript-intro][Assignments 01 and 02: HTML & CSS self-study + Javascript Intro]]
+ - [[#comment-assignment-02-distant-history][COMMENT Assignment 02: Distant History]]
  - [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
  - [[#assignment-04-oral-history][Assignment 04: Oral History]]
+ - [[#comment-assignment-05-project-proposal][COMMENT Assignment 05: Project Proposal]]
+ - [[#comment-assignment-06-short-answer][COMMENT Assignment 06: Short Answer]]
 
 * COMMENT Participation
 :PROPERTIES:
@@ -84,7 +88,7 @@ Blogging on the course website is easy.  You are all already signed up for the w
 
 If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
 
-* Assignments 01 and 02: HTML & CSS self-study
+* Assignments 01 and 02: HTML & CSS self-study + Javascript Intro
 :PROPERTIES:
 :POSTID:   177
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
