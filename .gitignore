@@ -1,0 +1,33 @@
+**.html
+**.odt
+**.pdf
+Grading/**
+*#
+.#*
+*~
+*conflicted\ copy*
+/Lectures/01-Introducing Digital History.org
+/Lectures/02-what the web signifies.org
+/Lectures/03-abundance and opennes.org
+/Lectures/03-abundance-and-opennes.org
+/Lectures/04-distant reading 1.org
+/Lectures/05-Distant-Reading-2.org
+/Lectures/05-distant reading 2.org
+/Lectures/06-data-hermeneutics.org
+/Lectures/06-text as data.org
+/Lectures/07-spatial-history.org
+/Lectures/07-why-spatial-history.org
+/Lectures/08-visualization.org
+/Lectures/09-maps-online.org
+/Lectures/LectureOutlines.org.org
+/Lectures/lecture-oopss.org
+/Lectures/test.md
+/03-public-sphere.org
+/His389Syllabus.html-old
+/Assignments/00-git/
+dh-website/
+Lectures/
+Assignments/
+old-lectures/
+Grades/
+obsolete/

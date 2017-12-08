@@ -170,10 +170,9 @@ The following texts are required and available at the Bookstore, or via various 
 :ID:       o2b:549d46ae-f46c-4b15-a025-c6cfd44073af
 :POST_DATE: [2017-01-06 Fri 12:53]
 :END:
-*** Introducing /Digital History/ <2017-01-06 Fri>
+*** Introducing /Digital History/ <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
-:POST_DATE: [2017-01-06 Fri 12:53]
 :END:
 *Class Synopsis:* Introduction to the course, Github, and Markdown. 
 
@@ -183,18 +182,18 @@ The following texts are required and available at the Bookstore, or via various 
 - Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In /Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web/. Philadelphia: University of Pennsylvania Press, 2006. http://chnm.gmu.edu/digitalhistory/digitizing/.
 
 
-*In-Class Activity: Collaboration on Github* 
+*In-Class Activity: Collaboration on Github, Markdown* 
 
-*** What the Web Signifies <2017-01-13 Fri>
+*** What the Web Signifies {{{ts}}}
 We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
 
 *Readings:*
 - Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf
 - Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short  
 
-*In-Class Activity: HTML, CSS, and markdown*
+*In-Class Activity: HTML + CSS*
  
-*** Abundance and Openness <2017-01-20 Fri>
+*** Abundance and Openness {{{ts}}} 
 One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
 - W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
@@ -203,18 +202,18 @@ One of the key features of the web is its /immenseness/. We will discuss how thi
 
 - “Learn How Google Works: In Gory Detail.” /PPCBlog/. Accessed June 30, 2015. [[http://www.ppcblog.com/how-google-works/]].
 
-*In-Class Activity: Evaluating websites*
+*In-Class Activity: More HTML + CSS*
 
 ** Data Driven History
-*** Distant Reading 1 <2017-01-27 Fri>
+*** Distant Reading 1 {{{ts}}}
 Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 *Readings:* 
 - Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/. Verso, 2005 through p. 64, or  Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1][Graphs, Maps, Trees.]]” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1][Graphs, Maps, Trees - 2]].” New Left Review 26 (March 1, 2004): 79–103 
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
-*In-Class Activity: more JS*
+*In-Class Activity: Javascript variables & functions*
 
-*** Distant Reading 2: Are Texts Data? <2017-02-03 Fri>
+*** Distant Reading 2: Are Texts Data? {{{ts}}}
 More Moretti, and some criticisms
 
 *Readings:* 
@@ -222,18 +221,18 @@ More Moretti, and some criticisms
 - Stephen Ramsay, "[[https://web.archive.org/web/20120611222242/http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf][The Hermeneutics of Screwing Around]]"
 - Gibbs, Fred. “Hermeneutics of Data and Historical Writing” Writing History in the Digital Age, March 14, 2012. http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/.
 - Marc Dunkelman. “[[http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/][What Data Can't Convey]].” Blog. /The Chronicle of Higher Education/, 19 2014.
-*In-Class Activity: JS questions, wordles*
-*** COMMENT Text as Data, History as Algorithm <2017-02-10 Fri>
+*In-Class Activity: Javascript objects and DOM manipulation*
+*** COMMENT Text as Data, History as Algorithm {{{ts}}}
 *Note:* we may need to push this up
 We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
 
 *Readings:* 
 - Gibbs, Fred. “[[http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/][Hermeneutics of Data and Historical Writing]].” /Writing History in the Digital Age/, March 14, 2012.
 - Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[ http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
-*In-Class Activity: Tidy Data*
+*In-Class Activity: Javasciript questions /Tidy Data*
 
 ** Maps, Visualization, and History
-*** Spatial History <2017-02-10 Fri>
+*** Spatial History {{{ts}}}
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
@@ -246,11 +245,11 @@ http://journals2.scholarsportal.info/browse/03177173/v50i0001
 http://journals2.scholarsportal.info/browse/03177173/v26i0002
 http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
 http://slab.scripts.mit.edu/wp/links/critical-cartography/
-*** ??? <2017-02-17 Fri>
+*** ??? {{{ts}}}
 *Note: In all likelihood, there will be no class this week due to a scheduling conflict.*
-*** NO CLASS FEB 24: READING WEEK
+*** NO CLASS {{{ts}}}: READING WEEK
 
-*** Visualization <2017-03-03 Fri>
+*** Visualization {{{ts}}}
 Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
 
 *Readings:* 
@@ -259,7 +258,7 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 - Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 *In-Class Activity: Reading visualizations*
 
-*** Maps Online <2017-03-10 Fri>
+*** Maps Online {{{ts}}}
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
 
 *Readings:* 
@@ -269,7 +268,7 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 *In-Class Activity: GIS*
 
 ** Oral History, Crowdsourcing, and the Promise of the Public Sphere
-*** What's Special about Oral History <2017-03-17 Fri>
+*** What's Special about Oral History {{{ts}}}
 Oral History has a long tradition; we explore its roots and peculiarities, and 
 
 *Readings:*
@@ -278,12 +277,12 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 
 *In-Class Activity: Popcorn.js* 
 
-*** Interlude: Project Planning & Citizen History  <2017-03-31 Fri>
+*** Interlude: Project Planning & Citizen History  {{{ts}}}
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
 # /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
-*** Oral History & Remix Culture <2017-03-24 Fri>
+*** Oral History & Remix Culture {{{ts}}}
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
 
 If we're ahead of schedule, we'll watch /Harlan County USA/ in class.  
