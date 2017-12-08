@@ -4,8 +4,14 @@
 #+TITLE: Assignments
 #+PROPERTY: PARENT 171
 #+Parent: 171
-#+HUGO_BASE_DIR: ./hugo-site/
 #+HUGO_SECTION: assignment
+#+HUGO_BASE_DIR: ./dh-website/
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :parent Asisgnments
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
+#+MACRO: ts (eval (get-ts+7))
+
 
 Further assignments will be posted as they are finalized. 
 * COMMENT Ideas <2017-04-04 Tue>                                   :noexport:
@@ -14,21 +20,24 @@ Further assignments will be posted as they are finalized.
 - need to figure out access, etc. Optionally they can als ohost on gh-pages but I think maybe not if they need to load or execute js
 - 
 
-* List                                                                :TOC_1:
+* COMMENT List                                                                :TOC_1:
 :PROPERTIES:
 :EXPORT_FILE_NAME: list
 :END:
-- [[#assignments-01-and-02-html--css-self-study--javascript-intro][Assignments 01 and 02: HTML & CSS self-study + Javascript Intro]]
+-  [[#participation][Participation]]
+- [[#assignment-00-git-and-github][Assignment 00: Git and Github]]
+- [[#assignment-01-html--css-self-study][Assignment 01: HTML & CSS self-study]]
+- [[#assignment-02-javascript-basics][Assignment 02: Javascript Basics]]
 - [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
 - [[#assignment-04-oral-history][Assignment 04: Oral History]]
 - [[#assignment-05-project-proposal][Assignment 05: Project Proposal]]
 
-* COMMENT Participation
+*  Participation
 :PROPERTIES:
 :POSTID:   174
 :ID:       
 :POST_DATE: [2015-12-11 Fri 11:16]
-:EXPORT_FILE_NAME: comment-participation
+:EXPORT_FILE_NAME: participation
 :END:
 As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.  
 
@@ -82,45 +91,47 @@ But what makes for good class participation?  You might want to start by reading
 
 
 *** Online
-I'd also like you to write 3 blog posts over the course of the term, and 6 comments on other people's blogs.  At least one blog should be written in the first half of the class, and please submit no more than one post in the final week.  I will also occasionally post blogs and comments there, though I'm pretty busy this term so I'll be doing a bit less than I usually would.  
-
-Blog posts should be /thoughtful engagements/ with the course readings and activities, about 400 words in length and usually written in a semi-formal style.  A successful blog post shows evidence of:
-- careful reading: you have understood the author's main points;
-- critical engagement: you have something to add to what the reading teaches us, whether it's a link to related material, a criticism of the author's argument, or an elaboration thereof;
-- effort: you have taken the time to proofread your post, and to lay out your argument in a convincing manner.  
-
-Blogging on the course website is easy.  You are all already signed up for the website, and many of you have signed in.  Authoring in Wordpress is very easy.  
-
-*Pro Tip:* Our course website supports authoring in [[http://jetpack.me/support/markdown/][markdown]], and I strongly suggest you use this simple and intuitive syntax for writing. It will help you understand more about how HTML works, while saving you from typing in HTML by hand (blecch!).  You can learn more about markdown from the [[https://en.support.wordpress.com/markdown-quick-reference/][Quick Reference Guide]] or from the [[http://daringfireball.net/projects/markdown/][comprehensive documentation]].  
-
+Our Slack workspace is also a great way to participate. Contribute to the class in Slack by asking good questions, helping out your classmates, and correcting any professorial errors from lecture!
 ** Finally
 
 If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
 
-* Assignments 01 and 02: HTML & CSS self-study + Javascript Intro
+* Assignment 00: Git and Github
+:PROPERTIES:
+:EXPORT_FILE_NAME: 00-git
+:END:
+One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to set up your working environment [[./../../tools/setup]] and then use Git, much as we did in class, but this time manipulating the command line.  
+
+This may take longer than you think, and it's due soon. Please get started soon by following the instructions on [[https://github.com/DigitalHistory/assignment-00-git-and-github][the Assignment 0 website]]. 
+
+* Assignment 01: HTML & CSS self-study 
 :PROPERTIES:
 :POSTID:   177
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
-:POST_DATE: [2015-12-11 Fri 11:16]
-:EXPORT_FILE_NAME: assignments-01-and-02-html-&-css-self-study-+-javascript-intro
+:EXPORT_FILE_NAME: 01-html-css
 :END:
 
-*Part I Due Date: Jan. 27*
+*Due Date: Jan. 26*
 
-*Part II Due Date: Feb. 09*
-
-You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this second assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
 
+In this assignment you will be introduced to HTML and CSS. First you will complete the HTML & CSS course on [[https://www.codecademy.com/][Codecademy.com]].  Then you'll be asked to do a set of small problems and submit them via Github.  
+
 ** Assignment
-The assignment details are listed in the [[https://github.com/titaniumbones/assignment-web-skills-intro][Github repository]].  Read them there and follow them carefully.  
+The assignment details are listed in the [[https://github.com/DigitalHistory/assignment-01-html-css][Assignment 1 Github repository]].  Read them there and follow them carefully. Be sure to budget enough time.   
 ** COMMENT Alternative
 Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
 - Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
 
 You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
+* Assignment 02: Javascript Basics
+:PROPERTIES:
+:EXPORT_FILE_NAME: 02-javascript
+:END:
+*Due Date: Feb. 02*
 * COMMENT Assignment 02: Distant History
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
@@ -131,7 +142,7 @@ You can learn more about git and github [[https://try.github.io/levels/1/challen
 :END:
 
 
-*Due Date: March 03*
+*Due Date: Feb. 27*
 
 In class we learned how to use [[http://beta.voyant.org][Voyant tools]]. If you missed class, you may want to [[http://docs.voyant-tools.org/workshops/dh2015/][read this excellent tutorial]].
 
@@ -215,13 +226,13 @@ I've uploaded a few corpora to my local server, e.g.:
 - 
 * Assignment 03: Spatial History
 :PROPERTIES:
-:EXPORT_FILE_NAME: assignment-03-spatial-history
+:EXPORT_FILE_NAME: 03-spatial-history
 :ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
 :PARENT:   Assignments
 :POSTID:   315
 :POST_DATE: [2015-12-14 Mon 14:04]
 :END:
-*Due Date: March 03*
+*Due Date: March 02*
 
 In class, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from the course website, from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
 
@@ -277,10 +288,10 @@ A "B" paper will make a convincing, interesting argument, using the map as an im
 :ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
 :POSTID:   330
 :POST_DATE: [2017-01-04 Wed 22:04]
-:EXPORT_FILE_NAME: assignment-04-oral-history
+:EXPORT_FILE_NAME: 04-oral-history
 :END:
 
- *Due Date: March 24*
+ *Due Date: March 29*
 
 Rather than repeat myself in my usual error-prone way, I will simply direct you to the [[https://github.com/titaniumbones/oral-history-template][assignment repository on Github]]. We will discuss this at great er length in class in the final weeks of the semester. 
 
@@ -292,7 +303,7 @@ Rather than repeat myself in my usual error-prone way, I will simply direct you 
 :POSTID:   629
 :EXPORT_FILE_NAME: assignment-05-project-proposal
 :END:
-*Due Date: April 05*
+*Due Date: April 02*
 
 For your final assignment, respond to the following /call for proposals/ with an application approximately 2000 words in length, plus a provisional budget i n the form of a spreadsheet. See below for details.
 
