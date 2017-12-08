@@ -1,0 +1,420 @@
+#+CATEGORY: assignments
+#+TAGS: 
+#+DESCRIPTION: 
+#+TITLE: Pages
+#+PROPERTY: PARENT 16
+#+STARTUP: customtime
+#+HUGO_BASE_DIR: ./ww-site/
+#+HUGO_SECTION: 
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :parent 
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Setup
+:PROPERTIES:
+:ID:       o2b:fc94ff3d-ce65-4f54-a855-e2fc0ade2de4
+:POST_DATE: [2017-01-06 Fri 11:25]
+:POSTID:   577
+:END:
+For the duration of this course, you will need to set up a "development environment" to do your work. You'll need to download,install, and interact with a group of programs and services that make it possible to do your work. Setting your environment up can be difficult, so be sure to budget some time to do so! Also be aware that these tools will take up significant spae on your laptop and may cause your laptop to slow down somewhat if run simultaneously with 
+** Platform Notes
+I run [[https://archlinux.org][Arch Linux]] on my laptop, and have experience with [[https://www.ubuntu.com/][Ubuntu as well. For the purposes of this class, I have installed Windows 10 Education Edition ([[https://uoft.onthehub.com/WebStore/Security/Signin.aspx][available free to U of T students here]]).  I wil also attempt to support MacOS as best I can.
+
+- if you have an earlier edition of Windows, some of our tools may not work properly. I encourage you to upgrade to Windows 10 Education Edition, which has good support for modern tools.
+- if you have a Chromebook, you will need to install a full Linux OS in order to do the coursework. [[https://wiki.galliumos.org/Welcome_to_the_GalliumOS_Wiki][Gallium OS]] and [[https://github.com/dnschneid/crouton][Crouton]] are the two recommended tools for this, and you can find [[https://arstechnica.com/gadgets/2017/06/how-to-install-linux-on-a-chromebook/][some instructions here]]. It's not easy, and I won't be able to help you.  If this seems hard, you may want to think about buying an inexpensive, older laptop and installing an ordinary Linux distribution.  [[https://fossbytes.com/best-lightweight-linux-distros/][Here are]] [[https://fossbytes.com/best-linux-distro-beginners/][two lists]] of distributions, but the choice is up to you. .
+** Details
+Here's the table of tools from the syllabus:
+| Tool                   | On Mac                       | On Windows                                     | On Linux                           |
+|------------------------+------------------------------+------------------------------------------------+------------------------------------|
+| Real Webbrowser        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
+| Text Editor            | [[https://atom.io/][Atom]]                         | [[https://atom.io/][Atom]]                                           | [[https://atom.io/][Atom]]                               |
+| Bash Shell Environment | Terminal (Built in)          | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
+| Git Version Control    | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]                  | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
+| Git Visualization      | [[https://www.gitkraken.com/][gitKraken]]                    | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
+| Github Org Membership  | [[https://github.com/join][Sign up here]]                 | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
+| Node and NPM           | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])         | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
+| Slack Community        | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]] | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]                   | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]       |
+
+If you're comfortable exploring and installing software, you can probably get set up quickly by following the links above. *Please nonetheless read the detailed instructions below.* Things will go smoother if you do!
+** Web browser
+All of our work will involve interacting with the World Wide Web. Firefox and Chrome are head and shoulders above all other web browsers, and you should install one (or preferably both) of them. In class, I will use Firefox almost exclusively. If you haven't tried Firefox for a while, give the new Quantum version a try' it is much, much faster and more stable than its predecessors.  
+
+Both have highly sophisticated *developer tools* with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [[https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector][Firefox Dev Tools]] and [[https://developer.chrome.com/devtools][Chrome's version]]. 
+
+Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
+
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below. 
+
+The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove *essential* for figuring out why your code isn't working right!
+** Text Editor
+:PROPERTIES:
+:ID:       o2b:19eea94a-1f1c-410a-b660-6c2c6354ca22
+:POST_DATE: [2017-01-06 Fri 11:27]
+:POSTID:   573
+:BLOG:     dig
+:END:
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://atom.io/][Atom]].  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [[http://flight-manual.atom.io/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install some extra packages]] by navigating to Edit \rarr Preferences \rarr + Install, as described in detail [[https://flight-manual.atom.io/using-atom/sections/atom-packages/][in the excellent Atom manual]]. I have prepared a package called [[https://atom.io/packages/history-hack-pack][history-hack-tools]], which will install all the tools I'll be using during class. Please install that one by searching for its name in the search box. The functionalities fo the various packages are briefly described in the package description.
+
+** Command Line
+Web developers and digital humanists spend a lot of their time in the /command-line environment/, interacting with their computers through text-based commands instead of a mouse or voice interface.  It takes some time to learn to use the command-line, but it's a very powerful and effective way to work once you get used to it. One goal of this course is to help you get comfortable in this environment and learn to take advantage of its power.  
+
+There are actually many different command-line environments; in this class we use [[https://www.gnu.org/software/bash/][bash]], the most popular.  
+
+On Mac and Linux, bash is built in to the system.  In Mac, open the ~Terminal~ app to find the bash prompt; in Linux you may have any of several terminal emulators installed, search your program list for "term" to find yours.  
+
+In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Wondows Subsystem for Linux, which you can use instead of the Git Bash method.  
+
+** Git, Github, and GitKraken
+:PROPERTIES:
+:ID:       o2b:bc40c086-76d9-4027-9fb3-ee6748e031bc
+:POST_DATE: [2017-01-06 Fri 11:27]
+:END:
+Software development is made *vastly* by "[[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]]" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [[https://git-scm.com/][git]], and we're all grateful for it.  
+
+*** Install Git
+To install git, follow the [[https://git-scm.com/downloads][download links]] on the website (see the table above for OS-specific links and instructions. We'll come back to the Git command-line in a minute.  
+
+*** Sign up for Github
+For many developers -- maybe even most of them -- using Git is intimately tied to the [[https://github.com][Github]] code-sharing website.  We'll be using Github for almost all of our work this semester, so it's important that you get familiar with it.  If you were present for the first class, you've already done this. If not, you'll need to [[https://github.com/join][sign Up for a Github account]]. Once you've done that, you have two choices:
+- practice working at the command line
+- go straight to a GUI ("Graphical User Interface") that will make working with git a little more comfortable.  
+
+I recommend at least trying the command line first.  
+
+*** Command-line Setup
+You need to tell git a little bit about yourself. Start with your [[https://help.github.com/articles/setting-your-email-in-git/][email address]] and [[https://help.github.com/articles/setting-your-username-in-git/][your user name]]. Open your bash shell (Terminal in Mac, git-bash in Windows) and type:
+#+BEGIN_SRC sh
+    git config --global user.name "Your Name"
+    git config --global user.email "youraddress@ mail.utoronto.a"
+#+END_SRC
+Great -- now git knows who you are. If you're feeling ambitious, you can also [[https://help.github.com/articles/connecting-to-github-with-ssh/][set up SSH keys so you don't have to type in your password every time you commit to Git]].  
+
+*** Using the GitKraken GUI client
+Sometimes it's nice to have a backp. [[https://www.gitkraken.com/][GitKraken]] is an impressive visual tool that also makes it easy to [[https://support.gitkraken.com/start-here/profiles][configure all of your information]].  They have a nice video about [[https://support.gitkraken.com/integrations/authentication][SSH integration]], which you can watch if you like.
+
+*** Learn more
+There is a somewhat more wordy [[http://digital.hackinghistory.ca/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
+** Node and NPM
+Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM let us access some of that power while we work.  
+
+You can survive this class  without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.  
+
+- In Mac and Linux, the instructions linked to in the table above are probably good enough.
+- In Windows, you may follow all the instructions and then find yourself getting an error ("~Command not found~"). If that happens, you may want to try [[http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/][the instructions laid out here]], or if you're on Windows 10, [[https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae][you could go crazy and install the amazing Windows Subsystem for Linux]], which allows you to work as if your computer had a real Unix operating system like everyone else.  
+The details of Node and NPM are a little outside the scope of our class, but [[https://info343.github.io/machine-setup.html#node-and-npm][a colleague at the University of Washington]] has an excellent introduction in one of his courses.  
+
+** Slack
+Slack is not strictly necessary to do your work, but it is the principal means of conversation for the class. Your activity in our Slack team is part of your participation assessment. So, please sign up for the team using the signup links above, and if you're not familiar with Slack already, read [[https://get.slack.help/hc/en-us/search?utf8=%E2%9C%93&query=bold+italic&commit=Search][some of the Slack documentation]]. 
+* More about Git and Github!
+  :PROPERTIES:
+  :CUSTOM_ID: introduction-to-github
+  :CLASS: entry-title
+  :END:
+
+This is a preliminary introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software
+developers but is enormously useful for any text-based document
+repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]] . You can find git
+repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.
+
+I /strongly/ recommend you follow this lesson up by
+[[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.
+
+Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning. We'll go over it once, kind of quickly, then try a real-world example (checking out the first assignment.
+
+** Learn by example:
+History-Please
+   :PROPERTIES:
+   :CUSTOM_ID: orga4f1831
+   :END:
+
+(This recapitulates much of what we did in the first class. Feel free to
+skip.) My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple Github training exercise last year for some of my other students. It was really fun, so I modified it for us:
+
+1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in    if you already have an account)
+2. Navigate to [[https://github.com/titaniumbones/history-please][my history-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].
+   Can you understand it? Maybe we need to add some extra instructions
+   (like, what does =npm install -g= mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work? *At this point you can continue to follow these instructions, or just switch over to the README for a slightly more up-to-date explanation of forking, pulling, and merging.*
+4. Have you found where the History lives?
+5. Add a new piece of history *from inside Github itself(!)* by following the direction in the README under ~Contributing~.
+
+   - Be sure to name the file “some-persons-name.md” (or “some-event-name.md”, or “some-trend-name.md”) so that everyone knows it's written in Markdown
+   - follow Markdown syntax in writing your recipe (see    [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic. *Before you hit save, read the next step!!*
+
+   [[http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-create-file.jpeg]]
+
+6. *Important!* You'll be given a choice between “Committing directly to master” and “Creating a new branch”. Choose the latter option and then follow the instructions to submit a pull request. Amazing! [[http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-commit-options.png]]
+7. When filling out the pull request, please take note of the “base” branch -- by default, Github *will not* to this properly for you. Make sure that the base points to =titaniumbones/master=. If you can't figure this out, then commit to your own “master” branch. Then, navigate back to the front page, and create a =New Pull Request= by
+   clicking on the button on the upper left. At this point my repo will be the only option you're given.
+
+<<outline-container-orgb642d09>>
+** Getting started: Installing Git
+   :PROPERTIES:
+   :CUSTOM_ID: orgb642d09
+   :END:
+
+On Mac and Windows, simply [[https://desktop.github.com/][install Github
+Desktop]]. Command-line commands can be executed in the git shell within
+GH Desktop, or in the terminal.app on Mac. On Linux, use your package
+manager and the terminal, eg. on Ubuntu:
+
+#+BEGIN_EXAMPLE
+    sudo apt-get install git
+#+END_EXAMPLE
+
+or on Arch
+
+#+BEGIN_EXAMPLE
+    sudo pacman -S git
+#+END_EXAMPLE
+
+The [[https://github.com/jlord/git-it-electron/releases][git-it tutorial]] is also pretty helpful, so consider installing it.
+
+** Using Github Desktop (GHD)
+   :PROPERTIES:
+   :CUSTOM_ID: orgda605c7
+   :END:
+
+This tells git some basic information about you, which it will use later
+on. In GHD, also configure your github acocunt credentials. Your
+repositories will all now be available from inside GHD, so to edit a new
+repository just fork an existing Githup repo, then download it using
+GHD.
+
+Once you've downloaded a repository, open a file in Atom, make some
+changes, and save.
+
+GHD will see that you've made changes, and give you the opportunity to
+make *commits.* Once you've committed your changes, you can *push your
+changes* to the online and repository and *submit pull requests* to the
+repository that you forked your code from.
+
+<<outline-container-org13b2038>>
+** Understanding how git works, and using the command line
+*** Advanced Git for command-line users (Linux Users and Masochists
+Only)
+    :PROPERTIES:
+    :CUSTOM_ID: org50aae1f
+    :END:
+
+<<text-org50aae1f>>
+All of the above functionality is also available via the command-line
+
+1. Choose an appropriate home for your repo and execute
+   =git clone https://github.com/your-user-name/history-please.git= from
+   the command line. The repository will be downloaded.
+2. Add your directory to atom as a “project directory:
+   [[http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-githb-add-project.png]]
+3. Install the “git-plus” package in Atom
+4. Create a new file in the appropriate place.
+5. Choose menu item =Packages \rarr Git Plus \rarr Add=, then
+   =Packages \rarr Git Plus \rarr Commit=, then
+   =Packages \rarr Git Plus \rarr Push=
+
+There's still tons to learn but this is a good start. If you are
+intrigued, keep reading.
+
+<<outline-container-orge78fcc1>>
+*** Full workflow
+    :PROPERTIES:
+    :CUSTOM_ID: orge78fcc1
+    :END:
+- [[https://github.com/join][Sign Up for a Github Account]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install git w/out GHD]]
+- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
+- [[https://help.github.com/articles/set-up-git/][configure your git information]]
+- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be   sure you can authenticate with github]]
+- Create a local copy of the history-please repository by
+  [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
+  =git clone git [at] github [dot] com:YOUR-USERNAME/history-please.git=
+- Make some changes
+- Commit your changes with =git commit -m "Useful Message Here" -a=
+- *optional* Push your changes to the web with =git push=
+- *optional*  [[https://help.github.com/articles/using-pull-requests/][Submit a pull request]]
+
+*** Understanding Git “States”
+A git repository has three important “areas”, each of which represents a
+different “state”:
+
+- Working Directory (Uncommitted)
+- Staging Area (Staged)
+- .git repository (Committed)
+
+When you look at the repository, all you see is the *working directory*.
+So, if I want to start a new project, I create an empty directory, say,
+“Project”. Then I run the command:
+
+#+BEGIN_SRC sh
+    git init
+#+END_SRC
+
+This command creates the invisible =.git= subdirectory, which is the
+real heart of the repo: it stores all the information about previous and
+current states of the repository.
+
+Then let's say I create a file and put some stuff in it. On the command
+line you'd do that this way:
+
+#+BEGIN_SRC sh
+    echo "Hello, World" >> hello.txt
+#+END_SRC
+
+I alert git to its existence with
+
+#+BEGIN_SRC sh
+    git add hello.txt
+#+END_SRC
+
+Now git sees that =hello.txt= exists, /and/ the new file is “staged”.
+Now execute:
+
+#+BEGIN_SRC sh
+    git commit -a -m "initial commit of hello.txt"
+#+END_SRC
+
+Git takes all of the changes from the “staging area”, and “commits” them
+to the repository. All of this happens in the hidden =.git= directory --
+you won't notice any changes to the files that you actually see.
+
+<<outline-container-org7a3a94e>>
+*** Doing and Undoing
+    :PROPERTIES:
+    :CUSTOM_ID: org7a3a94e
+    :END:
+
+<<text-org7a3a94e>>
+Every time you commit your changes in git, git saves a snapshot of the
+working directory to the .git repository. So, in principle, you can get
+back to any earlier working state of the repository, which is awesome.
+- commit :: the most elementary operation in git is “committing”; this
+  saves your working directory to the repository. Here are the steps
+
+  - make some changes
+  - commit them with =git commit -a -m Message=
+
+- checkout :: To inspect some other state of the repository, you will
+  need to “checkout” that state: =git checkout HEAD~3= will checkout the
+  version you were working on 3 saves ago, for instance.
+- revert :: if you have totally screwed up your repository and want to
+  completely undo your changes, then use =git checkout= to check out the
+  last working state. Now just
+  =git commit -m "revert to working state"=. And you're back to where
+  you want to be.
+
+<<outline-container-org62741fe>>
+*** Branching
+    :PROPERTIES:
+    :CUSTOM_ID: org62741fe
+    :END:
+
+<<text-org62741fe>>
+Sometimes you want to be able to come back to a particular revision --
+maybe you have everything working fine, and you want to be sure you can
+get back to the working state. Maybe you create an “experiments branch”
+to work on; if it breaks, you can just switch back to the master branch
+with no harm done.
+
+#+BEGIN_SRC sh
+    git branch # show branches 
+    git branch -c experiment # create the experiment branch
+    git checkout experiment # chekout the experiment branch; then work on it for a while
+    git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
+    git checkout master # go back to the master branch, since it still lworks and you need to use it for something.
+#+END_SRC
+
+If you're happy with your hcanges, maybe you want to actually commit
+them to the master branch:
+
+#+BEGIN_SRC sh
+    git checkout experiment # chekout the experiment branch; then work on it for a while
+    git commit -a -m "added a cool new feature, and it works" # commit your changes
+    git checkout master # go back to the master branch
+    git merge experiment # "merge" your changes.
+#+END_SRC
+
+For our purposes, you should really only ever work on *one branch at a
+time*, or you're likely to run into problems beyond the scope of this
+tutorial.
+
+<<outline-container-orge471552>>
+*** Push and Pull
+    :PROPERTIES:
+    :CUSTOM_ID: orge471552
+    :END:
+
+<<text-orge471552>>
+When you're working together you may want to *pull* someone else's
+changes or *push* your own to the group.
+
+#+BEGIN_SRC sh
+    git pull # get the most recent branch of your original repository
+    git push # send all your commits on the current branch to the original repository
+#+END_SRC
+
+OK, that's what I've got for now. Follow the excellent links near the
+top for more info. Good luck!
+
+<<outline-container-org87403af>>
+** Further Resources
+   :PROPERTIES:
+   :CUSTOM_ID: org87403af
+   :END:
+
+<<text-org87403af>>
+There are many other resources available online. You can try some of
+these.
+
+- [[https://guides.github.com/activities/hello-world/][Hello World Guide
+  on Github]]
+- [[https://github.com/jlord/git-it-electron/releases][The excellent
+  tutorial in the downloadable git-it application]]
+- [[https://help.github.com/desktop/guides/][The sub-par Github Desktop
+  documentation]]
+- [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][Helpful
+  Tutorial on The Programming Historian]].
+- [[http://gitimmersion.com/index.html][Git Immersion]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official
+  Git Book (quite technical)]]
+
+- [[https://digital.hackinghistory.ca/03-spatial-history/][Assignment
+  03: Spatial History]]
+- [[https://digital.hackinghistory.ca/04-oral-history/][Assignment 04:
+  Oral History]]
+- [[https://digital.hackinghistory.ca/assignment-05-project-proposal/][Assignment
+  05: Project Proposal]]
+- [[https://digital.hackinghistory.ca/assignments/][Assignments]]
+- [[https://digital.hackinghistory.ca/01-web-skills/][Assignments 01 and
+  02: HTML & CSS self-study]]
+- [[https://digital.hackinghistory.ca/basic-js-part-2-the-dom/][Basic JS
+  Part 2: the DOM]]
+- [[https://digital.hackinghistory.ca/][Digital History: His389, Winter
+  2017]]
+- [[https://digital.hackinghistory.ca/distant-reading-2/][Distant
+  Reading 2]]
+- [[https://digital.hackinghistory.ca/distant-reading-exercise-building-a-wordle/][Distant
+  Reading Exercise: Building a Wordle]]
+- [[https://digital.hackinghistory.ca/introducing-css/][Introducing
+  CSS]]
+- [[https://digital.hackinghistory.ca/introduction-to-github/][Introduction
+  to Github!]]
+- [[https://digital.hackinghistory.ca/javascript-basics-i-operators-loops-and-that-pesky-problem-1/][Javascript
+  Basics I: Operators, Loops, and that Pesky Problem 1]]
+- [[https://digital.hackinghistory.ca/learn-by-example-history-please/][Learn
+  by example: History-Please]]
+- [[https://digital.hackinghistory.ca/lecture-notes/][Lecture Notes]]
+- [[https://digital.hackinghistory.ca/spatial-history-with-google-maps/][Spatial
+  History with Google Maps]]
+- [[https://digital.hackinghistory.ca/tools/][Tools]]
+
+  - [[https://digital.hackinghistory.ca/tools/understanding-popcorn/][Understanding
+    Popcorn]]
+  - [[https://digital.hackinghistory.ca/tools/understanding-popcorn-2/][Understanding
+    Popcorn]]
+
+- [[https://digital.hackinghistory.ca/blogs/][Your Blogs]]
+
+© 2017 HIS389: Digital History. Made with Love in
+[[http://themefortress.com/reverie/][Reverie]].
+
+
