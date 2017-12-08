@@ -38,3 +38,21 @@ The Website is organized as follows:
   - 01 to 12
 - Assignments
   - 00 to 06
+* Deployment
+Deployment requires the following steps
+- [x] create website folder, exclude from top-level git repo
+  - [x] add gh-pages branch to public dir
+- create org-mode project with subprojects:
+  - export all full pages
+  - export all subpages
+- commit to master
+  - push to origin
+  - copy git commit message
+    - initiate export
+    - cd to website folder
+    - *this part has now been done in ~dh-website/.git/hooks/post-commit~!*
+    - commit with a copy of message
+    - push to origin
+    - generate gh-pages commit message
+    - commit to gh-pages
+    - push to origin
