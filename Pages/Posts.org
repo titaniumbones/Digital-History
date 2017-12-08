@@ -6,6 +6,9 @@
 ** Chapter 12
 A lot of this will be review for you
 * Javascript Basics
+:PROPERTIES:
+:EXPORT_FILE_NAME: javascript-basics
+:END:
 ** Syntax
 When we hear a set of instructions, we generally attend to the parts that are clear to us, and ignore or puzzle over the parts that aren't clear.  
 
@@ -25,6 +28,7 @@ A variable is a /container/; in Javascript, a
 :POST_DATE: [2016-02-03 Wed 12:53]
 :BLOG:     dig
 :POSTID:   511
+:EXPORT_FILE_NAME: javascript-basics-i-operators,-loops,-and-that-pesky-problem-1
 :END:
 ** Quick JS Operator review
 | Operator  | Meaning                                                                                                  |
@@ -220,6 +224,7 @@ Ta-da; done.
 :POST_DATE: [2016-02-03 Wed 12:55]
 :BLOG:     dig
 :POSTID:   508
+:EXPORT_FILE_NAME: basic-js-part-2-the-dom
 :END:
 ** The DOM!
 Your textbook will be much more eloquent than I on this topic.  Modifying the DOM -- the Document Object Model -- is the amazing wonderful coolest thing that Javascript does. This is a huge topic, but let's quickly scratch the surface:
@@ -268,6 +273,7 @@ To do cooler stuff, like turning yellow, or linkifying all the classes, you'll n
 :POST_DATE: [2015-07-20 Mon 22:49]
 :POSTID:   287
 :BLOG:     dig
+:EXPORT_FILE_NAME: spatial-history-with-google-maps
 :END:
 ** Google Maps and Spatial History
 
@@ -341,6 +347,9 @@ I /think/ the only modifications you will need to make to the HTML are within th
 The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
 
 * Let's Try Voyant Again
+:PROPERTIES:
+:EXPORT_FILE_NAME: let's-try-voyant-again
+:END:
 
 * Getting to Know Voyant Tools
 :PROPERTIES:
@@ -348,6 +357,7 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 :POST_DATE: [2015-07-14 Tue 09:43]
 :POSTID:   204
 :BLOG:     dig
+:EXPORT_FILE_NAME: getting-to-know-voyant-tools
 :END:
 Last week we experimented with applying "distant reading" techniques to history using Wordles -- sometimes called "the gateway drug" of textual analysis.  Today we will go a little bit further down this road, using a popular online tool called [[http://beta.voyant-tools.org/][Voyant]] (You may also want to [[https://github.com/sgsinclair/VoyantServer/releases/download/2.0.1-M5/VoyantServer2_0-M5.zip][download and install]] this tool on your own computer, for the next assignment; details about installation are [[http://docs.voyant-tools.org/workshops/dh2015/][here]], under "Getting Setup").
 
@@ -398,6 +408,7 @@ As before: in small groups, check out these texts and see if you see anything in
 :POST_DATE: [2015-07-21 Tue 13:27]
 :POSTID:   310
 :BLOG:     dig
+:EXPORT_FILE_NAME: test-post
 :END:
 
 testing
@@ -407,6 +418,7 @@ testing
 :POST_DATE: [2015-07-28 Tue 10:03]
 :POSTID:   322
 :BLOG:     dig
+:EXPORT_FILE_NAME: popcorn-exercise!
 :END:
 
 Ooops, forgot to write this up separately. Oh well. By now, though, you know the drill:
@@ -422,6 +434,7 @@ This will get you ready for your next assignment.
 :POST_DATE: [2015-07-28 Tue 13:58]
 :POSTID:   324
 :BLOG:     dig
+:EXPORT_FILE_NAME: javascript-error-in-current-assignment!
 :END:
 Many thanks to Marie for finding an important bug in the current assignment, which you may not have discovered yet. Before this fix, the Info Window would only display for one of the markers.  Once the changes described below are applied, I believe the problem should disappear.  
 
@@ -464,19 +477,21 @@ and here is the corrected code:
 #+END_SRC
 
 I recommend that *everyone* carefully remove the old "for" loop and replace it with this new code.  It will make your lives better!
+
 * Understanding Popcorn
 :PROPERTIES:
 :BLOG:     dig
-:PARENT:   162
+:PARENT:   577
 :ID:       o2b:1d77ef33-50dc-4cfd-9bf0-eb246821cfa7
-:POST_DATE: [2016-03-24 Thu 06:51]
-:POSTID:   554
+:POST_DATE: [2017-03-10 Fri 10:47]
+:POSTID:   624
+:EXPORT_FILE_NAME: understanding-popcorn
 :END:
 You may find it useful, as you prepare for the next assignment, to read the following post!
 ** What is Popcorn
 [[http://popcornjs.org][Popcorn]] is a Javascript "libary" -- a small collection of programs -- that lets web designers key events in a web page to a time-code in a media file.  So essentially ,popcorn lets you "cue up" content ad display it only during fixed periods, while a media element is playing. If you then pause or manually rewind/fast-forward the media element (audio or video), the events will also reset to the appropriate time. 
 *** HTML5 & new possibilities
-Popcorn works because of new functionality that is provided by the cutting-edge [[http://en.wikipedia.org/wiki/HTML5][HTML5]] standard, and in particular the [[http://www.html5rocks.com/en/features/multimedia][<audio> and <video>]] tags.  So you are working with very new technology here. The new standards let you manipulate audio  and video directly with HTML and Javascript -- something that wasn't possible until about a year ago.   
+Popcorn works because of new functionality that is provided by the [[http://en.wikipedia.org/wiki/HTML5][HTML5]] standard, and in particular the [[http://www.html5rocks.com/en/features/multimedia][<audio> and <video>]] tags.  So you are working with very new technology here. The new standards let you manipulate audio  and video directly with HTML and Javascript -- something that wasn't possible until about a year ago.   
 *** multi-media swiss-army knife
 Popcorn is a sort of Swiss army knife for doing multi-media work in HTML5.  There's a main framework -- the popcorn library -- that provides a simple Javascript interface for talking directly to the media elements.  Doing that directly can be hard, so the Popcorn "layer" makes this work quite a bit easier.  This underlying library is used by the [[http://popcornjs.org/plugins][Popcorn plugins]], which are the elements you will actually be working with.  These plugins are fairly simple Javascript programs (the mapping ones are actually kinda complex, and some of the things one wants to do with maps -- especially smoothly animate a pan from one location to another -- aren't available yet, which is too bad and a bit of a disappointment).  It's the plugins that you will actually be working with.  
 *** Using Popcorn
@@ -488,11 +503,11 @@ Inside the variable definition, you "call" the plugin function for each event yo
         .footnote({"id":"intro","start":6,"end":16,"target":"popcorn-container","text":"Edna begins by talking about her father, Daniel Kelly (1861-1953). The US census of 1880 for Elgin, IL, gives Daniel’s occupation as blacksmith. In the 1900 census of Port Angeles his occupation is bridge builder; in the 1920 census of Eden Valley it is general farming; in the 1920 census of Eden Valley it is dairy farming.  In the 1930 census of Port Angeles he is retired."})
 #+END_SRC
 This is one of the plugins you'll use the most -- the footnote plugin. It has just five parameters: 
-- id -- this is for your benefit so you can keep track of what you're doing. Use it, but don't worry about it too much
-- start -- when to start playing the element. This is in SECONDS -- so forinstance if you want to it to start playing at 6:34, the value would be 394.  Keep a calculator on hand. Note that the value is *not* in quotation marks -- that's significant.
-- end -- the end time
-- target -- where to pop up the event. Don't change this, or your events will show up in the wrong place.  With popcorn you can put the new events anywhere on the page, and change any existing element. It's really powerful; we're just brushing the tip of the iceberg.
-- text -- this is the text you're going to make appear.  This is where your own contribution really comes in.  
+- *id* -- this is for your benefit so you can keep track of what you're doing. Use it, but don't worry about it too much
+- *start* -- when to start playing the element. This is in SECONDS -- so forinstance if you want to it to start playing at 6:34, the value would be 394.  Keep a calculator on hand. Note that the value is *not* in quotation marks -- that's significant.
+- *end* -- the end time
+- *target* -- where to pop up the event. Don't change this, or your events will show up in the wrong place.  With popcorn you can put the new events anywhere on the page, and change any existing element. It's really powerful; we're just brushing the tip of the iceberg.
+- *text* -- this is the text you're going to make appear.  This is where your own contribution really comes in.  
 
 *** Available plugins
 We've provided examples for three plugins:
@@ -529,6 +544,7 @@ The process is described [[https://github.com/jsoma/tabletop#1-getting-your-data
 :ID:       o2b:4cba545f-ed63-4094-af28-de8c15b747e4
 :POST_DATE: [2016-02-09 Tue 10:59]
 :POSTID:   351
+:EXPORT_FILE_NAME: some-wordpress-plugins-(image-sliders-and-timelines)
 :END:
 This is a preliminary list which I'll try to keep updating as we go
 ** Image Sliders!
@@ -557,6 +573,9 @@ I would suggest trying out several and seeing how they seem to work for you.  I'
 ** Image Maps
 I've already installed two image mapping plugins on thesite: [[https://wordpress.org/plugins/imagemapper/][Image Mapper]] and [[http://wpdrawattention.com/][Draw Attention]].  You can try both out and see how you like them.
 * Adding a Custom Icon to Google Maps Markers 
+:PROPERTIES:
+:EXPORT_FILE_NAME: adding-a-custom-icon-to-google-maps-markers
+:END:
 The Google Maps API permits us to set the image that displays on the map as the marker's "icon".  Yo are familiar with the red balloon-like pin hat google uses by default, bt google provides many other options, and you can even define yor own if you like, as long as the image you want to use is on the Internet.  All you need to do is to add an "icon" attribute to the marker object definition.  For or assignment, that means you will need to modify code in at least two places: 
 
 - in the ~all_my_markers~ array
@@ -564,6 +583,9 @@ The Google Maps API permits us to set the image that displays on the map as the 
 
 ** 
 * Ecosystem, Infrastructure, and Tools
+:PROPERTIES:
+:EXPORT_FILE_NAME: ecosystem,-infrastructure,-and-tools
+:END:
 SOmetimes we make the mistake of thinking that everything in University is /conceptual/. But we also learn to use the tools of our trade: journals, books, archival finding aids; and increasingly, many, many kinds of software.  
 *** Understanding Your Browser
 First ask yourself for a second: what is a web browser? Why do we use and need them? Can I get more out of my browser than I have been?

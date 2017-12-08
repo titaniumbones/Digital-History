@@ -3,21 +3,25 @@
 # # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
-# #+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
-#+TITLE: Digital History: His389, Winter 2017
+#+TITLE: Syllabus
+#+SUBTITLE: HIS393: Digital History, Winter 2018
 #+AUTHOR: Matt Price
 #+EMAIL: matt.price@utoronto.ca
-
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE: en
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/New113Syllabus.odt"
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
-#+CREATOR: Emacs 25.1 (Org mode 9.0.1)
-# #+SETUPFILE: /home/matt/src/org-html-themes/setup/theme-bigblow.setup
+#+CREATOR: Emacs 27.0.5 (Org mode 9.1.4)
+#+HUGO_BASE_DIR: ./dh-website/
+#+HUGO_SECTION: syllabus
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :weight 10
+#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
+#+MACRO: ts (eval (get-ts+7))
 
 * Logistics
 :PROPERTIES:
@@ -77,12 +81,7 @@ At the end of this course, you should:
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 * Method
-:PROPERTIES:
-:ID:       o2b:85370ac4-7b77-4d04-b561-ced102d0d205
-:POST_DATE: [2017-01-06 Fri 12:48]
-:POSTID:   599
-:BLOG:     dig
-:END:
+
 There are many approaches to the digital humanities, all of them involving tools that are under rapid and iterative development.  A given project is likely to require a substantial training period in the particular tools chosen by the principal investigators.  It is therefore not possible for this course to provide an effective survey of "the" digital humanities toolkit. But learning  tools is an essential skill for the digital humanist. So what should we do?
 
 Almost every digital humanist will, at some point, need to do the following:
@@ -93,7 +92,26 @@ Almost every digital humanist will, at some point, need to do the following:
 
 Our emphasis is therefore on /simple coding/ taught using /standard tools that are available almost everywhere/.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and /slowly/ come to apply them to /increasingly sophisticated/ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to /teach yourself/ when you encounter new tools in the course of a project.  
 
-Please see the [[http://digital.hackinghistory.ca/tools][Tools]] page for more details about the particular tools we will be using.  
+* ACTION Policies
+* Tools
+
+Course assignments will require you to install software. All of the software we use is free, but it *requires a laptop to run*. A Chromebook unfortunately will not be sufficient. While it is in principle possible to do all of your assignments on the web or using a very basic text editor, I do not recommend that method, and will not offer technical support.  If you don't own a laptop, you should find a way to borrow one, or buy a cheap model on College St to use for the duration of the semester.  
+
+I can offer help with the following 
+
+| Tool                   | On Mac                | On Windows                                     | On Linux                           |
+|------------------------+-----------------------+------------------------------------------------+------------------------------------|
+| Real Webbrowser        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]] | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
+| Text Editor            | [[https://atom.io/][Atom]]                  | [[https://atom.io/][Atom]]                                           | [[https://atom.io/][Atom]]                               |
+| Bash Shell Environment | Terminal (Built in)   | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
+| Git Version Control    | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]           | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
+| Git Visualization      | [[https://www.gitkraken.com/][gitKraken]]             | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
+| Github Org Membership  | [[https://github.com/join][Sign up here]]          | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
+| Node and NPM           | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])  | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
+
+
+
+Please see the [[http://digital.hackinghistory.ca/article/tools][Setup]] page for more details about the particular tools we will be using. *YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE*
 * Course Requirements & Grading
 :PROPERTIES:
 :ID:       o2b:8cabb212-5b29-445e-9c1a-d108bdfff9c4
@@ -103,19 +121,32 @@ Please see the [[http://digital.hackinghistory.ca/tools][Tools]] page for more d
 :END:
 The assignments in this course take a wide variety of forms, and for the most part, differ significantly from what you're likely to have encountered in other History courses. If you have little technical experience, or have perhaps ended up in this course by accident (!), you may find some of the work daunting at first. I have done my very best to make the assignments feasible for beginners, but you will likely encounter some difficult moments.  I therefore *strongly* urge you to (1) start early! and (2) persevere through the difficult initial stages.  The frustration you experience is, in fact, part of pedagogical method here.  You are not expected to become a coding ninja, but /learning how to learn/ is a major component of work in the Digital Humanities.  
 
-I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be provided with adequate time to permit completion.
-| <25>                      | <35>                                | <9>       |                                 <36> |
-| Assignment                | Brief Description                   | Due Date  |                           Percentage |
-|---------------------------+-------------------------------------+-----------+--------------------------------------|
-| HTML & CSS self-study     | Pass/Fail: self-guided learning on codacademy.com | <2017-01-20 Fri> |                                   10 |
-| Javascript for DH         | Pass/Fail: problem set              | <2017-02-03 Fri> |                                   15 |
-| Spatial History           | Simple GIS Web project              | <2017-03-03 Fri> |                                   20 |
-| Oral History              | Multimedia Web Project              | <2017-03-24 Fri> |                                   25 |
-| Project Proposal          | Imagine a Digital History Project   | <2017-04-05 Wed> |                                   30 |
-|---------------------------+-------------------------------------+-----------+--------------------------------------|
-| Total                     |                                     |           |                                  100 |
-#+TBLFM: @8$4=vsum(@I..@II)
+Be warned! Marking in this course is unusual!
 
+Grading in this course is done using a /modified point system/. The system may seem odd at first, but it has definite advantages for both students and teachers, so don't be intimidated. Instead of receiving a number or letter grade for each assignment, and then getting a weighted sum of those grades as your final mark, you will /choose what final mark to try for/ and then /complete the assignments required for that mark/.  A certain set of assignments is required for a D; for a C, you must complete all of the "D" assignments plus another set; for a B, all of the C assignments plus some more; and the same goes for an A. 
+
+Here are some more details:
+- All Assignments Are Graded Pass/Fail :: Each assignment you get will include a careful explanation of my expectations. If your work meets those expectations, you get full credit; if not you get /no credit/. 
+- A 'Passing' Mark on Assignments is a B+ :: In order to get credit for an assignment, you will have to demonstrate a high level of mastery -- about the level normally required for a B+.
+- Each Higher Grade Represents a quantum level of additional achievement :: As you move up the ladder, assignments test more advanced and difficult concepts from the course.
+- If you fail, you can try again :: You start the semester with 5 'retry' chits, which you can use to resubmit assignments that have not succeeded. If necessary, you can use all of those chits on a single assignment! Resubmission process must be completed withing 1 week of the return date of the original version. 
+- A late assignment costs one 'retry' chit :: There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities.
+- Second and third tries get fewer comments :: I will give substantial comments on first tries; additional tries will get less and less fulsome commentary.
+- Pluses and Minuses are determined by participation :: The only part of your grade which is not determined on a pass/fail basis is the "+" or "-" part, which is assigned based on your on and offline participation.  See the participation grade sheet for more details. 
+
+I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
+
+| Assignment          | Due Date | Brief Description                 | A | B | C | D |
+|---------------------+----------+-----------------------------------+---+---+---+---|
+| Git & Github        | <2018-01-15 Mon>  | version control and collaboration | \check | \check | \check | \check |
+| HTML & CSS          | <2018-01-26 Fri>  | web markup and presentaiton       | \check | \check | \check | \check |
+| Javascript for DH   | <2018-02-02 Fri>  | intro to programming              | \check | \check | \check | \check |
+| Data-Driven History | <2018-02-16 Fri>  |                                   | \check | \check | \check |   |
+| Spatial History     | <2018-03-02 Fri>  | Simple GIS Web project            | \check | \check |   |   |
+| Oral History        | <2018-03-16 Fri>  | Multimedia Web Project            | \check | \check | \check | \check |
+| Project Proposal    | <2018-03-23 Fri>  | Imagine a Digital History Project | \check |   |   |   |
+|---------------------+----------+-----------------------------------+---+---+---+---|
+|                     |          |                                   |   |   |   |   |
 * Texts
 :PROPERTIES:
 :ID:       o2b:76732ff1-cf85-4467-ab94-c53fcd9d1519
@@ -128,7 +159,6 @@ The following texts are required and available at the Bookstore, or via various 
 - Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/ Verso, 2005.
 - Geddes et al /Toward Spatial Humanities/ Bloomington: Indiana University Press, 2014.
 - Perks, et al. /The Oral History Reader/. 2006
-
 
 * Course Outline
 :PROPERTIES:
@@ -207,7 +237,7 @@ We'll explore "topic modelling" -- one of the most popular DH methods -- as well
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
-- Mark Monmonier,  "[[http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf][Lying with Maps]]" /Statistical Science 20:3, 2005. 215-222.
+- Mark Monmonier,  "[[http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf][Lying with Maps]]" /Statistical Science/ 20:3, 2005. 215-222.
 - Ben Schmidt, "[[http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html][Data narratives and structural histories: Melville, Maury, and American whaling]]
 *In-Class Activity: Mapping with Google*
 **** COMMENT adding critical cartography readings

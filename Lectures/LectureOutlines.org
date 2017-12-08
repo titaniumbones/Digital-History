@@ -1582,7 +1582,7 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
-* 04: Distant Reading 1                                    :noexport:
+* 04: Distant Reading 1                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
 :EXPORT_TITLE: Distant Reading I
@@ -1633,7 +1633,7 @@ With a (new!) partner, follow the directions!
 #+BEGIN_QUOTE
  Dorothea, endowed with the extraordinary capacity for attentiveness that is “ardor,” is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
 
-"“I should learn everything then,” she said to herself, still walking quickly along the bridle road through the wood. “It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."[fn:1]
+"“I should learn everything then,” she said to herself, still walking quickly along the bridle road through the wood. “It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."
 #+END_QUOTE
 
 #+BEGIN_NOTES
@@ -1844,22 +1844,152 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 - what do and don't we know? 
-** Exercise: build a wordle [fn:2]
+** Exercise: build a wordle 
 :PROPERTIES:
-:CUSTOM_ID: exercise:-build-a-wordle-[fn:2]-34a6
+:CUSTOM_ID: exercise:-build-a-wordle-34a6
 :END:
+*** Choose a work to not read.
+- navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
+- download the *text* version
+*** Make some predictions
+- Write down your basic expectations of the novel: 
+- What are the main themes?
+- What are the lessons?
+- What is its place in literary history?
+*** Make a Wordle
+- navigate to [[http://wordle.net]]
+- strip the metadata from the text (e.g., license, etc.)
+- create wordle for the text as a whole.
+  - then for several chapters or sections
+  - what patterns do you see? 
+*** Make a network
+:PROPERTIES:
+:ID:       aefd9474-d1ed-40ae-9190-034aac825a3e
+:END:
+- copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
+
+#+BEGIN_QUOTE
+    The gist of textexure’s process is that account of words that occur near each other. That is not to say words have to be directly next to one another, paragraph and sentence structures are both considered. In the network, the nodes are the words themselves while the edges (or connections from node to node) are determined by the co-occurrence between words either directly, in paragraphs or sentences. In terms of the visualization, this effectively does two things: 1. organizes groups of words into the communities they appear (color coded) so that with a quick glance at the network, you can pick out certain themes and 2. You can also easily see what the primary theme that links the various aspects together.
+#+END_QUOTE
+In short, Textexture tries to automatically discern and visualize relationships between words, based on their usage, within a text. Looking at the network graph of your novel, what relationships seem most interesting? Experiment with the graph by clicking through different words. 
+
+*** Repeat
+- Try the same process with another novel.
+- What have you learned? Anything?  
+
+** Javascript
+- a real language!
+- dynamic transformation
+- baby steps!!
+
+*** Text is Data
+#+BEGIN_SRC js
+var first="Matt";
+var last="Price"
+//console.log(first + last);
+#+END_SRC
+#+ATTR_REVEAL: :frag (appear)
+Do it w/ your name!
+#+BEGIN_NOTES
+- console; syntax; spaces; exercise: 
+#+END_NOTES
+*** Making Lists (Arrays)
+#+BEGIN_SRC js
+  var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
+  for (h of historians) {
+    //console.log(h);
+  }
+
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_NOTES
+
+#+END_NOTES
+*** Working with Numbers
+#+BEGIN_SRC js
+wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
+//console.log("The time between The first and Second World Wars was " + (wardates[6] - wardates[5]) + " years");
+#+END_SRC
+*** Objects and Properties
+#+BEGIN_SRC js
+  var greatWar = {
+    name: "The First World War",
+    start: 1914,
+    end: 1918,
+    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
+    goodGuys: ["All our Friends"],
+    scale: "Catastrophe"
+  }
+
+//  console.log(greatWar["name"] + " lasted for " + greatWar.end - greatWar.start + " years.");
+#+END_SRC
+*** more objects
+#+BEGIN_SRC js
+  var greatWar = {
+    name: "The First World War",
+    start: 1914,
+    end: 1918,
+    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
+    goodGuys: ["All our Friends"],
+    scale: "Catastrophe",
+    battles: [
+      { name: "The Battle of Vimy Ridge",
+        year: 1915,
+        casualties: 34000
+      }]
+  }
+
+  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " years.");
+//  console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " +
+//              greatWar.battles[0].casualties + " casualties.");
+#+END_SRC
+
+#+RESULTS:
+: The First World War lasted for 4 years.
+: The Battle of Vimy Ridge was ferocious and horrific. There were 34000 casualties.
+: undefined
+*** For loops!
+#+BEGIN_SRC js
+var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
+  for (h of historians) {
+    console.log(h + " was a historian.");
+  }
+  for (i=0; i < historians.length ; i++){
+    console.log(historians[i] + " was a historian.");
+  }
+  for (i in historians) {
+    console.log(historians[i] + " was a historian.");
+  }
+#+END_SRC
+*** Conditionals
+#+BEGIN_SRC js
+  var goodGuys = ["CA", "UK", "US"];
+  var badGuys=["DE", "AH"];
+  var people = [
+    {name: "Kaiser Wilhelm",
+     nat: "DE"}];
+  for (person of people) {
+    if (badGuys.includes(person.nat)) {
+      //console.log(person.name + ": BOOOOOOOOOOOO!!!");
+    }
+  };
+#+END_SRC
+
+#+RESULTS:
+: undefined
 
 ** Footnotes
 :PROPERTIES:
 :CUSTOM_ID: footnotes-08a9
 :END:
 
-[fn:2]Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
+Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
 
-[fn:1] From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention  (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
+From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
 
 
-* 05: Distant Reading 2                                    :noexport:
+* 05: Distant Reading 2                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-distant-reading-2
 :EXPORT_TITLE: Distant Reading II
@@ -1960,12 +2090,56 @@ http://www.themacroscope.org/wp-content/uploads/2014/12/3.4-ndp-platform.png
 :CUSTOM_ID: comment-old-visual-bf16
 :END:
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
-** Javascript
+** More Javascript
 :PROPERTIES:
 :CUSTOM_ID: javascript-30da
 :END:
-- just taking questions for a moment
-** Voyant-Tools
+** the "Repeat" function
+#+BEGIN_SRC js
+var myString="hello";
+myString.repeat(5);
+#+END_SRC
+** Check length
+#+BEGIN_SRC js
+  var myString="Hello all you students.",
+      myArray = ["Hello", "all", "you", "students", "."],
+      myObject = {greeting: "Hello",
+                  addressee: "all you students",
+                  punctuation: "."
+                 },
+     myNumber=25;
+  //console.log(myString.length);
+  //console.log(myArray.length);
+  //console.log(myObject.length);
+  //console.log(myNumber.length);
+
+
+#+END_SRC
+
+** "Operator Overloading"
+~+~, ~-~, do different things w/ different variable types
+
+** Working with the DOM
+*Document Object*
+- everything in the document can be manipulated here
+
+** Finding Elements
+- ~document.getElementById("str")~
+- ~document.getElementByTagName("str")~
+- ~document.getElementByClassName("str")~
+
+** Creating Elements
+- ~var newElement = document.createElement("str")~
+
+** Putting elements into the document
+- ~var newElement = document.createElement("str")~
+- ~var oldElement = document.getElementByID("str")~
+- ~oldElement.append(newElement)~
+** live ex
+- [[http://sandbox.hackinghistory.ca/doc-practice.html][HTML doc]]
+- [[http://sandbox.hackinghistory.ca/doc-practice.html][JS code]]
+
+** COMMENT Voyant-Tools
 :PROPERTIES:
 :CUSTOM_ID: voyant-tools-a335
 :END:
@@ -2131,7 +2305,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :CUSTOM_ID: comment-spatial-history-ea38
 :END:
 
-* 07: Why Spatial history?                                 :noexport:
+* 07: Why Spatial history?       
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-why-spatial-history
 :CUSTOM_ID: 07:-why-spatial-history?-c5b0
@@ -2141,7 +2315,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :CUSTOM_ID: recap-abcf
 :END:
 - Hermeneutics and understanding
-- What does it meant to /understand/ large numbers of texts, and what is the nature of /expertise/?
+- What does it mean to /understand/ large numbers of texts, and what is the nature of /expertise/?
 - /searching/ vs /browsing/
 - data as /evidence/, data as /inspiration/
 ** Summary
@@ -2149,7 +2323,6 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :CUSTOM_ID: summary-7391
 :END:
 - Space & Place
-- Place-Centred History: /Nature's Metropilis/
 - The Work Maps Do: lying; presenting; creating
 - Google Maps Exercise
 ** Spatial Turn
@@ -2166,7 +2339,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :END:
 - What does it mean to foreground spatial characteristics in a /spatial/ history?
 - How do maps & media /transform/ the kinds of stories we can tell
-** /Nature's Metropolis/ (1991)
+** COMMENT /Nature's Metropolis/ (1991)
 :PROPERTIES:
 :CUSTOM_ID: /nature's-metropolis/-(1991)-987d
 :END:
@@ -2361,7 +2534,7 @@ An *API* is an "Application Programming Interface": a communications channel tha
 
 You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
 
-*** Using Markdown
+*** Using Markdown (refresher)
 :PROPERTIES:
 :CUSTOM_ID: using-markdown-3d00
 :END:
@@ -2391,7 +2564,7 @@ While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=
 :PROPERTIES:
 :CUSTOM_ID: the-exercise-9a2b
 :END:
-Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
+Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
 
 *** The code
 :PROPERTIES:
@@ -2415,7 +2588,7 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 
 
 
-* COMMENT 08: Visualization                                        :noexport:
+*  08: Visualization                                        
 :PROPERTIES:
 :EXPORT_FILE_NAME: 08-visualization
 :CUSTOM_ID: comment-08:-visualization-acf2
@@ -2431,23 +2604,39 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 :PROPERTIES:
 :CUSTOM_ID: today-64a7
 :END:
-history of Visualizations
+- History of Visualizations
+- more Google Maps
 ** Playfair: Early Techniques
 :PROPERTIES:
 :CUSTOM_ID: playfair:-early-techniques-a672
 :END:
 [[http://www.jeffersonbailey.com/wp-content/uploads/2014/12/figure_2.png]]
 multivariate data; area as quantity; pie chart
+#+BEGIN_NOTES
+William Playfair (1789-1823), Scottish engineer & political scientist; brother John a major figure in Scottish enlightenment, which saw Adam Smith, James Watt, etc.; never a success in business, but interest in both tech & finance.
+#+END_NOTES
+** Playfair: Early Techniques
+https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png
 ** Charles Joseph Minard: Storytelling
 :PROPERTIES:
 :CUSTOM_ID: charles-joseph-minard:-storytelling-7995
 :END:
 [[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
+#+BEGIN_NOTES
+CJ Minard (1781-1870); civil engineer; drawn in 1869; 
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard’s achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+
+"The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
+In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
+#+END_NOTES
 ** Neurath: Isotype
 :PROPERTIES:
 :CUSTOM_ID: neurath:-isotype-3467
 :END:
 [[http://56.media.tumblr.com/92cae54746a0198abb7a769f91c6ff83/tumblr_mobrwkmIla1r06q0no1_1280.jpg]]
+#+BEGIN_NOTES
+Unified Encyclopedia of Science; Vienna Circle; the Ship
+#+END_NOTES
 ** Working with Data
 :PROPERTIES:
 :CUSTOM_ID: working-with-data-618e
@@ -2455,18 +2644,18 @@ multivariate data; area as quantity; pie chart
 [[http://www.imageatlas.org/search?q=socialism&sort=gdp&afghanistan=on&brazil=on&china=on&egypt=on&france=on&germany=on&india=on&iran=on&israel=on&newzealand=on&northkorea=on&russia=on&saudiarabia=on&southkorea=on&spain=on&sweden=on&syria=on&usa=on&ukraine=on][ImageAtlas]]
 
 [[http://research.kraeutli.com/index.php/2013/11/the-tate-collection-on-github/][Collection Analysis]]
-
-** COMMENT Spatial history
-:PROPERTIES:
-:CUSTOM_ID: comment-spatial-history-2888
-:END:
-
-
-* COMMENT 09: Deep Maps                                            :noexport:
+** Panama Papers
+- [[https://panamapapers.icij.org/graphs/][ICIJ visualizations]]
+- [[http://fusion.net/story/287382/panama-papers-data-visualization/][Fusion graph network visualization]]
+** 
+*  09: Deep Maps & Spatial Humanities                                                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-maps-online
 :CUSTOM_ID: comment-09:-deep-maps-8fd5
 :END:
+** What is Spatial Humanities?
+- GIS Methods
+- Humanities Questions
 ** The Temptations of GIS
 :PROPERTIES:
 :CUSTOM_ID: the-temptations-of-gis-a71e
@@ -2474,16 +2663,34 @@ multivariate data; area as quantity; pie chart
 - precision
 - accuracy
 - determinism
-- "thin maps":
+- "thin maps"
 #+BEGIN_QUOTE
 ...conceived, designed, created, and maintained by experts for both general and specific audiences... heavily focused on the material and physical characteristics of landscape and society.
 #+END_QUOTE 
+#+BEGIN_NOTES
+
+critics contend that GIS privileges master narratives and cat-
+egorical causation at the cost of contingent causation and
+alternative interpretations and renderings of space and par-
+ticularly place. This reductionist meta-narrative stands in con-
+trast to many parts of human geography and the humanities
+that are heavily versed in multivocality, intertextuality, and
+contingency, and where place is as equally important as
+space in the construction of human geographies. (http://www.tandfonline.com.myaccess.library.utoronto.ca/doi/pdf/10.1080/00087041.2016.1243864?needAccess=true
+#+END_NOTES
 ** Between /Maps/ and /Narrative/
 :PROPERTIES:
 :CUSTOM_ID: between-/maps/-and-/narrative/-c6d9
 :END:
 - Yes, maps are rhetorical, but
 - they lack the narrative elements that make history
+#+BEGIN_NOTES
+- to what extent, with what tools, can the "experience" of embeddedness in a place be captured?
+  - "between the objective role of scientific theorizing & the subjective role of empathetic understanding."
+  - emphasis on conceptual  mapping  rather  than  on  cartographic mapping
+ 
+maps on their own are not "stories". But on the other hand *places* are essential to stories. cf. finding that tellers of oral epics memorize their stories *place by place* -- places have strong resonances within our narratives. So, can we capture place in a more robust way? 
+#+END_NOTES
 ** Roots of Deep Mapping
 :PROPERTIES:
 :CUSTOM_ID: roots-of-deep-mapping-d17a
@@ -2493,17 +2700,19 @@ multivariate data; area as quantity; pie chart
   - attempted to "record and represent the grain and patina of a location through the justapositions and interpenetrations of the historical and tecontemporary, the factual and the fictional" (Pearson & Shank, 2001)
 - Situationists (1960's)
 #+BEGIN_QUOTE
-Geography... deals with the determinant actions of general natural forces.... Psychogeography could set for itself the study of the precise laws and specific effects of the geographical environment... on the emotions and behavior of individuals.
+Geography... deals with the determinant actions of general natural forces.... Psychogeography could set for itself the study of the precise laws and specific effects of the geographical environment... on the emotions and behavior of individuals. (Debord)
 #+END_QUOTE
 ** Building a "Spatial Story"
 :PROPERTIES:
 :CUSTOM_ID: building-a-"spatial-story"-23b5
 :END:
+
 ** Some Examples
 :PROPERTIES:
 :CUSTOM_ID: some-examples-bfb0
 :END:
-
+- [[https://storymaps.esri.com/stories/2017/japanese-internment/index.html][Japanese Internment on Storymap]]
+- [[http://bl.ocks.org/anonymous/raw/7d67c4ef3348192da613/][H.M.S. Beagle on Odyssey.js]]
 ** Data and Meaning (again)
 :PROPERTIES:
 :CUSTOM_ID: data-and-meaning-(again)-e74b
@@ -2522,24 +2731,21 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 - [[http://theclio.com/web/search?lat=37.7749295&lon=-122.41941550000001&location=san%20francisco%2C%20ca][CLIO historical maps]]
 - [[http://chartsbin.com/about/apply][ChartsBin]]
 - [[http://cartodb.github.io/odyssey.js/][Odyssey.js]]
-** Activity: A Richer Map
+** Remaining mapping questions
 :PROPERTIES:
 :CUSTOM_ID: activity:-a-richer-map-c194
 :END:
-- adding json:
-  - download json from geojson.io
-  - add as variable
-  - load with my_map.data.addGeoJson(variablename);
-
-** Activity: make-up work
+- What do you still need help with? due tonight
+** Next Assignment: Oral History. 
+- [[http://digital.hackinghistory.ca/04-oral-history/][on the website]]
+- [[https://github.com/titaniumbones/oral-history-template][On Github]]
+** Final Assignment: Project Proposal
+- [[http://digital.hackinghistory.ca/assignment-05-project-proposal/][Now On the Website]]!
+** COMMENT Activity: make-up work                                 :noexport:
 :PROPERTIES:
 :CUSTOM_ID: activity:-make-up-work-cbc7
 :END:
-** 
-:PROPERTIES:
-:CUSTOM_ID: -1233
-:END:
-* COMMENT 10: What's Special about Oral History ("Engaged" History) :noexport:
+* 10: What's Special about Oral History ("Engaged" History) 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
 :CUSTOM_ID: comment-10:-what's-special-about-oral-history-("engaged"-history)-b57f
@@ -2761,12 +2967,19 @@ lot of this is about building a relationship
 :EXPORT_FILE_NAME: 11-oral-history
 :CUSTOM_ID: 11:-oral-history-&-remix-culture-3cc1
 :END:
-- what?
+
 * 12: Citizen History                                      :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 12-citizen-history
 :CUSTOM_ID: 12:-citizen-history-815e
 :END:
+
+** 
+** What we've learned
+** What you might do
+** 
+
+
 ** Changing Landscape of Profession and Expertise
 :PROPERTIES:
 :CUSTOM_ID: changing-landscape-of-profession-and-expertise-4204
@@ -2842,14 +3055,3 @@ local variables need to be set at the end of the file.
 
 # /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
 # /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
-paired#+ATTR_HTML: :class paired
-#+ATTR_HTML:
-
-#+ATTR_HTML: :class paired
-#+BEGIN_SRC emacs-lisp
-
-#+END_SRC
-
-#+begin_src html
-
-#+end_src

@@ -1,17 +1,16 @@
+#+POSTID: 620
+#+DATE: [2017-01-27 Fri 09:44]
 #+BLOG: dig
-#+POSTID: 197
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
 #+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil
 #+OPTIONS: f:t inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t
 #+OPTIONS: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+TITLE: Distant Reading Exercise: Building a Wordle
-#+DATE: <2015-07-09 Thu>
 #+AUTHOR: Matt Price
 #+EMAIL: matt@osskil
 #+LANGUAGE: en
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
-#+CREATOR: Emacs 25.0.50.1 (Org mode 8.3beta)
 
 * Choose a work to not read.
 - navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
@@ -28,6 +27,9 @@
   - then for several chapters or sections
   - what patterns do you see? 
 * Make a network
+:PROPERTIES:
+:ID:       aefd9474-d1ed-40ae-9190-034aac825a3e
+:END:
 - copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
 
 #+BEGIN_QUOTE

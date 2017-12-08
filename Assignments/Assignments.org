@@ -4,22 +4,31 @@
 #+TITLE: Assignments
 #+PROPERTY: PARENT 171
 #+Parent: 171
+#+HUGO_BASE_DIR: ./hugo-site/
+#+HUGO_SECTION: assignment
+
 Further assignments will be posted as they are finalized. 
+* COMMENT Ideas <2017-04-04 Tue>                                   :noexport:
+- make assignments 2,3,4 into a single website. Students can customize as they move along, and
+- if they want it can be hosted on shimano for up to say 2 years.
+- need to figure out access, etc. Optionally they can als ohost on gh-pages but I think maybe not if they need to load or execute js
+- 
 
 * List                                                                :TOC_1:
- - [[#comment-participation][COMMENT Participation]]
- - [[#assignments-01-and-02-html--css-self-study--javascript-intro][Assignments 01 and 02: HTML & CSS self-study + Javascript Intro]]
- - [[#comment-assignment-02-distant-history][COMMENT Assignment 02: Distant History]]
- - [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
- - [[#assignment-04-oral-history][Assignment 04: Oral History]]
- - [[#comment-assignment-05-project-proposal][COMMENT Assignment 05: Project Proposal]]
- - [[#comment-assignment-06-short-answer][COMMENT Assignment 06: Short Answer]]
+:PROPERTIES:
+:EXPORT_FILE_NAME: list
+:END:
+- [[#assignments-01-and-02-html--css-self-study--javascript-intro][Assignments 01 and 02: HTML & CSS self-study + Javascript Intro]]
+- [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
+- [[#assignment-04-oral-history][Assignment 04: Oral History]]
+- [[#assignment-05-project-proposal][Assignment 05: Project Proposal]]
 
 * COMMENT Participation
 :PROPERTIES:
 :POSTID:   174
 :ID:       
 :POST_DATE: [2015-12-11 Fri 11:16]
+:EXPORT_FILE_NAME: comment-participation
 :END:
 As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.  
 
@@ -93,6 +102,7 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 :POSTID:   177
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
 :POST_DATE: [2015-12-11 Fri 11:16]
+:EXPORT_FILE_NAME: assignments-01-and-02-html-&-css-self-study-+-javascript-intro
 :END:
 
 *Part I Due Date: Jan. 27*
@@ -111,13 +121,13 @@ Already a web hotshot? If you feel like you already know everything you need to 
 
 You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
-
 * COMMENT Assignment 02: Distant History
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
 :POSTID:   209
 :PARENT: Assignments
 :POST_DATE: [2015-12-14 Mon 14:03]
+:EXPORT_FILE_NAME: comment-assignment-02-distant-history
 :END:
 
 
@@ -205,7 +215,7 @@ I've uploaded a few corpora to my local server, e.g.:
 - 
 * Assignment 03: Spatial History
 :PROPERTIES:
-:EXPORT_FILE_NAME: 03-spatial-history
+:EXPORT_FILE_NAME: assignment-03-spatial-history
 :ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
 :PARENT:   Assignments
 :POSTID:   315
@@ -267,45 +277,24 @@ A "B" paper will make a convincing, interesting argument, using the map as an im
 :ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
 :POSTID:   330
 :POST_DATE: [2017-01-04 Wed 22:04]
+:EXPORT_FILE_NAME: assignment-04-oral-history
 :END:
 
- *Due Date: April 7*
+ *Due Date: March 24*
 
-In the final segment of our class, we discuss the use of non-textual media in history, especially /oral histories/. This final, short project asks you to take an existing piece of oral history and build a small web page around it. We will use a very similar set of templates to those we used last assignment; but instead of dealing with Google Maps, we'll use the [[http://popcornjs.org/][Popcorn]] events framework for creating a simple multi-media history essay out of HTML.  As with our last assignment, this is a little bit like using [[https://www.youtube.com/watch?v=Q8gGsuWouDE][hand-carved wooden Emoji]]: obviously there are much more sophisticated ways to interact with video on the web; our aim is to use this simple tool as a way to think about several issues: 
-- How do aural and visual media change the nature of historical narrative?
-- What are the challenges of building an historical narrative around an oral history, especially one that you did not conduct yourself?
-- How does technical infrastructure (like [[http://popcornjs.org/][Popcorn]] and [[http://sheets.google.com][Google Sheets]]) change the nature of historical narrative?
-** Assignment
-- Choose a short, online oral history audio clip (approximately 3 minutes in length). I recommend [[http://storycorps.org/][StoryCorps]] as a source, though there are many oral history archives online that are equally suitable.
-- Listen to it carefully. What historical themes are suggested by it? What kinds of annotations might heighten the impact at crucial moments, or fill in background information at other times?
-- Create a short "video" to accompany the audio clip; use a variety of Popcorn plugins to accomplish this. In general, for 180 seconds you will likely need at least 15 events for the the video to feel approximately "full".
-- Write a short essay, approximately 800 words in length, addressing any of the historical issues raised by the audio clip.  Refer specifically to quotations from the clip.  You may want to provide [[https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video#Specifying_playback_range][links to specific timecodes]] form the audio, though integrating that with Popcorn playback is unfortunately a little tricky.  As in your last assignment, use simple links for citations, though you should provide page numbers wherever possible).
-** Learning Objectives
-- Grapple with the particular ethical and methodological complexities of oral history
-- Gain experience integrating text and media
-- think about the relation between textual narrative and audio-visual display of information. 
-** Expectations
-Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and clip should not be artificial -- the essay should clarify or enlarge the historical circumstances that are brought to life by the clip.  
+Rather than repeat myself in my usual error-prone way, I will simply direct you to the [[https://github.com/titaniumbones/oral-history-template][assignment repository on Github]]. We will discuss this at great er length in class in the final weeks of the semester. 
 
-Your popcorn events should be keyed to the rhythms of the clip itself, appearing and disappearing along with the themes that they refer to or address.  They should enhance the impact of the clip rather than distract from it, and provide additional historical background that might not be found in the essay or the clip.
-
-If you change the styling, you should not create a terrible mess! Certainly I think the page could be prettier and I welcome your improvements.  
-** Technical Help
-As usual, I am pretty much available to answer your questions.  I also urge you to read [[http://digital.hackinghistory.ca/2015/07/28/understanding-popcorn/][this post]], which has a fair amount of technical detail and also gives links to further documentation.  [[http://popcornjs.org/popcorn-docs/plugins/][Documentation of the popcorn event plugins is also available online]].
-
-* COMMENT Assignment 05: Project Proposal
+* Assignment 05: Project Proposal
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
-:POST_DATE: [2015-07-28 Tue 17:16]
-:POSTID:   337
+:POST_DATE: [2017-03-10 Fri 13:12]
+:POSTID:   629
+:EXPORT_FILE_NAME: assignment-05-project-proposal
 :END:
-*Due Date: April 12*
-*Note to self: convert to a "real" call for proposals!!!*
+*Due Date: April 05*
 
-This is a substantial project required only for those students seeking a grade of "A" in the class.  There will not be time for rewrites, so you may have only one shot at this. Unless you have a substantial interest in the course material, and have an idea for a project that you may, someday, be interested in actually pursuing, I don't recommend that you attempt this assignment. Don't start this assignment unless you have already received a passing mark in all of the other term work; you can't get an A in the course, or even a B, without those prerequisites. 
-
------ 
+For your final assignment, respond to the following /call for proposals/ with an application approximately 2000 words in length, plus a provisional budget i n the form of a spreadsheet. See below for details.
 
 **  Call for Proposals: Digital History Initiative Grants
 
@@ -314,7 +303,7 @@ The Hacking History Foundation is pleased to announce a new /Digital History Ini
 - Small Team Grant :: This grant funds up to $50,000 of work by a small team, in a period of 1-3 years.
 - Large Grant :: This fund, which has no fixed upper limit of funding, funds long-term projects over a period of 3-5 years.
 
-We invite applications for all three categories, to be submitted by <2016-04-15 Fri>. Be sure to identify the category of grant you are applying for. Regardless of the project's scale, the proposal should be:
+We invite applications for all three categories, to be submitted by <2017-04-05 Fri>. Be sure to identify the category of grant you are applying for. Regardless of the project's scale, the proposal should be:
 - of genuine historical interest
 - technically feasible
 - appropriate to the DH methods that might be discussed e.g. in a course such as "Digital History" at the University of Toronto
@@ -347,3 +336,11 @@ Good luck! I look forward to the results.
 *Due Date: April 12*
 
 Students who have not completed the "B" level requirements will be given 24 hours to respond to a series of short answer questions; think of it as something like an open-book exam. More details will be available closer to the date.  
+
+
+(let ((export-file (org-entry-get (point) "EXPORT_FILE_NAME")))
+               (unless export-file
+                 (org-set-property
+                  "EXPORT_FILE_NAME"
+                  (replace-regexp-in-string " " "_" (nth 4 (org-heading-components)))))
+               )
