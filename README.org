@@ -1,4 +1,4 @@
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/][[[https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png]]]]
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/][https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png]]
 
 * Digital History at University of Toronto
 This repository collects most of my course materials for /Digital History/ a semester-long 3rd-year seminar I teach in the History Department at University of Toronto.  The repository contains most of my notes and assignments, as well as the syllabus and some auxiliary materials.
