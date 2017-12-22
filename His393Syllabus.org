@@ -3,7 +3,8 @@
 # # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
-#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+# #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
 #+TITLE: Syllabus
 #+SUBTITLE: HIS393: Digital History, Winter 2018
@@ -36,7 +37,7 @@
 | *Instructor:*   | Matt Price                            |
 | *Email:*        | matt.price@utoronto.ca                |
 | *Office Hrs:*   | SS 3077 T 1-2:30                      |
-| *Meeting Times* | F 3-5                                 |
+| *Meeting Times* | Thurs 2-4                             |
 | *Web:*          | http://digital.hackinghistory.ca/     |
 | *Slack:*        | https://digitalhistoryuoft.slack.com/ |
 
