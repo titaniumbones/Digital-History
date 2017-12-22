@@ -30,7 +30,7 @@ I run [[https://archlinux.org][Arch Linux]] on my laptop, and have experience wi
 Here's the table of tools from the syllabus:
 | Tool                   | On Mac                       | On Windows                                     | On Linux                           |
 |------------------------+------------------------------+------------------------------------------------+------------------------------------|
-| Real Webbrowser        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
+| Real Web Browser       | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
 | Text Editor            | [[https://atom.io/][Atom]]                         | [[https://atom.io/][Atom]]                                           | [[https://atom.io/][Atom]]                               |
 | Bash Shell Environment | Terminal (Built in)          | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
 | Git Version Control    | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]                  | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
@@ -47,7 +47,7 @@ Both have highly sophisticated *developer tools* with which you should familiari
 
 Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
 
-The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below. 
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below). 
 
 The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove *essential* for figuring out why your code isn't working right!
 ** Text Editor
@@ -73,7 +73,7 @@ In Windows, bash comes with the Git installation -- follow the instructions belo
 :ID:       o2b:bc40c086-76d9-4027-9fb3-ee6748e031bc
 :POST_DATE: [2017-01-06 Fri 11:27]
 :END:
-Software development is made *vastly* by "[[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]]" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [[https://git-scm.com/][git]], and we're all grateful for it.  
+Software development is made *vastly* easier by "[[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]]" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [[https://git-scm.com/][git]], and we're all grateful for it.  
 
 *** Install Git
 To install git, follow the [[https://git-scm.com/downloads][download links]] on the website (see the table above for OS-specific links and instructions. We'll come back to the Git command-line in a minute.  
@@ -99,9 +99,9 @@ Sometimes it's nice to have a backp. [[https://www.gitkraken.com/][GitKraken]] i
 *** Learn more
 There is a somewhat more wordy [[http://digital.hackinghistory.ca/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
 ** Node and NPM
-Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM let us access some of that power while we work.  
+Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.  
 
-You can survive this class  without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.  
+You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.  
 
 - In Mac and Linux, the instructions linked to in the table above are probably good enough.
 - In Windows, you may follow all the instructions and then find yourself getting an error ("~Command not found~"). If that happens, you may want to try [[http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/][the instructions laid out here]], or if you're on Windows 10, [[https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae][you could go crazy and install the amazing Windows Subsystem for Linux]], which allows you to work as if your computer had a real Unix operating system like everyone else.  

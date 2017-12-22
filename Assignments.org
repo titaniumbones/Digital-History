@@ -100,7 +100,7 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
 :END:
-One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to set up your working environment [[./../../tools/setup]] and then use Git, much as we did in class, but this time manipulating the command line.  
+One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [[./../../tools/setup][set up your working environment]] and then use Git, much as we did in class, but this time manipulating the command line.  
 
 This may take longer than you think, and it's due soon. Please get started soon by following the instructions on [[https://github.com/DigitalHistory/assignment-00-git-and-github][the Assignment 0 website]]. 
 
