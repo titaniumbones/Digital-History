@@ -1,6 +1,6 @@
 #+POSTID: 558
 #+DATE: [2017-01-04 Wed 21:55]
-#+OPTIONS: toc:t
+#+OPTIONS: toc:nil
 #+TITLE: Assignments
 #+PROPERTY: PARENT 171
 #+Parent: 171
@@ -43,7 +43,7 @@ As described in the syllabus, I use your participation mark to determine the "-/
 
 ** The System
 
-It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading, Spatial History, and Aural History assignments. Congratulations! You have qualified for a B. But what kind of a B?
+It's simple.  Suppose you successfully complete the Git & Github, HTML & CSS, Javascript, Spatial History, and Oral History assignments. Congratulations! You have qualified for a B. But what kind of a B?
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------+------------+--------------------------|
@@ -51,17 +51,17 @@ It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading
 | Satisfactory                     | B          |                       75 |
 | Excellent                        | B+         |                       78 |
 
-Similarly, perhaps you were only able to complete the HTML Top-Up and the Distant Reading assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
+Similarly, perhaps you were only able to complete the Git & Github, HTML & CSS, Javascript and Oral History. Oops! You're going to get a C.  Like your somewhat happier classmate, your final grade will be assigned thus:
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------+------------+--------------------------|
-| Poor                             | D-         |                       52 |
-| Satisfactory                     | D          |                       55 |
-| Excellent                        | D+         |                       58 |
+| Poor                             | C-         |                       52 |
+| Satisfactory                     | C          |                       55 |
+| Excellent                        | C+         |                       58 |
 
 *But Note!*
 
-A+ is a special grade.  Suppose you complete all the assignments satisfactorily.  Wow! You get an A, great.  But...  do you get an A+?
+A+ is a special grade.  Suppose you complete all the assignments satisfactorily, *including the additional "A only" sections of the relevant assignments*.  Wow! You get an A, great.  But...  do you get an A+?
 
 | If your class participation was: | You get an: | Which ROSI will show as: |
 |----------------------------------+-------------+--------------------------|
@@ -71,12 +71,10 @@ A+ is a special grade.  Suppose you complete all the assignments satisfactorily.
 
 Even if your participation was excellent, you will only receive an A+ if your work was consistently excellent and occasionally brilliant.  So, if you successfully complete all the assignments (great!), and also are a great class participant (thanks!), then I'll look over all your work and make a value judgment about whether you deserve this rare and precious grade.
 
-** The Criteria
-This is a class about digital history, so it would be *crazy* not to have an online presence.  The course website is:
+*Final Note for 2018* -- this year, there isn't really a "D" grade. To pass the course you basically have to get a C. In rare cases I will consider lowering the grading criteria for the "Oral History" assignment to permit a student to scrape through the course.  
 
-http://digital.hackinghistory.ca/
-
-I'll post just about everything related to the class there, except for marks, which I'll do on Blackboard or by personal communication.  Your participation mark is a combination of /in-class/ and /online/ participation.  
+** Participation Criteria
+Your participation mark is a combination of /in-class/ and /online/ participation.  
 
 *** In the Classroom
 But what makes for good class participation?  You might want to start by reading [[http://wcm1.web.rice.edu/howtodiscuss.html][How to discuss a book for history]], which has lots of helpful suggestions. Really, please read it -- it's illuminating. But, meanwhile, here are some hints:
@@ -100,6 +98,7 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
 :END:
+** General Description
 One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [[./../../tools/setup][set up your working environment]] and then use Git, much as we did in class, but this time manipulating the command line.  
 
 This may take longer than you think, and it's due soon. Please get started soon by following the instructions on [[https://github.com/DigitalHistory/assignment-00-git-and-github][the Assignment 0 website]]. 
@@ -112,7 +111,7 @@ This may take longer than you think, and it's due soon. Please get started soon 
 :END:
 
 *Due Date: Jan. 26*
-
+** General Description
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this second assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
