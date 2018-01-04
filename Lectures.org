@@ -195,23 +195,42 @@ At the end of this course, you should:
 - be able to make compelling use of media materials such as audio, video, and animation in historical arguments
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
-*** Assignments
+*** COMMENT Assignments (full)
+| Assignment          | Due Date  | Brief Description                 | A | B | C | D |
+|---------------------+-----------+-----------------------------------+---+---+---+---|
+| Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
+| G & GH Extras       |           |                                   | \check |   |   |   |
+| HTML & CSS          | <2018-01-26 Fri> | web markup and presentaiton       | \check | \check | \check | \check |
+| H & C Extras        |           |                                   | \check |   |   |   |
+| Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
+| JS Extras           |           |                                   | \check  |   |   |   |
+| Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
+| Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
+| Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
+| Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
+|---------------------+-----------+-----------------------------------+---+---+---+---|
+
+*** Assignments 
 :PROPERTIES:
 :CUSTOM_ID: assignments-d1fd
 :END:
-| Assignment            | Brief Description                                 | Due Date           | Percentage |
-|-----------------------+---------------------------------------------------+--------------------+------------|
-| HTML & CSS self-study | Pass/Fail: self-guided learning on codacademy.com | *<2017-01-20 Fri>* |         10 |
-| Javascript for DH     | Pass/Fail: problem set                            | *<2017-02-03 Fri>* |         15 |
-| Spatial History       | Simple GIS Web project                            | *<2017-03-03 Fri>* |         20 |
-| Oral History          | Multimedia Web Project                            | *<2017-03-24 Fri>* |         25 |
-| Project Proposal      | Imagine a Digital History Project                 | *<2017-04-05 Wed>* |         30 |
+| Assignment          | Due Date  | Brief Description                 | A | B | C | D |
+|---------------------+-----------+-----------------------------------+---+---+---+---|
+| Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
+| HTML & CSS          | <2018-01-26 Fri> | web markup and presentation       | \check | \check | \check | \check |
+| Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
+| Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
+| Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
+| Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
+| Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
+|---------------------+-----------+-----------------------------------+---+---+---+---|
 
-*** First Assignment!
+
+*** Assignments 0 and 1!
 :PROPERTIES:
 :CUSTOM_ID: first-assignment!-26f7
 :END:
-You can find our first assignment [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  Part 1 is due in 2 weeks, but you have two additional weeks for the actually hard part.  
+You can find our first two assignments  [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  Part 1 is due in 2 weeks, but you have two additional weeks for the actually hard part.  
 ** Intros 1
 :PROPERTIES:
 :CUSTOM_ID: intros-1-7ff4
@@ -229,6 +248,17 @@ You can find our first assignment [[https://github.com/titaniumbones/assignment-
 - find a *different* stranger
 - spend no more than 8 minutes *imagining* a DH project
 - present to another pair 
+
+** Announcement! 
+*U of T Coders Software Carpentry Workshop!*
+
+[[https://uoftcoders.github.io/studyGroup/#events][January 18-19, Gerstein Library!]]
+
+** Git!
+- "Track Changes" on steroids
+- "version Control" software optimized for collaboration
+
+
 ** Github!
 :PROPERTIES:
 :CUSTOM_ID: github!-7877
@@ -3048,10 +3078,12 @@ lot of this is about building a relationship
 :PROPERTIES:
 :CUSTOM_ID: comment-variables-84fe
 :END:
+
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
+
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # End:  
 
-# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
-# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
