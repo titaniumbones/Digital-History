@@ -104,7 +104,7 @@ As noted above, most communication should take place *via Slack*.  In the case o
 ** Attendance
 Make every effort to attend each class meeting (including lab sections)! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings, with exceptions permitted in case of illness and family emergencies.
 
-Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let us know outside of class).
+Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
 * Tools
 
@@ -148,20 +148,20 @@ Here are some more details:
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
-| Assignment          | Due Date  | Brief Description                 | A | B | C | D |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
-| Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
-| G & GH Extras       |           |                                   | \check |   |   |   |
-| HTML & CSS          | <2018-01-26 Fri> | web markup and presentation       | \check | \check | \check | \check |
-| H & C Extras        |           |                                   | \check |   |   |   |
-| Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
-| JS Extras           |           |                                   | \check  |   |   |   |
-| Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
-| Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
-| Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
-| Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
-|                     |           |                                   |   |   |   |   |
+| Assignment          | Due Date | Brief Description                 | A | B | C | D |
+|---------------------+----------+-----------------------------------+---+---+---+---|
+| Git & Github        | <2018-01-15 Mon>  | version control and collaboration | \check | \check | \check | \check |
+| G & GH Extras       |          |                                   | \check |   |   |   |
+| HTML & CSS          | <2018-01-26 Fri>  | web markup and presentation       | \check | \check | \check | \check |
+| H & C Extras        |          |                                   | \check |   |   |   |
+| Javascript for DH   | <2018-02-02 Fri>  | intro to programming              | \check | \check | \check | \check |
+| JS Extras           |          |                                   | \check |   |   |   |
+| Data-Driven History | <2018-02-16 Fri>  | CANCELLED                         | x | x | x | x |
+| Spatial History     | <2018-03-02 Fri>  | Simple GIS Web project            | \check | \check |   |   |
+| Oral History        | <2018-03-16 Fri>  | Multimedia Web Project            | \check | \check | \check | \check |
+| Project Proposal    | <2018-03-23 Fri>  | Imagine a Digital History Project | \check |   |   |   |
+|---------------------+----------+-----------------------------------+---+---+---+---|
+|                     |          |                                   |   |   |   |   |
 * Texts
 :PROPERTIES:
 :ID:       o2b:76732ff1-cf85-4467-ab94-c53fcd9d1519
@@ -185,7 +185,7 @@ The following texts are required and available at the Bookstore, or via various 
 :ID:       o2b:549d46ae-f46c-4b15-a025-c6cfd44073af
 :POST_DATE: [2017-01-06 Fri 12:53]
 :END:
-*** Introducing /Digital History/ <2018-01-04 Thu>
+*** Introducing /Digital History/ (<2018-01-04 Thu>)
 :PROPERTIES:
 :ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
 :END:
@@ -199,7 +199,7 @@ The following texts are required and available at the Bookstore, or via various 
 
 *In-Class Activity: Collaboration on Github, Markdown* 
 
-*** What the Web Signifies {{{ts}}}
+*** What the Web Signifies ({{{ts}}})
 We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
 
 *Readings:*
@@ -208,7 +208,7 @@ We all live with the web, but that doesn't mean we think much about /how it work
 
 *In-Class Activity: HTML + CSS*
  
-*** Abundance and Openness {{{ts}}} 
+*** Abundance and Openness ({{{ts}}}) 
 One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
 - W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
@@ -220,7 +220,7 @@ One of the key features of the web is its /immenseness/. We will discuss how thi
 *In-Class Activity: More HTML + CSS*
 
 ** Data Driven History
-*** Distant Reading 1 {{{ts}}}
+*** Distant Reading 1 ({{{ts}}})
 Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 *Readings:* 
@@ -228,7 +228,7 @@ Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-drive
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
 *In-Class Activity: Javascript variables & functions*
 
-*** Distant Reading 2: Are Texts Data? {{{ts}}}
+*** Distant Reading 2: Are Texts Data? ({{{ts}}})
 More Moretti, and some criticisms
 
 *Readings:* 
@@ -237,7 +237,7 @@ More Moretti, and some criticisms
 - Gibbs, Fred. “Hermeneutics of Data and Historical Writing” Writing History in the Digital Age, March 14, 2012. http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/.
 - Marc Dunkelman. “[[http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/][What Data Can't Convey]].” Blog. /The Chronicle of Higher Education/, 19 2014.
 *In-Class Activity: Javascript objects and DOM manipulation*
-*** COMMENT Text as Data, History as Algorithm {{{ts}}}
+*** COMMENT Text as Data, History as Algorithm ({{{ts}}})
 *Note:* we may need to push this up
 We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
 
@@ -247,7 +247,7 @@ We'll explore "topic modelling" -- one of the most popular DH methods -- as well
 *In-Class Activity: Javasciript questions /Tidy Data*
 
 ** Maps, Visualization, and History
-*** Spatial History {{{ts}}}
+*** Spatial History ({{{ts}}})
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
@@ -260,11 +260,11 @@ http://journals2.scholarsportal.info/browse/03177173/v50i0001
 http://journals2.scholarsportal.info/browse/03177173/v26i0002
 http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
 http://slab.scripts.mit.edu/wp/links/critical-cartography/
-*** ??? {{{ts}}}
+*** ??? ({{{ts}}})
 *Note: In all likelihood, there will be no class this week due to a scheduling conflict.*
-*** NO CLASS {{{ts}}}: READING WEEK
+*** NO CLASS ({{{ts}}}): READING WEEK
 
-*** Visualization {{{ts}}}
+*** Visualization ({{{ts}}})
 Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
 
 *Readings:* 
@@ -273,7 +273,7 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 - Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 *In-Class Activity: Reading visualizations*
 
-*** Maps Online {{{ts}}}
+*** Maps Online ({{{ts}}})
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
 
 *Readings:* 
@@ -283,7 +283,7 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 *In-Class Activity: GIS*
 
 ** Oral History, Crowdsourcing, and the Promise of the Public Sphere
-*** What's Special about Oral History {{{ts}}}
+*** What's Special about Oral History ({{{ts}}})
 Oral History has a long tradition; we explore its roots and peculiarities, and 
 
 *Readings:*
@@ -292,12 +292,12 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 
 *In-Class Activity: Popcorn.js* 
 
-*** Interlude: Project Planning & Citizen History  {{{ts}}}
+*** Interlude: Project Planning & Citizen History  ({{{ts}}})
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
 # /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
-*** Oral History & Remix Culture {{{ts}}}
+*** Oral History & Remix Culture ({{{ts}}})
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
 
 If we're ahead of schedule, we'll watch /Harlan County USA/ in class.  
