@@ -1,3 +1,22 @@
+#+HUGO_BASE_DIR: ./dh-website/
+#+HUGO_SECTION: slides/
+#+HUGO_STATIC_IMAGES: images/
+#+HUGO_MENU: :menu main :weight 10
+#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
+#+MACRO: ts (eval (get-ts+7))
+#+OPTIONS: todo:nil
+
+* attendance
+
+- Giselle, diaspora and transnational studies; minors in religion and equity studies:
+- Selena: English & Religion major;
+- Geneva:
+- Nicole: 3rd year religion+; history/religion -; indigenous studies; canoe; took an environment course; in Canadian History, studied differences in canoe cultures across 
+- Michelle; in 4th year in EECS;
+- Chae(dra): linguistics & environmental studies; first year;
+- Preye: Religion major;
+- 
+
 * COMMENT Fixing presentations                                     :noexport:
 :PROPERTIES:
 :CUSTOM_ID: comment-fixing-presentations-7828
@@ -105,9 +124,44 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 - web skills top-up assignment
 - blog/participation assignment
 
+
+* COMMENT Participation
+
+** <2018-01-04 Thu>
+- Dany, 4th year minor in history, major in equity studies -- video games
+- Victoria, 2nd year in art history & history, pop music
+- Julia, 3rd yr history major, online coding skills, interested in oral history
+- Ivaatz, post-matric, teacher, Ialian
+- Kiera, 4th yr, history, interested in kig stuff cause it's important
+- Tagwin? , history specialist,
+- Anna, 4th yr , doesnt know anything about the Internet, went to Arctic over break
+- Alix, 3rd yr history major, doing some web design, from BC
+- Serena, in her 4th yr, poli sci & history, plays soccer
+- Andrea, equity & istory 3rd yr, can't play soccer, has done some programming
+- Adam, 3rd yr, history psecialist, computers are cool -- likes cars
+- Anthony, 4th year, English & History, he likes hockety
+- Kathy, post matric, oin data visualization
+- Justin 3rd yr, double major in jhistory & classics
+- Yani, 3rd yr, breadth requirement, U of T Camp
+- John, CS major, what's he doing here????
+- Capacin, History & Poli Sci, teaches pottery
+- Sam, 3rd yr His & Pli Sci, background in hardware
+- Dyoan, 4th yr Poli Sci, phil, history;
+- Lany & Jenny, both CS 4th yrs, both interested in video games & anime
+- Mahdi, interested in coding
+- Alyssia, 3rd yr history major, very tired from break
+- Natalia, 4th yr English & History,
+- Briana? -- His major,
+- Zoar, history major, interested in CS, RA for Elspeth LGBQT project
+- Samantha, 3rd yr His major, wants to teach hsitory, namred after dad's cat
+- Amelia, I know her already!
+- Cia, 3rd yr his specialist,
+- Rachel, His minor, took digital text, wants to be a journalist
+- 
+
 * 01: Introducing /Digital History/
 :PROPERTIES:
-:ID:       o2b:196a261a-f575-44bc-8cc8-e38fd73aaf26
+:ID:       oH2b:196a261a-f575-44bc-8cc8-e38fd73aaf26
 :POSTID:   451
 :BLOG:     dig
 :EXPORT_FILE_NAME: 01-intro-digital-history
@@ -196,26 +250,26 @@ At the end of this course, you should:
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 *** COMMENT Assignments (full)
-| Assignment          | Due Date  | Brief Description                 | A | B | C | D |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
+| Assignment          | Due Date         | Brief Description                 | A | B | C | D |
+|---------------------+------------------+-----------------------------------+---+---+---+---|
 | Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
-| G & GH Extras       |           |                                   | \check |   |   |   |
+| G & GH Extras       |                  |                                   | \check |   |   |   |
 | HTML & CSS          | <2018-01-26 Fri> | web markup and presentaiton       | \check | \check | \check | \check |
-| H & C Extras        |           |                                   | \check |   |   |   |
+| H & C Extras        |                  |                                   | \check |   |   |   |
 | Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
-| JS Extras           |           |                                   | \check  |   |   |   |
+| JS Extras           |                  |                                   | \check |   |   |   |
 | Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
 | Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
 | Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
 | Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
+|---------------------+------------------+-----------------------------------+---+---+---+---|
 
 *** Assignments 
 :PROPERTIES:
 :CUSTOM_ID: assignments-d1fd
 :END:
-| Assignment          | Due Date  | Brief Description                 | A | B | C | D |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
+| Assignment          | Due Date         | Brief Description                 | A | B | C | D |
+|---------------------+------------------+-----------------------------------+---+---+---+---|
 | Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
 | HTML & CSS          | <2018-01-26 Fri> | web markup and presentation       | \check | \check | \check | \check |
 | Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
@@ -223,14 +277,20 @@ At the end of this course, you should:
 | Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
 | Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
 | Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+-----------+-----------------------------------+---+---+---+---|
+|---------------------+------------------+-----------------------------------+---+---+---+---|
 
+
+*** Participation
+- come every time!
+- pay attention and ask questions!
+- no email/youtube/reddit/facebook etc etc etc etc
+- participate in Slack!
 
 *** Assignments 0 and 1!
 :PROPERTIES:
 :CUSTOM_ID: first-assignment!-26f7
 :END:
-You can find our first two assignments  [[https://github.com/titaniumbones/assignment-web-skills-intro][on the web]].  Part 1 is due in 2 weeks, but you have two additional weeks for the actually hard part.  
+You can find our first two assignments on the web [[https://github.com/DigitalHistory/assignment-00-git-and-github][here]] and [[https://github.com/DigitalHistory/assignment-01-html-css][here]].  Assignment 0 is due in a week and a half!
 ** Intros 1
 :PROPERTIES:
 :CUSTOM_ID: intros-1-7ff4
@@ -297,8 +357,6 @@ Take out your Laptop!
 - Graham
 - Emily
 - Melissa
-
-
 * 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
@@ -397,8 +455,9 @@ To reiterate some of the excellent points made here: The new media are profoundl
 :CUSTOM_ID: review-1448
 :END:
 - 4 blocks
-- [[https://github.com/titaniumbones/assignment-web-skills-intro][Assignment is online]]
-- Intro to Github
+- [[https://github.com/DigitalHistory/assignment-00-git-and-github][Assignment 0 is online]]
+- If you haven't started Assignment 1, hold on for now
+- Explaining Git
 ** Today
 :PROPERTIES:
 :CUSTOM_ID: today-abcd
@@ -406,6 +465,7 @@ To reiterate some of the excellent points made here: The new media are profoundl
 - Concept of the "Public Sphere"
 - Internet and Habermas's conception
 - Discussion
+- more Git
 - Brief HTML explication
 - HTML Exercise
 #+BEGIN_NOTES
@@ -513,7 +573,7 @@ By "the public sphere" we mean... a realm of our social life in which something 
 Unpacking:
 - *"something approaching public opinion":* suggests that "public opinion" has a technical meaning
 - *Conferring in an unrestricted fashion*: the public sphere *requires* a certain kind of freedom
-- *Matters of general interest*: we're not talking about breakfast, jeans, or libstick.  
+- *Matters of general interest*: we're not talking about breakfast, jeans, or lipstick.  
 #+END_NOTES
 
 ** Public and Private
@@ -557,7 +617,7 @@ Unpacking:
 - flourishes and then withers in 19th
 - at a nadir in 20th; can it be revived?
 #+BEGIN_NOTES
-Habermas's /Habilitation/ and first important book.  but 55 years old!!
+Habermas's /Habilitation/ and first important book.  but 35 years old!!
 #+END_NOTES
 ** Before Bourgeois Society
 :PROPERTIES:
@@ -642,7 +702,7 @@ one of the longstanding critiques of Habermas is the /actual/ restrictiveness of
 - Therefore it loses its exclusivity
 - so, in the beginning, /commodification is a *good thing*/
 #+BEGIN_NOTES
-This process of ccommodification, and its trasformation from a *positive, welcome* fore in to a *troubling, destructive* one is central to H but is not just his idea.
+This process of commodification, and its trasformation from a *positive, welcome* force in to a *troubling, destructive* one is central to H but is not just his idea.
 #+END_NOTES
 ** The State vs. Society
 :PROPERTIES:
@@ -760,9 +820,7 @@ This process of ccommodification, and its trasformation from a *positive, welcom
 - algorithmic sorting
 #+BEGIN_NOTES
 All of these are present in *every* web-based communication.  But realms of the web have distinct affordances of their own: [[http://www.reddit.com][Reddit]] \ne [[http://twitter.com][twitter]] \ne [[http://www.facebook.com][facebook]] \ne [[http://nytimes.com][The New York Times]]
-
 #+END_NOTES
-
 *** Group Work
 :PROPERTIES:
 :CUSTOM_ID: exercise-81e3
@@ -834,7 +892,8 @@ On the web, text is "Marked up"
 #+END_SRC
 tags:
 - tag identifier
-- 
+- attributes
+- content
 *** A Few HTML tags you should know
 :PROPERTIES:
 :CUSTOM_ID: a-few-html-tags-you-should-know-4481
@@ -886,7 +945,7 @@ Writing in HTML is distracting and time-consuming!
 
 Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
 
-* 03: Abundance & Openness              
+* COMMENT 03: Abundance & Openness              
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-abundance-and-opennness
 :EXPORT_TITLE: Abundance and Openness
@@ -1612,7 +1671,7 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
-* 04: Distant Reading 1                                    
+* COMMENT 04: Distant Reading 1                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
 :EXPORT_TITLE: Distant Reading I
@@ -2018,8 +2077,7 @@ Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/
 
 From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
 
-
-* 05: Distant Reading 2                                    
+* COMMENT 05: Distant Reading 2                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-distant-reading-2
 :EXPORT_TITLE: Distant Reading II
@@ -2173,7 +2231,7 @@ myString.repeat(5);
 :PROPERTIES:
 :CUSTOM_ID: voyant-tools-a335
 :END:
-* 06: Text as Data, history As Algorithm                   :noexport:
+* COMMENT 06: Text as Data, history As Algorithm                   :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 06-text-as-data
 :CUSTOM_ID: 06:-text-as-data,-history-as-algorithm-f1aa
@@ -2304,7 +2362,7 @@ consequence of the speed and scale that inhere in all anarchic systems.
 #+END_QUOTE
 
 
-* Visualizations                                                   :noexport:
+* COMMENT Visualizations                                                   :noexport:
 :PROPERTIES:
 :CUSTOM_ID: visualizations-7449
 :END:
@@ -2335,7 +2393,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :CUSTOM_ID: comment-spatial-history-ea38
 :END:
 
-* 07: Why Spatial history?       
+* COMMENT 07: Why Spatial history?       
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-why-spatial-history
 :CUSTOM_ID: 07:-why-spatial-history?-c5b0
@@ -2618,7 +2676,7 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 
 
 
-*  08: Visualization                                        
+*  COMMENT 08: Visualization                                        
 :PROPERTIES:
 :EXPORT_FILE_NAME: 08-visualization
 :CUSTOM_ID: comment-08:-visualization-acf2
@@ -2678,7 +2736,7 @@ Unified Encyclopedia of Science; Vienna Circle; the Ship
 - [[https://panamapapers.icij.org/graphs/][ICIJ visualizations]]
 - [[http://fusion.net/story/287382/panama-papers-data-visualization/][Fusion graph network visualization]]
 ** 
-*  09: Deep Maps & Spatial Humanities                                                  
+*  COMMENT 09: Deep Maps & Spatial Humanities                                                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-maps-online
 :CUSTOM_ID: comment-09:-deep-maps-8fd5
@@ -2775,7 +2833,7 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :PROPERTIES:
 :CUSTOM_ID: activity:-make-up-work-cbc7
 :END:
-* 10: What's Special about Oral History ("Engaged" History) 
+* COMMENT 10: What's Special about Oral History ("Engaged" History) 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
 :CUSTOM_ID: comment-10:-what's-special-about-oral-history-("engaged"-history)-b57f
@@ -2992,13 +3050,13 @@ lot of this is about building a relationship
 :END:
 - 10 minutes in each direction
 
-* 11: Oral History & Remix Culture                                 :noexport:
+* COMMENT 11: Oral History & Remix Culture                                 :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 11-oral-history
 :CUSTOM_ID: 11:-oral-history-&-remix-culture-3cc1
 :END:
 
-* 12: Citizen History                                      :noexport:
+* COMMENT 12: Citizen History                                      :noexport:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 12-citizen-history
 :CUSTOM_ID: 12:-citizen-history-815e
