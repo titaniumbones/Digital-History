@@ -89,7 +89,8 @@ I recommend at least trying the command line first.
 You need to tell git a little bit about yourself. Start with your [[https://help.github.com/articles/setting-your-email-in-git/][email address]] and [[https://help.github.com/articles/setting-your-username-in-git/][your user name]]. Open your bash shell (Terminal in Mac, git-bash in Windows) and type:
 #+BEGIN_SRC sh
     git config --global user.name "Your Name"
-    git config --global user.email "youraddress@ mail.utoronto.a"
+    git config --global user.email "youraddress@ mail.utoronto.ca"
+    git config --global github.user YourGithubId
 #+END_SRC
 Great -- now git knows who you are. If you're feeling ambitious, you can also [[https://help.github.com/articles/connecting-to-github-with-ssh/][set up SSH keys so you don't have to type in your password every time you commit to Git]].  
 
