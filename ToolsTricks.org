@@ -121,24 +121,31 @@ When you first start using the command line, it often feels (a) confusing and (b
 ** Navigation
 The file system is a "branching tree" of files and folders.  At the top (or bottom, depending on how you imagine things) of the tree is the "root". In bash, we represent this as ~/~.  Every folder has a *path* that starts with ~/~ and proceeds down the file hierarchy. So, for instance, my global git configuration is located at ~/home/matt/.gitconfig~.  ~/~ is the root. ~/home/~ is where all user files can be found. ~/home/matt/~ contains all *my* user files. ~/home/matt/.gitconfig~ identifies the specific file I'm looking for.  
 
-Your file exlorer will represent this tree for you visually; you can also picture it schematically, as is done e.g. in the following image:
+Your file explorer will represent this tree for you visually; you can also picture it schematically, as is done e.g. in the following image:
 [[https://tr1.cbsistatic.com/hub/i/2015/06/03/208a6a3f-0987-11e5-940f-14feb5cc3d2a/10_things_linux_filesystems.jpg]]
 
-We can also explore from the command line. Here are a few basic commands to learn for this purpose.
+We can also explore from the command line. Here are a few basic commands to learn for this purpose. [ *Note:* in the screenshots below, my command prompt is heavily customized and includes some extra information. Most notably, it tells me when I am in a git repository and gives me the name of the current git branch. You can experiment with changing your bash prompt in the ~~/.bashrc~ file that controls many features of the 
 
 *** pwd
 ~pwd~ is short for "print working directory", and will show you where you are in the file system.  
-[[../../images/pwd.phg]]
+[[../../images/pwd.png]]
 
 *** ls
-~ls~ will *list* the contents of a directory. With no further arguments it will list the directory you're currently in, but you can ask it to list some other directory too. Here are some examples.  Note the "switches" ~-l~ and ~-la~.  Switches give firther instructions to the command. In this case ~-l~ means "long" while ~-a" isshort for "all". You can see in the screenshot below what the effect is. 
+~ls~ will *list* the contents of a directory. With no further arguments it will list the directory you're currently in, but you can ask it to list some other directory too. Here are some examples.  Note the "switches" ~-l~ and ~-la~.  Switches give further instructions to the command. In this case ~-l~ means "long" while ~-a~ is short for "all". You can see in the screenshot below what the effect is. 
 [[../../images/ls-screenshot.png]]
 
+*** cd 
+Short for "change directory", ~cd~ allows you to move through the filesystem.  
+- ~cd someDirectoryName~ will move you into the subdirectory "someDirectoryName" of your current directory.
+- ~cd~ with no arguments, or "cd ~ ", will drop you back into your home directory (this is helpful if you get lost somehow). At the command line, the tilde (~~~) is short for "home directory", so you can use it anywhere instead of typing out your whole whome directory name. 
+- ~cd ..~ or ~cd ../~ will move you "up" one level in the filesystem -- so if you are currently in ~/home/matt/digitalHistory~, executing ~cd ..~ will move you to ~/home/matt/~.
+
+[[../../images/cd-ss.png]]
 *** cat and less
-Sometimes you want to look at the contents of a file.  ~cat~ and ~less~ are two ways to do so.  ~cat~ will print the contents of the file directly to your terminal window.  ~less~ will create a simple interface that you can use to scroll through a longer file using a kayboard interface.  
+Sometimes you want to look at the contents of a file.  ~cat~ and ~less~ are two ways to do so.  ~cat~ will print the contents of the file directly to your terminal window.  ~less~ will create a simple interface that you can use to scroll through a longer file using a keyboard interface.  
 [[../../images/cat-ss.png]]
 *** mkdir and touch
-~mkdir~ wil lcreate a new directory, while ~touch~ will create a new (empty) file.  
+~mkdir~ will create a new directory, while ~touch~ will create a new (empty) file.  
 
 #+BEGIN_SRC sh
 mkdir some-directory-name
@@ -146,6 +153,10 @@ touch some-directory-name/somefile.txt
 #+END_SRC
 
 These commands will create the file somefile.txt in the folder some-directory-name, inside the current working directory.  
+*** Arrow Keys and Tab Expansion
+often we make mistakes typing or are unsure of spelling, etc. Two kinds of shortcuts make for huge time savings:
+- *arrow keys* can be used to navigate through your previous commands -- typing ~↑~ will reproduce your previous command, allowing you to correct any errors you might have made the last time you typed out some complex command and made a small error.  Each time you type an ~↑~, you will move one command up in the command history. To get back down, type ~↓~.
+- you can type ~TAB~ part way through a command to get a list of possible completions.  If there's only one possible command that starts with what you've typed so far, bash will complete it for you. Similarly, typing part of a file or directory name after a command has been entered will usually get you a list of possible completions.  Try it a few times and you'll see how much time it saves. 
 ** Learn More
 OK, that's all for now, hopefully this helps you navigate around your projects. I may add to this guide as we go through the semester, but here are some further guides.
 - [[https://sklise.com/2012/09/22/introduction-to-git/#no-buttons][this introduction]] is quite clear and simple
