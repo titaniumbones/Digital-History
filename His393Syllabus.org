@@ -94,7 +94,8 @@ Almost every digital humanist will, at some point, need to do the following:
 Our emphasis is therefore on /simple coding/ taught using /standard tools that are available almost everywhere/.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and /slowly/ come to apply them to /increasingly sophisticated/ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to /teach yourself/ when you encounter new tools in the course of a project.  
 
 * Policies
-
+** Accessibility
+The University provides academic accommodations for students with disabilities in accordance with the terms of the Ontario Human Rights Code. For information on services and resources, see http://www.studentlife.utoronto.ca/as
 ** Respecting Diversity
 Diverse backgrounds, embodiments, and experiences are essential to the critical thinking endeavor at the heart of higher education. We expect you to be respectful of the many social and cultural differences among us, which may include, but are not limited to: age, cultural background, disability, ethnicity, technical ability, gender identity and presentation, citizenship and immigration status, national origin, race, religious and political beliefs, sex, sexual orientation, and socioeconomic status. Please talk with me right away if you experience disrespect in this class—from any source, including myself—and I will active work to address it. 
 
