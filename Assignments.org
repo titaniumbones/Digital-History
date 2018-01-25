@@ -132,7 +132,13 @@ You can learn more about git and github [[https://try.github.io/levels/1/challen
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-javascript
 :END:
-*Due Date: Feb. 02*
++*Due Date: Feb. 02*+
+*Due Date: Feb 09 (Revised in Class Jan 18)*
+
+This assignment introduces you to the third and most interesting pillar of basic web development: Javascript. 
+
+Due at end of the day on the due date, you can [[https://github.com/DigitalHistory/assignment-02-javascript][find the asssignment on Github]] but please be sure to check out your own copy (as per the instructions) by [[https://classroom.github.com/a/19n88aAV][following this link]], and cloning the resultant repository to your laptop.  
+
 * COMMENT Assignment 02: Distant History
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838

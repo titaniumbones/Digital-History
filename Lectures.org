@@ -945,7 +945,7 @@ Writing in HTML is distracting and time-consuming!
 
 Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
 
-* COMMENT 03: Abundance & Openness              
+* 03: Abundance & Openness              
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-abundance-and-opennness
 :EXPORT_TITLE: Abundance and Openness
@@ -960,7 +960,7 @@ Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar b
 - Search engines. Algorithms.  curation.  
 - Lab: list of websites to evaluate.  This will require *prep*
 http://adamcrymble.org/intro-to-digital-history-2015/#week2 
-** War is Peace. @@html:<br/>@@Freedom is Slavery. @@html:<br/>@@Ignorance is Strength.
+**  War is Peace. @@html:<br/>@@Freedom is Slavery. @@html:<br/>@@Ignorance is Strength.
 :PROPERTIES:
 :CUSTOM_ID: war-is-peace
 :END:
@@ -976,17 +976,21 @@ http://adamcrymble.org/intro-to-digital-history-2015/#week2
 :CUSTOM_ID: plan-for-the-day-b6ce
 :END:
 - *Brief* lecture
-- Discussion: how will *you* respond to information abundance?
-- Search exercise
+- Discussion: how do *you* respond to information abundance?
 - Break
-- More about HTML/CSS/JS (if you're stuck/don't understand) 
+- More about HTML/CSS (if you're stuck/don't understand) 
 ** History in the age of scarcity
 :PROPERTIES:
 :CUSTOM_ID: history-in-the-age-of-scarcity-3970
 :END:
 #+BEGIN_QUOTE
-The members of prehistoric societies did not think they lived in prehistoric times. They merely lacked a good preservation medium. (Auerbach, quoted in Rosenaweig)
+The members of prehistoric societies did not think they lived in prehistoric times. They merely lacked a good preservation medium. (Auerbach, quoted in Rosenzweig)
 #+END_QUOTE
+
+#+begin_notes 
+- lots was going on, lots of continuity, lots *we will never know* b/c oral preservation is *terrible* at outliving a cultural tradition
+#+end_notes
+
 *** Scarcity
 :PROPERTIES:
 :CUSTOM_ID: scarcity-184c
@@ -1014,6 +1018,9 @@ The members of prehistoric societies did not think they lived in prehistoric tim
 Tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? (Rosenzweig)
 #+END_QUOTE
 
+#+begin_notes 
+- completely different situation than we used to have!
+#+end_notes
 *** Abundance
 :PROPERTIES:
 :CUSTOM_ID: abundance-6257
@@ -1030,6 +1037,9 @@ Tentative efforts are afoot to preserve our digital cultural heritage. If they s
 - auto-preservation
 - but by and for whom?
 
+#+begin_notes 
+Google, FB, and Twitter are preserving lots of data.  As are Tesla and Samsung. But who wil lget to see it? How does a historian compete?
+#+end_notes
 *** Problems of Preservation
 :PROPERTIES:
 :CUSTOM_ID: problems-of-preservation-29ba
@@ -1037,7 +1047,9 @@ Tentative efforts are afoot to preserve our digital cultural heritage. If they s
 - physical media
 - software turnover & bitrot
 - capturing dynamic/interactive media
+#+begin_notes 
 
+#+end_notes
 *** What big data means for old documents
 :PROPERTIES:
 :CUSTOM_ID: what-big-data-means-for-old-documents-608a
@@ -1045,6 +1057,8 @@ Tentative efforts are afoot to preserve our digital cultural heritage. If they s
 #+BEGIN_QUOTE
 digitization does provide scale (or quantity) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. (CILR)
 #+END_QUOTE
+
+
 *** Can we tell stories? Can we do research?
 :PROPERTIES:
 :CUSTOM_ID: can-we-tell-stories?-can-we-do-research?-269a
@@ -1052,7 +1066,7 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
 #+ATTR_REVEAL: :frag (appear)
 - no longer possible to read everything!
   - who will read it for us? How will we be experts? Can we automate our reading?
-- Narrative form ill suited to massive quantities of data
+- Narrative form ill-suited to massive quantities of data
   - can we develop new types of narratives?
 - Big questions may be answerable!
   - What used to be pure speculation, can perhaps now be made more concrete and compelling
@@ -1067,13 +1081,15 @@ http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933328
 #+ATTR_HTML: :class paired
 http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933375405914.png
 *** and this too
-[[../Images/trump-epa-changes.png]]
+[[./Images/trump-epa-changes.png]]
 *** Remind you of anything?
 #+BEGIN_QUOTE
-The Party said that Oceania had never been in alliance with Eurasia. He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago. But where did that knowledge exist? Only in his own consciousness, which in any case must soon be annihilated. And if all others accepted the lie which the Party imposed -if all records told the same tale -- then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered. Whatever was true now was true from everlasting to everlasting. It was quite simple. All that was needed was an unending series of victories over your own memory. 'Reality control', they called it: in Newspeak, 'doublethink'.
+The Party said that Oceania had never been in alliance with Eurasia. He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago. But *where did that knowledge exist? Only in his own consciousness, which in any case must soon be annihilated.* And if all others accepted the lie which the Party imposed -if all records told the same tale -- *then the lie passed into history and became truth*. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered. Whatever was true now was true from everlasting to everlasting. It was quite simple. All that was needed was an unending series of victories over your own memory. 'Reality control', they called it: in Newspeak, 'doublethink'.
+#+END_QUOTE
 
-...
+*** Remind you of anything?
 
+#+BEGIN_QUOTE
 Winston sank his arms to his sides and slowly refilled his lungs with air. His mind slid away into the labyrinthine world of doublethink. To know and not to know, to be conscious of complete truthfulness while telling carefully constructed lies, to hold simultaneously two opinions which cancelled out, knowing them to be contradictory and believing in both of them, to use logic against logic, to repudiate morality while laying claim to it, to believe that democracy was impossible and that the Party was the guardian of democracy, to forget whatever it was necessary to forget, then to draw it back into memory again at the moment when it was needed, and then promptly to forget it again: and above all, to apply the same process to the process itself. That was the ultimate subtlety: consciously to induce unconsciousness, and then, once again, to become unconscious of the act of hypnosis you had just performed. Even to understand the word 'doublethink' involved the use of doublethink. 
 #+END_QUOTE
 *** Everything.gov
@@ -1147,7 +1163,7 @@ Future of the web and of historical scholarship depends on /continued struggle/ 
 - Style sheet
 - that "cascades" = overwrites prior values
 - web pages link to stylesheets, as many as desired
-*** WIth and without CSS
+*** With and without CSS
 #+ATTR_HTML: :class paired
 [[file:~/HackingHistory/Images/nytimes-w-css.png]]  
 #+ATTR_HTML: :class paired
@@ -1196,7 +1212,9 @@ h1 {
 font-size: 3em;
 color: red;
 }
-p: {font-size:5em}
+p {
+font-size:5em}
+
 .coolpara {
 color:green;
 }
@@ -1211,6 +1229,7 @@ background-color: black;
 <p id="myfave">Some Content</p>
 
 #+END_SRC
+
 #+BEGIN_NOTES
 Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
 - *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
@@ -1282,7 +1301,7 @@ div.main {
 <div class="main">
    <p> here is a sample paragraph doing all of this stuff...</pP
 #+END_SRC
-*** Display: Block vs. Inline
+*** COMMENT Display: Block vs. Inline
 
 
 *** Box Model
@@ -1552,6 +1571,13 @@ Annotations:
 var myString = "Hello, everyone";
 console.log(myString);
 #+END_SRC
+#+begin_notes 
+- strings
+- numbers
+- boolean
+- array
+- objects
+#+end_notes
 *** Functions
 :PROPERTIES:
 :CUSTOM_ID: functions-3acc
@@ -1568,7 +1594,7 @@ function square(number) {
 console.log(square(2));
 console.log(cube(3));
 #+END_SRC
-*** Loops
+*** Arrays and Loops
 :PROPERTIES:
 :CUSTOM_ID: loops-86b8
 :END:
@@ -1593,7 +1619,9 @@ console.log(cube(3));
 
 
 #+END_SRC
-
+#+begin_notes 
+- differences between the loop types
+#+end_notes
 *** Objects
 :PROPERTIES:
 :CUSTOM_ID: objects-1a99
@@ -1615,13 +1643,30 @@ console.log(cube(3));
 :CUSTOM_ID: dom-manipulation-6404
 :END:
 #+BEGIN_SRC js :exports code
+var newNode = document.createElement("h1");                 // Create a <h1> node
+var textnode = document.createTextNode("brand new header");         // Create a text node
+newNode.appendChild(textnode);                              // insert the text into the <h1>
+document.body.appendChild(newNode);
+
 var headings = document.getElementsByTagName("h1");
 console.log(headings);
-for (i=0; i<headings.length; i++) {console.log(headings.[i].innerHTML);};
+for (var i=0; i<headings.length; i++) {
+    console.log(headings[i].innerHTML);
+};
+
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+
 #+END_SRC
 
-#+RESULTS:
-
+#+begin_notes 
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+#+end_notes
 ** COMMENT Website Evaluation
 :PROPERTIES:
 :CUSTOM_ID: website-evaluation-e904
@@ -1671,7 +1716,7 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
-* COMMENT 04: Distant Reading 1                                    
+* 04: Distant Reading 1                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
 :EXPORT_TITLE: Distant Reading I
@@ -1685,6 +1730,19 @@ With a (new!) partner, follow the directions!
 - discussion
 - Wordles
 - Have assignment ready!
+** Bright the Hawk's Flight
+@@html:<div class="paired" style="margin-right:40px;">@@
+#+begin_verse 
+Only in silence the word,
+Only in dark the light,
+Only in dying life:
+Bright the hawk's flight
+On the empty sky.
+#+end_verse
+@@html:</div>@@
+
+#+ATTR_HTML: :class paired
+https://c1.staticflickr.com/3/2430/3551195631_bc66b90648_b.jpg
 ** Recap
 :PROPERTIES:
 :CUSTOM_ID: recap-7764
@@ -1698,15 +1756,57 @@ With a (new!) partner, follow the directions!
   - What /relation to sources/?
   - What /kinds of arguments/?
   - What /narrative forms/?
-
+- missed the "openness" section
 *** Plan for the day
 :PROPERTIES:
 :CUSTOM_ID: plan-for-the-day-c53a
 :END:
-- Lecture
+- Lecture (short as i can manage, will stop early if nec)
 - Class Discussion (what did you learn/ what do you doubt)
 - Break
 - help w/ HTML/CSS/JS (if you're stuck/don't understand) 
+** Openness
+:PROPERTIES:
+:CUSTOM_ID: op-enness-0724
+:END:
+#+BEGIN_QUOTE
+...ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
+#+END_QUOTE
+*** Ideals of openness
+:PROPERTIES:
+:CUSTOM_ID: ideals-of-openness-cb72
+:END:
+- rooted in Enlightenment
+#+ATTR_HTML: :class paired
+[[file:~/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
+#+ATTR_HTML: :class paired
+[[file:~/DH/Images/jos-wri-airpump.jpg]]
+- at the foundation of scholarship
+- yet, not manifest in our scholarly journals & publishing regimes
+*** Jefferson on Freedom of Information
+:PROPERTIES:
+:CUSTOM_ID: jefferson-on-freedom-of-information-bd14
+:END:
+#+BEGIN_QUOTE
+ It would be curious then, if an idea, the fugitive fermentation of an individual brain, could, of natural right, be claimed in exclusive and stable property. If nature has made any one thing less susceptible than all others of exclusive property, it is the action of the thinking power called an idea, which an individual may exclusively possess as long as he keeps it to himself; but *the moment it is divulged, it forces itself into the possession of every one,* and the receiver cannot dispossess himself of it. Its peculiar character, too, is that no one possesses the less, because every other possesses the whole of it. He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me. *That ideas should freely spread from one to another over the globe, for the moral and mutual instruction of man, and improvement of his condition, seems to have been peculiarly and benevolently designed by nature, when she made them,* like fire, expansible over all space, without lessening their density in any point, and like the air in which we breathe, move, and have our physical being, incapable of confinement or exclusive appropriation. Inventions then cannot, in nature, be a subject of property.
+#+END_QUOTE
+*** the web as open space
+:PROPERTIES:
+:CUSTOM_ID: the-web-as-open-space-e7e9
+:END:
+- Origins of Web wrapped up in ideologies of Freedom
+#+BEGIN_QUOTE
+"Information wants to be free - because it is now so easy to copy and distribute casually - and information wants to be expensive - because in an Information Age, nothing is so valuable as the right information at the right time. (Brand, ca. 1984)
+
+When information is generally useful, redistributing it makes humanity wealthier no matter who is distributing and no matter who is receiving. (Stallman, ~1990, quoted by Dening)
+#+END_QUOTE
+- but different freedoms compete
+- "walled gardens" vs /open access/
+- Struggles only intensifying, with battle lines not quite stable
+  - net neutrality
+  - the Facebook problem
+  - Digital Public Library of America
+  - archive.org
 
 ** Abstract Models
 :PROPERTIES:
@@ -1819,7 +1919,7 @@ Event, cycle, /longue durée/: three time frames which have fared very unevenly 
 - *event \rarr close reading*
 - *longue durée \rarr grand narrative*
 - *cycle \rarr ?*
-*** cycles in Literature
+*** Cycles in Literature
 :PROPERTIES:
 :CUSTOM_ID: cycles-in-literature-f456
 :END:
@@ -1838,7 +1938,7 @@ A genre exhausts its potentialities... when its inner form is no longer capable 
 - but "revolution" as "dying out"
 *** From "the shift" to "a shift"
 :PROPERTIES:
-:CUSTOM_ID: from-"the-shift"-to-"a-shift"-3345
+:CUSTOM_ID: shift-4356
 :END:
 http://newleftreview.org/static/assets/images/2580512large.gif
 #+BEGIN_QUOTE
@@ -1924,7 +2024,7 @@ http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512l
 - *labor-intensive* quantification of sources
 - *glossing over* problems of quantification
 - *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
-** Tools for Distant Reading: the wordle
+** COMMENT Tools for Distant Reading: the wordle
 :PROPERTIES:
 :CUSTOM_ID: tools-for-distant-reading:-the-wordle-eaf6
 :END:
@@ -1933,7 +2033,7 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
 #+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
 http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 - what do and don't we know? 
-** Exercise: build a wordle 
+** COMMENT Exercise: build a wordle 
 :PROPERTIES:
 :CUSTOM_ID: exercise:-build-a-wordle-34a6
 :END:
@@ -1966,6 +2066,13 @@ In short, Textexture tries to automatically discern and visualize relationships 
 - Try the same process with another novel.
 - What have you learned? Anything?  
 
+** HTML Questions
+#+begin_src html
+<style>
+
+</style>
+<!-- leaving blank for your questions -->
+#+end_src
 ** Javascript
 - a real language!
 - dynamic transformation
@@ -1986,12 +2093,10 @@ Do it w/ your name!
 #+BEGIN_SRC js
   var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
   for (h of historians) {
-    //console.log(h);
+    console.log(h);
   }
-
 #+END_SRC
 
-#+RESULTS:
 #+BEGIN_NOTES
 
 #+END_NOTES
@@ -2034,10 +2139,6 @@ wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
 //              greatWar.battles[0].casualties + " casualties.");
 #+END_SRC
 
-#+RESULTS:
-: The First World War lasted for 4 years.
-: The Battle of Vimy Ridge was ferocious and horrific. There were 34000 casualties.
-: undefined
 *** For loops!
 #+BEGIN_SRC js
 var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
@@ -2182,12 +2283,12 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 :PROPERTIES:
 :CUSTOM_ID: javascript-30da
 :END:
-** the "Repeat" function
+*** the "Repeat" function
 #+BEGIN_SRC js
 var myString="hello";
 myString.repeat(5);
 #+END_SRC
-** Check length
+*** Check length
 #+BEGIN_SRC js
   var myString="Hello all you students.",
       myArray = ["Hello", "all", "you", "students", "."],
@@ -2204,22 +2305,22 @@ myString.repeat(5);
 
 #+END_SRC
 
-** "Operator Overloading"
+*** "Operator Overloading"
 ~+~, ~-~, do different things w/ different variable types
 
-** Working with the DOM
+*** Working with the DOM
 *Document Object*
 - everything in the document can be manipulated here
 
-** Finding Elements
+*** Finding Elements
 - ~document.getElementById("str")~
 - ~document.getElementByTagName("str")~
 - ~document.getElementByClassName("str")~
 
-** Creating Elements
+*** Creating Elements
 - ~var newElement = document.createElement("str")~
 
-** Putting elements into the document
+*** Putting elements into the document
 - ~var newElement = document.createElement("str")~
 - ~var oldElement = document.getElementByID("str")~
 - ~oldElement.append(newElement)~
