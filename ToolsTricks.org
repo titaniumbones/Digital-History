@@ -1096,11 +1096,12 @@ This is one of the plugins you'll use the most -- the footnote plugin. It has ju
 *** Available plugins
 We've provided examples for three plugins:
 - Footnote you've just seen
-- [[http://popcornjs.org/Plugin/image][Image]] lets you display an image. This adds two new parameters -- 'src' and 'href' -- which let you select an image and also link that image to another location, if you so wish.  
-- [[http://popcornjs.org/Plugin/google-maps][google Maps]] Creates a google map. There are a bunch of new parameters here, see our source code for more info.
-- it's possible you will also want to use others; of these the most likely to be of use is [[http://popcornjs.org/Plugin/Wikipedia][Wikipedia]].
+- [[https://github.com/mozilla/popcorn-js/tree/master/plugins/image][Image]] lets you display an image. This adds two new parameters -- 'src' and 'href' -- which let you select an image and also link that image to another location, if you so wish.  
+- [[https://github.com/mozilla/popcorn-js/tree/master/plugins/googlemap][Google Maps]] Creates a google map. There are a bunch of new parameters here, see our source code for more info.
+- it's possible you will also want to use others; of these the most likely to be of use is [[https://github.com/mozilla/popcorn-js/tree/master/plugins/wikipedia][Wikipedia]].
+(The links in this section take you to the plugin sourcecode, which will usually be a directory with 4 files. The ~html~ file contains a working example of the plugin code. The ~js~ file is the sourcecode itself, and usually starts off with a useful explanation of how the plugin works. The last two files are provided for testing purposes, you shouldn't need to have use it. 
 ** Media Elements
-Popcorn woks by keying commands to a media element -- that is, an HTML tag <audio> or <video>.  Here's our sample audio tag:
+Popcorn woks by keying commands to a media element -- that is, an HTML tag ~<audio>~ or ~<video>~.  Here's our sample audio tag:
 #+BEGIN_SRC html
             <!-- this is our audio div.  It's really important -->
              <audio id="media" controls="controls">
@@ -1113,15 +1114,12 @@ I just want you to note three things about this code:
 
 ** Getting Help
 If you end up confused, there are a couple of useful popcorn resources on the web.  
-- the [[http://popcornjs.org/documentation][popcorn website]] has some great tutorials. The videos are particularly helpful, because they highlight the code that's used to create the event you watch on the screen.  You can learn even more by looking at the source code of these pages -- because they use popcorn to write their own tutorials!  
-- The [[http://popcornjs.org/plugins][plugins page]] has official documentation of each plugin.  THis is often helpful.
-- If that's not enough for you, you can look directly [[https://github.com/cadecairos/popcorn-js][at the source]].
-- If you're still confused, take a look at the [[https://mail.mozilla.org/listinfo/community-popcorn][developer's list]] or the [[http://popcornjs.org/community][other resources listed here (e.g., IRC)]]. If you have a question I can't answer, you can ask it one of those places; but please be sure you are asking a well-formed question in a thoughtful, considered way.  The developers are volunteering their time to create this tool, and it is not in any way their responsibility to help you learn basic skills.  Still, they tend to be very generous, so it's a possibility. Exhaust other resources first.
+- alas, most of the old resources have been taken down in the past 2 months. All that's really left is the [[https://github.com/mozilla/popcorn-js/][Github repo]].
 
 ** Generating Events with Tabletop
 In class today, we /hand-coded/ our popcorn events. This is not particularly onerous but is a little clumsy. You are absolutely welcome to use this method for the assignment if you like; but there is another way.  the [[https://github.com/jsoma/tabletop][tabletop.js]] library lets you access information from a Google Spreadsheet and plug it into your scripts. I find it very handy for this kind of work (we could have used it for the mapping expercise, too).  In this way, you can create your popcorn events in the leisure of a Google Spreadsheet, and have the events automatically generated for you whenbever your web page loads.  
 
-The process is described [[https://github.com/jsoma/tabletop#1-getting-your-data-out-there][here]], and you are strongly advised to read it carefully. If you want to use the code I've provided for you in ~popcorn-data-with-google.js~, you will need to [[https://docs.google.com/spreadsheets/d/14jExD0zl9nvZyExoMsF_9wWr86Jmrk5c8Crt4G1EJuU/edit#gid=1715955432][copy this spreadsheet]], then *publish it* as described in the instructions, and also *copy the new URL* into the appropriate place in ~popcorn-data-with-google.js~.  Then code your popcorn in the spreadsheet; unless you make any syntax errors, the technical work should now be done. In the spreadsheet ist is somewhat easier, for instance, to arange your events in sequence, etc.
+The process is described [[https://github.com/jsoma/tabletop#1-publishing-your-google-sheet][in the tabletop repository]], and you are strongly advised to read it carefully. If you want to use the code I've provided for you in ~popcorn-data-with-google.js~, you will need to [[https://docs.google.com/spreadsheets/d/14jExD0zl9nvZyExoMsF_9wWr86Jmrk5c8Crt4G1EJuU/edit#gid=1715955432][copy this spreadsheet]], then *publish it* as described in the tabletop instructions (see above), and also *copy the new URL* into the appropriate place in ~popcorn-data-with-google.js~.  Then code your popcorn in the spreadsheet; unless you make any syntax errors, the technical work should now be done. In the spreadsheet it is somewhat easier, for instance, to arange your events in sequence, etc.
 * Some Wordpress Plugins (Image Sliders and Timelines)
 :PROPERTIES:
 :PARENT:   5
@@ -1168,9 +1166,9 @@ The Google Maps API permits us to set the image that displays on the map as the 
 ** 
 * Ecosystem, Infrastructure, and Tools
 :PROPERTIES:
-:EXPORT_FILE_NAME: ecosystem,-infrastructure,-and-tools
+:EXPORT_FILE_NAME: ecosystem-infrastructure-and-tools
 :END:
-SOmetimes we make the mistake of thinking that everything in University is /conceptual/. But we also learn to use the tools of our trade: journals, books, archival finding aids; and increasingly, many, many kinds of software.  
+Sometimes we make the mistake of thinking that everything in University is /conceptual/. But we also learn to use the tools of our trade: journals, books, archival finding aids; and increasingly, many, many kinds of software.  
 *** Understanding Your Browser
 First ask yourself for a second: what is a web browser? Why do we use and need them? Can I get more out of my browser than I have been?
 **** Plugins

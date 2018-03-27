@@ -246,10 +246,11 @@ We'll explore "topic modelling" -- one of the most popular DH methods -- as well
 *Readings:* 
 - Gibbs, Fred. “[[http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/][Hermeneutics of Data and Historical Writing]].” /Writing History in the Digital Age/, March 14, 2012.
 - Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[ http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
-*In-Class Activity: Javasciript questions /Tidy Data*
-
+*In-Class Activity: Javascript questions*
+*** Revised <2018-02-08 Thu>: Distant Reading Catch-up ({{{ts}}}) 
+More JS, and Trees.
 ** Maps, Visualization, and History
-*** Spatial History ({{{ts}}})
+*** Revise Date: Spatial History ({{{ts}}})
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
@@ -262,9 +263,8 @@ http://journals2.scholarsportal.info/browse/03177173/v50i0001
 http://journals2.scholarsportal.info/browse/03177173/v26i0002
 http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
 http://slab.scripts.mit.edu/wp/links/critical-cartography/
-*** ??? ({{{ts}}})
+*** COMMENT ??? ({{{ts}}})
 *Note: In all likelihood, there will be no class this week due to a scheduling conflict.*
-*** NO CLASS ({{{ts}}}): READING WEEK
 
 *** Visualization ({{{ts}}})
 Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
@@ -279,8 +279,8 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
 
 *Readings:* 
-- "Railways and Agriculture in France and Great Britain" in /Spatial Histories/
-- "The Development, Persistance, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in /Spatial Histories/
+- "Railways and Agriculture in France and Great Britain" in /Toward Spatial Humanities/
+- "The Development, Persistance, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in /Toward Spatial Humanities/
 - google earth tutorial: https://geospatialhistorian.wordpress.com/lessons/lesson-1/
 *In-Class Activity: GIS*
 
@@ -294,7 +294,7 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 
 *In-Class Activity: Popcorn.js* 
 
-*** Interlude: Project Planning & Citizen History  ({{{ts}}})
+** Interlude: Project Planning & Citizen History  ({{{ts}}})
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
 # /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
@@ -305,8 +305,8 @@ Once oral histories migrate to the web, they, like maps, can interact with other
 If we're ahead of schedule, we'll watch /Harlan County USA/ in class.  
 
 *Readings:*
-- "Oral History and the Digital Revolution" and "Authoring in Sound" in /The Oral History Reader/
-- Gunkel, David J. “Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording.” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489_rtdrmatmosr.xml.
+- "[[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.582.7124&rep=rep1&type=pdf][Oral History and the Digital Revolution]]" and "Authoring in Sound" in /The Oral History Reader/
+- Gunkel, David J. “[[https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/03007766/v31i0004/489_rtdrmatmosr.xml][Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording]].” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489_rtdrmatmosr.xml.
 
 *In-Class Activity: popcorn.js (just in case)*
 
