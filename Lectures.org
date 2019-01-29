@@ -947,7 +947,7 @@ Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar b
 
 * 03: Abundance & Openness              
 :PROPERTIES:
-:EXPORT_FILE_NAME: 03-abundance-and-opennness
+:EXPORT_FILE_NAME: 03-1-abundance-and-opennness
 :EXPORT_TITLE: Abundance and Openness
 :CUSTOM_ID: 03:-abundance-&-openness-2a2e
 :END:
@@ -975,10 +975,9 @@ http://adamcrymble.org/intro-to-digital-history-2015/#week2
 :PROPERTIES:
 :CUSTOM_ID: plan-for-the-day-b6ce
 :END:
-- *Brief* lecture
+- Lecture
 - Discussion: how do *you* respond to information abundance?
-- Break
-- More about HTML/CSS (if you're stuck/don't understand) 
+- post-class period *ONLY* for students who *failed the tests, or did not receive a mark* 
 ** History in the age of scarcity
 :PROPERTIES:
 :CUSTOM_ID: history-in-the-age-of-scarcity-3970
@@ -987,9 +986,9 @@ http://adamcrymble.org/intro-to-digital-history-2015/#week2
 The members of prehistoric societies did not think they lived in prehistoric times. They merely lacked a good preservation medium. (Auerbach, quoted in Rosenzweig)
 #+END_QUOTE
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - lots was going on, lots of continuity, lots *we will never know* b/c oral preservation is *terrible* at outliving a cultural tradition
-#+end_notes
+#+END_NOTES
 
 *** Scarcity
 :PROPERTIES:
@@ -1018,9 +1017,9 @@ The members of prehistoric societies did not think they lived in prehistoric tim
 Tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? (Rosenzweig)
 #+END_QUOTE
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - completely different situation than we used to have!
-#+end_notes
+#+END_NOTES
 *** Abundance
 :PROPERTIES:
 :CUSTOM_ID: abundance-6257
@@ -1037,9 +1036,9 @@ Tentative efforts are afoot to preserve our digital cultural heritage. If they s
 - auto-preservation
 - but by and for whom?
 
-#+begin_notes 
+#+BEGIN_NOTES 
 Google, FB, and Twitter are preserving lots of data.  As are Tesla and Samsung. But who wil lget to see it? How does a historian compete?
-#+end_notes
+#+END_NOTES
 *** Problems of Preservation
 :PROPERTIES:
 :CUSTOM_ID: problems-of-preservation-29ba
@@ -1047,9 +1046,9 @@ Google, FB, and Twitter are preserving lots of data.  As are Tesla and Samsung. 
 - physical media
 - software turnover & bitrot
 - capturing dynamic/interactive media
-#+begin_notes 
+#+BEGIN_NOTES 
 
-#+end_notes
+#+END_NOTES
 *** What big data means for old documents
 :PROPERTIES:
 :CUSTOM_ID: what-big-data-means-for-old-documents-608a
@@ -1101,7 +1100,7 @@ Winston sank his arms to his sides and slowly refilled his lungs with air. His m
 :CUSTOM_ID: op-enness-0724
 :END:
 #+BEGIN_QUOTE
-...ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
+...ideas that were more-or-less serviceable in the world before networked computers... are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
 #+END_QUOTE
 *** Ideals of openness
 :PROPERTIES:
@@ -1148,29 +1147,65 @@ When information is generally useful, redistributing it makes humanity wealthier
 - Access
 
 Future of the web and of historical scholarship depends on /continued struggle/ over these contested values.
-** And Now: CSS!
+* And Now: CSS!
 :PROPERTIES:
 :ID:       o2b:a5ac6273-2677-4058-9687-ee0d1cf51826
 :POST_DATE: [2017-01-19 Thu 00:06]
 :POSTID:   616
+:EXPORT_FILE_NAME: 03-2-css
+:CUSTOM_ID: and-now:-css-03b2
+:END:
+
+** Reminder
+:PROPERTIES:
+:CUSTOM_ID: reminder-974a
 :END:
 - HTML for *structure/content*;
 - CSS for *presentation*
 - Resources:  [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings;  [[http://learnlayout.com/][Learn Layout]]; [[https://developer.mozilla.org/en-US/docs/Web/CSS][Mozilla Developer Network]]; many other cool sites
 
-*** CSS Basics
+Exercise for today: https://github.com/DigitalHistory/css-styling/ 
+
+** What you Need to Learn Today
+:PROPERTIES:
+:CUSTOM_ID: what-you-need-to-learn-today-f47f
+:END:
+- syntax: selectors, rules, punctuation;
+- jargon: colors, sizes
+- where to look stuff up (!)
+
+** CSS Basics
+:PROPERTIES:
+:CUSTOM_ID: css-basics-6376
+:END:
 - "[[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]]"
 - Style sheet
-- that "cascades" = overwrites prior values
-- web pages link to stylesheets, as many as desired
-*** With and without CSS
+- that "cascades" = overrides prior values
+[[http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg]]
+
+#+begin_notes
+two "dimensions" to cascade (source order and specificity)
+
+- specificity is the hard/important one.  
+#+end_notes
+** With and without CSS
+:PROPERTIES:
+:CUSTOM_ID: with-and-without-css-43a6
+:END:
 #+ATTR_HTML: :class paired
 [[file:~/HackingHistory/Images/nytimes-w-css.png]]  
 #+ATTR_HTML: :class paired
 [[file:~/HackingHistory/Images/nytimes-no-css.png]] 
 
 
-*** CSS Selectors
+** CSS Selectors
+:PROPERTIES:
+:CUSTOM_ID: css-selectors-ab36
+:END:
+*** 
+:PROPERTIES:
+:CUSTOM_ID: -c0f8
+:END:
 #+BEGIN_SRC css 
   h1 {
       color:blue;
@@ -1199,17 +1234,42 @@ They all follow the same pattern:
 - then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
 - finally, *a closing brace* that ends the selector declaration.
 #+END_NOTES
+*** Selector Anatomy
+:PROPERTIES:
+:CUSTOM_ID: selector-anatomy-9f2b
+:END:
+#+begin_export html
+<style>
+ h1#anatomy1 {
+      display: inline-flex;
+     padding: 15px;
+     background-color: rgb(30,30,30,0.1);
+     font-size: 1.4em;
+     border: 2px gray solid; }
+  h1#anatomy1 span {padding: 4px;border: 2px black solid; background-color: rgba(10,70,10,0.6);}
+  h1#anatomy1 span.selector {background-color: rgba(150, 20, 20, 0.4);}
+  h1#anatomy1 span.rule {background-color: rgba(70, 10,70, 0.4);}
+  h1#anatomy1 span.value {background-color: rgba(10,150, 150, 0.4);}
 
-**** Selector types
+</style>
+
+<h1 id="anatomy1">
+  <span class="selector">selector.has >  #funny:stuff</span>
+  <span class="bracket">{</span>
+  <span class="rule">rule:</span>
+  <span class="value">value in (approved);</span>
+  <span class="bracket">}</span>
+</h1>
+#+end_export
+*** Selector types
 :PROPERTIES:
 :CUSTOM_ID: selector-types
 :END:
 
 #+BEGIN_SRC html
 <style>
-body {background-color: grey;}
 h1 {
-font-size: 3em;
+font-size: 2em;
 color: red;
 }
 p {
@@ -1224,6 +1284,7 @@ color:yellow;
 background-color: black;
 }
 </style>
+
 <h1> Heading</h1>
 <p class="coolpara">Some Content</p>
 <p id="myfave">Some Content</p>
@@ -1238,11 +1299,46 @@ Though simple in principle, CSS selectors can be confusing.  Here are some basic
 - *ID* selector:  this addresses the element with a particular ID:
 
 #+END_NOTES
-**** More Selectors
+*** Selector types
+:PROPERTIES:
+:CUSTOM_ID: selector-types-e94f
+:END:
+#+begin_export html
+
+<style>
+div#cssdemo h1 {
+font-size: 3em;
+color: red;
+}
+div#cssdemo p {
+font-size:5em}
+
+.coolpara {
+color:green;
+}
+
+div#cssdemo #myfave {
+color:yellow;
+background-color: black;
+}
+</style>
+
+<div id="cssdemo">
+<h1> Heading</h1>
+<p class="coolpara">Some Content</p>
+<p id="myfave">Some Content</p>
+</div>
+#+end_export
+
+*** More Selectors
 #+BEGIN_SRC css
 div.main p {
       color:red;
   }
+
+div.main > p.blue {
+      color: blue;
+}
 #+END_SRC
 
 #+BEGIN_NOTES
@@ -1250,21 +1346,72 @@ div.main p {
 It addresses every *p* that is contained inside a div of *class* /"main."/
 #+END_NOTES
 
-**** Descendant Selector
-#+BEGIN_SRC html
+*** More Selectors
+:PROPERTIES:
+:CUSTOM_ID: more-selectors-d8a0
+:END:
+#+BEGIN_export html
 <style>
-div.main p {
+div#cssmain p {
       color:red;
   }
+
+div#cssmain > p.blue {
+      color: blue;
+}
 </style>
-<p> regular paragraph</p>
-<div class="main">
-  <p> not a regular paragraph </p>
+<div id="cssmain">
+<p> regular (red) paragraph</p>
+  <p class="blue"> not a regular paragraph (blue) </p>
+
 </div>
-#+END_SRC
+#+END_export
+** Selectors and the Cascade
+:PROPERTIES:
+:CUSTOM_ID: selectors-and-the-cascade-0a08
+:END:
+- Priority: inline \rightarrow id \rightarrow class \rightarrow element/tag
+- fine gradations within this
+- the awful *!important* rule
+** Color Values
+Various representations:
+#+begin_export html
+<style>
+ul#color-rules {font-size 1.5rem;}
+ul#color-rules li span.red {color: #FF0000}  
+ul#color-rules li span.green {color: #00FF00}  
+ul#color-rules li span.blue {color: #0000FF}  
+</style>
 
+<ul id="color-rules">
+  <li>
+    color: #
+    <span class="red">00</span>
+    <span class="green">7F</span>
+    <span class="blue">FF</span>
+    ;
+  </li>
+  <li>
+    color: rgb(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>
+    );
+  </li>
+  <li>
+    color: rgba(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>, 0.6);
+  </li>
+</ul>
+#+end_export
 
+(also hsl, hsla)
 *** Fonts, colors and borders
+:PROPERTIES:
+:CUSTOM_ID: fonts,-colors-and-borders-127a
+:END:
 #+BEGIN_SRC css
 div.main {
       color: rgb(150,150,150);
@@ -1282,11 +1429,13 @@ div.main {
 A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
 There are plenty of other properties that can be set, in much the same way.
 #+END_NOTES
-
 *** Fonts and Colors in Action
-#+BEGIN_SRC html
+:PROPERTIES:
+:CUSTOM_ID: fonts-and-colors-in-action-1cb9
+:END:
+#+BEGIN_export html
 <style>
-div.main {
+div#maincss2 {
       color: rgb(150,150,150);
       background-color: (#b0c4ee);
       text-align: center;
@@ -1298,19 +1447,237 @@ div.main {
       border-radius:20%;
   }
 </style>
-<div class="main">
-   <p> here is a sample paragraph doing all of this stuff...</pP
-#+END_SRC
-*** COMMENT Display: Block vs. Inline
+<div id="maincss2">
+   <p> here is a sample paragraph doing all of this stuff...</p>
+#+END_export
+** Sizes 
+#+begin_src web
+<style>
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+     } 
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+ 
+</style>
+
+<p class="fixed">This paragraph will be syled differently from its peers</p>
+<p class="em-small">This paragraph will be syled differently from its peers</p>
+<p class="em-big">This paragraph will be syled differently from its peers</p>
+
+<div class="pixel-box"></div>
+<div class="percent-box"></div>
+<div class="viewport-box"></div>
+#+end_src
+** Sizes
+:PROPERTIES:
+:CUSTOM_ID: sizes-082b
+:END:
+#+begin_export html
+<style>
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+ }
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+ 
+</style>
+
+<p class="fixed">This paragraph will be syled differently from its peers</p>
+<p class="em-small">This paragraph will be syled differently from its peers</p>
+<p class="em-big">This paragraph will be syled differently from its peers</p>
+
+<div class="pixel-box"></div>
+<div class="percent-box"></div>
+<div class="viewport-box"></div>
+#+end_export
+
+** Simple Exercise
+:PROPERTIES:
+:CUSTOM_ID: simple-exercise-ca4d
+:END:
+https://github.com/DigitalHistory/css-styling/
+
+* CSS Part 2: Layout
+:PROPERTIES:
+:EXPORT_FILE_NAME: 04-01-css-layout
+:END:
 
 
-*** Box Model
-One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+** Recap
+- selector syntax: ~selector > string {property: value;}~
+- colors: ~#RRGGBB~ or ~rgba(RRR, BBB, GGG, 0.alpha)~
+- sizes: ~px~ or ~em~ (or ~rem~)
+
+** Today
+- intro to layout
+- follow along wit the repo: https://github.com/DigitalHistory/css-layout 
+
+** Box Model
+:PROPERTIES:
+:CUSTOM_ID: box-model-6dae
+:END:
 
 [[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
 
+- content
+- padding
+- border
+- margin
+#+begin_notes
+One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
 
-*** Padding's Effects
+#+end_notes
+** "Russian Dolls"
+
+https://www.w3.org/TR/css-flexbox-1/images/flex-order-page.svg
+** Display: Block vs. Inline
+:PROPERTIES:
+:CUSTOM_ID: display:-block-vs.-inline-1e99
+:END:
+https://i.stack.imgur.com/mGTYI.png
+- *block* elements *have their own boxes*
+- *inline* elements *do not have boxes*. height, width, padding, work inconsistently.
+- *inline-block* elements don't make "true" boxes but allow you to set height and width. 
+#+begin_notes
+by default, these elements are inline:
+- a, b, i, strong, em, span, img
+while these are block:
+- div, article, section, nav, hx, p, ul, ol, li, main, header, footer
+#+end_notes
+** Normal Flow
+- page processed sequentially
+- each block-level element gets its own line
+- inline elements displayed inside those lines
+- heights of lines set by height of content 
+** Layout: Overriding "normal" flows
+- instruct elements to either *step out of the normal flow* or *set new rues for their "internal" or "external" flow*
+** Layout Methods
+- *display* property
+- *position* property
+- *float* property
+
+We focus on *display* but dip into the other methods
+** Display
+values we care about: 
+- display: none
+- display: block/inline/inline-block
+- display: flex
+- display: grid
+** Follow Along
+- I'll be using *dev tools* to quickly change css properties
+- do the same if you wish!
+** Display: None
+hide element *completely* so that it takes up no space at all 
+** Display: Flex
+- one-dimensional layout
+- "content-out"
+  - container determines direction & a few defaults
+  - most styling still in children
+- revolutionary!
+*** Flex Concepts: Container and Items
+- the *container* has *display: flex;*
+- the *items* are *direct children of the container*
+- *container* controls *direction* and *wrapping behaviour*, as well as *default box alignments*;
+- *items* control most other properties
+*** Flex Concepts: Direction (container!)
+https://mdn.mozillademos.org/files/3739/flex_terms.png
+- *main axis*: horizontal if *flex-direction: column*; vertical if *flex-direction: row*
+- *cross axis*: vertical if *flex-direction: column*; horizontal if *flex-direction: row*
+*** Flex Concepts: Alignment, Justification (container and items!) 
+- *align-items*: default cross-axis alignment (stretch, flex-start, flex-end)
+- *justify-content*: default main-axis alignment (flex-start, flex-end, space-around, space-between)
+- *align-self:* item cross-axis
+- *order*: placement in flex-container (relative, not absolute!!)
+** Display: Grid
+- two-dimensional layout
+- "container-in"
+  - container determines almost all layout properties
+  - children choose their position within the grid
+- revolutionary!
+*** A lot like flex!
+- many ideas come from flex
+- finer control
+- 2 dimensions, not one
+*** Grid Concepts: Container and Items
+- as in flex
+*** Grid Concepts: Templates and Areas (container)
+- set patterns for the 2-d grid
+- *grid-template-columns*: how many columns, and what size?
+- *grid-template-rows*: how many rows, and what size?
+- *grid-template-areas*: *names* the areas, and allows *items* to set their own areas
+*** Placing Items
+- *grid-column: n/m*: place items by *column-number*
+- *grid-row: n/m*: place items by *row-number*
+  - (note how these allow spanning)
+- *grid-area: area-name*: place by *named area*
+  - does not allow spanning
+** Media Queries
+- CSS rules that only come into effect under certain conditions
+- we will only use for *screen size*
+- allows creation of *responsive* sites
+#+begin_src css
+@media screen and (min-width: 500px;) {
+    normal.selector > here {
+        normal-rule: normal-value;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    normal.selector > here {
+        normal-rule: normal-value;
+    }    
+}
+#+end_src
+
+** COMMENT Padding's Effects
+:PROPERTIES:
+:CUSTOM_ID: padding's-effects-1fea
+:END:
 #+BEGIN_SRC html
 <style>
 .simple {
@@ -1341,7 +1708,10 @@ There are two ways to deal with this:
 #+END_NOTES
 
 
-*** Box-sizing Border-box
+** COMMENT Box-sizing Border-box
+:PROPERTIES:
+:CUSTOM_ID: box-sizing-border-box-35df
+:END:
 #+BEGIN_SRC html
 <style>
 .simple {
@@ -1377,7 +1747,10 @@ There are two ways to deal with this:
 #+END_NOTES
 
 
-*** Positioning
+** COMMENT Positioning
+:PROPERTIES:
+:CUSTOM_ID: positioning-9151
+:END:
 
 This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
 
@@ -1420,16 +1793,26 @@ The CSS "position" property has four possible values, whose names are [[http://l
 
 Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
 
-*** Positioning 2: Float
+** COMMENT Positioning 2: Float
+:PROPERTIES:
+:CUSTOM_ID: positioning-2:-float-2153
+:END:
 So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
 
 Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
 
-*** Changes Comin' Round Real Soon
+** COMMENT Changes Comin' Round Real Soon
+:PROPERTIES:
+:CUSTOM_ID: changes-comin'-round-real-soon-bbf2
+:END:
 All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
 
 [[http://jsbin.com/yukiwe/3/edit?html,css][Here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. They are pretty fun; if you want, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
-*** Exercise
+
+** COMMENT Exercise
+:PROPERTIES:
+:CUSTOM_ID: exercise-ea33
+:END:
 Let's do a Habermas exercise
 - [[https://github.com/titaniumbones/HabermasCode/][Here's the repo, for working in Atom]]
 - [[http://jsbin.com/yawujap/6/edit?html,css,js][...and her it is on JSBin]]
@@ -1571,13 +1954,13 @@ Annotations:
 var myString = "Hello, everyone";
 console.log(myString);
 #+END_SRC
-#+begin_notes 
+#+BEGIN_NOTES 
 - strings
 - numbers
 - boolean
 - array
 - objects
-#+end_notes
+#+END_NOTES
 *** Functions
 :PROPERTIES:
 :CUSTOM_ID: functions-3acc
@@ -1619,9 +2002,9 @@ console.log(cube(3));
 
 
 #+END_SRC
-#+begin_notes 
+#+BEGIN_NOTES 
 - differences between the loop types
-#+end_notes
+#+END_NOTES
 *** Objects
 :PROPERTIES:
 :CUSTOM_ID: objects-1a99
@@ -1661,12 +2044,12 @@ for (var i=0; i<headings.length; i++) {
 
 #+END_SRC
 
-#+begin_notes 
+#+BEGIN_NOTES 
 for (var i=0; i<headings.length; i++) {
     headings[i].textContent += " Found me!!!";
     headings[i].style.color = "red";
 };
-#+end_notes
+#+END_NOTES
 ** COMMENT Website Evaluation
 :PROPERTIES:
 :CUSTOM_ID: website-evaluation-e904
@@ -2549,11 +2932,11 @@ function someFUnctionName (parameter1/parameter2,parameterEtc) {
  It’s not that the emperor has no clothes(that would be fine); it’s that no one knows what the emperor looks like. (Ramsey 2010)
 #+end_quote
 
-#+begin_notes 
+#+BEGIN_NOTES 
 "It's one thing to worry that your canon isn't sufficiently inclusive, or broad, or representative. It's another thing when your canon has no better chance of being these thngs than a random selection. When we get up into the 14-million book rnag, books that are known by more than 2 living people are already "popular"
 
 (let alone Hamlet!!!)
-#+end_notes
+#+END_NOTES
 ** Finally: Trees
 :PROPERTIES:
 :CUSTOM_ID: today:-trees-66d5
@@ -2575,9 +2958,9 @@ https://upload.wikimedia.org/wikipedia/commons/4/4e/Darwins_tree_of_life_1859.pn
 :END:
 http://newleftreview.org.myaccess.library.utoronto.ca/static/assets/images/2620303large.gif
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - literary market as "ruthless competition" hinging on form (p.48). "readers discover that they like a certain device, and if a story doesn't seem to include it, they simply don't read it (and the story becomes extinct)". Somewhat bizarre positioning over readres and markets as Nat Sel pressures.  
-#+end_notes
+#+END_NOTES
 **** Clues as /evolved/ phenomenon
 :PROPERTIES:
 :CUSTOM_ID: clues-as-/evolved/-phenomenon-baf4
@@ -2586,9 +2969,9 @@ http://newleftreview.org.myaccess.library.utoronto.ca/static/assets/images/26203
 - But has a context; how to describe?
 - note: /not/ a personal context!
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - the very small and the very large: "devices & genres: not texts". Texts are "the real objects" of literature; but they are not the right /objects of knowledge/ for literary history.  
-#+end_notes
+#+END_NOTES
 *** Styles
 :PROPERTIES:
 :CUSTOM_ID: styles-4fc2
@@ -2615,9 +2998,9 @@ It was the abode of noise, disorder, and impropriety. Nobody was in their right 
   #+BEGIN_QUOTE
   Take a form, follow it from space to space, and study the reasons for its transformations: the 'opportunistic, hence unpredictable' reasons of evolution.
   #+END_QUOTE
-#+begin_notes 
+#+BEGIN_NOTES 
  ...in Austen in particular, we can associate it with t stron g correspondence between the social norms of the time, and the heroines of the novel. In the Latin American dictator novels, the style instead critiques the one-to-one corresponence that the dictator wants to assert between his personal interior life and the social order.  So as we watch the trnasformation of FIS, we can see also a transformation i n the balance between the individual and the social, as poles of concern in the novelistic endeavour.
-#+end_notes
+#+END_NOTES
 *** Problematics
 :PROPERTIES:
 :CUSTOM_ID: problematics-4d4e
@@ -2982,13 +3365,13 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 :END:
 - use Google Maps to explore *making geography central* to historical explanation
 
-#+begin_notes 
+#+BEGIN_NOTES 
 Today in class we are discussing /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
 
 Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
 
 Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
-#+end_notes
+#+END_NOTES
 *** Read this part! Follow the links! 
 :PROPERTIES:
 :CUSTOM_ID: read-this-part!-follow-the-links!-ee94
@@ -3012,13 +3395,13 @@ http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
   - "layering" a non-trivial taxonomic decision 
 - managed by a database, often quite complex, sophisticated
 
-#+begin_notes 
+#+BEGIN_NOTES 
 GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
 
 The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]], that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a /simplified projection/ of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images /commensurate/ with modern, satellite-derived maps.
 
 Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
-#+end_notes
+#+END_NOTES
 *** Controlling Google Maps
 :PROPERTIES:
 :CUSTOM_ID: controlling-google-maps-a206
@@ -3034,12 +3417,12 @@ Within a GIS, information is generally accessed as a set of *layers*.  Data of s
 An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  Cf. [[https://www.youtube.com/watch?v=s7wmiS2mSXY][this helpful video]] or [[https://en.wikipedia.org/wiki/Application_programming_interface][Wikipedia]] for more API info.
 #+END_ASIDE
 
-#+begin_notes 
+#+BEGIN_NOTES 
 For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
 
 You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
 
-#+end_notes
+#+END_NOTES
 
 *** Using Markdown (refresher)
 :PROPERTIES:
@@ -3453,9 +3836,9 @@ the holiness of writing often leads us to forget it. (Portelli)
   - 'Myth of Progress' makes sense of modernity
   - George Washington & the apple tree ties virtue to the State
   - "multiculturalism" as a mythical strucutrefor Canadians
-#+begin_notes 
+#+BEGIN_NOTES 
 emphasize "beyond"
-#+end_notes
+#+END_NOTES
 *** Objectivity as Founding Myth
 :PROPERTIES:
 :CUSTOM_ID: objectivity-as-founding-myth-c350
@@ -3465,9 +3848,9 @@ emphasize "beyond"
 - commitment to: fixity of the past; sharp separation between subject & object; prior nature of fact to interpretation
 - "wie es eigentlich gewesen" as bedrock
 - and then the Twentieth Century
-#+begin_notes 
+#+BEGIN_NOTES 
 - Leopold von Ranke, 1824, /Geschichte der romanischen und germanischen Völker/, "wie es eigentlich gewesen".
-#+end_notes
+#+END_NOTES
 *** Epistemological Challenges
 :PROPERTIES:
 :CUSTOM_ID: epistemological-challenges-e712
@@ -3478,7 +3861,7 @@ emphasize "beyond"
 - standpoints & the view from nowhere
 - "relativism" as nemesis and saviour
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - *fact/value distinction:* between what is and what ought to be, or between raw reality and interpretation
   - undermined not just for history but even for science: theory-ladenness of observation (Pierre Duhem, WVO Quine, others)
 - *structures & contexts:* we make sense of the world through coherent, interlocked structures of meaning. We can't evaluate turth claims outside of those strctures
@@ -3487,7 +3870,7 @@ emphasize "beyond"
 Take-home: knowledge about the past turns out to be much more unstable/complex than it first appears. 
 - and, even i n the absence of a clear/straightforward standard for "truth" or "objectivity", we still need a standard of "integrity". 
 
-#+end_notes
+#+END_NOTES
 ** Truth and Meaning in Oral History
 :PROPERTIES:
 :CUSTOM_ID: truth-and-meaning-in-oral-history-1ed0
@@ -3500,10 +3883,10 @@ oral testimony may lie not in its adherence to fact, but rather in its departure
 from it, as imagination, symbolism, and desire emerge. (Portelli)
 #+END_QUOTE
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - we can learn about the past /without limiting ourseles to the quest for facts/
 - Oral History shines best where it uncovers *relationships of meaning*: how does this union strike or this car bomb explosion or this assasisnation *resonate throughout a community*, and get tied back to actions/events that preceded or followed it? 
-#+end_notes
+#+END_NOTES
 *** Politics of engagement
 :PROPERTIES:
 :CUSTOM_ID: politics-of-engagement-84de
@@ -3520,12 +3903,12 @@ leave behind a much more abundant written record. (Portelli)
 - oral history central to this /champs de bataille/
   - challenges to objectivity/fact as goal
   - growing role for /empathy/ as technique
-#+begin_notes 
+#+BEGIN_NOTES 
 - emphasis on meaning leads almost seamlessly into forms of "engagement"
 - infiltration of academia by radicals from movements of the 50s, 60s, and 70s.
 - interest in harmonizing political work and academic pursuits
 - 
-#+end_notes
+#+END_NOTES
 *** Oral History as Redemption
 :PROPERTIES:
 :CUSTOM_ID: oral-history-as-redemption-836b
@@ -3537,10 +3920,10 @@ can be used as its raw material, a new dimension is given to history. (Thompson,
 - 1980's: 'testimony' in Central American solidarity movement;
 - 1990's & later: /Truth/ and Reconciliation Commissions (South Africa; Australia; Chile; Argentina; Guatemala; Canada)
 - tensions between /truth/ and /experience/
-#+begin_notes 
+#+BEGIN_NOTES 
 Having been mobilized as this kind of a tool, Oral History finds its way into many domains of activity beyind the historical profession.  
 - tightrope of honoring subjects/subject matter & allegiance to some standard of integrity
-#+end_notes
+#+END_NOTES
 *** Ethical Demands of Engagement
 :PROPERTIES:
 :CUSTOM_ID: ethical-demands-of-engagement-e9c2
@@ -3549,9 +3932,9 @@ Having been mobilized as this kind of a tool, Oral History finds its way into ma
 - Not a rejection of 'objectivity', but a refinement
 - balancing btwn epistemic virtues
 - constant vigilance!
-#+begin_notes 
+#+BEGIN_NOTES 
 - balance objectivity, neutrality, with ethical responsibilities (ov various kinds), also with complex engagements w/ meaning as it propagates across communities.  
-#+end_notes
+#+END_NOTES
 ** Questions of Form
 :PROPERTIES:
 :CUSTOM_ID: questions-of-form-47c4
@@ -3560,9 +3943,9 @@ Having been mobilized as this kind of a tool, Oral History finds its way into ma
 - tape not the same as digital media
 - there are lots of kinds of 'oral history'
 
-#+begin_notes 
+#+BEGIN_NOTES 
 
-#+end_notes
+#+END_NOTES
 ** Ethics of Oral History
 :PROPERTIES:
 :CUSTOM_ID: ethics-of-oral-history-3b99
@@ -3680,11 +4063,11 @@ lot of this is about building a relationship
 :END:
 - Don't be afraid to deviate from script
 - pay attention to what you hear
-#+begin_notes 
+#+BEGIN_NOTES 
 - these are skills every historian needs
 - of course we *also* need to be careful reading written texts. But the writtne text wil lstil lbe there when we go back to reread. The interview is *actively shaped* by our participation
 - OH offers special opportunities when it comes to redirecting your research -- but you have to be able to seize them in the moment.  In this sense, more performative than other parts of history; closer to anthropology, to journalism, in effect, to all theo ther disciplines where OH is used!
-#+end_notes
+#+END_NOTES
 ** Tech Part 1: Mapping Assignment Leftovers
 first: any questions?
 *** Icon Madness 1: symbol definition
@@ -3704,12 +4087,12 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
 
 #+end_src
 
-#+begin_notes 
+#+BEGIN_NOTES 
 - in my code, we used *simple string* as value for ~icon~ attribute of each markers. The string *had to be a valid URL* for the marker to work.
 - icon can *also accept an object as a value*. This gives us lots and lots of options, which are explained at length & v. technically in the Google API docs.
 - Amelia found some of these herself, and they're kind of cool.
 - main thing here is that you get *very fine* control over color, opacity, and shape.  
-#+end_notes
+#+END_NOTES
 *** Icon Madness 2: Icon Assignment
 #+begin_src javascript
     // this is an *array* that holds all the marker info
@@ -3827,12 +4210,12 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
 *** Popcorn framework
 - main library
 - plugins
-#+begin_notes 
+#+BEGIN_NOTES 
 we don't have to worry about the main library
 
 *basically no coding to do o nthis assignment!*
 - focus on markdown skills, google sheet
-#+end_notes
+#+END_NOTES
 *** Plugin Structure
 #+begin_src javascript
   pop.footnote({
@@ -3982,5 +4365,6 @@ firefox localhost:8080/oral-history
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
+# mwp-start-date-timestamp-calibration: ("<2019-01-03 Thu>" "<2019-01-01 Tue>" )
 # End:  
 
