@@ -40,14 +40,14 @@
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price                            |
-| *Email:*        | matt.price@utoronto.ca                |
-| *Office Hrs:*   | T 1-2:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                     |
-| *Meeting Times* | Thurs 2-4, [[http://map.utoronto.ca/utsg/building/033][SS 1088]]                    |
-| *Web:*          | http://digital.hackinghistory.ca/     |
-| *Slack:*        | https://digitalhistoryuoft.slack.com/ |
+| *Instructor:*   | Matt Price                                  |
+| *Email:*        | matt.price@utoronto.ca                      |
+| *Meeting Times* | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                           |
+| *Web:*          | http://digitalhistory.github.io/dh-website/ |
+| *Slack:*        | https://digitalhistoryuoft.slack.com/       |
+| *Office Hrs:*   | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                        |
 
-In general, communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].  
+In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
 
 * Introduction
 :PROPERTIES:
@@ -120,15 +120,15 @@ Course assignments will require you to install software. All of the software we 
 
 I can offer help with the following 
 
-| Tool                   | On Mac                | On Windows                                     | On Linux                           |
-|------------------------+-----------------------+------------------------------------------------+------------------------------------|
-| Real Web Browser       | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]] | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
-| Text Editor            | [[https://atom.io/][Atom]]                  | [[https://atom.io/][Atom]]                                           | [[https://atom.io/][Atom]]                               |
-| Bash Shell Environment | Terminal (Built in)   | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
-| Git Version Control    | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]           | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
-| Git Visualization      | [[https://www.gitkraken.com/][gitKraken]]             | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
-| Github Org Membership  | [[https://github.com/join][Sign up here]]          | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
-| Node and NPM           | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])  | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
+| Tool                          | On Mac                | On Windows                                     | On Linux                           |
+|-------------------------------+-----------------------+------------------------------------------------+------------------------------------|
+| Real Web Browser              | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]] | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
+| Text Editor                   | [[https://code.visualstudio.com/download][VSCode]]                | [[https://code.visualstudio.com/download][VSCode]]                                         | [[https://code.visualstudio.com/download][VSCode]]                             |
+| Bash Shell Environment        | Terminal (Built in)   | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
+| Git Version Control           | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]           | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
+| Git Visualization (optional!) | [[https://www.gitkraken.com/][gitKraken]]             | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
+| Github Org Membership         | [[https://github.com/join][Sign up here]]          | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
+| Node and NPM                  | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])  | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
 
 
 Please see the [[http://digital.hackinghistory.ca/article/tools][Setup]] page for more details about the particular tools we will be using. *YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE*
@@ -156,20 +156,23 @@ Here are some more details:
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
-| Assignment          | Due Date | Brief Description                 | A | B | C | D |
-|---------------------+----------+-----------------------------------+---+---+---+---|
-| Git & Github        | <2018-01-15 Mon>  | version control and collaboration | \check | \check | \check | \check |
-| G & GH Extras       |          |                                   | \check |   |   |   |
-| HTML & CSS          | <2018-01-26 Fri>  | web markup and presentation       | \check | \check | \check | \check |
-| H & C Extras        |          |                                   | \check |   |   |   |
-| Javascript for DH   | <2018-02-02 Fri>  | intro to programming              | \check | \check | \check | \check |
-| JS Extras           |          |                                   | \check |   |   |   |
-| Data-Driven History | <2018-02-16 Fri>  | CANCELLED                         | x | x | x | x |
-| Spatial History     | <2018-03-02 Fri>  | Simple GIS Web project            | \check | \check |   |   |
-| Oral History        | <2018-03-16 Fri>  | Multimedia Web Project            | \check | \check | \check | \check |
-| Project Proposal    | <2018-03-23 Fri>  | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+----------+-----------------------------------+---+---+---+---|
-|                     |          |                                   |   |   |   |   |
+| Assignment           | Due Date | Skills/Aims                                                        | A | B | C | D |
+|----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
+| Class Profile        | <2019-01-17 Thu>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
+| G & GH Extras        |          |                                                                    | \checkmark |   |   |   |
+| Zero to Blog Post    | <2019-01-29 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
+| Z2B Extras           |          |                                                                    | \checkmark |   |   |   |
+| A Feast of Ministers | <2019-02-12 Tue>  | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
+| Ministers Extras     |          |                                                                    | \checkmark |   |   |   |
+| DOM and Data         | <2019-03-01 Fri>  | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
+| DOM and Data Extras  |          |                                                                    | \checkmark |   |   |   |
+| Spatial History      | <2019-03-15 Fri>  | API's, GIS                                                         | \checkmark | \checkmark |   |   |
+| Oral History         | <2018-03-30 Fri>  | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
+| Project Proposal     | <2019-04-05 Fri>  | Imagine a Digital History Project                                  | \checkmark |   |   |   |
+|----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
+|                      |          |                                                                    |   |   |   |   |
+
+
 * Texts
 :PROPERTIES:
 :ID:       o2b:76732ff1-cf85-4467-ab94-c53fcd9d1519
