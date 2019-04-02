@@ -55,9 +55,9 @@ Similarly, perhaps you were only able to complete the Git & Github, HTML & CSS, 
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------+------------+--------------------------|
-| Poor                             | C-         |                       52 |
-| Satisfactory                     | C          |                       55 |
-| Excellent                        | C+         |                       58 |
+| Poor                             | C-         |                       62 |
+| Satisfactory                     | C          |                       65 |
+| Excellent                        | C+         |                       68 |
 
 *But Note!*
 
