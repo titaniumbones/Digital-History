@@ -45,7 +45,7 @@ All of our work will involve interacting with the World Wide Web. Firefox and Ch
 
 Both have highly sophisticated *developer tools* with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [[https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector][Firefox Dev Tools]] and [[https://developer.chrome.com/devtools][Chrome's version]]. 
 
-Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
+Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rightarrow Web Developer \rightarrow Console~ or ~Menu \rightarrow More Tools \rightarrow Developer \rightarrow Console~
 
 The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below). 
 
@@ -57,7 +57,7 @@ The other tool I use all the time is "inspect element", available by right-click
 :POSTID:   573
 :BLOG:     dig
 :END:
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://atom.io/][Atom]].  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [[http://flight-manual.atom.io/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install some extra packages]] by navigating to Edit \rarr Preferences \rarr + Install, as described in detail [[https://flight-manual.atom.io/using-atom/sections/atom-packages/][in the excellent Atom manual]]. I have prepared a package called [[https://atom.io/packages/history-hack-pack][history-hack-tools]], which will install all the tools I'll be using during class. Please install that one by searching for its name in the search box. The functionalities fo the various packages are briefly described in the package description.
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://atom.io/][Atom]].  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [[http://flight-manual.atom.io/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install some extra packages]] by navigating to Edit \rightarrow Preferences \rightarrow + Install, as described in detail [[https://flight-manual.atom.io/using-atom/sections/atom-packages/][in the excellent Atom manual]]. I have prepared a package called [[https://atom.io/packages/history-hack-pack][history-hack-tools]], which will install all the tools I'll be using during class. Please install that one by searching for its name in the search box. The functionalities fo the various packages are briefly described in the package description.
 
 ** Command Line
 Web developers and digital humanists spend a lot of their time in the /command-line environment/, interacting with their computers through text-based commands instead of a mouse or voice interface.  It takes some time to learn to use the command-line, but it's a very powerful and effective way to work once you get used to it. One goal of this course is to help you get comfortable in this environment and learn to take advantage of its power.  
@@ -367,9 +367,9 @@ All of the above functionality is also available via the command-line
    [[http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-githb-add-project.png]]
 3. Install the “git-plus” package in Atom
 4. Create a new file in the appropriate place.
-5. Choose menu item =Packages \rarr Git Plus \rarr Add=, then
-   =Packages \rarr Git Plus \rarr Commit=, then
-   =Packages \rarr Git Plus \rarr Push=
+5. Choose menu item =Packages \rightarrow Git Plus \rightarrow Add=, then
+   =Packages \rightarrow Git Plus \rightarrow Commit=, then
+   =Packages \rightarrow Git Plus \rightarrow Push=
 
 There's still tons to learn but this is a good start. If you are
 intrigued, keep reading.
@@ -579,11 +579,44 @@ these.
 
 
 #+DATE: [2015-07-21 Tue 13:48]
-* Reading /Eloquent Javascript/
+* Cloned the wrong repo? Here's a fix.
+:PROPERTIES:
+:EXPORT_FILE_NAME: wrong-repo-fix
+:END:
+Due perhaps to some outdated language somewhere in my course materials (sorry!) some of you appear to have accidentally *forked the template repo* rather than following the [[https://classroom.github.com/a/isSHhGpz][magic link to set things up the "official" way]]. Uh oh! Don't worry, this is easy to fix.  But *please do it soon* so I can grade all the assignments togetherHere/s are instructions for Assignment 0. If you've stumbled into this problem later in the semester, you'll need to adjust them as appropriate:
+
+1. [[https://classroom.github.com/a/isSHhGpz][Click on this link]]. Your "proper" repo will be created, and *you will be shown a link to the new repository*.
+2. Clone the new repo. You know how to od this already -- it can all be done from inside VSCode.
+3. Copy your json file to the right place in the new repo.  Stage and commit the change
+4. Do the same with your reflection and your image files
+5. run npm install and npm test to confirm that everything's good.
+6. push your changes
+
+You should now be done!
+
+* Javascript: Resources and Tools
+:PROPERTIES:
+:EXPORT_FILE_NAME: js-resources-tools
+:END:
+** Resources
+There are many, many excellent JavScript resources on the web. I strongly recommend the [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript][MDN JavaScript Learning Pathway]]. I also have a very high opinion of  [[http://eloquentjavascript.net/][Eloquent Javascript]], but in past years students have often found it somewhat difficult. However, it rewards careful study, teaches excellent habits, and encourages creative thinking while coding. Both MDN and /EJ/ have built-in JS Consoles forexperimenting with code (see below).   
+
+MDN also has a more advanced guide to JavaScript which starts with [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript][this "reintroduction"]]. This can be worth consulting if you want more information. 
+
+** Consoles and Playgrounds
+
+Sometimes you will want to try out your code and test out your ideas before putting them in a permanent file. There are various tools for this. 
+- Browser consoles and scratchpads :: Your browser has a built-in "console" where you can enter javascript commands and see their output. See [[https://digitalhistory.github.io/dh-website/tools/setup/#web-browser][the Setup doc]] for more info.
+- node console :: Unfortunately, VSCode does not have a built-in javascript console. However, you can easily create one in a terminal window by running the command ~node~. Exit by typing ~Control-d~ or ~Control-c Control-c~ or ~.exit~.
+- VSCode Debugger :: VSCode has an excellent debugger. However, debugging is a complicated subject. If you want to try to use these tools, [[https://code.visualstudio.com/docs/editor/debugging][read the docs]]. 
+- VSCode extensions :: There are many excellent VSCode extensions for JavaScript. You can experiment with [[https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode][quokka]], for instance. 
+- Online Playgrounds :: These can be fantastic resources, but they make more sense for web-based programming. We may discuss these later in the course.  
+
+* COMMENT Reading /Eloquent Javascript/
 [[http://eloquentjavascript.net/][Eloquent Javascript]] is a a fantastic programming textbook, but it takes quite a bit of work to read. It's not always easy for us to read.  Many of the examples are a little more mathematical than some of us might like, and the selections we're reading leave out a lot.  Here are some notes to help you out, especially with the later chapters:
 ** Chapter 12
 A lot of this will be review for you
-* Javascript Basics
+* COMMENT Javascript Basics
 :PROPERTIES:
 :EXPORT_FILE_NAME: javascript-basics
 :END:
