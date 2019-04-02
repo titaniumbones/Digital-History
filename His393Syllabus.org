@@ -1,4 +1,4 @@
-#+DATE: <2017-01-03 Tue>
+#+DATE: <2018-01-08 Mon>
 #+POSTID: 60
 # # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
@@ -7,7 +7,7 @@
 # #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
 #+TITLE: Syllabus
-#+SUBTITLE: HIS393: Digital History, Winter 2018
+#+SUBTITLE: HIS393: Digital History, Winter 2019
 #+AUTHOR: Matt Price
 #+EMAIL: matt.price@utoronto.ca
 #+DESCRIPTION:
@@ -22,8 +22,14 @@
 #+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 10
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-#+MACRO: ts (eval (get-ts+7))
+# #+MACRO: ts (eval (get-ts+7-inc-ov 1))
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+OPTIONS: todo:nil
+#+ORG_LMS_COURSEID: 71671
+#+ORG_LMS_ASSIGNMENTS: ~/DH/Assignments.org
+#+IS_PUBLIC: nil
+
+
 * Logistics
 :PROPERTIES:
 :ID:       o2b:fa82bed3-b176-4a70-863d-704162fede0c
