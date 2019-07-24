@@ -354,5 +354,5 @@ Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of 
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ("<2019-01-03 Thu>" "<2019-01-01 Tue>" )
+# org-mwp-classtimes-calibrate: ("<2019-09-05 Thu>" "<2019-09-03 Tue>" )
 # End:  
