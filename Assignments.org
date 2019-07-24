@@ -1,5 +1,4 @@
 #+POSTID: 558
-#+DATE: [2017-01-04 Wed 21:55]
 #+OPTIONS: toc:nil
 #+TITLE: Assignments
 #+PROPERTY: PARENT 171
@@ -11,9 +10,22 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+MACRO: ts (eval (get-ts+7))
-
+#+PROPERTY: header-args :results code
+#+ORG_LMS_COURSEID: 71671
 
 Further assignments will be posted as they are finalized. 
+* COMMENT Code
+
+#+begin_src emacs-lisp :results table raw
+(org-lms-get-grading-standards)
+#+end_src
+
+#+RESULTS:
+| 83085 | #+ORG_LMS_COURSEID: 83085 | AODA Training Module 3                                    |
+| 71671 | #+ORG_LMS_COURSEID: 71671 | HIS393H1 S LEC0101 20191:Digital History                  |
+| 35724 | #+ORG_LMS_COURSEID: 35724 | Matthew Price's Sandbox                                   |
+| 64706 | #+ORG_LMS_COURSEID: 64706 | NEW271H1 F LEC0201 20189:Interdisciplinary Special Topics |
+
 * COMMENT Ideas <2017-04-04 Tue>                                   :noexport:
 - make assignments 2,3,4 into a single website. Students can customize as they move along, and
 - if they want it can be hosted on shimano for up to say 2 years.
@@ -25,12 +37,13 @@ Further assignments will be posted as they are finalized.
 :EXPORT_FILE_NAME: list
 :END:
 -  [[#participation][Participation]]
-- [[#assignment-00-git-and-github][Assignment 00: Git and Github]]
-- [[#assignment-01-html--css-self-study][Assignment 01: HTML & CSS self-study]]
+- [[#assignment-00-your-class-profile][Assignment 00: Your Class Profile]]
+- [[#assignment-01-zero-to-blog-post][Assignment 01: Zero to Blog Post]]
 - [[#assignment-02-javascript-basics][Assignment 02: Javascript Basics]]
-- [[#assignment-03-spatial-history][Assignment 03: Spatial History]]
-- [[#assignment-04-oral-history][Assignment 04: Oral History]]
-- [[#assignment-05-project-proposal][Assignment 05: Project Proposal]]
+- [[#assignment-03-dom-and-data][Assignment 03: DOM and Data]]
+- [[#assignment-04-spatial-history][Assignment 04: Spatial History]]
+- [[#assignment-05-oral-history][Assignment 05: Oral History]]
+- [[#assignment-06-project-proposal][Assignment 06: Project Proposal]]
 
 *  Participation
 :PROPERTIES:
@@ -43,7 +56,7 @@ As described in the syllabus, I use your participation mark to determine the "-/
 
 ** The System
 
-It's simple.  Suppose you successfully complete the Git & Github, HTML & CSS, Javascript, Spatial History, and Oral History assignments. Congratulations! You have qualified for a B. But what kind of a B?
+It's simple.  Suppose you successfully complete all the main assignments, but decide not to write a Project Proposal. Congratulations! You have qualified for a B. But what kind of a B?
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------+------------+--------------------------|
@@ -94,52 +107,223 @@ Our Slack workspace is also a great way to participate. Contribute to the class 
 
 If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
 
-* Assignment 00: Git and Github
+* Assignment 00: Your Class Profile                              :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
+:PUBLISH:  t
+:DUE_AT: 2019-01-18
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (online_upload)
+:OL_DIRECTORY: ~/src/dh-2019-stu/00-profile2/
 :END:
 ** General Description
-If you're looking for [[https://github.com/titaniumbones/history-please][History, Please]], follow that link!
+If you're looking for [[https://github.com/titaniumbones/history-please][History, Please]], follow that link! Your job in this assignment is to tell the class a few things about yourself.  In the process we'll think about a few issues related to digital storage of information, including privacy, interpretation of sources, and data vs. knowledge. 
 
-One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [[./../../tools/setup][set up your working environment]] and then use Git, much as we did in class, but this time manipulating the command line.  
+One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [[./../../tools/setup][set up your working environment]] and then use Git, much as we did in class, but this time manipulating the command line. 
 
-This may take longer than you think, and it's due soon. Please get started soon by following the instructions on [[https://github.com/DigitalHistory/assignment-00-git-and-github][the Assignment 0 website]]. 
+This may take longer than you think, and it's due soon. Please get started soon by:
+- [[https://classroom.github.com/a/isSHhGpz][clicking on this link to get your account set up]]
+ following the instructions on [[https://github.com/DH2019/00-class-profile/][the Assignment 0 site]]. 
 
-* Assignment 01: HTML & CSS self-study 
+**  Rubric :rubric: 
+- [ ] Passes General Tests
+- [ ] Passes Reflection Tests
+- *Grade* :: 
+- *Comments*: 
+
+* Assignment 01: Zero to Blog Post :assignment:
 :PROPERTIES:
 :POSTID:   177
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
 :EXPORT_FILE_NAME: 01-html-css
+:PUBLISH:  t
+:DUE_AT: 2019-01-18
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (online_upload)
+:OL_DIRECTORY: ~/src/dh-2019-stu/01-blog/
+:BASECOMMIT: b430c3fb479420499583555911fcfc13a49527eb
 :END:
 
-*Due Date: Jan. 26*
+*Due Date: Jan. 31* (2 days later than original deadline)
 ** General Description
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this second assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be a little bit comfortable in all three.  
 
-In this assignment you will be introduced to HTML and CSS. First you will complete the HTML & CSS course on [[https://www.codecademy.com/][Codecademy.com]].  Then you'll be asked to do a set of small problems and submit them via Github.  
+In this assignment you will be introduced to HTML and CSS. The detailed assignment README leads you through a series of skill-building exercises, and provides links to comprehensive tutorial resources. As always, ask for help on Slack; use the new ~#blog-assignment~ channel for support/collaboration. 
 
-** Assignment
-The assignment details are listed in the [[https://github.com/DigitalHistory/assignment-01-html-css][Assignment 1 Github repository]].  Read them there and follow them carefully. Be sure to budget enough time.   
-** COMMENT Alternative
-Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
-- Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
+*[[https://classroom.github.com/a/jw8eA63G][here is the assignment repo-creation link!!]]*
+ 
+**  Rubric :rubric: 
+- [ ] Passes General Tests
+- [ ] Passes Reflection Tests
+- *Grade* :: 
+- *Comments*: 
 
-You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
-
-* Assignment 02: Javascript Basics
+* Assignment 02: Javascript Basics :assignment:
 :PROPERTIES:
-:EXPORT_FILE_NAME: 02-javascript
+:EXPORT_FILE_NAME: 02-js-basics
+:PUBLISH:  nil
+:DUE_AT: 2019-02-12
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: ~/src/dh-2019-stu/02-javascript
+:BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
+:CANVASID: 137731
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/137731
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/137731/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/137731/submissions?zip=1
 :END:
-+*Due Date: Feb. 02*+
-*Due Date: Feb 09 (Revised in Class Jan 18)*
+
+*Due Date: Feb 12*
 
 This assignment introduces you to the third and most interesting pillar of basic web development: Javascript. 
 
-Due at end of the day on the due date, you can [[https://github.com/DigitalHistory/assignment-02-javascript][find the asssignment on Github]] but please be sure to check out your own copy (as per the instructions) by [[https://classroom.github.com/a/19n88aAV][following this link]], and cloning the resultant repository to your laptop.  
+Due at end of the day on the due date, you can [[https://github.com/DigitalHistory/assignment-02-javascript][find the asssignment on Github]] but please be sure to check out your own copy (as per the instructions) [[https://classroom.github.com/a/oqxwq0a3][by following this link]], and cloning the resultant repository to your laptop.  
 
-* COMMENT Assignment 02: Distant History
+**  Rubric                                                          :rubric: 
+- [ ] Passes General Tests
+- [ ] Passes Reflection Tests
+- *Grade* :: 
+- *Comments*: 
+
+* Assignment 03: DOM and Data :assignment:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-dom-data
+:OL_PUBLISH:  t
+:DUE_AT: 2019-03-01
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: ~/src/dh-2019-stu/03-dom-data
+:BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
+:CANVASID: 137730
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/137730
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
+:PUBLISH:  t
+:END:
+
+*Due Date: March 01*
+
+In this assignment, you will slowly work your way up to manipulation of real web pages via Javascript.  This can be a difficult transition, so be prepared for some teeth-gnashing.  
+
+Due at end of the day on the due date, you can [[https://classroom.github.com/a/_ocP1kS-][find the asssignment on Github]], and please be sure to check out your own copy (as per the instructions) by [[https://classroom.github.com/a/_ocP1kS-][following this link]], and cloning the resultant repository to your laptop.
+
+  
+**  Rubric                                                          :rubric: 
+- [ ] Passes General Tests
+- [ ] Passes Reflection Tests
+- *Grade* :: 
+- *Comments*: 
+
+* Assignment 04: Spatial History                                 :assignment:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 04-spatial-history
+:ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
+:PARENT:   Assignments
+:OL_PUBLISH:  t
+:DUE_AT: 2019-03-01
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
+:BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
+:CANVASID: 145793
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/145793
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
+:PUBLISH:  t
+:END:
+*Due Date: March 18*
+
+Your next assignment builds directly from our in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  Essentially, you will repeat the in-class assignment with much greater intellectual effort, but using the same technical framework. [[https://classroom.github.com/a/oC6_7PJk][The assignment is now online]], and I have extended the due date to Monday, March 18.
+**  Rubric                                                          :rubric: 
+- [ ] Code Works
+- [ ] Map is Relevant to Essay
+- [ ] Essay makes relevant/significant Historical claim
+
+- *Grade* :: 
+- *Comments* :: 
+
+* Assignment 05: Oral History                                    :assignment:
+:PROPERTIES:
+:PARENT:   Assignments
+:ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
+:POSTID:   330
+:POST_DATE: [2017-01-04 Wed 22:04]
+:EXPORT_FILE_NAME: 05-oral-history
+:OL_PUBLISH:  t
+:DUE_AT: 2019-03-01
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
+:BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
+:PUBLISH:  t
+:CANVASID: 153269
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/153269
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/153269/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/153269/submissions?zip=1
+:END:
+
+ *Due Date: March 30*
+
+There is no new assignment link for the Oral History assignment; instead, you will just use  [[https://classroom.github.com/a/oC6_7PJk][the repository you have already cloned, or follow this old link to clone for the first time]]. 
+
+
+However, you will need to update some of the files in your repository to newer versions that I have since pushed to the main assignment repository.  If you followed my instructions, you will not have made any changed to these files, so it should be trivial to pull in my changes by pasting these commands into the terminal (be sure you are in the root directory of your repository when issuing these commands):
+#+begin_src sh
+git remote add upstream https://github.com/DigitalHistory/advanced-topics.git
+git pull upstream master
+#+end_src
+
+This may pop you into a new editor window to edit the commit message.  If so, just save it as as is and close; commit should proceed from there. If you have issues, please post them to Slack.  
+
+Some more advanced Git command tutorials coming your way soon. 
+
+See the README.org file in your own repo or [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][the upstream Github Repo]] for details.
+
+
+**  Rubric                                                          :rubric: 
+- *Grade* :: 
+- *Comments* ::  
+
+* Assignment 06: Project Proposal :assignment:
+:PROPERTIES:
+:PARENT:   Assignments
+:ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
+:POST_DATE: [2017-03-10 Fri 13:12]
+:POSTID:   629
+:EXPORT_FILE_NAME: 06-project-proposal
+:END:
+*Due Date: April 02*
+
+Remember that the proper way to create your assignment repository [[https://classroom.github.com/a/oC6_7PJk][is by clicking on this lick, allowing Github Classroom to do the work for you]]. (But you should already have done this for the last two assignments!) 
+
+As before, please make sure you've pulled from the upstream repository before starting work on this assignment.  See your own repo or [[https://github.com/DigitalHistory/advanced-topics/tree/master/project-proposal][the upstream Github Repo]] for details.
+
+**  Rubric                                                          :rubric: 
+- [ ] Passes General Tests
+
+- *Grade* :: 
+- *Comments* ::  
+* COMMENT Assignment 02: Distant History                         :deprecated:
 :PROPERTIES:
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
 :POSTID:   209
@@ -231,122 +415,6 @@ I've uploaded a few corpora to my local server, e.g.:
 - Lincoln speeches
 - Inaugural speeches:
 - 
-* Assignment 03: Spatial History
-:PROPERTIES:
-:EXPORT_FILE_NAME: 03-spatial-history
-:ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
-:PARENT:   Assignments
-:POSTID:   315
-:POST_DATE: [2015-12-14 Mon 14:04]
-:END:
-*Due Date: March 02*
-
-In class, we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from the course website, from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]], and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
-
-Your next assignment builds directly from that in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  Essentially, you will repeat the in-class assignment with much greater intellectual effort, but using the same technical framework. [[https://github.com/titaniumbones/maps-with-markdown][Please work directly with the files in the Github repo]], either by forking the repo, or downloading the zipball.  
-
-** Assignment
-Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you.  We discussed a number of such themes in the class (you should remember them from our discussion). The final product should meet the following criteria:
-
-- Essay :: You should write a short essay, approximately 900 words (~ 3-4 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis.
-
-     Here are some plausible examples of appropriate topics:
-  - Corridor of Power: Berlin's Friedrichstrasse in the Nazi Era
-  - End of an Era: Toronto's last meatpacking plants
-  - An Empire at Home: conservative Think Tanks in Washington, D.C.
-
-  I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
-
-  You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take some examples at random, networks of hippies, underground bus networks, comparative suffrage movements. etc.)
-
-  Take this opportunity to think about the effect of /form/ on /content/.  How does the present of the map change the way you express your thoughts? Are new kinds of arguments possible? On the flip side, does the map lead you to ignore or downplay any important elements?
-
-  The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~[Latour, p. 97](http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a)~.  Don't worry about a bibliography.  
-
-- Map :: Your map should have at least 5 markers, and could have many more.  You can explore more complex objects -- such as polygons -- using the geoJSON import feature sof Google Maps.  There are links to the API documentation in the code.  
-
-     In class, we cut and paste to create multiple markers. The assignment template uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
-
-- Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder
-
-** Getting your assignment, and handing it in
-This assignment is stored on Github. You can get it easily by navigating to [[https://github.com/titaniumbones/maps-with-markdown]] and locating the "DownloadZIP" button. 
-
-To hand it in, simply rezip the folder and send it to me at the Dropbox Request URL I'll send you before the due date; be sure to rename the folder itself to something that contains your name before zipping, e.g., "matt-price-his389-spatial-history". If you don't take this step, your work will not be preserved and I won't grade your assignment.  
-
-*Or:* If you like, you are more than welcome to login to your github account, fork the repository, edit, and push your changes to the web; if you do that, then all you need to do is send me the URL of your new repository.
-
-** Learning Objectives
-- Understand what a Google Map is and how it relates to GIS
-- Learn the simplest parts of the Google Maps Javascript API, and use them to create map elements
-- Integrate a written historical narrative with a digital map object
-** Expectations
-Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and map should not be artificial -- the map should serve as an important part of your historical argument or explanation. 
-
-Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  Markers should provide information that makes your written text clearer or more persuasive.  
-
-While there is not much styling work to do, you should not create a terrible mess! You should make small visual changes to the default layout to make the legend more useful and visually appealling, and think about further work if it seems appropriate.
-
-
-* Assignment 04: Oral History
-:PROPERTIES:
-:PARENT:   Assignments
-:ID:       o2b:38f6d843-a1b8-448c-8538-05671e4fdc06
-:POSTID:   330
-:POST_DATE: [2017-01-04 Wed 22:04]
-:EXPORT_FILE_NAME: 04-oral-history
-:END:
-
- *Due Date: March 29*
-
-Rather than repeat myself in my usual error-prone way, I will remind you [[https://classroom.github.com/a/ag2mWqkY][that the proper way to create your assignment repository is by clicking on this lick, allowing Github Classroom to do the work for you]]. (But you should already have done this for the last assignment!) Please also read the [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][assignment description on Github]]. We will discuss this at greater length in class in the final weeks of the semester. 
-
-* Assignment 05: Project Proposal
-:PROPERTIES:
-:PARENT:   Assignments
-:ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
-:POST_DATE: [2017-03-10 Fri 13:12]
-:POSTID:   629
-:EXPORT_FILE_NAME: assignment-05-project-proposal
-:END:
-*Due Date: April 02*
-
-Remember that the proper way to create your assignment repository is by clicking on this lick, allowing Github Classroom to do the work for you]]. (But you should already have done this for the last two assignments!) Please also read the [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][assignment description on Github]]. We will discuss this at greater length in class in the final weeks of the semester. 
-
-For your final assignment, respond to the following /call for proposals/ with an application approximately 2000 words in length, plus a provisional budget in the form of a spreadsheet (includea PDF, or provide a link to a *viewable* google sheet) or Markdown table. There's a nice [[https://chrome.google.com/webstore/detail/markdowntablemaker/cofkbgfmijanlcdooemafafokhhaeold?hl=en][Google Sheets Extension]] that will convert a Google sheet to markdown for you. 
-
-See below for details.
-
-** Call for Proposals: Digital History Initiative Grants
-
-- Student Development Grant :: This grant of $15,000, to be spend within a period of 12 months, funds small or preliminary projects developed by undergraduate or graduate students.
-- Small Team Grant :: This grant funds up to $50,000 of work by a small team, in a period of 1-3 years.
-- Large Grant :: This fund, which has no fixed upper limit of funding, funds long-term projects over a period of 3-5 years.
-- of genuine historical interest
-- technically feasible
-- appropriate to the DH methods that might be discussed e.g. in a course such as "Digital History" at the University of Toronto
-- of real personal or professional interest to you, the applicant.
-
-The Hacking History Foundation is pleased to announce a new /Digital History Initiative/, intended to advance the field of digital historical studies in Canada. We are grateful to an anonymous donor from Qatar who has agreed to underwrite three levels of grant:
-We invite applications for all three categories, to be submitted by <2018-04-02 Mon>. Be sure to identify the category of grant you are applying for. Regardless of the project's scale, the proposal should be:
-
-The Hacking History Foundation strongly values honesty. It is not necessary for you yourself to possess all the skills to complete the project; but you should be able to clearly articulate the nature of the technical challenges and have a realistic assessment of what is required to overcome them. You should also be able to articulate the /historical import/ of the project, and its worthiness for public funding, because even though we are funded by shadowy carbon-spewing billionaires, our Foundation has a strong sense of civic duty.  
-
-** Structure
-The proposal should be composed of the following elements (word lengths are approximate): 
-- Introduction (500 words) :: In broad strokes, describe the project, the questions it is intended to answer, and the role of Digital History methods within the project
-- Methods (500 words) :: Describe the tools you intend to use, and your plans for both research and dissemination of results
-- Timeline (500 words) :: Describe the work that will be required to complete this project, and how much time you and your potential collaborators or research assistants will require to bring it to completion
-- Importance (500 words) :: Discuss the importance of this research, and its place in a broader historical conversation
-- Budget (1 Spreadsheet page) :: Outline and justify the costs of the project. [Note to students of Hacking History: we recognize that your costs may be, er, rough ballpark estimates. You won't be graded on the accuracy of your budget, but make a serious effort to include all the categories of cost.]
-
-** Expectations
-This is a difficult assignment. As usual, you should turn in a lucidly-written paper with minimal grammatical or spelling errors, written in accordance with scholarly standards for citation and originality.  Your project should be of genuine historical interest, and your text should convince me of that importance. Your methods section should describe the challenges inherent in the project, and provide a provisional plan for overcoming them.  You should demonstrate awareness both of the difficulties of DH research, and of the existing resources that are available to scholars undertaking this kind of work.  
-
-/If you wish, you may certainly build upon other work you have done this semester./
-
-Good luck! I look forward to the results.
-
 * COMMENT Assignment 06: Short Answer 
 :PROPERTIES:
 :ID:       o2b:843aa819-2f95-4e9b-bba8-c88810410d02
