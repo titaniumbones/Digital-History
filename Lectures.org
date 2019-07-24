@@ -5,8 +5,44 @@
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+MACRO: ts (eval (get-ts+7))
 #+OPTIONS: todo:nil
+# #+REVEAL_SINGLE_FILE: t
+
+* Set up Klipse
+:PROPERTIES:
+:CUSTOM_ID: set-up-klipse-f816
+:END:
+** remote -- for huveal
+:PROPERTIES:
+:CUSTOM_ID: remote----for-huveal-7a84
+:END:
+#+begin_src emacs-lisp
+(setq org-reveal-klipse-js "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js")
+(setq org-reveal-klipse-css "https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css")
+(setq org-reveal-root "http://sandbox.hackinghistory.ca/Tools/reveal.js")
+#+end_src
+
+#+RESULTS:
+: http://sandbox.hackinghistory.ca/Tools/reveal.js
+
+
+** Local Versions (required for notes!)
+:PROPERTIES:
+:CUSTOM_ID: local-versions-(required-for-notes)-2bea
+:END:
+#+begin_src emacs-lisp
+(setq org-reveal-klipse-js "/home/matt/Dropbox/Work/History/DigitalHistory/vendor/klipse/klipse_plugin.min.js")
+(setq org-reveal-klipse-css "https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css")
+(setq org-reveal-root "/home/matt/src/reveal.js/")
+
+#+end_src
+
+#+RESULTS:
+: /home/matt/src/reveal.js/
 
 * attendance
+:PROPERTIES:
+:CUSTOM_ID: attendance-5b51
+:END:
 
 - Giselle, diaspora and transnational studies; minors in religion and equity studies:
 - Selena: English & Religion major;
@@ -126,8 +162,14 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 
 
 * COMMENT Participation
+:PROPERTIES:
+:CUSTOM_ID: participation-362b
+:END:
 
 ** <2018-01-04 Thu>
+:PROPERTIES:
+:CUSTOM_ID: <2018-01-04-thu>-4a71
+:END:
 - Dany, 4th year minor in history, major in equity studies -- video games
 - Victoria, 2nd year in art history & history, pop music
 - Julia, 3rd yr history major, online coding skills, interested in oral history
@@ -250,6 +292,9 @@ At the end of this course, you should:
 - understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
 *** COMMENT Assignments (full)
+:PROPERTIES:
+:CUSTOM_ID: assignments-(full)-9d47
+:END:
 | Assignment          | Due Date         | Brief Description                 | A | B | C | D |
 |---------------------+------------------+-----------------------------------+---+---+---+---|
 | Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
@@ -281,6 +326,9 @@ At the end of this course, you should:
 
 
 *** Participation
+:PROPERTIES:
+:CUSTOM_ID: participation-ccd7
+:END:
 - come every time!
 - pay attention and ask questions!
 - no email/youtube/reddit/facebook etc etc etc etc
@@ -310,11 +358,17 @@ You can find our first two assignments on the web [[https://github.com/DigitalHi
 - present to another pair 
 
 ** Announcement! 
+:PROPERTIES:
+:CUSTOM_ID: announcement-d6f5
+:END:
 *U of T Coders Software Carpentry Workshop!*
 
 [[https://uoftcoders.github.io/studyGroup/#events][January 18-19, Gerstein Library!]]
 
 ** Git!
+:PROPERTIES:
+:CUSTOM_ID: git-4068
+:END:
 - "Track Changes" on steroids
 - "version Control" software optimized for collaboration
 
@@ -814,6 +868,9 @@ This process of commodification, and its trasformation from a *positive, welcome
   - algorithmic actors (!)
 
 *** Technical Affordances of the web
+:PROPERTIES:
+:CUSTOM_ID: technical-affordances-of-the-web-503d
+:END:
 - instantaneous distribution
 - distributed production
 - machine-readable text
@@ -884,6 +941,9 @@ On the web, text is "Marked up"
   - Understand how a complex computer algorithm might treat it as "data".
 
 *** Tag Structure
+:PROPERTIES:
+:CUSTOM_ID: tag-structure-6119
+:END:
 #+BEGIN_SRC html
 <tag att1="value1" att2="value2">content</tag>
 <p class="normal" align="right">Paragraph Content</p>
@@ -1073,25 +1133,43 @@ digitization does provide scale (or quantity) but does so at the price of rich, 
     - how do railroads impact social and economic development?
     - others?
 ** The Preservation Challenge
+:PROPERTIES:
+:CUSTOM_ID: the-preservation-challenge-0188
+:END:
 http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201701/510243425.jpg
 *** and this
+:PROPERTIES:
+:CUSTOM_ID: and-this-505a
+:END:
 #+ATTR_HTML: :class paired
 http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933328844565.png
 #+ATTR_HTML: :class paired
 http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933375405914.png
 *** and this too
+:PROPERTIES:
+:CUSTOM_ID: and-this-too-1e8f
+:END:
 [[./Images/trump-epa-changes.png]]
 *** Remind you of anything?
+:PROPERTIES:
+:CUSTOM_ID: remind-you-of-anything?-74b2
+:END:
 #+BEGIN_QUOTE
 The Party said that Oceania had never been in alliance with Eurasia. He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago. But *where did that knowledge exist? Only in his own consciousness, which in any case must soon be annihilated.* And if all others accepted the lie which the Party imposed -if all records told the same tale -- *then the lie passed into history and became truth*. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered. Whatever was true now was true from everlasting to everlasting. It was quite simple. All that was needed was an unending series of victories over your own memory. 'Reality control', they called it: in Newspeak, 'doublethink'.
 #+END_QUOTE
 
 *** Remind you of anything?
+:PROPERTIES:
+:CUSTOM_ID: remind-you-of-anything?-f5fc
+:END:
 
 #+BEGIN_QUOTE
 Winston sank his arms to his sides and slowly refilled his lungs with air. His mind slid away into the labyrinthine world of doublethink. To know and not to know, to be conscious of complete truthfulness while telling carefully constructed lies, to hold simultaneously two opinions which cancelled out, knowing them to be contradictory and believing in both of them, to use logic against logic, to repudiate morality while laying claim to it, to believe that democracy was impossible and that the Party was the guardian of democracy, to forget whatever it was necessary to forget, then to draw it back into memory again at the moment when it was needed, and then promptly to forget it again: and above all, to apply the same process to the process itself. That was the ultimate subtlety: consciously to induce unconsciousness, and then, once again, to become unconscious of the act of hypnosis you had just performed. Even to understand the word 'doublethink' involved the use of doublethink. 
 #+END_QUOTE
 *** Everything.gov
+:PROPERTIES:
+:CUSTOM_ID: everything.gov-09b5
+:END:
 - Archive Everything
 - Write the query tools
 - "genome project" for government data
@@ -1331,6 +1409,9 @@ background-color: black;
 #+end_export
 
 *** More Selectors
+:PROPERTIES:
+:CUSTOM_ID: more-selectors-d28a
+:END:
 #+BEGIN_SRC css
 div.main p {
       color:red;
@@ -1374,6 +1455,9 @@ div#cssmain > p.blue {
 - fine gradations within this
 - the awful *!important* rule
 ** Color Values
+:PROPERTIES:
+:CUSTOM_ID: color-values-456b
+:END:
 Various representations:
 #+begin_export html
 <style>
@@ -1451,6 +1535,9 @@ div#maincss2 {
    <p> here is a sample paragraph doing all of this stuff...</p>
 #+END_export
 ** Sizes 
+:PROPERTIES:
+:CUSTOM_ID: sizes-af7f
+:END:
 #+begin_src web
 <style>
  p.fixed {
@@ -1542,20 +1629,26 @@ div#maincss2 {
 :END:
 https://github.com/DigitalHistory/css-styling/
 
-* CSS Part 2: Layout
+* 04: Pt 1, CSS Part 2: Layout
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-01-css-layout
+:CUSTOM_ID: 04:-pt-1,-css-part-2:-layout-494e
 :END:
 
-
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-7f3b
+:END:
 - selector syntax: ~selector > string {property: value;}~
 - colors: ~#RRGGBB~ or ~rgba(RRR, BBB, GGG, 0.alpha)~
 - sizes: ~px~ or ~em~ (or ~rem~)
 
 ** Today
+:PROPERTIES:
+:CUSTOM_ID: today-e46c
+:END:
 - intro to layout
-- follow along wit the repo: https://github.com/DigitalHistory/css-layout 
+- follow along with the repo: https://github.com/DigitalHistory/css-layout 
 
 ** Box Model
 :PROPERTIES:
@@ -1573,6 +1666,9 @@ One important notion to understand in CSS is the so-called "[[http://www.w3.org/
 
 #+end_notes
 ** "Russian Dolls"
+:PROPERTIES:
+:CUSTOM_ID: russian-dolls-ba13
+:END:
 
 https://www.w3.org/TR/css-flexbox-1/images/flex-order-page.svg
 ** Display: Block vs. Inline
@@ -1590,73 +1686,128 @@ while these are block:
 - div, article, section, nav, hx, p, ul, ol, li, main, header, footer
 #+end_notes
 ** Normal Flow
+:PROPERTIES:
+:CUSTOM_ID: normal-flow-9b65
+:END:
 - page processed sequentially
 - each block-level element gets its own line
 - inline elements displayed inside those lines
 - heights of lines set by height of content 
 ** Layout: Overriding "normal" flows
+:PROPERTIES:
+:CUSTOM_ID: layout:-overriding-normal-flows-6043
+:END:
 - instruct elements to either *step out of the normal flow* or *set new rues for their "internal" or "external" flow*
 ** Layout Methods
+:PROPERTIES:
+:CUSTOM_ID: layout-methods-5357
+:END:
 - *display* property
 - *position* property
 - *float* property
 
 We focus on *display* but dip into the other methods
 ** Display
+:PROPERTIES:
+:CUSTOM_ID: display-f731
+:END:
 values we care about: 
 - display: none
 - display: block/inline/inline-block
 - display: flex
 - display: grid
 ** Follow Along
+:PROPERTIES:
+:CUSTOM_ID: follow-along-e70b
+:END:
 - I'll be using *dev tools* to quickly change css properties
 - do the same if you wish!
+-  https://github.com/DigitalHistory/css-layout 
 ** Display: None
+:PROPERTIES:
+:CUSTOM_ID: display:-none-5a37
+:END:
 hide element *completely* so that it takes up no space at all 
 ** Display: Flex
+:PROPERTIES:
+:CUSTOM_ID: display:-flex-2a88
+:END:
 - one-dimensional layout
 - "content-out"
   - container determines direction & a few defaults
   - most styling still in children
 - revolutionary!
 *** Flex Concepts: Container and Items
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-container-and-items-c4e5
+:END:
 - the *container* has *display: flex;*
 - the *items* are *direct children of the container*
 - *container* controls *direction* and *wrapping behaviour*, as well as *default box alignments*;
 - *items* control most other properties
 *** Flex Concepts: Direction (container!)
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-direction-(container)-0ecf
+:END:
 https://mdn.mozillademos.org/files/3739/flex_terms.png
 - *main axis*: horizontal if *flex-direction: column*; vertical if *flex-direction: row*
 - *cross axis*: vertical if *flex-direction: column*; horizontal if *flex-direction: row*
 *** Flex Concepts: Alignment, Justification (container and items!) 
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-alignment,-justification-(container-and-items)-40c6
+:END:
 - *align-items*: default cross-axis alignment (stretch, flex-start, flex-end)
 - *justify-content*: default main-axis alignment (flex-start, flex-end, space-around, space-between)
 - *align-self:* item cross-axis
 - *order*: placement in flex-container (relative, not absolute!!)
 ** Display: Grid
+:PROPERTIES:
+:CUSTOM_ID: display:-grid-f6dd
+:END:
 - two-dimensional layout
 - "container-in"
   - container determines almost all layout properties
   - children choose their position within the grid
 - revolutionary!
 *** A lot like flex!
+:PROPERTIES:
+:CUSTOM_ID: a-lot-like-flex-1b97
+:END:
 - many ideas come from flex
 - finer control
 - 2 dimensions, not one
 *** Grid Concepts: Container and Items
+:PROPERTIES:
+:CUSTOM_ID: grid-concepts:-container-and-items-c24b
+:END:
 - as in flex
 *** Grid Concepts: Templates and Areas (container)
+:PROPERTIES:
+:CUSTOM_ID: grid-concepts:-templates-and-areas-(container)-4a8c
+:END:
 - set patterns for the 2-d grid
 - *grid-template-columns*: how many columns, and what size?
 - *grid-template-rows*: how many rows, and what size?
 - *grid-template-areas*: *names* the areas, and allows *items* to set their own areas
 *** Placing Items
+:PROPERTIES:
+:CUSTOM_ID: placing-items-ecc0
+:END:
 - *grid-column: n/m*: place items by *column-number*
 - *grid-row: n/m*: place items by *row-number*
   - (note how these allow spanning)
 - *grid-area: area-name*: place by *named area*
   - does not allow spanning
+*** Resources
+:PROPERTIES:
+:CUSTOM_ID: resources-7128
+:END:
+- [[http://grid.malven.co/][visual cheatsheet]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids][MDN Grid series]]
 ** Media Queries
+:PROPERTIES:
+:CUSTOM_ID: media-queries-9633
+:END:
 - CSS rules that only come into effect under certain conditions
 - we will only use for *screen size*
 - allows creation of *responsive* sites
@@ -1942,114 +2093,6 @@ Annotations:
 - narrative tension
 - "oral history" emphasis
 - Is this how we have to write? 
-** COMMENT Javascript
-:PROPERTIES:
-:CUSTOM_ID: javascript-252a
-:END:
-*** Variables
-:PROPERTIES:
-:CUSTOM_ID: variables-7835
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-var myString = "Hello, everyone";
-console.log(myString);
-#+END_SRC
-#+BEGIN_NOTES 
-- strings
-- numbers
-- boolean
-- array
-- objects
-#+END_NOTES
-*** Functions
-:PROPERTIES:
-:CUSTOM_ID: functions-3acc
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-function square(number) {
-  return number * number;
-}
-
- var cube = function(number) { 
-      return number * number * number;
-  };
-
-console.log(square(2));
-console.log(cube(3));
-#+END_SRC
-*** Arrays and Loops
-:PROPERTIES:
-:CUSTOM_ID: loops-86b8
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
- // here is a very basic "for loop":
-  for (i=0; i<10; i++ ) {
-    console.log("this is number: " + (i+1));
-  }
-
-  // a simple array -- essentially a list
-  var veggies = ["carrot", "potato", "pea"];
-
-  // a "for-of loop" -- iterates over array items
-  for (i of veggies) {
-    console.log(i)
-  };
-
-  // a for-in loop -- iterates over array length (0,1,2,3, etc)
-  for (i in veggies) {
-       console.log(veggies[i])
-       };
-
-
-#+END_SRC
-#+BEGIN_NOTES 
-- differences between the loop types
-#+END_NOTES
-*** Objects
-:PROPERTIES:
-:CUSTOM_ID: objects-1a99
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-  var wl = {
-      "PM": "Wilfred Laurier",
-      "Party": "Liberal",
-      "From": "1896",
-      "To": "1911"
-  };
-  for (i in wl) {
-      console.log("wl." + i + " is: " + wl[i]);
-  }
-#+END_SRC
-
-*** DOM Manipulation
-:PROPERTIES:
-:CUSTOM_ID: dom-manipulation-6404
-:END:
-#+BEGIN_SRC js :exports code
-var newNode = document.createElement("h1");                 // Create a <h1> node
-var textnode = document.createTextNode("brand new header");         // Create a text node
-newNode.appendChild(textnode);                              // insert the text into the <h1>
-document.body.appendChild(newNode);
-
-var headings = document.getElementsByTagName("h1");
-console.log(headings);
-for (var i=0; i<headings.length; i++) {
-    console.log(headings[i].innerHTML);
-};
-
-for (var i=0; i<headings.length; i++) {
-    headings[i].textContent += " Found me!!!";
-    headings[i].style.color = "red";
-};
-
-#+END_SRC
-
-#+BEGIN_NOTES 
-for (var i=0; i<headings.length; i++) {
-    headings[i].textContent += " Found me!!!";
-    headings[i].style.color = "red";
-};
-#+END_NOTES
 ** COMMENT Website Evaluation
 :PROPERTIES:
 :CUSTOM_ID: website-evaluation-e904
@@ -2099,7 +2142,7 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
-* 04: Distant Reading 1                                    
+* 04: Pt 2, Distant Reading 1                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
 :EXPORT_TITLE: Distant Reading I
@@ -2113,7 +2156,10 @@ With a (new!) partner, follow the directions!
 - discussion
 - Wordles
 - Have assignment ready!
-** Bright the Hawk's Flight
+** COMMENT Bright the Hawk's Flight
+:PROPERTIES:
+:CUSTOM_ID: bright-the-hawk's-flight-d1e1
+:END:
 @@html:<div class="paired" style="margin-right:40px;">@@
 #+begin_verse 
 Only in silence the word,
@@ -2126,7 +2172,7 @@ On the empty sky.
 
 #+ATTR_HTML: :class paired
 https://c1.staticflickr.com/3/2430/3551195631_bc66b90648_b.jpg
-** Recap
+** Reminder
 :PROPERTIES:
 :CUSTOM_ID: recap-7764
 :END:
@@ -2139,58 +2185,13 @@ https://c1.staticflickr.com/3/2430/3551195631_bc66b90648_b.jpg
   - What /relation to sources/?
   - What /kinds of arguments/?
   - What /narrative forms/?
-- missed the "openness" section
 *** Plan for the day
 :PROPERTIES:
 :CUSTOM_ID: plan-for-the-day-c53a
 :END:
 - Lecture (short as i can manage, will stop early if nec)
 - Class Discussion (what did you learn/ what do you doubt)
-- Break
 - help w/ HTML/CSS/JS (if you're stuck/don't understand) 
-** Openness
-:PROPERTIES:
-:CUSTOM_ID: op-enness-0724
-:END:
-#+BEGIN_QUOTE
-...ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
-#+END_QUOTE
-*** Ideals of openness
-:PROPERTIES:
-:CUSTOM_ID: ideals-of-openness-cb72
-:END:
-- rooted in Enlightenment
-#+ATTR_HTML: :class paired
-[[file:~/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
-#+ATTR_HTML: :class paired
-[[file:~/DH/Images/jos-wri-airpump.jpg]]
-- at the foundation of scholarship
-- yet, not manifest in our scholarly journals & publishing regimes
-*** Jefferson on Freedom of Information
-:PROPERTIES:
-:CUSTOM_ID: jefferson-on-freedom-of-information-bd14
-:END:
-#+BEGIN_QUOTE
- It would be curious then, if an idea, the fugitive fermentation of an individual brain, could, of natural right, be claimed in exclusive and stable property. If nature has made any one thing less susceptible than all others of exclusive property, it is the action of the thinking power called an idea, which an individual may exclusively possess as long as he keeps it to himself; but *the moment it is divulged, it forces itself into the possession of every one,* and the receiver cannot dispossess himself of it. Its peculiar character, too, is that no one possesses the less, because every other possesses the whole of it. He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me. *That ideas should freely spread from one to another over the globe, for the moral and mutual instruction of man, and improvement of his condition, seems to have been peculiarly and benevolently designed by nature, when she made them,* like fire, expansible over all space, without lessening their density in any point, and like the air in which we breathe, move, and have our physical being, incapable of confinement or exclusive appropriation. Inventions then cannot, in nature, be a subject of property.
-#+END_QUOTE
-*** the web as open space
-:PROPERTIES:
-:CUSTOM_ID: the-web-as-open-space-e7e9
-:END:
-- Origins of Web wrapped up in ideologies of Freedom
-#+BEGIN_QUOTE
-"Information wants to be free - because it is now so easy to copy and distribute casually - and information wants to be expensive - because in an Information Age, nothing is so valuable as the right information at the right time. (Brand, ca. 1984)
-
-When information is generally useful, redistributing it makes humanity wealthier no matter who is distributing and no matter who is receiving. (Stallman, ~1990, quoted by Dening)
-#+END_QUOTE
-- but different freedoms compete
-- "walled gardens" vs /open access/
-- Struggles only intensifying, with battle lines not quite stable
-  - net neutrality
-  - the Facebook problem
-  - Digital Public Library of America
-  - archive.org
-
 ** Abstract Models
 :PROPERTIES:
 :CUSTOM_ID: abstract-models-d7c3
@@ -2217,7 +2218,7 @@ to notice:
 :CUSTOM_ID: to-the-point-of-deconstruction-7de9
 :END:
 #+BEGIN_QUOTE
-If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes’ the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves
+If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes’ the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves.
 #+END_QUOTE
 *** Closeness
 :PROPERTIES:
@@ -2421,14 +2422,23 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 :CUSTOM_ID: exercise:-build-a-wordle-34a6
 :END:
 *** Choose a work to not read.
+:PROPERTIES:
+:CUSTOM_ID: choose-a-work-to-not-read.-43b7
+:END:
 - navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
 - download the *text* version
 *** Make some predictions
+:PROPERTIES:
+:CUSTOM_ID: make-some-predictions-df0a
+:END:
 - Write down your basic expectations of the novel: 
 - What are the main themes?
 - What are the lessons?
 - What is its place in literary history?
 *** Make a Wordle
+:PROPERTIES:
+:CUSTOM_ID: make-a-wordle-c8b5
+:END:
 - navigate to [[http://wordle.net]]
 - strip the metadata from the text (e.g., license, etc.)
 - create wordle for the text as a whole.
@@ -2437,6 +2447,7 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 *** Make a network
 :PROPERTIES:
 :ID:       aefd9474-d1ed-40ae-9190-034aac825a3e
+:CUSTOM_ID: make-a-network-43f4
 :END:
 - copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
 
@@ -2446,51 +2457,701 @@ http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
 In short, Textexture tries to automatically discern and visualize relationships between words, based on their usage, within a text. Looking at the network graph of your novel, what relationships seem most interesting? Experiment with the graph by clicking through different words. 
 
 *** Repeat
+:PROPERTIES:
+:CUSTOM_ID: repeat-a785
+:END:
 - Try the same process with another novel.
 - What have you learned? Anything?  
 
-** HTML Questions
+** COMMENT HTML Questions
+:PROPERTIES:
+:CUSTOM_ID: html-questions-87d5
+:END:
 #+begin_src html
 <style>
 
 </style>
 <!-- leaving blank for your questions -->
 #+end_src
-** Javascript
+* COMMENT Javascript
+:PROPERTIES:
+:CUSTOM_ID: javascript-252a
+:END:
+** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables-7835
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+var myString = "Hello, everyone";
+console.log(myString);
+#+END_SRC
+#+BEGIN_NOTES 
+- strings
+- numbers
+- boolean
+- array
+- objects
+#+END_NOTES
+** Functions
+:PROPERTIES:
+:CUSTOM_ID: functions-3acc
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+function square(number) {
+  return number * number;
+}
+
+ var cube = function(number) { 
+      return number * number * number;
+  };
+
+console.log(square(2));
+console.log(cube(3));
+#+END_SRC
+** Arrays and Loops
+:PROPERTIES:
+:CUSTOM_ID: loops-86b8
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+ // here is a very basic "for loop":
+  for (i=0; i<10; i++ ) {
+    console.log("this is number: " + (i+1));
+  }
+
+  // a simple array -- essentially a list
+  var veggies = ["carrot", "potato", "pea"];
+
+  // a "for-of loop" -- iterates over array items
+  for (i of veggies) {
+    console.log(i)
+  };
+
+  // a for-in loop -- iterates over array length (0,1,2,3, etc)
+  for (i in veggies) {
+       console.log(veggies[i])
+       };
+
+
+#+END_SRC
+#+BEGIN_NOTES 
+- differences between the loop types
+#+END_NOTES
+** Objects
+:PROPERTIES:
+:CUSTOM_ID: objects-1a99
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+  var wl = {
+      "PM": "Wilfred Laurier",
+      "Party": "Liberal",
+      "From": "1896",
+      "To": "1911"
+  };
+  for (i in wl) {
+      console.log("wl." + i + " is: " + wl[i]);
+  }
+#+END_SRC
+
+** DOM Manipulation
+:PROPERTIES:
+:CUSTOM_ID: dom-manipulation-6404
+:END:
+#+BEGIN_SRC js :exports code
+var newNode = document.createElement("h1");                 // Create a <h1> node
+var textnode = document.createTextNode("brand new header");         // Create a text node
+newNode.appendChild(textnode);                              // insert the text into the <h1>
+document.body.appendChild(newNode);
+
+var headings = document.getElementsByTagName("h1");
+console.log(headings);
+for (var i=0; i<headings.length; i++) {
+    console.log(headings[i].innerHTML);
+};
+
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+
+#+END_SRC
+
+#+BEGIN_NOTES 
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+#+END_NOTES
+* Getting Started With Javascript
+:PROPERTIES:
+:EXPORT_FILE_NAME: 05-01-js
+:CUSTOM_ID: getting-started-with-javascript-71f3
+:END:
+
+** JavaScript
+:PROPERTIES:
+:CUSTOM_ID: javascript-cc80
+:END:
 - a real language!
 - dynamic transformation
 - baby steps!!
+** Some Big Ideas
+:PROPERTIES:
+:CUSTOM_ID: some-big-ideas-1d46
+:END:
+- Abstraction
+- Formalization
+- Repetition
+- Laziness!
+** Assignment 1 will require 
+:PROPERTIES:
+:CUSTOM_ID: assignment-1-will-require-ab9b
+:END:
+- Basic Syntax
+- Variable Types
+- Function Definitions
+- Loops and Branches
+- Basic "Objects"
+** Running Javascript
+:PROPERTIES:
+:CUSTOM_ID: running-javascript-10e9
+:END:
+- in Browser Console
+- in terminal (with the command ~node~)
+- in VSCode files, with Quokka attached
+** What is a Variable?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-variable?-d2ea
+:END:
+- *name* for *memory location* to be used later, usually *in specific ways* that *depend on type*
+- or, *box* into which you can put *information* that you will want to get later.
+https://mdn.mozillademos.org/files/13506/boxes.png
+
+*** Declaring Variables
+:PROPERTIES:
+:CUSTOM_ID: declaring-variables-266e
+:END:
+#+begin_src javascript
+const neverChange = "Project Key"; // comment
+let oftenChanges = 0; // maybe we will change this value later
+var oldDeclaration = 0; // we try to avoid using var now; use let instead
+#+end_src
 
 *** Text is Data
+:PROPERTIES:
+:CUSTOM_ID: text-is-data-75a7
+:END:
 #+BEGIN_SRC js
-var first="Matt";
-var last="Price"
-//console.log(first + last);
+let first="Matt";
+let last="Price"
+console.log(first + last);
 #+END_SRC
 #+ATTR_REVEAL: :frag (appear)
 Do it w/ your name!
 #+BEGIN_NOTES
 - console; syntax; spaces; exercise: 
 #+END_NOTES
+
+*** "Dynamic" (or "Weak") Typing 
+:PROPERTIES:
+:CUSTOM_ID: dynamic-(or-weak)-typing-c178
+:END:
+- *numbers* and *strings* are different
+- but we can convert *number \rarr string*
+#+begin_src javascript
+let n = 1,
+    m=2,
+    s="Hello, there! ";
+ 
+console.log(m+n);
+console.log(s+n);
+
+#+end_src
+#+begin_notes
+- commas, semi-colons; "overloading" &dynamic typing
+- this can be confusing!!!
+#+end_notes
+
+*** Some Variable Types
+:PROPERTIES:
+:CUSTOM_ID: some-variable-types-c445
+:END:
+- numbers
+- strings
+- boolean (true/false)
+- arrays
+- objects
+
+
 *** Making Lists (Arrays)
+:PROPERTIES:
+:CUSTOM_ID: making-lists-(arrays)-5385
+:END:
 #+BEGIN_SRC js
-  var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
-  for (h of historians) {
-    console.log(h);
-  }
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+for (h of historians) {
+  console.log(h);
+}
 #+END_SRC
 
 #+BEGIN_NOTES
-
+brackets!
 #+END_NOTES
+
+*** Working With Arrays
+:PROPERTIES:
+:CUSTOM_ID: working-with-arrays-c020
+:END:
+
+#+begin_src js
+a = [];
+a.push("Edward Gibbon");
+a.push("Edward Said");
+a.push("Joan Scott");
+
+console.log(a[1]);
+
+a.pop();
+// a
+#+end_src
+
+#+begin_notes
+- push, pop, INDEX
+#+end_notes
 *** Working with Numbers
+:PROPERTIES:
+:CUSTOM_ID: working-with-numbers-9fb5
+:END:
 #+BEGIN_SRC js
 wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
-//console.log("The time between The first and Second World Wars was " + (wardates[6] - wardates[5]) + " years");
+console.log("The time between The First and \
+Second World Wars was " + (wardates[6] - wardates[5]) + " years");
 #+END_SRC
-*** Objects and Properties
+** Repetition: While Loops 
+:PROPERTIES:
+:CUSTOM_ID: repetition:-while-loops-c251
+:END:
+#+begin_src js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+let i = 0;
+
+while (i < historians.length) {
+    console.log(historians[i] + " was a historian.");
+    i+=1;
+  }
+
+#+end_src
+repeat inside the ~{ ... }~ as long as test is true:
+- *initial value:* ~i = 0~
+- *test (halt condition):* ~i < historians.length~
+- *change in condition:* ~i += 1~ 
+** Repetition: For Loops
+:PROPERTIES:
+:CUSTOM_ID: repetition:-for-loops-c510
+:END:
 #+BEGIN_SRC js
-  var greatWar = {
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+
+for (let i=0; i < historians.length ; i++){
+  console.log(historians[i] + " was a historian.");
+  i // this is not required, just here to show you a slight difference
+}
+
+#+END_SRC
+- *initial value:* ~i = 0~
+- *test (halt condition):* ~i < historians.length~
+- *change in condition:* ~i++~ (idiomatic)
+** Repetition: other for loops
+:PROPERTIES:
+:CUSTOM_ID: repetition:-other-for-loops-3d1d
+:END:
+#+BEGIN_SRC js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+
+for (i in historians) {
+  console.log(historians[i] + " was a historian.");
+}
+
+for (h of historians) {
+  console.log(h + " was a historian.");
+}
+#+END_SRC
+- these also "loop"
+- but the *initial value*, *test*, and *increment* are *implicit*
+- defined by ~historians~, but in slightly different ways.
+- they are very convenient! read about them.
+
+** Conditionals: If
+:PROPERTIES:
+:CUSTOM_ID: conditionals:-if-a6b8
+:END:
+#+BEGIN_SRC js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+let i = 0;
+
+while (i < historians.length) {
+  if (historians[i] === "Joan Scott") {
+    console.log(historians[i] + " is my favourite.");
+  }
+  i +=1;
+};
+#+END_SRC
+- execute the ~{ ... }~ only if the *test* is true
+- here the test is ~historians[i] === "Joan Scott"~
+- note the many ~===~ -- different feom just one ~=~
+
+*** Branching
+:PROPERTIES:
+:CUSTOM_ID: branching-2c02
+:END:
+#+BEGIN_SRC js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+let i = 0;
+
+while (i < historians.length) {
+  if (historians[i] ==="Joan Scott") {
+    console.log(historians[i] + " is my favourite.");
+  } else {
+    console.log(historians[i] + ", meh.");
+}
+  i +=1;
+};
+#+END_SRC
+
+** Parts of things: elements, methods, properties
+:PROPERTIES:
+:CUSTOM_ID: parts-of-things:-elements,-methods,-properties-be27
+:END:
+#+begin_src javascript
+let a=["name", 0, "otherinfo"];
+console.log(a[2]);
+console.log(a.length);
+console.log(a[length]);
+a.pop;
+#+end_src
+- note strange syntax:
+  - ~a[1]~: second element of array
+  - ~a.length~: a special way of finding the length of any array.  Length is a *property* of a.
+- ~console.log(a))~: *log* is a part of *console*.  it takes a *parameter* , in this case ~a~
+
+** Doing Stuff: functions
+:PROPERTIES:
+:CUSTOM_ID: doing-stuff:-functions-d6a3
+:END:
+*** A Function *is* a variable(!)
+:PROPERTIES:
+:CUSTOM_ID: -7b52
+:END:
+- functions are also a box into which you put stuff
+- but when you look into the box, the "stuff" has changed
+- we use them to *change the state*: to *do things* 
+- use *whenever you're repeating an action or process*
+
+compare: 
+#+ATTR_REVEAL: frag
+- ~let fruit="orange";~
+- ~eat("orange")~
+*** Defining a function
+:PROPERTIES:
+:CUSTOM_ID: defining-a-function-bb11
+:END:
+#+BEGIN_SRC js 
+function square(number) {
+  return number * number;
+}
+
+let cube = function(number) { 
+      return number * number * number;
+  };
+
+console.log(square(2));
+console.log(cube(3));
+#+END_SRC
+- we'll use the first method:
+  - keyword ~function~ followed by ~name~ then ~(parameters, if, you, need, them)~, then ~{~ ,  then ~statements~, then ~}~
+
+#+begin_notes
+- name
+- parameters
+- definition
+- return value
+#+end_notes
+*** Remember this
+:PROPERTIES:
+:CUSTOM_ID: remember-this-0f7d
+:END:
+#+begin_src js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+let i = 0;
+
+while (i < historians.length) {
+    console.log(historians[i] + " was a historian.");
+    i+=1;
+  }
+
+#+end_src
+*** As a function
+:PROPERTIES:
+:CUSTOM_ID: as-a-function-ed13
+:END:
+
+#+begin_src js
+function makeSentences(historians) {
+  let i = 0,
+      output = "";
+
+  while (i < historians.length) {
+    output += historians[i] + " was a historian.\n";
+    i+=1;
+  }
+  return output;
+}
+
+let h1 = ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"],
+    h2 = ["Orlando Patterson", "Michel Foucault", "Natalie Zeemon Davis", "Howard Zinn"];
+
+makeSentences(h1);
+makeSentences(h2);
+
+#+end_src
+*** Finally we can  talk about scope!
+:PROPERTIES:
+:CUSTOM_ID: finally-we-can--talk-about-scope-7723
+:END:
+#+begin_src js
+let a = "just some string",
+    b = "some other string";
+
+function scopeExample (anyString) {
+  let a = "I set this value inside the function";
+
+  return ("inside the function, a=" + a + ", not " + anyString);
+}
+
+a
+// scopeExample(a);
+//anyString
+#+end_src
+- outside the function, ~a~ = "just some string"
+- inside, we *redeclare it for the function scope* and now ~a~ has new value
+- ~anyString~ is *only* declared inside the function scope
+
+*** Advanced scope
+:PROPERTIES:
+:CUSTOM_ID: advanced-scope-fa36
+:END:
+#+begin_src js
+let a = "global scope a";
+
+console.log(a);
+
+for (i=0; i<6; i++) {
+  let a = "local scope a on iteration: " + (i + 1) ;
+  console.log(a)
+}
+
+console.log(a);
+#+end_src
+- we can also *redeclare* ~let~ variables in an if/for/while "block"
+- scope scales:  *global \rarr function \rarr block \rarr nested block \rarr etc etc*
+- any time you see ~{ .. }~ you're in a new scope context!
+ 
+*** Function Hints for Assignments
+:PROPERTIES:
+:CUSTOM_ID: function-hints-for-assignments-1cb2
+:END:
+- *remember the return values!*
+- debug by setting a variable to the function output, and using quokka to look at the value:
+  #+begin_src js
+    function returnArray (first, second, third) {
+    // you can define the array using "new Array ()" or just "[ , , ]"
+    // don't forget to return it
+    // return ; // add the falue here!
+  }
+  
+  let a = returnArray (1, 3,5);
+  a  // quokka will display the value
+  #+end_src
+
+** Objects and Properties
+:PROPERTIES:
+:CUSTOM_ID: objects-and-properties-e146
+:END:
+
+*** Objects are *variables* with *named parts*
+:PROPERTIES:
+:CUSTOM_ID: objects-are-variables-with-named-parts-c234
+:END:
+- parts are called *properties*, but
+- if a part is a *function*, we call that part a *method*
+
+*** let's eat
+:PROPERTIES:
+:CUSTOM_ID: let's-eat-f11e
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+function eat (food) {
+  console.log("Umm, that was a delicious " + food + ".");
+}
+
+eat (myFruit);
+#+end_src
+- we can eat any of the foods
+- *they're not related to each other*, just floating around
+
+*** Now let's make lunch
+:PROPERTIES:
+:CUSTOM_ID: now-let's-make-lunch-6196
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {};
+#+end_src
+
+- myLunch is *an empty object* -- it has no parts yet
+
+*** Add some parts
+:PROPERTIES:
+:CUSTOM_ID: add-some-parts-18dc
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+myLunch;
+
+#+end_src
+- added parts in 3 ways: set *directly* in definition; set *by reference* in definition; *added by reference after definition* 
+
+*** Eat the Lunch
+:PROPERTIES:
+:CUSTOM_ID: eat-the-lunch-b7bb
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I'll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+eatLunch(myLunch);
+#+end_src
+- rewrote *eat* to take advantage of the *structure* of lunch
+*** Add Dessert
+:PROPERTIES:
+:CUSTOM_ID: add-dessert-c5dd
+:END:
+#+begin_src js
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"}
+};
+
+console.log("I'm finally ready for my " + myLunch.dessert.cookie);
+
+#+end_src
+- objects can be *arbitrarily complex* and *contain other objects*
+
+*** Eat The Lunch as a Method
+:PROPERTIES:
+:CUSTOM_ID: eat-the-lunch-as-a-method-971e
+:END:
+
+**** Reminder
+:PROPERTIES:
+:CUSTOM_ID: reminder-4550
+:END:
+#+begin_src js
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I'll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+#+end_src
+
+**** Writing the Method
+:PROPERTIES:
+:CUSTOM_ID: writing-the-method-4cae
+:END:
+#+begin_src js
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"},
+  eatMe: function() {
+    let output = "";
+    output += "I'll start with my " + this["fruit"] + "\n";
+    output += "Next I want to eat " + this.sandwich + "\n";
+    for (snack of this.snacks) {
+      output += "   I love my " + snack + "\n";
+    }
+    return output;
+  }
+};
+
+myLunch.eatMe;
+
+myLunch.eatMe();
+#+end_src
+- note the differences between ~eat()~ and =myLunch.eatMe=:
+  - the method doesn't *take a parameter*!
+  - instead, we get to use ~this~, which refers to the *current object scope*
+*** Finally some History
+:PROPERTIES:
+:CUSTOM_ID: finally-some-history-0c62
+:END:
+#+BEGIN_SRC js
+  let greatWar = {
     name: "The First World War",
     start: 1914,
     end: 1918,
@@ -2499,11 +3160,15 @@ wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
     scale: "Catastrophe"
   }
 
-//  console.log(greatWar["name"] + " lasted for " + greatWar.end - greatWar.start + " years.");
+//  console.log(greatWar["name"] + " lasted for " +
+//  (greatWar.end - greatWar.start) + " years.");
 #+END_SRC
 *** more objects
+:PROPERTIES:
+:CUSTOM_ID: more-objects-322f
+:END:
 #+BEGIN_SRC js
-  var greatWar = {
+  let greatWar = {
     name: "The First World War",
     start: 1914,
     end: 1918,
@@ -2517,52 +3182,424 @@ wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
       }]
   }
 
-  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " years.");
-//  console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " +
-//              greatWar.battles[0].casualties + " casualties.");
+  console.log(greatWar["name"] + " lasted for "
+ + (greatWar.end - greatWar.start) + " \ years.");
+console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " + \
+            greatWar.battles[0].casualties + " casualties.");
 #+END_SRC
 
-*** For loops!
+*** Basic Logic with Objects
+:PROPERTIES:
+:CUSTOM_ID: using-objects-in-js-ace7
+:END:
 #+BEGIN_SRC js
-var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
-  for (h of historians) {
-    console.log(h + " was a historian.");
+let goodGuys = ["CA", "UK", "US"];
+let badGuys=["DE", "AH"];
+let people = [
+  {name: "Kaiser Wilhelm",
+   nat: "DE"},
+  {name:"Winston Churchill",
+   nat: "UK"}];
+for (person of people) {
+  if (badGuys.includes(person.nat)) {
+    //console.log(person.name + ": BOOOOOOOOOOOO!!!");
   }
-  for (i=0; i < historians.length ; i++){
-    console.log(historians[i] + " was a historian.");
-  }
-  for (i in historians) {
-    console.log(historians[i] + " was a historian.");
-  }
-#+END_SRC
-*** Conditionals
-#+BEGIN_SRC js
-  var goodGuys = ["CA", "UK", "US"];
-  var badGuys=["DE", "AH"];
-  var people = [
-    {name: "Kaiser Wilhelm",
-     nat: "DE"}];
-  for (person of people) {
-    if (badGuys.includes(person.nat)) {
-      //console.log(person.name + ": BOOOOOOOOOOOO!!!");
-    }
-  };
+};
 #+END_SRC
 
 #+RESULTS:
 : undefined
-
-** Footnotes
+*** Branching Logic with Objects
 :PROPERTIES:
-:CUSTOM_ID: footnotes-08a9
+:CUSTOM_ID: logic-with-objects-9863
+:END:
+#+BEGIN_SRC js
+let goodGuys = ["CA", "UK", "US"];
+let badGuys=["DE", "AH"];
+let people = [
+  {name: "Kaiser Wilhelm",
+   nat: "DE"},
+  {name:"Winston Churchill",
+   nat: "UK"}];
+for (person of people) {
+  if (badGuys.includes(person.nat)) {
+    console.log(person.name + ": BOOOOOOOOOOOO!!!");
+  } else {
+    console.log(person.name + ": YAAAAYYY!!!");
+
+}
+};
+#+END_SRC
+* Short Note on Functions (youtube video, never lectured)
+:PROPERTIES:
+:EXPORT_FILE_NAME: short-note-on-functions
+:CUSTOM_ID: short-note-on-functions-499b
+:END:
+** Functions 1: Name vs. Return Value
+:PROPERTIES:
+:EXPORT_FILE_NAME: function-1-name-output
+:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
 :END:
 
-Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
+*** A Function is a +variable+ Robot
+:PROPERTIES:
+:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  "I cleaned your room";
+  return output;
+}
 
-From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
+let a = robotCleaner();
+a
+#+end_src
+
+#+RESULTS:
+
+- build a function to do something
+- *name it* whatever you want
+- the *return* value is what the function "give you back*
+- call it whenever you need it done 
+
+*** Name and Return Value are independent
+:PROPERTIES:
+:CUSTOM_ID: name-and-return-value-are-independent-e35d
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  `Ha, ha! I have replaced your robot cleaner! 
+Now your room is even messier! Bwa ha ha ha ha!`
+  return output;
+}
+
+let a = robotCleaner();
+a
+#+end_src
+
+- To pass the assignment, *always modify the function*
+- don't get confused and try to somehow modify the function call
+- no intrinsic relationship between name and return value
+
+** Functions note 2: Parameter and Output  
+:PROPERTIES:
+:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
+:END:
+*** Your Return Value should Make use of the Parameter
+:PROPERTIES:
+:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
+:END:
+#+begin_src js
+function greatWriter (name) {
+let output = "Margaret Atwood was a great writer."
+return output
+}
+
+console.log(greatWriter("Margaret Atwood"))
+// console.log(greatWriter("Toni Morrison"))
+#+end_src
+*** Solution: don't use a STATICALLY DEFINED STRING as your output
+:PROPERTIES:
+:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
+:END:
+#+begin_src js
+function evenGreaterWriter (name) {
+let output = name + " was a great writer."
+return output
+}
+
+console.log(evenGreaterWriter("Margaret Atwood"))
+// console.log(evenGreaterWriter("Toni Morrison"))
+#+end_src
 
 
-* Notes on papers 
+
+* Week 5: JavaScript and the DOM
+:PROPERTIES:
+:CUSTOM_ID: javascript-30da
+:EXPORT_FILE_NAME: 05-js-dom
+:END:
+** Working with the DOM
+:PROPERTIES:
+:CUSTOM_ID: working-with-the-dom-d129
+:END:
+*Document Object*
+- everything in the document can be manipulated via the DOM
+https://www.computerhope.com/jargon/d/dom1.jpg
+*** Inspecting the DOM
+:PROPERTIES:
+:CUSTOM_ID: inspecting-the-dom-edf1
+:END:
+file:///home/matt/DH/Images/devtools.png
+
+** Finding Elements
+:PROPERTIES:
+:CUSTOM_ID: finding-elements-11f8
+:END:
+- *"Vanilla" JavaScript* (described in MDN)
+  - ~document.querySelector("str")~
+- *jQuery* (convenience library)
+  - ~$("str")~
+  - *library must be loaded* with ~<script src="http://code.jquery.com/jquery-3.3.1.min.js"</script>~
+
+
+- we use jQuery in examples, but it's your choice.
+  - slightly different syntax & different return values, so be careful. 
+
+** Change CSS of an Element
+:PROPERTIES:
+:CUSTOM_ID: change-css-of-an-element-0bef
+:END:
+#+begin_src js
+$('selector').css('property-name', 'value')
+#+end_src
+
+** Get and Change Text Content
+#+begin_src js
+$('selector').text()
+$('selector').text('new value')
+#+end_src
+
+** Get and Change Full inner HTML
+#+begin_src js
+$('selector').text()
+$('selector').text('<h2>new value, with valide HTML markup</h2>')
+#+end_src
+
+** Append elements
+#+begin_src js
+$('selector').append('<p>valid HTML Markup</p>')
+#+end_src
+
+** What does jQuery return? 
+- an "array-like object"
+- it's not exactly an array, but you can use "of" to iterate over HTMl objects
+- each element can use *native DOM methods* for HTML elements (cf MDN)
+- to use jQuery methods on it, wrap it again in the $() function 
+
+** Looping: over HTML elements
+#+begin_src js
+let allElements = $('selector');
+// for.. in will NOT work!!!!
+for (e of allElements) { // this will loop through the *html elements* found by jQ   
+  $(e).doSomething(0) // if you want to use jquery methods, you have to jquery-ize first
+}
+#+end_src
+
+** Looping -- advanced
+Trickier! Uses a "callback function" -- see this [[https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced][excellent, but still difficult, explanation]] 
+#+begin_src js
+$('td.name').each(
+  function (index) {
+    console.log(`here's the content of cell number ${index}`);
+    console.log($(this).text());
+  });
+#+end_src
+
+** Takeaways for us
+- it's a wild world out there
+- many complex concepts, but if you go slowly, it's not impossible to figure out
+- key is to understand that the DOM is a *struture of HTML elements*, which can be *created, destroyed, 
+
+* Computing Concepts Catchup
+:PROPERTIES:
+:EXPORT_FILE_NAME: 06-1-concepts-catchup
+:END:
+
+** Abstraction
+- objects * other vars are *abstract representations* of the phenomena we're interested in
+- careful choice of abstraction is important for *computational efficacy* and also for *epistemological reasons*
+** Iteration
+#+begin_src js
+for(let i = 0; i < collection.length; i++) {
+  // do something here for each element of collection using
+  // collection[i]
+  // "i" is always an integer value
+}
+
+for (let i in ObjectOrArray ) {
+  // do something here with ObjectOrArray[i]
+  // "i" wil lbe an integer for an array, or
+  // a "property key(name)" for an object
+}
+
+for (let a of ArrayOrElementList) {
+  // do something directly with a
+  // a will take the value of whatever
+  // is at the current location in the array
+  // great for looping over DOM elements!
+}
+
+let i=0;
+while (i < myArray.length) {
+  // do osmething wiht myArray[i]
+  // remember to increment i within the loop!!!!
+}
+#+end_src
+** Branching Logic
+- without logic, programming would be pretty limited.
+- use these constructions to change the flow of your output depending on conditions
+#+begin_src js
+if (condition1) {
+  console.log("condition is true");
+} else if (condition2) {
+  console.log("conition1 is false but condition2 is true");
+} else {
+  console.log("none of hte above ocnditions is true")
+}
+
+#+end_src
+** Variable Scope
+- with *let* we have fine-grained control over "scope" of variable values.
+- most important within a function, but also works inside nay block: 
+#+begin_src js
+let x = 3;
+console.log(myvar);
+if (myvar) {
+  let myvar = 2;
+  console.log(myvar);
+}
+console.log(myvar);
+#+end_src
+** Functions: Definition; Invocation; Transformation of Parameters
+#+begin_src js
+function nameHere (param1, param2) {
+  // use params here
+  // remember to alwyas use the marameter name -- which is an abstraction!
+  // return a value that has somehow made use of parameters
+  return something;
+}
+
+nameHere(someValue1, someValue2) // when called, param1 wil lbe set equal to someValue1
+#+end_src
+** DOM as Branching Tree Structure
+- DOM Elements nest and bramch
+- possible to add, delete, modify them
+- to do this we need to select the right elements, then change their properties
+
+* Homework Help Day
+:PROPERTIES:
+:EXPORT_FILE_NAME: 06-1-homework-help
+:END:
+** Status Report
+- looked at and evaluated all Assignment 2's
+- assignment 3 is the crux of the course!
+- can give *limited* help for next 24 hours or so
+
+** HTML Structures
+- for the rest of the course, coding is mostly *creating HTML structures*
+- becaue HTML is tedious, *lots* of opportunity to introduce errors!
+- How to avoid?
+  - *D.R.Y.* (Don't Repeat Yourself)
+  - if done right, guarantees that low-level problems only need to be solved *once*
+  - remember: laziness is a virtue
+
+** Writing "Atomic" Functions
+- Complex code is difficult to debug!
+- instead, try to make your individual functions as simple as possible
+- *divide your problem into smallest possible parts* (hence 'atomic')
+- "chain" your functions together to recreate complexity
+- much easier to localize failure
+
+** Making a card deck
+*Task:* given a JSON data structure, generate a set of cards (like the ones we made in assignment 0, but simpler)
+
+#+ATTR_HTML: :class paired
+#+begin_src html
+<card class="card">
+  <header>
+    <h1>Person Name</h1>
+  </header>
+  <main class="card">   
+    <p>
+      lengthy text here
+    </p>
+  </main>
+  <footer>
+    <a href="'https://digitalhistory.github.io/dh-website'">A Project of HIS393</a>
+  </footer>
+</card>
+#+end_src
+
+#+ATTR_HTML: :class paired
+#+begin_src js
+{
+  name: 'Person Name',
+  blurb: 'lenghty text here',
+}
+#+end_src
+
+
+*** First, Map the assignment
+#+ATTR_HTML: :class paired
+- card deck \rarr set of cards
+- card \rarr ~<card><header></header><main></main><footer></footer><card>~
+- this is *set of tagged elements*
+- so we might do something like this:
+  - *fn 1*: tag some content
+  - *fn 2*: use *fn 1* to make header structure
+  - *fn 3*: use *fn 1* to make main structure
+  - *fn 4*: use *fn 1* to make footer structure
+  - *fn 5*: use *fn 2, fn 3, fn 4* to make sub-structures and then call *fn 1* to wrap whole thing
+  - *fn 6*: loop through data structure, calling *fn 5* once for each element
+
+*** Start with Fn 1: ~letsTag~
+#+begin_src js 
+function letsTag ( content, tagName, attrs) {
+  output = `<${tagName} `;
+  for (a of attrs) {
+    output+=`${a}=${attrs[a]} `;
+  }
+  output += `>${content}</${tagName}>`;
+  return output;
+}
+
+
+letsTag('I am the main content', 'main', {style: 'border: 2px solid black;'});
+#+end_src
+
+*** Fn 2: ~headMe()~
+#+begin_src js 
+function headMe (titleText) {
+  let output=letsTag(titleText, 'h1');
+  output=letsTag(output, 'header');
+  return output
+}
+
+headMe('I am the title');
+#+end_src
+
+*** All the Rest
+#+begin_src js
+function footMe () {
+  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/dh-website/'});
+  return letsTag(link, 'footer');
+}
+
+function mainMe (blurb) {
+  let p = letsTag(blurb, 'p');
+  return letsTag(p, 'main');
+}
+
+function cardMe (person) {
+  let header = headMe(person.name);
+  let main = mainMe(person.blurb);
+  let footer = footMe();
+  return letsTag(header + main + footer, 'card', {class: 'card'});
+}
+
+function makeAllTheCards (people) {
+  output = '';
+  for (p of people) {
+    output += cardMe (p);
+  }
+  return $('main#page-main').append(output); 
+}
+
+makeAllTheCards (allEntries);
+#+end_src
+
+* COMMENT Notes on papers 
 - use markdown markup
 - inline images instead of links
 - avoid smart quotes, etc. 
@@ -2897,6 +3934,17 @@ https://www.computerhope.com/jargon/d/dom1.jpg
 :PROPERTIES:
 :CUSTOM_ID: voyant-tools-a335
 :END:
+
+** Footnotes
+:PROPERTIES:
+:CUSTOM_ID: footnotes-08a9
+:END:
+
+Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/ 
+
+From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
+
+
 * 06: Distant Reading: Catchup
 :PROPERTIES:
 :EXPORT_FILE_NAME: 06-distant-reading-3
@@ -3176,9 +4224,13 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 
 * 07: Why Spatial history?       
 :PROPERTIES:
-:EXPORT_FILE_NAME: 07-why-spatial-history
+:EXPORT_FILE_NAME: 07-01-why-spatial-history
 :CUSTOM_ID: 07:-why-spatial-history?-c5b0
 :END:
+** Assignment Notes
+- Assignment 3: good work!
+  - note: *div:nth-child()* means "any *div* that is the nth-child())", not "*the nth child of any div*"
+- Assignment 4: not up yet! But the *non-technical instructions* in [[https://github.com/DigitalHistory/advanced-topics/tree/master/spatial-history#assignment][last year's version]] will still apply.
 ** Recap
 :PROPERTIES:
 :CUSTOM_ID: recap-abcf
@@ -3193,8 +4245,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :END:
 - Space & Place
 - The Work Maps Do: lying; presenting; creating
-- more JS
-- Google Maps Exercise (maybe)
+
 ** Spatial Turn
 :PROPERTIES:
 :CUSTOM_ID: spatial-turn-c310
@@ -3355,11 +4406,22 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 [[file:~/DH/Images/surveyor.jpeg]]
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/line_cut.jpeg]]
-** Spatial History with Google Maps
+* Spatial History with Google Maps
 :PROPERTIES:
 :CUSTOM_ID: spatial-history-with-google-maps-a3dc
-:END:
-*** Google Maps and Spatial History
+:END: 
+** Cats
+#+ATTR_HTML: :class paired
+[[./Images/cat.jpg]]
+#+ATTR_HTML: :class paired
+#+ATTR_REVEAL: :frag appear
+[[./Images/ropes.jpg]]
+** API's: incantations, conjurations, and mystical binding
+- API's are /magic/
+- we /bind/ a monster to a variable
+- and then it has to perform tasks for us.
+- sometimes we need to give it an offering first
+** Google Maps and Spatial History
 :PROPERTIES:
 :CUSTOM_ID: google-maps-and-spatial-history-eeb1
 :END:
@@ -3372,17 +4434,13 @@ Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/c
 
 Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
 #+END_NOTES
-*** Read this part! Follow the links! 
+** Read this part! Follow the links! 
 :PROPERTIES:
 :CUSTOM_ID: read-this-part!-follow-the-links!-ee94
 :END:
-Today's exercise is also something of a test.  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
-- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which I think we saw briefly in the first class, and
-  using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
+- [[https://classroom.github.com/a/oC6_7PJk][create your assignment repo and clone locally]]. we will work on it directly.
 
-The latter version also serves as a reminder about the [[https://github.com/][Github code-sharing platform]].  If you want to work locally, I strongly recommend both the [[https://atom.io/][Atom Code Editor]], and [[http://brackets.io/][Brackets]]; many people also like [[https://www.sublimetext.com/3][Sublime Text]], though you ought to buy a license for Sublime if you continue to use it.  Brackets and Atom both also show a live preview of your code, almost like JSBin (For Atom you will have to [[https://atom.io/docs/latest/using-atom-atom-packages][install]] the atom-html-preview package, while Brackets comes with a live preview in Chrome, which can be activated with ~Ctrl-Alt- you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
-
-*** What is a GIS?
+** What is a GIS?
 :PROPERTIES:
 :CUSTOM_ID: what-is-a-gis?-12ec
 :END:
@@ -3402,7 +4460,7 @@ The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]]
 
 Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
 #+END_NOTES
-*** Controlling Google Maps
+** Controlling Google Maps
 :PROPERTIES:
 :CUSTOM_ID: controlling-google-maps-a206
 :END:
@@ -3424,7 +4482,7 @@ You don't have to understand the Google Maps API very thoroughly to be able to d
 
 #+END_NOTES
 
-*** Using Markdown (refresher)
+** Using Markdown (refresher)
 :PROPERTIES:
 :CUSTOM_ID: using-markdown-3d00
 :END:
@@ -3451,28 +4509,28 @@ An empty line separates paragraphs.
 
 While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
 
-*** The Exercise
+** The Exercise
 :PROPERTIES:
 :CUSTOM_ID: the-exercise-9a2b
 :END:
 - let's create a Google Map!
-*** The code
+** The code
 :PROPERTIES:
 :CUSTOM_ID: the-code-e630
 :END:
-**** Javascript
+*** Javascript
 :PROPERTIES:
 :CUSTOM_ID: javascript-ed67
 :END:
 - modify lat/long co-ords of ~my_center~.
 - modify content of marker objects
 - very little else needs to change
-**** HTML
+*** HTML
 :PROPERTIES:
 :CUSTOM_ID: html-f31e
 :END:
 - shouldn't have to change much, though feel free to add
-**** CSS
+*** CSS
 :PROPERTIES:
 :CUSTOM_ID: css-46fc
 :END:
@@ -3533,14 +4591,11 @@ Unified Encyclopedia of Science; Vienna Circle; the Ship
 :PROPERTIES:
 :CUSTOM_ID: working-with-data-618e
 :END:
-[[http://www.imageatlas.org/search?q=socialism&sort=gdp&afghanistan=on&brazil=on&china=on&egypt=on&france=on&germany=on&india=on&iran=on&israel=on&newzealand=on&northkorea=on&russia=on&saudiarabia=on&southkorea=on&spain=on&sweden=on&syria=on&usa=on&ukraine=on][ImageAtlas]]
-
-[[http://research.kraeutli.com/index.php/2013/11/the-tate-collection-on-github/][Collection Analysis]]
+[[http://selfiecity.net/selfiexploratory/][Selfiexploratory]]
+[[http://histecon.fas.harvard.edu/innerlife/connections-basic.html][Network Graphs]]
 ** Panama Papers
 - [[https://panamapapers.icij.org/graphs/][ICIJ visualizations]]
 - [[http://fusion.net/story/287382/panama-papers-data-visualization/][Fusion graph network visualization]]
-** 
-
 * 09 -- Map & Visualization race-through
 ** Recap
 :PROPERTIES:
@@ -3689,11 +4744,11 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :PROPERTIES:
 :CUSTOM_ID: activity:-a-richer-map-c194
 :END:
-- What do you still need help with? due tonight
-*** Next Assignment: Oral History. 
+- What do you still need help with? due Monday
+*** COMMENT Next Assignment: Oral History. 
 - [[https://digital.hackinghistory.ca/assignment/04-oral-history/][on the website]]
 - [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][On Github]]
-*** Final Assignment: Project Proposal
+*** COMMENT Final Assignment: Project Proposal
 - [[http://digital.hackinghistory.ca/assignment-05-project-proposal/][Now On the Website]]!
 *** COMMENT Activity: make-up work                               :noexport:
 :PROPERTIES:
@@ -3797,20 +4852,68 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :PROPERTIES:
 :CUSTOM_ID: activity:-make-up-work-cbc7
 :END:
-* 10: What's Special about Oral History ("Engaged" History) 
+* 10: Visualization/Engaged History/Oral History
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
 :CUSTOM_ID: comment-10:-what's-special-about-oral-history-("engaged"-history)-b57f
 :END:
+** COMMENT old title: What's Special about Oral History 
 ** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-e97e
+:END:
 - Spatial History
   - new tools form GIS
   - new questions from cultural geography
   - maps & visualizations are *rhetorical* and need *interpretation*
 ** Today
+:PROPERTIES:
+:CUSTOM_ID: today-0deb
+:END:
+- a bit more on visualization (catchup really)
 - Excursus on "Objectivity"
 - What's Special about Oral History?
 
+** Playfair: Early Techniques
+:PROPERTIES:
+:CUSTOM_ID: playfair:-early-techniques-a672
+:END:
+[[http://www.jeffersonbailey.com/wp-content/uploads/2014/12/figure_2.png]]
+multivariate data; area as quantity; pie chart
+#+BEGIN_NOTES
+William Playfair (1789-1823), Scottish engineer & political scientist; brother John a major figure in Scottish enlightenment, which saw Adam Smith, James Watt, etc.; never a success in business, but interest in both tech & finance.
+#+END_NOTES
+** Playfair: Early Techniques
+https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png
+** Charles Joseph Minard: Storytelling
+:PROPERTIES:
+:CUSTOM_ID: charles-joseph-minard:-storytelling-7995
+:END:
+[[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
+#+BEGIN_NOTES
+CJ Minard (1781-1870); civil engineer; drawn in 1869; 
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard’s achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+
+"The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
+In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
+#+END_NOTES
+** Neurath: Isotype
+:PROPERTIES:
+:CUSTOM_ID: neurath:-isotype-3467
+:END:
+[[http://56.media.tumblr.com/92cae54746a0198abb7a769f91c6ff83/tumblr_mobrwkmIla1r06q0no1_1280.jpg]]
+#+BEGIN_NOTES
+Unified Encyclopedia of Science; Vienna Circle; the Ship
+#+END_NOTES
+** Working with Data
+:PROPERTIES:
+:CUSTOM_ID: working-with-data-618e
+:END:
+[[http://selfiecity.net/selfiexploratory/][Selfiexploratory]]
+[[http://histecon.fas.harvard.edu/innerlife/connections-basic.html][Network Graphs]]
+** Panama Papers
+- [[https://panamapapers.icij.org/graphs/][ICIJ visualizations]]
+- [[http://fusion.net/story/287382/panama-papers-data-visualization/][Fusion graph network visualization]]
 ** Objectivity in History
 :PROPERTIES:
 :CUSTOM_ID: objectivity-in-history-8ee3
@@ -4068,9 +5171,15 @@ lot of this is about building a relationship
 - of course we *also* need to be careful reading written texts. But the writtne text wil lstil lbe there when we go back to reread. The interview is *actively shaped* by our participation
 - OH offers special opportunities when it comes to redirecting your research -- but you have to be able to seize them in the moment.  In this sense, more performative than other parts of history; closer to anthropology, to journalism, in effect, to all theo ther disciplines where OH is used!
 #+END_NOTES
-** Tech Part 1: Mapping Assignment Leftovers
+** COMMENT Tech Part 1: Mapping Assignment Leftovers
+:PROPERTIES:
+:CUSTOM_ID: tech-part-1:-mapping-assignment-leftovers-3d69
+:END:
 first: any questions?
 *** Icon Madness 1: symbol definition
+:PROPERTIES:
+:CUSTOM_ID: icon-madness-1:-symbol-definition-497b
+:END:
 #+begin_src javascript
 // notice how palegreenarrow is not a string value, but an object.
 // we're using the symbol api:
@@ -4094,6 +5203,9 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
 - main thing here is that you get *very fine* control over color, opacity, and shape.  
 #+END_NOTES
 *** Icon Madness 2: Icon Assignment
+:PROPERTIES:
+:CUSTOM_ID: icon-madness-2:-icon-assignment-5262
+:END:
 #+begin_src javascript
     // this is an *array* that holds all the marker info
     var all_my_markers =
@@ -4120,6 +5232,9 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
             ];
 #+end_src
 *** Circles
+:PROPERTIES:
+:CUSTOM_ID: circles-bfdb
+:END:
 #+begin_src  javascript
   var romeCircle = new google.maps.Circle({
     strokeColor: '#FF0000',
@@ -4143,6 +5258,9 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
   });
 #+end_src
 *** Rectangles
+:PROPERTIES:
+:CUSTOM_ID: rectangles-ffd1
+:END:
 #+begin_src javascript
   var romeRectangle = new google.maps.Rectangle({
     strokeColor: 'purple',
@@ -4170,6 +5288,9 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
 
 #+end_src
 *** Polygons (native google solution, w/ infowindow)
+:PROPERTIES:
+:CUSTOM_ID: polygons-(native-google-solution,-w-infowindow)-4bdf
+:END:
 #+begin_src javascript
 
   // add some misisng code to google! 
@@ -4204,19 +5325,61 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     infowindow.open(my_map);
   });
 #+end_src
-** Tech 2: Popcorn/Oral History
-- intellectual goal: think hard about the "text"
-- technical goal: think more about working with structures
-*** Popcorn framework
-- main library
-- plugins
+* Popcorn/Oral History
+:PROPERTIES:
+:CUSTOM_ID: popcornoral-history-6ef0
+:EXPORT_FILE_NAME: 10-02-popcorn
+:END:
+** Taking Stock
+- The End is Nigh!!
+- Assignment 4: Planning return ~ Friday/Saturday
+- Assignment 5: Required for *everyone* (!!)
+** Oral History Assignment
+- intellectual goal: think hard about *nature of oral history*, and *how to use digital media effectively* 
+- technical goal: think more about working with non-textual media, about HTML structures, and about APIs (monsters in the deep)
+** COMMENT Before Going Further: Update Repos
+:PROPERTIES:
+:CUSTOM_ID: repo-update-3733
+:END:
+#+begin_src sh
+git push # super important, do this first!!!
+git remote add upstream https://github.com/DigitalHistory/advanced-topics.git
+git fetch upstream master
+git checkout -b update-attempt 
+git merge  upstream/master
+# if that all works (it should)
+git checkout master
+git pull upstream master
+#+end_src
+** What the heck is this? 
+:PROPERTIES:
+:CUSTOM_ID: repo-update-37fdds
+:END:
+- *Popcorn*: media "events" framework for audio & video annotation
+  - developed by Mozilla for about 5 years before it was orphaned.
+  - perhaps being revivified
+  - keeps track of media playback, and renders specified web content between start and end timecodes.
+  - for us: turns *audio file* into a kind of *imovie-style slideshow* except that the "slides" are arbitrary web content instead of photos.
+  - in particular, can include google maps, wikipeida pages, and some other types of content.
+
+** Popcorn framework
+:PROPERTIES:
+:CUSTOM_ID: popcorn-framework-e5ca
+:END:
+- Library-Plugin framework
+  - main library tracks media element, renders content
+  - plugins generate html to feed to main
+  - every "event" (or "slide") is generated by *calling a plugin* with a JS object as parameter.  cf. *[[https://github.com/DigitalHistory/advanced-topics/blob/master/js/popcorn-data-from-google.js#L42][line 42 of popcorn-data-from-google.js]]* to see how this works
 #+BEGIN_NOTES 
 we don't have to worry about the main library
 
 *basically no coding to do o nthis assignment!*
 - focus on markdown skills, google sheet
 #+END_NOTES
-*** Plugin Structure
+** Plugin Structure
+:PROPERTIES:
+:CUSTOM_ID: plugin-structure-2f5b
+:END:
 #+begin_src javascript
   pop.footnote({
     start: 50,
@@ -4225,14 +5388,94 @@ we don't have to worry about the main library
     target: "popcorn-container"
   });
 #+end_src
-
-*** Google sheets
-Line 10 in ~/js/~popcorn-data-from-google.js~:
+#+begin_notes
+- plugins define a method of the main popcorn object
+- each plugin has its own required and optional parameters, which you can read about in the docs
+#+end_notes
+ 
+** Google sheets: API Power
+:PROPERTIES:
+:CUSTOM_ID: google-sheets-1f77
+:END:
+Line 16 in [[https://github.com/DigitalHistory/advanced-topics/blob/master/js/popcorn-data-from-google.js#L16][js/~popcorn-data-from-google.js]]:
 #+begin_src javascript
     var public_spreadsheet_key = 'https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/pubhtml?gid=0&single=true';
 #+end_src
-- update this line (l. 10 in ~/js/~popcorn-data-from-google.js~) & yr good to go
-*** "Seek" function
+- uses Google JSON API, which represents each spreadsheet row as a JSON object
+- column headers as property names
+- script iterates through rows & invokes appropriate popcorn plugin for each row, w/ column values as plugin parameter properties
+- if you use some other plugin that I haven't mentioned, you may need to add a column!
+- *YOU DON'T HAVE TO DO THE PROGAMMING WORK* -- managed for you
+
+** Tabletop: small interpreter demon
+:PROPERTIES:
+:CUSTOM_ID: repo-update-32309428
+:END:
+- Google Spreadsheets API speaks a Byzantine language of Hell
+- Tabletop lets you speak simple JS
+- cf [[https://github.com/jsoma/tabletop#1-publishing-your-google-sheet][very clear and helpful Tabletop instructions]] and also [[https://github.com/DigitalHistory/advanced-topics/blob/master/js/popcorn-data-from-google.js#L21][line 21]] in popcorn-data-from-google.js: 
+#+begin_src js
+var mytables = Tabletop.init( { key: public_spreadsheet_key,
+                                callback: processInfo ,
+                                simpleSheet: false } );
+#+end_src
+
+** Getting Started: First, Copy Spreadsheet
+:PROPERTIES:
+:CUSTOM_ID: repo-update-37330908fdsa
+:END:
+- go to my sheet: https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/edit#gid=0
+- ~File~ --> ~Make a copy~
+- Under ~File~ --> ~Publish to the web~, make sure yr sheet is published
+- *NOT DONE YET!*
+- go to "Share" and "Copy Link to Share"
+- *this is your new key!!!!*
+- insert into your js file
+** (other way) Spreadsheet URL
+:PROPERTIES:
+:CUSTOM_ID: repo-update-3733lk;zxf
+:END:
+#+begin_src javascript
+  var public_spreadsheet_key = 'https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/pubhtml?gid=0&single=true';
+#+end_src
+- Replace *ONLY THE PART BTWN /d/ and /pubhtml* with the spreadsheet "key" from yr new sheet
+** Run server
+:PROPERTIES:
+:CUSTOM_ID: repo-update-37332l3j4
+:END:
+#+begin_src sh
+cd advanced-topics-yr-name
+npm install 
+npm run server &
+#+end_src
+** Open in browser
+:PROPERTIES:
+:CUSTOM_ID: repo-update-3733ksljfd
+:END:
+#+begin_src sh
+firefox localhost:8080/oral-history
+#+end_src
+** use DevTools to look for errors
+:PROPERTIES:
+:CUSTOM_ID: repo-update-3733slkzvb
+:END:
+[[./Images/console.png]]
+** Error Sources
+:PROPERTIES:
+:CUSTOM_ID: repo-update-3733sklkjf
+:END:
+- bad spreadsheet URL
+- bad time codes etc. in spreadsheet
+- JS syntax errors in ~popcorn-data-from-google.js~
+- JS syntax errors in ~index.html~
+** Good and Less Good Annotations
+- Add context/info
+- clarify
+- Comment
+** "Seek" function
+:PROPERTIES:
+:CUSTOM_ID: seek-function-a7fd
+:END:
 #+begin_src javascript
        var seek = function (time) {
         document.getElementById("media").currentTime= time;
@@ -4241,6 +5484,8 @@ Line 10 in ~/js/~popcorn-data-from-google.js~:
 #+end_src
 
 ~<a href="javascript:seek(75)">seek to 1:15</a>~
+
+** 
 
 * 11: Oral History & Remix Culture                                 :noexport:
 :PROPERTIES:
@@ -4278,34 +5523,64 @@ firefox localhost:8080/oral-history
 - Add context/info
 - clarify
 - Comment
-* COMMENT 12: Citizen History                                      :noexport:
+* 12: Citizen History                                     
 :PROPERTIES:
 :EXPORT_FILE_NAME: 12-citizen-history
 :CUSTOM_ID: 12:-citizen-history-815e
 :END:
-
-** 
+** Reminders
+- Oral History will be marked tomorrow
+- Proposal due on the 5th
+- Thursday's class is a *work session* with *snacks* 
 ** What we've learned
+*** Text is Code
+- all our work is "digital" now
+*** The 3 layers of the web
+- structure
+- presentation
+- dynamism
+*** The "Public" and "the Public Sphere"
+- media constrain the possible
+- the "public" is probably not unitary
+- don't have to be a genius to make a contribution
+*** Invocations and Incantations
+- Using APIs to take advantage of other people's work
+- writing only what you have to
+*** Open and Closed Systems
+- what "open source" means for us
+*** Maps and Legends
+- organizing stories around space
+- digital maps are spcial
+*** Storytelling
+- the distinctive features of oral history
+- problems of truth and objectivity
+- collaboration and authorship
 ** What you might do
-** 
-
-
-** Changing Landscape of Profession and Expertise
+/History doesn't have to stop at graduation/
+*** Changing Landscape of Profession and Expertise
 :PROPERTIES:
 :CUSTOM_ID: changing-landscape-of-profession-and-expertise-4204
 :END:
-** Continuing as "historian" after graduation
+- how will "professionalism" stretch and change shape in the future?
+*** Continuing as "historian" after graduation
 :PROPERTIES:
 :CUSTOM_ID: continuing-as-"historian"-after-graduation-2a55
 :END:
-** Summing up promise and pitfalls of digital history
-:PROPERTIES:
-:CUSTOM_ID: summing-up-promise-and-pitfalls-of-digital-history-fab7
-:END:
-** 
-:PROPERTIES:
-:CUSTOM_ID: -6ac4
-:END:
+- history fora & groups
+- participating in crowdsourced projects
+- writing with a historian's eye
+*** Use your new skills!
+- you're not a programmer yet, but you now understand how code works
+- lots of ways to learn
+- lots of roles for "demi-geeks"
+*** History and Digital Literacy as Citizenship
+#+begin_notes
+remind everyone that we live together in a world shaped both by the events of the past and by a tremendously powerful media landscape. Charting a course through this new world requires some understanding of both. Promises and pitfalls of DH are the promises and pitfalls of the new world.   
+#+end_notes
+** Congratulations
+#+begin_notes
+you've all come a really long way this semester. Lots of your cohort quit before you did. Even if you are just scraping by, you have had to work to a high standard. You deserve a round of applause!
+#+end_notes
 * COMMENT Assignments                                              :noexport:
 :PROPERTIES:
 :CUSTOM_ID: comment-assignments-cf12
