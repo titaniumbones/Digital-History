@@ -131,7 +131,7 @@ I can offer help with the following
 | Node and NPM                  | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])  | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
 
 
-Please see the [[http://digital.hackinghistory.ca/article/tools][Setup]] page for more details about the particular tools we will be using. *YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE*
+Please see the [[http://digitalhistory.github.io/article/tools][Setup]] page for more details about the particular tools we will be using. *YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE*
 * Course Requirements & Grading
 :PROPERTIES:
 :ID:       o2b:8cabb212-5b29-445e-9c1a-d108bdfff9c4
@@ -354,5 +354,5 @@ Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of 
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ("<2019-09-05 Thu>" "<2019-09-03 Tue>" )
+# org-mwp-classtimes-calibrate: ("<2019-09-03 Tue>" "<2019-08-29 Thu>" )
 # End:  

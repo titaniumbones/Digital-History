@@ -387,7 +387,8 @@ Take out your Laptop!
   - submit your changes as pull request
 - When you're done, we'll check out the wonders of open source first hand
  
-# /home/matt/DH/Images/matt_headshot.jpg http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
+# /home/matt/DH/Images/matt_headshot.jpg http://digitalhistory.github.io/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
+
 ** COMMENT who's Here
 :PROPERTIES:
 :CUSTOM_ID: comment-who's-here-5510
@@ -4746,10 +4747,10 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :END:
 - What do you still need help with? due Monday
 *** COMMENT Next Assignment: Oral History. 
-- [[https://digital.hackinghistory.ca/assignment/04-oral-history/][on the website]]
+- [[https://digitalhistory.github.io/assignment/04-oral-history/][on the website]]
 - [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][On Github]]
 *** COMMENT Final Assignment: Project Proposal
-- [[http://digital.hackinghistory.ca/assignment-05-project-proposal/][Now On the Website]]!
+- [[http://digitalhistory.github.io/assignment-05-project-proposal/][Now On the Website]]!
 *** COMMENT Activity: make-up work                               :noexport:
 :PROPERTIES:
 :CUSTOM_ID: activity:-make-up-work-cbc7
@@ -4844,10 +4845,10 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :END:
 - What do you still need help with? due tonight
 ** Next Assignment: Oral History. 
-- [[https://digital.hackinghistory.ca/assignment/04-oral-history/][on the website]]
+- [[https://digitalhistory.github.io/assignment/04-oral-history/][on the website]]
 - [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][On Github]]
 ** Final Assignment: Project Proposal
-- [[http://digital.hackinghistory.ca/assignment-05-project-proposal/][Now On the Website]]!
+- [[http://digitalhistory.github.io/assignment-05-project-proposal/][Now On the Website]]!
 ** COMMENT Activity: make-up work                                 :noexport:
 :PROPERTIES:
 :CUSTOM_ID: activity:-make-up-work-cbc7
@@ -5634,8 +5635,8 @@ you've all come a really long way this semester. Lots of your cohort quit before
 :CUSTOM_ID: comment-variables-84fe
 :END:
 
-# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
-# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
 
 local variables need to be set at the end of the file.  
 # Local Variables:

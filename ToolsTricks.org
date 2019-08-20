@@ -98,7 +98,7 @@ Great -- now git knows who you are. If you're feeling ambitious, you can also [[
 Sometimes it's nice to have a backp. [[https://www.gitkraken.com/][GitKraken]] is an impressive visual tool that also makes it easy to [[https://support.gitkraken.com/start-here/profiles][configure all of your information]].  They have a nice video about [[https://support.gitkraken.com/integrations/authentication][SSH integration]], which you can watch if you like.
 
 *** Learn more
-There is a somewhat more wordy [[http://digital.hackinghistory.ca/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
+There is a somewhat more wordy [[http://digitalhistory.github.io/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
 ** Node and NPM
 Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.  
 
@@ -171,8 +171,8 @@ Node.js is an exquisite piece of programming infrastructure. One of its main fea
 
 In our assignments, node dependencies are mostly used to enable the *tests*, whose main function is to help you figure out whether you've done the assignments correctly.  Installing node dependencies is pretty simple, but can be confusing if you're completely new to node, the command line, and programming in general.  Here are the (very simple!) instructions:
 
-1. Install Node and NPM as per [[https://digital.hackinghistory.ca/tools/setup/#node-and-npm][this section of the "Setup" instructions]] 
-2. From the command line, navigate to the root directory of your repository using ~cd~ as per [[https://digital.hackinghistory.ca/tools/navigating-command-line/][the navigation help page]]
+1. Install Node and NPM as per [[https://digitalhistory.github.io/tools/setup/#node-and-npm][this section of the "Setup" instructions]] 
+2. From the command line, navigate to the root directory of your repository using ~cd~ as per [[https://digitalhistory.github.io/tools/navigating-command-line/][the navigation help page]]
 3. From the root directory of your repository,type the following command into the terminal/git-bash prompt: ~npm install~
 
 You should see some complex output from the command, after which your node dependencies will be installed. You can actually see the installed files by browsing the contents of the ~node_modules~ directory, which should now be present in your working directory.  
@@ -270,9 +270,7 @@ Looking forward to hearing how all of this goes!
   :CLASS: entry-title
   :END:
 
-This is a preliminary introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software
-developers but is enormously useful for any text-based document
-repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]] . You can find git
+This is a preliminary introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]] . You can find git
 repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.
 
 I /strongly/ recommend you follow this lesson up by
@@ -528,50 +526,35 @@ these.
   on Github]]
 - [[https://github.com/jlord/git-it-electron/releases][The excellent
   tutorial in the downloadable git-it application]]
-- [[https://help.github.com/desktop/guides/][The sub-par Github Desktop
-  documentation]]
-- [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][Helpful
-  Tutorial on The Programming Historian]].
+- [[https://help.github.com/desktop/guides/][The sub-par Github Desktop documentation]]
+- [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][Helpful Tutorial on The Programming Historian]].
 - [[http://gitimmersion.com/index.html][Git Immersion]]
 - [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official
   Git Book (quite technical)]]
-
-- [[https://digital.hackinghistory.ca/03-spatial-history/][Assignment
-  03: Spatial History]]
-- [[https://digital.hackinghistory.ca/04-oral-history/][Assignment 04:
-  Oral History]]
-- [[https://digital.hackinghistory.ca/assignment-05-project-proposal/][Assignment
-  05: Project Proposal]]
-- [[https://digital.hackinghistory.ca/assignments/][Assignments]]
-- [[https://digital.hackinghistory.ca/01-web-skills/][Assignments 01 and
-  02: HTML & CSS self-study]]
-- [[https://digital.hackinghistory.ca/basic-js-part-2-the-dom/][Basic JS
+*** COMMENT not sure why all these links are here. 
+- [[https://digitalhistory.github.io/03-spatial-history/][Assignment 03: Spatial History]]
+- [[https://digitalhistory.github.io/04-oral-history/][Assignment 04: Oral History]]
+- [[https://digitalhistory.github.io/assignment-05-project-proposal/][Assignment  05: Project Proposal]]
+- [[https://digitalhistory.github.io/assignments/][Assignments]]
+- [[https://digitalhistory.github.io/01-web-skills/][Assignments 01 and  02: HTML & CSS self-study]]
+- [[https://digitalhistory.github.io/basic-js-part-2-the-dom/][Basic JS
   Part 2: the DOM]]
-- [[https://digital.hackinghistory.ca/][Digital History: His389, Winter
-  2017]]
-- [[https://digital.hackinghistory.ca/distant-reading-2/][Distant
-  Reading 2]]
-- [[https://digital.hackinghistory.ca/distant-reading-exercise-building-a-wordle/][Distant
-  Reading Exercise: Building a Wordle]]
-- [[https://digital.hackinghistory.ca/introducing-css/][Introducing
-  CSS]]
-- [[https://digital.hackinghistory.ca/introduction-to-github/][Introduction
-  to Github!]]
-- [[https://digital.hackinghistory.ca/javascript-basics-i-operators-loops-and-that-pesky-problem-1/][Javascript
+- [[https://digitalhistory.github.io/][Digital History: His389, Winter 2017]]
+- [[https://digitalhistory.github.io/distant-reading-2/][Distant  Reading 2]]
+- [[https://digitalhistory.github.io/distant-reading-exercise-building-a-wordle/][Distant Reading Exercise: Building a Wordle]]
+- [[https://digitalhistory.github.io/introducing-css/][Introducing CSS]]
+- [[https://digitalhistory.github.io/introduction-to-github/][Introduction to Github!]]
+- [[https://digitalhistory.github.io/javascript-basics-i-operators-loops-and-that-pesky-problem-1/][Javascript
   Basics I: Operators, Loops, and that Pesky Problem 1]]
-- [[https://digital.hackinghistory.ca/learn-by-example-history-please/][Learn
-  by example: History-Please]]
-- [[https://digital.hackinghistory.ca/lecture-notes/][Lecture Notes]]
-- [[https://digital.hackinghistory.ca/spatial-history-with-google-maps/][Spatial
-  History with Google Maps]]
-- [[https://digital.hackinghistory.ca/tools/][Tools]]
+- [[https://digitalhistory.github.io/learn-by-example-history-please/][Learn by example: History-Please]]
+- [[https://digitalhistory.github.io/lecture-notes/][Lecture Notes]]
+- [[https://digitalhistory.github.io/spatial-history-with-google-maps/][Spatial History with Google Maps]]
+- [[https://digitalhistory.github.io/tools/][Tools]]
 
-  - [[https://digital.hackinghistory.ca/tools/understanding-popcorn/][Understanding
-    Popcorn]]
-  - [[https://digital.hackinghistory.ca/tools/understanding-popcorn-2/][Understanding
-    Popcorn]]
+  - [[https://digitalhistory.github.io/tools/understanding-popcorn/][Understanding Popcorn]]
+  - [[https://digitalhistory.github.io/tools/understanding-popcorn-2/][Understanding Popcorn]]
 
-- [[https://digital.hackinghistory.ca/blogs/][Your Blogs]]
+- [[https://digitalhistory.github.io/blogs/][Your Blogs]]
 
 © 2017 HIS389: Digital History. Made with Love in
 [[http://themefortress.com/reverie/][Reverie]].
