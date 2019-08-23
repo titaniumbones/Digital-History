@@ -1,19 +1,19 @@
-#+DATE: <2018-01-08 Mon>
 #+POSTID: 60
 # # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
-#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: ':nil *:t -:t ::t <:t H:4 \n:nil arch:nil
+#+OPTIONS: author:nil c:nil creator:nil d:(not "LOGBOOK") date:nil
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
 # #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
 #+STARTUP: customtime entitiespretty
 #+TITLE: Syllabus
-#+SUBTITLE: HIS393: Digital History, Winter 2019
+#+SUBTITLE: HIS393: Digital History, Fall 2019
 #+AUTHOR: Matt Price
 #+EMAIL: matt.price@utoronto.ca
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE: en
-#+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/New113Syllabus.odt"
+# #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/New113Syllabus.odt"
+#+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 27.0.5 (Org mode 9.1.4)
@@ -25,7 +25,7 @@
 # #+MACRO: ts (eval (get-ts+7-inc-ov 1))
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+OPTIONS: todo:nil
-#+ORG_LMS_COURSEID: 71671
+#+ORG_LMS_COURSEID: 123949
 #+ORG_LMS_ASSIGNMENTS: ~/DH/Assignments.org
 #+IS_PUBLIC: nil
 
@@ -43,7 +43,7 @@
 | *Instructor:*   | Matt Price                                  |
 | *Email:*        | matt.price@utoronto.ca                      |
 | *Meeting Times* | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                           |
-| *Web:*          | http://digitalhistory.github.io/dh-website/ |
+| *Web:*          | http://digitalhistory.github.io/            |
 | *Slack:*        | https://digitalhistoryuoft.slack.com/       |
 | *Office Hrs:*   | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                        |
 
@@ -71,7 +71,7 @@ How should history respond to these new conditions of our existence?  In this cl
 - Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
 - Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship? 
 
-# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-511.png
+# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-511.png
 * Objectives
 :PROPERTIES:
 :ID:       o2b:08d4e118-c70c-4f4c-a99a-293d3847c9a6
@@ -158,17 +158,17 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 
 | Assignment           | Due Date | Skills/Aims                                                        | A | B | C | D |
 |----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
-| Class Profile        | <2019-01-17 Thu>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
+| Class Profile        | <2019-09-12 Thu>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
 | G & GH Extras        |          |                                                                    | \checkmark |   |   |   |
-| Zero to Blog Post    | <2019-01-29 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
+| Zero to Blog Post    | <2019-09-24 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
 | Z2B Extras           |          |                                                                    | \checkmark |   |   |   |
-| A Feast of Ministers | <2019-02-12 Tue>  | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
+| A Feast of Ministers | <2019-10-08 Tue>  | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
 | Ministers Extras     |          |                                                                    | \checkmark |   |   |   |
-| DOM and Data         | <2019-03-01 Fri>  | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
+| DOM and Data         | <2019-10-29 Tue>  | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
 | DOM and Data Extras  |          |                                                                    | \checkmark |   |   |   |
-| Spatial History      | <2019-03-15 Fri>  | API's, GIS                                                         | \checkmark | \checkmark |   |   |
-| Oral History         | <2018-03-30 Fri>  | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
-| Project Proposal     | <2019-04-05 Fri>  | Imagine a Digital History Project                                  | \checkmark |   |   |   |
+| Spatial History      | <2019-11-07 Thu>  | API's, GIS                                                         | \checkmark | \checkmark |   |   |
+| Oral History         | <2018-11-29 Thu>  | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
+| Project Proposal     | <2019-12-05 Thu>  | Imagine a Digital History Project                                  | \checkmark |   |   |   |
 |----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
 |                      |          |                                                                    |   |   |   |   |
 
@@ -269,8 +269,6 @@ We'll explore "topic modelling" -- one of the most popular DH methods -- as well
 - Gibbs, Fred. “[[http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/][Hermeneutics of Data and Historical Writing]].” /Writing History in the Digital Age/, March 14, 2012.
 - Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
 *** In-Class Activity: Javascript questions ({{{ts}}})
-*** READING WEEK -- NO CLASS {{{ts}}} and {{{ts}}} 
-
 *** Computing Concepts Catch-up day ({{{ts}}}) 
 More JS, and Trees.
 *** Assignment Help Day ({{{ts}}})
@@ -296,6 +294,8 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 - "The Development, Persistence, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in /Toward Spatial Humanities/
 - google earth tutorial: https://geospatialhistorian.wordpress.com/lessons/lesson-1/
 
+*** READING WEEK -- NO CLASS {{{ts}}} and {{{ts}}} 
+
 *** In-Class Activity: GIS ({{{ts}}})
 
 *** Visualization ({{{ts}}})
@@ -319,7 +319,7 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 *** Project Planning & Citizen History  ({{{ts}}})
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
-# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
+# /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
 *** Oral History & Remix Culture ({{{ts}}})
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data. 
 
@@ -334,7 +334,7 @@ If we're ahead of schedule, we'll watch /Harlan County USA/ in class.
 * COMMENT Notes                                                    :noexport:
 - add in at least one documentary, potentially /Offshore/; /Fog of War/; /Harlan County USA/; 
 - "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html 2 hours long!!
-# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
+# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
 * Acknowledgments
 Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [[https://canvas.uw.edu/courses/1118282/pages/policies][Joel's web development course]]. Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.  
@@ -351,6 +351,14 @@ Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of 
 
 (org-lms-setup)
 #+end_src
+
+#+begin_src emacs-lisp
+(setq org-odt-styles-file "/home/matt/.emacs.d/Templates/syl-temp-2019.odt")
+#+end_src
+
+#+RESULTS:
+: /home/matt/.emacs.d/Templates/syl-temp-2019.odt
+
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
