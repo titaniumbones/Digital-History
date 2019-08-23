@@ -1,5 +1,6 @@
 #+HUGO_BASE_DIR: ./dh-website/
 #+HUGO_SECTION: slides/
+#+MWP_HUGO_TYPE: slides
 #+HUGO_STATIC_IMAGES: images/
 #+HUGO_MENU: :menu main :weight 10
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
