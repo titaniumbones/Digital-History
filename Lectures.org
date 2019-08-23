@@ -211,6 +211,7 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 :EXPORT_TITLE: Introduction to Digital History
 :CUSTOM_ID: 01:-introducing-/digital-history/-6653
 :END:
+
 ** About Me
 :PROPERTIES:
 :CUSTOM_ID: about-me-618c
@@ -3574,7 +3575,7 @@ headMe('I am the title');
 *** All the Rest
 #+begin_src js
 function footMe () {
-  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/dh-website/'});
+  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/'});
   return letsTag(link, 'footer');
 }
 
