@@ -31,13 +31,12 @@ Here's the table of tools from the syllabus:
 | Tool                   | On Mac                       | On Windows                                     | On Linux                           |
 |------------------------+------------------------------+------------------------------------------------+------------------------------------|
 | Real Web Browser       | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]        | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
-| Text Editor            | [[https://atom.io/][Atom]]                         | [[https://atom.io/][Atom]]                                           | [[https://atom.io/][Atom]]                               |
+| Text Editor            | [[https://code.visualstudio.com/download][VSCode]]                       | [[https://code.visualstudio.com/download][VSCode]]                                         | [[https://code.visualstudio.com/download][VSCode]]                             |
 | Bash Shell Environment | Terminal (Built in)          | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
 | Git Version Control    | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]                  | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
-| Git Visualization      | [[https://www.gitkraken.com/][gitKraken]]                    | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
+| Slack Community        | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]] | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]                   | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]       |
 | Github Org Membership  | [[https://github.com/join][Sign up here]]                 | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
 | Node and NPM           | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])         | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
-| Slack Community        | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]] | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]                   | [[https://slack.com/downloads][Client Download]], [[https://join.slack.com/t/digitalhistoryuoft/signup][Signup Link]]       |
 
 If you're comfortable exploring and installing software, you can probably get set up quickly by following the links above. *Please nonetheless read the detailed instructions below.* Things will go smoother if you do!
 ** Web browser
@@ -47,7 +46,7 @@ Both have highly sophisticated *developer tools* with which you should familiari
 
 Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: ~Tools \rightarrow Web Developer \rightarrow Console~ or ~Menu \rightarrow More Tools \rightarrow Developer \rightarrow Console~
 
-The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below). 
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful, though I now use VSCode's Javascript console instead (see "Text Editor", below). 
 
 The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove *essential* for figuring out why your code isn't working right!
 ** Text Editor
@@ -57,7 +56,8 @@ The other tool I use all the time is "inspect element", available by right-click
 :POSTID:   573
 :BLOG:     dig
 :END:
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://atom.io/][Atom]].  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [[http://flight-manual.atom.io/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install some extra packages]] by navigating to Edit \rightarrow Preferences \rightarrow + Install, as described in detail [[https://flight-manual.atom.io/using-atom/sections/atom-packages/][in the excellent Atom manual]]. I have prepared a package called [[https://atom.io/packages/history-hack-pack][history-hack-tools]], which will install all the tools I'll be using during class. Please install that one by searching for its name in the search box. The functionalities fo the various packages are briefly described in the package description.
+
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://code.visualstudio.com/][Visual Studio Code]]. Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
 
 ** Command Line
 Web developers and digital humanists spend a lot of their time in the /command-line environment/, interacting with their computers through text-based commands instead of a mouse or voice interface.  It takes some time to learn to use the command-line, but it's a very powerful and effective way to work once you get used to it. One goal of this course is to help you get comfortable in this environment and learn to take advantage of its power.  
@@ -66,7 +66,9 @@ There are actually many different command-line environments; in this class we us
 
 On Mac and Linux, bash is built in to the system.  In Mac, open the ~Terminal~ app to find the bash prompt; in Linux you may have any of several terminal emulators installed, search your program list for "term" to find yours.  
 
-In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Wondows Subsystem for Linux, which you can use instead of the Git Bash method.  
+In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Windows Subsystem for Linux (WSL)", which you can use instead of the Git Bash method.
+
+*IMPORTANT UPDATE*: VSCode has an [[https://code.visualstudio.com/docs/editor/integrated-terminal][integrated terminal]], and it's extremely useful. Windows users will have to do a little bit of work in order to use bash in the integrated terminal. See the excellent [[https://code.visualstudio.com/docs/editor/integrated-terminal#%5Fconfiguration][terminal configuration instructions online]], and be sure to follow the link explaining [[https://code.visualstudio.com/docs/getstarted/settings#%5Fcreating-user-and-workspace-settings][how to access the user settings screen in VSCode]].
 
 ** Git, Github, and GitKraken
 :PROPERTIES:
@@ -76,7 +78,7 @@ In Windows, bash comes with the Git installation -- follow the instructions belo
 Software development is made *vastly* easier by "[[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]]" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [[https://git-scm.com/][git]], and we're all grateful for it.  
 
 *** Install Git
-To install git, follow the [[https://git-scm.com/downloads][download links]] on the website (see the table above for OS-specific links and instructions. We'll come back to the Git command-line in a minute.  
+To install git, follow the [[https://git-scm.com/downloads][download links]] on the website (see the table above for OS-specific links and instructions). We'll come back to the Git command-line in a minute.  
 
 *** Sign up for Github
 For many developers -- maybe even most of them -- using Git is intimately tied to the [[https://github.com][Github]] code-sharing website.  We'll be using Github for almost all of our work this semester, so it's important that you get familiar with it.  If you were present for the first class, you've already done this. If not, you'll need to [[https://github.com/join][sign Up for a Github account]]. Once you've done that, you have two choices:
@@ -94,19 +96,29 @@ You need to tell git a little bit about yourself. Start with your [[https://help
 #+END_SRC
 Great -- now git knows who you are. If you're feeling ambitious, you can also [[https://help.github.com/articles/connecting-to-github-with-ssh/][set up SSH keys so you don't have to type in your password every time you commit to Git]].  
 
+
+*** VSCode Git
+
+VSCode also has an interface to Git and Github. It's pretty powerful and intuitive, so I recommend trying it before installing GitKraken. [[https://code.visualstudio.com/docs/editor/versioncontrol#%5Fgit-support][The instructions are here]].
+
 *** Using the GitKraken GUI client
 Sometimes it's nice to have a backp. [[https://www.gitkraken.com/][GitKraken]] is an impressive visual tool that also makes it easy to [[https://support.gitkraken.com/start-here/profiles][configure all of your information]].  They have a nice video about [[https://support.gitkraken.com/integrations/authentication][SSH integration]], which you can watch if you like.
 
 *** Learn more
 There is a somewhat more wordy [[http://digitalhistory.github.io/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
-** Node and NPM
-Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.  
+** Node and NPM -- This is the hardest part!
+*Right now it looks like the drag and drop tool we wanted to make will NOT be ready for this semester* :frowning_face:
 
-You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.  
+Installing Node is not strictly necessary for the first assignment. If you are having trouble, put this off till next week.
+
+Most of our programming work will involve Javascript, which runs most of the web. The [[https://nodejs.org/en/][Node.js]] environment and its "package manager," [[https://www.npmjs.com/][NPM]], are an incredible resource for Javascript development. In fact, Slack, VSCode, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.
+
+You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a disadvantage in the class, because the tests offer hints about what's wrong with your code.
 
 - In Mac and Linux, the instructions linked to in the table above are probably good enough.
-- In Windows, you may follow all the instructions and then find yourself getting an error ("~Command not found~"). If that happens, you may want to try [[http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/][the instructions laid out here]], or if you're on Windows 10, [[https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae][you could go crazy and install the amazing Windows Subsystem for Linux]], which allows you to work as if your computer had a real Unix operating system like everyone else.  
-The details of Node and NPM are a little outside the scope of our class, but [[https://info343.github.io/machine-setup.html#node-and-npm][a colleague at the University of Washington]] has an excellent introduction in one of his courses.  
+- In Windows, you may follow all the instructions and then find yourself getting an error ("=Command not found="). If that happens, you may want to try [[http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/][the instructions laid out here]], or if you're on Windows 10, [[https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae][you could go crazy and install the amazing Windows Subsystem for Linux]], which allows you to work as if your computer had a real Unix operating system like everyone else.
+
+The details of Node and NPM are a little outside the scope of our class, but [[https://info343.github.io/machine-setup.html#node-and-npm][a colleague at the University of Washington]] has an excellent introduction in one of his courses.
 
 ** Slack
 Slack is not strictly necessary to do your work, but it is the principal means of conversation for the class. Your activity in our Slack team is part of your participation assessment. So, please sign up for the team using the signup links above, and if you're not familiar with Slack already, read [[https://get.slack.help/hc/en-us/search?utf8=%E2%9C%93&query=bold+italic&commit=Search][some of the Slack documentation]]. 
@@ -299,9 +311,9 @@ skip.) My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created 
    - follow Markdown syntax in writing your recipe (see    [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
    - When you save the file, Github will *automatically create a forked repository under your account!* Magic. *Before you hit save, read the next step!!*
 
-   [[http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-create-file.jpeg]]
+   [[http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-create-file.jpeg]]
 
-6. *Important!* You'll be given a choice between “Committing directly to master” and “Creating a new branch”. Choose the latter option and then follow the instructions to submit a pull request. Amazing! [[http://digital.hackinghistory.ca/wp-content/uploads/2017/01/wpid-commit-options.png]]
+6. *Important!* You'll be given a choice between “Committing directly to master” and “Creating a new branch”. Choose the latter option and then follow the instructions to submit a pull request. Amazing! [[http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-commit-options.png]]
 7. When filling out the pull request, please take note of the “base” branch -- by default, Github *will not* to this properly for you. Make sure that the base points to =titaniumbones/master=. If you can't figure this out, then commit to your own “master” branch. Then, navigate back to the front page, and create a =New Pull Request= by
    clicking on the button on the upper left. At this point my repo will be the only option you're given.
 
@@ -362,7 +374,7 @@ All of the above functionality is also available via the command-line
    =git clone https://github.com/your-user-name/history-please.git= from
    the command line. The repository will be downloaded.
 2. Add your directory to atom as a “project directory:
-   [[http://digital.hackinghistory.ca/wp-content/uploads/2016/01/wpid-githb-add-project.png]]
+   [[http://digitalhistory.github.io/wp-content/uploads/2016/01/wpid-githb-add-project.png]]
 3. Install the “git-plus” package in Atom
 4. Create a new file in the appropriate place.
 5. Choose menu item =Packages \rightarrow Git Plus \rightarrow Add=, then
@@ -589,7 +601,7 @@ MDN also has a more advanced guide to JavaScript which starts with [[https://dev
 ** Consoles and Playgrounds
 
 Sometimes you will want to try out your code and test out your ideas before putting them in a permanent file. There are various tools for this. 
-- Browser consoles and scratchpads :: Your browser has a built-in "console" where you can enter javascript commands and see their output. See [[https://digitalhistory.github.io/dh-website/tools/setup/#web-browser][the Setup doc]] for more info.
+- Browser consoles and scratchpads :: Your browser has a built-in "console" where you can enter javascript commands and see their output. See [[https://digitalhistory.github.io/tools/setup/#web-browser][the Setup doc]] for more info.
 - node console :: Unfortunately, VSCode does not have a built-in javascript console. However, you can easily create one in a terminal window by running the command ~node~. Exit by typing ~Control-d~ or ~Control-c Control-c~ or ~.exit~.
 - VSCode Debugger :: VSCode has an excellent debugger. However, debugging is a complicated subject. If you want to try to use these tools, [[https://code.visualstudio.com/docs/editor/debugging][read the docs]]. 
 - VSCode extensions :: There are many excellent VSCode extensions for JavaScript. You can experiment with [[https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode][quokka]], for instance. 
