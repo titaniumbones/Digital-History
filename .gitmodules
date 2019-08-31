@@ -1,0 +1,3 @@
+[submodule "dh-website/themes/docdock"]
+	path = dh-website/themes/docdock
+	url = https://github.com/vjeantet/hugo-theme-docdock.git
