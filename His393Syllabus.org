@@ -40,12 +40,12 @@
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price                                  |
-| *Email:*        | matt.price@utoronto.ca                      |
-| *Meeting Times* | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                           |
-| *Web:*          | http://digitalhistory.github.io/            |
-| *Slack:*        | https://digitalhistoryuoft.slack.com/       |
-| *Office Hrs:*   | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                        |
+| *Instructor:*   | Matt Price                            |
+| *Email:*        | matt.price@utoronto.ca                |
+| *Meeting Times* | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                     |
+| *Web:*          | http://digitalhistory.github.io/      |
+| *Slack:*        | https://digitalhistoryuoft.slack.com/ |
+| *Office Hrs:*   | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                  |
 
 In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
 
@@ -112,7 +112,7 @@ As noted above, most communication should take place *via Slack*.  In the case o
 ** Attendance
 Make every effort to attend each class meeting (including lab sections)! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings, with exceptions permitted in case of illness and family emergencies.
 
-Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
+Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (well, that may be allowed under certain circumstances), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. If I notice you doing this, I will call you out in public. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
 * Tools
 
@@ -126,8 +126,8 @@ I can offer help with the following
 | Text Editor                   | [[https://code.visualstudio.com/download][VSCode]]                | [[https://code.visualstudio.com/download][VSCode]]                                         | [[https://code.visualstudio.com/download][VSCode]]                             |
 | Bash Shell Environment        | Terminal (Built in)   | [[https://git-for-windows.github.io/][Git for Windows]] or [[https://msdn.microsoft.com/en-us/commandline/wsl/install-win10][Windows Subsystem for Linux]] | gnome-terminal, qterm, etc         |
 | Git Version Control           | [[https://sourceforge.net/projects/git-osx-installer/files/][Git for OSX]]           | [[https://git-for-windows.github.io/][Git for Windows]]                                | ~apt-get install git~              |
-| Git Visualization (optional!) | [[https://www.gitkraken.com/][gitKraken]]             | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
 | Github Org Membership         | [[https://github.com/join][Sign up here]]          | [[https://github.com/join][Sign up here]]                                   | [[https://github.com/join][Sign up here]]                       |
+| Git Visualization (optional!) | [[https://www.gitkraken.com/][gitKraken]]             | [[https://www.gitkraken.com/][gitKraken]]                                      | [[https://www.gitkraken.com/][gitKraken]]                          |
 | Node and NPM                  | [[https://nodejs.org/en/download/][Node Website]] ([[http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/][guide]])  | [[https://nodejs.org/en/download/][Node Website]] ([[https://wsvincent.com/install-node-js-npm-windows/][guide]])                           | [[https://nodejs.org/en/download/][Node Website]] ([[https://nodejs.org/en/download/package-manager/][distro instructions]]) |
 
 
@@ -156,21 +156,22 @@ Here are some more details:
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
-| Assignment           | Due Date | Skills/Aims                                                        | A | B | C | D |
-|----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
-| Class Profile        | <2019-09-12 Thu>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
-| G & GH Extras        |          |                                                                    | \checkmark |   |   |   |
-| Zero to Blog Post    | <2019-09-24 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
-| Z2B Extras           |          |                                                                    | \checkmark |   |   |   |
-| A Feast of Ministers | <2019-10-08 Tue>  | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
-| Ministers Extras     |          |                                                                    | \checkmark |   |   |   |
-| DOM and Data         | <2019-10-29 Tue>  | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
-| DOM and Data Extras  |          |                                                                    | \checkmark |   |   |   |
-| Spatial History      | <2019-11-07 Thu>  | API's, GIS                                                         | \checkmark | \checkmark |   |   |
-| Oral History         | <2018-11-29 Thu>  | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
-| Project Proposal     | <2019-12-05 Thu>  | Imagine a Digital History Project                                  | \checkmark |   |   |   |
-|----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
-|                      |          |                                                                    |   |   |   |   |
+| Assignment           | Due Date  | Skills/Aims                                                        | A | B | C | D |
+|----------------------+-----------+--------------------------------------------------------------------+---+---+---+---|
+| Class Profile        | <2019-09-12 Thu> | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
+| G & GH Extras        |           |                                                                    | \checkmark |   |   |   |
+| Zero to Blog Post    | <2019-09-24 Tue> | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
+| Z2B Extras           |           |                                                                    | \checkmark |   |   |   |
+| A Feast of Ministers | <2019-10-08 Tue> | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
+| Ministers Extras     |           |                                                                    | \checkmark |   |   |   |
+| DOM and Data         | <2019-10-25 Fri> | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
+| DOM and Data Extras  |           |                                                                    | \checkmark |   |   |   |
+| Spatial History      | <2019-11-14 Thu> | API's, GIS                                                         | \checkmark | \checkmark |   |   |
+| Oral History         | <2018-12-05 Wed> | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
+| Project Proposal     | <2019-12-06 Fri> | Imagine a Digital History Project                                  | \checkmark |   |   |   |
+|----------------------+-----------+--------------------------------------------------------------------+---+---+---+---|
+|                      |           |                                                                    |   |   |   |   |
+#+TBLFM: 
 
 
 * Texts
@@ -197,8 +198,6 @@ While all our readings are online, the following texts are heavily used & may be
 :PROPERTIES:
 :ID:       o2b:549d46ae-f46c-4b15-a025-c6cfd44073af
 :END:
-
-
 *** Introducing /Digital History/ ({{{ts}}})
 :PROPERTIES:
 :ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
@@ -250,7 +249,6 @@ Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-drive
 - Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/. Verso, 2005 through p. 64, or  Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1][Graphs, Maps, Trees.]]” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1][Graphs, Maps, Trees - 2]].” New Left Review 26 (March 1, 2004): 79–103 
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
 *** In-Class Activity: Javascript variables & functions ({{{ts}}})
-
 *** Distant Reading 2: Are Texts Data? ({{{ts}}})
 More Moretti, and some criticisms
 
@@ -337,10 +335,7 @@ If we're ahead of schedule, we'll watch /Harlan County USA/ in class.
 # /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-51.png
 
 * Acknowledgments
-Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [[https://canvas.uw.edu/courses/1118282/pages/policies][Joel's web development course]]. Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.  
-
-
-* 
+Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [[https://canvas.uw.edu/courses/1118282/pages/policies][Joel's web development course]]. Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.
 * COMMENT Variables
 #+begin_src emacs-lisp
 (make-local-variable 'org-use-property-inheritance)
