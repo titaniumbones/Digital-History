@@ -28,6 +28,13 @@
 #+ORG_LMS_COURSEID: 123949
 #+ORG_LMS_ASSIGNMENTS: ~/DH/Assignments.org
 #+IS_PUBLIC: nil
+* COMMENT export
+#+begin_src emacs-lisp :results none
+;; (org-lms-setup)
+(org-lms-post-syllabus)
+(browse-url (concat "https://q.utoronto.ca/courses/"
+                    (org-lms-get-keyword "ORG_LMS_COURSEID")  ))
+#+end_src
 
 
 * Logistics
@@ -167,7 +174,7 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 | DOM and Data         | <2019-10-25 Fri> | Programming Concepts: Object structure, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
 | DOM and Data Extras  |           |                                                                    | \checkmark |   |   |   |
 | Spatial History      | <2019-11-14 Thu> | API's, GIS                                                         | \checkmark | \checkmark |   |   |
-| Oral History         | <2018-12-05 Wed> | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
+| Oral History         | <2019-12-05 Thu> | API's, Multimedia Narratives                                       | \checkmark | \checkmark | \checkmark | \checkmark |
 | Project Proposal     | <2019-12-06 Fri> | Imagine a Digital History Project                                  | \checkmark |   |   |   |
 |----------------------+-----------+--------------------------------------------------------------------+---+---+---+---|
 |                      |           |                                                                    |   |   |   |   |
