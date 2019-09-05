@@ -6,6 +6,11 @@
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+MACRO: ts (eval (get-ts+7))
 #+OPTIONS: todo:nil
+# #+REVEAL_THEME: matt-grid
+#+ORG_LMS_COURSEID: 123949
+# #+REVEAL_ROOT: file:///home/matt/src/reveal.js
+#+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
+#+ORG_REF
 # #+REVEAL_SINGLE_FILE: t
 
 * Set up Klipse
@@ -161,6 +166,19 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 - web skills top-up assignment
 - blog/participation assignment
 
+* COMMENT org-re-reveal setup
+#+begin_src emacs-lisp
+(setq
+ org-re-reveal-width "100%"
+ org-re-reveal-height "100%"
+ org-re-reveal-margin "0.1"
+ org-re-reveal-min-scale "0.2"
+ org-re-reveal-max-scale "2.0"
+ )
+#+end_src
+
+#+RESULTS:
+: 2.0
 
 * COMMENT Participation
 :PROPERTIES:
@@ -211,7 +229,6 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 :EXPORT_TITLE: Introduction to Digital History
 :CUSTOM_ID: 01:-introducing-/digital-history/-6653
 :END:
-
 ** About Me
 :PROPERTIES:
 :CUSTOM_ID: about-me-618c
@@ -225,58 +242,164 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 ** Why Care about History? Why care about the Digital Age?
 :PROPERTIES:
 :CUSTOM_ID: why-care-about-history?-why-care-about-the-digital-age?-8917
+:reveal_extra_attr: class="twoc"
 :END:
-*** The World Out of Which We Come
-:PROPERTIES:
-:CUSTOM_ID: the-world-out-of-which-we-come-eff1
-:END:
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*The World Out of Which We Come*
 #+BEGIN_QUOTE
-The past is the world out of which we have come, the multitude of events and experiences that have shaped our conscious selves and the social worlds we inhabit. To understand how and why we live as we do, we cannot avoid appealing to the past to explain how andwhy we got to be this way. (Cronon 2000, p. 4)
+The past is the world out of which we have come, the multitude of events and experiences that have shaped our conscious selves and the social worlds we inhabit. To understand how and why we live as we do, we cannot avoid appealing to the past to explain how andwhy we got to be this way.   (cite:CrononWhyMatters2000, p. 4)
 #+END_QUOTE
-*** Not just Fact but Story
-:PROPERTIES:
-:CUSTOM_ID: not-just-fact-but-story-de42
-:END:
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Not just Fact but Story*
 #+BEGIN_QUOTE
 It is remembering and storytelling we care about, not the raw past, because only by being perennially resurrected in the mind of each ne generation does the past become meaningful.  Only this does it become a living memory which in turn gives meaning to our present lives by reminding us ho we are--as individuals, as a state and nation, as a people. (/Ibid./, p. 13)
 #+END_QUOTE
+#+end_slideblock
+ 
 *** A Digital Age
 :PROPERTIES:
 :CUSTOM_ID: a-digital-age-5662
+:reveal_extra_attr: class="twoc"
 :END:
-Opportunity:
-- masses of data
-- tremendous participation
-Challenge
-- filtering data
-- trusting writers
-- lack of collective experience
+
+#+begin_slideblock
+*Opportunity*
+  - masses of data
+  - tremendous participation
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear)
+#+begin_slideblock
+*Challenge*
+  - filtering data
+  - trusting writers
+  - lack of collective experience
+#+end_slideblock
+
 *** Our Project
 :PROPERTIES:
 :CUSTOM_ID: our-project-5f46
+:reveal_extra_attr: class="twoc"
 :END:
+#+begin_slideblock
 Understand how to write history for a digital age!
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+#+ATTR_REVEAL: :frag (appear) 
 - what can we preserve?
 - what opportunities are there for change?
 - what has been done already?
+#+end_slideblock
+
 ** Method
 :PROPERTIES:
 :CUSTOM_ID: method-f5b6
+:reveal_extra_attr: class="splitc"
 :END:
+
+#+begin_slideblock
+*For most of us, this is experimental.*
+- no canon
+- minimal technical background
+- unknown professional plans
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Systematic inquiry won't get us there*
+- /Hackers/ not Computer scientists!
+- Basic Concepts & Practical Tools, as a foundation for self-guided further learning
+- Trial & Error, frustration management
+
+(cf. constructivist pedagogy, e.g.)
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 #+ATTR_REVEAL: :frag (appear)
 - Intro to toolbox
 - but tools keep changing
-- therefore: *simple* coding, *basic* tools, as a foundation for later learning
+- therefore: *simple* coding, *basic* plumbing: code editors,version control, web dev absolute basics
+#+end_slideblock
+
 ** Syllabus
 :PROPERTIES:
 :CUSTOM_ID: syllabus-3974
+:reveal_extra_attr: class="twobytwo"
 :END:
-- still uncharted territory (no canon, quite)
-- 4 blocks
-  - Text & Code | Basic programming /literacy/
-  - Data Driven History | "Distant Reading"
-  - Maps & Visualization | Basic Web-based GIS
-  - Oral History & Crowdsourcing | Multi-media History
+*** Some Highlights
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:END:
+#+begin_slideblock
+*Participate*
+- come to class
+- join Slack
+- ask questions
+- help your classmates
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Be Willing to Try*
+- get outside your comfort zone
+- if you don't get it right, try again
+- read the assignments & follow instructions & feedback carefully
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Bring your Laptop*
+- we will code almost every class
+- but not chat/social media
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Find the Fun*
+- every challenge is an opportunity
+#+end_slideblock
+
+*** 4 blocks!
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:END:
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Text and Code*
+- Aims: 
+  - understand /how the web works/ and /what it changes about the practice of history/
+  - Intro to our tools & infrastructure (code editor, version control, build tools)
+  - Intro to HTML and CSS (web page structure and appearance)
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Data Driven History*
+- Aims:
+  - understand "Distant Reading" and the problems of textual abundance
+  - experiment with treating texts as data
+  - distinguish between "meaning" and "information"
+  - introduction to Javascript (variables, functions, control structures)
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Maps & Visualization*
+- Aims:
+  - understanding geohistory
+  - GIS basics
+  - work with web-based GIS
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Oral History & Crowdsourcing*
+- Aims:
+  - work with non-textual media
+  - appreciate the power and perils of crowdsourced & amateur history
+  - plan your own professional or independent fuutre as a digital historian
+#+end_slideblock
 *** Objectives
 :PROPERTIES:
 :ID:       o2b:08d4e118-c70c-4f4c-a99a-293d3847c9a6
@@ -286,46 +409,81 @@ Understand how to write history for a digital age!
 :CUSTOM_ID: objectives-4b0a
 :END:
 At the end of this course, you should:
-- be able to describe to others what the phrase "digital humanities" means to you.
-- be able to frame a coherent and nuanced argument /of your own/ about the value of DH methods to the field of history
-- be able to clearly state and defend a position regarding "engaged scholarship", and articulate the relationship of your argument to the contemporary media landscape
-- have a basic understanding of markup languages and their use in DH
-- be able to make compelling use of media materials such as audio, video, and animation in historical arguments
-- understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
-
-*** COMMENT Assignments (full)
+#+ATTR_REVEAL: :frag (appear) 
+- be able to describe to others *what the phrase "digital humanities" means to you.*
+- be able to frame a coherent and nuanced argument /of your own/ about *the value of DH methods to the field of history*
+- be able to clearly state and *defend a position regarding "engaged scholarship"*, and articulate the relationship of your argument to the contemporary media landscape
+- have a basic understanding of *markup languages* and their use in DH
+- be able to *read and navigate basic Javascript* programs
+- be able to make compelling use of *media materials such as audio, video, and animation* in historical arguments
+- understand *how to create simple historical maps*, and have an opinion about the value of GIS in historical argument
+*** Weird Grading Method
+- you choose what grade you want to get
+- do the assignments required for that grade
+- to "pass" an assignment, you need to achieve a high standard -- approx. ~B+~
+- if you fail the first time, you have a chance to try again
+- ~+/-~ set by participation
+*** Assignments 
 :PROPERTIES:
 :CUSTOM_ID: assignments-(full)-9d47
 :END:
-| Assignment          | Due Date         | Brief Description                 | A | B | C | D |
-|---------------------+------------------+-----------------------------------+---+---+---+---|
-| Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
-| G & GH Extras       |                  |                                   | \check |   |   |   |
-| HTML & CSS          | <2018-01-26 Fri> | web markup and presentaiton       | \check | \check | \check | \check |
-| H & C Extras        |                  |                                   | \check |   |   |   |
-| Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
-| JS Extras           |                  |                                   | \check |   |   |   |
-| Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
-| Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
-| Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
-| Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+------------------+-----------------------------------+---+---+---+---|
 
-*** Assignments 
+| Assignment           | Due Date         | Skills/Aims                         | A | B | C | D |
+|----------------------+------------------+-------------------------------------+---+---+---+---|
+| Class Profile        | <2019-09-12 Thu> | version control and collaboration   | \checkmark | \checkmark | \checkmark | \checkmark |
+| G & GH Extras        |                  |                                     | \checkmark |   |   |   |
+| Zero to Blog Post    | <2019-09-24 Tue> | web markup and presentation         | \checkmark | \checkmark | \checkmark | \checkmark |
+| Z2B Extras           |                  |                                     | \checkmark |   |   |   |
+| A Feast of Ministers | <2019-10-08 Tue> | abstraction, loops, data types      | \checkmark | \checkmark | \checkmark | \checkmark |
+| Ministers Extras     |                  |                                     | \checkmark |   |   |   |
+| DOM and Data         | <2019-10-25 Fri> | Objects, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
+| DOM and Data Extras  |                  |                                     | \checkmark |   |   |   |
+| Spatial History      | <2019-11-14 Thu> | Simple GIS Web Project              | \checkmark | \checkmark |   |   |
+| Oral History         | <2019-12-05 Thu> | Multimedia We Project               | \checkmark | \checkmark | \checkmark | \checkmark |
+| Project Proposal     | <2019-12-06 Fri> | Imagine a Digital History Project   | \checkmark |   |   |   |
+|----------------------+------------------+-------------------------------------+---+---+---+---|
+*** Assignments, put another way
 :PROPERTIES:
-:CUSTOM_ID: assignments-d1fd
+:reveal_extra_attr: class="twobytwo"
 :END:
-| Assignment          | Due Date         | Brief Description                 | A | B | C | D |
-|---------------------+------------------+-----------------------------------+---+---+---+---|
-| Git & Github        | <2018-01-15 Mon> | version control and collaboration | \check | \check | \check | \check |
-| HTML & CSS          | <2018-01-26 Fri> | web markup and presentation       | \check | \check | \check | \check |
-| Javascript for DH   | <2018-02-02 Fri> | intro to programming              | \check | \check | \check | \check |
-| Data-Driven History | <2018-02-16 Fri> | CANCELLED                         | x | x | x | x |
-| Spatial History     | <2018-03-02 Fri> | Simple GIS Web project            | \check | \check |   |   |
-| Oral History        | <2018-03-16 Fri> | Multimedia Web Project            | \check | \check | \check | \check |
-| Project Proposal    | <2018-03-23 Fri> | Imagine a Digital History Project | \check |   |   |   |
-|---------------------+------------------+-----------------------------------+---+---+---+---|
-
+#+begin_slideblock
+*To Pass*
+- Class Profile
+- Zero to Blog Post
+- A Feast of Ministers
+- Oral History
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*To Get a C*
+- Class Profile
+- Zero to Blog Post
+- A Feast of Ministers
+- @@html:<span class="urgent">@@DOM and Data@@html:</span>@@
+- Oral History
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*To Get a B*
+- Class Profile
+- Zero to Blog Post
+- A Feast of Ministers
+- DOM and Data
+- @@html:<span class="urgent">@@Spatial History@@html:</span>@@
+- Oral History
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*To Get an A*
+- Class Profile
+- Zero to Blog Post
+- A Feast of Ministers
+- DOM and Data
+- Spatial History
+- Oral History
+- @@html:<span class="urgent">@@Project Proposal@@html:</span>@@
+- @@html:<span class="urgent">@@All Reflection Questions@@html:</span>@@
+#+end_slideblock
 
 *** Participation
 :PROPERTIES:
@@ -340,7 +498,9 @@ At the end of this course, you should:
 :PROPERTIES:
 :CUSTOM_ID: first-assignment!-26f7
 :END:
-You can find our first two assignments on the web [[https://github.com/DigitalHistory/assignment-00-git-and-github][here]] and [[https://github.com/DigitalHistory/assignment-01-html-css][here]].  Assignment 0 is due in a week and a half!
+- available early next week.
+- *Assignment 0 due in a week and a half!*
+# You can find our first two assignments on the web [[https://github.com/DigitalHistory/assignment-00-git-and-github][here]] and [[https://github.com/DigitalHistory/assignment-01-html-css][here]].  Assignment 0 is due in a week and a half!
 ** Intros 1
 :PROPERTIES:
 :CUSTOM_ID: intros-1-7ff4
@@ -348,7 +508,7 @@ You can find our first two assignments on the web [[https://github.com/DigitalHi
 #+ATTR_REVEAL: :frag (appear)
 - Find someone you don't know
 - in 3 minutes, find out: Name; Year; Interest in the class; something else of interest
-- Present yr classmate
+- Present yr classmate to the people around you
 
 ** Intros 2
 :PROPERTIES:
@@ -359,15 +519,12 @@ You can find our first two assignments on the web [[https://github.com/DigitalHi
 - spend no more than 8 minutes *imagining* a DH project
 - present to another pair 
 
-** Announcement! 
-:PROPERTIES:
-:CUSTOM_ID: announcement-d6f5
-:END:
-*U of T Coders Software Carpentry Workshop!*
+** Before next class
+- [[https://github.com/join?source=header-home][Get yourself a Github user account]]
+- [[https://classroom.github.com/classrooms/54332214-digital-history-fall-2019][Join the "Github Classroom"]]
+- Begin working your way through the [[
 
-[[https://uoftcoders.github.io/studyGroup/#events][January 18-19, Gerstein Library!]]
-
-** Git!
+** COMMENT Git!
 :PROPERTIES:
 :CUSTOM_ID: git-4068
 :END:
@@ -375,7 +532,7 @@ You can find our first two assignments on the web [[https://github.com/DigitalHi
 - "version Control" software optimized for collaboration
 
 
-** Github!
+** COMMENT Github!
 :PROPERTIES:
 :CUSTOM_ID: github!-7877
 :END:
@@ -391,29 +548,82 @@ Take out your Laptop!
  
 # /home/matt/DH/Images/matt_headshot.jpg http://digitalhistory.github.io/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
 
+
+** Bibliography
+:PROPERTIES:
+:CUSTOM_ID: bibliography
+:END:
+printbibliography:/home/matt/DH/digitalhistory.bib
+
 ** COMMENT who's Here
 :PROPERTIES:
 :CUSTOM_ID: comment-who's-here-5510
 :END:
-- Eva
-- Mikaila?
-- Yolanda
-- Cat
-- Anton
-- Oliver
-- Ken
-- Jasper
-- Rebecca
-- Ayla
-- Marianna
-- Sandra
-- Vicki
-- Diane
-- Katie (audit)
-- Mohammed
-- Graham
-- Emily
-- Melissa
+#+begin_src emacs-lisp :results raw
+
+(org-lms-get-all-users )
+(let ((students (org-lms-get-all-users)))
+    (cl-loop for s in-ref students
+             concat
+             (format "- [ ] %s\n" (plist-get s :name))  
+             ;; (plist-get s :)
+    
+    ;; (message "student %s" (plist-get s :id))
+    ;; (if (equal 10444 (plist-get s :id))
+    ;;          (progn 
+    ;;          (message "in 10444")
+    ;;          (setq s (plist-put s :github  "muppet"))))
+    )
+             )
+#+end_src
+
+#+RESULTS:
+- [ ] Ahmed Shahab
+- [ ] Alethea Pezzo
+- [ ] Alicia Bui
+- [ ] Aman Bhandhol
+- [ ] Amanda Leiva
+- [ ] Amy Cao
+- [ ] Caitlyn Collins
+- [ ] Christopher Obermoser
+- [ ] David Polisuk
+- [ ] Erin Socholotiuk
+- [ ] Evelyn Bourque
+- [ ] Hannah Allen
+- [ ] Hyun Oh
+- [ ] Iliana Derraugh
+- [ ] Jiawei Zhang
+- [ ] Jonathan Tom
+- [ ] Jorge Guzman
+- [ ] Kaan Gumrah
+- [ ] Kumail Bukhari
+- [ ] Lincoln Chiu
+- [ ] Luc Foster
+- [ ] Maria Pepelassis
+- [ ] Matthew Albanese
+- [ ] Matthew Price
+- [ ] Michael Sloboda
+- [ ] Miriam Schirmer
+- [ ] Molly Farquhar
+- [ ] Nicholas Morchain
+- [ ] Racheal Soosaipillai
+- [ ] Rayan Khadeer
+- [ ] Rebekah Robinson
+- [ ] Ryan Hamilton
+- [ ] Ryan Kavanagh
+- [ ] Ryan O'Shea
+- [ ] Shaira Bagha
+- [ ] Tamanna Bhasin
+- [ ] Tasmiyah Randeree
+- [ ] Tess Alksnis
+- [ ] Tobias Dublin
+- [ ] Wayne George
+- [ ] Zak Dranoff-Caspi
+- [ ] Zefang Yi
+
+
+
+* 01-02: Git and Github
 * 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
@@ -1187,11 +1397,15 @@ Winston sank his arms to his sides and slowly refilled his lungs with air. His m
 :PROPERTIES:
 :CUSTOM_ID: ideals-of-openness-cb72
 :END:
-- rooted in Enlightenment
-#+ATTR_HTML: :class paired
+
+#+begin_paired
 [[file:~/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
-#+ATTR_HTML: :class paired
+#+end_paired
+#+begin_paired
 [[file:~/DH/Images/jos-wri-airpump.jpg]]
+#+end_paired
+
+- rooted in Enlightenment
 - at the foundation of scholarship
 - yet, not manifest in our scholarly journals & publishing regimes
 *** Jefferson on Freedom of Information
