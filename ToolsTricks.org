@@ -16,8 +16,6 @@
 * Setup
 :PROPERTIES:
 :ID:       o2b:fc94ff3d-ce65-4f54-a855-e2fc0ade2de4
-:POST_DATE: [2017-01-06 Fri 11:25]
-:POSTID:   577
 :EXPORT_FILE_NAME: setup
 :END:
 For the duration of this course, you will need to set up a "development environment" to do your work. You'll need to download,install, and interact with a group of programs and services that make it possible to do your work. Setting your environment up can be difficult, so be sure to budget some time to do so! Also be aware that these tools will take up significant spae on your laptop and may cause your laptop to slow down somewhat if run simultaneously with 
@@ -25,7 +23,7 @@ For the duration of this course, you will need to set up a "development environm
 I run [[https://archlinux.org][Arch Linux]] on my laptop, and have experience with [[https://www.ubuntu.com/][Ubuntu]] as well. For the purposes of this class, I have installed Windows 10 Education Edition ([[https://uoft.onthehub.com/WebStore/Security/Signin.aspx][available free to U of T students here]]).  I wil also attempt to support MacOS as best I can.
 
 - if you have an earlier edition of Windows, some of our tools may not work properly. I encourage you to upgrade to Windows 10 Education Edition, which has good support for modern tools.
-- if you have a Chromebook, you will need to install a full Linux OS in order to do the coursework. [[https://wiki.galliumos.org/Welcome_to_the_GalliumOS_Wiki][Gallium OS]] and [[https://github.com/dnschneid/crouton][Crouton]] are the two recommended tools for this, and you can find [[https://arstechnica.com/gadgets/2017/06/how-to-install-linux-on-a-chromebook/][some instructions here]]. It's not easy, and I won't be able to help you.  If this seems hard, you may want to think about buying an inexpensive, older laptop and installing an ordinary Linux distribution.  [[https://fossbytes.com/best-lightweight-linux-distros/][Here are]] [[https://fossbytes.com/best-linux-distro-beginners/][two lists]] of distributions, but the choice is up to you. .
+- if you have a Chromebook, you will need to install a full Linux OS in order to do the coursework. [[https://wiki.galliumos.org/Welcome_to_the_GalliumOS_Wiki][Gallium OS]] and [[https://github.com/dnschneid/crouton][Crouton]] are the two recommended tools for this, and you can find [[https://arstechnica.com/gadgets/2017/06/how-to-install-linux-on-a-chromebook/][some instructions here]]. Newer Chromebooks may support [[https://support.google.com/chromebook/answer/9145439?hl=en][the new Linux Apps Beta installation]], but I can't test them. In the bast, Linux on a chromebook has not been easy, and I won't be able to help you.  If this seems hard, you may want to think about buying an inexpensive, older laptop and installing an ordinary Linux distribution.  [[https://fossbytes.com/best-lightweight-linux-distros/][Here are]] [[https://fossbytes.com/best-linux-distro-beginners/][two lists]] of distributions, but the choice is up to you. .
 ** Details
 Here's the table of tools from the syllabus:
 | Tool                   | On Mac                       | On Windows                                     | On Linux                           |
