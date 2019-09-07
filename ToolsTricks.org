@@ -1,17 +1,10 @@
+#+SETUPFILE: ./setup.org
 #+CATEGORY: assignments
-#+TAGS: 
-#+DESCRIPTION: 
 #+TITLE: Pages
-#+PROPERTY: PARENT 16
 #+STARTUP: customtime
 #+HUGO_MENU: :menu main :parent Tools
-#+HUGO_AUTO_SET_LASTMOD: t
-#+HUGO_BASE_DIR: ./dh-website/
 #+HUGO_SECTION: tools
-#+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 10
-#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-#+MACRO: ts (eval (get-ts+7))
 
 * Setup
 :PROPERTIES:

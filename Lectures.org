@@ -1,16 +1,9 @@
-#+HUGO_BASE_DIR: ./dh-website/
+#+SETUPFILE: ./setup.org
 #+HUGO_SECTION: slides/
 #+MWP_HUGO_TYPE: slides
-#+HUGO_STATIC_IMAGES: images/
 #+HUGO_MENU: :menu main :weight 10
-#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-#+MACRO: ts (eval (get-ts+7))
 #+OPTIONS: todo:nil
-# #+REVEAL_THEME: matt-grid
-#+ORG_LMS_COURSEID: 123949
-# #+REVEAL_ROOT: file:///home/matt/src/reveal.js
-#+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
-#+ORG_REF
+#+REVEAL_ROOT: file:///home/matt/src/reveal.js
 # #+REVEAL_SINGLE_FILE: t
 
 * Set up Klipse

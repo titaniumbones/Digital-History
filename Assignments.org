@@ -1,17 +1,9 @@
-#+POSTID: 558
+#+SETUPFILE: ./setup.org
 #+OPTIONS: toc:nil
 #+TITLE: Assignments
-#+PROPERTY: PARENT 171
-#+Parent: 171
-#+HUGO_SECTION: assignment
-#+HUGO_BASE_DIR: ./dh-website/
-#+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :parent Asisgnments
-#+HUGO_AUTO_SET_LASTMOD: t
-#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-#+MACRO: ts (eval (get-ts+7))
+# #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+PROPERTY: header-args :results code
-#+ORG_LMS_COURSEID: 71671
 
 Further assignments will be posted as they are finalized. 
 * COMMENT Code

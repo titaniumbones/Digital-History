@@ -1,33 +1,16 @@
-#+POSTID: 60
-# # -*- org-odt-styles-file: "/home/matt/.emacs.d/Templates/RLG231Syllabus.odt"; -*-
-#+OPTIONS: ':nil *:t -:t ::t <:t H:4 \n:nil arch:nil
-#+OPTIONS: author:nil c:nil creator:nil d:(not "LOGBOOK") date:nil
-#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
-# #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:2 todo:t |:t
-#+STARTUP: customtime entitiespretty
 #+TITLE: Syllabus
 #+SUBTITLE: HIS393: Digital History, Fall 2019
-#+AUTHOR: Matt Price
-#+EMAIL: matt.price@utoronto.ca
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE: en
-# #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/New113Syllabus.odt"
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
-#+SELECT_TAGS: export
-#+EXCLUDE_TAGS: noexport
-#+CREATOR: Emacs 27.0.5 (Org mode 9.1.4)
-#+HUGO_BASE_DIR: ./dh-website/
 #+HUGO_SECTION: syllabus
-#+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 10
-#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 # #+MACRO: ts (eval (get-ts+7-inc-ov 1))
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+OPTIONS: todo:nil
-#+ORG_LMS_COURSEID: 123949
-#+ORG_LMS_ASSIGNMENTS: ~/DH/Assignments.org
-#+IS_PUBLIC: nil
+#+SETUPFILE: ./setup.org
+
+
 * COMMENT export
 #+begin_src emacs-lisp :results none
 ;; (org-lms-setup)
