@@ -1,22 +1,18 @@
 #+AUTHOR: Matt Price
 #+EMAIL: matt.price@utoronto.ca
 #+OPTIONS: toc:nil
-#+TITLE: Assignments
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
-#+HUGO_SECTION: assignment
 #+HUGO_BASE_DIR: ./dh-website/
 #+HUGO_STATIC_IMAGES: images
-# #+HUGO_MENU: :menu main :parent Asisgnments
 #+HUGO_AUTO_SET_LASTMOD: t
-# #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+PROPERTY: header-args :results code
-#+ORG_LMS_COURSEID: 71671
 #+HTML_CONTAINER: section
 #+OPTIONS: ':nil *:t -:t ::t <:t H:4 \n:nil arch:nil
 #+OPTIONS: author:nil c:nil creator:nil d:(not "LOGBOOK") date:nil
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
 #+STARTUP: customtime entitiespretty
+#+ORG_LMS_COURSEID: 123949
 #+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
 
