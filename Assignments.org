@@ -1,6 +1,7 @@
 #+SETUPFILE: ./setup.org
 #+OPTIONS: toc:nil
 #+TITLE: Assignments
+#+HUGO_SECTION: assignment
 #+HUGO_MENU: :menu main :parent Asisgnments
 # #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+PROPERTY: header-args :results code
@@ -102,27 +103,34 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 * Assignment 00: Your Class Profile                              :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
-:PUBLISH:  t
-:DUE_AT: 2019-01-18
+:PUBLISH:  nil
+:DUE_AT: 2019-09-17
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
 :ASSIGNMENT_WEIGHT: 0.10
-:CANVAS_SUBMISSION_TYPES: (online_upload)
-:OL_DIRECTORY: ~/src/dh-2019-stu/00-profile2/
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: ~/src/dh-2019-stu/00-profile/
+:CANVASID: 219086
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/219086
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/219086/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/219086/submissions?zip=1
 :END:
+
 ** General Description
 If you're looking for [[https://github.com/titaniumbones/history-please][History, Please]], follow that link! Your job in this assignment is to tell the class a few things about yourself.  In the process we'll think about a few issues related to digital storage of information, including privacy, interpretation of sources, and data vs. knowledge. 
 
 One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [[./../../tools/setup][set up your working environment]] and then use Git, much as we did in class, but this time manipulating the command line. 
 
 This may take longer than you think, and it's due soon. Please get started soon by:
-- [[https://classroom.github.com/a/isSHhGpz][clicking on this link to get your account set up]]
- following the instructions on [[https://github.com/DH2019/00-class-profile/][the Assignment 0 site]]. 
+- [[https://classroom.github.com/a/VJGuHMB6][clicking on this link to get access to the assignment]]
+ following the instructions in the file ~README.org~ in your new repository.
 
 **  Rubric :rubric: 
 - [ ] Passes General Tests
 - [ ] Passes Reflection Tests
+
+
 - *Grade* :: 
 - *Comments*: 
 
