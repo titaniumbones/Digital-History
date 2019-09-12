@@ -435,20 +435,20 @@ We would like to acknowledge this sacred land on which the University of Toronto
 :CUSTOM_ID: assignments-(full)-9d47
 :END:
 
-| Assignment           | Due Date         | Skills/Aims                         | A | B | C | D |
-|----------------------+------------------+-------------------------------------+---+---+---+---|
-| Class Profile        | <2019-09-12 Thu> | version control and collaboration   | \checkmark | \checkmark | \checkmark | \checkmark |
-| G & GH Extras        |                  |                                     | \checkmark |   |   |   |
-| Zero to Blog Post    | <2019-09-24 Tue> | web markup and presentation         | \checkmark | \checkmark | \checkmark | \checkmark |
-| Z2B Extras           |                  |                                     | \checkmark |   |   |   |
-| A Feast of Ministers | <2019-10-08 Tue> | abstraction, loops, data types      | \checkmark | \checkmark | \checkmark | \checkmark |
-| Ministers Extras     |                  |                                     | \checkmark |   |   |   |
-| DOM and Data         | <2019-10-25 Fri> | Objects, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
-| DOM and Data Extras  |                  |                                     | \checkmark |   |   |   |
-| Spatial History      | <2019-11-14 Thu> | Simple GIS Web Project              | \checkmark | \checkmark |   |   |
-| Oral History         | <2019-12-05 Thu> | Multimedia We Project               | \checkmark | \checkmark | \checkmark | \checkmark |
-| Project Proposal     | <2019-12-06 Fri> | Imagine a Digital History Project   | \checkmark |   |   |   |
-|----------------------+------------------+-------------------------------------+---+---+---+---|
+| Assignment           | Due Date | Skills/Aims                         | A | B | C | D |
+|----------------------+----------+-------------------------------------+---+---+---+---|
+| Class Profile        | <2019-09-12 Thu>  | version control and collaboration   | \checkmark | \checkmark | \checkmark | \checkmark |
+| G & GH Extras        |          |                                     | \checkmark |   |   |   |
+| Zero to Blog Post    | <2019-09-24 Tue>  | web markup and presentation         | \checkmark | \checkmark | \checkmark | \checkmark |
+| Z2B Extras           |          |                                     | \checkmark |   |   |   |
+| A Feast of Ministers | <2019-10-08 Tue>  | abstraction, loops, data types      | \checkmark | \checkmark | \checkmark | \checkmark |
+| Ministers Extras     |          |                                     | \checkmark |   |   |   |
+| DOM and Data         | <2019-10-25 Fri>  | Objects, substitution, text as data | \checkmark | \checkmark | \checkmark |   |
+| DOM and Data Extras  |          |                                     | \checkmark |   |   |   |
+| Spatial History      | <2019-11-14 Thu>  | Simple GIS Web Project              | \checkmark | \checkmark |   |   |
+| Oral History         | <2019-12-05 Thu>  | Multimedia We Project               | \checkmark | \checkmark | \checkmark | \checkmark |
+| Project Proposal     | <2019-12-06 Fri>  | Imagine a Digital History Project   | \checkmark |   |   |   |
+|----------------------+----------+-------------------------------------+---+---+---+---|
 *** Assignments, put another way
 :PROPERTIES:
 :reveal_extra_attr: class="twobytwo"
