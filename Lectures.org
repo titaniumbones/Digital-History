@@ -1089,7 +1089,602 @@ https://wac-cdn.atlassian.com/dam/jcr:00d011ed-03dc-440f-afc5-9b13d5e14fbf/bubbl
 ** Assignment
 The assignment is now up on [[https://classroom.github.com/a/VJGuHMB6][Github Classroom]], [[https://q.utoronto.ca/courses/123949/assignments/219086][Quercus]], and [[https://digitalhistory.github.io/assignment/][the course website]]. We'll discuss it, and further setup questions, on Thursday.
 
+
 * 02: What the web signifies | HTML & CSS                  
+:PROPERTIES:
+:EXPORT_FILE_NAME: 02-what-the-web-signifies
+:EXPORT_TITLE: What the Web Signifies
+:CUSTOM_ID: 02:-what-the-web-signifies-|-html-&-css-09a6
+:END:
+** COMMENT Notes -- don't export                                  :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-notes----don't-export-a542
+:END:
+- explain the pun
+- Habermas: public sphere (Lecture: 25 mins)
+- discussion/group work: definitions of public?  something like that. 15 mins.
+- History on the web (Lecture: 20 mins).  Include an example
+- Discussion? maybe not.
+- Lab:  a few very basic bits about HTML, perhaps some exercises.
+** COMMENT Readings/Notes                                         :noexport:
+:PROPERTIES:
+:CUSTOM_ID: comment-readings/notes-7e81
+:END:
+#+begin_src sh :results output
+${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Habermas-public-1964
+#+end_src
+
+#+RESULTS:
+#+begin_example
+---- HIGHLIGHTS: ---
+portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.' They then behave neither like business or professional people transacting private affairs, nor like members of a constitutional order subject to the legal constraints of a state bureaucracy. Citizens behave as a public body when they confer in an unrestricted fashion-that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions-about matters of general interest. In a large public body this kind of communication requires specific means for transmitting information and influencing those who receive it. Today newspapers and magazines, radio and television are the media of the public sphere. We speak of the political public sphere in contrast, for instance, to the literary one, when public discussion deals with objects connected to the activity of the state. Although state authority is so to speak the executor of the political public sphere, it is not a part of it.2
+
+The state and the public sphere do not overlap, as one might suppose from casual language use. Rather they confront one another as opponents. Habermas designates that sphere as public which antiquity understood to be private, i.e. the sphere of non-governmental opinion making.
+
+The expression "public opinion" refers to the tasks of criticism and control which a public body of citizens informally-and, in periodic elections, formally as well- practices &-d-vis the ruling structure organized in the form of a state.
+
+It is no coincidence that these concepts of the public sphere and public opinion arose for the first time only in the eighteenth century. They acquire their specific meaning from a concrete historical situation. It was at that time that the distinction of "opinion" from "opinion publique" and "public opinion" came about. Though mere opinions \(cultural assumptions, normative attitudes, collective prejudices and values\) seem to persist unchanged in their natural form as a kind of sediment of history, public opinion can by definition only come into existence when a reasoning public is presupposed. Public discussions about the exercise of political power which are both critical in intent and institutionally guaranteed have not always existed- they grew out of a specific phase of bourgeois society and could enter into the order of the bourgeois constitutional state only as a result of a particular constellation of interests.
+
+By the end of the eighteenth century they had broken apart into private elements on the one hand, and into public on the other. The position of the church changed with the reformation: the link to divine authority which the church represented, that is, religion, became a private matter. So-called religious freedom came to insure what was historically the first area of private autonomy. The church itself continued its existence as one public and legal body among others. The corresponding polarization within princely authority was visibly manifested in the separation of the public budget from the private household expenses of a ruler.
+
+The press remained an institution of the public itself, effective in the manner of a mediator and intensifier of public discussion, no longer a mere organ for the spreading of news but not yet the medium of a consumer culture
+
+Even in the Paris of 1848 every half-way eminent politician organized his club, every other his journal: 450 clubs and over 200 journals were established there between February and May alone. Until the permanent legalization of a politically functional public sphere, the appearance of a political newspaper meant joining the struggle for freedom and public opinion, and thus for the public sphere as a principle. Only with the establishment of the bourgeois constitutional state was the intellectual press relieved of the pressure of its convictions. Since then it has been able to abandon its polemical position and take advantage of the earning possibilities of a commercial undertaking. In England, France, and the United States the transformation from a journalism of conviction to one of commerce began in the 1830s at approximately the same time. In the transition from the literary journalism of private individuals to the public services of the mass media the public sphere was transformed by the influx of private interests, which received special prominence in the mass media.
+
+Because of the diffusion of press and propaganda, the public body expanded beyond the bounds of the bourgeoisie. The public body lost not only its social exclusivity; it lost in addition the coherence created by bourgeois social institutions and a relatively high standard of education. Conflicts hitherto restricted to the private sphere now intrude into the public sphere. Group needs which can expect no satisfaction from a self- regulating market now tend towards a regulation by the state. The public sphere, which must now mediate these demands, becomes a field for the competition of interests, competitions which assume the form of violent conflict. Laws which obviously have come about under the "pressure of the. street" can scarcely still be understood as arising from the consensus of private individuals engaged in public discussion. They correspond in a more or less unconcealed manner to the compromise of conflicting private interests.
+
+With the interweaving of the public and private realm, not only do the political authorities assume certain functions in the sphere of commodity exchange and social labor, but conversely social powers now assume political functions. This leads to a kind of "refeudalization" of the public sphere. Large organizations strive for political compromises with the state and with each other, excluding the public sphere whenever possible. But at the same time the large organizations must assure themselves of at least plebiscitary support from the mass of the population through an apparent display of openness \(demonstrative P~blizitiit\).
+
+The political public sphere of the social welfare state is characterized by a peculiar weakening of its critical functions. At one time the process of making proceedings public \(Publizitdt\) was intended to subject persons or affairs to public reason, and to make political decisions subject to appeal before the court of public opinion.
+
+The idea of the public sphere, preserved in the social welfare state mass democracy, an idea which calls for a rationalization of power through the medium of public discussion among private individuals, threatens to disintegrate with the structural transformation of the public sphere itself. It could only be realized today, on an altered basis, as a rational reorganization of social and political power under the mutual control of rival organizations committed to the public sphere in their internal structure as well as in their relations with the state and each other.
+#+end_example
+
+
+*** notes on Interchange
+:PROPERTIES:
+:CUSTOM_ID: notes-on-interchange-6bbf
+:END:
+
+
+Here is a step toward a working definition. Digital history is an approach to examining and representing the past that works with the new communication technologies of the computer, the Internet network, and software systems. On one level, digital history is an open arena of scholarly production and communication, encompassing the development of new course materials and scholarly data collections. On another, it is a methodological approach framed by the hypertextual power of these technologies to make, define, query, and annotate associations in the human record of the past. To do digital history, then, is to create a framework, an ontology, through the technology for people to experience, read, and follow an argument about a historical problem.
+
+
+
+Digital history possesses a crucial set of common components—the capacity for play, manipulation, participation, and investigation by the reader. Dissemination in digital form makes the work of the scholar available for verification and examination; it also offers the reader the opportunity to experiment. He or she can test the interpretations of others, formulate new views, and mine the materials of the past for overlooked items and clues. The reader can immerse him/herself in the past, surrounded with the evidence, and make new associations. The goal of digital history might be to build environments that pull readers in less by the force of a linear argument than by the experience of total immersion and the curiosity to build connections. (Versus the narrative anticipation of what comes next, this is a curiosity about what could be related to what and why.)
+
+Digital sources
+
+• Can be created and altered with relatively little effort or expense
+
+• Can be duplicated with near-zero marginal cost and shared by any number of people
+
+• Can be transmitted near or at the speed of light
+
+• Can be stored in nanoscale volumes
+
+• Can serve as the inputs to any process that can be specified algorithmically
+
+• Allow form to be more easily separated from content
+
+• Allow historians to gain the well-known benefits of working in a networked mode
+
+The use of digital sources, in other words, completely changes the landscape of information and transaction costs that historians have traditionally faced.
+
+ Their main concern was audience and access. We heard a great deal about “democratizing history” and opening the archives to wider dissemination. Many historians welcomed the Web largely because of the opportunity to expand the audience for historical scholarship. 
+
+Some historians have tried to reconcile the iterative, seemingly stable, process of analog historical scholarship with the digital environment. Most of all, we have struggled with the question: Where does interpretation go in these online projects? Ideas about versioning, release dates, update systems, and so forth, bubbled to the surface in technical meetings for many projects. Interpretation, the coin of the realm in professional historical study, seemed cast aside How could interpretation be assessed if the project was continually in motion? Most digital history projects offered huge audiences, but potentially at the expense of interpretive salience. Was the digital medium the place to do historical scholarship? Or was it suitable only for pedagogical tool building? Or documentary editing? 
+
+ew Archives/New Inquiry: Digital resources are expanding and redefining the archival base for most fields and thereby redefining the fields themselves. (This is driven more by libraries and the tech industry than by historians.) My initial interest in things digital grew from developing a database to piece together fragmentary sources obscure people had left behind in multiple archives; the approach was not new, but the scale of the project I could imagine as an individual graduate student was. Linda Colley’s latest book, The Ordeal of Elizabeth Marsh—trumpeted in reviews as a “new” approach to biography—is a recent example. The book is not new in its recovery of an ordinary life as a window on a world. (Laurel Thatcher Ulrich showed us that in 1990.) But its ability to encompass the globe is new; Colley credits new media resources with making the project possible.
+
+Audience: New bridges between academic and popular/public history.
+
+Collaboration: A source of excitement and perhaps peril. The best digital projects are collaborative, involving multiple scholars and a technical team, and ideally an institution committed to keeping the project alive after its creators move on to other things. This is, I think, a great way to work. It is not, however, one for which history as a discipline has established institutional resources. 
+
+To reiterate some of the excellent points made here: The new media are profoundly changing the ways most historians work, whether or not we are self-conscious about how we are becoming digital. As Dan has noted, it is in the discipline’s interest to be proactive, rather than reactive, in response to these changes. Institutions and individuals who have steered clear of the cutting edge have an important role to play here. Even those who do not envision themselves shaping new tools or expressive forms can—and should—work to make sure that the rising generation of scholars has the opportunity and the institutional space to experiment with digital media. In addition to funding and professionally sanctioned forums for expression, there needs be space for this in the graduate curriculum. The digital pioneers present in this conversation—and the much-missed Roy Rosenzweig—have made it very easy for others to introduce themselves and their students to the field. Check out their online syllabi; you might well be able to add an “Introduction to History and the New Media” to your institution’s roster of methods courses.
+
+** Review
+:PROPERTIES:
+:CUSTOM_ID: review-1448
+:END:
+- 4 blocks
+- [[https://github.com/DigitalHistory/assignment-00-git-and-github][Assignment 0 is online]]
+- If you haven't started Assignment 1, hold on for now
+- Explaining Git
+** Today
+:PROPERTIES:
+:CUSTOM_ID: today-abcd
+:END:
+- Concept of the "Public Sphere"
+- Internet and Habermas's conception
+- Discussion
+- more Git
+- Brief HTML explication
+- HTML Exercise
+#+BEGIN_NOTES
+Phrase "Technical Affordance"
+#+END_NOTES
+** Significance and Signification 
+:PROPERTIES:
+:CUSTOM_ID: significance-and-signification-4ace
+:END:
+- What /matters/ about the web?
+- /How does the web/ create and change meaning?
+
+#+BEGIN_NOTES
+- *Significance:* what is its importance?
+- *Signification:* how does the web introduce or trransform meaning? 
+#+END_NOTES
+*** What matters about the web?
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: what-matters-about-the-web?-944f
+:END:
+
+Web has had enormous effects
+#+ATTR_REVEAL: :frag (appear appear appear appear appear)
+  - economic
+  - political
+  - cultural
+  - *but I want to talk about* */discursive/*
+  - does the web change what /kinds of conversations/ we can have?
+    - for the better, or for the worse?
+#+BEGIN_NOTES
+- "peculiar :technical affordances"  of this technological system
+  - tech systems make some things possible & other things impossible. Or, at lease: some thing *easy* and other things *very difficult*.
+  - ex: chainsaw vs. jigsaw. Table saw vs. Band saw.  Pencil vs. pen.  
+#+END_NOTES
+** Part I: The Public Sphere
+:PROPERTIES:
+:CUSTOM_ID: part-i:-the-public-sphere-4b49
+:END:
+*** Authenticity in a media age
+:PROPERTIES:
+:CUSTOM_ID: authenticity-in-a-media-age-9bf8
+:END:
+#+CAPTION: Jürgen Habermas
+#+ATTR_HTML: height="200px" width="300px" align="center"
+[[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
+
+*** Mid-century anxiety
+:PROPERTIES:
+:CUSTOM_ID: mid-century-anxiety-a1d1
+:END:
+#+ATTR_REVEAL: :frag appear
+- Appearance of new media (radio, TV, new kinds of magazine)
+- Are these "degraded"?
+- Do the media make us stupider?
+- Less critical?
+- More pliable?
+
+*** Reasons to worry
+:PROPERTIES:
+:CUSTOM_ID: reasons-to-worry-7254
+:END:
+#+ATTR_HTML: :class paired
+https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg
+#+ATTR_HTML: :class paired
+https://upload.wikimedia.org/wikipedia/en/8/86/EwigerJudeFilm.jpg
+#+ATTR_REVEAL: :frag appear
+- maybe there are /material conditions/ that make this sort of evil possible?
+- perhaps the media of communication have a role?  
+
+*** The Public Sphere
+:PROPERTIES:
+:CUSTOM_ID: the-public-sphere-d6c3
+:END:
+#+BEGIN_QUOTE
+A portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.
+
+  -- J. Habermas
+
+#+END_QUOTE
+
+#+BEGIN_NOTES
+
+Habermas wants us to believe in the reality of the "public sphere", as a /discursive body/ composed of /conversations/ that have /a certain form/
+#+END_NOTES
+*** Jürgen Habermas (b. 1929)
+:PROPERTIES:
+:CUSTOM_ID: jürgen-habermas-(b.-1929)-0ad4
+:END:
+- pre-eminent German public intellectual of 1960's and 1970's
+- role of Holocaust/Fascism in all his thinking
+- inheritance from the Frankfurt School
+- search for "authentic" forms of communication
+*** Concept of the Public Sphere
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: concept-of-the-public-sphere-9b21
+:END:
+
+#+BEGIN_QUOTE
+By "the public sphere" we mean... a realm of our social life in which something approaching public opinion can be formed... *Citizens behave as a public body when they confer in an unrestricted fashion* -- that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions -- *about matters of general interest.* (Habermas 1964, p.49[p.2])
+#+END_QUOTE
+#+BEGIN_NOTES
+Unpacking:
+- *"something approaching public opinion":* suggests that "public opinion" has a technical meaning
+- *Conferring in an unrestricted fashion*: the public sphere *requires* a certain kind of freedom
+- *Matters of general interest*: we're not talking about breakfast, jeans, or lipstick.  
+#+END_NOTES
+
+** Public and Private
+:PROPERTIES:
+:CUSTOM_ID: public-and-private-f483
+:END:
+#+ATTR_HTML: :class "smalltable"
+| Public                               | Private                         |
+|--------------------------------------+---------------------------------|
+| open to all                          | restricted                      |
+| accessible for money                 | closed even if you can pay      |
+| state-related                        | non-state, civil society        |
+| political                            | non-political                   |
+| official                             | non-official                    |
+| common                               | special                         |
+| impersonal                           | personal                        |
+| national or popular                  | group, class, or locale         |
+| international/universal              | particular/finite               |
+| in view of others                    | concealed                       |
+| outside the home                     | domestic                        |
+| circulated in print/electronic media | circulated orally/in manuscript |
+| known widely                         | known only to a few             |
+| acknowledged/explicit                | tacit/implicit                  |
+
+#+BEGIN_NOTES
+- many definitions
+- not all of them part of Habermas's terminology
+#+END_NOTES
+** Concept of the Public Sphere
+:PROPERTIES:
+:STEP: 1
+:CUSTOM_ID: concept-of-the-public-sphere-3013
+:END:
+*Strukturwandlung der Öffentlichkeit (1962)*
+#+ATTR_REVEAL: :frag (none none none appear appear appear appear)
+- Arena ruled by rational argument 
+- Freedom of expression prevails (/...an unrestricted fashion/)
+- Conversations concern /common interests/ (e.g. ?)
+- both *ideal* and *historical*
+- arises first in 18th Century
+- flourishes and then withers in 19th
+- at a nadir in 20th; can it be revived?
+#+BEGIN_NOTES
+Habermas's /Habilitation/ and first important book.  but 35 years old!!
+#+END_NOTES
+** Before Bourgeois Society
+:PROPERTIES:
+:CUSTOM_ID: before-bourgeois-society-dd7b
+:END:
+- There is no "Public Sphere"
+- Instead there are "Public Individuals" with certain powers
+  - and Church authorities, empowered to speak on moral matters
+- Opposed to these are "private persons"
+#+BEGIN_NOTES
+Begin the historical story w/ the classic trnasition to a bourgeois/capitalist society around 1800.  
+- before this point, not public sphere, just public individuals, who are distinct from 'private persons"
+#+END_NOTES
+*** Private and Public Persons
+:PROPERTIES:
+:CUSTOM_ID: private-and-public-persons-f0ec
+:END:
+#+BEGIN_QUOTE
+A private person has no right to pass /public/ and perhaps even disapproving judgement on the actions, procedures, laws, regulations, and ordinances of sovereigns and courts.... or to publish in print pertinent reports that he manages to obtain.  *For a private person is not at all capable of making such judgment*, because he lacks complete knowledge of circumstances and motives.
+
+  -- Frederick 'the Great' of Prussia, 1784
+#+END_QUOTE
+#+BEGIN_NOTES
+"Private" and "Public" distinguish /types of person/, not types of activity. 
+#+END_NOTES
+** 18th Century Origins
+:PROPERTIES:
+:CUSTOM_ID: 18th-century-origins-265c
+:END:
+- How do we get from a monarchy in which only 'public persons' have license to speak on 'public matters', to a 'public sphere' which is opened more widely?
+#+ATTR_REVEAL: :frag appear
+- Rise of newspapers/journals. Intrusion of private commentary on 'public' matters
+  - a new kind of /media/
+- rise of /salons/ & coffee houses.
+  - a new kind of /sociality/.  
+*** Salons and Coffee Houses
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: salons-and-coffee-houses-4538
+:END:
+
+#+ATTR_HTML: :style float:left; max-height:400px;
+https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_england_1-580x400.jpg
+#+ATTR_HTML:  style="vertical-align:top;" width="40%" float="left"
+[[http://cabinetmagazine.org/issues/8/assets/images/main/coffeehouse.jpg]]
+*** Salons and Coffee Houses
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: salons-and-coffee-houses-151f
+:END:
+- /Salons/ as the heart of intellectual activity in c. 18
+  - 'monopoly on first publication'
+  - mixing of classes
+  - freedom from patronage
+- Coffee Houses a similar space
+  - But no restrictions on topics of discourse
+  - matters of /politics/ as frequent a topic as art
+- an ideal of /common humanity/ esp. in coffee houses
+  - opinions judged by reason alone
+    - no intrusion of 'distinction' /or/ finance
+  - [ *but note:* imperfection of this vision ]
+#+BEGIN_NOTES
+one of the longstanding critiques of Habermas is the /actual/ restrictiveness of coffee houses /in real life/.  Who's excluded? make a list: women, the truly poor, non-Europeans, the uneducated (to some extent), 
+#+END_NOTES
+*** Circulation
+:PROPERTIES: 
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: circulation-d616
+:END:
+- Communication across broad spaces & differences needs something more than conversation
+- need a way get ideas to large numbers
+  - news sheets \rarr newspapers
+  - letters \rarr journals
+
+*** Markets
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: markets-ec75
+:END:
+- Through newspapers & journals conversation becomes a /commodity/
+- Therefore it loses its exclusivity
+- so, in the beginning, /commodification is a *good thing*/
+#+BEGIN_NOTES
+This process of commodification, and its trasformation from a *positive, welcome* force in to a *troubling, destructive* one is central to H but is not just his idea.
+#+END_NOTES
+** The State vs. Society
+:PROPERTIES:
+:CUSTOM_ID: the-state-vs.-society-4420
+:END:
+- This is all happening in a pre-democratic era (mostly)
+- 'The People' are /a problem/ for the state
+- growth of 'the social' a threat to sovereignty
+- 'public sphere' precarious and subject to dissolution
+*** The Structure of the Public Sphere
+:PROPERTIES: 
+:STEP: t
+:HTML_CONTAINER_CLASS: slide
+:CUSTOM_ID: the-structure-of-the-public-sphere-3d98
+:END:
+
+#+ATTR_HTML: border="2" rules="all" frame="all"
+| Private Realm                                     | Public Sphere                        | Sphere of Public Authority |
+|---------------------------------------------------+--------------------------------------+----------------------------|
+| Civil Society (Commodity Exchange, social labour) | Political Public Sphere              | State                      |
+| Conjugal Family                                   | Literary/Philosophical Public Sphere | Court                      |
+
+
+- /the public sphere sits between Private Life and Authority, striving for independence from both/
+- it *mediates* between them and draws its legitimacy from its use of reason
+- note that it *presupposes* an emergent realm of "privacy" -- and so, it is grounded in that notion, like all liberal philosophical constructs
+** From Debate to Consumption
+:PROPERTIES:
+:CUSTOM_ID: from-debate-to-consumption-2369
+:END:
+- Public Sphere in effect /undoes itself/
+- success of media dissolves the reciprocal creation & communication of ideas
+  - instead we just /consume/
+  - /reason/ begins to vanish
+- Massive growth of media in c.20
+  - radio, television, film
+- The Public Sphere: A Hollow Shell?
+  - Where is its legitimacy?
+
+** Reception
+:PROPERTIES:
+:CUSTOM_ID: reception-d9f8
+:END:
+- extremely influential
+- with some questions about both the /historical/ and the /philosophical/ elements of the story.
+*** Counterpublics
+:PROPERTIES:
+:CUSTOM_ID: counterpublics-8f8c
+:END:
+#+BEGIN_QUOTE
+...some publics are defined by their tension with a larger public... Discussion with such a public is understood to *contravene the rules obtaining in the world at large*... This kind of public is, in effect, a *counterpublic*: it maintains at some level... an awareness of its subordinate status.
+  -- M. Warner (2002)
+#+END_QUOTE
+
+*** One or Many?
+:PROPERTIES:
+:CUSTOM_ID: one-or-many?-f97b
+:END:
+- Habermas sees Public Sphere as *necessarily unitary*
+- But discourse carves out separate spaces
+  - that may correlate with social divides
+  - ... and where the addressee ("stranger") is presumed to share a *common subordination* with the speaker
+- ("Given the fact that almost anyone can contribute to public discourse, the multiplicity of perspectives makes it even more difficult to define public opinion. Any designation of public opinion then becomes arbitrary")
+
+*** Disinterested or embodied?
+:PROPERTIES:
+:CUSTOM_ID: disinterested-or-embodied?-9ff3
+:END:
+- for Habermas *separation* of individual from *both* "accidental" circumstances *and* official capacities is paramount
+- Warner:  This is fictive
+  - and anyway undesirable
+    - because some kinds of "argument" are fundamentally corporeal
+    - this doesn't make them less legitimate
+    - does it?  
+
+*** Reading or Acting
+:PROPERTIES:
+:CUSTOM_ID: reading-or-acting-3a57
+:END:
+- Habermas:  the actions of a legitimate public sphere are actions of reading (scrutinize, judge, decide)
+- Warner: in a counterpublic, there may be other sorts of actions (prance, diss, act up, fantasize, mourn)
+
+**  How this matters for History
+:PROPERTIES:
+:CUSTOM_ID: how-this-matters-for-history-d592
+:END:
+- If there are many "publics", then working to carve out a particular space for discourse can have salutary effects
+- Modes of address and standards of comportment can differ across 'publics'
+- May even be possible to craft a 'public' around our work.
+  - though " it follows that the public exists only as long as the text is being engaged with"
+
+*** Enter the Internet
+:PROPERTIES:
+:CUSTOM_ID: enter-the-internet-ab5f
+:END:
+- Habermas' theory revolves around a *technology* and a *social institution*
+  - enabled by print, threatened by TV
+  - can the Internet undo this dissolution?  If so, how?
+  - if not, is it the apotheosis of that dissolution?
+
+*** Digital History and the Public Sphere
+:PROPERTIES:
+:CUSTOM_ID: digital-history-and-the-public-sphere-5a06
+:END:
+- Does the Internet provide a space for authentic /public/ conversatoin?
+- What are effects of the /medium/ on /how we pursue knowledge and truth/?
+#+ATTR_REVEAL: :frag appear
+  - *state and corporate pressures*
+  - algorithmic actors (!)
+
+*** Technical Affordances of the web
+:PROPERTIES:
+:CUSTOM_ID: technical-affordances-of-the-web-503d
+:END:
+- instantaneous distribution
+- distributed production
+- machine-readable text
+- algorithmic sorting
+#+BEGIN_NOTES
+All of these are present in *every* web-based communication.  But realms of the web have distinct affordances of their own: [[http://www.reddit.com][Reddit]] \ne [[http://twitter.com][twitter]] \ne [[http://www.facebook.com][facebook]] \ne [[http://nytimes.com][The New York Times]]
+#+END_NOTES
+*** Group Work
+:PROPERTIES:
+:CUSTOM_ID: exercise-81e3
+:END:
+- Groups of ~3
+- Pro- and Anti-
+- 3 strongest arguments for/against Internet as an "authentic" public sphere
+
+** Machine-readable Text
+:PROPERTIES:
+:CUSTOM_ID: machine-readable
+:END:
+On the web, text is "Marked up" 
+#+BEGIN_SRC html
+  <html>
+    <head>
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <title>HTML Example</title>
+    </head>
+
+    <body>
+      <h1>This is the heading</h1>
+      <p>
+        This is a paragraph. It can contain <i>further markup</i> and also 
+        <a href="http:/some.where.com">more complex content</a>.
+      </p>
+      <aside>
+        Sometimes you will see <i>semantic</i> tags, like "aside",
+        "header", "footer", "article", or "section".  
+      </aside>
+    </body>
+  </html>
+#+END_SRC
+*** Machine-readable Text
+:PROPERTIES:
+:CUSTOM_ID: machine-readable-text-2a02
+:END:
+#+BEGIN_EXPORT html
+      <h1>This is the heading</h1>
+      <p>
+        This is a paragraph. It can contain <i>further markup</i> and also 
+        <a href="http:/some.where.com">more complex content</a>.
+      </p>
+      <aside>
+        Sometimes you'll see <i>semantic</i> tags, like "aside",
+        "header", "footer", "article", or "section".  
+      </aside>
+
+#+END_EXPORT
+
+*** Consequences
+:PROPERTIES:
+:CUSTOM_ID: consequences-5b9c
+:END:
+- Programs can scan this text, interpret it...
+- then treat it as /data/ which can be combined, analyzed, etc.
+#+ATTR_REVEAL: :frag appear
+- point of learning HTML is
+#+ATTR_REVEAL: :frag appear
+  - Understand how to achieve a certain "look"
+  - Understand how a complex computer algorithm might treat it as "data".
+
+*** Tag Structure
+:PROPERTIES:
+:CUSTOM_ID: tag-structure-6119
+:END:
+#+BEGIN_SRC html
+<tag att1="value1" att2="value2">content</tag>
+<p class="normal" align="right">Paragraph Content</p>
+<a href="http://www.google.com">Link to google</a>
+<img src="http://1.bp.blogspot.com/-CzqzzBV2tMk/TxBM3ar18MI/AAAAAAAAPm0/6faLPO9BM8w/s1600/i-can-has-cheezburger.jpg" title="I can Haz Cheezburger?" alt="greedy cat saying 'I can haz cheezburger?'" />
+#+END_SRC
+tags:
+- tag identifier
+- attributes
+- content
+*** A Few HTML tags you should know
+:PROPERTIES:
+:CUSTOM_ID: a-few-html-tags-you-should-know-4481
+:END:
+- ~<html></html>~ :: Opens/closes every page
+- ~<head></head>~ and ~<body></body>~ :: two main sections for metadata and display
+- ~<p></p>~ :: basic paragraph unit
+- ~<a href="http://link.address"></a>~ :: The essential [[http://link.address][hyperlink]] tag that makes the web what it is
+- ~<img src="http://file.location" alt="text to display for non-visual browsers/viewers"/>~ :: "self-closing" image display tag
+- ~<blockquote></blockquote>~ :: semantic tag distinguishing quoted text
+- ~<div></div>~ :: often-invisible tag that divides page into "divisions"
+- ~<em></em> <strong></strong>,  <i></i> <b></b>~ :: /emphasized/ and *strong* text
+- ~<ol>~, ~<ul>~, ~<li>~ :: building "ordered" and "unordered" lists
+- ~<table>~, ~<tr>~, ~<th>~, ~<td>~ :: building tables (don't overuse!)
+*** Group Work 2:  HTML, continued
+:PROPERTIES:
+:CUSTOM_ID: group-work-2:--html,-continued-03e2
+:END:
+Let's continue our introduction to HTML via JSBin: 
+- click here: http://jsbin.com/utinoz/27/edit?html,output
+- You can also *download the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
+#+BEGIN_NOTES
+Here you can see the all parts of the page in different panes.  try to add:
+- images
+- lists
+- real links
+- anything else you can think of 
+Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
+#+END_NOTES
+*** HTML to Markdown
+:PROPERTIES:
+:CUSTOM_ID: html-to-markdown-69a5
+:END:
+Writing in HTML is distracting and time-consuming!
+- HTML for publication, but
+- *Markdown* for writing
+  - convenient shorthand for HTML which we will often use in class
+*** Markdown cheatsheet
+:PROPERTIES:
+:CUSTOM_ID: markdown-cheatsheet-eb13
+:END:
+- ~_emphasis~ and ~__strong__~ :: single "_" or "*" surrounding words for /ital/, double for *bold*, triple for */bold ital/*
+- > for blockquotes :: just preface your paragraph with an angle bracket and one space to get a quote
+- Separate paragraphs with an empty line ::
+- headings start with one or more "#" ::
+- horizontal lines with ---- :: but be sure to keep one empty line above and below, or will be interpreted differently
+- links with [Link Text](http://link.address) ::
+- images with ![Alt Text](http://path.to.image) :: 
+
+Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
+
+* COMMENT 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
 :EXPORT_TITLE: What the Web Signifies
