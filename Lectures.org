@@ -631,6 +631,464 @@ printbibliography:/home/matt/DH/digitalhistory.bib
 
 
 * 01-02: Git and Github
+:PROPERTIES:
+:EXPORT_FILE_NAME: 01-02-git
+:END:
+** COMMENT Network Diagram Code for this Lecture
+
+*** ACTION Setup Plantuml (move to init!!)
+ #+begin_src emacs-lisp
+(org-babel-do-load-languages 'org-babel-load-languages '((plantuml . t)
+))
+(require 'ob-plantuml)
+#+end_src
+
+#+RESULTS:
+#+begin_src emacs-lisp
+ob-plantuml
+#+end_src
+
+*** Experiments with properties
+#+begin_src plantuml :file help.svg
+help skinparams
+#+end_src
+
+#+RESULTS:
+ a[[file:help.svg]]
+
+#+NAME: sprite-ex
+#+begin_src plantuml :file Images/test.svg
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome/cloud.puml
+!includeurl ICONURL/font-awesome/server.puml
+!includeurl ICONURL/font-awesome/laptop.puml
+!includeurl ICONURL/devicons/git_commit.puml
+!includeurl ICONURL/devicons/git_merge.puml
+
+rectangle "<$git_commit>\ncommit" as commit1
+#+end_src
+
+#+RESULTS: sprite-ex
+[[file:Images/test.svg]]
+
+
+*** Common Settings
+
+#+NAME: init-uml
+#+begin_src plantuml
+
+skinparam defaultTextAlignment center
+skinparam DefaultFontSize 20 
+skinparam titleFontSize 24
+skinparam ArrowThickness 5
+left to right direction
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome/cloud.puml
+!includeurl ICONURL/font-awesome/server.puml
+!includeurl ICONURL/font-awesome/laptop.puml
+!includeurl ICONURL/devicons/git_commit.puml
+!includeurl ICONURL/devicons/git_merge.puml
+
+
+#+end_src
+
+*** Git Push
+#+NAME: push-start
+#+begin_src plantuml :file Images/git-push0.svg
+<<init-uml>>
+skinparam ArrowThickness 8
+skinparam ArrowColor Black
+skinparam sequenceParticipantBackgroundColor Green
+skinparam sequenceActorBackgroundColor Green
+
+title initial state - no local development
+
+together {
+DEV_GIT_COMMIT(1, "1 \n initial commit") 
+DEV_GIT_COMMIT(2, "2 \n origin/master") #LightBlue
+}
+
+  1 -- 2
+#+end_src
+
+#+RESULTS: push-start
+[[file:Images/git-push0.svg]]
+
+#+begin_src plantuml :file Images/git-push1.svg
+<<push-start>>
+title after git clone/pull
+
+DEV_GIT_COMMIT(3, "2 \n local/master") #Pink
+1 -- 3
+#+end_src
+
+#+RESULTS:
+[[file:Images/git-push1.svg]]
+
+#+name: push-local
+ #+begin_src plantuml :file Images/git-push2.svg
+<<push-start>>
+
+title local development
+
+together {
+DEV_GIT_COMMIT(3, 2)
+DEV_GIT_COMMIT(4, 3)
+DEV_GIT_COMMIT(5, "4 \n local/master") #Pink
+}
+1 -- 3
+3 -- 4
+4 -- 5
+
+#+end_src
+
+#+RESULTS: push-local
+[[file:Images/git-push2.svg]]
+
+
+ #+begin_src plantuml :file Images/git-push3.svg
+<<push-start>>
+title after git push
+
+DEV_GIT_COMMIT(2, 2)
+DEV_GIT_COMMIT(3, 3)
+DEV_GIT_COMMIT(4, "4 \n origin/master\nand\nlocal/master") #Magenta
+
+2 -- 3
+3 -- 4
+
+#+end_src
+
+
+#+RESULTS:
+[[file:Images/git-push3.svg]]
+
+*** Just laptop
+#+NAME: laptop-net
+#+begin_src plantuml :file Images/gh-lpatop.svg :eval no-export :results value file raw
+<<init-uml>>
+FA_LAPTOP(mattl, matt-laptop) #Green
+
+
+#+end_src
+
+#+RESULTS:
+[[file:Images/gh-lpatop.svg]]
+*** Primitive network
+#+NAME: degen-net
+#+begin_src plantuml :file Images/gh-degen-network.svg :eval no-export :results value file raw
+<<laptop-net>>
+
+FA_SERVER(mattr,github.com/matt) #Green
+
+mattl <--> mattr: Clone
+
+#+end_src
+
+#+RESULTS: degen-net
+[[file:Images/gh-degen-network.svg]]
+
+*** Simple Network
+#+NAME: simple-net
+#+begin_src plantuml :file Images/gh-abbrev-network.svg :eval no-export :results raw
+<<degen-net>>
+
+FA_CLOUD(alicer,github.com/alice) #Magenta
+FA_CLOUD(bobr,github.com/bob) #Turquoise
+FA_CLOUD(kalsangr,github.com/kalsang) #Gold
+
+mattr --> alicer: Fork
+mattr --> bobr: Fork
+mattr --> kalsangr: Fork
+
+#+end_src
+
+#+RESULTS: simple-net
+[[file:Images/gh-abbrev-network.svg]]
+
+#+RESULTS:
+[[file:Images/gh-abbrev-network.svg]]
+*** Full Network
+#+begin_src plantuml :file Images/gh-full-network.svg :eval no-export :results raw
+<<simple-net>>
+FA_LAPTOP(bobl, bob-laptop) #Turquoise
+FA_LAPTOP(alicel, alice-laptop) #Magenta
+FA_LAPTOP(kalsangl, kalsang-laptop) #Gold
+
+
+bobr --> bobl: Clone 
+alicer <--> alicel: Clone 
+kalsangr <--> kalsangl: Clone
+
+#+end_src
+
+#+RESULTS:
+[[file:Images/gh-full-network.svg]]
+
+*** Pull
+
+#+begin_src plantuml :file Images/gh-pull.svg :eval no-export :results value file raw
+<<init-uml>>
+
+FA_SERVER(mattr,github.com/matt) #Green
+FA_CLOUD(alicer,github.com/alice) #Magenta
+FA_LAPTOP(mattl, matt-laptop) #Green
+
+
+mattl <-- mattr: Pull New Changes
+mattr <-- alicer: Merge Changes
+mattl --> mattr: Push changes back  remote
+mattl --> mattl: make small change
+mattl --> mattl: make another change
+
+#+end_src
+
+#+RESULTS:
+[[file:Images/gh-pull.svg]]
+** Git!
+https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png
+
+- "Track Changes" on steroids
+- "Version Control" software optimized for collaboration
+- *essential infrastructure for almost all programming projects*
+** Github!
+   :PROPERTIES:
+   :CUSTOM_ID: github!-7877
+   :END:
+https://github.githubassets.com/images/modules/open_graph/github-octocat.png
+- git-based code-sharing site
+- largest in history
+- owned by Microsoft ☹
+- where we (and most open-source projects) work!
+** Today
+- fun git practice
+- git concepts
+- ensure setup is going well
+- assignment/process overview
+- *If you don't have a github account yet, get one now!*
+** Git Practice: History, Please!
+    :PROPERTIES:
+    :CUSTOM_ID: orgedd3110
+    :END:
+
+- simple command-line/graphical application
+- crowd-sourced by students from this class
+- many problems to fix & improvements to make
+- we'll try to make some progress 
+*** History, Please
+*Take out your Laptop!*
+
+- [[https://github.com/DigitalHistory/history-please][Navigate to the History-Please repository]]
+- Let's explore *code*, *issues*, and *pulls*
+*** Activity
+
+- Divide into groups:
+  - ~trends~ page adders
+  - ~events~ page adders
+  - ~copyeditors~
+  - issue triagers
+- Find *at least one* partner (if you're very confident, help someone else)
+- Scroll down to the [[https://github.com/DigitalHistory/history-please#how-to-participate][contributing instructions]]
+- Additional tips:
+  - reference issues & pull requests by number, e.g. [[https://github.com/DigitalHistory/history-please/pull/58][#58]]. Do this whenever you create a pull that fixes an issue, especially.
+  - Give your PR's *meaningful titles* and *helpful,extensive descriptions*
+  - ~@mention~ me (~@titaniumbones~) when you think you have fixed an issue, or want my input (won't get back to you today though!)
+** Git Concepts
+*In this section*
+- collaboration
+- remotes
+- branches
+- commits
+- worktree vs. repository 
+*** Collaboration
+http://invistruct.com/wp-content/uploads/2012/08/distributed-vc.png
+*** Concepts: Remote
+https://wac-cdn.atlassian.com/dam/jcr:df13d351-6189-4f0b-94f0-21d3fcd66038/01.svg
+*** Classroom Network
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:END:
+
+#+begin_slideblock
+#+ATTR_HTML: :style min-width: 15vw;
+[[file:Images/gh-lpatop.svg]]
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+#+ATTR_HTML: :style min-width: 20vw;
+[[file:Images/gh-degen-network.svg]]
+
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+file:Images/gh-abbrev-network.svg
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+[[file:Images/gh-full-network.svg]]
+#+end_slideblock
+
+*** Branches
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+
+https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg
+
+#+ATTR_REVEAL: :frag (appear) 
+- git history is a *tree*, not a straight line
+- nothing is ever lost!!
+- can be hard to figure out!
+
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+#+ATTR_HTML: :style  min-width: 45vw;; 
+[[file:Images/gh-branch.svg]]
+
+#+end_slideblock
+
+*** COMMENT Activity Branches
+#+begin_src plantuml :file Images/gh-branch.svg :eval no-export :results value file raw
+skinparam defaultTextAlignment center
+left to right direction
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome/cloud.puml
+!includeurl ICONURL/font-awesome/server.puml
+!includeurl ICONURL/font-awesome/laptop.puml
+
+FA_SERVER(mattr,github.com/matt-master) #Green
+
+FA_LAPTOP(mattl, matt-laptop-master) #Green
+
+FA_CLOUD(alicer, github.com/alice-master) #Magenta
+FA_CLOUD(aliceb, github.com/alice-patch123) #Magenta
+
+mattl <--> mattr: Clone
+mattr --> alicer: Fork
+alicer --> aliceb: Branch
+aliceb --> mattr: PR
+
+#+end_src
+
+#+RESULTS:
+#+ATTR_HTML: :style  min-width:75vw; 
+[[file:Images/gh-branch.svg]]
+
+*** Concepts: Commit
+https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.svg
+- changes aren't saved automatically; manually “commit”
+- every commit can be revisited later
+- a branch is really just a “pointer” to a specific commit (complicated)
+
+*** Activity Commits
+#+begin_src plantuml :file Images/commits.svg :eval no-export :results raw
+<<init-uml>>
+
+skinparam ArrowThickness 8
+skinparam ArrowColor Black
+
+
+DEV_GIT_COMMIT(1, "1 \n start") 
+DEV_GIT_COMMIT(2, "2 \n add person") 
+DEV_GIT_COMMIT(3, "3 \n add event") 
+
+1 -- 2 
+2 -- 3
+
+#+end_src
+
+#+RESULTS:
+[[file:Images/commits.svg]]
+
+
+*** Concept: Worktree and Repository
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+*what you see*
+[[./Images/worktree.png]]
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*what's underneath*
+[[./Images/repository.png]]
+#+end_slideblock
+
+** Git Workflows
+*In this section*
+- merging
+- pulling
+- pushing
+*** Concepts: Merge
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+
+#+begin_slideblock
+https://wac-cdn.atlassian.com/dam/jcr:83323200-3c57-4c29-9b7e-e67e98745427/Branch-1.png
+- when we “merge” two branches, the changes from one are brought over into the other
+
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+https://blog.developer.atlassian.com/wp-content/uploads/dac-import/merge-conflict.png
+- if work has progressed on *both* branches, then there might be incompatible changes
+- these are called "merge conflicts"
+- they suck!
+#+end_slideblock
+
+*** Concepts: Pull and Push Changes
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+[[./Images/git-push0.svg]]
+#+ATTR_REVEAL: :frag (appear) 
+[[./Images/git-push1.svg]]
+#+end_slideblock
+
+#+begin_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+[[./Images/git-push2.svg]]
+#+ATTR_REVEAL: :frag (appear) 
+[[./Images/git-push3.svg]]
+
+#+end_slideblock
+
+*** Concepts: Pull and Push collaboratively
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:END:
+
+#+begin_slideblock
+https://wac-cdn.atlassian.com/dam/jcr:0718ae20-0dc5-482c-a38c-25e4f1a1a3b0/02.svg
+#+end_slideblock
+#+ATTR_HTML: :style grid-row: 2/4;
+#+begin_slideblock
+#+ATTR_HTML: :style min-width: 20vw;
+[[file:Images/gh-pull.svg]]
+
+#+end_slideblock
+
+#+begin_slideblock
+https://wac-cdn.atlassian.com/dam/jcr:00d011ed-03dc-440f-afc5-9b13d5e14fbf/bubble%20diagram-01.svg
+#+end_slideblock
+
+** Assignment
+The assignment is now up on [[https://classroom.github.com/a/VJGuHMB6][Github Classroom]], [[https://q.utoronto.ca/courses/123949/assignments/219086][Quercus]], and [[https://digitalhistory.github.io/assignment/][the course website]]. We'll discuss it, and further setup questions, on Thursday.
+
 * 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
