@@ -30,15 +30,15 @@
 #+ATTR_HTML: :class org-upload
 
 
-| *Instructor:*   | Matt Price                            |
-| *Email:*        | matt.price@utoronto.ca                |
-| *Meeting Times* | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                     |
-| *Web:*          | http://digitalhistory.github.io/      |
-| *Slack:*        | https://digitalhistoryuoft.slack.com/ |
-| *Office Hrs:*   | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                  |
+| *Instructor:*    | Matt Price                                               |
+| *Email:*         | matt.price@utoronto.ca                                   |
+| *Meeting Times*  | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                                        |
+| *Web:*           | http://digitalhistory.github.io/                         |
+| *Slack:*         | https://digitalhistoryuoft.slack.com/                    |
+| *New!! Youtube:* | https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg |
+| *Office Hrs:*    | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                                     |
 
 In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
-
 * Introduction
 :PROPERTIES:
 :ID:       o2b:0e65aea6-d27b-4475-bbd6-e3f6280f119d
@@ -148,7 +148,7 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 
 | Assignment           | Due Date | Skills/Aims                                                        | A | B | C | D |
 |----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
-| Class Profile        | <2019-09-12 Thu>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
+| Class Profile        | <2019-09-17 Tue>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
 | G & GH Extras        |          |                                                                    | \checkmark |   |   |   |
 | Zero to Blog Post    | <2019-09-24 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
 | Z2B Extras           |          |                                                                    | \checkmark |   |   |   |
@@ -200,7 +200,7 @@ While all our readings are online, the following texts are heavily used & may be
 - Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In /Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web/. Philadelphia: University of Pennsylvania Press, 2006. http://chnm.gmu.edu/digitalhistory/digitizing/.
 
 *** In-Class Activity: Collaboration on Github, Markdown ({{{ts}}}) 
-
+- Also, consider watching the VSCode videos in [[https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg][the class YouTube channel]]
 
 *** What the Web Signifies ({{{ts}}})
 We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
