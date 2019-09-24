@@ -99,6 +99,7 @@ Sometimes it's nice to have a backp. [[https://www.gitkraken.com/][GitKraken]] i
 *** Learn more
 There is a somewhat more wordy [[http://digitalhistory.github.io/introduction-to-github][Git tutorial on this website]], which you should read. For now, [[https://desktop.github.com/][Install the Github Desktop App]] which also includes the command-line version of git.  You can follow the [[https://github.com/jlord/git-it-electron/releases][excellent tutorial in the downloadable git-it application]], as well as the [[https://help.github.com/desktop/guides/][Github Desktop documentation]].  There is also a [[http://programminghistorian.org/lessons/getting-started-with-github-desktop][quite helpful tutorial on The Programming Historian]]. We'll be discussing Git and Github further in our first class.
 ** Node and NPM -- This is the hardest part!
+
 *Right now it looks like the drag and drop tool we wanted to make will NOT be ready for this semester* :frowning_face:
 
 Installing Node is not strictly necessary for the first assignment. If you are having trouble, put this off till next week.
@@ -309,6 +310,7 @@ Looking forward to hearing how all of this goes!
   :PROPERTIES:
   :CUSTOM_ID: introduction-to-github
   :CLASS: entry-title
+  :EXPORT_FILE_NAME: more-git
   :END:
 
 This is a preliminary introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]] . You can find git
@@ -369,7 +371,7 @@ or on Arch
 
 The [[https://github.com/jlord/git-it-electron/releases][git-it tutorial]] is also pretty helpful, so consider installing it.
 
-** Using Github Desktop (GHD)
+** COMMENT Using Github Desktop (GHD)
    :PROPERTIES:
    :CUSTOM_ID: orgda605c7
    :END:
