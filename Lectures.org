@@ -1779,125 +1779,6 @@ All of these are present in *every* web-based communication.  But realms of the 
 - Pro- and Anti-
 - 3 strongest arguments for/against Internet as an "authentic" public sphere
 
-** Machine-readable Text
-:PROPERTIES:
-:CUSTOM_ID: machine-readable
-:END:
-On the web, text is "Marked up" 
-#+BEGIN_SRC html
-  <html>
-    <head>
-      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-      <title>HTML Example</title>
-    </head>
-
-    <body>
-      <h1>This is the heading</h1>
-      <p>
-        This is a paragraph. It can contain <i>further markup</i> and also 
-        <a href="http:/some.where.com">more complex content</a>.
-      </p>
-      <aside>
-        Sometimes you will see <i>semantic</i> tags, like "aside",
-        "header", "footer", "article", or "section".  
-      </aside>
-    </body>
-  </html>
-#+END_SRC
-*** Machine-readable Text
-:PROPERTIES:
-:CUSTOM_ID: machine-readable-text-2a02
-:END:
-#+BEGIN_EXPORT html
-      <h1>This is the heading</h1>
-      <p>
-        This is a paragraph. It can contain <i>further markup</i> and also 
-        <a href="http:/some.where.com">more complex content</a>.
-      </p>
-      <aside>
-        Sometimes you'll see <i>semantic</i> tags, like "aside",
-        "header", "footer", "article", or "section".  
-      </aside>
-
-#+END_EXPORT
-
-*** Consequences
-:PROPERTIES:
-:CUSTOM_ID: consequences-5b9c
-:END:
-- Programs can scan this text, interpret it...
-- then treat it as /data/ which can be combined, analyzed, etc.
-#+ATTR_REVEAL: :frag appear
-- point of learning HTML is
-#+ATTR_REVEAL: :frag appear
-  - Understand how to achieve a certain "look"
-  - Understand how a complex computer algorithm might treat it as "data".
-
-*** Tag Structure
-:PROPERTIES:
-:CUSTOM_ID: tag-structure-6119
-:END:
-#+BEGIN_SRC html
-<tag att1="value1" att2="value2">content</tag>
-<p class="normal" align="right">Paragraph Content</p>
-<a href="http://www.google.com">Link to google</a>
-<img src="http://1.bp.blogspot.com/-CzqzzBV2tMk/TxBM3ar18MI/AAAAAAAAPm0/6faLPO9BM8w/s1600/i-can-has-cheezburger.jpg" title="I can Haz Cheezburger?" alt="greedy cat saying 'I can haz cheezburger?'" />
-#+END_SRC
-tags:
-- tag identifier
-- attributes
-- content
-*** A Few HTML tags you should know
-:PROPERTIES:
-:CUSTOM_ID: a-few-html-tags-you-should-know-4481
-:END:
-- ~<html></html>~ :: Opens/closes every page
-- ~<head></head>~ and ~<body></body>~ :: two main sections for metadata and display
-- ~<p></p>~ :: basic paragraph unit
-- ~<a href="http://link.address"></a>~ :: The essential [[http://link.address][hyperlink]] tag that makes the web what it is
-- ~<img src="http://file.location" alt="text to display for non-visual browsers/viewers"/>~ :: "self-closing" image display tag
-- ~<blockquote></blockquote>~ :: semantic tag distinguishing quoted text
-- ~<div></div>~ :: often-invisible tag that divides page into "divisions"
-- ~<em></em> <strong></strong>,  <i></i> <b></b>~ :: /emphasized/ and *strong* text
-- ~<ol>~, ~<ul>~, ~<li>~ :: building "ordered" and "unordered" lists
-- ~<table>~, ~<tr>~, ~<th>~, ~<td>~ :: building tables (don't overuse!)
-*** Group Work 2:  HTML, continued
-:PROPERTIES:
-:CUSTOM_ID: group-work-2:--html,-continued-03e2
-:END:
-Let's continue our introduction to HTML via JSBin: 
-- click here: http://jsbin.com/utinoz/27/edit?html,output
-- You can also *download the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
-#+BEGIN_NOTES
-Here you can see the all parts of the page in different panes.  try to add:
-- images
-- lists
-- real links
-- anything else you can think of 
-Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
-#+END_NOTES
-*** HTML to Markdown
-:PROPERTIES:
-:CUSTOM_ID: html-to-markdown-69a5
-:END:
-Writing in HTML is distracting and time-consuming!
-- HTML for publication, but
-- *Markdown* for writing
-  - convenient shorthand for HTML which we will often use in class
-*** Markdown cheatsheet
-:PROPERTIES:
-:CUSTOM_ID: markdown-cheatsheet-eb13
-:END:
-- ~_emphasis~ and ~__strong__~ :: single "_" or "*" surrounding words for /ital/, double for *bold*, triple for */bold ital/*
-- > for blockquotes :: just preface your paragraph with an angle bracket and one space to get a quote
-- Separate paragraphs with an empty line ::
-- headings start with one or more "#" ::
-- horizontal lines with ---- :: but be sure to keep one empty line above and below, or will be interpreted differently
-- links with [Link Text](http://link.address) ::
-- images with ![Alt Text](http://path.to.image) :: 
-
-Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
-
 * COMMENT 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
@@ -2716,10 +2597,9 @@ When information is generally useful, redistributing it makes humanity wealthier
 - Access
 
 Future of the web and of historical scholarship depends on /continued struggle/ over these contested values.
-* And Now: CSS!
+* 03-02 And Now: CSS!
 :PROPERTIES:
 :ID:       o2b:a5ac6273-2677-4058-9687-ee0d1cf51826
-:POST_DATE: [2017-01-19 Thu 00:06]
 :POSTID:   616
 :EXPORT_FILE_NAME: 03-2-css
 :CUSTOM_ID: and-now:-css-03b2
@@ -2733,7 +2613,7 @@ Future of the web and of historical scholarship depends on /continued struggle/ 
 - CSS for *presentation*
 - Resources:  [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings;  [[http://learnlayout.com/][Learn Layout]]; [[https://developer.mozilla.org/en-US/docs/Web/CSS][Mozilla Developer Network]]; many other cool sites
 
-Exercise for today: https://github.com/DigitalHistory/css-styling/ 
+# Exercise for today: https://github.com/DigitalHistory/css-styling/ 
 
 ** What you Need to Learn Today
 :PROPERTIES:
