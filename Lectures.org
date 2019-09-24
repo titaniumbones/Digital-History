@@ -2651,7 +2651,7 @@ two "dimensions" to cascade (source order and specificity)
 :PROPERTIES:
 :CUSTOM_ID: css-selectors-ab36
 :END:
-*** 
+*** Intro
 :PROPERTIES:
 :CUSTOM_ID: -c0f8
 :END:
@@ -2687,7 +2687,8 @@ They all follow the same pattern:
 :PROPERTIES:
 :CUSTOM_ID: selector-anatomy-9f2b
 :END:
-#+begin_export html
+#+NAME:css_rules0
+#+begin_src html
 <style>
  h1#anatomy1 {
       display: inline-flex;
@@ -2709,7 +2710,45 @@ They all follow the same pattern:
   <span class="value">value in (approved);</span>
   <span class="bracket">}</span>
 </h1>
+#+end_src
+
+
+#+begin_src js :var elId="shadow1"
+let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+console.log(elId);
+#+end_src
+
+#+RESULTS:
+#+begin_src js
+#+end_src
+
+#+NAME:generate_shadow_element
+#+begin_src js :var elId="shadow1"
+let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
+let htmlString =
+#+end_src
+*** 
+#+begin_export html
+<div id="shadowEx"></div>
+
+<script>
+let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
+let htmlString = `
+<<css_rules0>>
+`;
+// let doc = new DOMParser().parseFromString(htmlString, "text/xml");
+function createElementFromHTML(htmlString) {
+  var div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change this to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+sroot.appendChild(createElementFromHTML(htmlString));
+</script>
 #+end_export
+
 *** Selector types
 :PROPERTIES:
 :CUSTOM_ID: selector-types
