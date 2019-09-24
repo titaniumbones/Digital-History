@@ -2909,7 +2909,7 @@ div#maincss2 {
 :PROPERTIES:
 :CUSTOM_ID: sizes-af7f
 :END:
-#+begin_src web
+#+begin_src html
 <style>
  p.fixed {
      font-size: 20px;
@@ -2994,11 +2994,26 @@ div#maincss2 {
 <div class="viewport-box"></div>
 #+end_export
 
+** Group Work:  HTML
+:PROPERTIES:
+:CUSTOM_ID: group-work-2:--html,-continued-03e2
+:END:
+Let's continue our introduction to HTML in VSCode
+- *Clone  the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
+#+BEGIN_NOTES
+Here you can see the all parts of the page in different panes.  try to add:
+- images
+- lists
+- real links
+- anything else you can think of 
+Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
+#+END_NOTES
 ** Simple Exercise
 :PROPERTIES:
 :CUSTOM_ID: simple-exercise-ca4d
 :END:
 https://github.com/DigitalHistory/css-styling/
+* 
 
 * 04: Pt 1, CSS Part 2: Layout
 :PROPERTIES:
