@@ -103,15 +103,17 @@ If you can do all of these things consistently, you're likely to earn a "+".  If
 * Assignment 00: Your Class Profile                              :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
-:PUBLISH:  nil
+:PUBLISH:  t
 :DUE_AT: 2019-09-17
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
 :ASSIGNMENT_WEIGHT: 0.10
 :CANVAS_SUBMISSION_TYPES: (none)
-:OL_DIRECTORY: ~/src/dh-2019-stu/00-profile/
+:OL_DIRECTORY: /home/matt/src/DH20199/00-git-marking
 :CANVASID: 219086
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/219086
 :CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/219086/submissions?zip=1
 :SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/219086/submissions?zip=1
@@ -140,17 +142,23 @@ This may take longer than you think, and it's due soon. Please get started soon 
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
 :EXPORT_FILE_NAME: 01-html-css
 :PUBLISH:  t
-:DUE_AT: 2019-01-18
+:DUE_AT: 2019-09-26
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
 :ASSIGNMENT_WEIGHT: 0.10
-:CANVAS_SUBMISSION_TYPES: (online_upload)
-:OL_DIRECTORY: ~/src/dh-2019-stu/01-blog/
+:CANVAS_SUBMISSION_TYPES: (none)
+:OL_DIRECTORY: /home/matt/ASSREPOS/00-git-marking
 :BASECOMMIT: b430c3fb479420499583555911fcfc13a49527eb
+:CANVASID: 224453
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/224453
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/224453/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/224453/submissions?zip=1
 :END:
 
-*Due Date: Jan. 31* (2 days later than original deadline)
+*Due Date: Sept. 26* (2 days later than original deadline)
 ** General Description
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this second assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.  
 
@@ -158,19 +166,19 @@ Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML pr
 
 In this assignment you will be introduced to HTML and CSS. The detailed assignment README leads you through a series of skill-building exercises, and provides links to comprehensive tutorial resources. As always, ask for help on Slack; use the new ~#blog-assignment~ channel for support/collaboration. 
 
-*[[https://classroom.github.com/a/jw8eA63G][here is the assignment repo-creation link!!]]*
+*[[https://classroom.github.com/a/5bMCXaGh][here is the assignment repo-creation link!!]]*
  
 **  Rubric :rubric: 
 - [ ] Passes General Tests
 - [ ] Passes Reflection Tests
 - *Grade* :: 
-- *Comments*: 
+- *Comments* :: 
 
-* Assignment 02: Javascript Basics :assignment:
+* Assignment 02: Javascript Basics                               :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-js-basics
 :PUBLISH:  nil
-:DUE_AT: 2019-02-12
+:DUE_AT: 2019-10-08
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
@@ -178,10 +186,8 @@ In this assignment you will be introduced to HTML and CSS. The detailed assignme
 :CANVAS_SUBMISSION_TYPES: (none)
 :OL_DIRECTORY: ~/src/dh-2019-stu/02-javascript
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
-:CANVASID: 137731
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/137731
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/137731/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/137731/submissions?zip=1
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :END:
 
 *Due Date: Feb 12*
@@ -209,6 +215,8 @@ Due at end of the day on the due date, you can [[https://github.com/DigitalHisto
 :OL_DIRECTORY: ~/src/dh-2019-stu/03-dom-data
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
 :CANVASID: 137730
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/137730
 :CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
 :SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
@@ -243,6 +251,8 @@ Due at end of the day on the due date, you can [[https://classroom.github.com/a/
 :OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
 :CANVASID: 145793
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/145793
 :CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
 :SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
@@ -273,6 +283,8 @@ Your next assignment builds directly from our in-class exercise, and should be q
 :ASSIGNMENT_TYPE: github
 :ASSIGNMENT_WEIGHT: 0.10
 :CANVAS_SUBMISSION_TYPES: (none)
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
 :PUBLISH:  t
@@ -308,6 +320,8 @@ See the README.org file in your own repo or [[https://github.com/DigitalHistory/
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :POST_DATE: [2017-03-10 Fri 13:12]
 :POSTID:   629
 :EXPORT_FILE_NAME: 06-project-proposal
@@ -328,6 +342,8 @@ As before, please make sure you've pulled from the upstream repository before st
 :ID:       o2b:688604c8-31fb-4a73-9267-f85abc803838
 :POSTID:   209
 :PARENT: Assignments
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
 :POST_DATE: [2015-12-14 Mon 14:03]
 :EXPORT_FILE_NAME: comment-assignment-02-distant-history
 :END:
