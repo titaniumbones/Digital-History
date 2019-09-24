@@ -146,11 +146,12 @@ Here are some more details:
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
+#+NAME: assignments_table
 | Assignment           | Due Date | Skills/Aims                                                        | A | B | C | D |
 |----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
 | Class Profile        | <2019-09-17 Tue>  | version control and collaboration                                  | \checkmark | \checkmark | \checkmark | \checkmark |
 | G & GH Extras        |          |                                                                    | \checkmark |   |   |   |
-| Zero to Blog Post    | <2019-09-24 Tue>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
+| Zero to Blog Post    | <2019-09-26 Thu>  | web markup and presentation                                        | \checkmark | \checkmark | \checkmark | \checkmark |
 | Z2B Extras           |          |                                                                    | \checkmark |   |   |   |
 | A Feast of Ministers | <2019-10-08 Tue>  | Programming Concepts: abstraction, loops, data types               | \checkmark | \checkmark | \checkmark | \checkmark |
 | Ministers Extras     |          |                                                                    | \checkmark |   |   |   |
