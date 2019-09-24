@@ -48,7 +48,8 @@ The other tool I use all the time is "inspect element", available by right-click
 :BLOG:     dig
 :END:
 
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://code.visualstudio.com/][Visual Studio Code]]. Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [[https://code.visualstudio.com/][Visual Studio Code]]. Please follow the download links and install to your computer. There's a [[../using-vscode][separate post about using VSCode]] -- once you've installed it, navigate there!
+
 
 ** Command Line
 Web developers and digital humanists spend a lot of their time in the /command-line environment/, interacting with their computers through text-based commands instead of a mouse or voice interface.  It takes some time to learn to use the command-line, but it's a very powerful and effective way to work once you get used to it. One goal of this course is to help you get comfortable in this environment and learn to take advantage of its power.  
@@ -61,7 +62,7 @@ In Windows, bash comes with the Git installation -- follow the instructions belo
 
 *IMPORTANT UPDATE*: VSCode has an [[https://code.visualstudio.com/docs/editor/integrated-terminal][integrated terminal]], and it's extremely useful. Windows users will have to do a little bit of work in order to use bash in the integrated terminal. See the excellent [[https://code.visualstudio.com/docs/editor/integrated-terminal#%5Fconfiguration][terminal configuration instructions online]], and be sure to follow the link explaining [[https://code.visualstudio.com/docs/getstarted/settings#%5Fcreating-user-and-workspace-settings][how to access the user settings screen in VSCode]].
 
-** Git, Github, and GitKraken
+** Git, Github, and optionally GitKraken
 :PROPERTIES:
 :ID:       o2b:bc40c086-76d9-4027-9fb3-ee6748e031bc
 :POST_DATE: [2017-01-06 Fri 11:27]
