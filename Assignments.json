@@ -1,0 +1,58 @@
+{
+  "baseDir": "/home/matt/src/DH20199/",
+  
+  
+  "git": {
+    "basename": "assignment-00-git-and-github",
+    "upstream": "git@github.com:DigitalHistory/2019-assignment-00-clean.git",
+    "cloneAs" : "00-git-marking",
+    "devDir" : "/home/matt/DH/Assignments/00-git/",
+    "deadline": "2019-09-17",
+    "mainTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome --grep \"Reflection\" --invert --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
+    "reflectionTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome --grep \"Reflection\" --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
+    "allTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome  --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
+    "teacherCommit": ""
+  },
+  "html": {
+    "basename": "01-blog",
+    "cloneAs" : "01-blog-marking",
+    "deadline": "2019-09-26",
+    "upstream": "git@github.com:DigitalHistory/assignment-01-html-css.git",
+    "mainTests": "mocha test  -t 0 test/test.js --grep \"Reflection\" --invert",
+    "reflectionTests": "mocha test  -t 0 test/test.js --grep \"Reflection\"",
+    "teacherCommit": "b430c3fb479420499583555911fcfc13a49527eb"
+  },
+  "js": {
+    "basename": "02-loops-conds-objects",
+    "deadline": "2018-02-19",
+    "mainTests": "mocha test  -t 0 test/test-git.js test/test-pt2.js ",
+    "reflectionTests": "mocha test  -t 0 test/test-pt2.js",
+    "teacherCommit": "0b955269775236a9e48cd0208a9cd8d5ef485e7c"
+  },
+  "js2": {
+    "basename": "03-dom-data",
+    "deadline": "2018-03-01",
+    "upstream": "git@github.com:DigitalHistory/03-js-dom.git",
+    "mainTests": "mocha test  -t 0 test/test-git.js test/test-pt2.js ",
+    "reflectionTests": "mocha test  -t 0 test/test-pt3.js",
+    "teacherCommit": "7a5ccc938221e93ff814c774859f6c04b69eeac0"
+  },
+  "at": {
+    "basename": "advanced-topics",
+    "deadline": "2019-03-18",
+    "upstream": "git@github.com:DigitalHistory/advanced-topics.git",
+    "mainTests": "npm test ",
+    "reflectionTests": "",
+    "teacherCommit": "93b4e56cc9e573cd14bec07891029c3516497bb1"
+  },
+  "oh": {
+    "basename": "advanced-topics",
+    "deadline": "2018-03-31",
+    "teacherCommit": "878a35b233f4711d4828dad7d0d055fb6c451da0"
+  },
+  "proposal": {
+    "basename": "advanced-topics",
+    "deadline": "2018-04-10",
+    "teacherCommit": "878a35b233f4711d4828dad7d0d055fb6c451da0"
+  }
+}

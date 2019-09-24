@@ -1,0 +1,29 @@
+{
+  "name": "digitalhistory",
+  "version": "1.0.0",
+  "description": "Course Materials for HIS393 Digital History, at the University of Toronto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titaniumbones/Digital-History.git"
+  },
+  "keywords": [
+    "digital-humanities",
+    "history",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Matt Price",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/titaniumbones/Digital-History/issues"
+  },
+  "homepage": "https://github.com/titaniumbones/Digital-History#readme",
+  "dependencies": {
+    "classroom_helper": "github:DigitalHistory/classroom_helper#master"
+  }
+}
