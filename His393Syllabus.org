@@ -27,12 +27,11 @@
 :BLOG:     dig
 :POSTID:   592
 :END:
+
 #+ATTR_HTML: :class org-upload
-
-
 | *Instructor:*    | Matt Price                                               |
 | *Email:*         | matt.price@utoronto.ca                                   |
-| *Meeting Times*  | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1070]]                                        |
+| *Meeting Times*  | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1072]]                                        |
 | *Web:*           | http://digitalhistory.github.io/                         |
 | *Slack:*         | https://digitalhistoryuoft.slack.com/                    |
 | *New!! Youtube:* | https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg |

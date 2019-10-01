@@ -671,6 +671,10 @@ Asa bonus here are a couple of string tricks:
 ** Loops
 
 
+* COMMENT Reading /Eloquent Javascript/
+[[http://eloquentjavascript.net/][Eloquent Javascript]] is a a fantastic programming textbook, but it takes quite a bit of work to read. It's not always easy for us to read.  Many of the examples are a little more mathematical than some of us might like, and the selections we're reading leave out a lot.  Here are some notes to help you out, especially with the later chapters:
+** Chapter 12
+A lot of this will be review for you
 * COMMENT Javascript Basics I: Operators, Loops, and that Pesky Problem 1
 :PROPERTIES:
 :ID:       o2b:b830ce1b-4623-419c-a833-439f7612d4c8
