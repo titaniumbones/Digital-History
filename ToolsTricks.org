@@ -638,10 +638,6 @@ Sometimes you will want to try out your code and test out your ideas before putt
 - VSCode extensions :: There are many excellent VSCode extensions for JavaScript. You can experiment with [[https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode][quokka]], for instance. 
 - Online Playgrounds :: These can be fantastic resources, but they make more sense for web-based programming. We may discuss these later in the course.  
 
-* COMMENT Reading /Eloquent Javascript/
-[[http://eloquentjavascript.net/][Eloquent Javascript]] is a a fantastic programming textbook, but it takes quite a bit of work to read. It's not always easy for us to read.  Many of the examples are a little more mathematical than some of us might like, and the selections we're reading leave out a lot.  Here are some notes to help you out, especially with the later chapters:
-** Chapter 12
-A lot of this will be review for you
 * COMMENT Javascript Basics
 :PROPERTIES:
 :EXPORT_FILE_NAME: javascript-basics
