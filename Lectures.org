@@ -616,8 +616,7 @@ printbibliography:/home/matt/DH/digitalhistory.bib
 - [ ] Zefang Yi
 
 
-
-* 01-02: Git and Github
+* 02-01: Git and Github
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-02-git
 :END:
@@ -1076,7 +1075,6 @@ https://wac-cdn.atlassian.com/dam/jcr:00d011ed-03dc-440f-afc5-9b13d5e14fbf/bubbl
 ** Assignment
 The assignment is now up on [[https://classroom.github.com/a/VJGuHMB6][Github Classroom]], [[https://q.utoronto.ca/courses/123949/assignments/219086][Quercus]], and [[https://digitalhistory.github.io/assignment/][the course website]]. We'll discuss it, and further setup questions, on Thursday.
 
-
 * 02-02: More Git, Some Markdown, a Tiny Bit of HTML
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-02-more-git
@@ -1264,7 +1262,7 @@ You'll need these for your assignment!
 - follow [[https://classroom.github.com/a/VJGuHMB6][assingment link]]
 - get clone link link
 - start working.  
-* HTML: Machine-readable Text
+* 03-01: HTML: Machine-readable Text
 :PROPERTIES:
 :CUSTOM_ID: machine-readable
 :EXPORT_FILE_NAME: 03-01-html-backlog
@@ -1417,7 +1415,470 @@ Writing in HTML is distracting and time-consuming!
 - horizontal lines with ---- :: but be sure to keep one empty line above and below, or will be interpreted differently
 - links with [Link Text](http://link.address) ::
 - images with ![Alt Text](http://path.to.image) :: 
-* Potential Lecture 03-01
+* 03-02 And Now: CSS!
+:PROPERTIES:
+:ID:       o2b:a5ac6273-2677-4058-9687-ee0d1cf51826
+:POSTID:   616
+:EXPORT_FILE_NAME: 03-2-css
+:CUSTOM_ID: and-now:-css-03b2
+:END:
+
+** Reminder
+:PROPERTIES:
+:CUSTOM_ID: reminder-974a
+:END:
+- HTML for *structure/content*;
+- CSS for *presentation*
+- Resources:  [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings;  [[http://learnlayout.com/][Learn Layout]]; [[https://developer.mozilla.org/en-US/docs/Web/CSS][Mozilla Developer Network]]; many other cool sites
+
+# Exercise for today: https://github.com/DigitalHistory/css-styling/ 
+
+** What you Need to Learn Today
+:PROPERTIES:
+:CUSTOM_ID: what-you-need-to-learn-today-f47f
+:END:
+- syntax: selectors, rules, punctuation;
+- jargon: colors, sizes
+- where to look stuff up (!)
+
+** CSS Basics
+:PROPERTIES:
+:CUSTOM_ID: css-basics-6376
+:END:
+- "[[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]]"
+- Style sheet
+- that "cascades" = overrides prior values
+[[http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg]]
+
+#+begin_notes
+two "dimensions" to cascade (source order and specificity)
+
+- specificity is the hard/important one.  
+#+end_notes
+** With and without CSS
+:PROPERTIES:
+:CUSTOM_ID: with-and-without-css-43a6
+:END:
+#+ATTR_HTML: :class paired
+[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
+#+ATTR_HTML: :class paired
+[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
+
+
+** CSS Selectors
+:PROPERTIES:
+:CUSTOM_ID: css-selectors-ab36
+:END:
+*** Intro
+:PROPERTIES:
+:CUSTOM_ID: -c0f8
+:END:
+#+BEGIN_SRC css 
+  h1 {
+      color:blue;
+      font-family:serif; 
+      font-size:24px; 
+  }
+
+  div {
+      border: 1px solid black;
+  }
+
+  div.main p {
+      color:red;
+  }
+
+  #specialid {
+      float:left;
+  }
+#+END_SRC
+
+#+BEGIN_NOTES
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+#+END_NOTES
+*** Selector Anatomy
+:PROPERTIES:
+:CUSTOM_ID: selector-anatomy-9f2b
+:END:
+#+NAME:css_rules0
+#+begin_src html
+<style>
+ h1#anatomy1 {
+      display: inline-flex;
+     padding: 15px;
+     background-color: rgb(30,30,30,0.1);
+     font-size: 1.4em;
+     border: 2px gray solid; }
+  h1#anatomy1 span {padding: 4px;border: 2px black solid; background-color: rgba(10,70,10,0.6);}
+  h1#anatomy1 span.selector {background-color: rgba(150, 20, 20, 0.4);}
+  h1#anatomy1 span.rule {background-color: rgba(70, 10,70, 0.4);}
+  h1#anatomy1 span.value {background-color: rgba(10,150, 150, 0.4);}
+
+</style>
+
+<h1 id="anatomy1">
+  <span class="selector">selector.has >  #funny:stuff</span>
+  <span class="bracket">{</span>
+  <span class="rule">rule:</span>
+  <span class="value">value in (approved);</span>
+  <span class="bracket">}</span>
+</h1>
+#+end_src
+
+
+#+begin_src js :var elId="shadow1"
+let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+console.log(elId);
+#+end_src
+
+#+RESULTS:
+#+begin_src js
+#+end_src
+
+#+NAME:generate_shadow_element
+#+begin_src js :var elId="shadow1"
+let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
+let htmlString =
+#+end_src
+*** 
+#+begin_export html
+<div id="shadowEx"></div>
+
+<script>
+let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
+let htmlString = `
+<<css_rules0>>
+`;
+// let doc = new DOMParser().parseFromString(htmlString, "text/xml");
+function createElementFromHTML(htmlString) {
+  var div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change this to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+sroot.appendChild(createElementFromHTML(htmlString));
+</script>
+#+end_export
+
+*** Selector types
+:PROPERTIES:
+:CUSTOM_ID: selector-types
+:END:
+
+#+BEGIN_SRC html
+<style>
+h1 {
+font-size: 2em;
+color: red;
+}
+p {
+font-size:5em}
+
+.coolpara {
+color:green;
+}
+
+#myfave {
+color:yellow;
+background-color: black;
+}
+</style>
+
+<h1> Heading</h1>
+<p class="coolpara">Some Content</p>
+<p id="myfave">Some Content</p>
+
+#+END_SRC
+
+#+BEGIN_NOTES
+Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
+- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
+- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
+
+- *ID* selector:  this addresses the element with a particular ID:
+
+#+END_NOTES
+*** Selector types
+:PROPERTIES:
+:CUSTOM_ID: selector-types-e94f
+:END:
+#+begin_export html
+
+<style>
+div#cssdemo h1 {
+font-size: 3em;
+color: red;
+}
+div#cssdemo p {
+font-size:5em}
+
+.coolpara {
+color:green;
+}
+
+div#cssdemo #myfave {
+color:yellow;
+background-color: black;
+}
+</style>
+
+<div id="cssdemo">
+<h1> Heading</h1>
+<p class="coolpara">Some Content</p>
+<p id="myfave">Some Content</p>
+</div>
+#+end_export
+
+*** More Selectors
+:PROPERTIES:
+:CUSTOM_ID: more-selectors-d28a
+:END:
+#+BEGIN_SRC css
+div.main p {
+      color:red;
+  }
+
+div.main > p.blue {
+      color: blue;
+}
+#+END_SRC
+
+#+BEGIN_NOTES
+- Finally, we have many more complex selectors.  This one here is a descendant selector
+It addresses every *p* that is contained inside a div of *class* /"main."/
+#+END_NOTES
+
+*** More Selectors
+:PROPERTIES:
+:CUSTOM_ID: more-selectors-d8a0
+:END:
+#+BEGIN_export html
+<style>
+div#cssmain p {
+      color:red;
+  }
+
+div#cssmain > p.blue {
+      color: blue;
+}
+</style>
+<div id="cssmain">
+<p> regular (red) paragraph</p>
+  <p class="blue"> not a regular paragraph (blue) </p>
+
+</div>
+#+END_export
+** Selectors and the Cascade
+:PROPERTIES:
+:CUSTOM_ID: selectors-and-the-cascade-0a08
+:END:
+- Priority: inline \rightarrow id \rightarrow class \rightarrow element/tag
+- fine gradations within this
+- the awful *!important* rule
+** Color Values
+:PROPERTIES:
+:CUSTOM_ID: color-values-456b
+:END:
+Various representations:
+#+begin_export html
+<style>
+ul#color-rules {font-size 1.5rem;}
+ul#color-rules li span.red {color: #FF0000}  
+ul#color-rules li span.green {color: #00FF00}  
+ul#color-rules li span.blue {color: #0000FF}  
+</style>
+
+<ul id="color-rules">
+  <li>
+    color: #
+    <span class="red">00</span>
+    <span class="green">7F</span>
+    <span class="blue">FF</span>
+    ;
+  </li>
+  <li>
+    color: rgb(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>
+    );
+  </li>
+  <li>
+    color: rgba(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>, 0.6);
+  </li>
+</ul>
+#+end_export
+
+(also hsl, hsla)
+*** Fonts, colors and borders
+:PROPERTIES:
+:CUSTOM_ID: fonts,-colors-and-borders-127a
+:END:
+#+BEGIN_SRC css
+div.main {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+#+END_SRC
+#+BEGIN_NOTES
+A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
+There are plenty of other properties that can be set, in much the same way.
+#+END_NOTES
+*** Fonts and Colors in Action
+:PROPERTIES:
+:CUSTOM_ID: fonts-and-colors-in-action-1cb9
+:END:
+#+BEGIN_export html
+<style>
+div#maincss2 {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+</style>
+<div id="maincss2">
+   <p> here is a sample paragraph doing all of this stuff...</p>
+#+END_export
+** Sizes 
+:PROPERTIES:
+:CUSTOM_ID: sizes-af7f
+:END:
+#+begin_src html
+<style>
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+     } 
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+ 
+</style>
+
+<p class="fixed">This paragraph will be syled differently from its peers</p>
+<p class="em-small">This paragraph will be syled differently from its peers</p>
+<p class="em-big">This paragraph will be syled differently from its peers</p>
+
+<div class="pixel-box"></div>
+<div class="percent-box"></div>
+<div class="viewport-box"></div>
+#+end_src
+** Sizes
+:PROPERTIES:
+:CUSTOM_ID: sizes-082b
+:END:
+#+begin_export html
+<style>
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+ }
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+ 
+</style>
+
+<p class="fixed">This paragraph will be syled differently from its peers</p>
+<p class="em-small">This paragraph will be syled differently from its peers</p>
+<p class="em-big">This paragraph will be syled differently from its peers</p>
+
+<div class="pixel-box"></div>
+<div class="percent-box"></div>
+<div class="viewport-box"></div>
+#+end_export
+
+** Group Work:  HTML
+:PROPERTIES:
+:CUSTOM_ID: group-work-2:--html,-continued-03e2
+:END:
+Let's continue our introduction to HTML in VSCode
+- *Clone  the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
+#+BEGIN_NOTES
+Here you can see the all parts of the page in different panes.  try to add:
+- images
+- lists
+- real links
+- anything else you can think of 
+Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
+#+END_NOTES
+** Simple Exercise
+:PROPERTIES:
+:CUSTOM_ID: simple-exercise-ca4d
+:END:
+https://github.com/DigitalHistory/css-styling/
+* 04-01: What the Web Signifies
+:PROPERTIES:
+:EXPORT_FILE_NAME: 04-01-web-signifies
+:END:
+** Today 
+- Assignment 0 review
+- Concept of the "Public Sphere"
+- Internet and Habermas's conception
+- CSS Layout/Assignment 1
 ** Significance and Signification 
 :PROPERTIES:
 :CUSTOM_ID: significance-and-signification-4ace
@@ -1458,9 +1919,8 @@ Web has had enormous effects
 :CUSTOM_ID: authenticity-in-a-media-age-9bf8
 :END:
 #+CAPTION: Jürgen Habermas
-#+ATTR_HTML: height="200px" width="300px" align="center"
+#+ATTR_HTML: :style max-height:70vh;
 [[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
-
 *** Mid-century anxiety
 :PROPERTIES:
 :CUSTOM_ID: mid-century-anxiety-a1d1
@@ -1475,14 +1935,24 @@ Web has had enormous effects
 *** Reasons to worry
 :PROPERTIES:
 :CUSTOM_ID: reasons-to-worry-7254
+:reveal_extra_attr: class="twobytwo"
 :END:
-#+ATTR_HTML: :class paired
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg
-#+ATTR_HTML: :class paired
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/en/8/86/EwigerJudeFilm.jpg
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 #+ATTR_REVEAL: :frag appear
 - maybe there are /material conditions/ that make this sort of evil possible?
 - perhaps the media of communication have a role?  
+
+#+end_slideblock
 
 *** The Public Sphere
 :PROPERTIES:
@@ -1600,21 +2070,15 @@ A private person has no right to pass /public/ and perhaps even disapproving jud
   - a new kind of /media/
 - rise of /salons/ & coffee houses.
   - a new kind of /sociality/.  
+** 
 *** Salons and Coffee Houses
 :PROPERTIES: 
 :HTML_CONTAINER_CLASS: slide
 :CUSTOM_ID: salons-and-coffee-houses-4538
+:reveal_extra_attr: class="splitc"
 :END:
-
-#+ATTR_HTML: :style float:left; max-height:400px;
-https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_england_1-580x400.jpg
-#+ATTR_HTML:  style="vertical-align:top;" width="40%" float="left"
-[[http://cabinetmagazine.org/issues/8/assets/images/main/coffeehouse.jpg]]
-*** Salons and Coffee Houses
-:PROPERTIES: 
-:HTML_CONTAINER_CLASS: slide
-:CUSTOM_ID: salons-and-coffee-houses-151f
-:END:
+#+begin_slideblock
+#+ATTR_REVEAL: :frag (appear) 
 - /Salons/ as the heart of intellectual activity in c. 18
   - 'monopoly on first publication'
   - mixing of classes
@@ -1626,6 +2090,16 @@ https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_eng
   - opinions judged by reason alone
     - no intrusion of 'distinction' /or/ finance
   - [ *but note:* imperfection of this vision ]
+
+#+end_slideblock
+
+#+begin_slideblock
+https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_england_1-580x400.jpg
+#+end_slideblock
+
+#+begin_slideblock
+[[http://cabinetmagazine.org/issues/8/assets/images/main/coffeehouse.jpg]]
+#+end_slideblock
 #+BEGIN_NOTES
 one of the longstanding critiques of Habermas is the /actual/ restrictiveness of coffee houses /in real life/.  Who's excluded? make a list: women, the truly poor, non-Europeans, the uneducated (to some extent), 
 #+END_NOTES
@@ -1732,7 +2206,7 @@ This process of commodification, and its trasformation from a *positive, welcome
 - Habermas:  the actions of a legitimate public sphere are actions of reading (scrutinize, judge, decide)
 - Warner: in a counterpublic, there may be other sorts of actions (prance, diss, act up, fantasize, mourn)
 
-**  How this matters for History
+** How this matters for History
 :PROPERTIES:
 :CUSTOM_ID: how-this-matters-for-history-d592
 :END:
@@ -1771,14 +2245,847 @@ This process of commodification, and its trasformation from a *positive, welcome
 #+BEGIN_NOTES
 All of these are present in *every* web-based communication.  But realms of the web have distinct affordances of their own: [[http://www.reddit.com][Reddit]] \ne [[http://twitter.com][twitter]] \ne [[http://www.facebook.com][facebook]] \ne [[http://nytimes.com][The New York Times]]
 #+END_NOTES
-*** Group Work
+*** COMMENT Group Work
 :PROPERTIES:
 :CUSTOM_ID: exercise-81e3
 :END:
 - Groups of ~3
 - Pro- and Anti-
 - 3 strongest arguments for/against Internet as an "authentic" public sphere
+** Assignment 1: CSS -- some hints
+- new youtube video will help a little
+- watch me work briefly with [[https://github.com/DigitalHistory/css-layout.git][css-layout practice repo]]
 
+* 04-02, CSS Part 2: Layout
+:PROPERTIES:
+:EXPORT_FILE_NAME: 04-02-css-layout
+:CUSTOM_ID: 04-02-css-part-2-layout-494e
+:END:
+
+** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-7f3b
+:END:
+- selector syntax: ~selector > string {property: value;}~
+- colors: ~#RRGGBB~ or ~rgba(RRR, BBB, GGG, 0.alpha)~
+- sizes: ~px~ or ~em~ (or ~rem~)
+
+** Today
+:PROPERTIES:
+:CUSTOM_ID: today-e46c
+:END:
+- intro to layout
+- follow along with the repo: https://github.com/DigitalHistory/css-layout 
+
+** Box Model
+:PROPERTIES:
+:CUSTOM_ID: box-model-6dae
+:END:
+
+[[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
+
+- content
+- padding
+- border
+- margin
+#+begin_notes
+One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+
+#+end_notes
+** "Russian Dolls"
+:PROPERTIES:
+:CUSTOM_ID: russian-dolls-ba13
+:END:
+
+https://www.w3.org/TR/css-flexbox-1/images/flex-order-page.svg
+** Display: Block vs. Inline
+:PROPERTIES:
+:CUSTOM_ID: display:-block-vs.-inline-1e99
+:END:
+https://i.stack.imgur.com/mGTYI.png
+- *block* elements *have their own boxes*
+- *inline* elements *do not have boxes*. height, width, padding, work inconsistently.
+- *inline-block* elements don't make "true" boxes but allow you to set height and width. 
+#+begin_notes
+by default, these elements are inline:
+- a, b, i, strong, em, span, img
+while these are block:
+- div, article, section, nav, hx, p, ul, ol, li, main, header, footer
+#+end_notes
+** Normal Flow
+:PROPERTIES:
+:CUSTOM_ID: normal-flow-9b65
+:END:
+- page processed sequentially
+- each block-level element gets its own line
+- inline elements displayed inside those lines
+- heights of lines set by height of content 
+** Layout: Overriding "normal" flows
+:PROPERTIES:
+:CUSTOM_ID: layout:-overriding-normal-flows-6043
+:END:
+- instruct elements to either *step out of the normal flow* or *set new rues for their "internal" or "external" flow*
+** Layout Methods
+:PROPERTIES:
+:CUSTOM_ID: layout-methods-5357
+:END:
+- *display* property
+- *position* property
+- *float* property
+
+We focus on *display* but dip into the other methods
+** Display
+:PROPERTIES:
+:CUSTOM_ID: display-f731
+:END:
+values we care about: 
+- display: none
+- display: block/inline/inline-block
+- display: flex
+- display: grid
+** Follow Along
+:PROPERTIES:
+:CUSTOM_ID: follow-along-e70b
+:END:
+- I'll be using *dev tools* to quickly change css properties
+- do the same if you wish!
+-  https://github.com/DigitalHistory/css-layout 
+
+
+** Default View (just some silly styling)
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:CUSTOM_ID: default-view-(just-some-silly-styling)-3cbb
+:END:
+#+begin_slideblock
+#+ATTR_REVEAL: :no-klipsify t
+#+NAME: basic_layout
+#+begin_src html
+<style>
+ main {
+     display: block;
+ }
+
+ header {
+     display:block;
+ }
+</style>
+
+<main>
+    <header>
+        <h1>header</h1>
+    </header>
+    <article>
+        <p>article p</p>
+    </article>
+    <footer>footer</footer>
+</main>
+
+#+end_src
+
+#+end_slideblock
+@@html:<div class="slideblock fragment appear" id="basic_layout"></iv>@@
+#+CALL: generate_shadow_dom[:results html :exports "results"]("basic_layout", basic_layout) 
+** Display: None
+:PROPERTIES:
+:CUSTOM_ID: display:-none-5a37
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+hide element *completely* so that it takes up no space at all
+#+ATTR_REVEAL: :no-klipsify t
+#+NAME: none_layout
+#+begin_src html
+<style>
+ main {
+     display: block;
+ }
+
+ header {
+     display: none;
+ }
+</style>
+
+<main>
+    <header>
+        <h1>header</h1>
+    </header>
+    <article>
+        <p>article p</p>
+    </article>
+    <footer>footer</footer>
+</main>
+
+#+end_src
+
+#+end_slideblock
+@@html:<div class="slideblock fragment appear" id="display_none"></div>@@
+#+CALL: generate_shadow_dom[:results html :exports "results"]("display_none", none_layout) 
+** Display: Flex
+:PROPERTIES:
+:CUSTOM_ID: display:-flex-2a88
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+
+- one-dimensional layout
+- "content-out"
+  - container determines direction & a few defaults
+  - most styling still in children
+- revolutionary!
+
+#+ATTR_REVEAL: :no-klipsify t
+#+ATTR_REVEAL: :frag (appear) 
+#+NAME: flex_layout
+#+begin_src html
+<style>
+ main {
+     display: flex;
+     align-items: center;
+     justify-content: stretch;
+ }
+ main>* {
+     flex-grow: 1;
+ }
+</style>
+
+<main>
+    <header>
+        <h1>header</h1>
+    </header>
+    <article>
+        <p>article p</p>
+    </article>
+    <footer>footer</footer>
+</main>
+
+#+end_src
+
+
+
+#+end_slideblock
+@@html:<div class="slideblock fragment appear" id="display_flex"></div>@@
+
+#+CALL: generate_shadow_dom[:results html :exports "results"]("display_flex", flex_layout)
+
+*** Flex Concepts: Container and Items
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-container-and-items-c4e5
+:END:
+- the *container* has *display: flex;*
+- the *items* are *direct children of the container*
+- *container* controls *direction* and *wrapping behaviour*, as well as *default box alignments*;
+- *items* control most other properties
+*** Flex Concepts: Direction (container!)
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-direction-(container)-0ecf
+:END:
+https://mdn.mozillademos.org/files/3739/flex_terms.png
+- *main axis*: horizontal if *flex-direction: column*; vertical if *flex-direction: row*
+- *cross axis*: vertical if *flex-direction: column*; horizontal if *flex-direction: row*
+*** Flex Concepts: Alignment, Justification (container and items!) 
+:PROPERTIES:
+:CUSTOM_ID: flex-concepts:-alignment,-justification-(container-and-items)-40c6
+:END:
+- *align-items*: default cross-axis alignment (stretch, flex-start, flex-end)
+- *justify-content*: default main-axis alignment (flex-start, flex-end, space-around, space-between)
+- *align-self:* item cross-axis
+- *order*: placement in flex-container (relative, not absolute!!)
+** Display: Grid
+:PROPERTIES:
+:CUSTOM_ID: display:-grid-f6dd
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+- two-dimensional layout
+- "container-in"
+  - container determines almost all layout properties
+  - children choose their position within the grid
+- revolutionary!
+#+ATTR_REVEAL: :frag (appear) 
+#+ATTR_REVEAL: :no-klipsify t
+#+NAME: grid_layout
+#+begin_src html
+<style>
+ main {
+     display: grid;
+     height: 100%;
+     grid-template-rows: 1fr 4fr 1fr;
+     grid-template-columns: 1fr 2fr;
+ }
+ main>* {
+     min-width: 100%;
+     border: 2px green solid;
+ }
+header,footer {
+    grid-column: 1/3;
+}
+</style>
+
+<main>
+    <header>
+        <h1>header</h1>
+    </header>
+    <aside>
+    aside
+    </aside>
+    <article>
+        <p>article p</p>
+    </article>
+    <footer>footer</footer>
+</main>
+
+#+end_src
+#+end_slideblock
+@@html:<div class="slideblock fragment appear" id="display_grid"></div>@@
+#+CALL: generate_shadow_dom[:results html :exports "results"]("display_grid", grid_layout)
+
+*** A lot like flex!
+:PROPERTIES:
+:CUSTOM_ID: a-lot-like-flex-1b97
+:END:
+- many ideas come from flex
+- finer control
+- 2 dimensions, not one
+*** Grid Concepts: Container and Items
+:PROPERTIES:
+:CUSTOM_ID: grid-concepts:-container-and-items-c24b
+:END:
+- as in flex
+*** Grid Concepts: Templates and Areas (container)
+:PROPERTIES:
+:CUSTOM_ID: grid-concepts:-templates-and-areas-(container)-4a8c
+:END:
+- set patterns for the 2-d grid
+- *grid-template-columns*: how many columns, and what size?
+- *grid-template-rows*: how many rows, and what size?
+- *grid-template-areas*: *names* the areas, and allows *items* to set their own areas
+*** Placing Items
+:PROPERTIES:
+:CUSTOM_ID: placing-items-ecc0
+:END:
+- *grid-column: n/m*: place items by *column-number*
+- *grid-row: n/m*: place items by *row-number*
+  - (note how these allow spanning)
+- *grid-area: area-name*: place by *named area*
+  - does not allow spanning
+*** Resources
+:PROPERTIES:
+:CUSTOM_ID: resources-7128
+:END:
+- [[http://grid.malven.co/][visual cheatsheet]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids][MDN Grid series]]
+** Media Queries
+:PROPERTIES:
+:CUSTOM_ID: media-queries-9633
+:END:
+- CSS rules that only come into effect under certain conditions
+- we will only use for *screen size*
+- allows creation of *responsive* sites
+#+begin_src css
+@media screen and (min-width: 500px;) {
+    normal.selector > here {
+        normal-rule: normal-value;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    normal.selector > here {
+        normal-rule: normal-value;
+    }    
+}
+#+end_src
+* Basic HTML -- just blocks for exporting later, not a lecture
+:PROPERTIES:
+:CUSTOM_ID: basic-html-4d6d
+:END:
+#+NAME: css_l_nodes
+#+begin_src html
+        <main>
+            <nav>CSS Layout Exercise for <a href="https://digitalhistory.github.io">Digital History (HIS393)</a></nav>
+            <aside>Sidebar ("Aside")</aside>
+            <article>
+                <header>
+                    <h1>main > article > header > h1. I also contain a <span>span element</span>, which displays inline by default.  </h1>                
+                </header>
+                <section class="content">
+                    <h2>main > article > section.content > h2</h2>
+                    <p class="normal">Here is a normal paragraph</p>
+                    <p class="normal">Here is another normal paragraph</p>
+ 
+                    <ul id="mainlist">
+                        <li class="red">List item 1 -- class of red</li>
+                        <li>List item 2</li>
+                        <li id="special">List item 3 -- id of special</li>
+                        <li>List item 6</li>
+                    </ul>
+                    <div class="child-and-grand">
+                        <p>just filling space but you can style me if you like. </p>
+                        <div>
+                            <p>bla bla bla <strong>bla</strong> bla bla. </p>
+                        </div>
+                    </div>
+                </section>
+                <footer class="inner">main > article > footer</footer>
+            </article>
+            <footer class="outer">main > footer</footer>
+        </main>
+#+end_src
+
+#+NAME: css_l_defstyle
+#+begin_src css
+main {
+    border: 2px solid red;
+    min-height: 80vh;
+    background-color: rgba(180,20,20,0.05);
+    /* display: block; // this is the default */
+    /* display: none; */
+
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+    /* display: grid */
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-areas: "nav nav nav"
+                             "aside art footer"
+                             ;*/
+    
+}
+
+main > * {
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(30, 30,200,0.1);
+    /* display: inline; */
+    /* flex: 1 200px; */
+    /*  */
+}
+
+h1 > span {
+    background-color: yellow;
+    /* padding: 60px; */
+    border: 2px solid magenta;
+    /* display: block; */
+}
+
+nav {
+    /* grid-area: nav; */
+}
+
+aside {
+    /* align-self: flex-end ; */
+    /* order: -1; */
+    /* grid-area: aside; */
+
+}
+
+article {
+    /* flex: 2 400px; */
+    /* grid-area: art; */
+    
+}
+
+
+footer.outer {
+    /* grid-area: footer; */
+}
+
+
+/* Not really relevant for today but I want you to see how I modified content with pure CSS */
+/* p.normal:nth-of-type(2)::after { */
+/*     content: ' -    Mwahahahahhaha'; */
+/*     background-color: purple; */
+             
+/* } */
+
+
+/* put our media queries here */
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "nav nav nav" "aside art art" "footer footer footer";
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "nav" "art" "aside" "footer";
+        
+    }
+}
+
+#+end_src
+#+begin_src html
+<main>
+  <article>
+    <header>
+      <h1>H1 inside Header</h1>
+    </header>
+    <section>
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+      <img alt="Juergen Habermas" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/JuergenHabermas_retouched.jpg/407px-JuergenHabermas_retouched.jpg"/>
+      <p>Third Paragraph</p>
+    </section>
+    <footer>Footer text -- no nested elements</footer>
+  </article>
+</main>
+#+end_src
+
+
+#+Attr_reveal: :No-Klipsify T
+#+NAME: generate_shadow_dom
+#+begin_src inline-js :var elId="shadowEx"  :var dom_block=css_rules0 :exports none
+function createElementFromHTML(htmlString) {
+  let div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change This to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+// window.addEventListener("load",function(){
+var htmlString = dom_block;
+if (typeof document != 'undefined') {
+  let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+  sroot.appendChild(createElementFromHTML(htmlString));
+}
+//return (htmlString);
+  console.log("HTMLSTRING!" + htmlString);
+// });
+#+end_src
+
+
+** COMMENT Padding's Effects
+:PROPERTIES:
+:CUSTOM_ID: padding's-effects-1fea
+:END:
+#+BEGIN_SRC html
+<style>
+.simple {
+  width: 500px;
+  height: 50px;
+  background-color: black;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+.fancy {
+  width: 500px;
+  height: 50px;
+  padding: 50px;
+  background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+</style>
+<div class="simple"></div>
+<div class="fancy"></div>
+#+END_SRC
+#+BEGIN_NOTES
+~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+#+END_NOTES
+
+
+** COMMENT Box-sizing Border-box
+:PROPERTIES:
+:CUSTOM_ID: box-sizing-border-box-35df
+:END:
+#+BEGIN_SRC html
+<style>
+.simple {
+  width: 500px;
+  height: 50px;
+  //background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+.fancy {
+  width: 500px;
+  height: 50px;
+  padding: 50px;
+  background-color: black;
+  //background-clip: content-box;
+  margin: 20px auto;
+  border: 10px blue solid; }
+
+div {box-sizing: border-box;}
+</style>
+<div class="simple"></div>
+<div class="fancy"></div>
+#+END_SRC
+
+#+BEGIN_NOTES
+~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+
+#+END_NOTES
+
+
+** COMMENT Positioning
+:PROPERTIES:
+:CUSTOM_ID: positioning-9151
+:END:
+
+This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
+
+The CSS "position" property has four possible values, whose names are [[http://learnlayout.com/position.html][impossible to remember and anyway don't make sense]].  The four most important are:
+
+#+BEGIN_SRC css
+.static {
+  position: static;
+}
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: white;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+#+END_SRC
+
+- *Static* positioning is the default.  A statically-positioned element is said to be "unpositioned".
+- *Relatively* positioned elements are displaced /relative/ to the position they "ought" to be occupying (according to the defaults).  But meanwhile, the space it "ought" to be occupying is still considered "taken" by the browser, which won't put anything else in that space unless you force it to do so.
+- *fixed* elements have their position /fixed/ to a spot on the screen (which is called "the viewport" in CSS talk).  This is great when you want a fixed header or footer.
+- *absolutely*-positioned elements are like fixed elements, only they're positioned relative to the /closest positioned ancestor/, usually an element with a position property value of "relative".
+
+Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
+
+** COMMENT Positioning 2: Float
+:PROPERTIES:
+:CUSTOM_ID: positioning-2:-float-2153
+:END:
+So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
+
+Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
+
+** COMMENT Changes Comin' Round Real Soon
+:PROPERTIES:
+:CUSTOM_ID: changes-comin'-round-real-soon-bbf2
+:END:
+All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
+
+[[http://jsbin.com/yukiwe/3/edit?html,css][Here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. They are pretty fun; if you want, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
+
+** COMMENT Exercise
+:PROPERTIES:
+:CUSTOM_ID: exercise-ea33
+:END:
+Let's do a Habermas exercise
+- [[https://github.com/titaniumbones/HabermasCode/][Here's the repo, for working in Atom]]
+- [[http://jsbin.com/yawujap/6/edit?html,css,js][...and her it is on JSBin]]
+** COMMENT Notes
+:PROPERTIES:
+:CUSTOM_ID: comment-notes-6401
+:END:
+Rosenzweig, abundance
+#+BEGIN_QUOTE
+Ignacio's sudden deletion of Bert should capture our interest as historians since it dramatically illustrates the fragility of evidence in the digital era. If Ignacio had published his satire in a book or magazine, it would sit on thousands of library shelves rather than having a more fugitive existence as magnetic impulses on a web server. Although some historians might object that the Bert Is Evil web site is of little historical significance, even traditional historians should worry about what the digital era might mean for the historical record. U.S. government records, for example, are being lost on a daily basis. Although most government agencies started using e-mail and word processing in the mid-1980s, the National Archives still does not require that digital records be retained in that form, and governmental employees profess confusion over whether they should be preserving electronic files.3 Future historians may be unable to ascertain not only whether Bert is evil, but also which undersecretaries of defense were evil, or at least favored the concepts of the "evil empire" or the "axis of evil." Not only are ephemera like "Bert" and government records made vulnerable by digitization, but so are traditional works–books, journals, and film–that are increasingly being born digitally. As yet, no one has figured out how to ensure that the digital present will be available to the future's historians.
+
+But, as we shall see, tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? In fact, the Bert Is Evil story could be used to tell a very different tale about the promiscuity and even persistence of digital materials. After all, despite Ignacio's pleas and Children's Television Workshop's threats, a number of Bert "mirror" sites persist. Even more remarkably, the Internet Archive–a private organization that began archiving the web in 1996–has copies of Bert Is Evil going back to March 30, 1997.
+
+The struggle to incorporate the possibilities of new technology into the ancient practice of history has led, most importantly, to questioning the basic goals and methods of our craft. For example, the Internet has dramatically expanded and, hence, blurred our audiences. A scholarly journal like this one is suddenly much more accessible to high school students and history enthusiasts. And the work of history buffs is similarly more visible and accessible to scholars. We are forced, as a result, to rethink who our audiences really are. Similarly, the capaciousness of digital media means that the page limits of journals like this one are no longer fixed by paper and ink costs. As a result, we are led to question the nature and purpose of the scholarly journals–why do they publish articles with particular lengths and structures? Why do they publish particular types of articles? The simultaneous fragility and promiscuity of digital data requires yet more rethinking–about whether we should be trying to save everything, who is "responsible" for preserving the past, and how we find and define historical evidence.
+
+But much–really, most–of the record of previous historical eras has disappeared. "The members of prehistoric societies did not think they lived in prehistoric times," Washington Post writer Joel Achenbach observes. "They merely lacked a good preservation medium." And non-digital records that have survived into this century–from Greek and Chinese antiquities to New Guinean folk traditions to Hollywood films–are also seriously threatened.9
+
+Print books and records decline slowly and unevenly–faded ink or a broken-off corner of a page. But digital records fail completely–a single damaged bit can render an entire document unreadable. Here is the key difference from the paper era: we need to take action now because digital items very quickly become unreadable, or recoverable only at great expense.
+
+But the medium is far from the weakest link in the digital preservation chain. Well before most digital media degrade, they are likely to become unreadable because of changes in hardware (the disk or tape drives become obsolete) or software (the data are organized in a format destined for an application program that no longer works). The life expectancy of digital media may be as little as ten years, but very few hardware platforms or software programs last that long.
+
+The problem is still worse because of the ability of digital media to create and represent complex, dynamic, and interactive objects–another of their great virtues. Even relatively simple documents that appear to have direct print analogs turn out to be more complex. Printing out e-mail messages makes rapid searches of them impossible and often jettisons crucial links to related messages and attachments.
+
+. But digital information–because it is so easily altered and copied, lacks physical marks of its origins, and, indeed, even the clear notion of an "original"–cannot be authenticated as physical documents and objects can. We have, for example, no way of knowing that forwarded e-mail messages we receive daily have not been altered. In fact, the public archive of Usenet discussion groups contains hundreds of deliberately and falsely attributed messages. "Fakery," write David Bearman and Jennifer Trant, "has not been a major issue for most researchers in the past, both because of the technical barriers to making plausible forgeries, and because of the difficulty with which such fakes entered an authoritative information stream."14 Digital media, tools, and networks have altered the balance.
+
+But this "system" will not work in the digital era because preservation cannot begin twenty-five years after the fact. What might happen, for example, to the records of a writer active in the 1980s who dies in 2003 after a long illness? Her heirs will find a pile of unreadable 5 1/4" floppy disks with copies of letters and poems written in WordStar for the CP/M operating system or one of the more than fifty now-forgotten word-processing programs used in the late 1980s.23
+
+Thus the Internet Archive is very far from the complete solution to the problem of digital preservation. It does not deal with the digital records that vex the National Archives and other repositories because they lack the public accessibility and minimal standardization in HTML of web pages. Nor does it include much formally published literature–e-books and journals–which is sold and hence gated from view. And even for what it has gathered, it has not yet hatched a long-term preservation plan, which would have to incorporate a strategy for continuing access to digital data that are in particular (and time-bound) formats. 
+
+If historians are to set themselves "against forgetting" (in Milan Kundera's resonant phrase), then they may need to figure out new ways to sort their way through the potentially overwhelming digital record of the past. Contemporary historians are already groaning under the weight of their sources. Robert Caro has spent twenty-six years working his way through just the documents on Lyndon B. Johnson's pre-vice-presidential years–including 2,082 boxes of Senate papers. Surely, the injunction of traditional historians to look at "everything" cannot survive in a digital era in which "everything" has survived.55
+
+f historians are going to join in preservation discussions, they will have to make themselves better informed about the simultaneous abundance of historical sources and scarcity of financial resources that lead archivists and librarians to respond with exasperation to scholars' blithe insistence that everything must be saved.
+
+ When Shirley Baker, president of the Association of Research Libraries, challenged historian Robert Darnton's favorable review of Baker's book and noted "choices have always had to be made" in the absence of "greater public commitment to the preservation of the historical record," Darnton responded by urging the establishment of "a new kind of national library dedicated to the preservation of cultural artifacts" (including disappearing digital records) and funded by income generated by the sale or rental of bandwidth.65 
+
+
+#+END_QUOTE
+
+Turkel, Going Digital
+#+BEGIN_QUOTE
+ Electronic digital information can be duplicated at near-zero cost, transmitted at the speed of light, stored in infinitesimally small volumes, and created, processed and consumed by machines.  This means that ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as open access, open content and open source) and the explosion of new information are manifestations of these changing costs.
+
+You won’t be able to read everything.  Estimates of the amount of new information that is now created annually are staggering (2003, 2009).  As you become more skilled at finding online sources, you will discover that new material on your topic appears online much faster than you can read it.  The longer you work on something, the more behind you will get.  This is OK, because everyone faces this issue whether they realize it or not.  In traditional scholarship, scarcity was the problem: travel to archives was expensive, access to elite libraries was gated, resources were difficult to find, and so on.  In digital scholarship, abundance is the problem.  What is worth your attention or your trust?
+
+Assume that what you want is out there, and that you simply need to locate it.
+#+END_QUOTE
+#+begin_src sh :results output
+${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Many-More-Than-a-Million
+#+end_src
+
+#+RESULTS:
+#+begin_example
+---- HIGHLIGHTS: ---
+
+But when the dirty OCR was paired with the page images, the value of the technique became greatly enhanced because the text was considered good enough for searching, and potentially ambiguous results could be compared with the page image, which was considered authoritative. This strategy of linking page images with OCR enables us to make effective use of large corpora of relatively cheaply scanned books and was, in large measure, effective because it points backwards to the limitations of print: search gets human readers to the page and leaves them to parse out its meaning.
+
+In short, digitization does provide scale \(or quantity\) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. So given the trade-off between scale and encoding in converted text corpora, what are our options, and where are the opportunities?
+
+Very large collections based on image books differ from first-generation
+digital collections by one or more orders of magnitude. Of course, they
+are much larger: one internal estimate of Google’s collection in spring
+2007 suggested that their searches were scanning at least 2 million
+books already. At the same time, these collections are much more
+heterogeneous, with books from any library shelf likely to find their way
+into the scanning workflow. The range of subjects is thus far broader than
+in the curated collections to which we are accustomed. The range of
+subjects means that error rates will be much more variable, with OCR of
+many texts in non-standard scripts (e.g., Arabic, Classical Greek)
+producing little or no searchable text.
+
+Linguistics. Automatically track patterns in morphology, syntax, and semantics across large stretches of time, space, and culture. These studies might be synchronic
+
+Intellectual history. Dan Cohen, assistant professor in the Department of History and Art History at George Mason University, pointed out that the secularization thesis, for example, states that the role of religion declined in general discourse during the 19th century, but most studies of this topic have been anecdotal. If we could track references to the Bible or to other religious terminology across thousands of texts, we could begin to put this thesis on more solid footing.
+
+
+Social and economic history. Will Thomas, professor of history at the University of Nebraska-Lincoln, pointed out the implications of very large collections for the study of broad socioeconomic topics such as the influence of railroads in U.S. history. Researchers can mine very large collections for references to, and propositional statements about, railroads to trace their development during the 19th century.
+
+This faculty member faces two fundamental challenges: understanding and then communicating with intellectual communities that have different assumed background knowledge, different ideas of what questions are and are not important, different conventions of argumentation, and so on.
+
+
+. We need to provide not only accurate keystrokes but also semantic markup.
+
+
+
+
+Raw OCR output from page images with human-curated book-level metadata is the starting point for all work. Automatically generated metadata, capturing structural elements \(e.g., tables of contents, chapters/sections, footnotes, marginalia, indices\) will be sufficient for many purposes.
+
+Curated structural metadata. If we have carefully marked the headwords of a reference work such as the Encyclopedia Britannica 13th edition, we can then use the OCR-generated text for each article to train classifiers to distinguish references to various Springfields or Washingtons in unstructured text.
+
+
+So, this workshop posed one big question: How does scale in content, made possible by mass digitization, change humanities research? As a result of the discussion, we can now pose five questions that parse this broad question into more manageable topics for research:
+
+\) How do traditional archival values migrate into the computationally intensive environment made possible by copious digital data and digital tools?
+
+2\) When only the computer actually "reads" the object or the text, a new and not fully understood relationship is created among author, tools,
+
+objects, and readers \(or users\)
+
+
+Recognition of the value of the digital research and its expression in digital form, even if that expression is subject to ongoing change by subsequent generations of scholar
+
+Recognition of digital scholarship that focuses on infrastructure. Classicists spent centuries creating the critical editions, lexica, grammars, encyclopedias, commentaries, and technical studies on which twentieth-century scholarship largely depended. We now need machine-actionable knowledge bases that can serve advanced systems and human researchers alike. These knowledge bases have print antecedents but the need to represent them in machine- actionable form and to support complex services may ultimately render them qualitatively different from their print predecessors. We need in the humanities as in the sciences to attract and support some of our most promising scholars to bridge the gap between the needs, present and potential, of the humanities and the possibilities enabled by scholarship.
+
+
+Finding ways to provide analytical access the Open Content book data now available should be a priority. Scholars should be able to pose questions that analyze very large collections: e.g., what passages from Shakespeare or the Bible appear in different genres over time?
+
+should apply exemplary questions to open collections such as the OCA, access functions that Google, Microsoft, and others provide to end-user services and APIs.
+
+e need to clarify the costs and benefits of book scanning vs. the intensive transcription and markup of complex knowledge sources. We cannot afford to apply human labor and expertise directly to more than a tiny percentage of the published record of humanity. Are there printed materials that would, if carefully converted into machine actionable form, uniquely enhance our ability to analyze relatively unbounded bodies of
+
+We need to understand more clearly how to relate high- value, domain-specific services and data structures to services and data structures that are common to all collections. Every discipline needs text searches, but some communities need different kinds of search.
+
+
+#+end_example
+
+
+Annotations:
+#+begin_example
+--- Annotations: ---
+#+end_example
+
+** COMMENT Some thoughts about [[http://offshore-interactive.com/#lowerplatform][Offshore-Interactive]]
+:PROPERTIES:
+:CUSTOM_ID: some-thoughts-about-[[http://offshore-interactive.com/#lowerplatform][offshore-interactive]]-0f41
+:END:
+- video-game interface
+- narrative tension
+- "oral history" emphasis
+- Is this how we have to write? 
+** COMMENT Website Evaluation
+:PROPERTIES:
+:CUSTOM_ID: website-evaluation-e904
+:END:
+Check out the Github Repo:
+https://github.com/titaniumbones/website-review
+
+With a (new!) partner, follow the directions!
+
+** COMMENT Template
+:PROPERTIES:
+:CUSTOM_ID: template-35a0
+:END:
+#+BEGIN_SRC markdown
+  # Review of [Website Name](URL)
+  ## by Your First Names
+
+
+  ## What does the URL tell you?
+  Is this a personal site, a university-sponsored site, a corporate enterprise? 
+
+  ## What's the Subject Matter?
+  - In broad outlines, describe the scope of the website
+
+  ## Is it trustworthy?
+  - Are Sources Documented?
+  - If links are provided, links to where?
+  - Any evidence of plagiarism?
+
+  ## Does Web Publication _enhance_ the storytelling?
+  - What does the website do that would be _difficult_ to achieve in a linear narrative?
+  - Is anything _lost_ by non-linear organization?
+  - How might you suggest _improving_ the site?
+
+  ## Overall, would you recommend this site to someone interested in the subject matter? To a researcher? 
+#+END_SRC
+** COMMENT List of Sites
+:PROPERTIES:
+:CUSTOM_ID: list-of-sites-8732
+:END:
+- [[http://lostmuseum.cuny.edu/index.php][The Lost Museum]]
+- [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/project.php?id=997][Shaping the West]]
+- [[http://www.historylearningsite.co.uk/][History Learning Site]]
+- [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/project.php?id=1005][Between the Tides]]
+- [[http://www.twoplantations.com/][Two Plantations]]
+- [[http://revolt.axismaps.com/acknowledgments.html][Slave Revolt in Jamaica, 1760-61]]
+- [[http://braceroarchive.org/][Bracero History Archive]]
+- [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
+- [[http://www.british-history.ac.uk/][British History Online]]
 * COMMENT 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
@@ -2597,976 +3904,8 @@ When information is generally useful, redistributing it makes humanity wealthier
 - Access
 
 Future of the web and of historical scholarship depends on /continued struggle/ over these contested values.
-* 03-02 And Now: CSS!
-:PROPERTIES:
-:ID:       o2b:a5ac6273-2677-4058-9687-ee0d1cf51826
-:POSTID:   616
-:EXPORT_FILE_NAME: 03-2-css
-:CUSTOM_ID: and-now:-css-03b2
-:END:
-
-** Reminder
-:PROPERTIES:
-:CUSTOM_ID: reminder-974a
-:END:
-- HTML for *structure/content*;
-- CSS for *presentation*
-- Resources:  [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings;  [[http://learnlayout.com/][Learn Layout]]; [[https://developer.mozilla.org/en-US/docs/Web/CSS][Mozilla Developer Network]]; many other cool sites
-
-# Exercise for today: https://github.com/DigitalHistory/css-styling/ 
-
-** What you Need to Learn Today
-:PROPERTIES:
-:CUSTOM_ID: what-you-need-to-learn-today-f47f
-:END:
-- syntax: selectors, rules, punctuation;
-- jargon: colors, sizes
-- where to look stuff up (!)
-
-** CSS Basics
-:PROPERTIES:
-:CUSTOM_ID: css-basics-6376
-:END:
-- "[[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]]"
-- Style sheet
-- that "cascades" = overrides prior values
-[[http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg]]
-
-#+begin_notes
-two "dimensions" to cascade (source order and specificity)
-
-- specificity is the hard/important one.  
-#+end_notes
-** With and without CSS
-:PROPERTIES:
-:CUSTOM_ID: with-and-without-css-43a6
-:END:
-#+ATTR_HTML: :class paired
-[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
-#+ATTR_HTML: :class paired
-[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
-
-
-** CSS Selectors
-:PROPERTIES:
-:CUSTOM_ID: css-selectors-ab36
-:END:
-*** Intro
-:PROPERTIES:
-:CUSTOM_ID: -c0f8
-:END:
-#+BEGIN_SRC css 
-  h1 {
-      color:blue;
-      font-family:serif; 
-      font-size:24px; 
-  }
-
-  div {
-      border: 1px solid black;
-  }
-
-  div.main p {
-      color:red;
-  }
-
-  #specialid {
-      float:left;
-  }
-#+END_SRC
-
-#+BEGIN_NOTES
-When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
-They all follow the same pattern: 
-- first, a *selector* that identifies the elements to which these instructions will apply
-- then *an open brace* "{" which marks the start of the actual instructions
-- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
-- finally, *a closing brace* that ends the selector declaration.
-#+END_NOTES
-*** Selector Anatomy
-:PROPERTIES:
-:CUSTOM_ID: selector-anatomy-9f2b
-:END:
-#+NAME:css_rules0
-#+begin_src html
-<style>
- h1#anatomy1 {
-      display: inline-flex;
-     padding: 15px;
-     background-color: rgb(30,30,30,0.1);
-     font-size: 1.4em;
-     border: 2px gray solid; }
-  h1#anatomy1 span {padding: 4px;border: 2px black solid; background-color: rgba(10,70,10,0.6);}
-  h1#anatomy1 span.selector {background-color: rgba(150, 20, 20, 0.4);}
-  h1#anatomy1 span.rule {background-color: rgba(70, 10,70, 0.4);}
-  h1#anatomy1 span.value {background-color: rgba(10,150, 150, 0.4);}
-
-</style>
-
-<h1 id="anatomy1">
-  <span class="selector">selector.has >  #funny:stuff</span>
-  <span class="bracket">{</span>
-  <span class="rule">rule:</span>
-  <span class="value">value in (approved);</span>
-  <span class="bracket">}</span>
-</h1>
-#+end_src
-
-
-#+begin_src js :var elId="shadow1"
-let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
-console.log(elId);
-#+end_src
-
-#+RESULTS:
-#+begin_src js
-#+end_src
-
-#+NAME:generate_shadow_element
-#+begin_src js :var elId="shadow1"
-let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
-let htmlString =
-#+end_src
-*** 
-#+begin_export html
-<div id="shadowEx"></div>
-
-<script>
-let sroot = document.getElementById('shadowEx').attachShadow({mode: 'open'});
-let htmlString = `
-<<css_rules0>>
-`;
-// let doc = new DOMParser().parseFromString(htmlString, "text/xml");
-function createElementFromHTML(htmlString) {
-  var div = document.createElement('div');
-  div.innerHTML = htmlString.trim();
-
-  // Change this to div.childNodes to support multiple top-level nodes
-  return div; 
-}
-
-sroot.appendChild(createElementFromHTML(htmlString));
-</script>
-#+end_export
-
-*** Selector types
-:PROPERTIES:
-:CUSTOM_ID: selector-types
-:END:
-
-#+BEGIN_SRC html
-<style>
-h1 {
-font-size: 2em;
-color: red;
-}
-p {
-font-size:5em}
-
-.coolpara {
-color:green;
-}
-
-#myfave {
-color:yellow;
-background-color: black;
-}
-</style>
-
-<h1> Heading</h1>
-<p class="coolpara">Some Content</p>
-<p id="myfave">Some Content</p>
-
-#+END_SRC
-
-#+BEGIN_NOTES
-Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
-- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
-- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
-
-- *ID* selector:  this addresses the element with a particular ID:
-
-#+END_NOTES
-*** Selector types
-:PROPERTIES:
-:CUSTOM_ID: selector-types-e94f
-:END:
-#+begin_export html
-
-<style>
-div#cssdemo h1 {
-font-size: 3em;
-color: red;
-}
-div#cssdemo p {
-font-size:5em}
-
-.coolpara {
-color:green;
-}
-
-div#cssdemo #myfave {
-color:yellow;
-background-color: black;
-}
-</style>
-
-<div id="cssdemo">
-<h1> Heading</h1>
-<p class="coolpara">Some Content</p>
-<p id="myfave">Some Content</p>
-</div>
-#+end_export
-
-*** More Selectors
-:PROPERTIES:
-:CUSTOM_ID: more-selectors-d28a
-:END:
-#+BEGIN_SRC css
-div.main p {
-      color:red;
-  }
-
-div.main > p.blue {
-      color: blue;
-}
-#+END_SRC
-
-#+BEGIN_NOTES
-- Finally, we have many more complex selectors.  This one here is a descendant selector
-It addresses every *p* that is contained inside a div of *class* /"main."/
-#+END_NOTES
-
-*** More Selectors
-:PROPERTIES:
-:CUSTOM_ID: more-selectors-d8a0
-:END:
-#+BEGIN_export html
-<style>
-div#cssmain p {
-      color:red;
-  }
-
-div#cssmain > p.blue {
-      color: blue;
-}
-</style>
-<div id="cssmain">
-<p> regular (red) paragraph</p>
-  <p class="blue"> not a regular paragraph (blue) </p>
-
-</div>
-#+END_export
-** Selectors and the Cascade
-:PROPERTIES:
-:CUSTOM_ID: selectors-and-the-cascade-0a08
-:END:
-- Priority: inline \rightarrow id \rightarrow class \rightarrow element/tag
-- fine gradations within this
-- the awful *!important* rule
-** Color Values
-:PROPERTIES:
-:CUSTOM_ID: color-values-456b
-:END:
-Various representations:
-#+begin_export html
-<style>
-ul#color-rules {font-size 1.5rem;}
-ul#color-rules li span.red {color: #FF0000}  
-ul#color-rules li span.green {color: #00FF00}  
-ul#color-rules li span.blue {color: #0000FF}  
-</style>
-
-<ul id="color-rules">
-  <li>
-    color: #
-    <span class="red">00</span>
-    <span class="green">7F</span>
-    <span class="blue">FF</span>
-    ;
-  </li>
-  <li>
-    color: rgb(
-    <span class="red">00</span>,
-    <span class="green">127</span>,
-    <span class="blue">255</span>
-    );
-  </li>
-  <li>
-    color: rgba(
-    <span class="red">00</span>,
-    <span class="green">127</span>,
-    <span class="blue">255</span>, 0.6);
-  </li>
-</ul>
-#+end_export
-
-(also hsl, hsla)
-*** Fonts, colors and borders
-:PROPERTIES:
-:CUSTOM_ID: fonts,-colors-and-borders-127a
-:END:
-#+BEGIN_SRC css
-div.main {
-      color: rgb(150,150,150);
-      background-color: (#b0c4ee);
-      text-align: center;
-      text-decoration:underline;
-      font-family: "Times New Roman", Times, Serif;
-      font-style:italic;
-      font-size:1.25em;
-      border: 4px green solid;
-      border-radius:20%;
-  }
-#+END_SRC
-#+BEGIN_NOTES
-A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
-There are plenty of other properties that can be set, in much the same way.
-#+END_NOTES
-*** Fonts and Colors in Action
-:PROPERTIES:
-:CUSTOM_ID: fonts-and-colors-in-action-1cb9
-:END:
-#+BEGIN_export html
-<style>
-div#maincss2 {
-      color: rgb(150,150,150);
-      background-color: (#b0c4ee);
-      text-align: center;
-      text-decoration:underline;
-      font-family: "Times New Roman", Times, Serif;
-      font-style:italic;
-      font-size:1.25em;
-      border: 4px green solid;
-      border-radius:20%;
-  }
-</style>
-<div id="maincss2">
-   <p> here is a sample paragraph doing all of this stuff...</p>
-#+END_export
-** Sizes 
-:PROPERTIES:
-:CUSTOM_ID: sizes-af7f
-:END:
-#+begin_src html
-<style>
- p.fixed {
-     font-size: 20px;
-     background-color: gray;
-     } 
- p.em-small {
-     font-size: 0.4em;
-     background-color: blue;
- }
- p.em-big {
-     font-size: 2.5em;
-     background-color: red;
- }
- div.pixel-box {
-     width: 50px;
-     height: 50px;
-     border: 1px solid black;
- }
- div.percent-box {
-     width: 20%;
-     height: 20px;
-     border: 1px solid black;
- }
- div.viewport-box {
-     width: 30vw;
-     height: 30vh;
-     border: 1px solid black;
- }
- 
-</style>
-
-<p class="fixed">This paragraph will be syled differently from its peers</p>
-<p class="em-small">This paragraph will be syled differently from its peers</p>
-<p class="em-big">This paragraph will be syled differently from its peers</p>
-
-<div class="pixel-box"></div>
-<div class="percent-box"></div>
-<div class="viewport-box"></div>
-#+end_src
-** Sizes
-:PROPERTIES:
-:CUSTOM_ID: sizes-082b
-:END:
-#+begin_export html
-<style>
- p.fixed {
-     font-size: 20px;
-     background-color: gray;
- }
- p.em-small {
-     font-size: 0.4em;
-     background-color: blue;
- }
- p.em-big {
-     font-size: 2.5em;
-     background-color: red;
- }
- div.pixel-box {
-     width: 50px;
-     height: 50px;
-     border: 1px solid black;
- }
- div.percent-box {
-     width: 20%;
-     height: 20px;
-     border: 1px solid black;
- }
- div.viewport-box {
-     width: 30vw;
-     height: 30vh;
-     border: 1px solid black;
- }
- 
-</style>
-
-<p class="fixed">This paragraph will be syled differently from its peers</p>
-<p class="em-small">This paragraph will be syled differently from its peers</p>
-<p class="em-big">This paragraph will be syled differently from its peers</p>
-
-<div class="pixel-box"></div>
-<div class="percent-box"></div>
-<div class="viewport-box"></div>
-#+end_export
-
-** Group Work:  HTML
-:PROPERTIES:
-:CUSTOM_ID: group-work-2:--html,-continued-03e2
-:END:
-Let's continue our introduction to HTML in VSCode
-- *Clone  the excercse* [[https://github.com/titaniumbones/HabermasCode][at the Github Repository]]
-#+BEGIN_NOTES
-Here you can see the all parts of the page in different panes.  try to add:
-- images
-- lists
-- real links
-- anything else you can think of 
-Try to keep it "real", and work as *teams*, with one person driving, and the other person looking stuff up on another computer.  
-#+END_NOTES
-** Simple Exercise
-:PROPERTIES:
-:CUSTOM_ID: simple-exercise-ca4d
-:END:
-https://github.com/DigitalHistory/css-styling/
 * 
 
-* 04: Pt 1, CSS Part 2: Layout
-:PROPERTIES:
-:EXPORT_FILE_NAME: 04-01-css-layout
-:CUSTOM_ID: 04:-pt-1,-css-part-2:-layout-494e
-:END:
-
-** Recap
-:PROPERTIES:
-:CUSTOM_ID: recap-7f3b
-:END:
-- selector syntax: ~selector > string {property: value;}~
-- colors: ~#RRGGBB~ or ~rgba(RRR, BBB, GGG, 0.alpha)~
-- sizes: ~px~ or ~em~ (or ~rem~)
-
-** Today
-:PROPERTIES:
-:CUSTOM_ID: today-e46c
-:END:
-- intro to layout
-- follow along with the repo: https://github.com/DigitalHistory/css-layout 
-
-** Box Model
-:PROPERTIES:
-:CUSTOM_ID: box-model-6dae
-:END:
-
-[[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
-
-- content
-- padding
-- border
-- margin
-#+begin_notes
-One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
-
-#+end_notes
-** "Russian Dolls"
-:PROPERTIES:
-:CUSTOM_ID: russian-dolls-ba13
-:END:
-
-https://www.w3.org/TR/css-flexbox-1/images/flex-order-page.svg
-** Display: Block vs. Inline
-:PROPERTIES:
-:CUSTOM_ID: display:-block-vs.-inline-1e99
-:END:
-https://i.stack.imgur.com/mGTYI.png
-- *block* elements *have their own boxes*
-- *inline* elements *do not have boxes*. height, width, padding, work inconsistently.
-- *inline-block* elements don't make "true" boxes but allow you to set height and width. 
-#+begin_notes
-by default, these elements are inline:
-- a, b, i, strong, em, span, img
-while these are block:
-- div, article, section, nav, hx, p, ul, ol, li, main, header, footer
-#+end_notes
-** Normal Flow
-:PROPERTIES:
-:CUSTOM_ID: normal-flow-9b65
-:END:
-- page processed sequentially
-- each block-level element gets its own line
-- inline elements displayed inside those lines
-- heights of lines set by height of content 
-** Layout: Overriding "normal" flows
-:PROPERTIES:
-:CUSTOM_ID: layout:-overriding-normal-flows-6043
-:END:
-- instruct elements to either *step out of the normal flow* or *set new rues for their "internal" or "external" flow*
-** Layout Methods
-:PROPERTIES:
-:CUSTOM_ID: layout-methods-5357
-:END:
-- *display* property
-- *position* property
-- *float* property
-
-We focus on *display* but dip into the other methods
-** Display
-:PROPERTIES:
-:CUSTOM_ID: display-f731
-:END:
-values we care about: 
-- display: none
-- display: block/inline/inline-block
-- display: flex
-- display: grid
-** Follow Along
-:PROPERTIES:
-:CUSTOM_ID: follow-along-e70b
-:END:
-- I'll be using *dev tools* to quickly change css properties
-- do the same if you wish!
--  https://github.com/DigitalHistory/css-layout 
-** Display: None
-:PROPERTIES:
-:CUSTOM_ID: display:-none-5a37
-:END:
-hide element *completely* so that it takes up no space at all 
-** Display: Flex
-:PROPERTIES:
-:CUSTOM_ID: display:-flex-2a88
-:END:
-- one-dimensional layout
-- "content-out"
-  - container determines direction & a few defaults
-  - most styling still in children
-- revolutionary!
-*** Flex Concepts: Container and Items
-:PROPERTIES:
-:CUSTOM_ID: flex-concepts:-container-and-items-c4e5
-:END:
-- the *container* has *display: flex;*
-- the *items* are *direct children of the container*
-- *container* controls *direction* and *wrapping behaviour*, as well as *default box alignments*;
-- *items* control most other properties
-*** Flex Concepts: Direction (container!)
-:PROPERTIES:
-:CUSTOM_ID: flex-concepts:-direction-(container)-0ecf
-:END:
-https://mdn.mozillademos.org/files/3739/flex_terms.png
-- *main axis*: horizontal if *flex-direction: column*; vertical if *flex-direction: row*
-- *cross axis*: vertical if *flex-direction: column*; horizontal if *flex-direction: row*
-*** Flex Concepts: Alignment, Justification (container and items!) 
-:PROPERTIES:
-:CUSTOM_ID: flex-concepts:-alignment,-justification-(container-and-items)-40c6
-:END:
-- *align-items*: default cross-axis alignment (stretch, flex-start, flex-end)
-- *justify-content*: default main-axis alignment (flex-start, flex-end, space-around, space-between)
-- *align-self:* item cross-axis
-- *order*: placement in flex-container (relative, not absolute!!)
-** Display: Grid
-:PROPERTIES:
-:CUSTOM_ID: display:-grid-f6dd
-:END:
-- two-dimensional layout
-- "container-in"
-  - container determines almost all layout properties
-  - children choose their position within the grid
-- revolutionary!
-*** A lot like flex!
-:PROPERTIES:
-:CUSTOM_ID: a-lot-like-flex-1b97
-:END:
-- many ideas come from flex
-- finer control
-- 2 dimensions, not one
-*** Grid Concepts: Container and Items
-:PROPERTIES:
-:CUSTOM_ID: grid-concepts:-container-and-items-c24b
-:END:
-- as in flex
-*** Grid Concepts: Templates and Areas (container)
-:PROPERTIES:
-:CUSTOM_ID: grid-concepts:-templates-and-areas-(container)-4a8c
-:END:
-- set patterns for the 2-d grid
-- *grid-template-columns*: how many columns, and what size?
-- *grid-template-rows*: how many rows, and what size?
-- *grid-template-areas*: *names* the areas, and allows *items* to set their own areas
-*** Placing Items
-:PROPERTIES:
-:CUSTOM_ID: placing-items-ecc0
-:END:
-- *grid-column: n/m*: place items by *column-number*
-- *grid-row: n/m*: place items by *row-number*
-  - (note how these allow spanning)
-- *grid-area: area-name*: place by *named area*
-  - does not allow spanning
-*** Resources
-:PROPERTIES:
-:CUSTOM_ID: resources-7128
-:END:
-- [[http://grid.malven.co/][visual cheatsheet]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids][MDN Grid series]]
-** Media Queries
-:PROPERTIES:
-:CUSTOM_ID: media-queries-9633
-:END:
-- CSS rules that only come into effect under certain conditions
-- we will only use for *screen size*
-- allows creation of *responsive* sites
-#+begin_src css
-@media screen and (min-width: 500px;) {
-    normal.selector > here {
-        normal-rule: normal-value;
-    }
-}
-
-@media screen and (max-width: 499px) {
-    normal.selector > here {
-        normal-rule: normal-value;
-    }    
-}
-#+end_src
-
-** COMMENT Padding's Effects
-:PROPERTIES:
-:CUSTOM_ID: padding's-effects-1fea
-:END:
-#+BEGIN_SRC html
-<style>
-.simple {
-  width: 500px;
-  height: 50px;
-  background-color: black;
-  margin: 20px auto;
-  border: 10px blue solid; }
-
-.fancy {
-  width: 500px;
-  height: 50px;
-  padding: 50px;
-  background-color: black;
-  //background-clip: content-box;
-  margin: 20px auto;
-  border: 10px blue solid; }
-</style>
-<div class="simple"></div>
-<div class="fancy"></div>
-#+END_SRC
-#+BEGIN_NOTES
-~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
-
-There are two ways to deal with this:  
-1. subtract the size of the padding and border from your width values
-2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
-#+END_NOTES
-
-
-** COMMENT Box-sizing Border-box
-:PROPERTIES:
-:CUSTOM_ID: box-sizing-border-box-35df
-:END:
-#+BEGIN_SRC html
-<style>
-.simple {
-  width: 500px;
-  height: 50px;
-  //background-color: black;
-  //background-clip: content-box;
-  margin: 20px auto;
-  border: 10px blue solid; }
-
-.fancy {
-  width: 500px;
-  height: 50px;
-  padding: 50px;
-  background-color: black;
-  //background-clip: content-box;
-  margin: 20px auto;
-  border: 10px blue solid; }
-
-div {box-sizing: border-box;}
-</style>
-<div class="simple"></div>
-<div class="fancy"></div>
-#+END_SRC
-
-#+BEGIN_NOTES
-~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
-
-There are two ways to deal with this:  
-1. subtract the size of the padding and border from your width values
-2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
-
-#+END_NOTES
-
-
-** COMMENT Positioning
-:PROPERTIES:
-:CUSTOM_ID: positioning-9151
-:END:
-
-This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
-
-The CSS "position" property has four possible values, whose names are [[http://learnlayout.com/position.html][impossible to remember and anyway don't make sense]].  The four most important are:
-
-#+BEGIN_SRC css
-.static {
-  position: static;
-}
-.relative1 {
-  position: relative;
-}
-.relative2 {
-  position: relative;
-  top: -20px;
-  left: 20px;
-  background-color: white;
-  width: 500px;
-}
-.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  background-color: white;
-}
-.absolute {
-  position: absolute;
-  top: 120px;
-  right: 0;
-  width: 300px;
-  height: 200px;
-}
-#+END_SRC
-
-- *Static* positioning is the default.  A statically-positioned element is said to be "unpositioned".
-- *Relatively* positioned elements are displaced /relative/ to the position they "ought" to be occupying (according to the defaults).  But meanwhile, the space it "ought" to be occupying is still considered "taken" by the browser, which won't put anything else in that space unless you force it to do so.
-- *fixed* elements have their position /fixed/ to a spot on the screen (which is called "the viewport" in CSS talk).  This is great when you want a fixed header or footer.
-- *absolutely*-positioned elements are like fixed elements, only they're positioned relative to the /closest positioned ancestor/, usually an element with a position property value of "relative".
-
-Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
-
-** COMMENT Positioning 2: Float
-:PROPERTIES:
-:CUSTOM_ID: positioning-2:-float-2153
-:END:
-So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
-
-Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
-
-** COMMENT Changes Comin' Round Real Soon
-:PROPERTIES:
-:CUSTOM_ID: changes-comin'-round-real-soon-bbf2
-:END:
-All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
-
-[[http://jsbin.com/yukiwe/3/edit?html,css][Here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. They are pretty fun; if you want, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
-
-** COMMENT Exercise
-:PROPERTIES:
-:CUSTOM_ID: exercise-ea33
-:END:
-Let's do a Habermas exercise
-- [[https://github.com/titaniumbones/HabermasCode/][Here's the repo, for working in Atom]]
-- [[http://jsbin.com/yawujap/6/edit?html,css,js][...and her it is on JSBin]]
-** COMMENT Notes
-:PROPERTIES:
-:CUSTOM_ID: comment-notes-6401
-:END:
-Rosenzweig, abundance
-#+BEGIN_QUOTE
-Ignacio's sudden deletion of Bert should capture our interest as historians since it dramatically illustrates the fragility of evidence in the digital era. If Ignacio had published his satire in a book or magazine, it would sit on thousands of library shelves rather than having a more fugitive existence as magnetic impulses on a web server. Although some historians might object that the Bert Is Evil web site is of little historical significance, even traditional historians should worry about what the digital era might mean for the historical record. U.S. government records, for example, are being lost on a daily basis. Although most government agencies started using e-mail and word processing in the mid-1980s, the National Archives still does not require that digital records be retained in that form, and governmental employees profess confusion over whether they should be preserving electronic files.3 Future historians may be unable to ascertain not only whether Bert is evil, but also which undersecretaries of defense were evil, or at least favored the concepts of the "evil empire" or the "axis of evil." Not only are ephemera like "Bert" and government records made vulnerable by digitization, but so are traditional works–books, journals, and film–that are increasingly being born digitally. As yet, no one has figured out how to ensure that the digital present will be available to the future's historians.
-
-But, as we shall see, tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge–what would it be like to write history when faced by an essentially complete historical record? In fact, the Bert Is Evil story could be used to tell a very different tale about the promiscuity and even persistence of digital materials. After all, despite Ignacio's pleas and Children's Television Workshop's threats, a number of Bert "mirror" sites persist. Even more remarkably, the Internet Archive–a private organization that began archiving the web in 1996–has copies of Bert Is Evil going back to March 30, 1997.
-
-The struggle to incorporate the possibilities of new technology into the ancient practice of history has led, most importantly, to questioning the basic goals and methods of our craft. For example, the Internet has dramatically expanded and, hence, blurred our audiences. A scholarly journal like this one is suddenly much more accessible to high school students and history enthusiasts. And the work of history buffs is similarly more visible and accessible to scholars. We are forced, as a result, to rethink who our audiences really are. Similarly, the capaciousness of digital media means that the page limits of journals like this one are no longer fixed by paper and ink costs. As a result, we are led to question the nature and purpose of the scholarly journals–why do they publish articles with particular lengths and structures? Why do they publish particular types of articles? The simultaneous fragility and promiscuity of digital data requires yet more rethinking–about whether we should be trying to save everything, who is "responsible" for preserving the past, and how we find and define historical evidence.
-
-But much–really, most–of the record of previous historical eras has disappeared. "The members of prehistoric societies did not think they lived in prehistoric times," Washington Post writer Joel Achenbach observes. "They merely lacked a good preservation medium." And non-digital records that have survived into this century–from Greek and Chinese antiquities to New Guinean folk traditions to Hollywood films–are also seriously threatened.9
-
-Print books and records decline slowly and unevenly–faded ink or a broken-off corner of a page. But digital records fail completely–a single damaged bit can render an entire document unreadable. Here is the key difference from the paper era: we need to take action now because digital items very quickly become unreadable, or recoverable only at great expense.
-
-But the medium is far from the weakest link in the digital preservation chain. Well before most digital media degrade, they are likely to become unreadable because of changes in hardware (the disk or tape drives become obsolete) or software (the data are organized in a format destined for an application program that no longer works). The life expectancy of digital media may be as little as ten years, but very few hardware platforms or software programs last that long.
-
-The problem is still worse because of the ability of digital media to create and represent complex, dynamic, and interactive objects–another of their great virtues. Even relatively simple documents that appear to have direct print analogs turn out to be more complex. Printing out e-mail messages makes rapid searches of them impossible and often jettisons crucial links to related messages and attachments.
-
-. But digital information–because it is so easily altered and copied, lacks physical marks of its origins, and, indeed, even the clear notion of an "original"–cannot be authenticated as physical documents and objects can. We have, for example, no way of knowing that forwarded e-mail messages we receive daily have not been altered. In fact, the public archive of Usenet discussion groups contains hundreds of deliberately and falsely attributed messages. "Fakery," write David Bearman and Jennifer Trant, "has not been a major issue for most researchers in the past, both because of the technical barriers to making plausible forgeries, and because of the difficulty with which such fakes entered an authoritative information stream."14 Digital media, tools, and networks have altered the balance.
-
-But this "system" will not work in the digital era because preservation cannot begin twenty-five years after the fact. What might happen, for example, to the records of a writer active in the 1980s who dies in 2003 after a long illness? Her heirs will find a pile of unreadable 5 1/4" floppy disks with copies of letters and poems written in WordStar for the CP/M operating system or one of the more than fifty now-forgotten word-processing programs used in the late 1980s.23
-
-Thus the Internet Archive is very far from the complete solution to the problem of digital preservation. It does not deal with the digital records that vex the National Archives and other repositories because they lack the public accessibility and minimal standardization in HTML of web pages. Nor does it include much formally published literature–e-books and journals–which is sold and hence gated from view. And even for what it has gathered, it has not yet hatched a long-term preservation plan, which would have to incorporate a strategy for continuing access to digital data that are in particular (and time-bound) formats. 
-
-If historians are to set themselves "against forgetting" (in Milan Kundera's resonant phrase), then they may need to figure out new ways to sort their way through the potentially overwhelming digital record of the past. Contemporary historians are already groaning under the weight of their sources. Robert Caro has spent twenty-six years working his way through just the documents on Lyndon B. Johnson's pre-vice-presidential years–including 2,082 boxes of Senate papers. Surely, the injunction of traditional historians to look at "everything" cannot survive in a digital era in which "everything" has survived.55
-
-f historians are going to join in preservation discussions, they will have to make themselves better informed about the simultaneous abundance of historical sources and scarcity of financial resources that lead archivists and librarians to respond with exasperation to scholars' blithe insistence that everything must be saved.
-
- When Shirley Baker, president of the Association of Research Libraries, challenged historian Robert Darnton's favorable review of Baker's book and noted "choices have always had to be made" in the absence of "greater public commitment to the preservation of the historical record," Darnton responded by urging the establishment of "a new kind of national library dedicated to the preservation of cultural artifacts" (including disappearing digital records) and funded by income generated by the sale or rental of bandwidth.65 
-
-
-#+END_QUOTE
-
-Turkel, Going Digital
-#+BEGIN_QUOTE
- Electronic digital information can be duplicated at near-zero cost, transmitted at the speed of light, stored in infinitesimally small volumes, and created, processed and consumed by machines.  This means that ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as open access, open content and open source) and the explosion of new information are manifestations of these changing costs.
-
-You won’t be able to read everything.  Estimates of the amount of new information that is now created annually are staggering (2003, 2009).  As you become more skilled at finding online sources, you will discover that new material on your topic appears online much faster than you can read it.  The longer you work on something, the more behind you will get.  This is OK, because everyone faces this issue whether they realize it or not.  In traditional scholarship, scarcity was the problem: travel to archives was expensive, access to elite libraries was gated, resources were difficult to find, and so on.  In digital scholarship, abundance is the problem.  What is worth your attention or your trust?
-
-Assume that what you want is out there, and that you simply need to locate it.
-#+END_QUOTE
-#+begin_src sh :results output
-${HOME}/src/extract_pdf_annotations_to_orgmode/vkextract_annotations_to_orgmode_snippet.sh DH/Readings/Many-More-Than-a-Million
-#+end_src
-
-#+RESULTS:
-#+begin_example
----- HIGHLIGHTS: ---
-
-But when the dirty OCR was paired with the page images, the value of the technique became greatly enhanced because the text was considered good enough for searching, and potentially ambiguous results could be compared with the page image, which was considered authoritative. This strategy of linking page images with OCR enables us to make effective use of large corpora of relatively cheaply scanned books and was, in large measure, effective because it points backwards to the limitations of print: search gets human readers to the page and leaves them to parse out its meaning.
-
-In short, digitization does provide scale \(or quantity\) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. So given the trade-off between scale and encoding in converted text corpora, what are our options, and where are the opportunities?
-
-Very large collections based on image books differ from first-generation
-digital collections by one or more orders of magnitude. Of course, they
-are much larger: one internal estimate of Google’s collection in spring
-2007 suggested that their searches were scanning at least 2 million
-books already. At the same time, these collections are much more
-heterogeneous, with books from any library shelf likely to find their way
-into the scanning workflow. The range of subjects is thus far broader than
-in the curated collections to which we are accustomed. The range of
-subjects means that error rates will be much more variable, with OCR of
-many texts in non-standard scripts (e.g., Arabic, Classical Greek)
-producing little or no searchable text.
-
-Linguistics. Automatically track patterns in morphology, syntax, and semantics across large stretches of time, space, and culture. These studies might be synchronic
-
-Intellectual history. Dan Cohen, assistant professor in the Department of History and Art History at George Mason University, pointed out that the secularization thesis, for example, states that the role of religion declined in general discourse during the 19th century, but most studies of this topic have been anecdotal. If we could track references to the Bible or to other religious terminology across thousands of texts, we could begin to put this thesis on more solid footing.
-
-
-Social and economic history. Will Thomas, professor of history at the University of Nebraska-Lincoln, pointed out the implications of very large collections for the study of broad socioeconomic topics such as the influence of railroads in U.S. history. Researchers can mine very large collections for references to, and propositional statements about, railroads to trace their development during the 19th century.
-
-This faculty member faces two fundamental challenges: understanding and then communicating with intellectual communities that have different assumed background knowledge, different ideas of what questions are and are not important, different conventions of argumentation, and so on.
-
-
-. We need to provide not only accurate keystrokes but also semantic markup.
-
-
-
-
-Raw OCR output from page images with human-curated book-level metadata is the starting point for all work. Automatically generated metadata, capturing structural elements \(e.g., tables of contents, chapters/sections, footnotes, marginalia, indices\) will be sufficient for many purposes.
-
-Curated structural metadata. If we have carefully marked the headwords of a reference work such as the Encyclopedia Britannica 13th edition, we can then use the OCR-generated text for each article to train classifiers to distinguish references to various Springfields or Washingtons in unstructured text.
-
-
-So, this workshop posed one big question: How does scale in content, made possible by mass digitization, change humanities research? As a result of the discussion, we can now pose five questions that parse this broad question into more manageable topics for research:
-
-\) How do traditional archival values migrate into the computationally intensive environment made possible by copious digital data and digital tools?
-
-2\) When only the computer actually "reads" the object or the text, a new and not fully understood relationship is created among author, tools,
-
-objects, and readers \(or users\)
-
-
-Recognition of the value of the digital research and its expression in digital form, even if that expression is subject to ongoing change by subsequent generations of scholar
-
-Recognition of digital scholarship that focuses on infrastructure. Classicists spent centuries creating the critical editions, lexica, grammars, encyclopedias, commentaries, and technical studies on which twentieth-century scholarship largely depended. We now need machine-actionable knowledge bases that can serve advanced systems and human researchers alike. These knowledge bases have print antecedents but the need to represent them in machine- actionable form and to support complex services may ultimately render them qualitatively different from their print predecessors. We need in the humanities as in the sciences to attract and support some of our most promising scholars to bridge the gap between the needs, present and potential, of the humanities and the possibilities enabled by scholarship.
-
-
-Finding ways to provide analytical access the Open Content book data now available should be a priority. Scholars should be able to pose questions that analyze very large collections: e.g., what passages from Shakespeare or the Bible appear in different genres over time?
-
-should apply exemplary questions to open collections such as the OCA, access functions that Google, Microsoft, and others provide to end-user services and APIs.
-
-e need to clarify the costs and benefits of book scanning vs. the intensive transcription and markup of complex knowledge sources. We cannot afford to apply human labor and expertise directly to more than a tiny percentage of the published record of humanity. Are there printed materials that would, if carefully converted into machine actionable form, uniquely enhance our ability to analyze relatively unbounded bodies of
-
-We need to understand more clearly how to relate high- value, domain-specific services and data structures to services and data structures that are common to all collections. Every discipline needs text searches, but some communities need different kinds of search.
-
-
-#+end_example
-
-
-Annotations:
-#+begin_example
---- Annotations: ---
-#+end_example
-
-** COMMENT Some thoughts about [[http://offshore-interactive.com/#lowerplatform][Offshore-Interactive]]
-:PROPERTIES:
-:CUSTOM_ID: some-thoughts-about-[[http://offshore-interactive.com/#lowerplatform][offshore-interactive]]-0f41
-:END:
-- video-game interface
-- narrative tension
-- "oral history" emphasis
-- Is this how we have to write? 
-** COMMENT Website Evaluation
-:PROPERTIES:
-:CUSTOM_ID: website-evaluation-e904
-:END:
-Check out the Github Repo:
-https://github.com/titaniumbones/website-review
-
-With a (new!) partner, follow the directions!
-
-** COMMENT Template
-:PROPERTIES:
-:CUSTOM_ID: template-35a0
-:END:
-#+BEGIN_SRC markdown
-  # Review of [Website Name](URL)
-  ## by Your First Names
-
-
-  ## What does the URL tell you?
-  Is this a personal site, a university-sponsored site, a corporate enterprise? 
-
-  ## What's the Subject Matter?
-  - In broad outlines, describe the scope of the website
-
-  ## Is it trustworthy?
-  - Are Sources Documented?
-  - If links are provided, links to where?
-  - Any evidence of plagiarism?
-
-  ## Does Web Publication _enhance_ the storytelling?
-  - What does the website do that would be _difficult_ to achieve in a linear narrative?
-  - Is anything _lost_ by non-linear organization?
-  - How might you suggest _improving_ the site?
-
-  ## Overall, would you recommend this site to someone interested in the subject matter? To a researcher? 
-#+END_SRC
-** COMMENT List of Sites
-:PROPERTIES:
-:CUSTOM_ID: list-of-sites-8732
-:END:
-- [[http://lostmuseum.cuny.edu/index.php][The Lost Museum]]
-- [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/project.php?id=997][Shaping the West]]
-- [[http://www.historylearningsite.co.uk/][History Learning Site]]
-- [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/project.php?id=1005][Between the Tides]]
-- [[http://www.twoplantations.com/][Two Plantations]]
-- [[http://revolt.axismaps.com/acknowledgments.html][Slave Revolt in Jamaica, 1760-61]]
-- [[http://braceroarchive.org/][Bracero History Archive]]
-- [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
-- [[http://www.british-history.ac.uk/][British History Online]]
 * 04: Pt 2, Distant Reading 1                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-distant-reading-1
@@ -4006,10 +4345,11 @@ for (var i=0; i<headings.length; i++) {
     headings[i].style.color = "red";
 };
 #+END_NOTES
-* Getting Started With Javascript
+* 05-01: Getting Started With Javascript
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-01-js
-:CUSTOM_ID: getting-started-with-javascript-71f3
+:CUSTOM_ID: getting-started-with-javascript-71f3   
+:header-args:    :tangle yes :noweb yes
 :END:
 
 ** JavaScript
@@ -4055,7 +4395,7 @@ https://mdn.mozillademos.org/files/13506/boxes.png
 :PROPERTIES:
 :CUSTOM_ID: declaring-variables-266e
 :END:
-#+begin_src javascript
+#+begin_src js
 const neverChange = "Project Key"; // comment
 let oftenChanges = 0; // maybe we will change this value later
 var oldDeclaration = 0; // we try to avoid using var now; use let instead
@@ -4082,7 +4422,7 @@ Do it w/ your name!
 :END:
 - *numbers* and *strings* are different
 - but we can convert *number \rarr string*
-#+begin_src javascript
+#+begin_src js
 let n = 1,
     m=2,
     s="Hello, there! ";
@@ -4111,11 +4451,10 @@ console.log(s+n);
 :PROPERTIES:
 :CUSTOM_ID: making-lists-(arrays)-5385
 :END:
++#NAME: js-array-historians
 #+BEGIN_SRC js
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
-for (h of historians) {
-  console.log(h);
-}
+
 #+END_SRC
 
 #+BEGIN_NOTES
@@ -4155,8 +4494,9 @@ Second World Wars was " + (wardates[6] - wardates[5]) + " years");
 :PROPERTIES:
 :CUSTOM_ID: repetition:-while-loops-c251
 :END:
+#+NAME: js-while-hist
 #+begin_src js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+<<js-array-historians>>
 let i = 0;
 
 while (i < historians.length) {
@@ -4173,9 +4513,9 @@ repeat inside the ~{ ... }~ as long as test is true:
 :PROPERTIES:
 :CUSTOM_ID: repetition:-for-loops-c510
 :END:
-#+BEGIN_SRC js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
+#+BEGIN_SRC js 
+<<js-array-historians>>
 for (let i=0; i < historians.length ; i++){
   console.log(historians[i] + " was a historian.");
   i // this is not required, just here to show you a slight difference
@@ -4190,13 +4530,13 @@ for (let i=0; i < historians.length ; i++){
 :CUSTOM_ID: repetition:-other-for-loops-3d1d
 :END:
 #+BEGIN_SRC js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+<<js-array-historians>>
 
-for (i in historians) {
+for (let i in historians) {
   console.log(historians[i] + " was a historian.");
 }
 
-for (h of historians) {
+for (let h of historians) {
   console.log(h + " was a historian.");
 }
 #+END_SRC
@@ -4210,7 +4550,7 @@ for (h of historians) {
 :CUSTOM_ID: conditionals:-if-a6b8
 :END:
 #+BEGIN_SRC js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+<<js-array-historians>>
 let i = 0;
 
 while (i < historians.length) {
@@ -4222,14 +4562,14 @@ while (i < historians.length) {
 #+END_SRC
 - execute the ~{ ... }~ only if the *test* is true
 - here the test is ~historians[i] === "Joan Scott"~
-- note the many ~===~ -- different feom just one ~=~
+- note the many ~===~ -- different from just one ~=~
 
 *** Branching
 :PROPERTIES:
 :CUSTOM_ID: branching-2c02
 :END:
 #+BEGIN_SRC js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+<<js-array-historians>>
 let i = 0;
 
 while (i < historians.length) {
@@ -4242,11 +4582,90 @@ while (i < historians.length) {
 };
 #+END_SRC
 
+
+** Functions 1: Name vs. Return Value
+:PROPERTIES:
+:EXPORT_FILE_NAME: function-1-name-output
+:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
+:END:
+
+*** A Function is a +variable+ Robot
+:PROPERTIES:
+:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  "I cleaned your room";
+  return output;
+}
+
+let r = robotCleaner();
+a
+#+end_src
+
+#+RESULTS:
+
+- build a function to do something
+- *name it* whatever you want
+- the *return* value is what the function "give you back*
+- call it whenever you need it done 
+  
+*** Name and Return Value are independent
+:PROPERTIES:
+:CUSTOM_ID: name-and-return-value-are-independent-e35d
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  `Ha, ha! I have replaced your robot cleaner! 
+Now your room is even messier! Bwa ha ha ha ha!`
+  return output;
+}
+
+let a = robotCleaner();
+a
+#+end_src
+
+- To pass the assignment, *always modify the function*
+- don't get confused and try to somehow modify the function call
+- no intrinsic relationship between name and return value
+
+** Functions note 2: Parameter and Output  
+:PROPERTIES:
+:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
+:END:
+*** Your Return Value should Make use of the Parameter
+:PROPERTIES:
+:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
+:END:
+#+begin_src js
+function greatWriter (name) {
+let output = "Margaret Atwood was a great writer."
+return output
+}
+
+console.log(greatWriter("Margaret Atwood"))
+// console.log(greatWriter("Toni Morrison"))
+#+end_src
+*** Solution: don't use a STATICALLY DEFINED STRING as your output
+:PROPERTIES:
+:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
+:END:
+#+begin_src js
+function evenGreaterWriter (name) {
+let output = name + " was a great writer."
+return output
+}
+
+console.log(evenGreaterWriter("Margaret Atwood"))
+// console.log(evenGreaterWriter("Toni Morrison"))
+#+end_src
+
+
 ** Parts of things: elements, methods, properties
 :PROPERTIES:
 :CUSTOM_ID: parts-of-things:-elements,-methods,-properties-be27
 :END:
-#+begin_src javascript
+#+begin_src js
 let a=["name", 0, "otherinfo"];
 console.log(a[2]);
 console.log(a.length);
@@ -4271,10 +4690,11 @@ a.pop;
 - we use them to *change the state*: to *do things* 
 - use *whenever you're repeating an action or process*
 
-compare: 
+- compare: 
 #+ATTR_REVEAL: frag
-- ~let fruit="orange";~
-- ~eat("orange")~
+  - ~let fruit="orange";~
+  - ~eat("orange")~
+  - ~let e = eat(f)~
 *** Defining a function
 :PROPERTIES:
 :CUSTOM_ID: defining-a-function-bb11
@@ -4335,7 +4755,7 @@ let h1 = ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"],
     h2 = ["Orlando Patterson", "Michel Foucault", "Natalie Zeemon Davis", "Howard Zinn"];
 
 makeSentences(h1);
-makeSentences(h2);
+//makeSentences(h2);
 
 #+end_src
 *** Finally we can  talk about scope!
@@ -4343,16 +4763,16 @@ makeSentences(h2);
 :CUSTOM_ID: finally-we-can--talk-about-scope-7723
 :END:
 #+begin_src js
-let a = "just some string",
-    b = "some other string";
+let a = 'just some string',
+    b = 'some other string';
 
 function scopeExample (anyString) {
-  let a = "I set this value inside the function";
+  let a = 'I set this value inside the function';
 
-  return ("inside the function, a=" + a + ", not " + anyString);
+  return ('inside the function, a="' + a + '", not ' + anyString);
 }
 
-a
+// a
 // scopeExample(a);
 //anyString
 #+end_src
@@ -4426,6 +4846,9 @@ function eat (food) {
 }
 
 eat (myFruit);
+//eat (myBar);
+//eat (myCookie);
+//eat (myCandy);
 #+end_src
 - we can eat any of the foods
 - *they're not related to each other*, just floating around
@@ -4655,7 +5078,7 @@ for (person of people) {
 }
 };
 #+END_SRC
-* Short Note on Functions (youtube video, never lectured)
+* Short Note on Functions (youtube video, never lectured, now incorporated into 05-01)
 :PROPERTIES:
 :EXPORT_FILE_NAME: short-note-on-functions
 :CUSTOM_ID: short-note-on-functions-499b
@@ -4686,7 +5109,7 @@ a
 - *name it* whatever you want
 - the *return* value is what the function "give you back*
 - call it whenever you need it done 
-
+  
 *** Name and Return Value are independent
 :PROPERTIES:
 :CUSTOM_ID: name-and-return-value-are-independent-e35d
@@ -4742,7 +5165,7 @@ console.log(evenGreaterWriter("Margaret Atwood"))
 * Week 5: JavaScript and the DOM
 :PROPERTIES:
 :CUSTOM_ID: javascript-30da
-:EXPORT_FILE_NAME: 05-js-dom
+:EXPORT_FILE_NAME: 06-01-js-dom
 :END:
 ** Working with the DOM
 :PROPERTIES:
