@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/titaniumbones/Digital-History#readme",
   "dependencies": {
-    "classroom_helper": "github:DigitalHistory/classroom_helper#master"
+    "classroom_helper": "github:DigitalHistory/classroom_helper#master",
+    "eslint": "^6.5.0"
   }
 }
