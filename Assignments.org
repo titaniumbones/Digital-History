@@ -142,6 +142,7 @@ This may take longer than you think, and it's due soon. Please get started soon 
 :ID:       o2b:7dd9ce6e-51ba-4f8c-a641-39dc56dc121f
 :EXPORT_FILE_NAME: 01-html-css
 :PUBLISH:  t
+:OL_PUBLISH:  t
 :DUE_AT: 2019-09-26
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
@@ -151,11 +152,13 @@ This may take longer than you think, and it's due soon. Please get started soon 
 :OL_DIRECTORY: /home/matt/ASSREPOS/00-git-marking
 :BASECOMMIT: b430c3fb479420499583555911fcfc13a49527eb
 :CANVASID: 224453
+:OL_HAS_REFLECTION: t
 :ORG_LMS_EMAIL_COMMENTS: t
 :ORG_LMS_CANVAS_COMMENTS: t
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/224453
 :CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/224453/submissions?zip=1
 :SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/224453/submissions?zip=1
+:OL_REFLECTION_ID: 224453
 :END:
 
 *Due Date: Sept. 26* (2 days later than original deadline)
@@ -177,7 +180,8 @@ In this assignment you will be introduced to HTML and CSS. The detailed assignme
 * Assignment 02: Javascript Basics                               :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-js-basics
-:PUBLISH:  nil
+:PUBLISH:  t
+:OL_PUBLISH:  t
 :DUE_AT: 2019-10-08
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
@@ -188,19 +192,24 @@ In this assignment you will be introduced to HTML and CSS. The detailed assignme
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
 :ORG_LMS_EMAIL_COMMENTS: t
 :ORG_LMS_CANVAS_COMMENTS: t
+:CANVASID: 232024
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/232024
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/232024/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/232024/submissions?zip=1
 :END:
 
-*Due Date: Feb 12*
+*Due Date: Oct. 08*
 
 This assignment introduces you to the third and most interesting pillar of basic web development: Javascript. 
 
-Due at end of the day on the due date, you can [[https://github.com/DigitalHistory/assignment-02-javascript][find the asssignment on Github]] but please be sure to check out your own copy (as per the instructions) [[https://classroom.github.com/a/oqxwq0a3][by following this link]], and cloning the resultant repository to your laptop.  
+Due at end of the day on the due date, you can [[https://classroom.github.com/a/M4HMIiOP][find the asssignment on Github]]  and clone the resultant repository to your laptop.  
 
 **  Rubric                                                          :rubric: 
 - [ ] Passes General Tests
 - [ ] Passes Reflection Tests
 - *Grade* :: 
-- *Comments*: 
+- *Reflection* :: 
+- *Comments* :: 
 
 * Assignment 03: DOM and Data :assignment:
 :PROPERTIES:
