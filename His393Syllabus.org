@@ -1,3 +1,4 @@
+# -*- eval: (org-lms-mode 1) -*- #
 #+TITLE: Syllabus
 #+SUBTITLE: HIS393: Digital History, Fall 2019
 #+DESCRIPTION:
@@ -10,7 +11,6 @@
 #+OPTIONS: todo:nil
 #+SETUPFILE: ./setup.org
 
-
 * COMMENT export
 #+begin_src emacs-lisp :results none
 ;; (org-lms-setup)
@@ -18,7 +18,6 @@
 (browse-url (concat "https://q.utoronto.ca/courses/"
                     (org-lms-get-keyword "ORG_LMS_COURSEID")  ))
 #+end_src
-
 
 * Logistics
 :PROPERTIES:
@@ -36,6 +35,7 @@
 | *Slack:*         | https://digitalhistoryuoft.slack.com/                    |
 | *New!! Youtube:* | https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg |
 | *Office Hrs:*    | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                                     |
+| *TA:*            | [[mailto:lara.howerton@mail.utoronto.ca][Lara Howerton]]                                            |
 
 In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
 * Introduction
@@ -47,7 +47,7 @@ In general, online communication should take place *via Slack*.  In the case of 
 :END:
 We all know -- it is so commonplace that we barely even notice it! -- that we are living through a revolutionary period in the history of communication.  In the year of your birth, the World Wide Web was a scrawny, hand-powered frontier of hand-coded sites and Internet startups.  Amazon and Google were infants.  The University of Toronto Library website [[https://web.archive.org/web/19971210222202/http://library.utoronto.ca/][looked something like this]]:
 #+ATTR_HTML: :style border: 2px black solid; max-width: 100%; margin-left: 0px; :class someclass
-[[/home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png]]
+[[./images/utoronto-site-2000.png]]
 
 and many students and faculty still used the card catalog to find books in Robarts.  
 
@@ -60,7 +60,6 @@ How should history respond to these new conditions of our existence?  In this cl
 - Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
 - Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship? 
 
-# /home/matt/Pictures/Screenshots/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-Screenshot-from-2015-06-23-16-12-511.png
 * Objectives
 :PROPERTIES:
 :ID:       o2b:08d4e118-c70c-4f4c-a99a-293d3847c9a6
@@ -104,11 +103,10 @@ Make every effort to attend each class meeting (including lab sections)! Class w
 Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (well, that may be allowed under certain circumstances), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. If I notice you doing this, I will call you out in public. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
 * Tools
-
 Course assignments will require you to install software. All of the software we use is free, but it *requires a laptop to run*. A Chromebook unfortunately will not be sufficient. While it is in principle possible to do all of your assignments on the web or using a very basic text editor, I do not recommend that method, and will not offer technical support.  If you don't own a laptop, you should find a way to borrow one, or buy a cheap model on College St to use for the duration of the semester.  
 
 I can offer help with the following 
-
+#+ATTR_LATEX: :environment longtable :align |p{4.5cm}|l|p{4.5cm}|p{4.5cm}|
 | Tool                          | On Mac                | On Windows                                     | On Linux                           |
 |-------------------------------+-----------------------+------------------------------------------------+------------------------------------|
 | Real Web Browser              | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]] | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]                          | [[https://www.mozilla.org/en-US/firefox/][Firefox]] and/or [[https://www.google.com/chrome/][Chrome]]              |
@@ -162,7 +160,6 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 |----------------------+----------+--------------------------------------------------------------------+---+---+---+---|
 |                      |          |                                                                    |   |   |   |   |
 #+TBLFM: 
-
 
 * Texts
 :PROPERTIES:
@@ -251,12 +248,14 @@ More Moretti, and some criticisms
 *** In-Class Activity: Javascript objects and DOM manipulation ({{{ts}}})
 *** Text as Data, History as Algorithm ({{{ts}}})
 *Note:* we may need to push this up
-We'll explore "topic modelling" -- one of the most popular DH methods -- as well as some critiques of it, and some more playful extrapolations about the future of data-driven history. 
+We'll explore some more playful extrapolations about the future of data-driven history. 
 
 *Readings:* 
 - Gibbs, Fred. “[[http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/][Hermeneutics of Data and Historical Writing]].” /Writing History in the Digital Age/, March 14, 2012.
+- Ramsay, S., "[[https://muse-jhu-edu.myaccess.library.utoronto.ca/chapter/1127328][The Hermeneutics of Screwing Around]]", In K. Kee (Eds.), /Pastplay: Teaching and Learning History with Technology/ (pp. 110-141).
+*Recommended Readings:*
 - Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
-*** In-Class Activity: Javascript questions ({{{ts}}})
+*** In-Class Activity: Javascript and the DOM ({{{ts}}})
 *** Computing Concepts Catch-up day ({{{ts}}}) 
 More JS, and Trees.
 *** Assignment Help Day ({{{ts}}})
@@ -303,7 +302,6 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 - "The Voice of the Past" and "What makes Oral History Different" in /The Oral History Reader/
 - Listen to some part of  "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html
 *** In-Class Activity: Popcorn.js ({{{ts}}}) 
-
 *** Project Planning & Citizen History  ({{{ts}}})
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
@@ -349,3 +347,4 @@ local variables need to be set at the end of the file.
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # org-mwp-classtimes-calibrate: ("<2019-09-03 Tue>" "<2019-08-29 Thu>" )
 # End:  
+x

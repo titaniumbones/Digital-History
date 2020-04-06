@@ -2,6 +2,7 @@
 #+OPTIONS: toc:nil
 #+TITLE: Assignments
 #+HUGO_SECTION: assignment
+#+ORG_LMS_SECTION: assignment
 #+HUGO_MENU: :menu main :parent Asisgnments
 # #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+PROPERTY: header-args :results code
@@ -38,9 +39,10 @@ Further assignments will be posted as they are finalized.
 - [[#assignment-05-oral-history][Assignment 05: Oral History]]
 - [[#assignment-06-project-proposal][Assignment 06: Project Proposal]]
 
-*  Participation
+*  Participation :assignment:
 :PROPERTIES:
 :POSTID:   174
+:ORG_LMS_EMAIL_COMMENTS: t
 :ID:       
 :POST_DATE: [2015-12-11 Fri 11:16]
 :EXPORT_FILE_NAME: participation
@@ -99,7 +101,9 @@ Our Slack workspace is also a great way to participate. Contribute to the class 
 ** Finally
 
 If you can do all of these things consistently, you're likely to earn a "+".  If you're not sure how you're doing, come ask me in a couple of weeks and I'll give you some feedback.
-
+** Rubric :rubric:
+- Grade ::
+- Comments :: 
 * Assignment 00: Your Class Profile                              :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 00-git
@@ -182,7 +186,7 @@ In this assignment you will be introduced to HTML and CSS. The detailed assignme
 :EXPORT_FILE_NAME: 02-js-basics
 :PUBLISH:  t
 :OL_PUBLISH:  t
-:DUE_AT: 2019-10-08
+:DUE_AT: 2019-10-15
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
@@ -215,7 +219,7 @@ Due at end of the day on the due date, you can [[https://classroom.github.com/a/
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-dom-data
 :OL_PUBLISH:  t
-:DUE_AT: 2019-03-01
+:DUE_AT: 2019-10-25
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
@@ -223,35 +227,35 @@ Due at end of the day on the due date, you can [[https://classroom.github.com/a/
 :CANVAS_SUBMISSION_TYPES: (none)
 :OL_DIRECTORY: ~/src/dh-2019-stu/03-dom-data
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
-:CANVASID: 137730
 :ORG_LMS_EMAIL_COMMENTS: t
 :ORG_LMS_CANVAS_COMMENTS: t
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/137730
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/137730/submissions?zip=1
 :PUBLISH:  t
+:CANVASID: 237515
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/237515
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/237515/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/237515/submissions?zip=1
 :END:
 
-*Due Date: March 01*
+*Due Date: October 25*
 
 In this assignment, you will slowly work your way up to manipulation of real web pages via Javascript.  This can be a difficult transition, so be prepared for some teeth-gnashing.  
 
-Due at end of the day on the due date, you can [[https://classroom.github.com/a/_ocP1kS-][find the asssignment on Github]], and please be sure to check out your own copy (as per the instructions) by [[https://classroom.github.com/a/_ocP1kS-][following this link]], and cloning the resultant repository to your laptop.
+Due at end of the day on the due date, you can [[https://classroom.github.com/a/QF4h7vfa][find the asssignment link on Github]], and please be sure to create your own copy and clone the resultant repository to your laptop. (Don't search out and fork the parent repository!) 
 
   
 **  Rubric                                                          :rubric: 
 - [ ] Passes General Tests
 - [ ] Passes Reflection Tests
-- *Grade* :: 
-- *Comments*: 
+- *Grade* ::
+- *Reflection Grade* ::
+- *Comments* :: 
 
 * Assignment 04: Spatial History                                 :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-spatial-history
 :ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
 :PARENT:   Assignments
-:OL_PUBLISH:  t
-:DUE_AT: 2019-03-01
+:DUE_AT: 2019-11-14
 :GRADING_STANDARD_ID: nil
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: github
@@ -259,17 +263,13 @@ Due at end of the day on the due date, you can [[https://classroom.github.com/a/
 :CANVAS_SUBMISSION_TYPES: (none)
 :OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
-:CANVASID: 145793
 :ORG_LMS_EMAIL_COMMENTS: t
 :ORG_LMS_CANVAS_COMMENTS: t
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/145793
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/145793/submissions?zip=1
-:PUBLISH:  t
 :END:
-*Due Date: March 18*
 
-Your next assignment builds directly from our in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  Essentially, you will repeat the in-class assignment with much greater intellectual effort, but using the same technical framework. [[https://classroom.github.com/a/oC6_7PJk][The assignment is now online]], and I have extended the due date to Monday, March 18.
+*Due Date: Nov. 14, 2019*
+
+Your next assignment builds directly from our in-class exercise, and should be quite a bit easier to manage, technically, than your last assignment.  Essentially, you will repeat the in-class assignment with much greater intellectual effort, but using the same technical framework. [[https://classroom.github.com/a/Irv1gDIe][The assignment is now online]]. 
 **  Rubric                                                          :rubric: 
 - [ ] Code Works
 - [ ] Map is Relevant to Essay
@@ -297,15 +297,15 @@ Your next assignment builds directly from our in-class exercise, and should be q
 :OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
 :BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
 :PUBLISH:  t
-:CANVASID: 153269
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/71671/assignments/153269
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/71671/assignments/153269/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/71671/assignments/153269/submissions?zip=1
+:CANVASID: 252127
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/252127
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/252127/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/252127/submissions?zip=1
 :END:
 
  *Due Date: March 30*
 
-There is no new assignment link for the Oral History assignment; instead, you will just use  [[https://classroom.github.com/a/oC6_7PJk][the repository you have already cloned, or follow this old link to clone for the first time]]. 
+There is no new assignment link for the Oral History assignment; instead, you will just use  [[https://classroom.github.com/a/Irv1gDIe][the repository you have already cloned, or follow this old link to clone for the first time]]. 
 
 
 However, you will need to update some of the files in your repository to newer versions that I have since pushed to the main assignment repository.  If you followed my instructions, you will not have made any changed to these files, so it should be trivial to pull in my changes by pasting these commands into the terminal (be sure you are in the root directory of your repository when issuing these commands):
@@ -329,15 +329,27 @@ See the README.org file in your own repo or [[https://github.com/DigitalHistory/
 :PROPERTIES:
 :PARENT:   Assignments
 :ID:       o2b:9c3ea2d8-28ce-4a11-aa3d-7513c92f93fd
+:EXPORT_FILE_NAME: 06-project-proposal
+:OL_PUBLISH:  t
+:DUE_AT: 2019-12-05
+:GRADING_STANDARD_ID: nil
+:GRADING_TYPE: pass_fail
+:ASSIGNMENT_TYPE: github
+:ASSIGNMENT_WEIGHT: 0.10
+:CANVAS_SUBMISSION_TYPES: (none)
 :ORG_LMS_EMAIL_COMMENTS: t
 :ORG_LMS_CANVAS_COMMENTS: t
-:POST_DATE: [2017-03-10 Fri 13:12]
-:POSTID:   629
-:EXPORT_FILE_NAME: 06-project-proposal
+:OL_DIRECTORY: ~/src/dh-2019-stu/advanced-topics
+:BASECOMMIT: f6c45cc2a0c57610e060cff992928d38bfe85681
+:PUBLISH:  t
+:CANVASID: 252124
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/assignments/252124
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/123949/assignments/252124/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/123949/assignments/252124/submissions?zip=1
 :END:
-*Due Date: April 02*
+*Due Date: December 05*
 
-Remember that the proper way to create your assignment repository [[https://classroom.github.com/a/oC6_7PJk][is by clicking on this lick, allowing Github Classroom to do the work for you]]. (But you should already have done this for the last two assignments!) 
+Remember that the proper way to create your assignment repository [[https://classroom.github.com/a/oC6_7PJk][is by clicking on this lick, allowing Github Classroom to do the work for you]]. (But you should already have done this for the last two assignments, and if you haven't this assignment is probably not for you!) 
 
 As before, please make sure you've pulled from the upstream repository before starting work on this assignment.  See your own repo or [[https://github.com/DigitalHistory/advanced-topics/tree/master/project-proposal][the upstream Github Repo]] for details.
 
