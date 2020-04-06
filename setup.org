@@ -14,5 +14,10 @@
 #+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
 #+STARTUP: customtime entitiespretty
 #+ORG_LMS_COURSEID: 123949
+#+OL_USE_CHITS: t
 #+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
 #+PROPERTY: header-args:plantuml  :noweb yes :eval no-export :results value file raw
+
+# this doesn't seem to work
+#+LATEX_CLASS: classwork
+
