@@ -23,15 +23,20 @@
     "teacherCommit": "b430c3fb479420499583555911fcfc13a49527eb"
   },
   "js": {
-    "basename": "02-loops-conds-objects",
-    "deadline": "2018-02-19",
-    "mainTests": "mocha test  -t 0 test/test-git.js test/test-pt2.js ",
-    "reflectionTests": "mocha test  -t 0 test/test-pt2.js",
+    "basename": "assignment-02-javascript-variables-loops-conditions",
+    "cloneAs" : "02-loops-conds-marking",
+    "deadline": "2019-10-14",
+    "upstream": "git@github.com:DigitalHistory/assignment-02-javascript.git",
+    "mainTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome --grep \"Reflection\" --invert --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
+    "reflectionTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome --grep \"Reflection\" --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
+    "allTests": "MARKING=instructor node node_modules/mocha/bin/mocha -t 0 --reporter mochawesome  --reporter-options reportDir=TestResults,reportFilename=testresults test/test.js",
     "teacherCommit": "0b955269775236a9e48cd0208a9cd8d5ef485e7c"
   },
   "js2": {
     "basename": "03-dom-data",
-    "deadline": "2018-03-01",
+    "cloneAs" : "03-dom-data",
+    "deadline": "2018-10-26",
+    "devDir" : "/home/matt/DH/Assignments/03-json-to-table/",
     "upstream": "git@github.com:DigitalHistory/03-js-dom.git",
     "mainTests": "mocha test  -t 0 test/test-git.js test/test-pt2.js ",
     "reflectionTests": "mocha test  -t 0 test/test-pt3.js",
@@ -39,7 +44,9 @@
   },
   "at": {
     "basename": "advanced-topics",
+    "cloneAs": "advanced-topics",
     "deadline": "2019-03-18",
+    "devDir" : "/home/matt/DH/Assignments/advanced-topics/",
     "upstream": "git@github.com:DigitalHistory/advanced-topics.git",
     "mainTests": "npm test ",
     "reflectionTests": "",
