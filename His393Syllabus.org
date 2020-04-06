@@ -347,4 +347,4 @@ local variables need to be set at the end of the file.
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
 # org-mwp-classtimes-calibrate: ("<2019-09-03 Tue>" "<2019-08-29 Thu>" )
 # End:  
-x
+
