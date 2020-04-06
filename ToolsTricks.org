@@ -1099,10 +1099,10 @@ Ooops, forgot to write this up separately. Oh well. By now, though, you know the
 
 - Navigate to [[https://github.com/titaniumbones/oral-history-template][the Github repository for this exercise]].
 - Download and unzip the files
-- Open them up in [[http://atom.io][Atom]] or something similar.
+- Open them up in your text editor
 
 This will get you ready for your next assignment.
-* Javascript Error in Current Assignment!
+* COMMENT Javascript Error in Current Assignment!
 :PROPERTIES:
 :ID:       o2b:81d8ad9b-38f5-4d09-9cd2-3662aa74210c
 :POST_DATE: [2015-07-28 Tue 13:58]
