@@ -1,5 +1,7 @@
+#-*- coding: utf-8 -*-
 #+SETUPFILE: ./setup.org
-#+HUGO_SECTION: slides/
+#+HUGO_SECTION: slides
+#+ORG_LMS_SECTION: slides
 #+MWP_HUGO_TYPE: slides
 #+HUGO_MENU: :menu main :weight 10
 #+OPTIONS: todo:nil
@@ -1167,7 +1169,7 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 [[file:Images/commits.svg]]
 
 #+end_slideblock
-
+ 
 *** Concept: Worktree and Repository
 :PROPERTIES:
 :reveal_extra_attr: class="twoc"
@@ -1202,13 +1204,6 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 [[./Images/git-objs.png]]
-#+begin_verse
-
-x��AN�0EY�>�j�I� �8 H��q;]4�Rw��I9�'�_�}*۶
-X㞤2C
-���n�]�CJv2����q�1 ��#{�c�,0�1N(Xm#�3��~&v�Nn4ɠ��(>P>�J/[�~���RK����v����5t�}�I
-�3�ޙ�|��.π)A������*��B�PvYK>np�	���@�ܜ͠cT�(5˶����a����Vjn
-#+end_verse
 #+end_slideblock
 
 
@@ -1870,7 +1865,7 @@ Try to keep it "real", and work as *teams*, with one person driving, and the oth
 :CUSTOM_ID: simple-exercise-ca4d
 :END:
 https://github.com/DigitalHistory/css-styling/
-* 04-01: What the Web Signifies
+* ACTION 04-01: What the Web Signifies
 :PROPERTIES:
 :EXPORT_FILE_NAME: 04-01-web-signifies
 :END:
@@ -2950,7 +2945,7 @@ Turkel, Going Digital
 #+BEGIN_QUOTE
  Electronic digital information can be duplicated at near-zero cost, transmitted at the speed of light, stored in infinitesimally small volumes, and created, processed and consumed by machines.  This means that ideas that were more-or-less serviceable in the world before networked computers–ideas about value, property rights, communication, creativity, intelligence, governance and many other aspects of society and culture–are now up for debate.  The emergence of new rights regimes (such as open access, open content and open source) and the explosion of new information are manifestations of these changing costs.
 
-You won’t be able to read everything.  Estimates of the amount of new information that is now created annually are staggering (2003, 2009).  As you become more skilled at finding online sources, you will discover that new material on your topic appears online much faster than you can read it.  The longer you work on something, the more behind you will get.  This is OK, because everyone faces this issue whether they realize it or not.  In traditional scholarship, scarcity was the problem: travel to archives was expensive, access to elite libraries was gated, resources were difficult to find, and so on.  In digital scholarship, abundance is the problem.  What is worth your attention or your trust?
+You won't be able to read everything.  Estimates of the amount of new information that is now created annually are staggering (2003, 2009).  As you become more skilled at finding online sources, you will discover that new material on your topic appears online much faster than you can read it.  The longer you work on something, the more behind you will get.  This is OK, because everyone faces this issue whether they realize it or not.  In traditional scholarship, scarcity was the problem: travel to archives was expensive, access to elite libraries was gated, resources were difficult to find, and so on.  In digital scholarship, abundance is the problem.  What is worth your attention or your trust?
 
 Assume that what you want is out there, and that you simply need to locate it.
 #+END_QUOTE
@@ -2968,7 +2963,7 @@ In short, digitization does provide scale \(or quantity\) but does so at the pri
 
 Very large collections based on image books differ from first-generation
 digital collections by one or more orders of magnitude. Of course, they
-are much larger: one internal estimate of Google’s collection in spring
+are much larger: one internal estimate of Google's collection in spring
 2007 suggested that their searches were scanning at least 2 million
 books already. At the same time, these collections are much more
 heterogeneous, with books from any library shelf likely to find their way
@@ -3086,6 +3081,2314 @@ With a (new!) partner, follow the directions!
 - [[http://braceroarchive.org/][Bracero History Archive]]
 - [[http://www.texasslaveryproject.org/][Texas Slavery Project]]
 - [[http://www.british-history.ac.uk/][British History Online]]
+* COMMENT Javascript
+:PROPERTIES:
+:CUSTOM_ID: javascript-252a
+:END:
+** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables-7835
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+var myString = "Hello, everyone";
+console.log(myString);
+#+END_SRC
+#+BEGIN_NOTES 
+- strings
+- numbers
+- boolean
+- array
+- objects
+#+END_NOTES
+** Functions
+:PROPERTIES:
+:CUSTOM_ID: functions-3acc
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+function square(number) {
+  return number * number;
+}
+
+ var cube = function(number) { 
+      return number * number * number;
+  };
+
+console.log(square(2));
+console.log(cube(3));
+#+END_SRC
+** Arrays and Loops
+:PROPERTIES:
+:CUSTOM_ID: loops-86b8
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+ // here is a very basic "for loop":
+  for (i=0; i<10; i++ ) {
+    console.log("this is number: " + (i+1));
+  }
+
+  // a simple array -- essentially a list
+  var veggies = ["carrot", "potato", "pea"];
+
+  // a "for-of loop" -- iterates over array items
+  for (i of veggies) {
+    console.log(i)
+  };
+
+  // a for-in loop -- iterates over array length (0,1,2,3, etc)
+  for (i in veggies) {
+       console.log(veggies[i])
+       };
+
+
+#+END_SRC
+#+BEGIN_NOTES 
+- differences between the loop types
+#+END_NOTES
+** Objects
+:PROPERTIES:
+:CUSTOM_ID: objects-1a99
+:END:
+#+BEGIN_SRC js :results output code  replace :exports both
+  var wl = {
+      "PM": "Wilfred Laurier",
+      "Party": "Liberal",
+      "From": "1896",
+      "To": "1911"
+  };
+  for (i in wl) {
+      console.log("wl." + i + " is: " + wl[i]);
+  }
+#+END_SRC
+
+** DOM Manipulation
+:PROPERTIES:
+:CUSTOM_ID: dom-manipulation-6404
+:END:
+#+BEGIN_SRC js :exports code
+var newNode = document.createElement("h1");                 // Create a <h1> node
+var textnode = document.createTextNode("brand new header");         // Create a text node
+newNode.appendChild(textnode);                              // insert the text into the <h1>
+document.body.appendChild(newNode);
+
+var headings = document.getElementsByTagName("h1");
+console.log(headings);
+for (var i=0; i<headings.length; i++) {
+    console.log(headings[i].innerHTML);
+};
+
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+
+#+END_SRC
+
+#+BEGIN_NOTES 
+for (var i=0; i<headings.length; i++) {
+    headings[i].textContent += " Found me!!!";
+    headings[i].style.color = "red";
+};
+#+END_NOTES
+* 05-01 and 06-01: Getting Started With Javascript
+:PROPERTIES:
+:EXPORT_FILE_NAME: 05-01-js
+:CUSTOM_ID: getting-started-with-javascript-71f3   
+:header-args: :tangle Exercises/js-lecture-code-snippets/lec-05-01-js-intro.js :noweb yes
+:ORG_LMS_ANNOUNCEMENT_ID: 406091
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/123949/discussion_topics/406091
+:ORG_LMS_POSTED_AT: 2019-10-08T17:47:11Z
+:END:
+
+** JavaScript
+:PROPERTIES:
+:CUSTOM_ID: javascript-cc80
+:END:
+- a real language!
+- dynamic transformation
+- baby steps!!
+** Some Big Ideas
+:PROPERTIES:
+:CUSTOM_ID: some-big-ideas-1d46
+:END:
+- Abstraction
+- Formalization
+- Repetition
+- Laziness!
+** Assignment 1 will require 
+:PROPERTIES:
+:CUSTOM_ID: assignment-1-will-require-ab9b
+:END:
+- Basic Syntax
+- Variable Types
+- Function Definitions
+- Loops and Branches
+- Basic "Objects"
+** Running Javascript
+:PROPERTIES:
+:CUSTOM_ID: running-javascript-10e9
+:END:
+- in Browser Console
+- in terminal (with the command ~node~)
+- in VSCode files, with Quokka attached
+** What is a Variable?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-variable?-d2ea
+:END:
+- *name* for *memory location* to be used later, usually *in specific ways* that *depend on type*
+- or, *box* into which you can put *information* that you will want to get later.
+https://mdn.mozillademos.org/files/13506/boxes.png
+
+*** Declaring Variables
+:PROPERTIES:
+:CUSTOM_ID: declaring-variables-266e
+:END:
+#+begin_src js
+const neverChange = "Project Key"; // comment
+let oftenChanges = 0; // maybe we will change this value later
+var oldDeclaration = 0; // we try to avoid using var now; use let instead
+#+end_src
+
+*** Text is Data
+:PROPERTIES:
+:CUSTOM_ID: text-is-data-75a7
+:END:
+#+BEGIN_SRC js
+let first="Matt";
+let last="Price"
+console.log(first + last);
+#+END_SRC
+#+ATTR_REVEAL: :frag (appear)
+Do it w/ your name!
+#+BEGIN_NOTES
+- console; syntax; spaces; exercise: 
+#+END_NOTES
+
+*** "Dynamic" (or "Weak") Typing 
+:PROPERTIES:
+:CUSTOM_ID: dynamic-(or-weak)-typing-c178
+:END:
+- *numbers* and *strings* are different
+- but we can convert *number \rarr string*
+#+begin_src js
+let n = 1,
+    m=2,
+    s="Hello, there! ";
+ 
+console.log(m+n);
+console.log(s+n);
+
+#+end_src
+#+begin_notes
+- commas, semi-colons; "overloading" &dynamic typing
+- this can be confusing!!!
+#+end_notes
+
+*** Some Variable Types
+:PROPERTIES:
+:CUSTOM_ID: some-variable-types-c445
+:END:
+- numbers
+- strings
+- boolean (true/false)
+- arrays
+- objects
+
+
+*** Making Lists (Arrays)
+:PROPERTIES:
+:CUSTOM_ID: making-lists-(arrays)-5385
+:END:
+#+NAME: js-array-historians
+#+BEGIN_SRC js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+
+#+END_SRC
+
+#+RESULTS:
+: undefined
+
+#+BEGIN_NOTES
+brackets!
+#+END_NOTES
+
+*** Working With Arrays
+:PROPERTIES:
+:CUSTOM_ID: working-with-arrays-c020
+:END:
+
+#+begin_src js
+a = [];
+a.push("Edward Gibbon");
+a.push("Edward Said");
+a.push("Joan Scott");
+
+console.log(a[1]);
+
+a.pop();
+// a
+#+end_src
+
+#+begin_notes
+- push, pop, INDEX
+#+end_notes
+*** Working with Numbers
+:PROPERTIES:
+:CUSTOM_ID: working-with-numbers-9fb5
+:END:
+#+BEGIN_SRC js
+wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
+console.log("The time between The First and \
+Second World Wars was " + (wardates[6] - wardates[5]) + " years");
+#+END_SRC
+** Repetition: While Loops 
+:PROPERTIES:
+:CUSTOM_ID: repetition:-while-loops-c251
+:END:
+#+NAME: js-while-hist
+#+begin_src js
+<<js-array-historians>>
+let i = 0;
+
+while (i < historians.length) {
+    console.log(historians[i] + " was a historian.");
+    i+=1;
+  }
+
+#+end_src
+repeat inside the ~{ ... }~ as long as test is true:
+- *initial value:* ~i = 0~
+- *test (halt condition):* ~i < historians.length~
+- *change in condition:* ~i += 1~ 
+** Repetition: For Loops
+:PROPERTIES:
+:CUSTOM_ID: repetition:-for-loops-c510
+:END:
+
+#+BEGIN_SRC js 
+<<js-array-historians>>
+for (let i=0; i < historians.length ; i++){
+  console.log(historians[i] + " was a historian.");
+  i // this is not required, just here to show you a slight difference
+}
+
+#+END_SRC
+- *initial value:* ~i = 0~
+- *test (halt condition):* ~i < historians.length~
+- *change in condition:* ~i++~ (idiomatic)
+** Repetition: other for loops
+*** 
+:PROPERTIES:
+:CUSTOM_ID: repetition:-other-for-loops-3d1d
+:END:
+#+BEGIN_SRC js :noweb yes
+<<js-array-historians>>
+
+for (i in historians) {
+  console.log(historians[i] + " was a historian.");
+}
+
+for (let h of historians) {
+  console.log(h + " was a historian.");
+}
+#+END_SRC
+
+#+RESULTS:
+
+- these also "loop"
+- but the *initial value*, *test*, and *increment* are *implicit*
+- defined by ~historians~, but in slightly different ways.
+- they are very convenient! read about them.
+
+** Conditionals: If
+:PROPERTIES:
+:CUSTOM_ID: conditionals:-if-a6b8
+:END:
+#+BEGIN_SRC js
+<<js-array-historians>>
+let i = 0;
+
+while (i < historians.length) {
+  if (historians[i] === "Joan Scott") {
+    console.log(historians[i] + " is my favourite.");
+  }
+  i +=1;
+};
+#+END_SRC
+- execute the ~{ ... }~ only if the *test* is true
+- here the test is ~historians[i] === "Joan Scott"~
+- note the many ~===~ -- different from just one ~=~
+
+*** Branching
+:PROPERTIES:
+:CUSTOM_ID: branching-2c02
+:END:
+#+BEGIN_SRC js
+<<js-array-historians>>
+let i = 0;
+
+while (i < historians.length) {
+  if (historians[i] ==="Joan Scott") {
+    console.log(historians[i] + " is my favourite.");
+  } else {
+    console.log(historians[i] + ", meh.");
+}
+  i +=1;
+};
+#+END_SRC
+
+
+
+** Doing Stuff: functions
+:PROPERTIES:
+:CUSTOM_ID: functions-d6a3
+:END:
+
+*** A Function *is* a variable(!)
+:PROPERTIES:
+:CUSTOM_ID: -7b52
+:END:
+- functions are also a box into which you put stuff
+- but when you look into the box, the "stuff" has changed
+- we use them to *change the state*: to *do things* 
+- use *whenever you're repeating an action or process*
+
+- compare: 
+#+ATTR_REVEAL: frag
+  - ~let fruit="orange";~
+  - ~eat("orange")~
+  - ~let e = eat(f)~
+*** Defining a function
+:PROPERTIES:
+:CUSTOM_ID: defining-a-function-bb11
+:END:
+#+BEGIN_SRC js 
+function square(number) {
+  return number * number;
+}
+
+let cube = function(number) { 
+      return number * number * number;
+  };
+
+console.log(square(2));
+console.log(cube(3));
+#+END_SRC
+- we'll use the first method:
+  - keyword ~function~ followed by ~name~ then ~(parameters, if, you, need, them)~, then ~{~ ,  then ~statements~, then ~}~
+
+#+begin_notes
+- name
+- parameters
+- definition
+- return value
+#+end_notes
+*** Remember this
+:PROPERTIES:
+:CUSTOM_ID: remember-this-0f7d
+:END:
+#+begin_src js
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
+let i = 0;
+
+while (i < historians.length) {
+    console.log(historians[i] + " was a historian.");
+    i+=1;
+  }
+
+#+end_src
+*** As a function
+:PROPERTIES:
+:CUSTOM_ID: as-a-function-ed13
+:END:
+
+#+begin_src js
+function makeSentences(historians) {
+  let i = 0,
+      output = "";
+
+  while (i < historians.length) {
+    output += historians[i] + " was a historian.\n";
+    i+=1;
+  }
+  return output;
+}
+
+let h1 = ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"],
+    h2 = ["Orlando Patterson", "Michel Foucault", "Natalie Zeemon Davis", "Howard Zinn"];
+
+makeSentences(h1);
+//makeSentences(h2);
+
+#+end_src
+*** Finally we can  talk about scope!
+:PROPERTIES:
+:CUSTOM_ID: finally-we-can--talk-about-scope-7723
+:END:
+#+begin_src js
+let a = 'just some string',
+    b = 'some other string';
+
+function scopeExample (anyString) {
+  let a = 'I set this value inside the function';
+
+  return ('inside the function, a="' + a + '", not ' + anyString);
+}
+
+// a
+// scopeExample(a);
+//anyString
+#+end_src
+- outside the function, ~a~ = "just some string"
+- inside, we *redeclare it for the function scope* and now ~a~ has new value
+- ~anyString~ is *only* declared inside the function scope
+
+*** Advanced scope
+:PROPERTIES:
+:CUSTOM_ID: advanced-scope-fa36
+:END:
+#+begin_src js
+let a = "global scope a";
+
+console.log(a);
+
+for (i=0; i<6; i++) {
+  let a = "local scope a on iteration: " + (i + 1) ;
+  console.log(a)
+}
+
+console.log(a);
+#+end_src
+- we can also *redeclare* ~let~ variables in an if/for/while "block"
+- scope scales:  *global \rarr function \rarr block \rarr nested block \rarr etc etc*
+- any time you see ~{ .. }~ you're in a new scope context!
+ 
+*** Function Hints for Assignments
+:PROPERTIES:
+:CUSTOM_ID: function-hints-for-assignments-1cb2
+:END:
+- *remember the return values!*
+- debug by setting a variable to the function output, and using quokka to look at the value:
+  #+begin_src js
+    function returnArray (first, second, third) {
+    // you can define the array using "new Array ()" or just "[ , , ]"
+    // don't forget to return it
+    // return ; // add the value here!
+  }
+  
+  let a = returnArray (1, 3,5);
+  a  // quokka will display the value
+  #+end_src
+
+*** Function note 1: Name vs. Return Value
+:PROPERTIES:
+:EXPORT_FILE_NAME: function-1-name-output
+:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
+:END:
+
+**** A Function is a +variable+ Robot
+:PROPERTIES:
+:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  "I cleaned your room";
+  return output;
+}
+
+let r = robotCleaner();
+a
+#+end_src
+
+#+RESULTS:
+
+- build a function to do something
+- *name it* whatever you want
+- the *return* value is what the function "give you back*
+- call it whenever you need it done 
+  
+**** Name and Return Value are independent
+:PROPERTIES:
+:CUSTOM_ID: name-and-return-value-are-independent-e35d
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  `Ha, ha! I have replaced your robot cleaner! 
+Now your room is even messier! Bwa ha ha ha ha!`
+  return output;
+}
+
+let a = robotCleaner();
+a
+#+end_src
+
+- To pass the assignment, *always modify the function*
+- don't get confused and try to somehow modify the function call
+- no intrinsic relationship between name and return value
+
+*** Functions note 2: Parameter and Output  
+:PROPERTIES:
+:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
+:END:
+**** Your Return Value should Make use of the Parameter
+:PROPERTIES:
+:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
+:END:
+#+begin_src js
+function greatWriter (name) {
+let output = "Margaret Atwood was a great writer."
+return output
+}
+
+console.log(greatWriter("Margaret Atwood"))
+// console.log(greatWriter("Toni Morrison"))
+#+end_src
+**** Solution: don't use a STATICALLY DEFINED STRING as your output
+:PROPERTIES:
+:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
+:END:
+#+begin_src js
+function evenGreaterWriter (name) {
+let output = name + " was a great writer."
+return output
+}
+
+console.log(evenGreaterWriter("Margaret Atwood"))
+// console.log(evenGreaterWriter("Toni Morrison"))
+#+end_src
+
+** Parts of things: elements, methods, properties
+:PROPERTIES:
+:CUSTOM_ID: parts-of-things:-elements,-methods,-properties-be27
+:END:
+#+begin_src js
+let a=["name", 0, "otherinfo"];
+console.log(a[2]);
+console.log(a.length);
+console.log(a[length]);
+a.pop;
+#+end_src
+- note strange syntax:
+  - ~a[1]~: second element of array
+  - ~a.length~: a special way of finding the length of any array.  Length is a *property* of a.
+- ~console.log(a))~: *log* is a part of *console*.  it takes a *parameter* , in this case ~a~
+- not that ~a.pop~ is not the same as ~a.pop()~
+
+** Objects and Properties
+:PROPERTIES:
+:CUSTOM_ID: objects-and-properties-e146
+:END:
+
+*** Objects are *variables* with *named parts*
+:PROPERTIES:
+:CUSTOM_ID: objects-are-variables-with-named-parts-c234
+:END:
+- parts are called *properties*, but
+- if a part is a *function*, we call that part a *method*
+
+*** let's eat
+:PROPERTIES:
+:CUSTOM_ID: let's-eat-f11e
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+function eat (food) {
+  console.log("Umm, that was a delicious " + food + ".");
+}
+
+eat (myFruit);
+//eat (myBar);
+//eat (myCookie);
+//eat (myCandy);
+#+end_src
+- we can eat any of the foods
+- *they're not related to each other*, just floating around
+
+*** Now let's make lunch
+:PROPERTIES:
+:CUSTOM_ID: now-let's-make-lunch-6196
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {};
+#+end_src
+
+- myLunch is *an empty object* -- it has no parts yet
+
+*** Add some parts
+:PROPERTIES:
+:CUSTOM_ID: add-some-parts-18dc
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+myLunch;
+
+#+end_src
+- added parts in 3 ways: set *directly* in definition; set *by reference* in definition; *added by reference after definition* 
+
+*** Eat the Lunch
+:PROPERTIES:
+:CUSTOM_ID: eat-the-lunch-b7bb
+:END:
+#+begin_src js
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I'll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+eatLunch(myLunch);
+#+end_src
+- rewrote *eat* to take advantage of the *structure* of lunch
+*** Add Dessert
+:PROPERTIES:
+:CUSTOM_ID: add-dessert-c5dd
+:END:
+#+begin_src js
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"}
+};
+
+console.log("I'm finally ready for my " + myLunch.dessert.cookie);
+
+#+end_src
+- objects can be *arbitrarily complex* and *contain other objects*
+
+*** Eat The Lunch as a Method
+:PROPERTIES:
+:CUSTOM_ID: eat-the-lunch-as-a-method-971e
+:END:
+
+**** Reminder
+:PROPERTIES:
+:CUSTOM_ID: reminder-4550
+:END:
+#+begin_src js
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I'll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+#+end_src
+
+**** Writing the Method
+:PROPERTIES:
+:CUSTOM_ID: writing-the-method-4cae
+:END:
+#+begin_src js
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"},
+  eatMe: function() {
+    let output = "";
+    output += "I'll start with my " + this["fruit"] + "\n";
+    output += "Next I want to eat " + this.sandwich + "\n";
+    for (snack of this.snacks) {
+      output += "   I love my " + snack + "\n";
+    }
+    return output;
+  }
+};
+
+myLunch.eatMe;
+
+myLunch.eatMe();
+#+end_src
+- note the differences between ~eat()~ and =myLunch.eatMe=:
+  - the method doesn't *take a parameter*!
+  - instead, we get to use ~this~, which refers to the *current object scope*
+*** Finally some History
+:PROPERTIES:
+:CUSTOM_ID: finally-some-history-0c62
+:END:
+#+BEGIN_SRC js
+  let greatWar = {
+    name: "The First World War",
+    start: 1914,
+    end: 1918,
+    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
+    goodGuys: ["All our Friends"],
+    scale: "Catastrophe"
+  }
+
+//  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " years.");
+#+END_SRC
+*** more objects
+:PROPERTIES:
+:CUSTOM_ID: more-objects-322f
+:END:
+#+BEGIN_SRC js
+  let greatWar = {
+    name: "The First World War",
+    start: 1914,
+    end: 1918,
+    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
+    goodGuys: ["All our Friends"],
+    scale: "Catastrophe",
+    battles: [
+      { name: "The Battle of Vimy Ridge",
+        year: 1915,
+        casualties: 34000
+      }]
+  }
+
+  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + 
+"  years.");
+console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " +   
+  greatWar.battles[0].casualties + " casualties.");
+#+END_SRC
+
+*** Basic Logic with Objects
+:PROPERTIES:
+:CUSTOM_ID: using-objects-in-js-ace7
+:END:
+#+BEGIN_SRC js
+let goodGuys = ["CA", "UK", "US"];
+let badGuys=["DE", "AH"];
+let people = [
+  {name: "Kaiser Wilhelm",
+   nat: "DE"},
+  {name:"Winston Churchill",
+   nat: "UK"}];
+for (person of people) {
+  if (badGuys.includes(person.nat)) {
+    //console.log(person.name + ": BOOOOOOOOOOOO!!!");
+  }
+};
+#+END_SRC
+
+#+RESULTS:
+: undefined
+*** Branching Logic with Objects
+:PROPERTIES:
+:CUSTOM_ID: logic-with-objects-9863
+:END:
+#+BEGIN_SRC js
+let goodGuys = ["CA", "UK", "US"];
+let badGuys=["DE", "AH"];
+let people = [
+  {name: "Kaiser Wilhelm",
+   nat: "DE"},
+  {name:"Winston Churchill",
+   nat: "UK"}];
+for (person of people) {
+  if (badGuys.includes(person.nat)) {
+    console.log(person.name + ": BOOOOOOOOOOOO!!!");
+  } else {
+    console.log(person.name + ": YAAAAYYY!!!");
+
+}
+};
+#+END_SRC
+** In-class coding exercise!
+*** 
+Pull in changes to [[https://github.com/DigitalHistory/lecture-code-snippest][the code snippets repo]]
+
+Now consider the following javascript array of objects:
+
+#+NAME: rev-orgs
+#+begin_src js 
+orgs = [
+  {"name": "African National Congress",
+   "founded": 1912,
+   "link": "https://en.wikipedia.org/wiki/African_National_Congress"
+  },
+  {"name": "Pan Africanist Congress",
+   "founded": 1959,
+   "link": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+  },
+  {"name": "South African Communist Party",
+   "founded": 1921,
+   "link": "https://en.wikipedia.org/wiki/South_African_Communist_Party"
+  },
+  {
+    "name": "Black Sash",
+    "founded": 1955,
+    "link": "https://en.wikipedia.org/wiki/Black_Sash"
+  },
+  {
+    "name": "South African Students' Organization",
+    "founded": 1968,
+    "link": "https://en.wikipedia.org/wiki/South_African_Students%27_Organisation"
+  }
+]
+orgs
+#+end_src
+
+#+RESULTS: rev-orgs
+: undefined
+
+#+RESULTS:
+
+Our objective is to read this variable and use it to build sentences about anti-apartheid organizations in South Africa.  
+*** using JSON data
+#+begin_src js :var orgs=rev-orgs :results value
+<<rev-orgs>> 
+function describeOrg (org) {
+  return org.name + ' was founded in ' + org.founded + '.';
+}
+
+console.log(describeOrg(orgs[0]));
+#+end_src
+
+
+*** Looping through the data
+#+begin_src js :var orgs=rev-orgs :results value
+<<rev-orgs>> 
+function describeOrg (org) {
+  return org.name + ' was founded in ' + org.founded + '.';
+}
+
+for (let o of orgs) {
+console.log(describeOrg(o));
+}
+#+end_src
+
+
+
+
+* Short Note on Functions (youtube video, never lectured, now incorporated into 05-01)
+:PROPERTIES:
+:EXPORT_FILE_NAME: short-note-on-functions
+:CUSTOM_ID: short-note-on-functions-499b
+:END:
+** Functions 1: Name vs. Return Value
+:PROPERTIES:
+:EXPORT_FILE_NAME: function-1-name-output
+:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
+:END:
+
+*** A Function is a +variable+ Robot
+:PROPERTIES:
+:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  "I cleaned your room";
+  return output;
+}
+
+let a = robotCleaner();
+a
+#+end_src
+
+#+RESULTS:
+
+- build a function to do something
+- *name it* whatever you want
+- the *return* value is what the function "give you back*
+- call it whenever you need it done 
+  
+*** Name and Return Value are independent
+:PROPERTIES:
+:CUSTOM_ID: name-and-return-value-are-independent-e35d
+:END:
+#+begin_src js
+function robotCleaner () {
+  let output =  `Ha, ha! I have replaced your robot cleaner! 
+Now your room is even messier! Bwa ha ha ha ha!`
+  return output;
+}
+
+let a = robotCleaner();
+a
+#+end_src
+
+- To pass the assignment, *always modify the function*
+- don't get confused and try to somehow modify the function call
+- no intrinsic relationship between name and return value
+
+** Functions note 2: Parameter and Output  
+:PROPERTIES:
+:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
+:END:
+*** Your Return Value should Make use of the Parameter
+:PROPERTIES:
+:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
+:END:
+#+begin_src js
+function greatWriter (name) {
+let output = "Margaret Atwood was a great writer."
+return output
+}
+
+console.log(greatWriter("Margaret Atwood"))
+// console.log(greatWriter("Toni Morrison"))
+#+end_src
+*** Solution: don't use a STATICALLY DEFINED STRING as your output
+:PROPERTIES:
+:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
+:END:
+#+begin_src js
+function evenGreaterWriter (name) {
+let output = name + " was a great writer."
+return output
+}
+
+console.log(evenGreaterWriter("Margaret Atwood"))
+// console.log(evenGreaterWriter("Toni Morrison"))
+#+end_src
+
+* 05-02: Distant Reading and Age of Abundance
+:PROPERTIES:
+:EXPORT_FILE_NAME: 05-02-distant-reading
+:EXPORT_TITLE: Distant Reading
+:END:
+** COMMENT Notes
+:PROPERTIES:
+:CUSTOM_ID: comment-27db
+:END:
+- Lecture: Graphs & maps (30 mins)
+- discussion
+- Wordles
+- Have assignment ready!
+
+- Abundance.  Have some examples, talk about *real history*
+- Openness.  Github, e.g.
+- Search engines. Algorithms.  curation.  
+- Lab: list of websites to evaluate.  This will require *prep*
+http://adamcrymble.org/intro-to-digital-history-2015/#week2 
+** Recap
+:PROPERTIES:
+:CUSTOM_ID: recap-53d2
+:END:
+- "Public sphere" at a turning point
+- Transformation by automated agents and encoded text
+
+***  War is Peace. @@html:<br/>@@Freedom is Slavery. @@html:<br/>@@Ignorance is Strength.
+:PROPERTIES:
+:CUSTOM_ID: war-is-peace
+:END:
+*** Plan for the day
+:PROPERTIES:
+:CUSTOM_ID: plan-for-the-day-b6ce
+:END:
+- Problems of Abundance
+- Distant Reading: a method for textual overload?
+- Discussion: how do *you* respond to information abundance?
+- post-class period *ONLY* for students who *failed the tests, or did not receive a mark* 
+** History in the age of scarcity
+:PROPERTIES:
+:CUSTOM_ID: history-in-the-age-of-scarcity-3970
+:END:
+#+BEGIN_QUOTE
+The members of prehistoric societies did not think they lived in prehistoric times. They merely lacked a good preservation medium. (Auerbach, quoted in Rosenzweig)
+#+END_QUOTE
+
+#+BEGIN_NOTES 
+- lots was going on, lots of continuity, lots *we will never know* b/c oral preservation is *terrible* at outliving a cultural tradition
+#+END_NOTES
+
+*** Scarcity
+:PROPERTIES:
+:CUSTOM_ID: scarcity-184c
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Historically, very little recorded
+- Even less /preserved/
+- historian's task was to /locate rare sources/ in faraway places
+
+*** Implications
+:PROPERTIES:
+:CUSTOM_ID: implications-1db9
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- History skewed to /those whose records appeared worth saving/
+- record /always/ fragmentary
+  - Historian free to fill in gaps
+- BUT: often possible to read /large percentage/ of relevant sources
+
+** Age of Abundance
+:PROPERTIES:
+:CUSTOM_ID: age-of-abundance-7ddc
+:END:
+#+BEGIN_QUOTE
+Tentative efforts are afoot to preserve our digital cultural heritage. If they succeed, historians will face a second, profound challenge--what would it be like to write history when faced by an essentially complete historical record? (Rosenzweig)
+#+END_QUOTE
+
+#+BEGIN_NOTES 
+- completely different situation than we used to have!
+#+END_NOTES
+*** Abundance
+:PROPERTIES:
+:CUSTOM_ID: abundance-6257
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- *much* more recorded than in the past
+- *vastly more* preserved, at least for now
+- increasing percentage of historical works as well
+
+*** Mechanical Speech
+:PROPERTIES:
+:CUSTOM_ID: mechanical-speech-c3b6
+:END:
+- auto-preservation
+- but by and for whom?
+
+#+BEGIN_NOTES 
+Google, FB, and Twitter are preserving lots of data.  As are Tesla and Samsung. But who will get to see it? How does a historian compete?
+#+END_NOTES
+*** Problems of Preservation
+:PROPERTIES:
+:CUSTOM_ID: problems-of-preservation-29ba
+:END:
+- physical media
+- software turnover & bitrot
+- capturing dynamic/interactive media
+#+BEGIN_NOTES 
+
+#+END_NOTES
+*** What big data means for old documents
+:PROPERTIES:
+:CUSTOM_ID: what-big-data-means-for-old-documents-608a
+:END:
+#+BEGIN_QUOTE
+digitization does provide scale (or quantity) but does so at the price of rich, largely manual encoding. Visualization, customization, personalization, and similar analytical services increasingly familiar to us depend upon born-digital objects in which a great deal of structural and semantic knowledge has been encoded. The information captured on page images is, by contrast, implicit and often not directly accessible to the machines that will be always their first, often their only, and arguably their most important readers. (CILR)
+#+END_QUOTE
+
+
+*** Can we tell stories? Can we do research?
+:PROPERTIES:
+:CUSTOM_ID: can-we-tell-stories?-can-we-do-research?-269a
+:END:
+#+ATTR_REVEAL: :frag (appear)
+- no longer possible to read everything!
+  - who will read it for us? How will we be experts? Can we automate our reading?
+- Narrative form ill-suited to massive quantities of data
+  - can we develop new types of narratives?
+- Big questions may be answerable!
+  - What used to be pure speculation, can perhaps now be made more concrete and compelling
+    - How does role of religion in public discourse change over time?
+    - how do railroads impact social and economic development?
+    - others?
+** Abundance: Summary
+:PROPERTIES:
+:CUSTOM_ID: recap-77644
+:END:
+#+ATTR_REVEAL: :frag (appear appear)
+- "Abundance" offers many challenges
+  - preservation
+  - interpretation
+  - access
+- Does /history itself/ need to be reformed?
+  - What /relation to sources/?
+  - What /kinds of arguments/?
+  - What /narrative forms/?
+** No Clothes, no body
+#+begin_quote 
+ It's not that the emperor has no clothes(that would be fine); it's that no one knows what the emperor looks like. (Ramsey 2010)
+#+end_quote
+
+#+BEGIN_NOTES 
+"It's one thing to worry that your canon isn't sufficiently inclusive, or broad, or representative. It's another thing when your canon has no better chance of being these thngs than a random selection. When we get up into the 14-million book range, books that are known by more than 2 living people are already "popular"
+#+END_NOTES
+** Distant Reading: Abstract Models
+:PROPERTIES:
+:CUSTOM_ID: abstract-models-d7c3
+:END:
+#+BEGIN_QUOTE
+...distance is however not an obstacle, but a /specific form of knowledge:/ fewer elements, hence a sharper sense of their overall interconnection. Shapes, relations, structures. Forms. Models. 
+#+END_QUOTE
+*** The opposite of close?
+:PROPERTIES:
+:CUSTOM_ID: the-opposite-of-close?-f387
+:END:
+#+BEGIN_QUOTE
+ Dorothea, endowed with the extraordinary capacity for attentiveness that is "ardor," is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
+
+"...I should learn everything then," she said to herself, still walking quickly along the bridle road through the wood. "It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."
+#+END_QUOTE
+
+#+BEGIN_NOTES
+to notice:
+- analysis of passage longer than passage itself.
+#+END_NOTES
+*** To the point of deconstruction
+:PROPERTIES:
+:CUSTOM_ID: to-the-point-of-deconstruction-7de9
+:END:
+#+BEGIN_QUOTE
+If the pharmakon is ambivalent, it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.). The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it precedes the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves.
+#+END_QUOTE
+*** Closeness
+:PROPERTIES:
+:CUSTOM_ID: closeness-431d
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Literary study long organized around "close" reading
+- "Hermeneutic" model of scholarship
+- defines what it has meant to /understand/ or /master/ a text
+*** Questioning Close Reading
+:PROPERTIES:
+:CUSTOM_ID: questioning-close-reading-7c74
+:END:
+- But what is understanding?
+- what is literature?
+- what is the scholar's goal?
+#+BEGIN_NOTES
+
+#+END_NOTES
+*** Some Numbers
+:PROPERTIES:
+:CUSTOM_ID: some-numbers-b757
+:END:
+- ~62,000 new Novels published in English in the US/year
+- ~304,000 new and re-issued /books/ in US/year
+- ~129,000,000 books collected in world's libraries
+#+ATTR_REVEAL: :frag (appear)
+- *not possible to read these*
+  - can one still be an expert?
+*** New forms of Understanding?
+:PROPERTIES:
+:CUSTOM_ID: new-forms-of-understanding?-c1c6
+:END:
+- instead of, or in parallel with, close reading?
+- apprehension of /large-scale phenomena/
+- studying models, rather than texts themselves
+*** Questions to consider
+:PROPERTIES:
+:CUSTOM_ID: questions-to-consider-6df4
+:END:
+- Does this count as /comprehension/?
+- what new skills are required?
+- What are the weaknesses of this form?
+** Graphs
+:PROPERTIES:
+:CUSTOM_ID: graphs-70bf
+:END:
+#+ATTR_HTML: :style float:left;
+[[https://seeingcomplexity.files.wordpress.com/2011/02/william_playfair_graph.jpg]]
+#+ATTR_HTML: :style float:left;
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- /condense/ data
+- /conceptualize/ mathematically
+- /convince/ readers
+- a fundamentally *rhetorical* tool
+*** Moretti's Graphs
+:PROPERTIES:
+:CUSTOM_ID: moretti's-graphs-68bd
+:END:
+https://newleftreview-org.myaccess.library.utoronto.ca/system/dragonfly/production/2019/05/13/3iz0atrlo0_2580502large.gif
+#+BEGIN_QUOTE
+Quantitative research provides a type of data which is ideally independent of interpretations. (p.9)
+#+END_QUOTE
+- yet, the graph is an argument:  rise, fall, rise
+*** A History of Readers
+:PROPERTIES:
+:CUSTOM_ID: a-history-of-readers-7e72
+:END:
+[[http://sandbox.hackinghistory.ca/assets/images/DH/three-rises-novel-colored.gif]]
+- each phase a new "kind" of reader
+- intensive, extensive, generic
+*** Cycles
+:PROPERTIES:
+:CUSTOM_ID: cycles-3686
+:END:
+#+BEGIN_QUOTE
+Event, cycle, /longue durée/: three time frames which have fared very unevenly in literary studies.
+
+... cycles constitute /temporary structures within the historical flow./ (p.14)
+#+END_QUOTE
+- *event \rarr close reading*
+- *longue durée \rarr grand narrative*
+- *cycle \rarr ?*
+*** Cycles in Literature
+:PROPERTIES:
+:CUSTOM_ID: cycles-in-literature-f456
+:END:
+[[http://sandbox.hackinghistory.ca/assets/images/DH/genres-colored.gif]]
+#+BEGIN_QUOTE
+A genre exhausts its potentialities... when its inner form is no longer capable of representing the most significant aspects of contemporary reality. (p. 17, fn 7)
+#+END_QUOTE
+*** Genre & Generation
+:PROPERTIES:
+:CUSTOM_ID: genre-&-generation-5762
+:END:
+#+BEGIN_QUOTE
+... some kind of generational mechanism seems the best way to account for the regularity of the novelistic cycle... (p. 22)
+#+END_QUOTE
+- "Normal literature"
+- but "revolution" as "dying out"
+*** From "the shift" to "a shift"
+:PROPERTIES:
+:CUSTOM_ID: shift-4356
+:END:
+http://newleftreview.org/static/assets/images/2580512large.gif
+#+BEGIN_QUOTE
+...the point is not who prevails in this or that skirmish, but exactly the opposite: no victory is ever definitive... the form keeps oscillating back and forth between the two groups. (p.29)
+#+END_QUOTE
+*** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-dbf4
+:END:
+#+BEGIN_QUOTE
+...the real point here... is the total /heterogeneity of problem and solution:/ to make sense of quantitative data, I had to abandon the quantitative universe, and turn to morphology: evoke form, in order to explain figures.
+#+END_QUOTE
+- how justified is this move?
+- what do we learn from it? 
+** Maps
+:PROPERTIES:
+:CUSTOM_ID: maps-59e4
+:END:
+#+BEGIN_QUOTE
+There is a very simple question about literary maps: what exactly do they /do/?
+#+END_QUOTE
+- like graphs, maps are a /persuasive tool/
+- What does it mean to "map" a novel?
+*** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-44e9
+:END:
+#+ATTR_HTML: :style float:left; max-height:320px;
+http://www.socialresearchmethods.net/research/epp2/15.gif
+#+ATTR_HTML: :style float:left; max-height:320px;  max-width:49%
+http://theexpertsagree.files.wordpress.com/2009/06/tokyorail.jpg
+#+ATTR_HTML: :style float:left; max-height:320px; max-width:49%
+http://www.fubiz.net/wp-content/uploads/2013/07/am1.jpg
+*** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-6c3d
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- abstract
+- visual
+- representation
+- of a physical or imagined space
+*** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-ddd7
+:END:
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600511large.gif
+#+BEGIN_QUOTE
+The form of an object is a 'diagram of forces', in this sense, at least that from it we can... deduce the forces that ... have acted upon it. (p.57)
+#+END_QUOTE
+*** /Our Village/
+:PROPERTIES:
+:CUSTOM_ID: /our-village/-c56c
+:END:
+#+BEGIN_QUOTE
+In the 1824 volume... the vilage was the undisputed centre of the surrounding countryside: the centripetal effects of the force "from within" were omnipresent, while the force "from without" was nowhere to be seen. (p. 57)
+
+Two collections later, in 1828, the village's gravitation field is already weaker...  Something is wrong with the force from within, but as no counter-force challenges it yet, the basic pattern... remains in place.  But by 1832... the village's centripetal force is reduced to nothing, and the bulk of the book moves away... (p. 58-59)
+#+END_QUOTE
+*** /Our Village/ -- Extremes
+:PROPERTIES:
+:CUSTOM_ID: /our-village/----extremes-3f27
+:END:
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512large.gif
+*** Modelling the text
+:PROPERTIES:
+:CUSTOM_ID: modelling-the-text-1363
+:END:
+- *reduce* text to the model
+- *presume* that sociological factors are determinative
+- *sustain* focus on form ("a quantitative history of literature is also a profoundly formalist one" -p.25, fn 14)
+- *interpret* model in light of theories
+
+** Trees
+:PROPERTIES:
+:CUSTOM_ID: trees-66d5
+:END:
+#+ATTR_HTML: :style float:left; max-width:49%;
+https://upload.wikimedia.org/wikipedia/commons/1/10/Darwin_Tree_1837.png
+#+ATTR_HTML: :style float:left; max-width:49%;
+https://upload.wikimedia.org/wikipedia/commons/4/4e/Darwins_tree_of_life_1859.png
+*** Moretti's Evolutionism
+:PROPERTIES:
+:CUSTOM_ID: moretti's-evolutionism-251f
+:END:
+- Citations: Darwin, Feldman, Cavalli-Sforza
+- In his genealogy: Karl Marx; H. G. Wells; E. O. Wilson; all of evolutionary psychology
+*** Plots
+:PROPERTIES:
+:CUSTOM_ID: plots-525b
+:END:
+https://newleftreview-org.myaccess.library.utoronto.ca/system/dragonfly/production/2019/05/13/1tvogaisyo_2620303large.gif
+**** Clues as /evolved/ phenomenon
+:PROPERTIES:
+:CUSTOM_ID: clues-as-/evolved/-phenomenon-baf4
+:END:
+- Doyle as /canonical starting point/ for detective fiction
+- But has a context; how to describe?
+- note: /not/ a personal context!
+*** Styles
+:PROPERTIES:
+:CUSTOM_ID: styles-4fc2
+:END:
+https://nplusonemag.com/wp-content/uploads/2014/04/moretti-2.jpg
+**** Free Indirect Style
+:PROPERTIES:
+:CUSTOM_ID: free-indirect-style-4a25
+:END:
+#+BEGIN_QUOTE
+A peculiar mix of indirect and direct discourse, which draws the verbal tenses and pronouns from the former, and the tone and the order of the sentence from the latter:
+
+It was the abode of noise, disorder, and impropriety. Nobody was in their right place, nothing was done as it ought to be. She could not respect her parents, as she had hoped. 
+#+END_QUOTE
+**** Why FIS?
+:PROPERTIES:
+:CUSTOM_ID: why-fis?-eefc
+:END:
+- appears to mark a major social transformation ("halfway btwn the social doxa and the individual voice, FIS is a good indicator of their changing balance of forces")
+- Moretti's goal: to /quantitatively/ (?) trace these forces
+  #+BEGIN_QUOTE
+  Take a form, follow it from space to space, and study the reasons for its transformations: the 'opportunistic, hence unpredictable' reasons of evolution.
+  #+END_QUOTE
+*** Problematics
+:PROPERTIES:
+:CUSTOM_ID: problematics-4d4e
+:END:
+- Teleological thinking?
+- dealing with the "twisted branching"?
+- is this really "quantitative"?
+- Does this qualify as "insight"? 
+** Summary: Moretti and History
+:PROPERTIES:
+:CUSTOM_ID: summary:-moretti-and-history-59c4
+:END:
+- *labor-intensive* quantification of sources
+- *glossing over* problems of quantification
+- *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
+* 06-02: Text as Data, history As Algorithm (but also homework help)
+:PROPERTIES:
+:EXPORT_FILE_NAME: 06-02-text-as-data
+:CUSTOM_ID: 06-02-text-as-data-f1aa
+:END:
+** Recap (distant reading)
+:PROPERTIES:
+:CUSTOM_ID: recap-8099
+:END:
+Models and Distant Reading
+- Hopeful, even Utopian discourse
+- Makes some questionable assumptions
+- But raises substantive questions:
+  #+ATTR_REVEAL: :frag (appear appear appear)
+  - Do we really deserve to call ourselves "Experts"?
+  - What does it mean, today, to "know" something?
+  - Can we leverage data-analysis tools to inform the classical goals of humanistic scholarship?
+
+** Today
+:PROPERTIES:
+:CUSTOM_ID: synopsis-bfc9
+:END:
+- Assignment Questions
+- Hermeneutics
+- Data beyond evidence
+- Screwing Around
+** How's it going?
+#+begin_src js
+//add code here
+
+#+end_src
+
+** Hermeneutics of Data
+:PROPERTIES:
+:CUSTOM_ID: hermeneutics-of-data-45d2
+:END:
+*** The Hermeneutic Tradition
+:PROPERTIES:
+:CUSTOM_ID: the-hermeneutic-tradition-b60e
+:END:
+- Science of Interpretation
+  - Biblical Scholarship: how to read
+  - Schleiermacher: how to understand others
+  - Heidegger: experience as hermeneutic
+    #+BEGIN_QUOTE
+     It is not really we who address the texts of tradition, but the canonic texts that address us. Having traveled through decades and centuries, the classic works of art, literature, science, and philosophy question us and our way of life. Our prejudices, whatever aspects of our cultural horizon that we take for granted, are brought into the open in the encounter with the past.
+    #+END_QUOTE
+#+BEGIN_NOTES
+ Human being, Gadamer argues, is a being in language. It is through language that the world is opened up for us. We learn to know the world by learning to master a language. Hence we cannot really understand ourselves unless we understand ourselves as situated in a linguistically mediated, historical culture. Language is our second nature
+
+ Gadamer argues that we never know a historical work as it originally appeared to its contemporaries. We have no access to its original context of production or to the intentions of its author. Tradition is always alive. It is not passive and stifling, but productive and in constant development. Trying, as the earlier hermeneuticians did, to locate the (scientific) value of the humanities in their capacity for objective reconstruction is bound to be a wasted effort. The past is handed over to us through the complex and ever-changing fabric of interpretations, which gets richer and more complex as decades and centuries pass. History, as Gadamer puts it, is always effective history. This, however, is not a deficiency. It is, rather, a unique possibility, a possibility that involves the particular kind of truth-claim that Gadamer ascribes to the human sciences: the truth of self-understanding.
+#+END_NOTES
+
+- textual encouter as a fundamental act of self-comprehension
+- can this be recaptured in data-heavy analysis?
+
+*** Method as Interpretation
+:PROPERTIES:
+:CUSTOM_ID: method-as-interpretation-db44
+:END:
+
+#+BEGIN_QUOTE
+...work with data can be exploratory and deliberately without the mathematical rigor that social scientists must use to support their epistemological claims. Using data in this way is fundamentally different from using data for quantifying, computing and creating knowledge as per quantitative history.
+
+...data does not always have to be used as evidence. It can also help with discovering and framing research questions. 
+#+END_QUOTE
+
+#+BEGIN_NOTES
+- Gibbs & Owens, both figures in DH scene in first half of this decade
+- data in history has been around a while!
+#+END_NOTES
+
+*** Openness
+:PROPERTIES:
+:CUSTOM_ID: openness-a3bd
+:END:
+
+#+BEGIN_QUOTE
+Regardless of form, we need history writing that explicates the research process as much as the research conclusions. We need history writing that interfaces with, explains, and makes accessible the data that historians use...One way of reducing hostility to data and its manipulation is to lay bare whatever manipulations have led to some historical insight. 
+#+END_QUOTE
+*** Open Research on "Users"
+:PROPERTIES:
+:CUSTOM_ID: open-research-on-users-5357
+:END:
+- [[https://books.google.com/ngrams/graph?content=user&year_start=1800&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cuser%3B%2Cc0][Rise of the User]]
+- [[https://books.google.com/ngrams/graph?content=drug+user%2Cuser+interface&year_start=1960&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cdrug%20user%3B%2Cc0%3B.t1%3B%2Cuser%20interface%3B%2Cc0][Two different Rises]]
+- [[https://docs.google.com/spreadsheets/d/12ARdbZeISIGzV-_7sJPlB56ZOGZZvAQCC79CUcIRxqU/pub?hl=en_US&hl=en_US&output=html][Using Collocation]]
+- [[https://books.google.com/ngrams/graph?content=cyborg%2Crobot%2Candroid%2Cartificial+intelligence%2Cautomaton%2Cfrankenstein&case_insensitive=on&year_start=1800&year_end=2008&corpus=15&smoothing=3&share=&direct_url=t4%3B%2Ccyborg%3B%2Cc0%3B%2Cs0%3B%3Bcyborg%3B%2Cc0%3B%3BCyborg%3B%2Cc0%3B%3BCYBORG%3B%2Cc0%3B.t4%3B%2Crobot%3B%2Cc0%3B%2Cs0%3B%3Brobot%3B%2Cc0%3B%3BRobot%3B%2Cc0%3B%3BROBOT%3B%2Cc0%3B.t4%3B%2Candroid%3B%2Cc0%3B%2Cs0%3B%3Bandroid%3B%2Cc0%3B%3BAndroid%3B%2Cc0%3B%3BANDROID%3B%2Cc0%3B.t4%3B%2Cartificial%20intelligence%3B%2Cc0%3B%2Cs0%3B%3BArtificial%20Intelligence%3B%2Cc0%3B%3Bartificial%20intelligence%3B%2Cc0%3B%3BArtificial%20intelligence%3B%2Cc0%3B%3BARTIFICIAL%20INTELLIGENCE%3B%2Cc0%3B.t4%3B%2Cautomaton%3B%2Cc0%3B%2Cs0%3B%3Bautomaton%3B%2Cc0%3B%3BAutomaton%3B%2Cc0%3B%3BAUTOMATON%3B%2Cc0%3B.t4%3B%2Cfrankenstein%3B%2Cc0%3B%2Cs0%3B%3BFrankenstein%3B%2Cc0%3B%3BFRANKENSTEIN%3B%2Cc0][And some further thoughts about human-machine hybrids]]
+** Screwing Around
+:PROPERTIES:
+:CUSTOM_ID: screwing-around-2dc5
+:END:
+*** Millions of books
+:PROPERTIES:
+:CUSTOM_ID: millions-of-books-474c
+:END:
+#+BEGIN_QUOTE
+It's one thing to worry that your canon isn't sufficiently inclusive, or broad, or representative. It's another thing when your canon has no better chance of being these things than a random selection.(Ramsay, p.3)
+#+END_QUOTE
+
+- now-familiar insight: you can't read everything
+*** Searching and Browsing
+:PROPERTIES:
+:CUSTOM_ID: searching-and-browsing-f338
+:END:
+- Search: knowledge of object; strategies of data collection; methods of reading
+- Browsing: bundle of interests; unsystematic following of connections
+#+BEGIN_NOTES
+  I walk into the library and wander around in a state of insoucient boredom. I like music, so I head over to the music section. I pick up a book on American rock music and start flipping through it (because it's purple and big). There's an interesting bit on Frank Zappa, and it mentions that Zappa was way into this guy named Edgard Varèse. I have no idea who that is, so I start looking around for some Varèse. One look at the cover of his biography—Varèse with that mad-scientist look and the crazy hair—and I'm already a fan. And so off I go. I check out some records and discover Varèse.
+#+END_NOTES
+*** "Screwing Around"
+:PROPERTIES:
+:CUSTOM_ID: screwing-around-898f
+:END:
+- "Screwing around" is a form of hermeneutic encounter
+- the text /addresses us/
+*** Linked Data for /Screwing Around/, not only /rigourous investigation/
+:PROPERTIES:
+:CUSTOM_ID: linked-data-for-/screwing-around/,-not-only-/rigourous-investigation/-a896
+:END:
+*Goal:*
+#+BEGIN_QUOTE
+Extract from the stored record of humanity useful information in an actionable format for any given human being of any culture at any time and in
+any place. (Crane, cited in Ramsay, 7)
+#+END_QUOTE
+
+- A library where books talk to each other! and our encounter with them is playfully mediated through algorithms.
+
+#+BEGIN_QUOTE
+the real message of our technology is something entirely unexpected—
+a writerly, anarchic text that is more useful than the readerly, institutional
+text. Useful and practical not in spite of its anarchic nature, but as a natural
+consequence of the speed and scale that inhere in all anarchic systems.
+#+END_QUOTE
+
+
+* COMMENT 04: Pt 2, Distant Reading 1 (2019-01 version)                                    
+:PROPERTIES:
+:EXPORT_FILE_NAME: 04-distant-reading-1
+:EXPORT_TITLE: Distant Reading I
+:CUSTOM_ID: 04:-distant-reading-1-65c1
+:END:
+** COMMENT
+:PROPERTIES:
+:CUSTOM_ID: comment-27db
+:END:
+- Lecture: Graphs & maps (30 mins)
+- discussion
+- Wordles
+- Have assignment ready!
+** COMMENT Bright the Hawk's Flight
+:PROPERTIES:
+:CUSTOM_ID: bright-the-hawk's-flight-d1e1
+:END:
+@@html:<div class="paired" style="margin-right:40px;">@@
+#+begin_verse 
+Only in silence the word,
+Only in dark the light,
+Only in dying life:
+Bright the hawk's flight
+On the empty sky.
+#+end_verse
+@@html:</div>@@
+
+#+ATTR_HTML: :class paired
+https://c1.staticflickr.com/3/2430/3551195631_bc66b90648_b.jpg
+** Reminder
+:PROPERTIES:
+:CUSTOM_ID: recap-7764
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- "Abundance" offers many challenges
+  - preservation
+  - interpretation
+  - access
+- Does /history itself/ need to be reformed?
+  - What /relation to sources/?
+  - What /kinds of arguments/?
+  - What /narrative forms/?
+*** Plan for the day
+:PROPERTIES:
+:CUSTOM_ID: plan-for-the-day-c53a
+:END:
+- Lecture (short as i can manage, will stop early if nec)
+- Class Discussion (what did you learn/ what do you doubt)
+- help w/ HTML/CSS/JS (if you're stuck/don't understand) 
+** Abstract Models
+:PROPERTIES:
+:CUSTOM_ID: abstract-models-d7c3
+:END:
+#+BEGIN_QUOTE
+...distance is however not an obstacle, but a /specific form of knowledge:/ fewer elements, hence a sharper sense of their overall interconnection. Shapes, relations, structures. Forms. Models. 
+#+END_QUOTE
+*** The opposite of close?
+:PROPERTIES:
+:CUSTOM_ID: the-opposite-of-close?-f387
+:END:
+#+BEGIN_QUOTE
+ Dorothea, endowed with the extraordinary capacity for attentiveness that is “ardor,” is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
+
+"“I should learn everything then,” she said to herself, still walking quickly along the bridle road through the wood. “It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."
+#+END_QUOTE
+
+#+BEGIN_NOTES
+to notice:
+- analysis of passage longer than passage itself.
+#+END_NOTES
+*** To the point of deconstruction
+:PROPERTIES:
+:CUSTOM_ID: to-the-point-of-deconstruction-7de9
+:END:
+#+BEGIN_QUOTE
+If the pharmakon is ‘ambivalent,' it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes' the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves.
+#+END_QUOTE
+*** Closeness
+:PROPERTIES:
+:CUSTOM_ID: closeness-431d
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Literary study long organized around "close" reading
+- "Hermeneutic" model of scholarship
+- defines what it has meant to /understand/ or /master/ a text
+*** Questioning Close Reading
+:PROPERTIES:
+:CUSTOM_ID: questioning-close-reading-7c74
+:END:
+- But what is understanding?
+- what is literature?
+- what is the scholar's goal?
+#+BEGIN_NOTES
+
+#+END_NOTES
+*** Some Numbers
+:PROPERTIES:
+:CUSTOM_ID: some-numbers-b757
+:END:
+- ~62,000 new Novels published in English in the US/year
+- ~304,000 new and re-issued /books/ in US/year
+- ~129,000,000 books collected in world's libraries
+#+ATTR_REVEAL: :frag (appear)
+- *not possible to read these*
+  - can one still be an expert?
+*** New forms of Understanding?
+:PROPERTIES:
+:CUSTOM_ID: new-forms-of-understanding?-c1c6
+:END:
+- instead of, or in parallel with, close reading?
+- apprehension of /large-scale phenomena/
+- studying models, rather than texts themselves
+*** Questions to consider
+:PROPERTIES:
+:CUSTOM_ID: questions-to-consider-6df4
+:END:
+- Does this count as /comprehension/?
+- what new skills are required?
+- What are the weaknesses of this form?
+
+** Graphs
+:PROPERTIES:
+:CUSTOM_ID: graphs-70bf
+:END:
+#+ATTR_HTML: :style float:left;
+[[https://seeingcomplexity.files.wordpress.com/2011/02/william_playfair_graph.jpg]]
+#+ATTR_HTML: :style float:left;
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- /condense/ data
+- /conceptualize/ mathematically
+- /convince/ readers
+- a fundamentally *rhetorical* tool
+*** Moretti's Graphs
+:PROPERTIES:
+:CUSTOM_ID: moretti's-graphs-68bd
+:END:
+http://newleftreview.org/static/assets/images/2580501large.gif
+#+BEGIN_QUOTE
+Quantitative research provides a type of data which is ideally independent of interpretations. (p.9)
+#+END_QUOTE
+- yet, the graph is an argument:  rise, fall, rise
+*** A History of Readers
+:PROPERTIES:
+:CUSTOM_ID: a-history-of-readers-7e72
+:END:
+[[http://sandbox.hackinghistory.ca/assets/images/DH/three-rises-novel-colored.gif]]
+- each phase a new "kind" of reader
+- intensive, extensive, generic
+*** Cycles
+:PROPERTIES:
+:CUSTOM_ID: cycles-3686
+:END:
+#+BEGIN_QUOTE
+Event, cycle, /longue durée/: three time frames which have fared very unevenly in literary studies.
+
+... cycles constitute /temporary structures within the historical flow./ (p.14)
+#+END_QUOTE
+- *event \rarr close reading*
+- *longue durée \rarr grand narrative*
+- *cycle \rarr ?*
+*** Cycles in Literature
+:PROPERTIES:
+:CUSTOM_ID: cycles-in-literature-f456
+:END:
+[[http://sandbox.hackinghistory.ca/assets/images/DH/genres-colored.gif]]
+#+BEGIN_QUOTE
+A genre exhausts its potentialities... when its inner form is no longer capable of representing the most significant aspects of contemporary reality. (p. 17, fn 7)
+#+END_QUOTE
+*** Genre & Generation
+:PROPERTIES:
+:CUSTOM_ID: genre-&-generation-5762
+:END:
+#+BEGIN_QUOTE
+... some kind of generational mechanism seems the best way to account for the regularity of the novelistic cycle... (p. 22)
+#+END_QUOTE
+- "Normal literature"
+- but "revolution" as "dying out"
+*** From "the shift" to "a shift"
+:PROPERTIES:
+:CUSTOM_ID: shift-4356
+:END:
+http://newleftreview.org/static/assets/images/2580512large.gif
+#+BEGIN_QUOTE
+...the point is not who prevails in this or that skirmish, but exactly the opposite: no victory is ever definitive... the form keeps oscillating back and forth between the two groups. (p.29)
+#+END_QUOTE
+*** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-dbf4
+:END:
+#+BEGIN_QUOTE
+...the real point here... is the total /heterogeneity of problem and solution:/ to make sense of quantitative data, I had to abandon the quantitative universe, and turn to morphology: evoke form, in order to explain figures.
+#+END_QUOTE
+- how justified is this move?
+- what do we learn from it? 
+** Maps
+:PROPERTIES:
+:CUSTOM_ID: maps-59e4
+:END:
+#+BEGIN_QUOTE
+There is a very simple question about literary maps: what exactly do they /do/?
+#+END_QUOTE
+- like graphs, maps are a /persuasive tool/
+- What does it mean to "map" a novel?
+*** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-44e9
+:END:
+#+ATTR_HTML: :style float:left; max-height:320px;
+http://www.socialresearchmethods.net/research/epp2/15.gif
+#+ATTR_HTML: :style float:left; max-height:320px;  max-width:49%
+http://theexpertsagree.files.wordpress.com/2009/06/tokyorail.jpg
+#+ATTR_HTML: :style float:left; max-height:320px; max-width:49%
+http://www.fubiz.net/wp-content/uploads/2013/07/am1.jpg
+*** What is a map?
+:PROPERTIES:
+:CUSTOM_ID: what-is-a-map?-6c3d
+:END:
+#+ATTR_REVEAL: :frag (appear appear appear appear)
+- abstract
+- visual
+- representation
+- of a physical or imagined space
+*** Moretti's method
+:PROPERTIES:
+:CUSTOM_ID: moretti's-method-ddd7
+:END:
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600511large.gif
+#+BEGIN_QUOTE
+The form of an object is a 'diagram of forces', in this sense, at least that from it we can... deduce the forces that ... have acted upon it. (p.57)
+#+END_QUOTE
+*** /Our Village/
+:PROPERTIES:
+:CUSTOM_ID: /our-village/-c56c
+:END:
+#+BEGIN_QUOTE
+In the 1824 volume... the vilage was the undisputed centre of the surrounding countryside: the centripetal effects of the force "from within" were omnipresent, while the force "from without" was nowhere to be seen. (p. 57)
+
+Two collections later, in 1828, the village's gravitation field is already weaker...  Something is wrong with the force from within, but as no counter-force challenges it yet, the basic pattern... remains in place.  But by 1832... the village's centripetal force is reduced to nothing, and the bulk of the book moves away... (p. 58-59)
+#+END_QUOTE
+*** /Our Village/ -- Extremes
+:PROPERTIES:
+:CUSTOM_ID: /our-village/----extremes-3f27
+:END:
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512large.gif
+*** Modelling the text
+:PROPERTIES:
+:CUSTOM_ID: modelling-the-text-1363
+:END:
+- *reduce* text to the model
+- *presume* that sociological factors are determinative
+- *sustain* focus on form ("a quantitative history of literature is also a profoundly formalist one" -p.25, fn 14)
+- *interpret* model in light of theories
+** Summary: Moretti and History
+:PROPERTIES:
+:CUSTOM_ID: summary:-moretti-and-history-59c4
+:END:
+- *labor-intensive* quantification of sources
+- *glossing over* problems of quantification
+- *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
+** COMMENT Tools for Distant Reading: the wordle
+:PROPERTIES:
+:CUSTOM_ID: tools-for-distant-reading:-the-wordle-eaf6
+:END:
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
+#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
+http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
+- what do and don't we know? 
+** COMMENT Exercise: build a wordle 
+:PROPERTIES:
+:CUSTOM_ID: exercise:-build-a-wordle-34a6
+:END:
+*** Choose a work to not read.
+:PROPERTIES:
+:CUSTOM_ID: choose-a-work-to-not-read.-43b7
+:END:
+- navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
+- download the *text* version
+*** Make some predictions
+:PROPERTIES:
+:CUSTOM_ID: make-some-predictions-df0a
+:END:
+- Write down your basic expectations of the novel: 
+- What are the main themes?
+- What are the lessons?
+- What is its place in literary history?
+*** Make a Wordle
+:PROPERTIES:
+:CUSTOM_ID: make-a-wordle-c8b5
+:END:
+- navigate to [[http://wordle.net]]
+- strip the metadata from the text (e.g., license, etc.)
+- create wordle for the text as a whole.
+  - then for several chapters or sections
+  - what patterns do you see? 
+*** Make a network
+:PROPERTIES:
+:ID:       aefd9474-d1ed-40ae-9190-034aac825a3e
+:CUSTOM_ID: make-a-network-43f4
+:END:
+- copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
+
+#+BEGIN_QUOTE
+    The gist of textexure's process is that account of words that occur near each other. That is not to say words have to be directly next to one another, paragraph and sentence structures are both considered. In the network, the nodes are the words themselves while the edges (or connections from node to node) are determined by the co-occurrence between words either directly, in paragraphs or sentences. In terms of the visualization, this effectively does two things: 1. organizes groups of words into the communities they appear (color coded) so that with a quick glance at the network, you can pick out certain themes and 2. You can also easily see what the primary theme that links the various aspects together.
+#+END_QUOTE
+In short, Textexture tries to automatically discern and visualize relationships between words, based on their usage, within a text. Looking at the network graph of your novel, what relationships seem most interesting? Experiment with the graph by clicking through different words. 
+
+*** Repeat
+:PROPERTIES:
+:CUSTOM_ID: repeat-a785
+:END:
+- Try the same process with another novel.
+- What have you learned? Anything?  
+
+** COMMENT HTML Questions
+:PROPERTIES:
+:CUSTOM_ID: html-questions-87d5
+:END:
+#+begin_src html
+<style>
+
+</style>
+<!-- leaving blank for your questions -->
+#+end_src
+* 07-01: JavaScript and the DOM
+:PROPERTIES:
+:CUSTOM_ID: javascript-30da
+:EXPORT_FILE_NAME: 07-01-js-dom
+:END:
+** Working with the DOM
+:PROPERTIES:
+:CUSTOM_ID: working-with-the-dom-d129
+:END:
+*Document Object*
+- everything in the document can be manipulated via the DOM
+https://www.computerhope.com/jargon/d/dom1.jpg
+*** Inspecting the DOM
+:PROPERTIES:
+:CUSTOM_ID: inspecting-the-dom-edf1
+:END:
+file:///home/matt/DH/Images/devtools.png
+
+** Finding Elements
+:PROPERTIES:
+:CUSTOM_ID: finding-elements-11f8
+:END:
+- *"Vanilla" JavaScript* (described in MDN)
+  - ~document.querySelector("str")~
+- ~document.querySelectorAll("str")~
+- *jQuery* (convenience library)
+  - ~$("str")~
+  - *library must be loaded* with ~<script src="http://code.jquery.com/jquery-3.3.1.min.js"</script>~
+
+
+- we use jQuery in examples, but it's your choice.
+  - slightly different syntax & different return values, so be careful. 
+
+** Cheat Sheet
+| Task                       | jQuery                                               | "Vanilla" JS                                                                          |
+|----------------------------+------------------------------------------------------+---------------------------------------------------------------------------------------|
+| Get all matching elements  | ~$('selector')~                                      | ~document.querySelectorAll('selector')~                                               |
+| Get first matching element | ~$('selector').first()~                              | ~document.querySelector('selector')~                                                  |
+| Change CSS prop            | ~$('selector').css('property-name', 'value')~        | ~document.querySelector('selector').style.property-name = 'value'~                    |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.style.property-name='value'~                             |
+| Change Text Value          | ~$('selector').text('new text here')~                | ~document.querySelector('selector').textContent = 'new text here'~                    |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.textContent ='new text here'~                            |
+| Set inner HTML             | ~$('selector').html('<tag>valid HTML here</tag>')~   | ~document.querySelector('selector').innerHTML = '<tag>valid HTML here</tag>'~         |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.textContent ='<tag>valid HTML here</tag>'~               |
+| Append to an element       | ~$('selector').append('<tag>valid HTML here</tag>')~ | ~document.querySelector('selector').innerHTML += '<tag>valid HTML here</tag>'~ risky! |
+| Remove a node              | ~$('selector').remove()~                             | ~let el = document.querySelector('selector'); el.parentNode.removeChild(el);~         |
+
+
+
+
+
+** Change CSS of an Element
+:PROPERTIES:
+:CUSTOM_ID: change-css-of-an-element-0bef
+:END:
+#+begin_src js
+$('selector').css('property-name', 'value')
+#+end_src
+
+** Get and Change Text Content
+#+begin_src js
+$('selector').text()
+$('selector').text('new value')
+#+end_src
+
+** Get and Change Full inner HTML
+#+begin_src js
+$('selector').text()
+$('selector').text('<h2>new value, with valid HTML markup</h2>')
+#+end_src
+
+** Append elements
+#+begin_src js
+$('selector').append('<p>valid HTML Markup</p>')
+#+end_src
+
+** What does jQuery return? 
+- an "array-like object"
+- it's not exactly an array, but you can use "of" to iterate over HTMl objects
+- each element can use *native DOM methods* for HTML elements (cf MDN)
+- to use jQuery methods on it, wrap it again in the $() function 
+
+** Looping: over HTML elements
+#+begin_src js
+let allElements = $('selector');
+// for.. in will NOT work!!!!
+for (e of allElements) { // this will loop through the *html elements* found by jQ   
+  $(e).doSomething(0) // if you want to use jquery methods, you have to jquery-ize first
+}
+#+end_src
+
+** Looping -- advanced
+Trickier! Uses a "callback function" -- see this [[https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced][excellent, but still difficult, explanation]] 
+#+begin_src js
+$('td.name').each(
+  function (index) {
+    console.log(`here's the content of cell number ${index}`);
+    console.log($(this).text());
+  });
+#+end_src
+
+** Takeaways for us
+- it's a wild world out there
+- many complex concepts, but if you go slowly, it's not impossible to figure out
+- key is to understand that the DOM is a *struture of HTML elements*, which can be *created, destroyed, 
+* COMMENT 07-02 -- just used the exercise repo for that!!
+* 08-01: Homework Help Day
+:PROPERTIES:
+:EXPORT_FILE_NAME: 08-01-homework-help
+:header-args: :noweb yes
+:END:
+** Today
+- [[https://github.com/DigitalHistory/dom-exercises][working again from this repository]]
+- HTML Structures & Atomic Functions
+** Put a Pin In This
+:PROPERTIES:
+:reveal_extra_attr: class="splitc"
+:END:
+
+#+begin_slideblock
+[[./Images/e2019/globe-results-2019.png]]
+#+end_slideblock
+
+#+begin_slideblock
+[[./Images/e2019/cbc-results-2019.png]]
+#+end_slideblock
+
+#+begin_slideblock
+[[./Images/e2019/star-results-2019.png]]
+#+end_slideblock
+
+
+** HTML Structures
+- for the rest of the course, coding is mostly *creating HTML structures*
+- becaue HTML is tedious, *lots* of opportunity to introduce errors!
+- How to avoid?
+  - *D.R.Y.* (Don't Repeat Yourself)
+  - if done right, guarantees that low-level problems only need to be solved *once*
+  - remember: laziness is a virtue
+
+** Writing "Atomic" Functions
+- Complex code is difficult to debug!
+- instead, try to make your individual functions as simple as possible
+- *divide your problem into smallest possible parts* (hence 'atomic')
+- "chain" your functions together to recreate complexity
+- much easier to localize failure
+
+** Making a card deck 
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+#+begin_src html
+<card class="card">
+  <header>
+    <h1>Person Name</h1>
+  </header>
+  <main class="card">   
+    <p>
+      lengthy text here
+    </p>
+  </main>
+  <footer>
+    <a href="https://digitalhistory.github.io/">A Project of HIS393</a>
+  </footer>
+</card>
+#+end_src
+
+#+end_slideblock
+
+
+#+begin_slideblock
+
+#+begin_src js
+let sampleData = {
+  name: 'Person Name',
+  blurb: 'lengthy text here',
+};
+#+end_src
+*Task:* given a JSON data structure, generate a set of cards (like the ones we made in assignment 0, but simpler)
+
+
+#+end_slideblock
+*** First, Map the assignment
+#+ATTR_REVEAL: :frag (appear)
+- card deck \rarr set of cards
+- card \rarr ~<card><header></header><main></main><footer></footer><card>~
+- this is *set of tagged elements*
+- so we might do something like this:
+  #+ATTR_REVEAL: :frag (appear)
+  - *fn 1*: tag some content
+  - *fn 2*: use *fn 1* to make header structure
+  - *fn 3*: use *fn 1* to make main structure
+  - *fn 4*: use *fn 1* to make footer structure
+  - *fn 5*: use *fn 2, fn 3, fn 4* to make sub-structures and then call *fn 1* to wrap whole thing
+  - *fn 6*: loop through data structure, calling *fn 5* once for each element
+
+
+*** Start with Fn 1: ~letsTag~
+#+NAME: letstag
+#+begin_src js :exports none
+function letsTag(a,c,b={}){output=`<${c} `;Object.keys(b).map((k,i)=>output+=`${k}="${b[k]}" `);output+=`>${a}</${c}>`;return output}
+
+#+end_src
+
+#+begin_src js 
+<<letstag>>
+letsTag('I am the main content', 'main', {style: 'border: 2px solid black;'});
+
+#+end_src
+
+- code is purposely obfuscated; you guys can perhaps discuss among yourselves how you would implement it (is slightly harder than your assignment)
+*** Fn 2: ~headMe()~
+#+begin_src js 
+<<letstag>>
+function headMe (titleText) {
+  let output=letsTag(titleText, 'h1');
+  output=letsTag(output, 'header');
+  return output
+}
+
+headMe('I am the title');
+#+end_src
+
+*** All the Rest
+#+begin_src js
+<<letstag>>
+function footMe () {
+  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/'});
+  return letsTag(link, 'footer');
+}
+
+function mainMe (blurb) {
+  let p = letsTag(blurb, 'p');
+  return letsTag(p, 'main');
+}
+
+function cardMe (person) {
+  let header = headMe(person.name);
+  let main = mainMe(person.blurb);
+  let footer = footMe();
+  return letsTag(header + main + footer, 'card', {class: 'card'});
+}
+
+function makeAllTheCards (people) {
+  output = '';
+  for (p of people) {
+    output += cardMe (p);
+  }
+  return $('main#page-main').append(output); 
+}
+
+makeAllTheCards (allEntries);
+#+end_src
+
+* Computing Concepts Catchup
+:PROPERTIES:
+:EXPORT_FILE_NAME: 06-1-concepts-catchup
+:END:
+
+** Abstraction
+- objects & other vars are *abstract representations* of the phenomena we're interested in
+- careful choice of abstraction is important for *computational efficacy* and also for *epistemological reasons*
+** Iteration
+#+begin_src js
+for(let i = 0; i < collection.length; i++) {
+  // do something here for each element of collection using
+  // collection[i]
+  // "i" is always an integer value
+}
+
+for (i in ObjectOrArray ) {
+  // do something here with ObjectOrArray[i]
+  // "i" wil lbe an integer for an array, or
+  // a "property key(name)" for an object
+}
+
+for (let a of ArrayOrElementList) {
+  // do something directly with a
+  // a will take the value of whatever
+  // is at the current location in the array
+  // great for looping over DOM elements!
+}
+
+let i=0;
+while (i < myArray.length) {
+  // do osmething wiht myArray[i]
+  // remember to increment i within the loop!!!!
+}
+#+end_src
+** Branching Logic
+- without logic, programming would be pretty limited.
+- use these constructions to change the flow of your output depending on conditions
+#+begin_src js
+if (condition1) {
+  console.log("condition is true");
+} else if (condition2) {
+  console.log("conition1 is false but condition2 is true");
+} else {
+  console.log("none of hte above ocnditions is true")
+}
+
+#+end_src
+** Variable Scope
+- with *let* we have fine-grained control over "scope" of variable values.
+- most important within a function, but also works inside nay block: 
+#+begin_src js
+let x = 3;
+console.log(myvar);
+if (myvar) {
+  let myvar = 2;
+  console.log(myvar);
+}
+console.log(myvar);
+#+end_src
+** Functions: Definition; Invocation; Transformation of Parameters
+#+begin_src js
+function nameHere (param1, param2) {
+  // use params here
+  // remember to alwyas use the marameter name -- which is an abstraction!
+  // return a value that has somehow made use of parameters
+  return something;
+}
+
+nameHere(someValue1, someValue2) // when called, param1 wil lbe set equal to someValue1
+#+end_src
+** DOM as Branching Tree Structure
+- DOM Elements nest and bramch
+- possible to add, delete, modify them
+- to do this we need to select the right elements, then change their properties
+
+* COMMENT old javascript lecture notes -- contains some important araay & string methods
+:PROPERTIES:
+:CUSTOM_ID: javascript-30da
+:END:
+** For loops!
+#+BEGIN_SRC js
+var historians= ["Edward Gibbon", "Arnold Toynbee", "Leopold von Ranke"];
+  for (h of historians) {
+    console.log(h + " was a historian.");
+  }
+  for (i=0; i < historians.length ; i++){
+    console.log(historians[i] + " was a historian.");
+  }
+  for (i in historians) {
+    console.log(historians[i] + " was a historian.");
+  }
+#+END_SRC
+** Conditionals
+#+BEGIN_SRC js
+  var goodGuys = ["CA", "UK", "US"];
+  var badGuys=["DE", "AH"];
+  var people = [
+    {name: "Kaiser Wilhelm",
+     nat: "DE"}];
+  for (person of people) {
+    if (badGuys.includes(person.nat)) {
+      //console.log(person.name + ": BOOOOOOOOOOOO!!!");
+    }
+  };
+#+END_SRC
+
+#+RESULTS:
+: undefined
+
+** the "Repeat" function
+#+BEGIN_SRC js
+var myString="hello";
+myString.repeat(5);
+#+END_SRC
+** Check length
+#+BEGIN_SRC js
+  var myString="Hello all you students.",
+      myArray = ["Hello", "all", "you", "students", "."],
+      myObject = {greeting: "Hello",
+                  addressee: "all you students",
+                  punctuation: "."
+                 },
+     myNumber=25;
+  //console.log(myString.length);
+  //console.log(myArray.length);
+  //console.log(myObject.length);
+  //console.log(myNumber.length);
+#+END_SRC
+
+** "Operator Overloading"
+~+~, ~-~, do different things w/ different variable types
+#+begin_src js
+s = "asdf";
+t= "ghj";
+
+s+t;
+
+#+end_src
+
+** Working with the DOM
+*Document Object*
+- everything in the document can be manipulated here
+https://www.computerhope.com/jargon/d/dom1.jpg
+*** Finding Elements
+- ~document.getElementById("str")~
+- ~document.getElementByTagName("str")~
+- ~document.getElementByClassName("str")~
+
+*** Creating Elements
+- ~var newElement = document.createElement("str")~
+
+*** Putting elements into the document
+- ~var newElement = document.createElement("str")~
+- ~var oldElement = document.getElementByID("str")~
+- ~oldElement.append(newElement)~
 * COMMENT 02: What the web signifies | HTML & CSS                  
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-what-the-web-signifies
@@ -3171,13 +5474,13 @@ The use of digital sources, in other words, completely changes the landscape of 
 
 Some historians have tried to reconcile the iterative, seemingly stable, process of analog historical scholarship with the digital environment. Most of all, we have struggled with the question: Where does interpretation go in these online projects? Ideas about versioning, release dates, update systems, and so forth, bubbled to the surface in technical meetings for many projects. Interpretation, the coin of the realm in professional historical study, seemed cast aside How could interpretation be assessed if the project was continually in motion? Most digital history projects offered huge audiences, but potentially at the expense of interpretive salience. Was the digital medium the place to do historical scholarship? Or was it suitable only for pedagogical tool building? Or documentary editing? 
 
-ew Archives/New Inquiry: Digital resources are expanding and redefining the archival base for most fields and thereby redefining the fields themselves. (This is driven more by libraries and the tech industry than by historians.) My initial interest in things digital grew from developing a database to piece together fragmentary sources obscure people had left behind in multiple archives; the approach was not new, but the scale of the project I could imagine as an individual graduate student was. Linda Colley’s latest book, The Ordeal of Elizabeth Marsh—trumpeted in reviews as a “new” approach to biography—is a recent example. The book is not new in its recovery of an ordinary life as a window on a world. (Laurel Thatcher Ulrich showed us that in 1990.) But its ability to encompass the globe is new; Colley credits new media resources with making the project possible.
+ew Archives/New Inquiry: Digital resources are expanding and redefining the archival base for most fields and thereby redefining the fields themselves. (This is driven more by libraries and the tech industry than by historians.) My initial interest in things digital grew from developing a database to piece together fragmentary sources obscure people had left behind in multiple archives; the approach was not new, but the scale of the project I could imagine as an individual graduate student was. Linda Colley's latest book, The Ordeal of Elizabeth Marsh—trumpeted in reviews as a “new” approach to biography—is a recent example. The book is not new in its recovery of an ordinary life as a window on a world. (Laurel Thatcher Ulrich showed us that in 1990.) But its ability to encompass the globe is new; Colley credits new media resources with making the project possible.
 
 Audience: New bridges between academic and popular/public history.
 
 Collaboration: A source of excitement and perhaps peril. The best digital projects are collaborative, involving multiple scholars and a technical team, and ideally an institution committed to keeping the project alive after its creators move on to other things. This is, I think, a great way to work. It is not, however, one for which history as a discipline has established institutional resources. 
 
-To reiterate some of the excellent points made here: The new media are profoundly changing the ways most historians work, whether or not we are self-conscious about how we are becoming digital. As Dan has noted, it is in the discipline’s interest to be proactive, rather than reactive, in response to these changes. Institutions and individuals who have steered clear of the cutting edge have an important role to play here. Even those who do not envision themselves shaping new tools or expressive forms can—and should—work to make sure that the rising generation of scholars has the opportunity and the institutional space to experiment with digital media. In addition to funding and professionally sanctioned forums for expression, there needs be space for this in the graduate curriculum. The digital pioneers present in this conversation—and the much-missed Roy Rosenzweig—have made it very easy for others to introduce themselves and their students to the field. Check out their online syllabi; you might well be able to add an “Introduction to History and the New Media” to your institution’s roster of methods courses.
+To reiterate some of the excellent points made here: The new media are profoundly changing the ways most historians work, whether or not we are self-conscious about how we are becoming digital. As Dan has noted, it is in the discipline's interest to be proactive, rather than reactive, in response to these changes. Institutions and individuals who have steered clear of the cutting edge have an important role to play here. Even those who do not envision themselves shaping new tools or expressive forms can—and should—work to make sure that the rising generation of scholars has the opportunity and the institutional space to experiment with digital media. In addition to funding and professionally sanctioned forums for expression, there needs be space for this in the graduate curriculum. The digital pioneers present in this conversation—and the much-missed Roy Rosenzweig—have made it very easy for others to introduce themselves and their students to the field. Check out their online syllabi; you might well be able to add an “Introduction to History and the New Media” to your institution's roster of methods courses.
 
 ** Review
 :PROPERTIES:
@@ -3680,7 +5983,7 @@ Writing in HTML is distracting and time-consuming!
 
 Practice Markdown [[http://jsbin.com/sopemef/edit?html,output][on this similar but subtly different page]], or edit `index.md` in atom.  
 
-* 03: Abundance & Openness              
+* COMMENT 03: Abundance & Openness              
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-1-abundance-and-opennness
 :EXPORT_TITLE: Abundance and Openness
@@ -3904,1554 +6207,11 @@ When information is generally useful, redistributing it makes humanity wealthier
 - Access
 
 Future of the web and of historical scholarship depends on /continued struggle/ over these contested values.
-* 
-
-* 04: Pt 2, Distant Reading 1                                    
-:PROPERTIES:
-:EXPORT_FILE_NAME: 04-distant-reading-1
-:EXPORT_TITLE: Distant Reading I
-:CUSTOM_ID: 04:-distant-reading-1-65c1
-:END:
-** COMMENT
-:PROPERTIES:
-:CUSTOM_ID: comment-27db
-:END:
-- Lecture: Graphs & maps (30 mins)
-- discussion
-- Wordles
-- Have assignment ready!
-** COMMENT Bright the Hawk's Flight
-:PROPERTIES:
-:CUSTOM_ID: bright-the-hawk's-flight-d1e1
-:END:
-@@html:<div class="paired" style="margin-right:40px;">@@
-#+begin_verse 
-Only in silence the word,
-Only in dark the light,
-Only in dying life:
-Bright the hawk's flight
-On the empty sky.
-#+end_verse
-@@html:</div>@@
-
-#+ATTR_HTML: :class paired
-https://c1.staticflickr.com/3/2430/3551195631_bc66b90648_b.jpg
-** Reminder
-:PROPERTIES:
-:CUSTOM_ID: recap-7764
-:END:
-#+ATTR_REVEAL: :frag (appear appear appear)
-- "Abundance" offers many challenges
-  - preservation
-  - interpretation
-  - access
-- Does /history itself/ need to be reformed?
-  - What /relation to sources/?
-  - What /kinds of arguments/?
-  - What /narrative forms/?
-*** Plan for the day
-:PROPERTIES:
-:CUSTOM_ID: plan-for-the-day-c53a
-:END:
-- Lecture (short as i can manage, will stop early if nec)
-- Class Discussion (what did you learn/ what do you doubt)
-- help w/ HTML/CSS/JS (if you're stuck/don't understand) 
-** Abstract Models
-:PROPERTIES:
-:CUSTOM_ID: abstract-models-d7c3
-:END:
-#+BEGIN_QUOTE
-...distance is however not an obstacle, but a /specific form of knowledge:/ fewer elements, hence a sharper sense of their overall interconnection. Shapes, relations, structures. Forms. Models. 
-#+END_QUOTE
-*** The opposite of close?
-:PROPERTIES:
-:CUSTOM_ID: the-opposite-of-close?-f387
-:END:
-#+BEGIN_QUOTE
- Dorothea, endowed with the extraordinary capacity for attentiveness that is “ardor,” is given to the strongest denunciations of the trivial, the most overwhelming anxieties of admitting the trivial into her life of any character in the novel. She is blind to the possibility that attention has the capacity to reveal that what seems trivial is in fact significant. She fears instead that the attention is wasted by devoting itself to those common objects which really are trivial, which have no redeeming significance: 
-
-"“I should learn everything then,” she said to herself, still walking quickly along the bridle road through the wood. “It would be my duty to study that I might help him the better in his great works. There would be nothing trivial about our lives. Everyday-things with us would mean the greatest things."
-#+END_QUOTE
-
-#+BEGIN_NOTES
-to notice:
-- analysis of passage longer than passage itself.
-#+END_NOTES
-*** To the point of deconstruction
-:PROPERTIES:
-:CUSTOM_ID: to-the-point-of-deconstruction-7de9
-:END:
-#+BEGIN_QUOTE
-If the pharmakon is ‘ambivalent,’ it is because it constitutes the medium in which opposites are opposed, the movement and the play that links them among themselves, reverses them or makes one side cross over into the other (soul/ body, good/ evil, inside/ outside, memory/ forgetfulness, speech/ writing, etc.).…The pharmakon is the movement, the locus, and the play: (the production of) difference. It is the différance of difference. It holds in reserve, in its undecided shadow and vigil, the opposites and the differends that the process of discrimination will come to carve out. Contradictions and pairs of opposites are lifted from the bottom of this diacritical, differing, deferring, reserve. Already inhabited by différance, this reserve, even though it ‘precedes’ the opposition between different effects, even though it preexists differences as effects, does not have the punctual simplicity of a coincidentia oppositorum. It is from this fund that dialectics draws its reserves.
-#+END_QUOTE
-*** Closeness
-:PROPERTIES:
-:CUSTOM_ID: closeness-431d
-:END:
-#+ATTR_REVEAL: :frag (appear appear appear)
-- Literary study long organized around "close" reading
-- "Hermeneutic" model of scholarship
-- defines what it has meant to /understand/ or /master/ a text
-*** Questioning Close Reading
-:PROPERTIES:
-:CUSTOM_ID: questioning-close-reading-7c74
-:END:
-- But what is understanding?
-- what is literature?
-- what is the scholar's goal?
-#+BEGIN_NOTES
-
-#+END_NOTES
-*** Some Numbers
-:PROPERTIES:
-:CUSTOM_ID: some-numbers-b757
-:END:
-- ~62,000 new Novels published in English in the US/year
-- ~304,000 new and re-issued /books/ in US/year
-- ~129,000,000 books collected in world's libraries
-#+ATTR_REVEAL: :frag (appear)
-- *not possible to read these*
-  - can one still be an expert?
-*** New forms of Understanding?
-:PROPERTIES:
-:CUSTOM_ID: new-forms-of-understanding?-c1c6
-:END:
-- instead of, or in parallel with, close reading?
-- apprehension of /large-scale phenomena/
-- studying models, rather than texts themselves
-*** Questions to consider
-:PROPERTIES:
-:CUSTOM_ID: questions-to-consider-6df4
-:END:
-- Does this count as /comprehension/?
-- what new skills are required?
-- What are the weaknesses of this form?
-
-** Graphs
-:PROPERTIES:
-:CUSTOM_ID: graphs-70bf
-:END:
-#+ATTR_HTML: :style float:left;
-[[https://seeingcomplexity.files.wordpress.com/2011/02/william_playfair_graph.jpg]]
-#+ATTR_HTML: :style float:left;
-#+ATTR_REVEAL: :frag (appear appear appear appear)
-- /condense/ data
-- /conceptualize/ mathematically
-- /convince/ readers
-- a fundamentally *rhetorical* tool
-*** Moretti's Graphs
-:PROPERTIES:
-:CUSTOM_ID: moretti's-graphs-68bd
-:END:
-http://newleftreview.org/static/assets/images/2580501large.gif
-#+BEGIN_QUOTE
-Quantitative research provides a type of data which is ideally independent of interpretations. (p.9)
-#+END_QUOTE
-- yet, the graph is an argument:  rise, fall, rise
-*** A History of Readers
-:PROPERTIES:
-:CUSTOM_ID: a-history-of-readers-7e72
-:END:
-[[http://sandbox.hackinghistory.ca/assets/images/DH/three-rises-novel-colored.gif]]
-- each phase a new "kind" of reader
-- intensive, extensive, generic
-*** Cycles
-:PROPERTIES:
-:CUSTOM_ID: cycles-3686
-:END:
-#+BEGIN_QUOTE
-Event, cycle, /longue durée/: three time frames which have fared very unevenly in literary studies.
-
-... cycles constitute /temporary structures within the historical flow./ (p.14)
-#+END_QUOTE
-- *event \rarr close reading*
-- *longue durée \rarr grand narrative*
-- *cycle \rarr ?*
-*** Cycles in Literature
-:PROPERTIES:
-:CUSTOM_ID: cycles-in-literature-f456
-:END:
-[[http://sandbox.hackinghistory.ca/assets/images/DH/genres-colored.gif]]
-#+BEGIN_QUOTE
-A genre exhausts its potentialities... when its inner form is no longer capable of representing the most significant aspects of contemporary reality. (p. 17, fn 7)
-#+END_QUOTE
-*** Genre & Generation
-:PROPERTIES:
-:CUSTOM_ID: genre-&-generation-5762
-:END:
-#+BEGIN_QUOTE
-... some kind of generational mechanism seems the best way to account for the regularity of the novelistic cycle... (p. 22)
-#+END_QUOTE
-- "Normal literature"
-- but "revolution" as "dying out"
-*** From "the shift" to "a shift"
-:PROPERTIES:
-:CUSTOM_ID: shift-4356
-:END:
-http://newleftreview.org/static/assets/images/2580512large.gif
-#+BEGIN_QUOTE
-...the point is not who prevails in this or that skirmish, but exactly the opposite: no victory is ever definitive... the form keeps oscillating back and forth between the two groups. (p.29)
-#+END_QUOTE
-*** Moretti's method
-:PROPERTIES:
-:CUSTOM_ID: moretti's-method-dbf4
-:END:
-#+BEGIN_QUOTE
-...the real point here... is the total /heterogeneity of problem and solution:/ to make sense of quantitative data, I had to abandon the quantitative universe, and turn to morphology: evoke form, in order to explain figures.
-#+END_QUOTE
-- how justified is this move?
-- what do we learn from it? 
-** Maps
-:PROPERTIES:
-:CUSTOM_ID: maps-59e4
-:END:
-#+BEGIN_QUOTE
-There is a very simple question about literary maps: what exactly do they /do/?
-#+END_QUOTE
-- like graphs, maps are a /persuasive tool/
-- What does it mean to "map" a novel?
-*** What is a map?
-:PROPERTIES:
-:CUSTOM_ID: what-is-a-map?-44e9
-:END:
-#+ATTR_HTML: :style float:left; max-height:320px;
-http://www.socialresearchmethods.net/research/epp2/15.gif
-#+ATTR_HTML: :style float:left; max-height:320px;  max-width:49%
-http://theexpertsagree.files.wordpress.com/2009/06/tokyorail.jpg
-#+ATTR_HTML: :style float:left; max-height:320px; max-width:49%
-http://www.fubiz.net/wp-content/uploads/2013/07/am1.jpg
-*** What is a map?
-:PROPERTIES:
-:CUSTOM_ID: what-is-a-map?-6c3d
-:END:
-#+ATTR_REVEAL: :frag (appear appear appear appear)
-- abstract
-- visual
-- representation
-- of a physical or imagined space
-*** Moretti's method
-:PROPERTIES:
-:CUSTOM_ID: moretti's-method-ddd7
-:END:
-#+ATTR_HTML: :style float:left; max-width:49%
-http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
-#+ATTR_HTML: :style float:left; max-width:49%
-http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600511large.gif
-#+BEGIN_QUOTE
-The form of an object is a 'diagram of forces', in this sense, at least that from it we can... deduce the forces that ... have acted upon it. (p.57)
-#+END_QUOTE
-*** /Our Village/
-:PROPERTIES:
-:CUSTOM_ID: /our-village/-c56c
-:END:
-#+BEGIN_QUOTE
-In the 1824 volume... the vilage was the undisputed centre of the surrounding countryside: the centripetal effects of the force "from within" were omnipresent, while the force "from without" was nowhere to be seen. (p. 57)
-
-Two collections later, in 1828, the village's gravitation field is already weaker...  Something is wrong with the force from within, but as no counter-force challenges it yet, the basic pattern... remains in place.  But by 1832... the village's centripetal force is reduced to nothing, and the bulk of the book moves away... (p. 58-59)
-#+END_QUOTE
-*** /Our Village/ -- Extremes
-:PROPERTIES:
-:CUSTOM_ID: /our-village/----extremes-3f27
-:END:
-#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
-http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600502large.gif 
-#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
-http://www.newleftreview.org.myaccess.library.utoronto.ca/assets/images/2600512large.gif
-*** Modelling the text
-:PROPERTIES:
-:CUSTOM_ID: modelling-the-text-1363
-:END:
-- *reduce* text to the model
-- *presume* that sociological factors are determinative
-- *sustain* focus on form ("a quantitative history of literature is also a profoundly formalist one" -p.25, fn 14)
-- *interpret* model in light of theories
-** Summary: Moretti and History
-:PROPERTIES:
-:CUSTOM_ID: summary:-moretti-and-history-59c4
-:END:
-- *labor-intensive* quantification of sources
-- *glossing over* problems of quantification
-- *continued reliance* on expert opinion -- but how is that expertise to be cultivated? 
-** COMMENT Tools for Distant Reading: the wordle
-:PROPERTIES:
-:CUSTOM_ID: tools-for-distant-reading:-the-wordle-eaf6
-:END:
-#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
-http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-2-CCF.png
-#+ATTR_HTML: :style float:left; max-height:400px; max-width:49%
-http://www.themacroscope.org/wp-content/uploads/2013/10/Fig-3-CCF.png
-- what do and don't we know? 
-** COMMENT Exercise: build a wordle 
-:PROPERTIES:
-:CUSTOM_ID: exercise:-build-a-wordle-34a6
-:END:
-*** Choose a work to not read.
-:PROPERTIES:
-:CUSTOM_ID: choose-a-work-to-not-read.-43b7
-:END:
-- navigate to [[http://www.gutenberg.org/][Project Gutenberg]].  Pick any 19th Century novel, but esp. something FAT that would be hard to read.
-- download the *text* version
-*** Make some predictions
-:PROPERTIES:
-:CUSTOM_ID: make-some-predictions-df0a
-:END:
-- Write down your basic expectations of the novel: 
-- What are the main themes?
-- What are the lessons?
-- What is its place in literary history?
-*** Make a Wordle
-:PROPERTIES:
-:CUSTOM_ID: make-a-wordle-c8b5
-:END:
-- navigate to [[http://wordle.net]]
-- strip the metadata from the text (e.g., license, etc.)
-- create wordle for the text as a whole.
-  - then for several chapters or sections
-  - what patterns do you see? 
-*** Make a network
-:PROPERTIES:
-:ID:       aefd9474-d1ed-40ae-9190-034aac825a3e
-:CUSTOM_ID: make-a-network-43f4
-:END:
-- copy and paste your novel (again, without the Gutenberg metadata) into [[http://textexture.com/user.php][Textexture]], which will visualize the words in the novel as a network. 
-
-#+BEGIN_QUOTE
-    The gist of textexure’s process is that account of words that occur near each other. That is not to say words have to be directly next to one another, paragraph and sentence structures are both considered. In the network, the nodes are the words themselves while the edges (or connections from node to node) are determined by the co-occurrence between words either directly, in paragraphs or sentences. In terms of the visualization, this effectively does two things: 1. organizes groups of words into the communities they appear (color coded) so that with a quick glance at the network, you can pick out certain themes and 2. You can also easily see what the primary theme that links the various aspects together.
-#+END_QUOTE
-In short, Textexture tries to automatically discern and visualize relationships between words, based on their usage, within a text. Looking at the network graph of your novel, what relationships seem most interesting? Experiment with the graph by clicking through different words. 
-
-*** Repeat
-:PROPERTIES:
-:CUSTOM_ID: repeat-a785
-:END:
-- Try the same process with another novel.
-- What have you learned? Anything?  
-
-** COMMENT HTML Questions
-:PROPERTIES:
-:CUSTOM_ID: html-questions-87d5
-:END:
-#+begin_src html
-<style>
-
-</style>
-<!-- leaving blank for your questions -->
-#+end_src
-* COMMENT Javascript
-:PROPERTIES:
-:CUSTOM_ID: javascript-252a
-:END:
-** Variables
-:PROPERTIES:
-:CUSTOM_ID: variables-7835
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-var myString = "Hello, everyone";
-console.log(myString);
-#+END_SRC
-#+BEGIN_NOTES 
-- strings
-- numbers
-- boolean
-- array
-- objects
-#+END_NOTES
-** Functions
-:PROPERTIES:
-:CUSTOM_ID: functions-3acc
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-function square(number) {
-  return number * number;
-}
-
- var cube = function(number) { 
-      return number * number * number;
-  };
-
-console.log(square(2));
-console.log(cube(3));
-#+END_SRC
-** Arrays and Loops
-:PROPERTIES:
-:CUSTOM_ID: loops-86b8
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
- // here is a very basic "for loop":
-  for (i=0; i<10; i++ ) {
-    console.log("this is number: " + (i+1));
-  }
-
-  // a simple array -- essentially a list
-  var veggies = ["carrot", "potato", "pea"];
-
-  // a "for-of loop" -- iterates over array items
-  for (i of veggies) {
-    console.log(i)
-  };
-
-  // a for-in loop -- iterates over array length (0,1,2,3, etc)
-  for (i in veggies) {
-       console.log(veggies[i])
-       };
-
-
-#+END_SRC
-#+BEGIN_NOTES 
-- differences between the loop types
-#+END_NOTES
-** Objects
-:PROPERTIES:
-:CUSTOM_ID: objects-1a99
-:END:
-#+BEGIN_SRC js :results output code  replace :exports both
-  var wl = {
-      "PM": "Wilfred Laurier",
-      "Party": "Liberal",
-      "From": "1896",
-      "To": "1911"
-  };
-  for (i in wl) {
-      console.log("wl." + i + " is: " + wl[i]);
-  }
-#+END_SRC
-
-** DOM Manipulation
-:PROPERTIES:
-:CUSTOM_ID: dom-manipulation-6404
-:END:
-#+BEGIN_SRC js :exports code
-var newNode = document.createElement("h1");                 // Create a <h1> node
-var textnode = document.createTextNode("brand new header");         // Create a text node
-newNode.appendChild(textnode);                              // insert the text into the <h1>
-document.body.appendChild(newNode);
-
-var headings = document.getElementsByTagName("h1");
-console.log(headings);
-for (var i=0; i<headings.length; i++) {
-    console.log(headings[i].innerHTML);
-};
-
-for (var i=0; i<headings.length; i++) {
-    headings[i].textContent += " Found me!!!";
-    headings[i].style.color = "red";
-};
-
-#+END_SRC
-
-#+BEGIN_NOTES 
-for (var i=0; i<headings.length; i++) {
-    headings[i].textContent += " Found me!!!";
-    headings[i].style.color = "red";
-};
-#+END_NOTES
-* 05-01: Getting Started With Javascript
-:PROPERTIES:
-:EXPORT_FILE_NAME: 05-01-js
-:CUSTOM_ID: getting-started-with-javascript-71f3   
-:header-args:    :tangle yes :noweb yes
-:END:
-
-** JavaScript
-:PROPERTIES:
-:CUSTOM_ID: javascript-cc80
-:END:
-- a real language!
-- dynamic transformation
-- baby steps!!
-** Some Big Ideas
-:PROPERTIES:
-:CUSTOM_ID: some-big-ideas-1d46
-:END:
-- Abstraction
-- Formalization
-- Repetition
-- Laziness!
-** Assignment 1 will require 
-:PROPERTIES:
-:CUSTOM_ID: assignment-1-will-require-ab9b
-:END:
-- Basic Syntax
-- Variable Types
-- Function Definitions
-- Loops and Branches
-- Basic "Objects"
-** Running Javascript
-:PROPERTIES:
-:CUSTOM_ID: running-javascript-10e9
-:END:
-- in Browser Console
-- in terminal (with the command ~node~)
-- in VSCode files, with Quokka attached
-** What is a Variable?
-:PROPERTIES:
-:CUSTOM_ID: what-is-a-variable?-d2ea
-:END:
-- *name* for *memory location* to be used later, usually *in specific ways* that *depend on type*
-- or, *box* into which you can put *information* that you will want to get later.
-https://mdn.mozillademos.org/files/13506/boxes.png
-
-*** Declaring Variables
-:PROPERTIES:
-:CUSTOM_ID: declaring-variables-266e
-:END:
-#+begin_src js
-const neverChange = "Project Key"; // comment
-let oftenChanges = 0; // maybe we will change this value later
-var oldDeclaration = 0; // we try to avoid using var now; use let instead
-#+end_src
-
-*** Text is Data
-:PROPERTIES:
-:CUSTOM_ID: text-is-data-75a7
-:END:
-#+BEGIN_SRC js
-let first="Matt";
-let last="Price"
-console.log(first + last);
-#+END_SRC
-#+ATTR_REVEAL: :frag (appear)
-Do it w/ your name!
-#+BEGIN_NOTES
-- console; syntax; spaces; exercise: 
-#+END_NOTES
-
-*** "Dynamic" (or "Weak") Typing 
-:PROPERTIES:
-:CUSTOM_ID: dynamic-(or-weak)-typing-c178
-:END:
-- *numbers* and *strings* are different
-- but we can convert *number \rarr string*
-#+begin_src js
-let n = 1,
-    m=2,
-    s="Hello, there! ";
- 
-console.log(m+n);
-console.log(s+n);
-
-#+end_src
-#+begin_notes
-- commas, semi-colons; "overloading" &dynamic typing
-- this can be confusing!!!
-#+end_notes
-
-*** Some Variable Types
-:PROPERTIES:
-:CUSTOM_ID: some-variable-types-c445
-:END:
-- numbers
-- strings
-- boolean (true/false)
-- arrays
-- objects
-
-
-*** Making Lists (Arrays)
-:PROPERTIES:
-:CUSTOM_ID: making-lists-(arrays)-5385
-:END:
-+#NAME: js-array-historians
-#+BEGIN_SRC js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
-
-#+END_SRC
-
-#+BEGIN_NOTES
-brackets!
-#+END_NOTES
-
-*** Working With Arrays
-:PROPERTIES:
-:CUSTOM_ID: working-with-arrays-c020
-:END:
-
-#+begin_src js
-a = [];
-a.push("Edward Gibbon");
-a.push("Edward Said");
-a.push("Joan Scott");
-
-console.log(a[1]);
-
-a.pop();
-// a
-#+end_src
-
-#+begin_notes
-- push, pop, INDEX
-#+end_notes
-*** Working with Numbers
-:PROPERTIES:
-:CUSTOM_ID: working-with-numbers-9fb5
-:END:
-#+BEGIN_SRC js
-wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
-console.log("The time between The First and \
-Second World Wars was " + (wardates[6] - wardates[5]) + " years");
-#+END_SRC
-** Repetition: While Loops 
-:PROPERTIES:
-:CUSTOM_ID: repetition:-while-loops-c251
-:END:
-#+NAME: js-while-hist
-#+begin_src js
-<<js-array-historians>>
-let i = 0;
-
-while (i < historians.length) {
-    console.log(historians[i] + " was a historian.");
-    i+=1;
-  }
-
-#+end_src
-repeat inside the ~{ ... }~ as long as test is true:
-- *initial value:* ~i = 0~
-- *test (halt condition):* ~i < historians.length~
-- *change in condition:* ~i += 1~ 
-** Repetition: For Loops
-:PROPERTIES:
-:CUSTOM_ID: repetition:-for-loops-c510
-:END:
-
-#+BEGIN_SRC js 
-<<js-array-historians>>
-for (let i=0; i < historians.length ; i++){
-  console.log(historians[i] + " was a historian.");
-  i // this is not required, just here to show you a slight difference
-}
-
-#+END_SRC
-- *initial value:* ~i = 0~
-- *test (halt condition):* ~i < historians.length~
-- *change in condition:* ~i++~ (idiomatic)
-** Repetition: other for loops
-:PROPERTIES:
-:CUSTOM_ID: repetition:-other-for-loops-3d1d
-:END:
-#+BEGIN_SRC js
-<<js-array-historians>>
-
-for (let i in historians) {
-  console.log(historians[i] + " was a historian.");
-}
-
-for (let h of historians) {
-  console.log(h + " was a historian.");
-}
-#+END_SRC
-- these also "loop"
-- but the *initial value*, *test*, and *increment* are *implicit*
-- defined by ~historians~, but in slightly different ways.
-- they are very convenient! read about them.
-
-** Conditionals: If
-:PROPERTIES:
-:CUSTOM_ID: conditionals:-if-a6b8
-:END:
-#+BEGIN_SRC js
-<<js-array-historians>>
-let i = 0;
-
-while (i < historians.length) {
-  if (historians[i] === "Joan Scott") {
-    console.log(historians[i] + " is my favourite.");
-  }
-  i +=1;
-};
-#+END_SRC
-- execute the ~{ ... }~ only if the *test* is true
-- here the test is ~historians[i] === "Joan Scott"~
-- note the many ~===~ -- different from just one ~=~
-
-*** Branching
-:PROPERTIES:
-:CUSTOM_ID: branching-2c02
-:END:
-#+BEGIN_SRC js
-<<js-array-historians>>
-let i = 0;
-
-while (i < historians.length) {
-  if (historians[i] ==="Joan Scott") {
-    console.log(historians[i] + " is my favourite.");
-  } else {
-    console.log(historians[i] + ", meh.");
-}
-  i +=1;
-};
-#+END_SRC
-
-
-** Functions 1: Name vs. Return Value
-:PROPERTIES:
-:EXPORT_FILE_NAME: function-1-name-output
-:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
-:END:
-
-*** A Function is a +variable+ Robot
-:PROPERTIES:
-:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
-:END:
-#+begin_src js
-function robotCleaner () {
-  let output =  "I cleaned your room";
-  return output;
-}
-
-let r = robotCleaner();
-a
-#+end_src
-
-#+RESULTS:
-
-- build a function to do something
-- *name it* whatever you want
-- the *return* value is what the function "give you back*
-- call it whenever you need it done 
-  
-*** Name and Return Value are independent
-:PROPERTIES:
-:CUSTOM_ID: name-and-return-value-are-independent-e35d
-:END:
-#+begin_src js
-function robotCleaner () {
-  let output =  `Ha, ha! I have replaced your robot cleaner! 
-Now your room is even messier! Bwa ha ha ha ha!`
-  return output;
-}
-
-let a = robotCleaner();
-a
-#+end_src
-
-- To pass the assignment, *always modify the function*
-- don't get confused and try to somehow modify the function call
-- no intrinsic relationship between name and return value
-
-** Functions note 2: Parameter and Output  
-:PROPERTIES:
-:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
-:END:
-*** Your Return Value should Make use of the Parameter
-:PROPERTIES:
-:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
-:END:
-#+begin_src js
-function greatWriter (name) {
-let output = "Margaret Atwood was a great writer."
-return output
-}
-
-console.log(greatWriter("Margaret Atwood"))
-// console.log(greatWriter("Toni Morrison"))
-#+end_src
-*** Solution: don't use a STATICALLY DEFINED STRING as your output
-:PROPERTIES:
-:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
-:END:
-#+begin_src js
-function evenGreaterWriter (name) {
-let output = name + " was a great writer."
-return output
-}
-
-console.log(evenGreaterWriter("Margaret Atwood"))
-// console.log(evenGreaterWriter("Toni Morrison"))
-#+end_src
-
-
-** Parts of things: elements, methods, properties
-:PROPERTIES:
-:CUSTOM_ID: parts-of-things:-elements,-methods,-properties-be27
-:END:
-#+begin_src js
-let a=["name", 0, "otherinfo"];
-console.log(a[2]);
-console.log(a.length);
-console.log(a[length]);
-a.pop;
-#+end_src
-- note strange syntax:
-  - ~a[1]~: second element of array
-  - ~a.length~: a special way of finding the length of any array.  Length is a *property* of a.
-- ~console.log(a))~: *log* is a part of *console*.  it takes a *parameter* , in this case ~a~
-
-** Doing Stuff: functions
-:PROPERTIES:
-:CUSTOM_ID: doing-stuff:-functions-d6a3
-:END:
-*** A Function *is* a variable(!)
-:PROPERTIES:
-:CUSTOM_ID: -7b52
-:END:
-- functions are also a box into which you put stuff
-- but when you look into the box, the "stuff" has changed
-- we use them to *change the state*: to *do things* 
-- use *whenever you're repeating an action or process*
-
-- compare: 
-#+ATTR_REVEAL: frag
-  - ~let fruit="orange";~
-  - ~eat("orange")~
-  - ~let e = eat(f)~
-*** Defining a function
-:PROPERTIES:
-:CUSTOM_ID: defining-a-function-bb11
-:END:
-#+BEGIN_SRC js 
-function square(number) {
-  return number * number;
-}
-
-let cube = function(number) { 
-      return number * number * number;
-  };
-
-console.log(square(2));
-console.log(cube(3));
-#+END_SRC
-- we'll use the first method:
-  - keyword ~function~ followed by ~name~ then ~(parameters, if, you, need, them)~, then ~{~ ,  then ~statements~, then ~}~
-
-#+begin_notes
-- name
-- parameters
-- definition
-- return value
-#+end_notes
-*** Remember this
-:PROPERTIES:
-:CUSTOM_ID: remember-this-0f7d
-:END:
-#+begin_src js
-let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
-let i = 0;
-
-while (i < historians.length) {
-    console.log(historians[i] + " was a historian.");
-    i+=1;
-  }
-
-#+end_src
-*** As a function
-:PROPERTIES:
-:CUSTOM_ID: as-a-function-ed13
-:END:
-
-#+begin_src js
-function makeSentences(historians) {
-  let i = 0,
-      output = "";
-
-  while (i < historians.length) {
-    output += historians[i] + " was a historian.\n";
-    i+=1;
-  }
-  return output;
-}
-
-let h1 = ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"],
-    h2 = ["Orlando Patterson", "Michel Foucault", "Natalie Zeemon Davis", "Howard Zinn"];
-
-makeSentences(h1);
-//makeSentences(h2);
-
-#+end_src
-*** Finally we can  talk about scope!
-:PROPERTIES:
-:CUSTOM_ID: finally-we-can--talk-about-scope-7723
-:END:
-#+begin_src js
-let a = 'just some string',
-    b = 'some other string';
-
-function scopeExample (anyString) {
-  let a = 'I set this value inside the function';
-
-  return ('inside the function, a="' + a + '", not ' + anyString);
-}
-
-// a
-// scopeExample(a);
-//anyString
-#+end_src
-- outside the function, ~a~ = "just some string"
-- inside, we *redeclare it for the function scope* and now ~a~ has new value
-- ~anyString~ is *only* declared inside the function scope
-
-*** Advanced scope
-:PROPERTIES:
-:CUSTOM_ID: advanced-scope-fa36
-:END:
-#+begin_src js
-let a = "global scope a";
-
-console.log(a);
-
-for (i=0; i<6; i++) {
-  let a = "local scope a on iteration: " + (i + 1) ;
-  console.log(a)
-}
-
-console.log(a);
-#+end_src
-- we can also *redeclare* ~let~ variables in an if/for/while "block"
-- scope scales:  *global \rarr function \rarr block \rarr nested block \rarr etc etc*
-- any time you see ~{ .. }~ you're in a new scope context!
- 
-*** Function Hints for Assignments
-:PROPERTIES:
-:CUSTOM_ID: function-hints-for-assignments-1cb2
-:END:
-- *remember the return values!*
-- debug by setting a variable to the function output, and using quokka to look at the value:
-  #+begin_src js
-    function returnArray (first, second, third) {
-    // you can define the array using "new Array ()" or just "[ , , ]"
-    // don't forget to return it
-    // return ; // add the falue here!
-  }
-  
-  let a = returnArray (1, 3,5);
-  a  // quokka will display the value
-  #+end_src
-
-** Objects and Properties
-:PROPERTIES:
-:CUSTOM_ID: objects-and-properties-e146
-:END:
-
-*** Objects are *variables* with *named parts*
-:PROPERTIES:
-:CUSTOM_ID: objects-are-variables-with-named-parts-c234
-:END:
-- parts are called *properties*, but
-- if a part is a *function*, we call that part a *method*
-
-*** let's eat
-:PROPERTIES:
-:CUSTOM_ID: let's-eat-f11e
-:END:
-#+begin_src js
-let myFruit="orange",
-    mySandwich = "just some bread!",
-    myBar="weird vegan bar",
-    myCookie="ginger",
-    myCandy="pulparindo",
-    mySnacks=["cliff bar", "cliff bar", "kind bar"];
-
-function eat (food) {
-  console.log("Umm, that was a delicious " + food + ".");
-}
-
-eat (myFruit);
-//eat (myBar);
-//eat (myCookie);
-//eat (myCandy);
-#+end_src
-- we can eat any of the foods
-- *they're not related to each other*, just floating around
-
-*** Now let's make lunch
-:PROPERTIES:
-:CUSTOM_ID: now-let's-make-lunch-6196
-:END:
-#+begin_src js
-let myFruit="orange",
-    mySandwich = "just some bread!",
-    myBar="weird vegan bar",
-    myCookie="ginger",
-    myCandy="pulparindo",
-    mySnacks=["cliff bar", "cliff bar", "kind bar"];
-
-let myLunch = {};
-#+end_src
-
-- myLunch is *an empty object* -- it has no parts yet
-
-*** Add some parts
-:PROPERTIES:
-:CUSTOM_ID: add-some-parts-18dc
-:END:
-#+begin_src js
-let myFruit="orange",
-    mySandwich = "just some bread!",
-    myBar="weird vegan bar",
-    myCookie="ginger",
-    myCandy="pulparindo",
-    mySnacks=["cliff bar", "cliff bar", "kind bar"];
-
-let myLunch = {
-  fruit: "orange",
-  sandwich: mySandwich
-};
-
-myLunch["snacks"]=mySnacks;
-myLunch;
-
-#+end_src
-- added parts in 3 ways: set *directly* in definition; set *by reference* in definition; *added by reference after definition* 
-
-*** Eat the Lunch
-:PROPERTIES:
-:CUSTOM_ID: eat-the-lunch-b7bb
-:END:
-#+begin_src js
-let myFruit="orange",
-    mySandwich = "just some bread!",
-    myBar="weird vegan bar",
-    myCookie="ginger",
-    myCandy="pulparindo",
-    mySnacks=["cliff bar", "cliff bar", "kind bar"];
-
-let myLunch = {
-  fruit: "orange",
-  sandwich: mySandwich
-};
-
-myLunch["snacks"]=mySnacks;
-
-function eatLunch (someLunch) {
-  let output = "";
-  output += "I'll start with my " + someLunch["fruit"] + "\n";
-  output += "Next I want to eat " + someLunch.sandwich + "\n";
-  for (snack of someLunch.snacks) {
-    output += "   I love my " + snack + "\n";
-  }
-  return output;
-}
-
-eatLunch(myLunch);
-#+end_src
-- rewrote *eat* to take advantage of the *structure* of lunch
-*** Add Dessert
-:PROPERTIES:
-:CUSTOM_ID: add-dessert-c5dd
-:END:
-#+begin_src js
-let myLunch = {
-  fruit: "orange",
-  sandwich: "just some bred!",
-  bar: "weird vegan bar",
-  snacks: ["cliff bar", "cliff bar", "kind bar"],
-  dessert: {cookie: "ginger", candy: "pulparindo"}
-};
-
-console.log("I'm finally ready for my " + myLunch.dessert.cookie);
-
-#+end_src
-- objects can be *arbitrarily complex* and *contain other objects*
-
-*** Eat The Lunch as a Method
-:PROPERTIES:
-:CUSTOM_ID: eat-the-lunch-as-a-method-971e
-:END:
-
-**** Reminder
-:PROPERTIES:
-:CUSTOM_ID: reminder-4550
-:END:
-#+begin_src js
-function eatLunch (someLunch) {
-  let output = "";
-  output += "I'll start with my " + someLunch["fruit"] + "\n";
-  output += "Next I want to eat " + someLunch.sandwich + "\n";
-  for (snack of someLunch.snacks) {
-    output += "   I love my " + snack + "\n";
-  }
-  return output;
-}
-
-#+end_src
-
-**** Writing the Method
-:PROPERTIES:
-:CUSTOM_ID: writing-the-method-4cae
-:END:
-#+begin_src js
-let myLunch = {
-  fruit: "orange",
-  sandwich: "just some bred!",
-  bar: "weird vegan bar",
-  snacks: ["cliff bar", "cliff bar", "kind bar"],
-  dessert: {cookie: "ginger", candy: "pulparindo"},
-  eatMe: function() {
-    let output = "";
-    output += "I'll start with my " + this["fruit"] + "\n";
-    output += "Next I want to eat " + this.sandwich + "\n";
-    for (snack of this.snacks) {
-      output += "   I love my " + snack + "\n";
-    }
-    return output;
-  }
-};
-
-myLunch.eatMe;
-
-myLunch.eatMe();
-#+end_src
-- note the differences between ~eat()~ and =myLunch.eatMe=:
-  - the method doesn't *take a parameter*!
-  - instead, we get to use ~this~, which refers to the *current object scope*
-*** Finally some History
-:PROPERTIES:
-:CUSTOM_ID: finally-some-history-0c62
-:END:
-#+BEGIN_SRC js
-  let greatWar = {
-    name: "The First World War",
-    start: 1914,
-    end: 1918,
-    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
-    goodGuys: ["All our Friends"],
-    scale: "Catastrophe"
-  }
-
-//  console.log(greatWar["name"] + " lasted for " +
-//  (greatWar.end - greatWar.start) + " years.");
-#+END_SRC
-*** more objects
-:PROPERTIES:
-:CUSTOM_ID: more-objects-322f
-:END:
-#+BEGIN_SRC js
-  let greatWar = {
-    name: "The First World War",
-    start: 1914,
-    end: 1918,
-    badGuys: ["Germany", "Austria-Hungary", "Ottoman Empire"],
-    goodGuys: ["All our Friends"],
-    scale: "Catastrophe",
-    battles: [
-      { name: "The Battle of Vimy Ridge",
-        year: 1915,
-        casualties: 34000
-      }]
-  }
-
-  console.log(greatWar["name"] + " lasted for "
- + (greatWar.end - greatWar.start) + " \ years.");
-console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " + \
-            greatWar.battles[0].casualties + " casualties.");
-#+END_SRC
-
-*** Basic Logic with Objects
-:PROPERTIES:
-:CUSTOM_ID: using-objects-in-js-ace7
-:END:
-#+BEGIN_SRC js
-let goodGuys = ["CA", "UK", "US"];
-let badGuys=["DE", "AH"];
-let people = [
-  {name: "Kaiser Wilhelm",
-   nat: "DE"},
-  {name:"Winston Churchill",
-   nat: "UK"}];
-for (person of people) {
-  if (badGuys.includes(person.nat)) {
-    //console.log(person.name + ": BOOOOOOOOOOOO!!!");
-  }
-};
-#+END_SRC
-
-#+RESULTS:
-: undefined
-*** Branching Logic with Objects
-:PROPERTIES:
-:CUSTOM_ID: logic-with-objects-9863
-:END:
-#+BEGIN_SRC js
-let goodGuys = ["CA", "UK", "US"];
-let badGuys=["DE", "AH"];
-let people = [
-  {name: "Kaiser Wilhelm",
-   nat: "DE"},
-  {name:"Winston Churchill",
-   nat: "UK"}];
-for (person of people) {
-  if (badGuys.includes(person.nat)) {
-    console.log(person.name + ": BOOOOOOOOOOOO!!!");
-  } else {
-    console.log(person.name + ": YAAAAYYY!!!");
-
-}
-};
-#+END_SRC
-* Short Note on Functions (youtube video, never lectured, now incorporated into 05-01)
-:PROPERTIES:
-:EXPORT_FILE_NAME: short-note-on-functions
-:CUSTOM_ID: short-note-on-functions-499b
-:END:
-** Functions 1: Name vs. Return Value
-:PROPERTIES:
-:EXPORT_FILE_NAME: function-1-name-output
-:CUSTOM_ID: functions-1:-name-vs.-return-value-d9ac
-:END:
-
-*** A Function is a +variable+ Robot
-:PROPERTIES:
-:CUSTOM_ID: a-function-is-a-+variable+-robot-29e2
-:END:
-#+begin_src js
-function robotCleaner () {
-  let output =  "I cleaned your room";
-  return output;
-}
-
-let a = robotCleaner();
-a
-#+end_src
-
-#+RESULTS:
-
-- build a function to do something
-- *name it* whatever you want
-- the *return* value is what the function "give you back*
-- call it whenever you need it done 
-  
-*** Name and Return Value are independent
-:PROPERTIES:
-:CUSTOM_ID: name-and-return-value-are-independent-e35d
-:END:
-#+begin_src js
-function robotCleaner () {
-  let output =  `Ha, ha! I have replaced your robot cleaner! 
-Now your room is even messier! Bwa ha ha ha ha!`
-  return output;
-}
-
-let a = robotCleaner();
-a
-#+end_src
-
-- To pass the assignment, *always modify the function*
-- don't get confused and try to somehow modify the function call
-- no intrinsic relationship between name and return value
-
-** Functions note 2: Parameter and Output  
-:PROPERTIES:
-:CUSTOM_ID: functions-note-2:-parameter-and-output-4bfc
-:END:
-*** Your Return Value should Make use of the Parameter
-:PROPERTIES:
-:CUSTOM_ID: your-return-value-should-make-use-of-the-parameter-d994
-:END:
-#+begin_src js
-function greatWriter (name) {
-let output = "Margaret Atwood was a great writer."
-return output
-}
-
-console.log(greatWriter("Margaret Atwood"))
-// console.log(greatWriter("Toni Morrison"))
-#+end_src
-*** Solution: don't use a STATICALLY DEFINED STRING as your output
-:PROPERTIES:
-:CUSTOM_ID: solution:-don't-use-a-statically-defined-string-as-your-output-395c
-:END:
-#+begin_src js
-function evenGreaterWriter (name) {
-let output = name + " was a great writer."
-return output
-}
-
-console.log(evenGreaterWriter("Margaret Atwood"))
-// console.log(evenGreaterWriter("Toni Morrison"))
-#+end_src
-
-
-
-* Week 5: JavaScript and the DOM
-:PROPERTIES:
-:CUSTOM_ID: javascript-30da
-:EXPORT_FILE_NAME: 06-01-js-dom
-:END:
-** Working with the DOM
-:PROPERTIES:
-:CUSTOM_ID: working-with-the-dom-d129
-:END:
-*Document Object*
-- everything in the document can be manipulated via the DOM
-https://www.computerhope.com/jargon/d/dom1.jpg
-*** Inspecting the DOM
-:PROPERTIES:
-:CUSTOM_ID: inspecting-the-dom-edf1
-:END:
-file:///home/matt/DH/Images/devtools.png
-
-** Finding Elements
-:PROPERTIES:
-:CUSTOM_ID: finding-elements-11f8
-:END:
-- *"Vanilla" JavaScript* (described in MDN)
-  - ~document.querySelector("str")~
-- *jQuery* (convenience library)
-  - ~$("str")~
-  - *library must be loaded* with ~<script src="http://code.jquery.com/jquery-3.3.1.min.js"</script>~
-
-
-- we use jQuery in examples, but it's your choice.
-  - slightly different syntax & different return values, so be careful. 
-
-** Change CSS of an Element
-:PROPERTIES:
-:CUSTOM_ID: change-css-of-an-element-0bef
-:END:
-#+begin_src js
-$('selector').css('property-name', 'value')
-#+end_src
-
-** Get and Change Text Content
-#+begin_src js
-$('selector').text()
-$('selector').text('new value')
-#+end_src
-
-** Get and Change Full inner HTML
-#+begin_src js
-$('selector').text()
-$('selector').text('<h2>new value, with valide HTML markup</h2>')
-#+end_src
-
-** Append elements
-#+begin_src js
-$('selector').append('<p>valid HTML Markup</p>')
-#+end_src
-
-** What does jQuery return? 
-- an "array-like object"
-- it's not exactly an array, but you can use "of" to iterate over HTMl objects
-- each element can use *native DOM methods* for HTML elements (cf MDN)
-- to use jQuery methods on it, wrap it again in the $() function 
-
-** Looping: over HTML elements
-#+begin_src js
-let allElements = $('selector');
-// for.. in will NOT work!!!!
-for (e of allElements) { // this will loop through the *html elements* found by jQ   
-  $(e).doSomething(0) // if you want to use jquery methods, you have to jquery-ize first
-}
-#+end_src
-
-** Looping -- advanced
-Trickier! Uses a "callback function" -- see this [[https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced][excellent, but still difficult, explanation]] 
-#+begin_src js
-$('td.name').each(
-  function (index) {
-    console.log(`here's the content of cell number ${index}`);
-    console.log($(this).text());
-  });
-#+end_src
-
-** Takeaways for us
-- it's a wild world out there
-- many complex concepts, but if you go slowly, it's not impossible to figure out
-- key is to understand that the DOM is a *struture of HTML elements*, which can be *created, destroyed, 
-
-* Computing Concepts Catchup
-:PROPERTIES:
-:EXPORT_FILE_NAME: 06-1-concepts-catchup
-:END:
-
-** Abstraction
-- objects * other vars are *abstract representations* of the phenomena we're interested in
-- careful choice of abstraction is important for *computational efficacy* and also for *epistemological reasons*
-** Iteration
-#+begin_src js
-for(let i = 0; i < collection.length; i++) {
-  // do something here for each element of collection using
-  // collection[i]
-  // "i" is always an integer value
-}
-
-for (let i in ObjectOrArray ) {
-  // do something here with ObjectOrArray[i]
-  // "i" wil lbe an integer for an array, or
-  // a "property key(name)" for an object
-}
-
-for (let a of ArrayOrElementList) {
-  // do something directly with a
-  // a will take the value of whatever
-  // is at the current location in the array
-  // great for looping over DOM elements!
-}
-
-let i=0;
-while (i < myArray.length) {
-  // do osmething wiht myArray[i]
-  // remember to increment i within the loop!!!!
-}
-#+end_src
-** Branching Logic
-- without logic, programming would be pretty limited.
-- use these constructions to change the flow of your output depending on conditions
-#+begin_src js
-if (condition1) {
-  console.log("condition is true");
-} else if (condition2) {
-  console.log("conition1 is false but condition2 is true");
-} else {
-  console.log("none of hte above ocnditions is true")
-}
-
-#+end_src
-** Variable Scope
-- with *let* we have fine-grained control over "scope" of variable values.
-- most important within a function, but also works inside nay block: 
-#+begin_src js
-let x = 3;
-console.log(myvar);
-if (myvar) {
-  let myvar = 2;
-  console.log(myvar);
-}
-console.log(myvar);
-#+end_src
-** Functions: Definition; Invocation; Transformation of Parameters
-#+begin_src js
-function nameHere (param1, param2) {
-  // use params here
-  // remember to alwyas use the marameter name -- which is an abstraction!
-  // return a value that has somehow made use of parameters
-  return something;
-}
-
-nameHere(someValue1, someValue2) // when called, param1 wil lbe set equal to someValue1
-#+end_src
-** DOM as Branching Tree Structure
-- DOM Elements nest and bramch
-- possible to add, delete, modify them
-- to do this we need to select the right elements, then change their properties
-
-* Homework Help Day
-:PROPERTIES:
-:EXPORT_FILE_NAME: 06-1-homework-help
-:END:
-** Status Report
-- looked at and evaluated all Assignment 2's
-- assignment 3 is the crux of the course!
-- can give *limited* help for next 24 hours or so
-
-** HTML Structures
-- for the rest of the course, coding is mostly *creating HTML structures*
-- becaue HTML is tedious, *lots* of opportunity to introduce errors!
-- How to avoid?
-  - *D.R.Y.* (Don't Repeat Yourself)
-  - if done right, guarantees that low-level problems only need to be solved *once*
-  - remember: laziness is a virtue
-
-** Writing "Atomic" Functions
-- Complex code is difficult to debug!
-- instead, try to make your individual functions as simple as possible
-- *divide your problem into smallest possible parts* (hence 'atomic')
-- "chain" your functions together to recreate complexity
-- much easier to localize failure
-
-** Making a card deck
-*Task:* given a JSON data structure, generate a set of cards (like the ones we made in assignment 0, but simpler)
-
-#+ATTR_HTML: :class paired
-#+begin_src html
-<card class="card">
-  <header>
-    <h1>Person Name</h1>
-  </header>
-  <main class="card">   
-    <p>
-      lengthy text here
-    </p>
-  </main>
-  <footer>
-    <a href="'https://digitalhistory.github.io/dh-website'">A Project of HIS393</a>
-  </footer>
-</card>
-#+end_src
-
-#+ATTR_HTML: :class paired
-#+begin_src js
-{
-  name: 'Person Name',
-  blurb: 'lenghty text here',
-}
-#+end_src
-
-
-*** First, Map the assignment
-#+ATTR_HTML: :class paired
-- card deck \rarr set of cards
-- card \rarr ~<card><header></header><main></main><footer></footer><card>~
-- this is *set of tagged elements*
-- so we might do something like this:
-  - *fn 1*: tag some content
-  - *fn 2*: use *fn 1* to make header structure
-  - *fn 3*: use *fn 1* to make main structure
-  - *fn 4*: use *fn 1* to make footer structure
-  - *fn 5*: use *fn 2, fn 3, fn 4* to make sub-structures and then call *fn 1* to wrap whole thing
-  - *fn 6*: loop through data structure, calling *fn 5* once for each element
-
-*** Start with Fn 1: ~letsTag~
-#+begin_src js 
-function letsTag ( content, tagName, attrs) {
-  output = `<${tagName} `;
-  for (a of attrs) {
-    output+=`${a}=${attrs[a]} `;
-  }
-  output += `>${content}</${tagName}>`;
-  return output;
-}
-
-
-letsTag('I am the main content', 'main', {style: 'border: 2px solid black;'});
-#+end_src
-
-*** Fn 2: ~headMe()~
-#+begin_src js 
-function headMe (titleText) {
-  let output=letsTag(titleText, 'h1');
-  output=letsTag(output, 'header');
-  return output
-}
-
-headMe('I am the title');
-#+end_src
-
-*** All the Rest
-#+begin_src js
-function footMe () {
-  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/'});
-  return letsTag(link, 'footer');
-}
-
-function mainMe (blurb) {
-  let p = letsTag(blurb, 'p');
-  return letsTag(p, 'main');
-}
-
-function cardMe (person) {
-  let header = headMe(person.name);
-  let main = mainMe(person.blurb);
-  let footer = footMe();
-  return letsTag(header + main + footer, 'card', {class: 'card'});
-}
-
-function makeAllTheCards (people) {
-  output = '';
-  for (p of people) {
-    output += cardMe (p);
-  }
-  return $('main#page-main').append(output); 
-}
-
-makeAllTheCards (allEntries);
-#+end_src
-
 * COMMENT Notes on papers 
 - use markdown markup
 - inline images instead of links
 - avoid smart quotes, etc. 
-* 05: Distant Reading 2                                    
+* COMMENT 05: Distant Reading 2                                    
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-distant-reading-2
 :EXPORT_TITLE: Distant Reading II
@@ -5793,7 +6553,7 @@ Stolen from http://f14tot.ryancordell.org/2014/10/15/lab-8-distant-reading/
 From Owen Boynton, /Middlemarch/, Pastoral, and the Waste of Attention (http://litimag.oxfordjournals.org.myaccess.library.utoronto.ca/content/16/3/275.full)
 
 
-* 06: Distant Reading: Catchup
+* COMMENT 06: Distant Reading, Catchup, yet more javascript
 :PROPERTIES:
 :EXPORT_FILE_NAME: 06-distant-reading-3
 :EXPORT_TITLE: Distant Reading III
@@ -5825,7 +6585,7 @@ function someFUnctionName (parameter1/parameter2,parameterEtc) {
 #+end_src
 ** No Clothes, no body
 #+begin_quote 
- It’s not that the emperor has no clothes(that would be fine); it’s that no one knows what the emperor looks like. (Ramsey 2010)
+ It's not that the emperor has no clothes(that would be fine); it's that no one knows what the emperor looks like. (Ramsey 2010)
 #+end_quote
 
 #+BEGIN_NOTES 
@@ -5908,137 +6668,6 @@ the approaches I have discussed... share a clear preference /for explanation ove
 - is this really "quantitative"?
 - Does this qualify as "insight"? 
 
-* COMMENT 07: Text as Data, history As Algorithm                   :noexport:
-:PROPERTIES:
-:EXPORT_FILE_NAME: 06-text-as-data
-:CUSTOM_ID: 06:-text-as-data,-history-as-algorithm-f1aa
-:END:
-
-** Recap
-:PROPERTIES:
-:CUSTOM_ID: recap-8099
-:END:
-Models and Distant Reading
-- Hopeful, even Utopian discourse
-- Makes some questionable assumptions
-- But raises substantive questions:
-  #+ATTR_REVEAL: :frag (appear appear appear)
-  - Do we really deserve to call ourselves "Experts"?
-  - What does it mean, today, to "know" something?
-  - Can we leverage data-analysis tools to inform the classical goals of humanistic scholarship?
-
-** Synopsis
-:PROPERTIES:
-:CUSTOM_ID: synopsis-bfc9
-:END:
-- Hermeneutics
-- Data beyond evidence
-- Screwing Around
-** Hermeneutics of Data
-:PROPERTIES:
-:CUSTOM_ID: hermeneutics-of-data-45d2
-:END:
-*** The Hermeneutic Tradition
-:PROPERTIES:
-:CUSTOM_ID: the-hermeneutic-tradition-b60e
-:END:
-- Science of Interpretation
-  - Biblical Scholarship: how to read
-  - Schleiermacher: how to understand others
-  - Heidegger: experience as hermeneutic
-    #+BEGIN_QUOTE
-     It is not really we who address the texts of tradition, but the canonic texts that address us. Having traveled through decades and centuries, the classic works of art, literature, science, and philosophy question us and our way of life. Our prejudices, whatever aspects of our cultural horizon that we take for granted, are brought into the open in the encounter with the past.
-    #+END_QUOTE
-#+BEGIN_NOTES
- Human being, Gadamer argues, is a being in language. It is through language that the world is opened up for us. We learn to know the world by learning to master a language. Hence we cannot really understand ourselves unless we understand ourselves as situated in a linguistically mediated, historical culture. Language is our second nature
-
- Gadamer argues that we never know a historical work as it originally appeared to its contemporaries. We have no access to its original context of production or to the intentions of its author. Tradition is always alive. It is not passive and stifling, but productive and in constant development. Trying, as the earlier hermeneuticians did, to locate the (scientific) value of the humanities in their capacity for objective reconstruction is bound to be a wasted effort. The past is handed over to us through the complex and ever-changing fabric of interpretations, which gets richer and more complex as decades and centuries pass. History, as Gadamer puts it, is always effective history. This, however, is not a deficiency. It is, rather, a unique possibility, a possibility that involves the particular kind of truth-claim that Gadamer ascribes to the human sciences: the truth of self-understanding.
-#+END_NOTES
-
-- textual encouter as a fundamental act of self-comprehension
-- can this be recaptured in data-heavy analysis?
-
-*** Method as Interpretation
-:PROPERTIES:
-:CUSTOM_ID: method-as-interpretation-db44
-:END:
-
-#+BEGIN_QUOTE
-...work with data can be exploratory and deliberately without the mathematical rigor that social scientists must use to support their epistemological claims. Using data in this way is fundamentally different from using data for quantifying, computing and creating knowledge as per quantitative history.
-
-...data does not always have to be used as evidence. It can also help with discovering and framing research questions. 
-#+END_QUOTE
-
-#+BEGIN_NOTES
-- Gibbs & Owens, both figures in DH scene in first half of this decade
-- data in history has been around a while!
-#+END_NOTES
-
-*** Openness
-:PROPERTIES:
-:CUSTOM_ID: openness-a3bd
-:END:
-
-#+BEGIN_QUOTE
-Regardless of form, we need history writing that explicates the research process as much as the research conclusions. We need history writing that interfaces with, explains, and makes accessible the data that historians use...One way of reducing hostility to data and its manipulation is to lay bare whatever manipulations have led to some historical insight. 
-#+END_QUOTE
-*** Open Research on "Users"
-:PROPERTIES:
-:CUSTOM_ID: open-research-on-"users"-5357
-:END:
-- [[https://books.google.com/ngrams/graph?content=user&year_start=1800&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cuser%3B%2Cc0][Rise of the User]]
-- [[https://books.google.com/ngrams/graph?content=drug+user%2Cuser+interface&year_start=1960&year_end=2000&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cdrug%20user%3B%2Cc0%3B.t1%3B%2Cuser%20interface%3B%2Cc0][Two different Rises]]
-- [[https://docs.google.com/spreadsheets/d/12ARdbZeISIGzV-_7sJPlB56ZOGZZvAQCC79CUcIRxqU/pub?hl=en_US&hl=en_US&output=html][Using Collocation]]
-- [[https://books.google.com/ngrams/graph?content=cyborg%2Crobot%2Candroid%2Cartificial+intelligence%2Cautomaton%2Cfrankenstein&case_insensitive=on&year_start=1800&year_end=2008&corpus=15&smoothing=3&share=&direct_url=t4%3B%2Ccyborg%3B%2Cc0%3B%2Cs0%3B%3Bcyborg%3B%2Cc0%3B%3BCyborg%3B%2Cc0%3B%3BCYBORG%3B%2Cc0%3B.t4%3B%2Crobot%3B%2Cc0%3B%2Cs0%3B%3Brobot%3B%2Cc0%3B%3BRobot%3B%2Cc0%3B%3BROBOT%3B%2Cc0%3B.t4%3B%2Candroid%3B%2Cc0%3B%2Cs0%3B%3Bandroid%3B%2Cc0%3B%3BAndroid%3B%2Cc0%3B%3BANDROID%3B%2Cc0%3B.t4%3B%2Cartificial%20intelligence%3B%2Cc0%3B%2Cs0%3B%3BArtificial%20Intelligence%3B%2Cc0%3B%3Bartificial%20intelligence%3B%2Cc0%3B%3BArtificial%20intelligence%3B%2Cc0%3B%3BARTIFICIAL%20INTELLIGENCE%3B%2Cc0%3B.t4%3B%2Cautomaton%3B%2Cc0%3B%2Cs0%3B%3Bautomaton%3B%2Cc0%3B%3BAutomaton%3B%2Cc0%3B%3BAUTOMATON%3B%2Cc0%3B.t4%3B%2Cfrankenstein%3B%2Cc0%3B%2Cs0%3B%3BFrankenstein%3B%2Cc0%3B%3BFRANKENSTEIN%3B%2Cc0][And some further thoughts about human-machine hybrids]]
-
-** Screwing Around
-:PROPERTIES:
-:CUSTOM_ID: screwing-around-2dc5
-:END:
-*** Millions of books
-:PROPERTIES:
-:CUSTOM_ID: millions-of-books-474c
-:END:
-#+BEGIN_QUOTE
-It’s one thing to worry that your canon isn’t sufficiently inclusive, or broad, or representative. It’s another thing when your canon has no better chance of being these things than a random selection.(Ramsay, p.3)
-#+END_QUOTE
-
-- now-familiar insight: you can't read everything
-*** Searching and Browsing
-:PROPERTIES:
-:CUSTOM_ID: searching-and-browsing-f338
-:END:
-- Search: knowledge of object; strategies of data collection; methods of reading
-- Browsing: bundle of interests; unsystematic following of connections
-#+BEGIN_NOTES
-  I walk into the library and wander around in a state of insoucient boredom. I like music, so I head over to the music section. I pick up a book on American rock music and start flipping through it (because it’s purple and big). There’s an interesting bit on Frank Zappa, and it mentions that Zappa was way into this guy named Edgard Varèse. I have no idea who that is, so I start looking around for some Varèse. One look at the cover of his biography—Varèse with that mad-scientist look and the crazy hair—and I’m already a fan. And so off I go. I check out some records and discover Varèse.
-#+END_NOTES
-*** "Screwing Around"
-:PROPERTIES:
-:CUSTOM_ID: "screwing-around"-898f
-:END:
-- "Screwing around" is a form of hermeneutic encounter
-- the text /addresses us/
-*** Linked Data for /Screwing Around/, not only /rigourous investigation/
-:PROPERTIES:
-:CUSTOM_ID: linked-data-for-/screwing-around/,-not-only-/rigourous-investigation/-a896
-:END:
-*Goal:*
-#+BEGIN_QUOTE
-Extract from the stored record of humanity useful information in an actionable format for any given human being of any culture at any time and in
-any place. (Crane, cited in Ramsay, 7)
-#+END_QUOTE
-
-- A library where books talk to each other! and our encounter with them is playfully mediated through algorithms.
-
-#+BEGIN_QUOTE
-the real message of our technology is something entirely unexpected—
-a writerly, anarchic text that is more useful than the readerly, institutional
-text. Useful and practical not in spite of its anarchic nature, but as a natural
-consequence of the speed and scale that inhere in all anarchic systems.
-#+END_QUOTE
-
-
 * COMMENT Visualizations                                                   :noexport:
 :PROPERTIES:
 :CUSTOM_ID: visualizations-7449
@@ -6050,19 +6679,19 @@ consequence of the speed and scale that inhere in all anarchic systems.
 http://adamcrymble.org/intro-to-digital-history-2015/#week12
 
 
-Kostiantyn Kucher and Andreas Kerren, ‘ Text Visualization Browser: A Visual Survey of Text Visualization Techniques’, (2014)
-Jefferson Bailey and Lily Pregill, ‘Speak to the Eyes: The History and Practice of Information Visualization’, Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
+Kostiantyn Kucher and Andreas Kerren, ‘ Text Visualization Browser: A Visual Survey of Text Visualization Techniques', (2014)
+Jefferson Bailey and Lily Pregill, ‘Speak to the Eyes: The History and Practice of Information Visualization', Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
 Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 William Playfair, ‘Exports and Imports to and from Denmark & Norway from 1700 to 1780′, (1786) (for workshop, – available via Wikipedia).
-Florence Nightingale, ‘Diagram of the Causes of Mortality in the Army in the East’, (1856) (for workshop, – available via Wikipedia).
-Charles Joseph Minard, ‘Map of Napoleon’s Retreat from Moscow – 1813-14′ (1869) (for workshop – available via Wikipedia).
-‘Chart showing the Aggregate Number of Blind…’ (1870) (for workshop – available via David Rumsey Collection).
+Florence Nightingale, ‘Diagram of the Causes of Mortality in the Army in the East', (1856) (for workshop, – available via Wikipedia).
+Charles Joseph Minard, ‘Map of Napoleon's Retreat from Moscow – 1813-14′ (1869) (for workshop – available via Wikipedia).
+‘Chart showing the Aggregate Number of Blind…' (1870) (for workshop – available via David Rumsey Collection).
 ‘Rank of states and territories in population at each census: 1790 – 1890′, (1890) (for workshop – available via Handsome Atlas).
 Recent Work
 
-Valentina D’Efilippo, ‘Field of Commemoration’, (2013) (for workshop)
-Ben Schmidt, ‘Mad Men Anachronisms’ (2012) (for workshop).
-Hans Rosling, ‘200 Countries, 200 Years, 4 Minutes’, (2009) (for workshop).
+Valentina D'Efilippo, ‘Field of Commemoration', (2013) (for workshop)
+Ben Schmidt, ‘Mad Men Anachronisms' (2012) (for workshop).
+Hans Rosling, ‘200 Countries, 200 Years, 4 Minutes', (2009) (for workshop).
 William J Turkel and Tim Hitchcock, Data Mining with Criminal Intent (2009) (for workshop).
 Timeplots, A Visual History of the United States House of Representatives, (2012) (for workshop).
 ** COMMENT Spatial history
@@ -6070,16 +6699,15 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :CUSTOM_ID: comment-spatial-history-ea38
 :END:
 
-* 07: Why Spatial history?       
+* 08-02: Why Spatial history?       
 :PROPERTIES:
-:EXPORT_FILE_NAME: 07-01-why-spatial-history
+:EXPORT_FILE_NAME: 08-02-why-spatial-history
 :CUSTOM_ID: 07:-why-spatial-history?-c5b0
 :END:
 ** Assignment Notes
-- Assignment 3: good work!
-  - note: *div:nth-child()* means "any *div* that is the nth-child())", not "*the nth child of any div*"
-- Assignment 4: not up yet! But the *non-technical instructions* in [[https://github.com/DigitalHistory/advanced-topics/tree/master/spatial-history#assignment][last year's version]] will still apply.
-** Recap
+- Assignment 3: good luck!!
+- Assignment 4: not up yet! But the *non-technical instructions* in [[https://github.com/DigitalHistory/advanced-topics/tree/master/spatial-history#assignment][last year's version]] will still apply. There will, however, be some significant differences in the technical content. 
+** Recap (from a while ago)
 :PROPERTIES:
 :CUSTOM_ID: recap-abcf
 :END:
@@ -6230,17 +6858,6 @@ in particular,
 https://mvmtbldg.files.wordpress.com/2011/02/glo-plat2.jpg
 #+ATTR_HTML: :class paired
 https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
-** Maps /Reinscribe/ Power
-:PROPERTIES:
-:CUSTOM_ID: maps-/reinscribe/-power-1dc0
-:END:
-- "Home Owners Loan Corporations (HOLC) (1930's)
-  - US Federal Agency in New Deal
-  - tasked with preventing foreclosures
-  - ranked neighbourhoods by "desirability"
-  - ancestor to contemporary maps used by real estate brokers
-#+ATTR_HTML: :class paired
-https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 ** Mapping /enrols/ State Power
 :PROPERTIES:
 :CUSTOM_ID: mapping-/enrols/-state-power-900d
@@ -6254,11 +6871,39 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 [[file:~/DH/Images/surveyor.jpeg]]
 #+ATTR_HTML: :class paired
 [[file:~/DH/Images/line_cut.jpeg]]
-* Spatial History with Google Maps
+** Maps /Reinscribe/ Power
 :PROPERTIES:
-:CUSTOM_ID: spatial-history-with-google-maps-a3dc
-:END: 
-** Cats
+:CUSTOM_ID: maps-/reinscribe/-power-1dc0
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+- "Home Owners Loan Corporations (HOLC) (1930's)
+  - US Federal Agency in New Deal
+  - tasked with preventing foreclosures
+  - ranked neighbourhoods by "desirability"
+  - ancestor to contemporary maps used by real estate brokers
+
+https://ncrc.org/wp-content/uploads/2018/09/PHILLY_HOLC-2.jpg
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag appear
+#+begin_slideblock
+@@html:<iframe width="100%" height="800px" src="https://dsl.richmond.edu/panorama/redlining/#loc=12/40.017/-75.205&city=philadelphia-pa" allowfullscreen></iframe>@@
+#+end_slideblock
+
+
+** Questions for us (again)
+:PROPERTIES:
+:CUSTOM_ID: questions-for-us-3e234
+:END:
+- What does it mean to foreground spatial characteristics in a /spatial/ history?
+- How do maps & media /transform/ the kinds of stories we can tell
+* 09-01: Spatial History with Leaflet Maps
+:PROPERTIES:
+:CUSTOM_ID: spatial-history-with-leaflet-maps-a3dc
+:EXPORT_FILE_NAME: 09-01-spatial-history-leaflet
+:END:  
+** COMMENT Cats
 #+ATTR_HTML: :class paired
 [[./Images/cat.jpg]]
 #+ATTR_HTML: :class paired
@@ -6269,18 +6914,18 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 - we /bind/ a monster to a variable
 - and then it has to perform tasks for us.
 - sometimes we need to give it an offering first
-** Google Maps and Spatial History
+** Maps and Spatial History
 :PROPERTIES:
-:CUSTOM_ID: google-maps-and-spatial-history-eeb1
+:CUSTOM_ID: leaflet-maps-and-spatial-history-eeb1
 :END:
-- use Google Maps to explore *making geography central* to historical explanation
+- use online Maps to explore *making geography central* to historical explanation
 
 #+BEGIN_NOTES 
 Today in class we are discussing /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
 
 Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
 
-Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
+Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Leaflet Map. Leaflet Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
 #+END_NOTES
 ** Read this part! Follow the links! 
 :PROPERTIES:
@@ -6291,15 +6936,23 @@ Our approach will be decidedly more lightweight. In class today, we will build a
 ** What is a GIS?
 :PROPERTIES:
 :CUSTOM_ID: what-is-a-gis?-12ec
+:reveal_extra_attr: class="twoc"
 :END:
 
-#+ATTR_HTML: :class paired
-http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
-#+ATTR_HTML: :class paired
+#+begin_slideblock
+
+https://web.archive.org/web/20190105210746/http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
+
+#+end_slideblock
+
+#+begin_slideblock
+
 - all data is "geo-tagged" (has location info = latitude-longitude co-ords)
 - layered data (like photoshop)
   - "layering" a non-trivial taxonomic decision 
 - managed by a database, often quite complex, sophisticated
+
+#+end_slideblock
 
 #+BEGIN_NOTES 
 GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
@@ -6308,25 +6961,34 @@ The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]]
 
 Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
 #+END_NOTES
-** Controlling Google Maps
+
+** Design Considerations
+- what should the *baselayer* look like?
+- what *kinds of phenomena are we representing*?
+- what are the *logical groupings*? These hsold probably be layers
+- how does the map *enhance and transform* the story you're telling? 
+** Controlling Leaflet Maps
 :PROPERTIES:
-:CUSTOM_ID: controlling-google-maps-a206
+:CUSTOM_ID: controlling-leaflet-maps-a206
 :END:
-- we are interested in 2 layers: "basemap" and "marker layer"
-- we use Google Maps *API* to add markers to marker layer, generate map on web page
-  - "load" Google Maps API (using a script tag)
-  - instruct Google Maps to do what we want by *using methods of the ~google.maps~ object
+- first, *instantiate map* and set up initial conditions
+- then *add baselayer*
+- then add *other layers as desired*
+- finally, *add controls*
+- we use Leaflet Maps *API* to add markers to marker layer, generate map on web page
+  - "load" Leaflet Maps API (using a script tag)
+  - instruct Leaflet Maps to do what we want by *using methods of the ~L~ object, which is the name assigned to the API by default
   - API's as [[https://en.wikipedia.org/wiki/Evocation][Evocation]]
   - code may look complex, but you only need to change a few things
 
 #+BEGIN_ASIDE
-An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  Cf. [[https://www.youtube.com/watch?v=s7wmiS2mSXY][this helpful video]] or [[https://en.wikipedia.org/wiki/Application_programming_interface][Wikipedia]] for more API info.
+An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Leaflet API, our web pages can communicate directly with Leaflet's servers to modify the map that Leaflet is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  Cf. [[https://www.youtube.com/watch?v=s7wmiS2mSXY][this helpful video]] or [[https://en.wikipedia.org/wiki/Application_programming_interface][Wikipedia]] for more API info.
 #+END_ASIDE
 
 #+BEGIN_NOTES 
-For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
+For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Leaflet Maps API/.
 
-You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
+You don't have to understand the Leaflet Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
 
 #+END_NOTES
 
@@ -6357,11 +7019,11 @@ An empty line separates paragraphs.
 
 While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
 
-** The Exercise
+** The Assignment
 :PROPERTIES:
 :CUSTOM_ID: the-exercise-9a2b
 :END:
-- let's create a Google Map!
+[[https://classroom.github.com/a/Irv1gDIe][online here]]
 ** The code
 :PROPERTIES:
 :CUSTOM_ID: the-code-e630
@@ -6386,6 +7048,106 @@ While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=
 - use a different Bootstrap theme to make bigger changes
 - read assignment notes to learn more about the frameworks this assignment leans on
 
+*  09-02: Deep Maps & Spatial Humanities                                                  
+:PROPERTIES:
+:EXPORT_FILE_NAME: 09-maps-online
+:CUSTOM_ID: comment-09:-deep-maps-8fd5
+:END:
+** What is Spatial Humanities?
+- GIS Methods
+- Humanities Questions
+
+** The Temptations of GIS
+:PROPERTIES:
+:CUSTOM_ID: the-temptations-of-gis-a71e
+:END:
+- precision
+- accuracy
+- determinism
+- "thin maps"
+#+BEGIN_QUOTE
+...conceived, designed, created, and maintained by experts for both general and specific audiences... heavily focused on the material and physical characteristics of landscape and society.
+#+END_QUOTE 
+#+BEGIN_NOTES
+
+critics contend that GIS privileges master narratives and cat-
+egorical causation at the cost of contingent causation and
+alternative interpretations and renderings of space and par-
+ticularly place. This reductionist meta-narrative stands in con-
+trast to many parts of human geography and the humanities
+that are heavily versed in multivocality, intertextuality, and
+contingency, and where place is as equally important as
+space in the construction of human geographies. (http://www.tandfonline.com.myaccess.library.utoronto.ca/doi/pdf/10.1080/00087041.2016.1243864?needAccess=true
+#+END_NOTES
+** Between /Maps/ and /Narrative/
+:PROPERTIES:
+:CUSTOM_ID: between-/maps/-and-/narrative/-c6d9
+:END:
+- Yes, maps are rhetorical, but
+- they lack the narrative elements that make history
+#+BEGIN_NOTES
+- to what extent, with what tools, can the "experience" of embeddedness in a place be captured?
+  - "between the objective role of scientific theorizing & the subjective role of empathetic understanding."
+  - emphasis on conceptual  mapping  rather  than  on  cartographic mapping
+ 
+maps on their own are not "stories". But on the other hand *places* are essential to stories. cf. finding that tellers of oral epics memorize their stories *place by place* -- places have strong resonances within our narratives. So, can we capture place in a more robust way? 
+#+END_NOTES
+** Roots of Deep Mapping
+:PROPERTIES:
+:CUSTOM_ID: roots-of-deep-mapping-d17a
+:END:
+- antiquarians of c.18
+  - attention to folklore, natural history, hearsay.
+  - attempted to "record and represent the grain and patina of a location through the justapositions and interpenetrations of the historical and tecontemporary, the factual and the fictional" (Pearson & Shank, 2001)
+- Situationists (1960's)
+#+BEGIN_QUOTE
+Geography... deals with the determinant actions of general natural forces.... Psychogeography could set for itself the study of the precise laws and specific effects of the geographical environment... on the emotions and behavior of individuals. (Debord)
+#+END_QUOTE
+** Building a "Spatial Story"
+:PROPERTIES:
+:CUSTOM_ID: building-a-"spatial-story"-23b5
+:END:
+
+ *Some Examples*
+
+- [[https://storymaps.esri.com/stories/2017/japanese-internment/index.html][Japanese Internment on Storymap]]
+- [[http://bl.ocks.org/anonymous/raw/7d67c4ef3348192da613/][H.M.S. Beagle on Odyssey.js]]
+** Data and Meaning (again)
+:PROPERTIES:
+:CUSTOM_ID: data-and-meaning-(again)-e74b
+:END:
+** Mapping Ecosystems: Current Conditions
+:PROPERTIES:
+:CUSTOM_ID: mapping-ecosystems:-current-conditions-01a5
+:END:
+- [[http://geojson.io][GeoJSON.io]]
+- [[https://www.google.com/maps/d/?hl=en_US&app=mp][Google My Maps]]
+- [[https://cartodb.com/][CartoDB]]
+- [[http://mapstory.org/][MapStory]]
+- [[https://storymap.knightlab.com/][StoryMap]]
+- [[http://timemapper.okfnlabs.org/create][TimeMapper]]
+- [[http://storymaps.arcgis.com/en/][ESRI StoryMaps]]
+- [[http://theclio.com/web/search?lat=37.7749295&lon=-122.41941550000001&location=san%20francisco%2C%20ca][CLIO historical maps]]
+- [[http://chartsbin.com/about/apply][ChartsBin]]
+- [[http://cartodb.github.io/odyssey.js/][Odyssey.js]]
+** Remaining mapping questions
+:PROPERTIES:
+:CUSTOM_ID: activity:-a-richer-map-c194
+:END:
+- What do you still need help with? due tonight
+** COMMENT Next Assignment: Oral History. 
+- [[https://digitalhistory.github.io/assignment/04-oral-history/][on the website]]
+- [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][On Github]]
+** Final Assignment: Project Proposal
+- [[http://digitalhistory.github.io/assignment-05-project-proposal/][Now On the Website]]!
+** COMMENT Activity: make-up work                                 :noexport:
+:PROPERTIES:
+:CUSTOM_ID: activity:-make-up-work-cbc7
+:END:
+* 09-02: More GIS
+:PROPERTIES:
+:EXPORT_FILE_NAME: 09-02-more-gis
+:END:
 *  COMMENT 08: Visualization                                        
 :PROPERTIES:
 :EXPORT_FILE_NAME: 08-visualization
@@ -6422,7 +7184,7 @@ https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png
 [[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
 #+BEGIN_NOTES
 CJ Minard (1781-1870); civil engineer; drawn in 1869; 
- six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard’s achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard's achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
 
 "The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
 In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
@@ -6481,7 +7243,7 @@ https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png
 [[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
 #+BEGIN_NOTES
 CJ Minard (1781-1870); civil engineer; drawn in 1869; 
- six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard’s achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard's achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
 
 "The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
 In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
@@ -6603,103 +7365,6 @@ Geography... deals with the determinant actions of general natural forces.... Ps
 :CUSTOM_ID: activity:-make-up-work-cbc7
 :END:
 
-*  COMMENT 09: Deep Maps & Spatial Humanities                                                  
-:PROPERTIES:
-:EXPORT_FILE_NAME: 09-maps-online
-:CUSTOM_ID: comment-09:-deep-maps-8fd5
-:END:
-** What is Spatial Humanities?
-- GIS Methods
-- Humanities Questions
-** The Temptations of GIS
-:PROPERTIES:
-:CUSTOM_ID: the-temptations-of-gis-a71e
-:END:
-- precision
-- accuracy
-- determinism
-- "thin maps"
-#+BEGIN_QUOTE
-...conceived, designed, created, and maintained by experts for both general and specific audiences... heavily focused on the material and physical characteristics of landscape and society.
-#+END_QUOTE 
-#+BEGIN_NOTES
-
-critics contend that GIS privileges master narratives and cat-
-egorical causation at the cost of contingent causation and
-alternative interpretations and renderings of space and par-
-ticularly place. This reductionist meta-narrative stands in con-
-trast to many parts of human geography and the humanities
-that are heavily versed in multivocality, intertextuality, and
-contingency, and where place is as equally important as
-space in the construction of human geographies. (http://www.tandfonline.com.myaccess.library.utoronto.ca/doi/pdf/10.1080/00087041.2016.1243864?needAccess=true
-#+END_NOTES
-** Between /Maps/ and /Narrative/
-:PROPERTIES:
-:CUSTOM_ID: between-/maps/-and-/narrative/-c6d9
-:END:
-- Yes, maps are rhetorical, but
-- they lack the narrative elements that make history
-#+BEGIN_NOTES
-- to what extent, with what tools, can the "experience" of embeddedness in a place be captured?
-  - "between the objective role of scientific theorizing & the subjective role of empathetic understanding."
-  - emphasis on conceptual  mapping  rather  than  on  cartographic mapping
- 
-maps on their own are not "stories". But on the other hand *places* are essential to stories. cf. finding that tellers of oral epics memorize their stories *place by place* -- places have strong resonances within our narratives. So, can we capture place in a more robust way? 
-#+END_NOTES
-** Roots of Deep Mapping
-:PROPERTIES:
-:CUSTOM_ID: roots-of-deep-mapping-d17a
-:END:
-- antiquarians of c.18
-  - attention to folklore, natural history, hearsay.
-  - attempted to "record and represent the grain and patina of a location through the justapositions and interpenetrations of the historical and tecontemporary, the factual and the fictional" (Pearson & Shank, 2001)
-- Situationists (1960's)
-#+BEGIN_QUOTE
-Geography... deals with the determinant actions of general natural forces.... Psychogeography could set for itself the study of the precise laws and specific effects of the geographical environment... on the emotions and behavior of individuals. (Debord)
-#+END_QUOTE
-** Building a "Spatial Story"
-:PROPERTIES:
-:CUSTOM_ID: building-a-"spatial-story"-23b5
-:END:
-
-** Some Examples
-:PROPERTIES:
-:CUSTOM_ID: some-examples-bfb0
-:END:
-- [[https://storymaps.esri.com/stories/2017/japanese-internment/index.html][Japanese Internment on Storymap]]
-- [[http://bl.ocks.org/anonymous/raw/7d67c4ef3348192da613/][H.M.S. Beagle on Odyssey.js]]
-** Data and Meaning (again)
-:PROPERTIES:
-:CUSTOM_ID: data-and-meaning-(again)-e74b
-:END:
-** Mapping Ecosystems: Current Conditions
-:PROPERTIES:
-:CUSTOM_ID: mapping-ecosystems:-current-conditions-01a5
-:END:
-- [[http://geojson.io][GeoJSON.io]]
-- [[https://www.google.com/maps/d/?hl=en_US&app=mp][Google My Maps]]
-- [[https://cartodb.com/][CartoDB]]
-- [[http://mapstory.org/][MapStory]]
-- [[https://storymap.knightlab.com/][StoryMap]]
-- [[http://timemapper.okfnlabs.org/create][TimeMapper]]
-- [[http://storymaps.arcgis.com/en/][ESRI StoryMaps]]
-- [[http://theclio.com/web/search?lat=37.7749295&lon=-122.41941550000001&location=san%20francisco%2C%20ca][CLIO historical maps]]
-- [[http://chartsbin.com/about/apply][ChartsBin]]
-- [[http://cartodb.github.io/odyssey.js/][Odyssey.js]]
-** Remaining mapping questions
-:PROPERTIES:
-:CUSTOM_ID: activity:-a-richer-map-c194
-:END:
-- What do you still need help with? due tonight
-** Next Assignment: Oral History. 
-- [[https://digitalhistory.github.io/assignment/04-oral-history/][on the website]]
-- [[https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history][On Github]]
-** Final Assignment: Project Proposal
-- [[http://digitalhistory.github.io/assignment-05-project-proposal/][Now On the Website]]!
-** COMMENT Activity: make-up work                                 :noexport:
-:PROPERTIES:
-:CUSTOM_ID: activity:-make-up-work-cbc7
-:END:
 * 10: Visualization/Engaged History/Oral History
 :PROPERTIES:
 :EXPORT_FILE_NAME: 10-oral-history
@@ -6740,7 +7405,7 @@ https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png
 [[https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png]]
 #+BEGIN_NOTES
 CJ Minard (1781-1870); civil engineer; drawn in 1869; 
- six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard’s achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard's achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
 
 "The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
 In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
@@ -7173,18 +7838,24 @@ var blueURL = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     infowindow.open(my_map);
   });
 #+end_src
-* Popcorn/Oral History
+* Popcorn/Oral History 
 :PROPERTIES:
 :CUSTOM_ID: popcornoral-history-6ef0
 :EXPORT_FILE_NAME: 10-02-popcorn
 :END:
 ** Taking Stock
 - The End is Nigh!!
-- Assignment 4: Planning return ~ Friday/Saturday
+- Assignment 4: Lara has Returned it!
 - Assignment 5: Required for *everyone* (!!)
 ** Oral History Assignment
 - intellectual goal: think hard about *nature of oral history*, and *how to use digital media effectively* 
 - technical goal: think more about working with non-textual media, about HTML structures, and about APIs (monsters in the deep)
+** Before we go further!
+pull in upstream changes so you can play w/ up to date code during class today. 
+#+begin_src 
+git pull
+#+end_src
+
 ** COMMENT Before Going Further: Update Repos
 :PROPERTIES:
 :CUSTOM_ID: repo-update-3733
@@ -7268,10 +7939,17 @@ var mytables = Tabletop.init( { key: public_spreadsheet_key,
                                 simpleSheet: false } );
 #+end_src
 
+** Before we go further!
+pull in upstream changes so you can play w/ up to date code during class today. 
+#+begin_src 
+git pull
+#+end_src
+
 ** Getting Started: First, Copy Spreadsheet
 :PROPERTIES:
 :CUSTOM_ID: repo-update-37330908fdsa
 :END:
+#+begin_slideblock
 - go to my sheet: https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/edit#gid=0
 - ~File~ --> ~Make a copy~
 - Under ~File~ --> ~Publish to the web~, make sure yr sheet is published
@@ -7279,61 +7957,166 @@ var mytables = Tabletop.init( { key: public_spreadsheet_key,
 - go to "Share" and "Copy Link to Share"
 - *this is your new key!!!!*
 - insert into your js file
-** (other way) Spreadsheet URL
-:PROPERTIES:
-:CUSTOM_ID: repo-update-3733lk;zxf
-:END:
+#+end_slideblock
+
+#+begin_slideblock
+*Alternative Method*
 #+begin_src javascript
   var public_spreadsheet_key = 'https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/pubhtml?gid=0&single=true';
 #+end_src
 - Replace *ONLY THE PART BTWN /d/ and /pubhtml* with the spreadsheet "key" from yr new sheet
-** Run server
+#+end_slideblock
+
+** Styling Popcorn Plugins
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+*Page-specific code is found in ~/css/oh-styles.css~*
+#+begin_src css
+.main-container {
+    grid-template-areas: "intro popcorn" "main main";
+    grid-auto-columns: 1fr;
+    grid-template-rows: 50vh 1fr;
+}
+aside#popcorn-container {
+    grid-area: popcorn;
+    background-color: var(--color-highlight2);
+    border: 1px solid var(--color-custom-borders);
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    max-height: 100%;
+    /* space things out! */
+    justify-content: space-around;
+}
+aside#popcorn-container > * {
+    /* default base width for plugins */
+    flex-basis: var(--default-width);
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+/* most of the plugins will create divs or other elements w/ class "pluginname-plugin" */
+/* here's one example of styling particular plugins differently from others */
+#popcorn-container figure.figure-plugin {
+    /* an example of setting the figure as a bit larger than the others.  */
+    flex-basis: calc(var(--default-width)*4/3);
+    max-width: 100%;
+}
+
+#popcorn-container .leaflet-plugin, #popcorn-container .googlemap-plugin {
+    /* make these full-width by default */
+    flex-basis: 100%;
+}
+
+/* you can also use the `id` column to address *most* plugins (but not all!) */
+#+end_src
+#+end_slideblock
+#+begin_slideblock
+*Some thoughts*
+- if you are using a video (instead of audio), you may want to *make changes to the grid*. e.g., you might want to put the video inside the grid, next to the annotations, and either move intro to its own row or just eliminate the intro section altogether. This would likely involve change to the HTML as well.
+- *are you happy with the default display of the plugins?* This design assumes that you are unlikely to have more than 2 plugins visible at the same time. If you never have more than one, you may want to set ~--default-width~ to ~100%~. Maybe you don't even want to use a flex container!
+- *set plugin-type and plugin-instance CSS with class and id properties*. In general, plugin instance containers have both a plugin-specific class ~pluginName-plugin~ and an instance-spcific id (the ~id~ property you set in a spreadsheet row). 
+- *notice the use of CSS variables*. The syntax can sometimes feel a little heavy, but ultimately they mike life a lot easier.  
+#+end_slideblock
+** Getting Started with code
 :PROPERTIES:
 :CUSTOM_ID: repo-update-37332l3j4
+:reveal_extra_attr: class="twobytwo"
 :END:
+#+begin_slideblock
+*Install npm & run server*
 #+begin_src sh
 cd advanced-topics-yr-name
 npm install 
 npm run server &
 #+end_src
-** Open in browser
-:PROPERTIES:
-:CUSTOM_ID: repo-update-3733ksljfd
-:END:
+#+end_slideblock
+#+begin_slideblock
+*Navigate to your site*
 #+begin_src sh
 firefox localhost:8080/oral-history
 #+end_src
-** use DevTools to look for errors
-:PROPERTIES:
-:CUSTOM_ID: repo-update-3733slkzvb
-:END:
+#+end_slideblock
+#+begin_slideblock
+*use DevTools to look for errors*
 [[./Images/console.png]]
-** Error Sources
-:PROPERTIES:
-:CUSTOM_ID: repo-update-3733sklkjf
-:END:
+#+end_slideblock
+#+begin_slideblock
+*Error Sources*
 - bad spreadsheet URL
 - bad time codes etc. in spreadsheet
 - JS syntax errors in ~popcorn-data-from-google.js~
 - JS syntax errors in ~index.html~
+#+end_slideblock
+
+
 ** Good and Less Good Annotations
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+*Good Annotations:*
 - Add context/info
-- clarify
-- Comment
-** "Seek" function
+  #+begin_quote
+  /Stunde null/ ("hour zero") refers to the period of time directly after World War II, when the future direction and status of the old German Reich was radically undertain, and a dramatic reset of all social and political expectations seemed inevitable.
+  #+end_quote
+  @@html:<iframe style="width:100%; height: 20vh" src="https://en.wikipedia.org/wiki/Stunde_Null"></iframe>@@
+- clarify content
+  #+begin_quote
+  "His Holiness", that is, the Dalai Lama.
+  #+end_quote
+- enhance rather than distract
+#+end_slideblock
+#+begin_slideblock
+*Less Good Annotations:*
+- are not directly tied to what's being discussed in your media file
+- pass too quickly to be comprehended in real time
+- are too cluttered to interpret
+#+end_slideblock
+
+** Extra fun
 :PROPERTIES:
 :CUSTOM_ID: seek-function-a7fd
+:reveal_extra_attr: class="twoc"
 :END:
+#+begin_slideblock
+*Seek Function*
 #+begin_src javascript
-       var seek = function (time) {
-        document.getElementById("media").currentTime= time;
-        };
- 
+const seek = function (time) {
+ document.getElementById("media").currentTime= time;
+ }; 
 #+end_src
 
-~<a href="javascript:seek(75)">seek to 1:15</a>~
+Use in Markdown thus: 
 
-** 
+#+begin_src markdown
+When <a href="javascript:seek(75)">Jonathan discusses the trauma of wartime (1:15)</a>, 
+he uses language that clearly echos that of professional psychiatric discourse as it 
+came into vogue in the 1970's. 
+#+end_src
+#+end_slideblock
+
+#+begin_slideblock
+*Styling media container in chrome*
+#+begin_src css
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(20,20,20,0.4);
+    border-radius: 5px;
+}
+audio {
+    width: 100%;
+}
+#+end_src
+#+end_slideblock
+
+
+
+** Your Questions/Efforts
 
 * 11: Oral History & Remix Culture                                 :noexport:
 :PROPERTIES:
@@ -7361,7 +8144,7 @@ npm run server &
 firefox localhost:8080/oral-history
 #+end_src
 ** use DevTools to look for errors
-[[Images/console.png]]
+[[./Images/console.png]]
 ** Error Sources
 - bad spreadsheet URL
 - bad time codes etc. in spreadsheet
@@ -7376,10 +8159,11 @@ firefox localhost:8080/oral-history
 :EXPORT_FILE_NAME: 12-citizen-history
 :CUSTOM_ID: 12:-citizen-history-815e
 :END:
+
 ** Reminders
-- Oral History will be marked tomorrow
-- Proposal due on the 5th
-- Thursday's class is a *work session* with *snacks* 
+- Oral History due shortly
+- Proposal due immediately after
+- sorry no snacks!
 ** What we've learned
 *** Text is Code
 - all our work is "digital" now
@@ -7425,7 +8209,7 @@ firefox localhost:8080/oral-history
 #+begin_notes
 remind everyone that we live together in a world shaped both by the events of the past and by a tremendously powerful media landscape. Charting a course through this new world requires some understanding of both. Promises and pitfalls of DH are the promises and pitfalls of the new world.   
 #+end_notes
-** Congratulations
+** Congratulations!
 #+begin_notes
 you've all come a really long way this semester. Lots of your cohort quit before you did. Even if you are just scraping by, you have had to work to a high standard. You deserve a round of applause!
 #+end_notes
