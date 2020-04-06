@@ -671,6 +671,37 @@ Asa bonus here are a couple of string tricks:
 ** Loops
 
 
+* JS Cheatsheet
+:PROPERTIES:
+:EXPORT_FILE_NAME: js-cheat-sheet
+:CANVASID: 317312
+:CANVAS_PAGE_URL: js-cheatsheet
+:OL_PUBLISH: nil
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/123949/pages/js-cheatsheet
+:CANVAS_SHORT_URL: js-cheatsheet
+:CANVAS_EDITING_ROLES: teachers
+:END:
+
+Jquery and Vanilla JS equivalents: 
+
+| Task                       | jQuery                                               | "Vanilla" JS                                                                          |
+|----------------------------+------------------------------------------------------+---------------------------------------------------------------------------------------|
+| Get all matching elements  | ~$('selector')~                                      | ~document.querySelectorAll('selector')~                                               |
+| Get first matching element | ~$('selector').first()~                              | ~document.querySelector('selector')~                                                  |
+| Change CSS prop            | ~$('selector').css('property-name', 'value')~        | ~document.querySelector('selector').style.property-name = 'value'~                    |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.style.property-name='value'~                             |
+| Change Text Value          | ~$('selector').text('new text here')~                | ~document.querySelector('selector').textContent = 'new text here'~                    |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.textContent ='new text here'~                            |
+| Set inner HTML             | ~$('selector').html('<tag>valid HTML here</tag>')~   | ~document.querySelector('selector').innerHTML = '<tag>valid HTML here</tag>'~         |
+|                            |                                                      | ~const matches = document.querySelectorAll('selector')~                               |
+|                            |                                                      | ~for (const m of matches) {m.textContent ='<tag>valid HTML here</tag>'~               |
+| Append to an element       | ~$('selector').append('<tag>valid HTML here</tag>')~ | ~document.querySelector('selector').innerHTML += '<tag>valid HTML here</tag>'~ risky! |
+| Remove a node              | ~$('selector').remove()~                             | ~let el = document.querySelector('selector'); el.parentNode.removeChild(el);~         |
+
+
+
 * COMMENT Reading /Eloquent Javascript/
 [[http://eloquentjavascript.net/][Eloquent Javascript]] is a a fantastic programming textbook, but it takes quite a bit of work to read. It's not always easy for us to read.  Many of the examples are a little more mathematical than some of us might like, and the selections we're reading leave out a lot.  Here are some notes to help you out, especially with the later chapters:
 ** Chapter 12
