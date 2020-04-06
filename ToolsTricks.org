@@ -1297,7 +1297,7 @@ Most of these timeline plugins generate their timelines automatically, using pre
 I would suggest trying out several and seeing how they seem to work for you.  I'd also consider making some dummy timelines on your own personal websites and seeing how they seem to work out.
 ** Image Maps
 I've already installed two image mapping plugins on thesite: [[https://wordpress.org/plugins/imagemapper/][Image Mapper]] and [[http://wpdrawattention.com/][Draw Attention]].  You can try both out and see how you like them.
-* Adding a Custom Icon to Google Maps Markers 
+* COMMENT Adding a Custom Icon to Google Maps Markers 
 :PROPERTIES:
 :EXPORT_FILE_NAME: adding-a-custom-icon-to-google-maps-markers
 :END:
@@ -1307,7 +1307,7 @@ The Google Maps API permits us to set the image that displays on the map as the 
 
 
 ** 
-* Ecosystem, Infrastructure, and Tools
+* COMMENT Ecosystem, Infrastructure, and Tools
 :PROPERTIES:
 :EXPORT_FILE_NAME: ecosystem-infrastructure-and-tools
 :END:
