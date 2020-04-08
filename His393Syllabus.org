@@ -7,9 +7,13 @@
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
 #+HUGO_SECTION: syllabus
 #+HUGO_MENU: :menu main :weight 10
-# #+MACRO: ts (eval (get-ts+7-inc-ov 1))
+# #+MACRO: ts (eval (get-ts+7-inc-ov ))
 #+OPTIONS: todo:nil
 #+SETUPFILE: ./setup.org
+c;
+* COMMENT DETAILS Summer 2020 
+- Class is May 4 to June 15
+- gh classroom invite link: https://classroom.github.com/classrooms/63257651-his393-digital-history-summer-2020
 
 * COMMENT export
 #+begin_src emacs-lisp :results none
@@ -190,12 +194,19 @@ While all our readings are online, the following texts are heavily used & may be
 :PROPERTIES:
 :ID:       o2b:549d46ae-f46c-4b15-a025-c6cfd44073af
 :END:
-*** Introducing /Digital History/, [[https://github.com][Github]], and [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][Markdown]] ({{{ts}}})
+*** ({{{ts}}}) Introducing /Digital History/, [[https://github.com][Github]], and [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][Markdown]] 
 :PROPERTIES:
 :ID:       o2b:148d2064-be0e-4798-9c91-0f1372b5b864
 :END:
 *Class Synopsis:* Introduction to the course
 
+*Lecture Videos:*
+- Welcome
+- Github Sign-up
+- Github Hello World
+- Using Markdown
+- Github Pull Request
+- JSON Fundamentals
 *Readings:* You may want to read some of these as general preparation for this and other history classes:
 - W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
 - William Cronon, [[http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf]["Why the Past Matters"]] 
@@ -203,9 +214,14 @@ While all our readings are online, the following texts are heavily used & may be
 - Also, consider watching the VSCode videos in [[https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg][the class YouTube channel]]
 
 **** In-Class Activity: Collaboration on Github, Markdown  
-*** What the Web Signifies + [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics][HTML]] and [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics][CSS]] ({{{ts}}})
-We all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
+*** ({{{ts}}}) What the Web Signifies + [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics][HTML]] and [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics][CSS]] 
+*Class Synopsis:* we all live with the web, but that doesn't mean we think much about /how it works/ and /what it's changed/. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's /digital/ and /machine-readable/ nature.  
 
+*Lecture Videos:* 
+- What the Web signifies
+- HTML 1: Tags and Structures
+- CSS 1: Colors, sizes, Styles
+- VSCode: Intro
 *Readings:*
 - Juergen Habermas, "[[https://unige.ch/sciences-societe/socio/files/2914/0533/6073/Habermas_1974.pdf][The Public Sphere: An Encyclopedia Article]]" (1964)
 - Cohen, Daniel J. “[[http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short][Interchange: The Promise of Digital History]]” 95, no. 2 (September 1, 2008): 452–91. 
@@ -221,9 +237,15 @@ These Mozilla Developer Network guides are inter-related, and the structure is e
 
 
 - [[https://www.theblogstarter.com/html-for-beginners/][Blogstarter: simple tutorial]] (one of a zillion alternatives to the MDN pages)
-*** Abundance and Openness ({{{ts}}}) 
+*** ({{{ts}}}) Abundance and Openness  
 One of the key features of the web is its /immenseness/. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
+*Lecture Videos:*
+- Abundance and Openness
+- CSS 2: The Box Model
+- CSS 3: Layouts with Flex and Grid
+
+*Readings:*
 - W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. http://wcm1.web.rice.edu/howtoread.html.
 - Council. “Many More than a Million: Building the Digital Environment for the Age of Abundance.” Council on Library and Information Resources. Accessed June 7, 2011. http://www.clir.org/activities/digitalscholar/index.html.
 - Turkel, William J. “Going Digital.” Accessed October 12, 2011.  [[http://williamjturkel.net/2011/03/15/going-digital/]].
@@ -233,14 +255,14 @@ One of the key features of the web is its /immenseness/. We will discuss how thi
 **** In-Class Activity: More HTML + CSS 
 
 ** Data Driven History
-*** Distant Reading 1 ({{{ts}}})
+*** ({{{ts}}}) Distant Reading 1 
 Franco Moretti's /Graphs, Maps, Trees/ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 *Readings:* 
 - Moretti, Franco. /Graphs, Maps, Trees: Abstract Models for a Literary History/. Verso, 2005 through p. 64, or  Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1][Graphs, Maps, Trees.]]” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[[http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1][Graphs, Maps, Trees - 2]].” New Left Review 26 (March 1, 2004): 79–103 
 - "Basic Text Mining" in /The Historian's Macroscope:/ http://www.themacroscope.org/?page_id=362
 **** In-Class Activity: Javascript variables & functions
-*** Distant Reading 2: Are Texts Data? ({{{ts}}})
+*** ({{{ts}}}) Distant Reading 2: Are Texts Data? 
 More Moretti, and some criticisms
 
 *Readings:* 
@@ -250,7 +272,7 @@ More Moretti, and some criticisms
 - Marc Dunkelman. “[[http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/][What Data Can't Convey]].” Blog. /The Chronicle of Higher Education/, 19 2014.
 
 **** In-Class Activity: Javascript objects and DOM manipulation
-*** Text as Data, History as Algorithm ({{{ts}}})
+*** ({{{ts}}}) Text as Data, History as Algorithm 
 *Note:* we may need to push this up
 We'll explore some more playful extrapolations about the future of data-driven history. 
 
@@ -260,9 +282,9 @@ We'll explore some more playful extrapolations about the future of data-driven h
 *Recommended Readings:*
 - Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[[http://programminghistorian.org/lessons/cleaning-data-with-openrefine][Cleaning Data with OpenRefine]].” /The Programming Historian/.
 **** In-Class Activity: Javascript and the DOM 
-*** Computing Concepts & Assignment Help Catch-up day ({{{ts}}}) 
+*** ({{{ts}}}) Computing Concepts & Assignment Help Catch-up day  
 ** Maps, Visualization, and History
-*** Spatial History ({{{ts}}})
+*** ({{{ts}}}) Spatial History 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.  
 
 *Readings:* 
@@ -275,7 +297,7 @@ http://journals2.scholarsportal.info/browse/03177173/v50i0001
 http://journals2.scholarsportal.info/browse/03177173/v26i0002
 http://books1.scholarsportal.info.myaccess.library.utoronto.ca/viewdoc.html?id=/ebooks/ebooks2/wiley/2011-12-13/3/9780470979587
 http://slab.scripts.mit.edu/wp/links/critical-cartography/
-*** Maps Online ({{{ts}}})
+*** ({{{ts}}}) Maps Online 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!  
 
 *Readings:* 
@@ -284,7 +306,7 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 - google earth tutorial: https://geospatialhistorian.wordpress.com/lessons/lesson-1/
 
 **** In-Class Activity: GIS 
-*** Visualization ({{{ts}}})
+*** ({{{ts}}}) Visualization 
 Of course, maps and graphs are in a certain sense part of a much broader field of /rhetorical visualizations:/ attempts to convey quantitative information through pictures in an effort to convince the reader.  
 
 *Readings:* 
@@ -294,14 +316,14 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 **** In-Class Activity: Reading visualizations
 
 ** Oral History, Crowdsourcing, and the Promise of the Public Sphere
-*** What's Special about Oral History ({{{ts}}})
+*** ({{{ts}}}) What's Special about Oral History 
 Oral History has a long tradition; we explore its roots and peculiarities, and 
 
 *Readings:*
 - "The Voice of the Past" and "What makes Oral History Different" in /The Oral History Reader/
 - Listen to some part of  "I can almost see the lights of home" http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html
 **** In-Class Activity: Popcorn.js 
-*** Project Planning & Citizen History  ({{{ts}}})
+*** ({{{ts}}}) Project Planning & Citizen History  
 We'll discuss some project management techniques that should help you with your final proposal
 - http://publichistorycommons.org/where-are-the-citizen-historians/
 # /home/matt/Pictures/Screenshot from 2015-06-23 16-12-51.png http://digitalhistory.github.io/wp-content/uploads/2015/06/wpid-Screenshot-from-2015-06-23-16-12-51.png
