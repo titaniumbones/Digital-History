@@ -229,7 +229,7 @@ So, step one would be to try to load all that stuff as part of the plugin set ac
 :CUSTOM_ID: about-me-618c
 :END:
 #+ATTR_HTML: :class half
-[[file:~/DH/Images/matt_headshot.jpg]]
+[[file:~/DH/images/matt_headshot.jpg]]
 - Historian of Science & Technology
 - Interdisciplinary Background
 - Interest in "Engaged" scholarship
@@ -417,7 +417,7 @@ At the end of this course, you should:
 - Dish with One Spoon
 - Continuity and Disjuncture
 #+begin_paired
-[[/home/matt/DH/Images/dish-spoon-territory.png]]
+[[/home/matt/DH/images/dish-spoon-territory.png]]
 #+end_paired
 #+begin_paired
 https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg
@@ -542,7 +542,7 @@ Take out your Laptop!
   - submit your changes as pull request
 - When you're done, we'll check out the wonders of open source first hand
  
-# /home/matt/DH/Images/matt_headshot.jpg http://digitalhistory.github.io/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
+# /home/matt/DH/images/matt_headshot.jpg http://digitalhistory.github.io/wp-content/uploads/2016/01/wpid-matt_headshot.jpg
 
 
 ** Bibliography
@@ -645,7 +645,7 @@ help skinparams
  a[[file:help.svg]]
 
 #+NAME: sprite-ex
-#+begin_src plantuml :file Images/test.svg
+#+begin_src plantuml :file images/test.svg
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
 !includeurl ICONURL/common.puml
 !includeurl ICONURL/font-awesome/cloud.puml
@@ -658,7 +658,7 @@ rectangle "<$git_commit>\ncommit" as commit1
 #+end_src
 
 #+RESULTS: sprite-ex
-[[file:Images/test.svg]]
+[[file:images/test.svg]]
 
 
 *** Common Settings
@@ -685,7 +685,7 @@ left to right direction
 
 *** Git Push
 #+NAME: push-start
-#+begin_src plantuml :file Images/git-push0.svg
+#+begin_src plantuml :file images/git-push0.svg
 <<init-uml>>
 skinparam ArrowThickness 8
 skinparam ArrowColor Black
@@ -703,9 +703,9 @@ DEV_GIT_COMMIT(2, "2 \n origin/master") #LightBlue
 #+end_src
 
 #+RESULTS: push-start
-[[file:Images/git-push0.svg]]
+[[file:images/git-push0.svg]]
 
-#+begin_src plantuml :file Images/git-push1.svg
+#+begin_src plantuml :file images/git-push1.svg
 <<push-start>>
 title after git clone/pull
 
@@ -714,10 +714,10 @@ DEV_GIT_COMMIT(3, "2 \n local/master") #Pink
 #+end_src
 
 #+RESULTS:
-[[file:Images/git-push1.svg]]
+[[file:images/git-push1.svg]]
 
 #+name: push-local
- #+begin_src plantuml :file Images/git-push2.svg
+ #+begin_src plantuml :file images/git-push2.svg
 <<push-start>>
 
 title local development
@@ -734,10 +734,10 @@ DEV_GIT_COMMIT(5, "4 \n local/master") #Pink
 #+end_src
 
 #+RESULTS: push-local
-[[file:Images/git-push2.svg]]
+[[file:images/git-push2.svg]]
 
 
- #+begin_src plantuml :file Images/git-push3.svg
+ #+begin_src plantuml :file images/git-push3.svg
 <<push-start>>
 title after git push
 
@@ -752,11 +752,11 @@ DEV_GIT_COMMIT(4, "4 \n origin/master\nand\nlocal/master") #Magenta
 
 
 #+RESULTS:
-[[file:Images/git-push3.svg]]
+[[file:images/git-push3.svg]]
 
 *** Just laptop
 #+NAME: laptop-net
-#+begin_src plantuml :file Images/gh-lpatop.svg :eval no-export :results value file raw
+#+begin_src plantuml :file images/gh-lpatop.svg :eval no-export :results value file raw
 <<init-uml>>
 FA_LAPTOP(mattl, matt-laptop) #Green
 
@@ -764,10 +764,10 @@ FA_LAPTOP(mattl, matt-laptop) #Green
 #+end_src
 
 #+RESULTS:
-[[file:Images/gh-lpatop.svg]]
+[[file:images/gh-lpatop.svg]]
 *** Primitive network
 #+NAME: degen-net
-#+begin_src plantuml :file Images/gh-degen-network.svg :eval no-export :results value file raw
+#+begin_src plantuml :file images/gh-degen-network.svg :eval no-export :results value file raw
 <<laptop-net>>
 
 FA_SERVER(mattr,github.com/matt) #Green
@@ -777,11 +777,11 @@ mattl <--> mattr: Clone
 #+end_src
 
 #+RESULTS: degen-net
-[[file:Images/gh-degen-network.svg]]
+[[file:images/gh-degen-network.svg]]
 
 *** Simple Network
 #+NAME: simple-net
-#+begin_src plantuml :file Images/gh-abbrev-network.svg :eval no-export :results raw
+#+begin_src plantuml :file images/gh-abbrev-network.svg :eval no-export :results raw
 <<degen-net>>
 
 FA_CLOUD(alicer,github.com/alice) #Magenta
@@ -795,12 +795,12 @@ mattr --> kalsangr: Fork
 #+end_src
 
 #+RESULTS: simple-net
-[[file:Images/gh-abbrev-network.svg]]
+[[file:images/gh-abbrev-network.svg]]
 
 #+RESULTS:
-[[file:Images/gh-abbrev-network.svg]]
+[[file:images/gh-abbrev-network.svg]]
 *** Full Network
-#+begin_src plantuml :file Images/gh-full-network.svg :eval no-export :results raw
+#+begin_src plantuml :file images/gh-full-network.svg :eval no-export :results raw
 <<simple-net>>
 FA_LAPTOP(bobl, bob-laptop) #Turquoise
 FA_LAPTOP(alicel, alice-laptop) #Magenta
@@ -814,11 +814,11 @@ kalsangr <--> kalsangl: Clone
 #+end_src
 
 #+RESULTS:
-[[file:Images/gh-full-network.svg]]
+[[file:images/gh-full-network.svg]]
 
 *** Pull
 
-#+begin_src plantuml :file Images/gh-pull.svg :eval no-export :results value file raw
+#+begin_src plantuml :file images/gh-pull.svg :eval no-export :results value file raw
 <<init-uml>>
 
 FA_SERVER(mattr,github.com/matt) #Green
@@ -835,7 +835,7 @@ mattl --> mattl: make another change
 #+end_src
 
 #+RESULTS:
-[[file:Images/gh-pull.svg]]
+[[file:images/gh-pull.svg]]
 ** Git!
 https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png
 
@@ -902,22 +902,22 @@ https://wac-cdn.atlassian.com/dam/jcr:df13d351-6189-4f0b-94f0-21d3fcd66038/01.sv
 
 #+begin_slideblock
 #+ATTR_HTML: :style min-width: 15vw;
-[[file:Images/gh-lpatop.svg]]
+[[file:images/gh-lpatop.svg]]
 #+end_slideblock
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 #+ATTR_HTML: :style min-width: 20vw;
-[[file:Images/gh-degen-network.svg]]
+[[file:images/gh-degen-network.svg]]
 
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-file:Images/gh-abbrev-network.svg
+file:images/gh-abbrev-network.svg
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-[[file:Images/gh-full-network.svg]]
+[[file:images/gh-full-network.svg]]
 #+end_slideblock
 
 *** Branches
@@ -938,12 +938,12 @@ https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.sv
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 #+ATTR_HTML: :style  min-width: 45vw;; 
-[[file:Images/gh-branch.svg]]
+[[file:images/gh-branch.svg]]
 
 #+end_slideblock
 
 *** COMMENT Activity Branches
-#+begin_src plantuml :file Images/gh-branch.svg :eval no-export :results value file raw
+#+begin_src plantuml :file images/gh-branch.svg :eval no-export :results value file raw
 skinparam defaultTextAlignment center
 left to right direction
 
@@ -969,7 +969,7 @@ aliceb --> mattr: PR
 
 #+RESULTS:
 #+ATTR_HTML: :style  min-width:75vw; 
-[[file:Images/gh-branch.svg]]
+[[file:images/gh-branch.svg]]
 
 *** Concepts: Commit
 https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.svg
@@ -978,7 +978,7 @@ https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.sv
 - a branch is really just a “pointer” to a specific commit (complicated)
 
 *** Activity Commits
-#+begin_src plantuml :file Images/commits.svg :eval no-export :results raw
+#+begin_src plantuml :file images/commits.svg :eval no-export :results raw
 <<init-uml>>
 
 skinparam ArrowThickness 8
@@ -995,7 +995,7 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 #+end_src
 
 #+RESULTS:
-[[file:Images/commits.svg]]
+[[file:images/commits.svg]]
 
 
 *** Concept: Worktree and Repository
@@ -1004,13 +1004,13 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 :END:
 #+begin_slideblock
 *what you see*
-[[./Images/worktree.png]]
+[[./images/worktree.png]]
 #+end_slideblock
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 *what's underneath*
-[[./Images/repository.png]]
+[[./images/repository.png]]
 #+end_slideblock
 
 ** Git Workflows
@@ -1042,16 +1042,16 @@ https://blog.developer.atlassian.com/wp-content/uploads/dac-import/merge-conflic
 :END:
 #+begin_slideblock
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push0.svg]]
+[[./images/git-push0.svg]]
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push1.svg]]
+[[./images/git-push1.svg]]
 #+end_slideblock
 
 #+begin_slideblock
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push2.svg]]
+[[./images/git-push2.svg]]
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push3.svg]]
+[[./images/git-push3.svg]]
 
 #+end_slideblock
 
@@ -1066,7 +1066,7 @@ https://wac-cdn.atlassian.com/dam/jcr:0718ae20-0dc5-482c-a38c-25e4f1a1a3b0/02.sv
 #+ATTR_HTML: :style grid-row: 2/4;
 #+begin_slideblock
 #+ATTR_HTML: :style min-width: 20vw;
-[[file:Images/gh-pull.svg]]
+[[file:images/gh-pull.svg]]
 
 #+end_slideblock
 
@@ -1132,7 +1132,7 @@ https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.sv
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 #+ATTR_HTML: :style  min-width: 45vw;; 
-[[file:Images/gh-branch.svg]]
+[[file:images/gh-branch.svg]]
 
 #+end_slideblock
 
@@ -1149,7 +1149,7 @@ https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.sv
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-#+begin_src plantuml :file Images/commits.svg :eval no-export :results raw
+#+begin_src plantuml :file images/commits.svg :eval no-export :results raw
 <<init-uml>>
 
 skinparam ArrowThickness 8
@@ -1166,7 +1166,7 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 #+end_src
 
 #+RESULTS:
-[[file:Images/commits.svg]]
+[[file:images/commits.svg]]
 
 #+end_slideblock
  
@@ -1176,14 +1176,14 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 :END:
 #+begin_slideblock
 *what you see*
-[[./Images/worktree.png]]
+[[./images/worktree.png]]
 #+end_slideblock
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 *what's underneath*
 - these are the "real" repo of which the worktree is *just one partialrepresentation*. 
-[[./Images/repository.png]]
+[[./images/repository.png]]
 #+end_slideblock
 
 *** Pointers and objects
@@ -1191,7 +1191,7 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 :reveal_extra_attr: class="splitc"
 :END:
 #+begin_slideblock
-[[./Images/git-refs.png]] 
+[[./images/git-refs.png]] 
 #+begin_quote
 5e7ed7e34f9a8b34d26f98275a21afdcac171b83
 #+end_quote
@@ -1199,11 +1199,11 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-[[./Images/git-history.png]]
+[[./images/git-history.png]]
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-[[./Images/git-objs.png]]
+[[./images/git-objs.png]]
 #+end_slideblock
 
 
@@ -1213,16 +1213,16 @@ DEV_GIT_COMMIT(3, "3 \n add event")
 :END:
 #+begin_slideblock
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push0.svg]]
+[[./images/git-push0.svg]]
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push1.svg]]
+[[./images/git-push1.svg]]
 #+end_slideblock
 
 #+begin_slideblock
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push2.svg]]
+[[./images/git-push2.svg]]
 #+ATTR_REVEAL: :frag (appear) 
-[[./Images/git-push3.svg]]
+[[./images/git-push3.svg]]
 
 #+end_slideblock
 
@@ -1455,9 +1455,9 @@ two "dimensions" to cascade (source order and specificity)
 :CUSTOM_ID: with-and-without-css-43a6
 :END:
 #+ATTR_HTML: :class paired
-[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
+[[file:~/HackingHistory/images/nytimes-w-css.png]]  
 #+ATTR_HTML: :class paired
-[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
+[[file:~/HackingHistory/images/nytimes-no-css.png]] 
 
 
 ** CSS Selectors
@@ -4991,7 +4991,7 @@ https://www.computerhope.com/jargon/d/dom1.jpg
 :PROPERTIES:
 :CUSTOM_ID: inspecting-the-dom-edf1
 :END:
-file:///home/matt/DH/Images/devtools.png
+file:///home/matt/DH/images/devtools.png
 
 ** Finding Elements
 :PROPERTIES:
@@ -5098,15 +5098,15 @@ $('td.name').each(
 :END:
 
 #+begin_slideblock
-[[./Images/e2019/globe-results-2019.png]]
+[[./images/e2019/globe-results-2019.png]]
 #+end_slideblock
 
 #+begin_slideblock
-[[./Images/e2019/cbc-results-2019.png]]
+[[./images/e2019/cbc-results-2019.png]]
 #+end_slideblock
 
 #+begin_slideblock
-[[./Images/e2019/star-results-2019.png]]
+[[./images/e2019/star-results-2019.png]]
 #+end_slideblock
 
 
@@ -6127,7 +6127,7 @@ http://motherboard-images.vice.com//content-images/contentimage/no-id/1484933375
 :PROPERTIES:
 :CUSTOM_ID: and-this-too-1e8f
 :END:
-[[./Images/trump-epa-changes.png]]
+[[./images/trump-epa-changes.png]]
 *** Remind you of anything?
 :PROPERTIES:
 :CUSTOM_ID: remind-you-of-anything?-74b2
@@ -6164,10 +6164,10 @@ Winston sank his arms to his sides and slowly refilled his lungs with air. His m
 :END:
 
 #+begin_paired
-[[file:~/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
+[[file:~/DH/images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
 #+end_paired
 #+begin_paired
-[[file:~/DH/Images/jos-wri-airpump.jpg]]
+[[file:~/DH/images/jos-wri-airpump.jpg]]
 #+end_paired
 
 - rooted in Enlightenment
@@ -6760,7 +6760,7 @@ Timeplots, A Visual History of the United States House of Representatives, (2012
 :PROPERTIES:
 :CUSTOM_ID: thunen's-zones-9ebe
 :END:
-[[file:~/Dropbox/Work/History/DigitalHistory/Images/van_thunen_zones.jpg]]
+[[file:~/Dropbox/Work/History/DigitalHistory/images/van_thunen_zones.jpg]]
 
 *** Gateway to the West
 :PROPERTIES:
@@ -6774,7 +6774,7 @@ https://web.stanford.edu/group/spatialhistory/media/images/publication/Cronon.jp
 :END:
 - "Necessary Point of Passage" from West \rarr East
 - Pork, Grain, Lumber Zones
-[[file:~/Dropbox/Work/History/DigitalHistory/Images/railroads.jpg]]
+[[file:~/Dropbox/Work/History/DigitalHistory/images/railroads.jpg]]
 #+BEGIN_NOTES
 In early c. 19, Chicago one of several cities struggling to ocntrol the vast hinterlands west of the Mississipi – including St. Slouis, Minneapolis, WInnipeg.  Key elementi n Chicago's ascension:  transformation of vaast western space into zones of human activity radiating out from Chicago.  Chicago is ”Nature's Metropolis” = dependent on natural resources in extraordinarty way.  
 
@@ -6832,14 +6832,14 @@ meat packing replacing butchery.
 :CUSTOM_ID: birth-rates-8c7e
 :END:
 #+ATTR_HTML: :class paired
-[[file:~/DH/Images/lying-w-maps-birth-rates1.jpeg]]
+[[file:~/DH/images/lying-w-maps-birth-rates1.jpeg]]
 #+ATTR_HTML: :class paired
-[[file:~/DH/Images/lying-w-maps-birth-rates-2.jpeg]]
+[[file:~/DH/images/lying-w-maps-birth-rates-2.jpeg]]
 **** COMMENT
 :PROPERTIES:
 :CUSTOM_ID: comment-77cb
 :END:
-[[file:~/Dropbox/Work/History/DigitalHistory/Images/map-clorpleth.jpeg]]
+[[file:~/Dropbox/Work/History/DigitalHistory/images/map-clorpleth.jpeg]]
 in particular, 
 ** "Critical" Cartography
 :PROPERTIES:
@@ -6862,15 +6862,15 @@ https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg
 :PROPERTIES:
 :CUSTOM_ID: mapping-/enrols/-state-power-900d
 :END:
-[[file:~/DH/Images/concession_roads.jpeg]]
+[[file:~/DH/images/concession_roads.jpeg]]
 ** ...and technological power
 :PROPERTIES:
 :CUSTOM_ID: ...and-technological-power-79b0
 :END:
 #+ATTR_HTML: :class paired
-[[file:~/DH/Images/surveyor.jpeg]]
+[[file:~/DH/images/surveyor.jpeg]]
 #+ATTR_HTML: :class paired
-[[file:~/DH/Images/line_cut.jpeg]]
+[[file:~/DH/images/line_cut.jpeg]]
 ** Maps /Reinscribe/ Power
 :PROPERTIES:
 :CUSTOM_ID: maps-/reinscribe/-power-1dc0
@@ -6905,10 +6905,10 @@ https://ncrc.org/wp-content/uploads/2018/09/PHILLY_HOLC-2.jpg
 :END:  
 ** COMMENT Cats
 #+ATTR_HTML: :class paired
-[[./Images/cat.jpg]]
+[[./images/cat.jpg]]
 #+ATTR_HTML: :class paired
 #+ATTR_REVEAL: :frag appear
-[[./Images/ropes.jpg]]
+[[./images/ropes.jpg]]
 ** API's: incantations, conjurations, and mystical binding
 - API's are /magic/
 - we /bind/ a monster to a variable
@@ -8044,7 +8044,7 @@ firefox localhost:8080/oral-history
 #+end_slideblock
 #+begin_slideblock
 *use DevTools to look for errors*
-[[./Images/console.png]]
+[[./images/console.png]]
 #+end_slideblock
 #+begin_slideblock
 *Error Sources*
@@ -8144,7 +8144,7 @@ npm run server &
 firefox localhost:8080/oral-history
 #+end_src
 ** use DevTools to look for errors
-[[./Images/console.png]]
+[[./images/console.png]]
 ** Error Sources
 - bad spreadsheet URL
 - bad time codes etc. in spreadsheet
@@ -8251,23 +8251,23 @@ you've all come a really long way this semester. Lots of your cohort quit before
 
 
 
-# /home/matt/DH/Images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg
-# /home/matt/DH/Images/jos-wri-airpump.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-jos-wri-airpump.jpg
-# /home/matt/Dropbox/Work/History/DigitalHistory/Images/van_thunen_zones.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-van_thunen_zones.jpg
-# /home/matt/Dropbox/Work/History/DigitalHistory/Images/railroads.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-railroads.jpg
-# /home/matt/DH/Images/lying-w-maps-birth-rates1.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-lying-w-maps-birth-rates1.jpeg
-# /home/matt/DH/Images/lying-w-maps-birth-rates-2.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-lying-w-maps-birth-rates-2.jpeg
-# /home/matt/DH/Images/concession_roads.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-concession_roads1.jpeg
-# /home/matt/DH/Images/surveyor.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-surveyor.jpeg
-# /home/matt/DH/Images/line_cut.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-line_cut.jpeg
+# /home/matt/DH/images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg
+# /home/matt/DH/images/jos-wri-airpump.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-jos-wri-airpump.jpg
+# /home/matt/Dropbox/Work/History/DigitalHistory/images/van_thunen_zones.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-van_thunen_zones.jpg
+# /home/matt/Dropbox/Work/History/DigitalHistory/images/railroads.jpg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-railroads.jpg
+# /home/matt/DH/images/lying-w-maps-birth-rates1.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-lying-w-maps-birth-rates1.jpeg
+# /home/matt/DH/images/lying-w-maps-birth-rates-2.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-lying-w-maps-birth-rates-2.jpeg
+# /home/matt/DH/images/concession_roads.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-concession_roads1.jpeg
+# /home/matt/DH/images/surveyor.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-surveyor.jpeg
+# /home/matt/DH/images/line_cut.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2016/03/wpid-line_cut.jpeg
 
 * COMMENT Variables                                                :noexport:
 :PROPERTIES:
 :CUSTOM_ID: comment-variables-84fe
 :END:
 
-# /home/matt/HackingHistory/Images/nytimes-w-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
-# /home/matt/HackingHistory/Images/nytimes-no-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
+# /home/matt/HackingHistory/images/nytimes-w-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/images/x\nytimes-no-css.png http://digitalhistory.github.io/wp-content/uploads/2017/01/wpid-nytimes-no-css.png
 
 local variables need to be set at the end of the file.  
 # Local Variables:
