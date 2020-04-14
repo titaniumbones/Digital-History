@@ -10,7 +10,7 @@
 # #+MACRO: ts (eval (get-ts+7-inc-ov ))
 #+OPTIONS: todo:nil
 #+SETUPFILE: ./setup.org
-c;
+
 * COMMENT DETAILS Summer 2020 
 - Class is May 4 to June 15
 - gh classroom invite link: https://classroom.github.com/classrooms/63257651-his393-digital-history-summer-2020
@@ -26,22 +26,19 @@ c;
 * Logistics
 :PROPERTIES:
 :ID:       o2b:fa82bed3-b176-4a70-863d-704162fede0c
-:POST_DATE: [2017-01-06 Fri 12:47]
-:BLOG:     dig
-:POSTID:   592
 :END:
 
 #+ATTR_HTML: :class org-upload
 | *Instructor:*    | Matt Price                                               |
 | *Email:*         | matt.price@utoronto.ca                                   |
-| *Meeting Times*  | T Th 2-3, [[http://map.utoronto.ca/utsg/building/033][SS 1072]]                                        |
+| *Meeting Times*  | T Th 10-12 EST                                           |
 | *Web:*           | http://digitalhistory.github.io/                         |
 | *Slack:*         | https://digitalhistoryuoft.slack.com/                    |
-| *New!! Youtube:* | https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg |
+| *Youtube:*    | https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg |
 | *Office Hrs:*    | T Th 3-3:30, [[http://map.utoronto.ca/utsg/building/033][SS 3077]]                                     |
-| *TA:*            | [[mailto:lara.howerton@mail.utoronto.ca][Lara Howerton]]                                            |
+# | *TA:*            | [[mailto:lara.howerton@mail.utoronto.ca][Lara Howerton]]                                            |
 
-In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
+In general, online communication should take place *via Slack*.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [[mailto:matt.price@utoronto.ca?subject=HIS393%20Digital%20History][use my University email, being sure to put "HIS393" in the subject line]].
 * Introduction
 :PROPERTIES:
 :ID:       o2b:0e65aea6-d27b-4475-bbd6-e3f6280f119d
